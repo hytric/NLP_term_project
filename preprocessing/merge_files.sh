@@ -14,7 +14,7 @@
 python merge_files.py \
   --data_directory     /disk3/moon/Glot500/data/raw/ \
   --save_directory     /disk3/moon/Glot500/data/ \
-  --experiment_name    Glot500 \
+  --experiment_name    Glot500_bible \
   --lg_sampling_factor 0.3 \
   --scale              30
 

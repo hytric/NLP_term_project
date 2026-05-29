@@ -41,8 +41,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     unseen_lg2count = {}
-    df = pd.read_csv('../miscellaneous/languages_stats.csv')
-    unseen_lg2count = {str(lg) + '_' + script.replace("['", "").replace("']", ""): count for lg, script, count, is_seen in zip(df['language'], df['script'], df['new_length'], df['XLM-R']) if count >= 30000 and is_seen is not True}
+    df = pd.read_csv('../miscellaneous/languages_stats_lowres.csv', comment='#')
+    df.columns = df.columns.str.strip()  # header has a stray leading space in ' new_length'
+    unseen_lg2count = {str(lg) + '_' + script.replace("['", "").replace("']", ""): count for lg, script, count, is_seen in zip(df['language'], df['script'], df['new_length'], df['XLM-R']) if is_seen is not True}
     seen_lg2count = {str(lg) + '_' + script.replace("['", "").replace("']", ""): count for lg, script, count, is_seen in zip(df['language'], df['script'], df['new_length'], df['XLM-R']) if is_seen is True}
     print('%s unseen languages and %s seen languages' % (len(unseen_lg2count), len(seen_lg2count)))
 
@@ -65,7 +66,7 @@ if __name__ == '__main__':
 
     for lg, count in unseen_lg2count.items():
         p = unseen_lg2count[lg]**S / unseen_tot_S
-        print('%s -unseen_lg2count: before resampling: %.2f, %d - after resampling: %.2f, %d' % (lg, 100.0 * unseen_lg2count[lg] / tot, unseen_lg2count[lg], 100.0 * p, int(args.scale * min_c * (p / min_p))))
+        print('%s -unseen_lg2count: before resampling: %.2f, %d - after resampling: %.2f, %d' % (lg, 100.0 * unseen_lg2count[lg] / tot_before, unseen_lg2count[lg], 100.0 * p, int(args.scale * min_c * (p / min_p))))
     for lg, count in seen_lg2count.items():
         print('%s -seen_lg2count: before resampling: %d - after resampling[chopped to 30*min_c]: %d' % (lg, seen_lg2count[lg], int(args.scale * min_c)))
 
