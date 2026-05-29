@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
-# Glot500 base-size pretraining on 1 × RTX A6000 (48 GB), pinned to GPU 1
-# Effective batch size: 12 (per-device) × 32 (accum) × 1 (GPU) = 384 (matches upstream)
+# Glot500 base-size pretraining on 4 × RTX A6000 (48 GB)
+# Effective batch size: 12 (per-device) × 8 (accum) × 4 (GPUs) = 384 (matches upstream)
 
-CUDA_VISIBLE_DEVICES=1 WANDB_DISABLED=true python run.py \
+CUDA_VISIBLE_DEVICES=1 WANDB_DISABLED=true python -m torch.distributed.launch --nproc_per_node=1 run.py \
   --model_name_or_path xlm-roberta-base \
-  --train_file       /home/sogang/mnt/db_1/moon/Glot500/data/Glot500.txt \
-  --tokenizer_name   /home/sogang/mnt/db_1/moon/Glot500/tokenization/output/Glot500_extended_spm \
-  --output_dir       /home/sogang/mnt/db_1/moon/Glot500/runs/glot500-base \
-  --cache_dir        /home/sogang/mnt/db_1/moon/Glot500/cache \
+  --train_file       /home/sogang/db_1/moon/Glot500/data/Glot500txt \
+  --tokenizer_name   /home/sogang/db_1/moon/Glot500/tokenization/output \
+  --output_dir       /home/sogang/db_1/moon/Glot500/runs/glot500-base \
+  --cache_dir        /home/sogang/db_1/moon/Glot500/cache \
   --per_device_train_batch_size 12 \
-  --gradient_accumulation_steps 32 \
+  --gradient_accumulation_steps 8 \
   --fp16 True \
   --do_train \
   --num_train_epochs 100 \
-  --save_steps 10000
+  --save_steps 10000 \
+  --ddp_timeout 259200
 
 
 #MJ:  What you still need to build before this can run
@@ -21,7 +22,7 @@ CUDA_VISIBLE_DEVICES=1 WANDB_DISABLED=true python run.py \
 # This produces the expanded-vocab SentencePiece model + tokenizer files that --tokenizer_name points at. Look inside tokenization/train.sh — it'll call tokenization/run.py to train SentencePiece on your multilingual corpus, then save it to a directory.
 
 
-# cd /mnt/db_1/moon/Glot500/tokenization
+# cd /home/sogang/db_1/moon/Glot500/tokenization
 # cat train.sh        # see what placeholders it has
 # # fill in input corpus + output dir, then run it
 # bash train.sh
@@ -29,7 +30,7 @@ CUDA_VISIBLE_DEVICES=1 WANDB_DISABLED=true python run.py \
 # This concatenates per-language raw text files into the single train.txt that --train_file reads.
 
 
-# cd /mnt/db_1/moon/Glot500/preprocessing
+# cd /home/sogang/db_1/moon/Glot500/preprocessing
 # cat merge_files.sh
 # # fill in input language files + output path
 # bash merge_files.sh
@@ -41,10 +42,10 @@ CUDA_VISIBLE_DEVICES=1 WANDB_DISABLED=true python run.py \
 
 # CUDA_VISIBLE_DEVICES=0 WANDB_DISABLED=true python run.py \
 #   --model_name_or_path xlm-roberta-base \
-#   --train_file       /mnt/db_1/moon/Glot500/data/train.txt \
-#   --tokenizer_name   /mnt/db_1/moon/Glot500/tokenization/output \
+#   --train_file       /home/sogang/db_1/moon/Glot500/data/train.txt \
+#   --tokenizer_name   /home/sogang/db_1/moon/Glot500/tokenization/output \
 #   --output_dir       /tmp/glot500-smoke \
-#   --cache_dir        /mnt/db_1/moon/Glot500/cache \
+#   --cache_dir        /home/sogang/db_1/moon/Glot500/cache \
 #   --per_device_train_batch_size 4 \
 #   --fp16 True \
 #   --do_train \

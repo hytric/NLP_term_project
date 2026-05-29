@@ -5,15 +5,15 @@ in the layout that merge_files.py expects via load_from_disk().
 import argparse
 import os
 import pandas as pd
-from datasets import load_dataset, get_dataset_config_names
-from huggingface_hub import HfApi
+from datasets import load_from_disk, DatasetDict
+from huggingface_hub import HfApi, snapshot_download
 
 
 #MJ: python download_glot500c.py --max_langs 5
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--csv",       default="/disk3/moon/Glot500/miscellaneous/languages_stats.csv")
+    ap.add_argument("--csv",       default="/disk3/moon/Glot500/miscellaneous/languages_stats_lowres.csv")
     ap.add_argument("--out_dir",   default="/disk3/moon/Glot500/data/raw")
     ap.add_argument("--cache_dir", default="/disk3/moon/Glot500/cache/hf_datasets")
     ap.add_argument("--max_langs", type=int, default=None,
@@ -23,18 +23,18 @@ def main():
     os.makedirs(args.out_dir, exist_ok=True)
     os.makedirs(args.cache_dir, exist_ok=True)
 
-    # 1. Build the list of languages merge_files.py will look for:
-    #    seen (no count filter) + unseen with count >= 30000
-    df = pd.read_csv(args.csv)
+    # 1. Build the list of languages to fetch = every active (non-commented)
+    #    row in the curated lowres CSV.
+    df = pd.read_csv(args.csv, comment='#')   # '#'-commented rows are the excluded languages
+    df.columns = df.columns.str.strip()       # header has a stray leading space in ' new_length'
     def key(lg, script):
         return f"{lg}_{script.replace('[', '').replace(']', '').replace(chr(39), '')}"
 
+    # The lowres CSV is already hand-curated, so fetch every active (non-commented) row.
     wanted = set()
-    for lg, script, count, is_seen in zip(
-            df["language"], df["script"], df["new_length"], df["XLM-R"]):
-        if is_seen is True or count >= 30000:
-            wanted.add(key(lg, script))
-    print(f"Total languages to fetch: {len(wanted)}") #MJ: Total languages to fetch: 570
+    for lg, script in zip(df["language"], df["script"]):
+        wanted.add(key(lg, script))
+    print(f"Total languages to fetch: {len(wanted)}")
 
     #MJ: 
     # Result: 100 languages have XLM-R == True
@@ -60,37 +60,39 @@ def main():
 
 
 
-    # 2. Find which of those configs actually exist on the public hub.
-    # api = HfApi()
-    # info = api.dataset_info("cis-lmu/Glot500")
-
-    # available = {c.split("/")[-1] if "/" in c else c for c in info.config_names}
-
-
-    available = set(get_dataset_config_names("cis-lmu/Glot500"))
+    # 2. Find which wanted languages exist in the PUBLIC repo.
+    #    cis-lmu/Glot500 declares no dataset configs (get_dataset_config_names
+    #    returns only a placeholder), so we list the repo files and take the
+    #    top-level per-language directories instead.
+    api = HfApi()
+    repo_files = api.list_repo_files("cis-lmu/Glot500", repo_type="dataset")
+    available = {f.split("/")[0] for f in repo_files if "/" in f}
 
     to_fetch = sorted(wanted & available)
     missing  = sorted(wanted - available)
-    print(f"Available on public hub:  {len(to_fetch)}")
-    print(f"Missing (restricted):     {len(missing)}  e.g. {missing[:8]}")
+    print(f"Available on public hub:  {len(to_fetch)}  {to_fetch}")
+    print(f"Missing (restricted):     {len(missing)}  {missing}")
 
     if args.max_langs:
         to_fetch = to_fetch[:args.max_langs]
         print(f"Limiting to first {args.max_langs} languages")
 
-    # 3. Pull each language config, save to disk in load_from_disk() format.
+    # 3. Download each language and re-save in the DatasetDict layout merge_files.py
+    #    expects: out_dir/{lg}/ loadable via load_from_disk(...)['train'].
+    #    The repo stores each language as a Dataset at {lg}/train/, so we wrap it.
     for i, lg in enumerate(to_fetch, 1):
         out_path = os.path.join(args.out_dir, lg)
-        if os.path.exists(os.path.join(out_path, "dataset_info.json")):
+        if os.path.exists(os.path.join(out_path, "dataset_dict.json")):
             print(f"[{i}/{len(to_fetch)}] {lg:<15} already on disk, skipping")
             continue
         try:
-
-            ds = load_dataset("cis-lmu/Glot500", lg, cache_dir=args.cache_dir)
-
-            ds.save_to_disk(out_path)
-            n = len(ds["train"]) if "train" in ds else 0
-            print(f"[{i}/{len(to_fetch)}] {lg:<15} saved ({n:,} rows)")
+            snap = snapshot_download(
+                repo_id="cis-lmu/Glot500", repo_type="dataset",
+                allow_patterns=f"{lg}/*", cache_dir=args.cache_dir,
+            )
+            ds = load_from_disk(os.path.join(snap, lg, "train"))
+            DatasetDict({"train": ds}).save_to_disk(out_path)
+            print(f"[{i}/{len(to_fetch)}] {lg:<15} saved ({len(ds):,} rows)")
         except Exception as e:
             print(f"[{i}/{len(to_fetch)}] {lg:<15} FAILED: {e}")
 

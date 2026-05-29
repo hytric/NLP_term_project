@@ -1,8 +1,22 @@
+"""Train + extend the Glot500 SentencePiece tokenizer.
+
+Self-contained (folds in tokenization/train.sh): the argument defaults below let
+you run it directly:
+
+    python run.py                     # uses the baked-in defaults
+    python run.py --vocab_size 50000  # override any default
+
+Trains a unigram SPM on --input_fname, then merges the new pieces onto XLM-R's
+SentencePiece model and saves the extended tokenizer under --save_directory.
+Requires {save_directory}sentencepiece.bpe.model (XLM-R's base SPM) to be present.
+"""
 import argparse, sys, logging, copy, os, json, codecs
 from datetime import datetime
 import sentencepiece as spm
 
-import sentencepiece_model_pb2 as sp_model
+# Use the installed sentencepiece's proto (has TrainerSpec.byte_fallback + BYTE piece
+# type); the vendored sentencepiece_model_pb2.py is too old and lacks byte_fallback.
+from sentencepiece import sentencepiece_model_pb2 as sp_model
 
 from os import listdir
 
@@ -11,10 +25,10 @@ from transformers import XLMRobertaTokenizer
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_fname', type=str)
-    parser.add_argument('--model_name', type=str)
-    parser.add_argument('--save_directory', type=str)
-    parser.add_argument('--vocab_size', type=int)
+    parser.add_argument('--input_fname', type=str, default='/home/sogang/mnt/db_1/moon/Glot500/data/Glot500_bible.txt')
+    parser.add_argument('--model_name', type=str, default='xlm-roberta-base')
+    parser.add_argument('--save_directory', type=str, default='/home/sogang/mnt/db_1/moon/Glot500/tokenization/output/')
+    parser.add_argument('--vocab_size', type=int, default=250000)
 
     args = parser.parse_args()
     
@@ -22,7 +36,7 @@ if __name__ == '__main__':
     input_fname = args.input_fname
     output_fname = args.save_directory + 'Glot500'
     cmd = ('--input={} --model_prefix={} --vocab_size={} '
-           '--model_type=unigram --character_coverage=1.0 '
+           '--model_type=unigram --character_coverage=1.0 --byte_fallback=true '
            '--train_extremely_large_corpus=true '
            '--input_sentence_size=20000000 --shuffle_input_sentence=true '
            '--num_threads=32').format(input_fname, output_fname, args.vocab_size)
@@ -48,7 +62,7 @@ if __name__ == '__main__':
     new_m = sp_model.ModelProto()
     new_m.ParseFromString(open(output_fname + '.model', 'rb').read())
 
-    add_cnt = 0 
+    add_cnt = 0
     piece_d = {piece.piece: 0 for piece in original_m.pieces}
     for new_piece in new_m.pieces:
         if new_piece.piece not in piece_d:
@@ -57,8 +71,17 @@ if __name__ == '__main__':
             piece_to_add.piece = new_piece.piece
             # Add token log-prob
             piece_to_add.score = new_piece.score
+            # Preserve piece type so the 256 <0xNN> BYTE pieces produced by
+            # --byte_fallback are carried over as BYTE (not NORMAL).
+            piece_to_add.type = new_piece.type
             original_m.pieces.append(piece_to_add)
             add_cnt += 1
+
+    # Enable byte-fallback on the MERGED model so unknown characters decompose into
+    # the <0xNN> BYTE pieces above instead of mapping to <unk>. SentencePiece requires
+    # all 256 byte pieces to be present; they are, since new_m was trained with
+    # --byte_fallback=true and none of the <0xNN> pieces collide with XLM-R's vocab.
+    original_m.trainer_spec.byte_fallback = True
 
     print('Add {} tokens'.format(add_cnt)) #MJ: 165727
     logging.info('Add {} tokens'.format(add_cnt))

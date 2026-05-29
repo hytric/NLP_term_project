@@ -548,14 +548,26 @@ def main():
         compute_metrics=compute_metrics if training_args.do_eval and not is_torch_tpu_available() else None,
     )
 
-    # Training
+    # Training Loop:
+    #MJ:
+    # What Trainer actually is
+    # HuggingFace's Trainer is a hand-written training loop on top of plain PyTorch, developed independently by HuggingFace. In your version (4.24.0) it directly:
+
+    # builds DataLoaders with PyTorch samplers,
+    # runs its own forward/backward/optimizer-step loop (trainer.train() → an internal _inner_training_loop),
+    # does fp16 mixed precision via torch.cuda.amp (that's what your --fp16 True toggles),
+    # does multi-GPU via PyTorch's native DistributedDataParallel,
+    # optionally hands off to DeepSpeed for ZeRO sharding
+
     if training_args.do_train:
         checkpoint = None
         if training_args.resume_from_checkpoint is not None:
             checkpoint = training_args.resume_from_checkpoint
         elif last_checkpoint is not None:
             checkpoint = last_checkpoint
+
         train_result = trainer.train(resume_from_checkpoint=checkpoint)
+
         trainer.save_model()  # Saves the tokenizer too for easy upload
         metrics = train_result.metrics
 
@@ -568,7 +580,7 @@ def main():
         trainer.save_metrics("train", metrics)
         trainer.save_state()
 
-    # Evaluation
+    # Evaluation Loop
     if training_args.do_eval:
         logger.info("*** Evaluate ***")
 

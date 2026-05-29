@@ -26,7 +26,7 @@ DEFAULT_ARGS = [
     "--output_dir",       f"{DATA_ROOT}/runs/glot500-base",
     "--cache_dir",        f"{DATA_ROOT}/cache",
     "--per_device_train_batch_size", "12",
-    "--gradient_accumulation_steps", "32",
+    "--gradient_accumulation_steps", "8",
     "--fp16", "True",
     "--do_train",
     "--num_train_epochs", "100",
@@ -39,5 +39,5 @@ if __name__ == "__main__":
     # any user overrides (later values win in argparse).
     sys.argv = [sys.argv[0]] + DEFAULT_ARGS + sys.argv[1:]
 
-    from run import main. #MJ: import from run.py module
+    from run import main #MJ: import from run.py module
     main()

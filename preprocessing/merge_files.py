@@ -1,3 +1,14 @@
+"""Build the Glot500 training corpus from per-language HuggingFace datasets.
+
+Self-contained (replaces merge_files.sh): the argument defaults below reproduce
+the old shell invocation, so you can run it directly:
+
+    python merge_files.py                 # uses the baked-in defaults
+    python merge_files.py --scale 5       # override any default on the CLI
+
+Reads ../miscellaneous/languages_stats_lowres.csv (resolved relative to this
+file), skipping '#'-commented language rows.
+"""
 import argparse
 import codecs
 import copy
@@ -32,19 +43,22 @@ def write_file(input_fname, output_f, num):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_directory', type=str)
-    parser.add_argument('--save_directory', type=str)
-    parser.add_argument('--experiment_name',type=str)
-    parser.add_argument("--lg_sampling_factor", type=float, default=-1, help="Language sampling factor")
-    parser.add_argument("--scale", type=float, default=1e4, help="controls the minimum number of sentences of each language")
+    parser.add_argument('--data_directory', type=str, default='/disk3/moon/Glot500/data/raw/')
+    parser.add_argument('--save_directory', type=str, default='/disk3/moon/Glot500/data/')
+    parser.add_argument('--experiment_name', type=str, default='Glot500_bible')
+    parser.add_argument("--lg_sampling_factor", type=float, default=0.3, help="Language sampling factor")
+    parser.add_argument("--scale", type=float, default=30, help="controls the minimum number of sentences of each language")
 
     args = parser.parse_args()
 
     unseen_lg2count = {}
-    df = pd.read_csv('../miscellaneous/languages_stats_lowres.csv', comment='#')
+    csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'miscellaneous', 'languages_stats_lowres.csv')
+    df = pd.read_csv(csv_path, comment='#')
     df.columns = df.columns.str.strip()  # header has a stray leading space in ' new_length'
-    unseen_lg2count = {str(lg) + '_' + script.replace("['", "").replace("']", ""): count for lg, script, count, is_seen in zip(df['language'], df['script'], df['new_length'], df['XLM-R']) if is_seen is not True}
-    seen_lg2count = {str(lg) + '_' + script.replace("['", "").replace("']", ""): count for lg, script, count, is_seen in zip(df['language'], df['script'], df['new_length'], df['XLM-R']) if is_seen is True}
+    unseen_lg2count = {str(lg) + '_' + script.replace("['", "").replace("']", ""): count 
+       for lg, script, count, is_seen in zip(df['language'], df['script'], df['new_length'], df['XLM-R']) if is_seen is not True}
+    seen_lg2count = {str(lg) + '_' + script.replace("['", "").replace("']", ""): count 
+       for lg, script, count, is_seen in zip(df['language'], df['script'], df['new_length'], df['XLM-R']) if is_seen is True}
     print('%s unseen languages and %s seen languages' % (len(unseen_lg2count), len(seen_lg2count)))
 
     # downsample (S < 1) or upsample (S>1) the importance of high-resource languages

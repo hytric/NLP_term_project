@@ -9,6 +9,28 @@
 
 ---
 
+## This fork: biblical-language continued pretraining
+
+This fork adapts Glot500's continued-pretraining recipe to a focused, single-GPU
+experiment for **biblical studies** — adding Ancient/Koine Greek (`grc`) and
+Biblical Hebrew (`hbo`) on top of XLM-R, plus Coptic (`cop`, pending restricted
+full-corpus access). A small set of replay/anchor languages is kept (Modern Greek,
+Modern Hebrew, Latin/Vulgate, Armenian, Georgian, English, German). The active
+language set is defined in
+[`miscellaneous/languages_stats_lowres.csv`](miscellaneous/languages_stats_lowres.csv).
+
+### Planned ablation study
+
+To isolate the contribution of **vocabulary extension** from that of **continued
+pretraining alone**, we will run an ablation in which the model is
+continued-pretrained on the same corpus **without extending the vocabulary** —
+i.e. keeping XLM-R's original tokenizer and embedding matrix (no new SentencePiece
+pieces, no `resize_token_embeddings`). Comparing it against the
+vocabulary-extended model shows how much of any downstream gain comes from new
+subword units versus from further MLM training on the target languages.
+
+---
+
 # Glot500: Scaling Multilingual Corpora and Language Models to 500 Languages
 
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/cis-lmu/glot500-base)
