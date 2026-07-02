@@ -1,0 +1,4 @@
+init_method	seed	run_id	max_steps	train_loss	final_eval_loss	final_perplexity	status	notes
+fvt	13	fvt_seed13_pilot	200	2.748325	3.921798	50.491170	PASS_FOR_PILOT	healthy loss curve; not a final seed-stable result
+fvt	17	fvt_seed17_pilot	200	2.666244	4.010451	55.171739	PASS_FOR_PILOT	healthy loss curve; not a final seed-stable result
+fvt	23	fvt_seed23_pilot	200	2.594898	4.011500	55.229646	PASS_FOR_PILOT	healthy loss curve; not a final seed-stable result

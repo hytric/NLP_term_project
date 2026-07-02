@@ -1,0 +1,19 @@
+{
+  "run_id": "step21_v2_alt_init_probe_20260611_194617",
+  "model_family": "adapted_extended",
+  "seed": 17,
+  "source_checkpoint": "/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_mean",
+  "tokenizer_source": "/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_mean",
+  "train_steps": 1800,
+  "target_train_tokens": 500000,
+  "token_budget_tolerance": 1.02,
+  "batch_size": 8,
+  "eval_batch_size": 8,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "eval_every": 800,
+  "train_limit": 0,
+  "dev_limit": 0,
+  "selection_data": "MAR_dev_only",
+  "final_access": "NO_ACT_FINAL_ACCESS"
+}

@@ -1,0 +1,4 @@
+variant	vocab_size	aux_model	byte_fallback	character_coverage	aux_byte_pieces	append_selected_tokens	append_actual_added	changed_existing_token_ids	appended_token_id_violations	avg_aux_tokens_per_word	avg_aux_byte_piece_rate	avg_append_tokens_per_word_delta_vs_base_pct	worst_append_tokens_per_word_delta_vs_base_pct	avg_append_new_token_hit_rate	status
+char_coverage_1_0	48000	/home/axt/mnt2/jongha/third_try/tokenizers/stage03_targetheavy_20260613_r3/spm_48000/third_try_mixture_unigram_48000.model	False	1.0	0	30849	30849	0	0	1.795952	0.0	-29.812358	1.504758	0.520904	MEASURED
+byte_fallback_0_9995	48000	/home/axt/mnt2/jongha/third_try/tokenizers/stage03_fallback_20260613_r1/spm/byte_fallback_0_9995/third_try_byte_fallback_48000.model	True	0.9995	256	33297	33297	0	0	1.78299	0.000116	-30.215948	0.540536	0.523078	MEASURED
+byte_minus_char_mean_delta	48000	comparison	comparison	comparison								-0.599816			aux_delta_pct=-0.733735

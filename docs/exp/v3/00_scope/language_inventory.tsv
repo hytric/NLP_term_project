@@ -1,0 +1,11 @@
+iso	language	script	role	raw_source	verse_rows	main_status	notes
+acu	Achuar-Shiwiar	Latin	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Achuar-NT.xml	7646	IN_MAIN	existing target10; use V2 clean split
+ake	Akawaio	Latin	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Akawaio-NT.xml	7734	IN_MAIN	existing target10; use V2 clean split
+bsn	Barasana-Eduria	Latin	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Barasana-NT.xml	7548	IN_MAIN	existing target10; use V2 clean split
+chr	Cherokee	Cherokee	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Cherokee-NT.xml	7957	IN_MAIN	existing target10; use V2 clean split
+cop	Coptic	Coptic	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Coptic-NT.xml	7957	IN_MAIN	main experiment, not extension
+kbh	Camsa	Latin	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Camsa-NT.xml	6521	IN_MAIN	existing target10; use V2 clean split
+nhg	Nahuatl Tetelcingo	Latin	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Nahuatl-NT.xml	7822	IN_MAIN	existing target10; use V2 clean split
+oji	Ojibwa	Aboriginal Syllabics	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Ojibwa-NT.xml	7943	IN_MAIN	existing target10; use V2 clean split
+syr	Syriac	Syriac	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Syriac-NT.xml	7954	IN_MAIN	main experiment, not extension
+usp	Uspanteco	Latin	target10_low_resource	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Uspanteco-NT.xml	7890	IN_MAIN	existing target10; use V2 clean split

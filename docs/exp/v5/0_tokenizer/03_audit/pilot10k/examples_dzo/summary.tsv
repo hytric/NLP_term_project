@@ -1,0 +1,2 @@
+language_script	examples	avg_base_tokens_per_word	avg_target_tokens_per_word	avg_delta_tokens_per_word	worse_examples	better_examples	same_examples	target_byte_token_total	target_new_token_total	target_unk_token_total
+dzo_Tibt	500	4.493663007629874	8.874783864303831	4.381120856673958	483	5	12	3	13949	0

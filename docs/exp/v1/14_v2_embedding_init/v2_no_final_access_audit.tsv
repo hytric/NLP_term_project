@@ -1,0 +1,3 @@
+run_id	input_role	path	allowed_split	rows_or_files	md5	final_access	status
+step14_v2_init_20260611_154436	selected_tokenizer	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/selected_tokenizer.md	tokenizer_selected_on_dev	11	baf1bb2aefc584702e4d5b605a8f8695	NO	PASS
+step14_v2_init_20260611_154436	dev_manifest	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_dev_manifest.tsv	dev	6521	cd2fedc4a8665afbd2c8818e79e04b6a	NO	PASS

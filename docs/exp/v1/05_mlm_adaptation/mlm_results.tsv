@@ -1,0 +1,7 @@
+candidate_id	vocab_size	init_method	seed	train_steps	train_loss	dev_loss	pseudo_ppl	tokens_per_sec	runtime_minutes	improves_zero_step	tokenization_gate_pass	checkpoint_saved	status	notes
+original_xlmr	original	none	0	0	NOT_APPLICABLE	6.330356	561.356445	NOT_APPLICABLE	NOT_APPLICABLE	NOT_APPLICABLE	NOT_APPLICABLE	NOT_APPLICABLE	BASELINE_RECORDED	xlm-roberta-base
+spm32000_random_seed13	32000	random	13	20	10.525835	8.515230	4990.194056	1911.972	0.029	yes	yes	yes	PASS	/home/axt/mnt2/jongha/second_try/checkpoints/05_mlm_adaptation/spm32000_random_seed13
+spm32000_mean_seed13	32000	mean	13	20	9.763459	9.485605	13168.790620	2009.773	0.027	yes	yes	yes	PASS	/home/axt/mnt2/jongha/second_try/checkpoints/05_mlm_adaptation/spm32000_mean_seed13
+spm32000_fvt_seed13	32000	fvt	13	20	7.077252	7.134023	1253.910733	1842.348	0.030	yes	yes	yes	PASS	/home/axt/mnt2/jongha/second_try/checkpoints/05_mlm_adaptation/spm32000_fvt_seed13
+spm32000_align_seed13	32000	align	13	20	7.551258	7.348738	1554.234491	2007.723	0.027	yes	yes	yes	PASS	/home/axt/mnt2/jongha/second_try/checkpoints/05_mlm_adaptation/spm32000_align_seed13
+spm32000_focus_seed13	32000	focus	13	20	8.352079	7.668441	2139.742549	2008.027	0.027	yes	yes	yes	PASS	/home/axt/mnt2/jongha/second_try/checkpoints/05_mlm_adaptation/spm32000_focus_seed13

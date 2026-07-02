@@ -1,0 +1,6 @@
+init_method	new_rows	initialized_rows	missing_rows	fallback_rows	mean_norm	std_norm	zero_step_dev_loss	checkpoint_path	status
+random	30849	30849	0	0	0.553991	0.014168	17.998567	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_random	PASS
+mean	30849	30849	0	0	2.598133	0.000000	10.910376	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_mean	PASS
+fvt	30849	30849	0	0	4.583921	0.577005	7.925527	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_fvt	PASS
+align	30849	30849	0	11070	4.384372	0.670453	8.700895	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_align	PASS
+focus	30849	30849	0	11070	5.865720	0.000001	16.760191	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_focus	PASS

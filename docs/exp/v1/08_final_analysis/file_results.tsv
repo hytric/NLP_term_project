@@ -1,0 +1,9 @@
+file_role	path	location	rows_or_lines	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/score_table.tsv	docs	20	7591	de29b0ce7e68f3ec54619f66728a6da1	PASS_NEGATIVE_RESULT	final claim score table superseded for translation by Step 09 and locked by Step 27
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/results.md	docs	73	9949	64d331680383188f3f48012bc81f9752	PASS_NEGATIVE_RESULT	final synthesis with Step 09/10/11/12/13/14/25/26/27 translation status
+claim_evidence_map	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/claim_evidence_map.md	docs	63	8221	cf1d3641ecc7beea1199abe7d19cf8f1	PASS	claim-to-evidence mapping with Step 27 manuscript package
+paper_tables	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/paper_tables.md	docs	46	2721	b364d4723908a7e16fecdcd8352722a9	PASS	report-ready tables with method-matched audit
+qualitative_analysis	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/qualitative_analysis.md	docs	15	1641	e84a2bec2e88fef83fc7aea23ba0b549	PASS	qualitative findings with Step 09 caveat
+limitations	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/limitations.md	docs	25	1711	9df29dd8e54a5a7845574816caa2735a	PASS	method-matched translation failure and return path
+final_checklist	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/final_checklist.md	docs	38	3496	49a1f08dfe600d7747eb013904e5cb17	PASS_NEGATIVE_RESULT	final artifact checklist after Step 27
+shortcut_and_next_experiments_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/08_final_analysis/shortcut_and_next_experiments_audit.md	docs	115	8612	1ea4ddc14892db8f347fb3e55f0497c6	PASS_NEGATIVE_RESULT	shortcut review and required next experiments after Step 27

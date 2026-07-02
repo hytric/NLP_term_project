@@ -1,0 +1,10 @@
+{
+    "test_feature_selected_bleu": 2.8761314381637955,
+    "test_feature_selected_chrf": 22.369918659271327,
+    "test_feature_selected_chrfpp": 19.15580897813568,
+    "test_feature_selected_gen_len": 190.84375,
+    "test_feature_selected_loss": 1.1091203689575195,
+    "test_feature_selected_runtime": 56.6349,
+    "test_feature_selected_samples_per_second": 1.13,
+    "test_feature_selected_steps_per_second": 1.13
+}

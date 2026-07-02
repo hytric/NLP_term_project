@@ -1,0 +1,11 @@
+metric	expected	actual	status
+changed existing token ids	0	0	PASS
+changed special token ids	0	0	PASS
+appended token id violations	0	0	PASS
+fallback ablation separated from main	yes	yes	PASS
+byte-vs-char fallback measured	yes	yes	PASS
+byte fallback append-only limitation documented	yes	yes	PASS
+selected main tokenizer recorded	yes	provisional_targetheavy_48000	PASS
+avg tokens/word delta pct	<0	-29.812358	PASS
+worst language tokens/word delta pct	<=2	1.504758	PASS_WITH_CAUTION
+byte fallback avg append delta vs char pct	<=0	-0.599816	PASS_ABLATION_ONLY

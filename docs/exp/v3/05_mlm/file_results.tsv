@@ -1,0 +1,24 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/05_mlm/training_config.json	stage05_config	1	NOT_COMPUTED	PASS	first fvt pilot config
+docs/exp/third_try/05_mlm/training_config_seed17.json	stage05_config	1	NOT_COMPUTED	PASS	fvt pilot seed17 config
+docs/exp/third_try/05_mlm/training_config_seed23.json	stage05_config	1	NOT_COMPUTED	PASS	fvt pilot seed23 config
+docs/exp/third_try/05_mlm/training_config_replay_safe_seed13.json	stage05_config	1	NOT_COMPUTED	PASS	replay-safe fvt seed13 1000-step config
+docs/exp/third_try/05_mlm/training_config_replay_safe_seed17.json	stage05_config	1	NOT_COMPUTED	PASS	replay-safe fvt seed17 1000-step config
+docs/exp/third_try/05_mlm/training_config_replay_safe_seed23.json	stage05_config	1	NOT_COMPUTED	PASS	replay-safe fvt seed23 1000-step config
+docs/exp/third_try/05_mlm/training_config_smoke.json	stage05_config	1	NOT_COMPUTED	PASS	one-step smoke config
+docs/exp/third_try/05_mlm/training_command.md	stage05_doc	1	NOT_COMPUTED	PASS	smoke and pilot-grid launch commands
+docs/exp/third_try/05_mlm/replay_safe_training_command.md	stage05_doc	1	NOT_COMPUTED	PASS	replay-safe retry launch commands
+docs/exp/third_try/05_mlm/deviation_from_protocol.tsv	stage05_audit	14	NOT_COMPUTED	PASS	protocol deviations recorded before launch
+docs/exp/third_try/05_mlm/score_table.tsv	stage05_gate_table	19	NOT_COMPUTED	IN_PROGRESS	replay-safe 3-seed retry complete; positive claim still evaluated in Stage06
+docs/exp/third_try/05_mlm/smoke_test_result.tsv	stage05_smoke_metric	1	NOT_COMPUTED	PASS	one-step smoke test passed on GPU 3
+modeling/run_third_try_stage05.py	stage05_launcher	1	NOT_COMPUTED	PASS	local HF hub compatibility shim launcher
+docs/exp/third_try/05_mlm/checkpoint_metrics.tsv	stage05_pilot_metric	15	NOT_COMPUTED	PASS	fvt 3-seed checkpoint eval trace
+docs/exp/third_try/05_mlm/init_method_mlm_summary.tsv	stage05_pilot_metric	3	NOT_COMPUTED	PASS	fvt 3-seed MLM pilot summary
+docs/exp/third_try/05_mlm/seed_summary.tsv	stage05_seed_metric	3	NOT_COMPUTED	PASS_FOR_PILOT	3 pilot seeds complete; final budget/downstream still pending
+docs/exp/third_try/05_mlm/replay_safe_seed_summary.tsv	stage05_seed_metric	5	NOT_COMPUTED	PASS_RETRY_CANDIDATE	replay-safe lower-LR 1000-step seed summary
+/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	stage05_checkpoint_dir	1	NOT_COMPUTED	PASS	200-step fvt seed13 pilot output
+/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	stage05_checkpoint_dir	1	NOT_COMPUTED	PASS	200-step fvt seed17 pilot output
+/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	stage05_checkpoint_dir	1	NOT_COMPUTED	PASS	200-step fvt seed23 pilot output
+/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	stage05_checkpoint_dir	1	NOT_COMPUTED	PASS_RETRY_CANDIDATE	1000-step lower-LR replay-safe seed13 output
+/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed17_step1000	stage05_checkpoint_dir	1	NOT_COMPUTED	PASS_RETRY_CANDIDATE	1000-step lower-LR replay-safe seed17 output
+/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed23_step1000	stage05_checkpoint_dir	1	NOT_COMPUTED	PASS_RETRY_CANDIDATE	1000-step lower-LR replay-safe seed23 output

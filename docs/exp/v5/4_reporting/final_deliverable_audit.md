@@ -1,0 +1,44 @@
+# v5 Final Deliverable Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `final_deliverable_pending_results`
+
+This generated audit maps the active user-facing goal to concrete
+evidence. It does not redefine the goal around partial progress: final
+completion still requires matched v5 checkpoints, after-MLM PPPL,
+available downstream replay, explicit pending/blocker accounting, and final
+paper/PPT synchronization.
+
+| Requirement | Status | Evidence | Final gate | Next action |
+| --- | --- | --- | --- | --- |
+| controlled 92+10 Glot500-style replay scope | proven | merge=PASS; seen=92; target=10; samples=92452251; missing_dirs=0 | scope frozen | none |
+| Glot500-style tokenizer expansion evidence | proven_with_caveat | target_len=368687; appended=118685; target10_improved=9/10; dzo_Tibt_regression=documented | tokenizer audit complete | keep dzo_Tibt visible in report/PPT |
+| vocabulary-extension initialization novelty | intrinsic_result_ready | fvt_rows=118427; mask_diff=0.0; lm_head_tied=True; target_nll_delta_fvt_minus_random=-9.626238 | after-MLM method claim waits for matched checkpoints | after checkpoints and post-checkpoint preflight, evaluate PPPL and available downstream rows |
+| matched training parity contract | ready | training_parity_audit=training_parity_ready | v5_random and v5_fvt differ only by initialization before method claims | none |
+| matched continued-MLM comparison | ready | matched MLM checkpoint gate=ready | v5_random and v5_fvt selected checkpoints exist | wait for both 10K checkpoints, then run `bash scripts/run_v5_post_checkpoint_evals.sh status`; long evaluation still requires post-checkpoint preflight ready-to-launch |
+| after-MLM PPPL result | pending_result | after-MLM PPPL gate=pending | PPPL parsed for v5_random and v5_fvt | prefer `SKIP_MEASURED=1 WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh pppl` or `all` after checkpoints and post-checkpoint preflight are ready; canonical full rerun remains available without `SKIP_MEASURED=1` |
+| Glot500 downstream task replay | pending_result | downstream gate=pending; metric_statuses=pseudoperplexity=partial; retrieval_tatoeba=measured; retrieval_bible=measured; text_classification=measured; ner=partial; pos=partial; roundtrip_alignment=partial | available downstream rows parsed for v5_random and v5_fvt | prefer `SKIP_MEASURED=1 WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh downstream` or `all` after checkpoints and post-checkpoint preflight are ready; canonical full rerun remains available without `SKIP_MEASURED=1` |
+| roundtrip metric accounting | accepted_or_pending | roundtrip_gate=pending; metric_status=partial | Roundtrip data/runner materialized or explicit pending/blocker row retained | run v5 Roundtrip rows after matched checkpoints and post-checkpoint preflight; keep target10 0/10 caveat |
+| paper-style report package | execution_draft_ready | Report.md; 4_reporting/03_final_report/paper_draft.md; 4_reporting/03_final_report/paper_draft.html; 4_reporting/03_final_report/paper_draft.pdf; 4_reporting/03_final_report/paper_draft_ko.md; 4_reporting/03_final_report/paper_draft_ko.html; 4_reporting/03_final_report/paper_draft_ko.pdf; 4_reporting/03_final_report/paper_build_spec.md; 4_reporting/03_final_report/manuscript_completion_matrix.md; 4_reporting/03_final_report/reproducibility_appendix.md; 4_reporting/03_final_report/claim_ledger.md; 4_reporting/03_final_report/references.bib; 4_reporting/03_final_report/citation_source_map.md; 4_reporting/03_final_report/external_source_verification.md; 4_reporting/final_freeze_protocol_ko.md; 4_reporting/final_submission_handoff_ko.md; 4_reporting/final_goal_acceptance_rubric_ko.md; 4_reporting/final_result_update_checklist_ko.md; 4_reporting/submission_file_index_ko.md | final result gates and narrative audit | replace pending result language only from aggregation outputs |
+| PPT content and presenter package | execution_draft_ready | 4_reporting/02_slides/ppt_content.md; 4_reporting/02_slides/final_deck_ko.md; 4_reporting/02_slides/v5_final_deck_ko.html; 4_reporting/02_slides/v5_final_deck_ko.pptx; 4_reporting/02_slides/v5_final_deck_ko.pdf; 4_reporting/02_slides/presenter_script_ko.md; 4_reporting/02_slides/rehearsal_plan_ko.md; 4_reporting/02_slides/deck_build_spec.md; 4_reporting/02_slides/slide_completion_matrix.md; 4_reporting/02_slides/defense_qa.md; 4_reporting/02_slides/defense_qa_ko.md; 4_reporting/02_slides/novelty_defense_matrix_ko.md | final result gates and claim promotion matrix | update slides 11-14 and presenter script after parsed v5 rows |
+| submission/rehearsal handoff index | execution_draft_ready | 4_reporting/one_page_summary_ko.md; 4_reporting/submission_file_index_ko.md; 4_reporting/final_action_dashboard_ko.md; 4_reporting/final_handoff_runbook.md; 4_reporting/release_bundle/README.md; 4_reporting/release_bundle/handoff/submission_file_index_ko.md | release bundle and action dashboard synchronized | open submission_file_index_ko.md before sharing report/PPT artifacts |
+| generated final-readiness audits | ready_current | feedback=feedback_aligned_pending_results; method=method_comparison_zero_step_ready_pending_after_mlm; materiality=comparison_materiality_waiting_results; claim=claim_boundaries_ready_pending_results; decision=decision_tree_waiting_for_results; conclusion_contract=conclusion_selection_contract_ready_waiting_results; claim_freeze=claim_freeze_needs_update; final_evidence_packet=final_evidence_packet_waiting_results; execution_readiness=execution_readiness_needs_repair; parser_contract=parser_contract_ready_waiting_models; checkpoint_selection_contract=checkpoint_selection_contract_ready; folder_readmes=folder_readmes_need_update; metric_fidelity=metric_fidelity_needs_repair; metric_execution_ledger=metric_execution_ledger_current; metric_surface=metric_surface_completeness_ready; rendered_freshness=rendered_artifact_freshness_ready; aggregation_schema=aggregation_schema_ready; training_parity=training_parity_ready; mlm_progress=mlm_progress_ready_for_post_checkpoint_status; training_loss_snapshot=training_loss_snapshot_ready; live_training_health=live_training_health_ready_for_post_checkpoint_status; storage_readiness=storage_readiness_ready_current; paired_transition=paired_launcher_transition_matched_ready; post_checkpoint_execution_plan=post_checkpoint_execution_plan_ready_to_launch; post_checkpoint_command_consistency=post_checkpoint_command_consistency_ready; post_checkpoint_provenance=post_checkpoint_provenance_ready_waiting_models; post_result_update=post_result_update_manifest_ready_to_run; post_result_patch_plan=post_result_patch_plan_ready_for_execution; result_insertion_contract=result_insertion_contract_ready; refresh_sequence_sync=refresh_sequence_sync_ready; slide_rendering=slide_rendering_ready; narrative=narrative_ready_pending_results; section_slide_sync=section_slide_sync_ready; claim_trace=claim_evidence_trace_needs_repair; surface_overclaim=surface_overclaim_guard_ready; submission_smoke=final_submission_smoke_needs_repair; handoff=handoff_ready_for_post_checkpoint_eval; action_dashboard=final_action_dashboard_ready_for_post_checkpoint_eval; assembly=execution_draft_not_final; package=needs_document_cleanup; table_sync=needs_table_sync | all generated audits agree before final handoff | use `final_handoff_runbook.md` as the next-command source |
+
+Current safe conclusion:
+
+```text
+The controlled Glot500-style 102-language setup, tokenizer expansion,
+embedding-initialization audits, baseline/reference rows, and report/PPT
+scaffolding are ready. The v5_random/v5_fvt parity contract is
+ready, and FVT has a strong zero-step target MLM proxy advantage
+over random resize. Final after-MLM and downstream method claims
+remain pending matched v5_random/v5_fvt checkpoints and parsed task
+outputs.
+```
+
+Authoritative next-command source:
+
+```text
+docs/exp/v5/4_reporting/final_handoff_runbook.md
+```

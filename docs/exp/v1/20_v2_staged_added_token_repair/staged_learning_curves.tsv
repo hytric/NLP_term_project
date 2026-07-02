@@ -1,0 +1,19 @@
+run_id	variant_id	mode	seed	stage	step	train_tokens_seen	all_loss	base_loss	added_loss	added_base_ratio	status	notes
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-3	bias_only	13	source	0	0	4.975584	2.579855	7.311015	2.833886	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-3	bias_only	13	final	1574	500373	4.966200	2.553613	7.318064	2.865769	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-3	bias_only	17	source	0	0	4.971760	2.617263	7.248626	2.769544	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-3	bias_only	17	final	1576	500351	4.979851	2.588679	7.292183	2.816951	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-3	bias_only	23	source	0	0	4.929859	2.522987	7.278540	2.884890	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-3	bias_only	23	final	1576	500058	4.927188	2.495019	7.300553	2.926051	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-4	bias_only	13	source	0	0	4.975584	2.579855	7.311015	2.833886	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-4	bias_only	13	final	1565	500060	4.971090	2.575756	7.306135	2.836501	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-4	bias_only	17	source	0	0	4.971760	2.617263	7.248626	2.769544	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-4	bias_only	17	final	1566	500055	4.970252	2.613029	7.249754	2.774464	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-4	bias_only	23	source	0	0	4.929859	2.522987	7.278540	2.884890	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	bias_only_added_lr1e-4	bias_only	23	final	1543	500140	4.926753	2.518591	7.276692	2.889192	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	new_row_added_lr1e-5	new_row_only	13	source	0	0	4.975584	2.579855	7.311015	2.833886	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	new_row_added_lr1e-5	new_row_only	13	final	1577	500243	4.948337	2.555494	7.280954	2.849138	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	new_row_added_lr1e-5	new_row_only	17	source	0	0	4.971760	2.617263	7.248626	2.769544	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	new_row_added_lr1e-5	new_row_only	17	final	1560	500132	4.963229	2.583098	7.264885	2.812470	PASS	staged repair final; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	new_row_added_lr1e-5	new_row_only	23	source	0	0	4.929859	2.522987	7.278540	2.884890	PASS	source Step15 adapted checkpoint; standard eval mask
+step20_v2_staged_added_repair_20260611_190908	new_row_added_lr1e-5	new_row_only	23	final	1568	500097	4.915630	2.494066	7.278647	2.918386	PASS	staged repair final; standard eval mask

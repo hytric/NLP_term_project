@@ -1,0 +1,11 @@
+{
+  "run_id": "step05_mlm_20260610_230343",
+  "seed": 13,
+  "train_steps": 20,
+  "train_limit": 1000,
+  "dev_limit": 200,
+  "batch_size": 4,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "device": "cuda"
+}

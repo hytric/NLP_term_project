@@ -1,0 +1,8 @@
+source_path	artifact_type	contains_syriac	status_for_current_protocol	notes
+/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Syriac-NT.xml	bible_raw_xml	yes	PROXY_ONLY	Bible text source; useful for MLM/retrieval proxy, not a separate supervised downstream label set.
+/home/axt/mnt2/jongha/Glot500-py39-eval/data/processed/bible_cop_syr_grc_eng_aligned.tsv	aligned_bible	yes	PROXY_ONLY	Aligned Coptic/Syriac/Greek/English Bible verses; useful for retrieval/parallel diagnostics.
+/home/axt/mnt2/jongha/Glot500-py39-eval/data/processed/nmt_cop_syr	translation_dataset	yes	OUT_OF_CURRENT_ENCODER_ONLY_PROTOCOL	Coptic-Syriac NMT data exists but requires a translation/generation protocol, not the current encoder-only downstream claim.
+/home/axt/mnt2/jongha/Glot500-py39-eval/data/processed/nmt_pivot/syr_to_eng	translation_dataset	yes	OUT_OF_CURRENT_ENCODER_ONLY_PROTOCOL	Syriac-to-English pivot translation data exists; not a supervised encoder-only target10 task.
+/home/axt/mnt2/jongha/Glot500-py39-eval/data/processed/nmt_pivot/syr_to_grc	translation_dataset	yes	OUT_OF_CURRENT_ENCODER_ONLY_PROTOCOL	Syriac-to-Greek pivot translation data exists; prior pivot gate is diagnostic/failure evidence.
+/home/axt/mnt2/jongha/Glot500-py39-eval/data/processed/samples/syriac_audit.txt	sample_text	yes	NOT_A_TASK	Sample/audit text only.
+local_search_for_syriac_pos_ner_classification	supervised_task_search	no	NOT_FOUND	No local Syriac POS/NER/classification-style supervised dataset found under current data/download roots.

@@ -1,0 +1,7 @@
+item	status	evidence	action
+required parity artifacts	ready	launch script, train script, selection plan, manifest, and model matrix exist	none
+paired launcher contract	ready	random and FVT use the same train script, shared launch env, 10K max steps, and random-first order	none
+shared MLM train script contract	ready	train script fixes shared corpus, tokenizer, batch, accumulation, LR, save interval, max length, and workers	none
+pre-declared checkpoint selection rule	ready	selection plan requires matched 10K full-corpus checkpoints and forbids comparing failed short runs	none
+model matrix parity	ready	v5_random_status=ready; v5_fvt_status=ready; tokenizer_match=True; required_pair=True; downstream_pair=True	none
+live execution parity state	ready	manifest=matched_v5_checkpoints_ready; running_status_mentions_pair=True	none

@@ -1,0 +1,9 @@
+check	expected	actual	status	notes
+target10_train_dev_iso_verse_overlap	0	0	PASS	source-level overlap by iso+verse_id
+target10_train_final_iso_verse_overlap	0	0	PASS	source-level overlap by iso+verse_id
+target10_dev_final_iso_verse_overlap	0	0	PASS	source-level overlap by iso+verse_id
+target10_train_dev_exact_text_overlap	0	0	PASS	exact text SHA1 overlap
+target10_train_final_exact_text_overlap	0	0	PASS	exact text SHA1 overlap
+bible_control_heldout_books_in_train	0	0	PASS	ACT/MAR/JOH excluded from Bible control train rows
+mlm_train_has_low_resource	yes	yes	PASS	target10 filtered train rows=52016; excluded exact eval duplicates=108
+mlm_train_has_high_resource_web	yes	yes	PASS	glotcc train rows=800000

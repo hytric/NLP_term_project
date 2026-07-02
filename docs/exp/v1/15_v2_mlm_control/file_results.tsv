@@ -1,0 +1,14 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/score_table.tsv	8	1905	8a59fe49e5af4f1bcc8168ad090a0ac0	PASS	gate table
+seed_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/seed_summary.tsv	6	3126	ee07db384f15cf82bd968d8b56e027dd	PASS	per-family/per-seed summary
+mlm_learning_curves	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/mlm_learning_curves.tsv	18	3292	d3453be5f2e4885db1d9cd10edd565de	PASS	scheduled Mark/dev learning curves
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/checkpoint_selection.md	48	1522	18a5f004857f551846670c69722d1a5a	PASS	selected checkpoints
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/v2_no_final_access_audit.tsv	3	666	74b5c6af1a7906f5c3eed8a54b38e5d8	PASS	train/dev-only access audit
+training_configs	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/training_configs	7	4359	DIRECTORY	PASS	common and per-run configs
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/results.md	55	1799	4da9cf6ace8571877c88d6228801beb6	PASS	step result summary
+checkpoint_adapted_extended_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/adapted_extended_seed13	7	1208494226	DIRECTORY	PASS	trained v2 MLM checkpoint
+checkpoint_original_control_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/original_control_seed13	6	1118322693	DIRECTORY	PASS	trained v2 MLM checkpoint
+checkpoint_adapted_extended_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/adapted_extended_seed17	7	1208494227	DIRECTORY	PASS	trained v2 MLM checkpoint
+checkpoint_original_control_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/original_control_seed17	6	1118322692	DIRECTORY	PASS	trained v2 MLM checkpoint
+checkpoint_adapted_extended_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/adapted_extended_seed23	7	1208494227	DIRECTORY	PASS	trained v2 MLM checkpoint
+checkpoint_original_control_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/original_control_seed23	6	1118322694	DIRECTORY	PASS	trained v2 MLM checkpoint

@@ -1,0 +1,13 @@
+item	path	current_state	size_or_count	release_action	notes
+experiment_docs	docs/exp	untracked_directory	5.6M	commit_after_review	Contains ordered plans, metrics, summaries, figures, and release notes.
+experiment_scripts	scripts	untracked_directory	328K	commit_after_review	Includes GPU policy helper and retrieval/source-grounding scripts.
+data_symlink	data	symlink_to_disk1	0_in_repo	keep_ignored_do_not_commit_data	Points to /disk1/axt/jongha/Glot500-py39-eval/data.
+download_symlink	download	symlink_to_disk1	0_in_repo	keep_ignored_do_not_commit_data	Points to /disk1/axt/jongha/Glot500-py39-eval/download.
+mlm_stage_symlink	docs/exp/2026-06-03_05_mlm_adaptation	symlink_to_disk1	local_large_artifacts	keep_ignored	Symlink target stores MLM pilot artifacts outside the repo tree.
+nmt_stage_symlink	docs/exp/2026-06-03_06_nmt_baselines	symlink_to_disk1	local_large_artifacts	keep_ignored	Symlink target stores NMT baseline artifacts outside the repo tree.
+root_archive	main.zip	ignored_local_file	3.1M	remove_before_release_or_keep_out_of_history	Added root archive pattern to .gitignore; do not publish unless intentionally needed.
+tracked_modeling_changes	modeling/run.py;modeling/train_ablation.py;modeling/train_base.py	modified_tracked	3_files	review_before_commit	Pre-existing or task-adjacent changes must be audited before public release.
+tracked_download_change	evaluation/download_data/download_data.sh	modified_tracked	1_file	review_before_commit	Check whether this belongs in release history.
+py39_setup_files	evaluation/requirements_py39.local-before-pull.txt;evaluation/setup_glot500_eval_py39.sh	untracked_files	2_files	commit_if_reproducibility_files	Useful if they document the Python 3.9 environment; review before commit.
+model_checkpoints	*.pt;*.bin;*.safetensors	ignored_patterns	unknown	keep_ignored	Model weights must stay local unless explicitly intended for release.
+python_caches	__pycache__;*.pyc	ignored_patterns	unknown	remove_after_validation	Do not include cache directories in release.

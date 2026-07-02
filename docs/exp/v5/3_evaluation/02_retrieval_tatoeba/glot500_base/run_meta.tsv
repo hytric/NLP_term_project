@@ -1,0 +1,9 @@
+field	value
+metric	retrieval_tatoeba
+model_key	glot500_base
+model_path	cis-lmu/glot500-base
+tokenizer_path	cis-lmu/glot500-base
+eval_data_root	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download
+eval_output_root	/home/axt/mnt2/jongha/v5_glot50010/evaluation
+gpu	1
+model_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/model_matrix.tsv

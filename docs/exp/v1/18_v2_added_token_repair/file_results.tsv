@@ -1,0 +1,11 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/18_v2_added_token_repair/score_table.tsv	5	1195	7f6281130c9fedec700ce03b36896eac	PASS	repair gate table
+repair_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/18_v2_added_token_repair/repair_summary.tsv	3	1893	4f44fc89649b4272cf9e516334a56c38	PASS	per-seed repair summary
+repair_category_loss	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/18_v2_added_token_repair/repair_category_loss.tsv	18	3686	874abedd4118ca226560f56600a7a015	PASS	zero/final category losses
+repair_learning_curves	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/18_v2_added_token_repair/repair_learning_curves.tsv	6	855	c0b9499b5781ea40a07d5424df237f01	PASS	zero/final category curves
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/18_v2_added_token_repair/checkpoint_selection.md	21	617	c18b3254b69d782c3ea8b04e2289ddc9	PASS	selected repair checkpoint
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/18_v2_added_token_repair/v2_no_final_access_audit.tsv	4	945	7344186772559843e5d52b1eeb831ccf	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/18_v2_added_token_repair/results.md	42	1381	5eec183489855d827b06bcfbf7b8bbac	PASS	step result summary
+checkpoint_added_weighted_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/18_v2_added_token_repair/added_weighted_seed13	7	1208494060	DIRECTORY	PASS	repaired adapted checkpoint
+checkpoint_added_weighted_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/18_v2_added_token_repair/added_weighted_seed17	7	1208494060	DIRECTORY	PASS	repaired adapted checkpoint
+checkpoint_added_weighted_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/18_v2_added_token_repair/added_weighted_seed23	7	1208494060	DIRECTORY	PASS	repaired adapted checkpoint

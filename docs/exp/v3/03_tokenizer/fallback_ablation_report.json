@@ -1,0 +1,53 @@
+{
+  "base_model": "xlm-roberta-base",
+  "base_vocab_size": 250002,
+  "train_text": "/home/axt/mnt2/jongha/third_try/text/stage03_targetheavy_20260613_r2/tokenizer_train_balanced.txt",
+  "dev_manifest": "docs/exp/second_try/12_v2_split_protocol/v2_dev_manifest.tsv",
+  "vocab_size": 48000,
+  "models": {
+    "char_coverage_1_0": "/home/axt/mnt2/jongha/third_try/tokenizers/stage03_targetheavy_20260613_r3/spm_48000/third_try_mixture_unigram_48000.model",
+    "byte_fallback_0_9995": "/home/axt/mnt2/jongha/third_try/tokenizers/stage03_fallback_20260613_r1/spm/byte_fallback_0_9995/third_try_byte_fallback_48000.model"
+  },
+  "selection_counts": {
+    "char_coverage_1_0": {
+      "aux_pieces": 48000,
+      "normal_pieces": 47997,
+      "byte_pieces": 0,
+      "raw_overlap": 15526,
+      "surface_overlap": 12450,
+      "skipped_non_normal": 3,
+      "skipped_empty_or_short": 6239,
+      "skipped_whitespace": 0,
+      "selected": 30849
+    },
+    "byte_fallback_0_9995": {
+      "aux_pieces": 48000,
+      "normal_pieces": 47741,
+      "byte_pieces": 256,
+      "raw_overlap": 12948,
+      "surface_overlap": 9729,
+      "skipped_non_normal": 259,
+      "skipped_empty_or_short": 3134,
+      "skipped_whitespace": 0,
+      "selected": 33297
+    }
+  },
+  "append_audits": {
+    "char_coverage_1_0": {
+      "actual_added": 30849,
+      "extended_vocab_size": 280851,
+      "changed_existing_token_ids": 0,
+      "changed_special_token_ids": 0,
+      "appended_token_id_violations": 0
+    },
+    "byte_fallback_0_9995": {
+      "actual_added": 33297,
+      "extended_vocab_size": 283299,
+      "changed_existing_token_ids": 0,
+      "changed_special_token_ids": 0,
+      "appended_token_id_violations": 0
+    }
+  },
+  "mean_aux_byte_minus_char_tpw_delta_pct": -0.733735,
+  "mean_append_byte_minus_char_tpw_delta_pct": -0.599816
+}

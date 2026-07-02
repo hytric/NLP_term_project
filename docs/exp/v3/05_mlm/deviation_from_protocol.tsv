@@ -1,0 +1,15 @@
+item	glot500_or_scope_value	stage05_value	status	notes
+base_model	XLM-R-base	xlm-roberta-base	PASS	no deviation
+vocab_operation	append-only id-preserving	append-only id-preserving	PASS	no deviation
+objective	MLM	MLM	PASS	no deviation
+training_mode	full model	full model	PASS	no LoRA/adapters in main config
+sequence_length	512	512	PASS	no deviation for pilot
+learning_rate	5e-5	5e-5 pilot; 1e-5 replay-safe retry	DEVIATION_DOCUMENTED	replay-safe retry lowered LR after high-resource control failure
+sampling	alpha 0.3 language-script sampling or explicit cap	pre-materialized high-resource+target10 mixture file	DEVIATION_DOCUMENTED	mixture was materialized in Stage 01; config uses stream text rather than online sampler
+effective_batch	384 samples per step in Glot500	32 sequences per optimizer step in pilot and retry	DEVIATION_DOCUMENTED	1-GPU compute-bounded runs: per_device_train_batch_size=4, gradient_accumulation_steps=8
+step_budget	full continued pretraining	200-step pilot plus 1000-step replay-safe retry	DEVIATION_DOCUMENTED	retry is stronger than the pilot but still compute-bounded versus full Glot500-scale training
+seed_count	>=3 for final model-dependent comparison	3 seeds for 200-step pilot and 3 seeds for replay-safe retry	PASS_COMPUTE_BOUNDED	seed requirement is met for the current candidate, but full-budget claim remains blocked
+init_method	random baseline required; multiple init methods compared	fvt trained through pilot and replay-safe retry; random/mean/align/focus available at zero-step	DEVIATION_DOCUMENTED	fvt selected by Stage 04 zero-step dev loss; other init methods remain ablation candidates
+gpu_policy	GPU 3 only	CUDA_VISIBLE_DEVICES=3	PASS	user constraint honored
+final_test_selection	never use final test for selection	dev only	PASS	config uses target10_dev validation file
+compatibility_shim	not part of scientific protocol	modeling/run_third_try_stage05.py	PASS_ENVIRONMENT_FIX	local accelerate/huggingface_hub mismatch workaround

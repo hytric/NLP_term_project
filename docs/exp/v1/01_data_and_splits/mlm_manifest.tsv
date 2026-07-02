@@ -1,0 +1,23 @@
+iso	language	phase	source_split	rows	test_rows_included	status
+acu	Achuar-Shiwiar	mlm_train	train	6123	0	PASS
+acu	Achuar-Shiwiar	mlm_dev	dev	659	0	PASS
+ake	Akawaio	mlm_train	train	6182	0	PASS
+ake	Akawaio	mlm_dev	dev	673	0	PASS
+bsn	Barasana-Eduria	mlm_train	train	6062	0	PASS
+bsn	Barasana-Eduria	mlm_dev	dev	629	0	PASS
+chr	Cherokee	mlm_train	train	6400	0	PASS
+chr	Cherokee	mlm_dev	dev	678	0	PASS
+cop	Coptic	mlm_train	train	6400	0	PASS
+cop	Coptic	mlm_dev	dev	678	0	PASS
+kbh	Camsa	mlm_train	train	5363	0	PASS
+kbh	Camsa	mlm_dev	dev	501	0	PASS
+nhg	Nahuatl (Tetelcingo)	mlm_train	train	6279	0	PASS
+nhg	Nahuatl (Tetelcingo)	mlm_dev	dev	673	0	PASS
+oji	Ojibwa	mlm_train	train	6391	0	PASS
+oji	Ojibwa	mlm_dev	dev	674	0	PASS
+syr	Syriac	mlm_train	train	6397	0	PASS
+syr	Syriac	mlm_dev	dev	678	0	PASS
+usp	Uspanteco	mlm_train	train	6334	0	PASS
+usp	Uspanteco	mlm_dev	dev	678	0	PASS
+ALL10	ALL10	mlm_train	train	61931	0	PASS
+ALL10	ALL10	mlm_dev	dev	6521	0	PASS

@@ -1,0 +1,3 @@
+tokenizer	model_name	language	sentences	avg_chars	avg_words	avg_tokens	tokens_per_word	tokens_per_char	single_char_token_pct	target_single_char_token_pct	unk_token_pct
+glot500_target10	data/processed/target10/glot500_target10_spm16k	coptic	500	71.742	12.846	82.966	6.459	1.156	86.361	75.334	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	syriac	500	56.572	13.836	22.146	1.601	0.391	18.414	18.414	0.000

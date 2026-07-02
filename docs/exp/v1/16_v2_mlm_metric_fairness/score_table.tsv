@@ -1,0 +1,6 @@
+run_id	gate_id	criterion	observed	required	status	return_to	notes
+step16_v2_mlm_metric_fairness_20260611_172337	G01_required_checkpoints	all six Step 15 checkpoints evaluated	6/6	6/6	PASS	15_v2_mlm_control	3 seeds x 2 model families
+step16_v2_mlm_metric_fairness_20260611_172337	G02_no_final_access	ACT final data not read	NO_ACT_FINAL_ACCESS	NO_ACT_FINAL_ACCESS	PASS	12_v2_split_protocol	Step15 summary and Mark/dev text only
+step16_v2_mlm_metric_fairness_20260611_172337	G03_word_normalized_competitive	adapted estimated NLL per word is within margin	ratio=1.438660; adapted_mean=9.094015; original_mean=6.321168	ratio<=1.100000	FAIL	15_v2_mlm_control	normalizes by non-special token count per word
+step16_v2_mlm_metric_fairness_20260611_172337	G04_char_normalized_competitive	adapted estimated NLL per character is within margin	ratio=1.438660; adapted_mean=1.349398; original_mean=0.937954	ratio<=1.100000	FAIL	15_v2_mlm_control	normalizes by non-special token count per character
+step16_v2_mlm_metric_fairness_20260611_172337	G05_raw_loss_context	raw masked-token loss ratio recorded as diagnostic context	ratio=1.973645; adapted_mean=4.940636; original_mean=2.503305	recorded	PASS	NOT_APPLICABLE	raw token losses are not directly comparable across tokenizer vocabularies

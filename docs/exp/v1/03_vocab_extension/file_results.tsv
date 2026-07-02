@@ -1,0 +1,11 @@
+file_role	path	location	rows_or_files	bytes	md5	status	notes
+extended_tokenization_metrics	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/03_vocab_extension/extended_tokenization_metrics.tsv	docs	30	8199	0a4f82beb71d3b6684c4208be23023d7	PASS	per-vocab per-language metrics
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/03_vocab_extension/score_table.tsv	docs	3	953	6f7f6109a5991b0ecb63dcabd121db33	PASS	gate table
+vocab_merge_report	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/03_vocab_extension/vocab_merge_report.tsv	docs	3	1787	decd9ea63ea0be3fc10ad541b8758894	PASS	merge and special-id evidence
+tokenization_examples	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/03_vocab_extension/tokenization_examples.md	docs	363	14561	cc0f798bbdd66c2124ebb510b0b5b9bb	PASS	manual before/after examples
+spm_8000	/home/axt/mnt2/jongha/second_try/artifacts/03_vocab_extension/spm_8000	large_artifact	2	536948	DIRECTORY	PASS	trained SentencePiece model and vocab
+tokenizer_8000	/home/axt/mnt2/jongha/second_try/artifacts/03_vocab_extension/tokenizers/xlmr_target10_added_8000	large_artifact	4	5214642	DIRECTORY	PASS	saved extended tokenizer
+spm_16000	/home/axt/mnt2/jongha/second_try/artifacts/03_vocab_extension/spm_16000	large_artifact	2	881983	DIRECTORY	PASS	trained SentencePiece model and vocab
+tokenizer_16000	/home/axt/mnt2/jongha/second_try/artifacts/03_vocab_extension/tokenizers/xlmr_target10_added_16000	large_artifact	4	5397716	DIRECTORY	PASS	saved extended tokenizer
+spm_32000	/home/axt/mnt2/jongha/second_try/artifacts/03_vocab_extension/spm_32000	large_artifact	2	1617841	DIRECTORY	PASS	trained SentencePiece model and vocab
+tokenizer_32000	/home/axt/mnt2/jongha/second_try/artifacts/03_vocab_extension/tokenizers/xlmr_target10_added_32000	large_artifact	4	5789169	DIRECTORY	PASS	saved extended tokenizer

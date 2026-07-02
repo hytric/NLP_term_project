@@ -1,0 +1,9 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/00_scope/language_inventory.tsv	scope_tsv	10 target languages	NOT_COMPUTED	PASS	target10 low-resource main inventory
+docs/exp/third_try/00_scope/high_resource_inventory.tsv	scope_tsv	high-resource Bible candidates	NOT_COMPUTED	PASS	domain-matched replay/control inventory
+docs/exp/third_try/00_scope/head_tail_definition.tsv	scope_tsv	4 groups	NOT_COMPUTED	PASS	target10 tail and high-resource head definitions
+docs/exp/third_try/00_scope/mixture_contract.tsv	scope_tsv	8 components	NOT_COMPUTED	PASS	main mixture contract
+docs/exp/third_try/00_scope/task_availability.tsv	scope_tsv	10 target languages	NOT_COMPUTED	PASS	local downstream/proxy availability
+docs/exp/third_try/00_scope/scope_decisions.tsv	scope_tsv	10 decisions	NOT_COMPUTED	PASS	locked scope decisions
+docs/exp/third_try/00_scope/current_dataset_inventory.md	scope_doc	target10 and dataset inventory	NOT_COMPUTED	PASS	current local inventory
+/home/axt/mnt2/jongha/third_try/high_resource/glotcc/high_resource_glotcc_manifest.tsv	large_manifest	4 GlotCC configs	NOT_COMPUTED	PASS	true high-resource web sample manifest

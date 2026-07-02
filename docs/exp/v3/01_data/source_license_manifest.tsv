@@ -1,0 +1,4 @@
+source_id	source	source_path	license_status	status
+target10_v2	local Bible target10 split from second_try	docs/exp/second_try/12_v2_split_protocol/v2_split_manifest.tsv	SOURCE_RECORDED_LICENSE_NOT_VERIFIED	RECORDED
+glotcc_v1	cis-lmu/GlotCC-V1	/home/axt/mnt2/jongha/third_try/high_resource/glotcc	SOURCE_RECORDED_LICENSE_NOT_VERIFIED	RECORDED
+bible_xml_control	local Bible XML corpus	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles	SOURCE_RECORDED_LICENSE_NOT_VERIFIED	RECORDED

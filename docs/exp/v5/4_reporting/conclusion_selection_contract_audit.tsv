@@ -1,0 +1,8 @@
+item	status	evidence	action
+required conclusion artifacts	ready	all conclusion-selection artifacts exist	none
+decision_tree_items	ready	items=6; verdict=decision_tree_waiting_for_results	none
+interpretation_outcome_blocks	ready	English/Korean outcome blocks and metric replacement checklist are present	none
+korean_outcome_matrix	ready	Korean post-checkpoint outcome matrix covers final outcome families, slide replacement, and freeze check	none
+result_slot_linkage	ready	slot_keys=9	none
+active_conclusion_state	waiting_results	status=execution_draft; decision=current_safe_zero_step_only	keep report/PPT conclusion conditional
+report_slide_conclusion_links	ready	deck, presenter script, slide checklist, Korean paper draft, paper build spec, and crosswalk point to conclusion gates	none

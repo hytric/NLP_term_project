@@ -1,0 +1,5 @@
+item	status	evidence	action
+model_matrix_checkpoint_fallback	ready	model matrix prefers root final model and falls back to complete checkpoint-10000	none
+selected_manifest_10k_gate	ready	selected checkpoint manifest requires model file plus global_step=10000 for main v5 claim eligibility	none
+selection_plan_contract	ready	selection plan documents matched 10K rule, checkpoint-10000 fallback, and failed-run downgrade	none
+main_v5_checkpoint_pair	ready	v5_random and v5_fvt have selection_status=ready_10k and can be evaluated as matched checkpoints	none

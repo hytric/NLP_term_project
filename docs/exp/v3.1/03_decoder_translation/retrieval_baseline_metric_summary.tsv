@@ -1,0 +1,9 @@
+direction	model_group	split	runs	seeds	chrf_mean	chrf_std	bleu_mean	top1_similarity_mean	distinct_pred_items_mean	script_valid_mean
+cop->syr	third_try_fvt	dev	3	13,17,23	9.012326	0.076917	0.03423	0.997459	4.666667	1.0
+cop->syr	third_try_fvt	final_test	3	13,17,23	8.375091	0.053058	0.034413	0.99722	4.666667	1.0
+cop->syr	xlmr_base	dev	1	baseline	4.094026	0.0	0.015931	0.984122	2.0	1.0
+cop->syr	xlmr_base	final_test	1	baseline	3.700732	0.0	0.006059	0.983901	2.0	1.0
+syr->cop	third_try_fvt	dev	3	13,17,23	11.632042	0.386494	0.081738	0.991566	70.333333	1.0
+syr->cop	third_try_fvt	final_test	3	13,17,23	12.25183	0.265479	0.038968	0.990903	73.666667	1.0
+syr->cop	xlmr_base	dev	1	baseline	18.894735	0.0	0.83298	0.973785	18.0	1.0
+syr->cop	xlmr_base	final_test	1	baseline	16.670608	0.0	0.115435	0.97297	16.0	1.0

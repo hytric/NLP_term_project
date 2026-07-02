@@ -1,0 +1,11 @@
+language_id	language	script	rows	masked_tokens	mean_mlm_loss	mlm_perplexity	truncated_rows	model	device	mlm_probability	max_length	seed	status
+acu	Achuar-Shiwiar	Latin	953	9197	6.120242	454.97484	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+ake	Akawaio	Latin	1003	13071	3.956841	52.291876	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+bsn	Barasana-Eduria	Latin	959	14258	4.62507	102.009885	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+chr	Cherokee	Cherokee	1007	4762	0.322251	1.380231	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+cop	Coptic	Coptic	1003	4980	0.174034	1.190096	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+kbh	Camsa	Latin	852	10789	5.787822	326.301508	4	xlm-roberta-base	cuda	0.15	512	13	PASS
+nhg	Nahuatl Tetelcingo	Latin	1006	10223	5.797338	329.421339	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+oji	Ojibwa	Aboriginal Syllabics	1007	5799	0.157699	1.170814	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+syr	Syriac	Syriac	1007	11442	2.168048	8.741207	0	xlm-roberta-base	cuda	0.15	512	13	PASS
+usp	Uspanteco	Latin	1007	11420	5.618641	275.514631	0	xlm-roberta-base	cuda	0.15	512	13	PASS

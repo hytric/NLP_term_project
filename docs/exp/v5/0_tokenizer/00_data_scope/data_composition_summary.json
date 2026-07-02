@@ -1,0 +1,16 @@
+{
+  "bible_languages": 74,
+  "ner_languages": 78,
+  "pos_languages": 58,
+  "pppl_languages": 102,
+  "roundtrip_languages": 74,
+  "seen92": 92,
+  "target10": 10,
+  "tatoeba_languages": 63,
+  "taxi_languages": 1,
+  "total_languages": 102,
+  "total_mlm_train_samples": 92452251,
+  "total_source_sentences_new_length": 1025998855,
+  "xlm_r_training_language_no": 10,
+  "xlm_r_training_language_yes": 92
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "step23_v2_vocab_objective_probe_20260611_203226",
+  "model_family": "adapted_extended",
+  "seed": 13,
+  "source_checkpoint": "/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/init/xlmr_v2_16000_fvt",
+  "tokenizer_source": "/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/init/xlmr_v2_16000_fvt",
+  "train_steps": 1600,
+  "target_train_tokens": 500000,
+  "token_budget_tolerance": 1.02,
+  "batch_size": 8,
+  "eval_batch_size": 8,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "eval_every": 800,
+  "train_limit": 0,
+  "dev_limit": 0,
+  "selection_data": "MAR_dev_only",
+  "final_access": "NO_ACT_FINAL_ACCESS"
+}

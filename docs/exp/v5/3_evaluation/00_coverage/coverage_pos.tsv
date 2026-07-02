@@ -1,0 +1,103 @@
+task	language_script	language	group	in_task_list	upstream_flag	local_data_exists	has_data	reason	data_path
+pos	lao_Laoo	lao	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	mya_Mymr	mya	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	ara_Arab	ara	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	mar_Deva	mar	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	hau_Latn	hau	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	uzb_Latn	uzb	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	slv_Latn	slv	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	fin_Latn	fin	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	hun_Latn	hun	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	cmn_Hani	cmn	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	est_Latn	est	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	bre_Latn	bre	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	hrv_Latn	hrv	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	jav_Latn	jav	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	ron_Latn	ron	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	ell_Grek	ell	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	nor_Latn	nor	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	slk_Latn	slk	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	vie_Latn	vie	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	amh_Ethi	amh	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	epo_Latn	epo	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	bel_Cyrl	bel	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	xho_Latn	xho	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	hin_Deva	hin	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	tam_Taml	tam	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	mon_Cyrl	mon	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	ces_Latn	ces	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	san_Deva	san	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	hye_Armn	hye	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	pus_Arab	pus	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	som_Arab	som	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	kan_Knda	kan	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	isl_Latn	isl	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	ori_Orya	ori	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	afr_Latn	afr	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	deu_Latn	deu	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	urd_Arab	urd	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	bul_Cyrl	bul	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	tgl_Latn	tgl	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	eus_Latn	eus	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	pol_Latn	pol	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	lat_Latn	lat	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	tur_Latn	tur	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	fra_Latn	fra	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	cat_Latn	cat	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	uig_Arab	uig	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	arb_Arab	arb	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	sqi_Latn	sqi	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	sin_Sinh	sin	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	msa_Latn	msa	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	swh_Latn	swh	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	kor_Hang	kor	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	ukr_Cyrl	ukr	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	kir_Cyrl	kir	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	yid_Hebr	yid	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	heb_Hebr	heb	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	nld_Latn	nld	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	fry_Latn	fry	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	azb_Arab	azb	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	glg_Latn	glg	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	fas_Arab	fas	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	eng_Latn	eng	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	mkd_Cyrl	mkd	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	ind_Latn	ind	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	por_Latn	por	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	spa_Latn	spa	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	dan_Latn	dan	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	khm_Khmr	khm	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	gla_Latn	gla	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	uig_Latn	uig	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	kat_Geor	kat	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	mlg_Latn	mlg	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	snd_Arab	snd	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	ita_Latn	ita	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	hau_Arab	hau	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	cym_Latn	cym	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	srp_Latn	srp	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	zho_Hani	zho	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	tha_Thai	tha	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	swe_Latn	swe	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	pan_Guru	pan	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	prs_Arab	prs	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	pes_Arab	pes	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	san_Latn	san	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	kaz_Cyrl	kaz	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	kur_Latn	kur	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	mal_Mlym	mal	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	nep_Deva	nep	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	gle_Latn	gle	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	swa_Latn	swa	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	som_Latn	som	head	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	lit_Latn	lit	head	yes	1	yes	yes	available	evaluation/download_data/download/pos
+pos	fur_Latn	fur	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	krc_Cyrl	krc	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	acm_Arab	acm	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	dzo_Tibt	dzo	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	sat_Olck	sat	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	mad_Latn	mad	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	bam_Latn	bam	v5_target	yes	0	yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	kjb_Latn	kjb	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	quw_Latn	quw	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos
+pos	rap_Latn	rap	v5_target	no		yes	no	not_in_task_or_flag_zero	evaluation/download_data/download/pos

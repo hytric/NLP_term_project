@@ -1,0 +1,13 @@
+{
+  "event": "done",
+  "output_prefix": "pseudoperplexity_gpu3",
+  "models": [
+    "random_mlm200",
+    "mean_mlm200",
+    "align_mlm200"
+  ],
+  "max_examples_per_lang": 50,
+  "max_length": 128,
+  "mask_batch_size": 64,
+  "elapsed_sec": 183.621
+}

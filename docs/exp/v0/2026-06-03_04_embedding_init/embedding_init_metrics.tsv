@@ -1,0 +1,4 @@
+mode	base_vocab_size	merged_vocab_size	new_tokens	initialized_new_tokens	fallback_global_mean	avg_subtokens_per_new_token
+random	401145	415139	13994	13994	0	
+mean	401145	415139	13994	13994	0	3.791196226954409
+

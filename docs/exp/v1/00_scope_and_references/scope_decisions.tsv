@@ -1,0 +1,17 @@
+item	decision	evidence_file
+base_model	xlm-roberta-base	../questions.md
+architecture	encoder-only downstream plus separate translation benchmark	../execution_rules.md
+target_languages	confirmed target10 maximum continuity	../plan.md
+tokenizer_method	SentencePiece unigram	../reference_summary.md
+vocab_sizes	8k;16k;32k	../questions.md
+merge_style	preserve original XLM-R ids and append new pieces	../step_index.md
+embedding_init	required random;mean;fvt;align;focus	../questions.md
+downstream_tasks	book/genre classification;verse retrieval/ranking;parallel verse matching	../downstream_tasks.md
+diagnostic_task	language identification only as sanity check	../downstream_tasks.md
+split_policy	default book split: train all except Mark/John; dev Mark; test John	../questions.md
+mlm_data	target10 Bible train/dev only	../questions.md
+byte_fallback	off by default	../questions.md
+gpu_policy	GPU4 primary requested; current fallback GPU3	../execution_rules.md
+large_artifact_root	/home/axt/mnt2/jongha/second_try	../execution_rules.md
+branch_rule	create branch docs/artifacts if existing failure guideline is insufficient	../execution_rules.md
+translation_target	target translation score at least 80 percent of high-resource reference	../execution_rules.md

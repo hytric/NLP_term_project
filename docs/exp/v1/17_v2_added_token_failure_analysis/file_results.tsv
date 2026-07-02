@@ -1,0 +1,7 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/17_v2_added_token_failure_analysis/score_table.tsv	4	1051	3a387334f8c150f154393a6aa172199f	PASS	diagnostic gate table
+token_category_loss	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/17_v2_added_token_failure_analysis/token_category_loss.tsv	18	4443	1139d65b2436445f7f17747307d94552	PASS	base vs added token loss
+language_token_breakdown	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/17_v2_added_token_failure_analysis/language_token_breakdown.tsv	60	11174	80ff1468436d32e84b5c441d46950943	PASS	per-language token/loss breakdown
+new_token_loss_samples	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/17_v2_added_token_failure_analysis/new_token_loss_samples.tsv	65	7646	4c968644c628bababd76cb782acdb886	PASS	high-loss/frequent added token samples
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/17_v2_added_token_failure_analysis/v2_no_final_access_audit.tsv	2	501	26f6aab0855140d0c8ca79e4062389a8	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/17_v2_added_token_failure_analysis/results.md	44	1478	1246d0e93eae011dec2064b866693ce7	PASS	step result summary

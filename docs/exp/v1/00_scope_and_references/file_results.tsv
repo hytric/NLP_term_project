@@ -1,0 +1,6 @@
+file_role	path	location	rows_or_lines	bytes	md5	status	notes
+plan	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/00_scope_and_references/plan.md	docs	47	1392	7315595bc2881659a1a7ebffd4b38fe8	PASS	step instructions and exit criteria
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/00_scope_and_references/results.md	docs	49	1670	e3e749e88831e2ae00a7536095a08640	PASS	scope result summary
+reference_trace	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/00_scope_and_references/reference_trace.md	docs	28	1726	f59233dcb71af85cdb81c83b6f77caa9	PASS	reference mapping
+scope_decisions	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/00_scope_and_references/scope_decisions.tsv	docs	16	1253	306e06b4a9e332b402888f0c70b2ccc0	PASS	confirmed decisions
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/00_scope_and_references/score_table.tsv	docs	12	2109	7edeca1a9d86a5e03d77bd74b7efe562	PASS	gate table; no TBD values

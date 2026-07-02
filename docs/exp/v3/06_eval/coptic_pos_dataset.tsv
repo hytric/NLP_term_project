@@ -1,0 +1,4 @@
+split	input_path	output_path	sentences	tokens	status
+train	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/UD_Coptic-Scriptorium/cop_scriptorium-ud-train.conllu	/home/axt/mnt2/jongha/third_try/downstream/coptic_ud_pos/cop/train	1467	37639	PASS
+dev	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/UD_Coptic-Scriptorium/cop_scriptorium-ud-dev.conllu	/home/axt/mnt2/jongha/third_try/downstream/coptic_ud_pos/cop/dev	380	10963	PASS
+test	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/UD_Coptic-Scriptorium/cop_scriptorium-ud-test.conllu	/home/axt/mnt2/jongha/third_try/downstream/coptic_ud_pos/cop/test	405	10372	PASS

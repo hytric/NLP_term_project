@@ -1,0 +1,28 @@
+{
+  "run_id": "step15_v2_mlm_control_20260611_160304",
+  "families": [
+    "adapted_extended",
+    "original_control"
+  ],
+  "seeds": [
+    13,
+    17,
+    23
+  ],
+  "selected_init_method": "fvt",
+  "selected_init_checkpoint": "/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_fvt",
+  "train_text": "/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_tokenizer_mlm_train.txt",
+  "dev_text": "/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_mlm_dev_mark.txt",
+  "train_rows_loaded": 52124,
+  "dev_rows_loaded": 6521,
+  "train_steps": 300,
+  "batch_size": 8,
+  "eval_batch_size": 8,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "eval_every": 150,
+  "competitive_margin": 1.1,
+  "device": "cuda",
+  "selection_data": "MAR_dev_only",
+  "final_access": "NO_ACT_FINAL_ACCESS"
+}

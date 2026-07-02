@@ -1,0 +1,6 @@
+token	base_id	target_id	moved
+</s>	2	2	False
+<mask>	250001	368686	True
+<pad>	1	1	False
+<s>	0	0	False
+<unk>	3	3	False

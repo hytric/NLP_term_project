@@ -1,0 +1,8 @@
+metric	expected	actual	status
+missing tokenization metrics	0	0	PASS
+target10 baseline summary present	yes	yes	PASS
+XLM-R-large rows	0	0	PASS
+deterministic MLM eval baseline present	yes	yes	PASS
+GPU constraint honored	CUDA_VISIBLE_DEVICES=3	cuda_visible_single_device	PASS
+available task count recorded	yes	tokenization+mlm_eval_done; downstream_pending	IN_PROGRESS
+unavailable task reason recorded	yes	downstream_task_selection_pending; exact_PPPL_deferred_compute	IN_PROGRESS

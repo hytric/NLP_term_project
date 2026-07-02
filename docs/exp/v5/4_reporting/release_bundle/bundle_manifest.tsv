@@ -1,0 +1,143 @@
+bundle_path	source_path	role	status	bytes
+reports/paper_draft.pdf	4_reporting/03_final_report/paper_draft.pdf	English paper-style report PDF	copied	127722
+reports/paper_draft_ko.pdf	4_reporting/03_final_report/paper_draft_ko.pdf	Korean paper-style report PDF	copied	210539
+reports/paper_draft.html	4_reporting/03_final_report/paper_draft.html	English browser-readable report	copied	42091
+reports/paper_draft_ko.html	4_reporting/03_final_report/paper_draft_ko.html	Korean browser-readable report	copied	30967
+reports/paper_draft.md	4_reporting/03_final_report/paper_draft.md	English report source	copied	31375
+reports/paper_draft_ko.md	4_reporting/03_final_report/paper_draft_ko.md	Korean report source	copied	23944
+reports/contribution_summary.md	4_reporting/03_final_report/contribution_summary.md	Current contribution and novelty claim summary	copied	5087
+reports/result_interpretation_blocks.md	4_reporting/03_final_report/result_interpretation_blocks.md	Outcome-conditioned final abstract/conclusion blocks	copied	20266
+reports/manuscript_completion_matrix.md	4_reporting/03_final_report/manuscript_completion_matrix.md	Section-level manuscript completion and claim gates	copied	7460
+reports/paper_build_spec.md	4_reporting/03_final_report/paper_build_spec.md	Paper assembly and rebuild specification	copied	11019
+reports/references.bib	4_reporting/03_final_report/references.bib	BibTeX references for report/PPT citations	copied	1845
+reports/citation_source_map.md	4_reporting/03_final_report/citation_source_map.md	Paper claim-to-citation boundary map	copied	3133
+reports/external_source_verification.md	4_reporting/03_final_report/external_source_verification.md	Primary-source verification for bibliography and method-lineage wording	copied	4216
+slides/v5_final_deck_ko.pptx	4_reporting/02_slides/v5_final_deck_ko.pptx	PowerPoint deck	copied	30236
+slides/v5_final_deck_ko.pdf	4_reporting/02_slides/v5_final_deck_ko.pdf	PDF deck export	copied	80525
+slides/v5_final_deck_ko.html	4_reporting/02_slides/v5_final_deck_ko.html	Browser rehearsal deck	copied	16259
+slides/final_deck_ko.md	4_reporting/02_slides/final_deck_ko.md	Korean slide source	copied	9241
+slides/presenter_script_ko.md	4_reporting/02_slides/presenter_script_ko.md	Korean presenter script	copied	18148
+slides/rehearsal_plan_ko.md	4_reporting/02_slides/rehearsal_plan_ko.md	Korean rehearsal timing plan	copied	10075
+slides/slide_claim_checklist.md	4_reporting/02_slides/slide_claim_checklist.md	Slide claim lock checklist	copied	3310
+slides/slide_completion_matrix.md	4_reporting/02_slides/slide_completion_matrix.md	Slide-level completion and finalization gates	copied	5878
+slides/deck_build_spec.md	4_reporting/02_slides/deck_build_spec.md	Deck assembly and rebuild specification	copied	8801
+slides/slide_asset_manifest.md	4_reporting/02_slides/slide_asset_manifest.md	Slide-to-asset/source manifest	copied	7318
+slides/slide_asset_manifest.tsv	4_reporting/02_slides/slide_asset_manifest.tsv	Machine-readable slide asset manifest	copied	6465
+slides/slide_citation_map.md	4_reporting/02_slides/slide_citation_map.md	Slide-to-citation and slide-to-local-evidence map	copied	3993
+slides/defense_qa_ko.md	4_reporting/02_slides/defense_qa_ko.md	Korean presentation Q&A card	copied	13909
+slides/defense_qa.md	4_reporting/02_slides/defense_qa.md	English presentation Q&A	copied	11637
+slides/novelty_defense_matrix_ko.md	4_reporting/02_slides/novelty_defense_matrix_ko.md	Korean novelty/reproduction Q&A defense matrix	copied	8651
+handoff/one_page_summary_ko.md	4_reporting/one_page_summary_ko.md	Korean one-page summary	copied	9170
+handoff/presentation_readiness_checklist_ko.md	4_reporting/presentation_readiness_checklist_ko.md	Korean five-minute pre-talk readiness checklist	copied	4904
+handoff/submission_file_index_ko.md	4_reporting/submission_file_index_ko.md	Korean submission and presentation file index	copied	5632
+handoff/reviewer_response_crosswalk_ko.md	4_reporting/reviewer_response_crosswalk_ko.md	Korean reviewer/presentation question-to-evidence crosswalk	copied	7985
+handoff/final_submission_handoff_ko.md	4_reporting/final_submission_handoff_ko.md	Final assembly handoff	copied	11043
+handoff/objective_requirement_trace_ko.md	4_reporting/objective_requirement_trace_ko.md	Korean active-goal requirement readiness trace	copied	9528
+handoff/objective_requirement_trace_ko.tsv	4_reporting/objective_requirement_trace_ko.tsv	Machine-readable active-goal requirement trace	copied	7883
+handoff/objective_completion_audit.md	4_reporting/objective_completion_audit.md	Strict active-goal completion audit	copied	10369
+handoff/objective_completion_audit.tsv	4_reporting/objective_completion_audit.tsv	Machine-readable active-goal completion audit	copied	9098
+handoff/goal_readiness.md	goal_readiness.md	Top-level v5 execution readiness audit	copied	5628
+handoff/goal_readiness.tsv	goal_readiness.tsv	Machine-readable top-level v5 execution readiness audit	copied	3269
+handoff/folder_readme_audit.md	folder_readme_audit.md	Per-folder README and next-step audit	copied	19870
+handoff/folder_readme_audit.tsv	folder_readme_audit.tsv	Machine-readable per-folder README audit	copied	17876
+handoff/final_goal_acceptance_rubric_ko.md	4_reporting/final_goal_acceptance_rubric_ko.md	Korean final goal acceptance rubric	copied	10819
+handoff/final_result_update_checklist_ko.md	4_reporting/final_result_update_checklist_ko.md	Korean post-result update checklist	copied	13268
+handoff/post_checkpoint_trigger_card_ko.md	4_reporting/post_checkpoint_trigger_card_ko.md	One-page post-checkpoint Go/No-Go trigger card	copied	5288
+handoff/post_checkpoint_outcome_matrix_ko.md	4_reporting/post_checkpoint_outcome_matrix_ko.md	Korean post-checkpoint outcome matrix	copied	11938
+handoff/post_result_patch_plan_ko.md	4_reporting/post_result_patch_plan_ko.md	Korean file-by-file post-result report/PPT patch plan	copied	11971
+handoff/post_result_patch_plan.tsv	4_reporting/post_result_patch_plan.tsv	Machine-readable post-result report/PPT patch plan	copied	8463
+handoff/final_freeze_protocol_ko.md	4_reporting/final_freeze_protocol_ko.md	Freeze/no-freeze protocol	copied	9817
+handoff/final_freeze_evidence_checklist_ko.md	4_reporting/final_freeze_evidence_checklist_ko.md	Korean final freeze evidence checklist	copied	4643
+handoff/final_handoff_runbook.md	4_reporting/final_handoff_runbook.md	Dynamic post-checkpoint runbook	copied	7420
+handoff/final_action_dashboard_ko.md	4_reporting/final_action_dashboard_ko.md	Korean final next-action dashboard	copied	10092
+handoff/final_action_dashboard_ko.tsv	4_reporting/final_action_dashboard_ko.tsv	Machine-readable final next-action dashboard	copied	7790
+handoff/final_assembly_manifest.md	4_reporting/final_assembly_manifest.md	Final report/PPT assembly manifest	copied	3934
+handoff/final_assembly_manifest.tsv	4_reporting/final_assembly_manifest.tsv	Machine-readable final assembly manifest	copied	3004
+handoff/result_delay_contingency_ko.md	4_reporting/result_delay_contingency_ko.md	Korean execution-draft result-delay contingency	copied	5752
+final_claim_decision_tree.md	4_reporting/final_claim_decision_tree.md	Generated final conclusion decision tree	copied	2867
+final_claim_decision_tree.tsv	4_reporting/final_claim_decision_tree.tsv	Machine-readable final conclusion decision tree	copied	2559
+claim_promotion_matrix.md	4_reporting/claim_promotion_matrix.md	Claim-to-gate promotion matrix	copied	4416
+claim_promotion_matrix.tsv	4_reporting/claim_promotion_matrix.tsv	Machine-readable claim promotion matrix	copied	3459
+handoff/post_checkpoint_execution_plan.md	3_evaluation/post_checkpoint_execution_plan.md	Concrete post-checkpoint launch plan	copied	7837
+handoff/post_checkpoint_eval_recovery.md	3_evaluation/post_checkpoint_eval_recovery.md	Post-checkpoint split/rerun recovery protocol	copied	7628
+handoff/metric_mapping.md	3_evaluation/metric_mapping.md	Glot500 metric-to-wrapper/evaluator mapping	copied	6380
+handoff/glot500_metric_requirements.md	3_evaluation/glot500_metric_requirements.md	Retained Glot500 metric-family requirements	copied	4173
+audits/training_loss_snapshot.md	2_training/training_loss_snapshot.md	Trainer-log loss snapshot for live paired MLM progress	copied	2019
+audits/training_loss_snapshot.tsv	2_training/training_loss_snapshot.tsv	Machine-readable Trainer-log loss rows	copied	31183
+audits/post_checkpoint_provenance_audit.md	3_evaluation/post_checkpoint_provenance_audit.md	Post-checkpoint source/run_meta/log provenance audit	copied	13960
+audits/post_checkpoint_provenance_audit.tsv	3_evaluation/post_checkpoint_provenance_audit.tsv	Machine-readable post-checkpoint provenance audit	copied	12357
+handoff/result_insertion_matrix.md	4_reporting/result_insertion_matrix.md	Raw-output to report/PPT promotion rule matrix	copied	11586
+handoff/result_slot_inventory.md	4_reporting/result_slot_inventory.md	Report/PPT pending-result slot inventory	copied	15072
+handoff/result_slot_inventory.tsv	4_reporting/result_slot_inventory.tsv	Machine-readable report/PPT result slot inventory	copied	16018
+handoff/pending_result_registry.md	4_reporting/pending_result_registry.md	Explicit pending/running/blocked label registry	copied	5725
+handoff/post_result_update_manifest.md	4_reporting/post_result_update_manifest.md	Metric-by-metric report/PPT update manifest	copied	6050
+handoff/report_slide_crosswalk.md	4_reporting/report_slide_crosswalk.md	Report-section to slide/evidence crosswalk	copied	6146
+handoff/final_package_checklist.md	4_reporting/final_package_checklist.md	Final package checklist	copied	33120
+handoff/source_map.md	4_reporting/00_tables/source_map.md	Report/PPT source map	copied	26469
+tables/table_01_data_scope.md	4_reporting/00_tables/table_01_data_scope.md	Data scope and target10 selection table	copied	1415
+tables/table_02_tokenizer_audit.md	4_reporting/00_tables/table_02_tokenizer_audit.md	Tokenizer audit and fertility summary table	copied	1381
+tables/table_03_initialization_zero_step.md	4_reporting/00_tables/table_03_initialization_zero_step.md	Initialization and zero-step comparison table	copied	1259
+tables/table_04_evaluation_coverage.md	4_reporting/00_tables/table_04_evaluation_coverage.md	Evaluation coverage table	copied	1940
+tables/table_04_evaluation_coverage.tsv	4_reporting/00_tables/table_04_evaluation_coverage.tsv	Machine-readable evaluation coverage table	copied	1093
+tables/table_05_training_status.md	4_reporting/00_tables/table_05_training_status.md	Live MLM training and checkpoint readiness table	copied	1627
+tables/table_06_pppl_partial.md	4_reporting/00_tables/table_06_pppl_partial.md	Partial PPPL baseline/reference results table	copied	1765
+tables/table_07_tatoeba_partial.md	4_reporting/00_tables/table_07_tatoeba_partial.md	Partial Tatoeba baseline/reference results table	copied	1724
+tables/table_08_text_classification_partial.md	4_reporting/00_tables/table_08_text_classification_partial.md	Partial text classification baseline/reference results table	copied	1291
+tables/table_09_blocked_metric_notes.md	4_reporting/00_tables/table_09_blocked_metric_notes.md	Blocked and coverage-limited metric note table	copied	2201
+tables/table_10_ner_partial.md	4_reporting/00_tables/table_10_ner_partial.md	Partial NER baseline/reference results table	copied	1717
+tables/table_11_pos_partial.md	4_reporting/00_tables/table_11_pos_partial.md	Partial POS baseline/reference results table	copied	1376
+tables/table_12_bible_partial.md	4_reporting/00_tables/table_12_bible_partial.md	Partial Bible retrieval baseline/reference results table	copied	2438
+tables/table_13_metric_fidelity_matrix.md	4_reporting/00_tables/table_13_metric_fidelity_matrix.md	Glot500 metric-family fidelity matrix	copied	4271
+tables/table_14_roundtrip_partial.md	4_reporting/00_tables/table_14_roundtrip_partial.md	Roundtrip baseline/reference partial results table	copied	2442
+tables/table_15_glot500_reproduction_fidelity.md	4_reporting/00_tables/table_15_glot500_reproduction_fidelity.md	Glot500 controlled-subset reproduction fidelity matrix	copied	3887
+figures/figure_plan.md	4_reporting/01_figures/figure_plan.md	Planned report/PPT figure set and refresh rules	copied	2876
+figures/captions.md	4_reporting/01_figures/generated/captions.md	Generated figure captions	copied	1923
+figures/figure_manifest.tsv	4_reporting/01_figures/generated/figure_manifest.tsv	Machine-readable figure manifest	copied	1782
+figures/figure_01_experiment_pipeline.png	4_reporting/01_figures/generated/figure_01_experiment_pipeline.png	Experiment pipeline overview figure	copied	192288
+figures/figure_01_experiment_pipeline.svg	4_reporting/01_figures/generated/figure_01_experiment_pipeline.svg	Experiment pipeline overview figure source	copied	80712
+figures/figure_02_tokenizer_fertility_delta.png	4_reporting/01_figures/generated/figure_02_tokenizer_fertility_delta.png	Tokenizer fertility delta figure	copied	138768
+figures/figure_02_tokenizer_fertility_delta.svg	4_reporting/01_figures/generated/figure_02_tokenizer_fertility_delta.svg	Tokenizer fertility delta figure source	copied	57339
+figures/figure_03_zero_step_initialization.png	4_reporting/01_figures/generated/figure_03_zero_step_initialization.png	Zero-step initialization comparison figure	copied	62392
+figures/figure_03_zero_step_initialization.svg	4_reporting/01_figures/generated/figure_03_zero_step_initialization.svg	Zero-step initialization comparison figure source	copied	32541
+figures/figure_05_evaluation_coverage.png	4_reporting/01_figures/generated/figure_05_evaluation_coverage.png	Evaluation coverage figure	copied	60816
+figures/figure_05_evaluation_coverage.svg	4_reporting/01_figures/generated/figure_05_evaluation_coverage.svg	Evaluation coverage figure source	copied	33757
+handoff/metric_execution_ledger.md	4_reporting/metric_execution_ledger.md	Retained Glot500 metric execution state ledger	copied	3709
+handoff/metric_execution_ledger.tsv	4_reporting/metric_execution_ledger.tsv	Machine-readable retained metric execution ledger	copied	2598
+audits/metric_surface_completeness_audit.md	4_reporting/metric_surface_completeness_audit.md	Source/rendered report/PPT visible metric-family completeness audit	copied	4039
+audits/metric_surface_completeness_audit.tsv	4_reporting/metric_surface_completeness_audit.tsv	Machine-readable metric surface completeness audit	copied	2802
+audits/rendered_artifact_freshness_audit.md	4_reporting/rendered_artifact_freshness_audit.md	Rendered report/PPT artifact freshness audit	copied	2506
+audits/rendered_artifact_freshness_audit.tsv	4_reporting/rendered_artifact_freshness_audit.tsv	Machine-readable rendered artifact freshness audit	copied	1723
+audits/deliverable_openability_audit.md	4_reporting/deliverable_openability_audit.md	Original report/PPT openability audit	copied	1684
+audits/deliverable_openability_audit.tsv	4_reporting/deliverable_openability_audit.tsv	Machine-readable original report/PPT openability audit	copied	1133
+handoff/release_manifest.md	4_reporting/release_manifest.md	File-size and hash manifest	copied	16554
+handoff/release_manifest.tsv	4_reporting/release_manifest.tsv	Machine-readable release manifest	copied	22426
+audits/method_comparison_summary.md	4_reporting/method_comparison_summary.md	Method comparison and decision-tree input summary	copied	3819
+audits/method_comparison_summary.tsv	4_reporting/method_comparison_summary.tsv	Machine-readable method comparison summary	copied	5636
+audits/comparison_materiality_audit.md	4_reporting/comparison_materiality_audit.md	Practical materiality bands for method comparison rows	copied	3986
+audits/comparison_materiality_audit.tsv	4_reporting/comparison_materiality_audit.tsv	Machine-readable comparison materiality audit	copied	3753
+audits/result_insertion_contract_audit.md	4_reporting/result_insertion_contract_audit.md	Post-result report/PPT insertion and command-support contract audit	copied	2506
+audits/result_insertion_contract_audit.tsv	4_reporting/result_insertion_contract_audit.tsv	Machine-readable result insertion contract audit	copied	1405
+audits/claim_source_contract_audit.md	4_reporting/claim_source_contract_audit.md	Report/PPT final numeric-claim source contract audit	copied	7828
+audits/claim_source_contract_audit.tsv	4_reporting/claim_source_contract_audit.tsv	Machine-readable claim-source contract audit	copied	6817
+audits/reporting_package_audit.md	4_reporting/reporting_package_audit.md	Package audit	copied	41398
+audits/final_deliverable_audit.md	4_reporting/final_deliverable_audit.md	Goal deliverable audit	copied	7989
+audits/final_submission_smoke_audit.md	4_reporting/final_submission_smoke_audit.md	Final share/freeze smoke audit	copied	2873
+audits/final_submission_smoke_audit.tsv	4_reporting/final_submission_smoke_audit.tsv	Machine-readable final share/freeze smoke audit	copied	1903
+audits/execution_readiness_review_ko.md	4_reporting/execution_readiness_review_ko.md	Korean readiness review	copied	6033
+audits/final_claim_freeze_audit.md	4_reporting/final_claim_freeze_audit.md	Claim freeze audit	copied	2612
+audits/final_evidence_packet_audit.md	4_reporting/final_evidence_packet_audit.md	Final evidence packet claim-promotion audit	copied	3547
+audits/final_evidence_packet_audit.tsv	4_reporting/final_evidence_packet_audit.tsv	Machine-readable final evidence packet claim-promotion audit	copied	2736
+audits/result_promotion_readiness_audit.md	4_reporting/result_promotion_readiness_audit.md	Result-promotion readiness audit	copied	3080
+audits/metric_fidelity_audit.md	4_reporting/metric_fidelity_audit.md	Glot500 metric fidelity audit	copied	2996
+audits/slide_rendering_audit.md	4_reporting/slide_rendering_audit.md	Slide rendering and Markdown table leakage audit	copied	1035
+audits/slide_rendering_audit.tsv	4_reporting/slide_rendering_audit.tsv	Machine-readable slide rendering audit	copied	444
+audits/surface_overclaim_audit.md	4_reporting/surface_overclaim_audit.md	Report/PPT overclaim surface audit	copied	3895
+audits/refresh_sequence_sync_audit.md	4_reporting/refresh_sequence_sync_audit.md	Refresh sequence sync audit	copied	1624
+audits/post_checkpoint_command_consistency.md	3_evaluation/post_checkpoint_command_consistency.md	Canonical post-checkpoint command audit	copied	3390
+audits/post_checkpoint_preflight.md	3_evaluation/post_checkpoint_preflight.md	Machine-readable post-checkpoint Go/No-Go preflight audit	copied	2814
+audits/post_checkpoint_preflight.tsv	3_evaluation/post_checkpoint_preflight.tsv	Machine-readable post-checkpoint preflight rows	copied	1941
+scripts/run_v5_ready_to_final_package.sh	../../../scripts/run_v5_ready_to_final_package.sh	One-shot ready-to-final-package guarded launcher	copied	2876
+audits/checkpoint_selection_contract_audit.md	2_training/05_checkpoint_selection/checkpoint_selection_contract_audit.md	Fixed 10K checkpoint selection contract audit	copied	1384
+audits/live_training_health.md	2_training/live_training_health.md	Live MLM training health audit	copied	1681
+audits/storage_readiness.md	2_training/storage_readiness.md	Storage/output readiness audit	copied	2999
+audits/paired_launcher_transition.md	2_training/paired_launcher_transition.md	Random-to-FVT paired launcher transition audit	copied	1642

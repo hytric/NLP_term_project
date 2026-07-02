@@ -1,0 +1,19 @@
+{
+  "run_id": "step15_v2_mlm_control_20260611_163731",
+  "model_family": "original_control",
+  "seed": 13,
+  "source_checkpoint": "xlm-roberta-base",
+  "tokenizer_source": "xlm-roberta-base",
+  "train_steps": 1600,
+  "target_train_tokens": 500000,
+  "token_budget_tolerance": 1.02,
+  "batch_size": 8,
+  "eval_batch_size": 8,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "eval_every": 800,
+  "train_limit": 0,
+  "dev_limit": 0,
+  "selection_data": "MAR_dev_only",
+  "final_access": "NO_ACT_FINAL_ACCESS"
+}

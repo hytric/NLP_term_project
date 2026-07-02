@@ -1,0 +1,20 @@
+metric	expected	actual	status
+full-model training	yes	yes_in_config	PASS
+high-resource rows in mixture	>0	914136	PASS
+low-resource rows in mixture	>0	52016	PASS
+target-only main violation	0	0	PASS
+LoRA main violation	0	0	PASS
+pilot seed grid count	>=3	3	PASS_FOR_PILOT
+fvt pilot grid completed	yes	yes	PASS_FOR_PILOT
+fvt pilot final eval loss mean	<zero_step_fvt_loss_7.925527	3.981250	PASS_FOR_PILOT
+fvt pilot final eval loss range	recorded	0.089701	PASS_FOR_PILOT
+fvt pilot final perplexity mean	recorded	53.630852	PASS_FOR_PILOT
+replay-safe retry seed grid count	>=3	3	PASS_RETRY_CANDIDATE
+replay-safe retry final eval loss mean	< fvt_pilot_mean_3.981250	3.903145	PASS_RETRY_IMPROVES
+replay-safe retry final eval loss range	recorded	0.058914	PASS_RETRY_STABLE
+final candidate seeds	>=3	3_replay_safe_1000step	PASS_RETRY_CANDIDATE_EVAL_BLOCKS_POSITIVE
+final test used for selection	0	0	PASS
+deviations recorded	yes	yes	PASS
+GPU constraint recorded	CUDA_VISIBLE_DEVICES=3	yes	PASS
+smoke test passed	yes	yes	PASS
+final downstream claim allowed	no	no	PASS

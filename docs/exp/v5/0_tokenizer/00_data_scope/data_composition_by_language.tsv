@@ -1,0 +1,103 @@
+rank	language_script	language	script	group	xlm_r_training_language	source_sentences_new_length	source_sentences_original	mlm_train_samples	mlm_valid_samples	mlm_test_samples	pppl_has_raw_text	tatoeba_test_pairs	bible_test_pairs	roundtrip_test_rows	taxi_train_rows	taxi_valid_rows	taxi_test_rows	ner_train_sentences	ner_valid_sentences	ner_test_sentences	pos_train_sentences	pos_valid_sentences	pos_test_sentences	has_tatoeba	has_bible	has_roundtrip	has_taxi1500	has_ner	has_pos	region_or_note
+1	lao_Laoo	lao	Laoo	seen92	yes	66966	140387	901560	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	
+2	mya_Mymr	mya	Mymr	seen92	yes	945180	994258	901560	0	0	yes	0	7912	7910	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	no	
+3	ara_Arab	ara	Arab	seen92	yes	24524122	41328884	901560	0	0	yes	1000	0	0	0	0	0	20000	10000	10000	0	0	0	yes	no	no	no	yes	yes	
+4	mar_Deva	mar	Deva	seen92	yes	28748897	38479563	901560	0	0	yes	1000	7898	7896	0	0	0	5000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+5	hau_Latn	hau	Latn	seen92	yes	4368483	4776310	901560	0	0	yes	0	7940	7938	0	0	0	0	0	0	0	0	0	no	yes	yes	no	no	no	
+6	uzb_Latn	uzb	Latn	seen92	yes	3223485	3544751	901560	0	0	yes	0	7917	7917	0	0	0	1000	1000	1000	0	0	0	no	yes	yes	no	yes	no	
+7	slv_Latn	slv	Latn	seen92	yes	15719210	25903901	901560	0	0	yes	823	7939	7939	0	0	0	15000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+8	fin_Latn	fin	Latn	seen92	yes	16730388	32826347	901560	0	0	yes	1000	7941	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+9	hun_Latn	hun	Latn	seen92	yes	18800025	33151080	901560	0	0	yes	1000	7936	7936	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+10	cmn_Hani	cmn	Hani	seen92	yes	80745	121437	901560	0	0	yes	1000	7916	7914	0	0	0	0	0	0	0	0	0	yes	yes	yes	no	no	no	
+11	est_Latn	est	Latn	seen92	yes	13600579	22540376	901560	0	0	yes	1000	0	0	0	0	0	15000	10000	10000	0	0	0	yes	no	no	no	yes	yes	
+12	bre_Latn	bre	Latn	seen92	yes	748954	1220088	901560	0	0	yes	1000	7935	7934	0	0	0	1000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+13	hrv_Latn	hrv	Latn	seen92	yes	17882932	30453350	901560	0	0	yes	1000	7940	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+14	jav_Latn	jav	Latn	seen92	yes	516833	1248518	901560	0	0	yes	0	7938	7938	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	yes	
+15	ron_Latn	ron	Latn	seen92	yes	19190217	28266518	901560	0	0	yes	1000	7940	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+16	ell_Grek	ell	Grek	seen92	yes	22033282	33991561	901560	0	0	yes	1000	7941	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+17	nor_Latn	nor	Latn	seen92	yes	14576191	21252518	901560	0	0	yes	0	0	0	0	0	0	20000	10000	10000	0	0	0	no	no	no	no	yes	yes	
+18	slk_Latn	slk	Latn	seen92	yes	14633631	22523300	901560	0	0	yes	1000	7939	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+19	vie_Latn	vie	Latn	seen92	yes	15697827	19180235	901560	0	0	yes	1000	7935	7933	0	0	0	20000	10000	10000	1400	800	800	yes	yes	yes	no	yes	yes	
+20	amh_Ethi	amh	Ethi	seen92	yes	2862985	3079659	901560	0	0	yes	168	7642	7640	0	0	0	100	100	100	0	0	0	yes	yes	yes	no	yes	yes	
+21	epo_Latn	epo	Latn	seen92	yes	8737198	11987717	901560	0	0	yes	1000	7941	7939	0	0	0	15000	10000	10000	0	0	0	yes	yes	yes	no	yes	no	
+22	bel_Cyrl	bel	Cyrl	seen92	yes	5319675	7215766	901560	0	0	yes	1000	7940	7939	0	0	0	15000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+23	xho_Latn	xho	Latn	seen92	yes	1262364	1593107	901560	0	0	yes	142	7814	7813	0	0	0	0	0	0	0	0	0	yes	yes	yes	no	no	no	
+24	hin_Deva	hin	Deva	seen92	yes	7046700	10594346	901560	0	0	yes	1000	7902	7900	0	0	0	5000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+25	tam_Taml	tam	Taml	seen92	yes	3388255	5464555	901560	0	0	yes	307	7894	7893	0	0	0	15000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+26	mon_Cyrl	mon	Cyrl	seen92	yes	4616960	4910605	901560	0	0	yes	440	0	0	0	0	0	100	100	100	0	0	0	yes	no	no	no	yes	no	
+27	ces_Latn	ces	Latn	seen92	yes	20376340	33181120	901560	0	0	yes	1000	7289	7288	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+28	san_Deva	san	Deva	seen92	yes	165616	203340	901560	0	0	yes	0	7712	7711	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	yes	
+29	hye_Armn	hye	Armn	seen92	yes	1463123	2277418	901560	0	0	yes	742	3732	3732	0	0	0	15000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+30	pus_Arab	pus	Arab	seen92	yes	731992	998462	901560	0	0	yes	0	0	0	0	0	0	100	100	100	0	0	0	no	no	no	no	yes	no	
+31	som_Arab	som	Arab	seen92	yes	14199	25512	901560	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	
+32	kan_Knda	kan	Knda	seen92	yes	41836495	53453688	901560	0	0	yes	0	7831	7829	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	no	
+33	isl_Latn	isl	Latn	seen92	yes	19547941	24289191	901560	0	0	yes	1000	7874	7873	0	0	0	1000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+34	ori_Orya	ori	Orya	seen92	yes	410827	485894	901560	0	0	yes	0	0	0	0	0	0	100	100	100	0	0	0	no	no	no	no	yes	no	
+35	afr_Latn	afr	Latn	seen92	yes	5157787	6495254	901560	0	0	yes	1000	7939	7939	0	0	0	5000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+36	deu_Latn	deu	Latn	seen92	yes	31015993	45413661	901560	0	0	yes	1000	7939	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+37	urd_Arab	urd	Arab	seen92	yes	6009594	7528948	901560	0	0	yes	1000	7894	7893	0	0	0	20000	1000	1000	4043	552	535	yes	yes	yes	no	yes	yes	
+38	bul_Cyrl	bul	Cyrl	seen92	yes	21823004	32305846	901560	0	0	yes	1000	7941	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+39	tgl_Latn	tgl	Latn	seen92	yes	7411064	10389209	901560	0	0	yes	1000	7941	7939	0	0	0	10000	1000	1000	0	0	128	yes	yes	yes	no	yes	yes	
+40	eus_Latn	eus	Latn	seen92	yes	12775959	18586815	901560	0	0	yes	1000	7852	7852	0	0	0	10000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+41	pol_Latn	pol	Latn	seen92	yes	19339945	30880605	901560	0	0	yes	1000	7934	7934	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+42	lat_Latn	lat	Latn	seen92	yes	1179913	1686696	901560	0	0	yes	1000	7939	7939	0	0	0	5000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+43	tur_Latn	tur	Latn	seen92	yes	29184662	52229613	901560	0	0	yes	1000	7457	7455	0	0	0	20000	10000	10000	52286	5211	5549	yes	yes	yes	no	yes	yes	
+44	fra_Latn	fra	Latn	seen92	yes	39197581	55515852	901560	0	0	yes	1000	7941	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+45	cat_Latn	cat	Latn	seen92	yes	8648271	11720363	901560	0	0	yes	1000	7936	7936	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+46	uig_Arab	uig	Arab	seen92	yes	307302	377778	901560	0	0	yes	1000	7838	7837	0	0	0	100	100	100	1656	900	900	yes	yes	yes	no	yes	yes	
+47	arb_Arab	arb	Arab	seen92	yes	159884	163304	901560	0	0	yes	0	7940	7938	0	0	0	0	0	0	0	0	0	no	yes	yes	no	no	no	
+48	sqi_Latn	sqi	Latn	seen92	yes	5526836	7972422	901560	0	0	yes	1000	7941	7939	0	0	0	5000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+49	sin_Sinh	sin	Sinh	seen92	yes	7293178	11025398	901560	0	0	yes	0	7941	7939	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	yes	
+50	msa_Latn	msa	Latn	seen92	yes	3929084	6464629	901560	0	0	yes	0	0	0	0	0	0	20000	1000	1000	0	0	0	no	no	no	no	yes	no	
+51	swh_Latn	swh	Latn	seen92	yes	95776	99602	901560	0	0	yes	390	7941	7939	0	0	0	0	0	0	0	0	0	yes	yes	yes	no	no	no	
+52	kor_Hang	kor	Hang	seen92	yes	6468444	7994888	901560	0	0	yes	1000	7938	7937	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+53	ukr_Cyrl	ukr	Cyrl	seen92	yes	7462046	11701032	901560	0	0	yes	1000	7940	7939	0	0	0	20000	10000	10000	28	673	681	yes	yes	yes	no	yes	yes	
+54	kir_Cyrl	kir	Cyrl	seen92	yes	1397566	1545391	901560	0	0	yes	0	7841	7841	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	no	
+55	yid_Hebr	yid	Hebr	seen92	yes	220214	298082	901560	0	0	yes	848	0	0	0	0	0	100	100	100	0	0	0	yes	no	no	no	yes	no	
+56	heb_Hebr	heb	Hebr	seen92	yes	18128962	32568540	901560	0	0	yes	1000	7714	7713	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+57	nld_Latn	nld	Latn	seen92	yes	25061426	35618652	901560	0	0	yes	1000	7939	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+58	fry_Latn	fry	Latn	seen92	yes	957422	1242428	901560	0	0	yes	173	7939	7939	0	0	0	1000	1000	1000	0	0	0	yes	yes	yes	no	yes	no	
+59	azb_Arab	azb	Arab	seen92	yes	33758	34816	901560	0	0	yes	0	7908	7907	0	0	0	0	0	0	0	0	0	no	yes	yes	no	no	no	
+60	glg_Latn	glg	Latn	seen92	yes	17852274	24211862	901560	0	0	yes	1000	0	0	0	0	0	15000	10000	10000	0	0	0	yes	no	no	no	yes	yes	
+61	fas_Arab	fas	Arab	seen92	yes	18277593	25158365	901560	0	0	yes	0	0	0	0	0	0	20000	10000	10000	0	0	0	no	no	no	no	yes	yes	
+62	eng_Latn	eng	Latn	seen92	yes	36122761	48220343	901560	0	0	yes	0	0	0	860	106	111	20000	10000	10000	0	0	0	no	no	no	yes	yes	yes	
+63	mkd_Cyrl	mkd	Cyrl	seen92	yes	14717004	18662027	901560	0	0	yes	1000	7940	7939	0	0	0	10000	1000	1000	0	0	0	yes	yes	yes	no	yes	no	
+64	ind_Latn	ind	Latn	seen92	yes	23018106	33930820	901560	0	0	yes	1000	7939	7937	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+65	por_Latn	por	Latn	seen92	yes	27824391	40390569	901560	0	0	yes	1000	5917	5916	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+66	spa_Latn	spa	Latn	seen92	yes	37286756	50180455	901560	0	0	yes	1000	7910	7910	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+67	dan_Latn	dan	Latn	seen92	yes	19174573	27580773	901560	0	0	yes	1000	7941	7939	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+68	khm_Khmr	khm	Khmr	seen92	yes	590429	1545366	901560	0	0	yes	722	7868	7867	0	0	0	100	100	100	0	0	0	yes	yes	yes	no	yes	no	
+69	gla_Latn	gla	Latn	seen92	yes	152563	197132	901560	0	0	yes	829	7931	7931	0	0	0	100	100	100	0	0	0	yes	yes	yes	no	yes	yes	
+70	uig_Latn	uig	Latn	seen92	yes	9637	24078	901560	0	0	yes	0	7838	7836	0	0	0	0	0	0	0	0	0	no	yes	yes	no	no	no	
+71	kat_Geor	kat	Geor	seen92	yes	1004297	1489213	901560	0	0	yes	746	4868	4868	0	0	0	10000	10000	10000	0	0	0	yes	yes	yes	no	yes	no	
+72	mlg_Latn	mlg	Latn	seen92	yes	3715802	4436296	901560	0	0	yes	0	0	0	0	0	0	100	100	100	0	0	0	no	no	no	no	yes	no	
+73	snd_Arab	snd	Arab	seen92	yes	488730	640954	901560	0	0	yes	0	7921	7920	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	no	
+74	ita_Latn	ita	Latn	seen92	yes	23539857	35092550	901560	0	0	yes	1000	7933	7932	0	0	0	20000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+75	hau_Arab	hau	Arab	seen92	yes	9593	21219	901560	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	
+76	cym_Latn	cym	Latn	seen92	yes	1244783	1747340	901560	0	0	yes	575	7940	7938	0	0	0	10000	1000	1000	2	1	4	yes	yes	yes	no	yes	yes	
+77	srp_Latn	srp	Latn	seen92	yes	18371769	32335625	901560	0	0	yes	1000	7941	7939	0	0	0	0	0	0	0	0	0	yes	yes	yes	no	no	yes	
+78	zho_Hani	zho	Hani	seen92	yes	24143786	28574769	901560	0	0	yes	0	0	0	0	0	0	20000	10000	10000	0	0	0	no	no	no	no	yes	yes	
+79	tha_Thai	tha	Thai	seen92	yes	7735209	8720602	901560	0	0	yes	548	7941	7939	0	0	0	20000	10000	10000	0	0	1000	yes	yes	yes	no	yes	yes	
+80	swe_Latn	swe	Latn	seen92	yes	20725883	29845220	901560	0	0	yes	1000	7937	7937	0	0	0	20000	10000	10000	7479	1536	3254	yes	yes	yes	no	yes	yes	
+81	pan_Guru	pan	Guru	seen92	yes	29052537	31309411	901560	0	0	yes	0	7889	7888	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	no	
+82	prs_Arab	prs	Arab	seen92	yes	26823	26952	901560	0	0	yes	0	7939	7938	0	0	0	0	0	0	0	0	0	no	yes	yes	no	no	no	
+83	pes_Arab	pes	Arab	seen92	yes	57511	67279	901560	0	0	yes	1000	7891	7890	0	0	0	0	0	0	0	0	0	yes	yes	yes	no	no	no	
+84	san_Latn	san	Latn	seen92	yes	25742	26904	901560	0	0	yes	0	7712	7711	0	0	0	0	0	0	0	0	0	no	yes	yes	no	no	no	
+85	kaz_Cyrl	kaz	Cyrl	seen92	yes	12378727	13757211	901560	0	0	yes	575	7915	7915	0	0	0	1000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+86	kur_Latn	kur	Latn	seen92	yes	407169	476106	901560	0	0	yes	410	0	0	0	0	0	100	100	100	0	0	0	yes	no	no	no	yes	no	
+87	mal_Mlym	mal	Mlym	seen92	yes	48098273	65217263	901560	0	0	yes	687	7938	7936	0	0	0	10000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+88	nep_Deva	nep	Deva	seen92	yes	1317291	1972566	901560	0	0	yes	0	7922	7920	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	no	
+89	gle_Latn	gle	Latn	seen92	yes	7225513	7988516	901560	0	0	yes	1000	7941	7939	0	0	0	1000	1000	1000	0	0	0	yes	yes	yes	no	yes	yes	
+90	swa_Latn	swa	Latn	seen92	yes	5989369	7529229	901560	0	0	yes	0	0	0	0	0	0	1000	1000	1000	0	0	0	no	no	no	no	yes	no	
+91	som_Latn	som	Latn	seen92	yes	3916769	4252418	901560	0	0	yes	0	7941	7939	0	0	0	100	100	100	0	0	0	no	yes	yes	no	yes	no	
+92	lit_Latn	lit	Latn	seen92	yes	12479626	18382147	901560	0	0	yes	1000	7939	7939	0	0	0	10000	10000	10000	0	0	0	yes	yes	yes	no	yes	yes	
+93	fur_Latn	fur	Latn	target10	no	30052	47966	901560	0	0	yes	0	0	0	0	0	0	100	100	100	0	0	0	no	no	no	no	no	no	Europe
+94	krc_Cyrl	krc	Cyrl	target10	no	30353	40368	904259	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	North Caucasus
+95	acm_Arab	acm	Arab	target10	no	44505	82814	1014273	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	West Asia
+96	dzo_Tibt	dzo	Tibt	target10	no	52732	61333	1067222	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	Himalaya
+97	sat_Olck	sat	Olck	target10	no	39614	65890	979461	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	South Asia
+98	mad_Latn	mad	Latn	target10	no	38993	40771	974829	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	Southeast Asia
+99	bam_Latn	bam	Latn	target10	no	32150	36761	919998	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	West Africa
+100	kjb_Latn	kjb	Latn	target10	no	31471	32657	914125	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	Mesoamerica
+101	quw_Latn	quw	Latn	target10	no	33449	44927	930995	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	Andean South America
+102	rap_Latn	rap	Latn	target10	no	30102	32930	902009	0	0	yes	0	0	0	0	0	0	0	0	0	0	0	0	no	no	no	no	no	no	Polynesia

@@ -1,0 +1,17 @@
+{
+  "candidate_count": 318,
+  "candidates_with_any_downstream": 8,
+  "current_target10_with_any_downstream": 0,
+  "score_distribution": {
+    "0": 310,
+    "2": 3,
+    "3": 5
+  },
+  "task_counts": {
+    "bible": 6,
+    "ner": 6,
+    "pos": 0,
+    "roundtrip": 6,
+    "tatoeba": 3
+  }
+}

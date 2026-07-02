@@ -1,0 +1,21 @@
+model_label	model_path	model_seed	language_id	language	script	rows	masked_tokens	mean_mlm_loss	mlm_perplexity	truncated_rows	device	fp16	mlm_probability	max_length	mask_seed	status
+xlmr_base	xlm-roberta-base	NA	acu	Achuar-Shiwiar	Latin	953	9111	6.127476	458.27819	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	ake	Akawaio	Latin	1003	13281	4.032243	56.387244	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	bsn	Barasana-Eduria	Latin	959	14174	4.639948	103.538978	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	chr	Cherokee	Cherokee	1007	4882	0.281844	1.325572	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	cop	Coptic	Coptic	1003	4952	0.172038	1.187722	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	kbh	Camsa	Latin	852	10756	5.804295	331.721339	4	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	nhg	Nahuatl Tetelcingo	Latin	1006	10106	5.802889	331.255299	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	oji	Ojibwa	Aboriginal Syllabics	1007	5772	0.159655	1.173106	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	syr	Syriac	Syriac	1007	11385	2.157834	8.652374	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	usp	Uspanteco	Latin	1007	11116	5.550147	257.275452	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	acu	Achuar-Shiwiar	Latin	953	8441	5.314642	203.291662	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	ake	Akawaio	Latin	1003	11200	4.518566	91.703986	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	bsn	Barasana-Eduria	Latin	959	10623	4.615133	101.001305	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	chr	Cherokee	Cherokee	1007	6856	5.243992	189.424871	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	cop	Coptic	Coptic	1003	6998	5.53083	252.353337	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	kbh	Camsa	Latin	852	7880	5.754362	315.564251	4	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	nhg	Nahuatl Tetelcingo	Latin	1006	7872	5.678163	292.411808	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	oji	Ojibwa	Aboriginal Syllabics	1007	8062	5.37783	216.551768	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	syr	Syriac	Syriac	1007	6040	5.130901	169.169431	0	cuda	True	0.15	512	13	PASS
+fvt_replay_safe_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_replay_safe_lr1e5_seed13_step1000	13	usp	Uspanteco	Latin	1007	11382	5.134313	169.747655	0	cuda	True	0.15	512	13	PASS

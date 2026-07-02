@@ -1,0 +1,6 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/10_leakage_selection_audit/score_table.tsv	4	1182	ca0610a0a90dd2cfca87ebaf21a353bf	PASS_NEGATIVE_RESULT	claim-level audit summary
+leakage_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/10_leakage_selection_audit/leakage_audit.tsv	12	3372	836ab2af19988f212087e1e44734e2b5	PASS_NEGATIVE_RESULT	per-check leakage and selection audit
+selection_trace	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/10_leakage_selection_audit/selection_trace.md	26	2315	9a26acafa35bd0dd8ce48a0c023dbc62	PASS_NEGATIVE_RESULT	chronological selection trace
+invalidated_runs	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/10_leakage_selection_audit/invalidated_runs.tsv	4	1387	81f5ff914e07b22e11d627fd717a9e16	PASS_NEGATIVE_RESULT	claims invalidated by audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/10_leakage_selection_audit/results.md	43	1859	a4136576e606bbf9c99c30e68ead48de	PASS_NEGATIVE_RESULT	step result summary

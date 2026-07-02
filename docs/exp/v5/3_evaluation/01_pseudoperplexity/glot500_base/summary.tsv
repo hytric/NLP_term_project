@@ -1,0 +1,4 @@
+model_key	summary_group	languages	total_examples	total_masked_tokens	macro_mean_nll	macro_pseudo_perplexity	weighted_mean_nll	weighted_pseudo_perplexity
+glot500_base	all	102	10200	339064	2.464018	11.751938	2.364654	10.640353
+glot500_base	head	92	9200	303545	2.409191	11.124958	2.323671	10.213100
+glot500_base	v5_target	10	1000	35519	2.968427	19.461293	2.714889	15.102934

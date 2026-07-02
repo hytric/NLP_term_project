@@ -1,0 +1,3 @@
+variant	status	notes
+byte_fallback	SUPERSEDED_BY_SELECTED_48000_ABLATION	32k candidate was not selected; see docs/exp/third_try/03_tokenizer/fallback_ablation_summary.tsv
+char_fallback_or_coverage	SUPERSEDED_BY_SELECTED_48000_ABLATION	32k candidate was not selected; see docs/exp/third_try/03_tokenizer/fallback_ablation_summary.tsv

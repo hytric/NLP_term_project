@@ -1,0 +1,13 @@
+checkpoint_seed	task	metric	xlmr_mean	fvt_mean	delta_fvt_minus_xlmr	positive_vs_xlmr	status
+13	verse_retrieval	recall_at_1	0.022037	0.023000	0.000963	yes	PROXY_ONLY
+13	parallel_verse_matching	auc	0.570167	0.569056	-0.001111	no	PROXY_ONLY
+13	book_genre_classification	accuracy	1.000000	1.000000	0.000000	tie	PROXY_ONLY
+17	verse_retrieval	recall_at_1	0.022037	0.021778	-0.000259	no	PROXY_ONLY
+17	parallel_verse_matching	auc	0.570167	0.571741	0.001574	yes	PROXY_ONLY
+17	book_genre_classification	accuracy	1.000000	1.000000	0.000000	tie	PROXY_ONLY
+23	verse_retrieval	recall_at_1	0.022037	0.023111	0.001074	yes	PROXY_ONLY
+23	parallel_verse_matching	auc	0.570167	0.567759	-0.002408	no	PROXY_ONLY
+23	book_genre_classification	accuracy	1.000000	1.000000	0.000000	tie	PROXY_ONLY
+mean	verse_retrieval	recall_at_1	0.022037	0.022630	0.000593	2/3_seeds	PROXY_ONLY
+mean	parallel_verse_matching	auc	0.570167	0.569518	-0.000649	1/3_seeds	PROXY_ONLY
+mean	book_genre_classification	accuracy	1.000000	1.000000	0.000000	0/3_seeds_tie	PROXY_ONLY

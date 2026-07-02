@@ -1,0 +1,18 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/score_table.tsv	7	1871	1b88166779a2b9b482fbb821d01f0d78	PASS	probe gate table
+vocab_probe_init_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/vocab_probe_init_summary.tsv	2	582	6952862ba96a10561004fe346f75d970	PASS	fvt init summary for smaller vocabs
+vocab_probe_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/vocab_probe_summary.tsv	6	3209	ac4e531ad50344378892a20f176f4167	PASS	per-vocab per-seed MLM summary
+vocab_probe_learning_curves	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/vocab_probe_learning_curves.tsv	18	3597	70fff9032d9ffbadbd37fdc262c3f8bc	PASS	zero/final Mark-dev curves
+vocab_probe_category_loss	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/vocab_probe_category_loss.tsv	36	8242	18417ea178cd2fbfbefefa39d51b0c5a	PASS	zero/final all/base/added losses
+vocab_probe_variant_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/vocab_probe_variant_summary.tsv	2	602	de9458024f69e1fb7bff7d7ce569230d	PASS	per-vocab aggregate gates
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/checkpoint_selection.md	19	508	759fba5058965716998d24f34d73e880	PASS	selected probe checkpoint
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/v2_no_final_access_audit.tsv	5	1159	a10483d1c8ffbf95facf7d174c40c2ed	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/23_v2_vocab_size_objective_probe/results.md	44	1362	2711a04bd8b2022cda4c8201e181a259	PASS	step result summary
+checkpoint_xlmr_v2_8000_fvt	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/init/xlmr_v2_8000_fvt	7	1138324226	DIRECTORY	PASS	Step23 checkpoint artifact
+checkpoint_adapted_extended_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/vocab_8000/adapted_extended_seed13	7	1138324560	DIRECTORY	PASS	Step23 checkpoint artifact
+checkpoint_adapted_extended_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/vocab_8000/adapted_extended_seed17	7	1138324560	DIRECTORY	PASS	Step23 checkpoint artifact
+checkpoint_adapted_extended_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/vocab_8000/adapted_extended_seed23	7	1138324560	DIRECTORY	PASS	Step23 checkpoint artifact
+checkpoint_xlmr_v2_16000_fvt	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/init/xlmr_v2_16000_fvt	7	1161492504	DIRECTORY	PASS	Step23 checkpoint artifact
+checkpoint_adapted_extended_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/vocab_16000/adapted_extended_seed13	7	1161492838	DIRECTORY	PASS	Step23 checkpoint artifact
+checkpoint_adapted_extended_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/vocab_16000/adapted_extended_seed17	7	1161492839	DIRECTORY	PASS	Step23 checkpoint artifact
+checkpoint_adapted_extended_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/vocab_16000/adapted_extended_seed23	7	1161492837	DIRECTORY	PASS	Step23 checkpoint artifact

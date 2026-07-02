@@ -1,0 +1,110 @@
+# v5 Post-Checkpoint Provenance Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `post_checkpoint_provenance_ready_waiting_models`
+
+This generated audit checks result provenance for the final report/PPT
+path. It does not score models. It verifies that the v5 metric runner
+records `run_meta.tsv` and `command_logs`, that queued v5 metric/model
+destinations are unique, and that currently aggregated rows have
+source files plus run metadata before they can be promoted as claims.
+
+| Item | Status | Evidence | Action |
+| --- | --- | --- | --- |
+| runner_provenance_contract | ready | run_v5_eval_metric.sh writes run_meta.tsv and command_logs for every metric/model run | none |
+| queued_destination:pseudoperplexity:v5_fvt | ready | status=ready; docs_out=3_evaluation/01_pseudoperplexity/v5_fvt; runner_metric=pppl; command=RUN_TRAIN_SOURCE_PPPL_DIAGNOSTIC=1 PPPL_EVAL_ROLE=train_source_diagnostic MAX_EXAMPLES_PER_LANGUAGE=100 MAX_LENGTH=128 MASK_BATCH_SIZE=64 bash scripts/run_v5_eval_metric.sh pppl v5_fvt <gpu> | none |
+| queued_destination:pseudoperplexity:v5_random | ready | status=measured; docs_out=3_evaluation/01_pseudoperplexity/v5_random; runner_metric=pppl; command=none | none |
+| queued_destination:retrieval_tatoeba:v5_fvt | ready | status=measured; docs_out=3_evaluation/02_retrieval_tatoeba/v5_fvt; runner_metric=retrieval_tatoeba; command=none | none |
+| queued_destination:retrieval_tatoeba:v5_random | ready | status=measured; docs_out=3_evaluation/02_retrieval_tatoeba/v5_random; runner_metric=retrieval_tatoeba; command=none | none |
+| queued_destination:retrieval_bible:v5_fvt | ready | status=measured; docs_out=3_evaluation/03_retrieval_bible/v5_fvt; runner_metric=retrieval_bible; command=none | none |
+| queued_destination:retrieval_bible:v5_random | ready | status=measured; docs_out=3_evaluation/03_retrieval_bible/v5_random; runner_metric=retrieval_bible; command=none | none |
+| queued_destination:text_classification:v5_fvt | ready | status=measured; docs_out=3_evaluation/04_text_classification/v5_fvt; runner_metric=text_classification; command=none | none |
+| queued_destination:text_classification:v5_random | ready | status=measured; docs_out=3_evaluation/04_text_classification/v5_random; runner_metric=text_classification; command=none | none |
+| queued_destination:ner:v5_fvt | ready | status=ready; docs_out=3_evaluation/05_ner/v5_fvt; runner_metric=ner; command=TRAIN_LANGS=eng_Latn bash scripts/run_v5_eval_metric.sh ner v5_fvt <gpu> | none |
+| queued_destination:ner:v5_random | ready | status=measured; docs_out=3_evaluation/05_ner/v5_random; runner_metric=ner; command=none | none |
+| queued_destination:pos:v5_fvt | ready | status=ready; docs_out=3_evaluation/06_pos/v5_fvt; runner_metric=pos; command=TRAIN_LANGS=tur_Latn bash scripts/run_v5_eval_metric.sh pos v5_fvt <gpu> | none |
+| queued_destination:pos:v5_random | ready | status=measured; docs_out=3_evaluation/06_pos/v5_random; runner_metric=pos; command=none | none |
+| queued_destination:roundtrip_alignment:v5_fvt | ready | status=ready; docs_out=3_evaluation/07_roundtrip_alignment/v5_fvt; runner_metric=roundtrip_alignment; command=bash scripts/run_v5_eval_metric.sh roundtrip_alignment v5_fvt <gpu> | none |
+| queued_destination:roundtrip_alignment:v5_random | ready | status=measured; docs_out=3_evaluation/07_roundtrip_alignment/v5_random; runner_metric=roundtrip_alignment; command=none | none |
+| queued_destination_uniqueness | ready | v5_destinations=14 | none |
+| aggregation_source:ner:glot500_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/ner/glot500_base/glot500-base/test_results.txt | none |
+| run_meta:ner:glot500_base | ready | 3_evaluation/05_ner/glot500_base/run_meta.tsv; fields=complete | none |
+| command_log:ner:glot500_base | ready | 3_evaluation/05_ner/glot500_base/command_logs; logs=2 | none |
+| aggregation_source:ner:v5_random | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/ner/v5_random/v5_random_mlm_10k/test_results.txt | none |
+| run_meta:ner:v5_random | ready | 3_evaluation/05_ner/v5_random/run_meta.tsv; fields=complete | none |
+| command_log:ner:v5_random | ready | 3_evaluation/05_ner/v5_random/command_logs; logs=1 | none |
+| aggregation_source:ner:xlmr_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/ner/xlmr_base/xlm-roberta-base/test_results.txt | none |
+| run_meta:ner:xlmr_base | ready | 3_evaluation/05_ner/xlmr_base/run_meta.tsv; fields=complete | none |
+| command_log:ner:xlmr_base | ready | 3_evaluation/05_ner/xlmr_base/command_logs; logs=2 | none |
+| aggregation_source:pos:glot500_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/pos/glot500_base/glot500-base/test_results.txt | none |
+| run_meta:pos:glot500_base | ready | 3_evaluation/06_pos/glot500_base/run_meta.tsv; fields=complete | none |
+| command_log:pos:glot500_base | ready | 3_evaluation/06_pos/glot500_base/command_logs; logs=1 | none |
+| aggregation_source:pos:v5_random | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/pos/v5_random/v5_random_mlm_10k/test_results.txt | none |
+| run_meta:pos:v5_random | ready | 3_evaluation/06_pos/v5_random/run_meta.tsv; fields=complete | none |
+| command_log:pos:v5_random | ready | 3_evaluation/06_pos/v5_random/command_logs; logs=1 | none |
+| aggregation_source:pos:xlmr_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/pos/xlmr_base/xlm-roberta-base/test_results.txt | none |
+| run_meta:pos:xlmr_base | ready | 3_evaluation/06_pos/xlmr_base/run_meta.tsv; fields=complete | none |
+| command_log:pos:xlmr_base | ready | 3_evaluation/06_pos/xlmr_base/command_logs; logs=2 | none |
+| aggregation_source:pseudoperplexity:glot500_base | ready | sources=/home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/glot500_base/summary.tsv | none |
+| run_meta:pseudoperplexity:glot500_base | ready | 3_evaluation/01_pseudoperplexity/glot500_base/run_meta.tsv; fields=complete | none |
+| command_log:pseudoperplexity:glot500_base | ready | 3_evaluation/01_pseudoperplexity/glot500_base/command_logs; logs=1 | none |
+| aggregation_source:pseudoperplexity:v5_random | ready | sources=/home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/v5_random/summary.tsv | none |
+| run_meta:pseudoperplexity:v5_random | ready | 3_evaluation/01_pseudoperplexity/v5_random/run_meta.tsv; fields=complete | none |
+| command_log:pseudoperplexity:v5_random | ready | 3_evaluation/01_pseudoperplexity/v5_random/command_logs; logs=1 | none |
+| aggregation_source:pseudoperplexity:xlmr_base | ready | sources=/home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/xlmr_base/summary.tsv | none |
+| run_meta:pseudoperplexity:xlmr_base | ready | 3_evaluation/01_pseudoperplexity/xlmr_base/run_meta.tsv; fields=complete | none |
+| command_log:pseudoperplexity:xlmr_base | ready | 3_evaluation/01_pseudoperplexity/xlmr_base/command_logs; logs=1 | none |
+| aggregation_source:retrieval_bible:glot500_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_bible/glot500_base/cis-lmu__glot500-base/test_results.txt | none |
+| run_meta:retrieval_bible:glot500_base | ready | 3_evaluation/03_retrieval_bible/glot500_base/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_bible:glot500_base | ready | 3_evaluation/03_retrieval_bible/glot500_base/command_logs; logs=1 | none |
+| aggregation_source:retrieval_bible:v5_fvt | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_bible/v5_fvt/__home__axt__mnt2__jongha__v5_glot50010__runs__v5_fvt_mlm_10k/test_results.txt | none |
+| run_meta:retrieval_bible:v5_fvt | ready | 3_evaluation/03_retrieval_bible/v5_fvt/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_bible:v5_fvt | ready | 3_evaluation/03_retrieval_bible/v5_fvt/command_logs; logs=1 | none |
+| aggregation_source:retrieval_bible:v5_random | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_bible/v5_random/__home__axt__mnt2__jongha__v5_glot50010__runs__v5_random_mlm_10k/test_results.txt | none |
+| run_meta:retrieval_bible:v5_random | ready | 3_evaluation/03_retrieval_bible/v5_random/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_bible:v5_random | ready | 3_evaluation/03_retrieval_bible/v5_random/command_logs; logs=1 | none |
+| aggregation_source:retrieval_bible:xlmr_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_bible/xlmr_base/xlm-roberta-base/test_results.txt | none |
+| run_meta:retrieval_bible:xlmr_base | ready | 3_evaluation/03_retrieval_bible/xlmr_base/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_bible:xlmr_base | ready | 3_evaluation/03_retrieval_bible/xlmr_base/command_logs; logs=1 | none |
+| aggregation_source:retrieval_tatoeba:glot500_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_tatoeba/glot500_base/cis-lmu__glot500-base/test_results.txt | none |
+| run_meta:retrieval_tatoeba:glot500_base | ready | 3_evaluation/02_retrieval_tatoeba/glot500_base/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_tatoeba:glot500_base | ready | 3_evaluation/02_retrieval_tatoeba/glot500_base/command_logs; logs=1 | none |
+| aggregation_source:retrieval_tatoeba:v5_fvt | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_tatoeba/v5_fvt/__home__axt__mnt2__jongha__v5_glot50010__runs__v5_fvt_mlm_10k/test_results.txt | none |
+| run_meta:retrieval_tatoeba:v5_fvt | ready | 3_evaluation/02_retrieval_tatoeba/v5_fvt/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_tatoeba:v5_fvt | ready | 3_evaluation/02_retrieval_tatoeba/v5_fvt/command_logs; logs=1 | none |
+| aggregation_source:retrieval_tatoeba:v5_random | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_tatoeba/v5_random/__home__axt__mnt2__jongha__v5_glot50010__runs__v5_random_mlm_10k/test_results.txt | none |
+| run_meta:retrieval_tatoeba:v5_random | ready | 3_evaluation/02_retrieval_tatoeba/v5_random/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_tatoeba:v5_random | ready | 3_evaluation/02_retrieval_tatoeba/v5_random/command_logs; logs=1 | none |
+| aggregation_source:retrieval_tatoeba:xlmr_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/retrieval_tatoeba/xlmr_base/xlm-roberta-base/test_results.txt | none |
+| run_meta:retrieval_tatoeba:xlmr_base | ready | 3_evaluation/02_retrieval_tatoeba/xlmr_base/run_meta.tsv; fields=complete | none |
+| command_log:retrieval_tatoeba:xlmr_base | ready | 3_evaluation/02_retrieval_tatoeba/xlmr_base/command_logs; logs=1 | none |
+| aggregation_source:roundtrip_alignment:glot500_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/roundtrip_alignment/glot500_base/test_results.txt | none |
+| run_meta:roundtrip_alignment:glot500_base | ready | 3_evaluation/07_roundtrip_alignment/glot500_base/run_meta.tsv; fields=complete | none |
+| command_log:roundtrip_alignment:glot500_base | ready | 3_evaluation/07_roundtrip_alignment/glot500_base/command_logs; logs=1 | none |
+| aggregation_source:roundtrip_alignment:v5_random | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/roundtrip_alignment/v5_random/test_results.txt | none |
+| run_meta:roundtrip_alignment:v5_random | ready | 3_evaluation/07_roundtrip_alignment/v5_random/run_meta.tsv; fields=complete | none |
+| command_log:roundtrip_alignment:v5_random | ready | 3_evaluation/07_roundtrip_alignment/v5_random/command_logs; logs=1 | none |
+| aggregation_source:roundtrip_alignment:xlmr_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/roundtrip_alignment/xlmr_base/test_results.txt | none |
+| run_meta:roundtrip_alignment:xlmr_base | ready | 3_evaluation/07_roundtrip_alignment/xlmr_base/run_meta.tsv; fields=complete | none |
+| command_log:roundtrip_alignment:xlmr_base | ready | 3_evaluation/07_roundtrip_alignment/xlmr_base/command_logs; logs=1 | none |
+| aggregation_source:text_classification:glot500_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/text_classification/taxi1500/glot500_base/summary.json | none |
+| run_meta:text_classification:glot500_base | ready | 3_evaluation/04_text_classification/glot500_base/run_meta.tsv; fields=complete | none |
+| command_log:text_classification:glot500_base | ready | 3_evaluation/04_text_classification/glot500_base/command_logs; logs=1 | none |
+| aggregation_source:text_classification:v5_fvt | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/text_classification/taxi1500/v5_fvt/summary.json | none |
+| run_meta:text_classification:v5_fvt | ready | 3_evaluation/04_text_classification/v5_fvt/run_meta.tsv; fields=complete | none |
+| command_log:text_classification:v5_fvt | ready | 3_evaluation/04_text_classification/v5_fvt/command_logs; logs=1 | none |
+| aggregation_source:text_classification:v5_random | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/text_classification/taxi1500/v5_random/summary.json | none |
+| run_meta:text_classification:v5_random | ready | 3_evaluation/04_text_classification/v5_random/run_meta.tsv; fields=complete | none |
+| command_log:text_classification:v5_random | ready | 3_evaluation/04_text_classification/v5_random/command_logs; logs=1 | none |
+| aggregation_source:text_classification:xlmr_base | ready | sources=/home/axt/mnt2/jongha/v5_glot50010/evaluation/text_classification/taxi1500/xlmr_base/summary.json | none |
+| run_meta:text_classification:xlmr_base | ready | 3_evaluation/04_text_classification/xlmr_base/run_meta.tsv; fields=complete | none |
+| command_log:text_classification:xlmr_base | ready | 3_evaluation/04_text_classification/xlmr_base/command_logs; logs=1 | none |
+
+Promotion rule:
+
+```text
+A numeric row can enter the report/PPT only after aggregation points to
+a nonempty source file and the corresponding metric/model folder has
+run_meta.tsv plus a command log.
+```

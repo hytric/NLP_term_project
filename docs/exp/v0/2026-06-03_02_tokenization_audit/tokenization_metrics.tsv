@@ -1,0 +1,7 @@
+tokenizer	model_name	language	sentences	avg_chars	avg_words	avg_tokens	tokens_per_word	tokens_per_char	single_char_token_pct	target_single_char_token_pct	unk_token_pct
+xlm-r	xlm-roberta-base	coptic	500	71.742	12.846	24.766	1.928	0.345	6.735	0.347	0.000
+xlm-r	xlm-roberta-base	syriac	500	56.572	13.836	66.208	4.785	1.170	73.795	73.795	0.000
+glot500	cis-lmu/glot500-base	coptic	500	71.742	12.846	82.966	6.459	1.156	86.361	75.334	0.000
+glot500	cis-lmu/glot500-base	syriac	500	56.572	13.836	70.408	5.089	1.245	80.349	80.349	0.000
+nllb	facebook/nllb-200-distilled-600M	coptic	500	71.742	12.846	24.220	1.885	0.338	6.400	0.000	46.780
+nllb	facebook/nllb-200-distilled-600M	syriac	500	56.572	13.836	27.672	2.000	0.489	0.000	0.000	50.000

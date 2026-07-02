@@ -1,0 +1,9 @@
+task	available_scope	status	notes
+deterministic_mlm_proxy	target10	PASS	complete for XLM-R-base, 200-step fvt seeds 13/17/23, and replay-safe fvt seeds 13/17/23 on locked final-test rows
+coptic_ud_tagging	cop	PASS_FOR_COPTIC_PILOT	local UD train/dev/test converted; step200 POS pilot complete; replay-safe token accuracy improves in 3/3 fvt checkpoint seeds
+bible_retrieval_proxy	target10	PASS_FOR_PROXY	frozen encoder verse retrieval proxy run for fvt seeds 13/17/23
+target10_language_evidence	target10	PASS_DIAGNOSTIC	target10_language_evidence.tsv summarizes tokenizer, MLM proxy, supervised availability, and Coptic/Syriac claim boundary by language
+roundtrip_alignment	target10_or_subset	PENDING	not run yet
+high_resource_control	eng/deu/jpn/kor	FAIL_POTENTIAL_COLLAPSE_PROXY	held-out Bible control MLM proxy run; replay-safe fvt mean loss increases by +0.675539 vs XLM-R and 0/4 languages pass no-large-collapse threshold
+checkpoint_selection_proxy	target10_and_high_resource	PASS_DIAGNOSTIC	checkpoint-150 was evaluated and is worse than checkpoint-200 on target10 and high-resource control proxies
+official_downstream_target10	target10_sparse	PASS_AVAILABILITY_AUDIT	only Coptic POS is locally confirmed and run; remaining target10 languages have no separate local supervised task found and are documented in target10_downstream_availability.tsv

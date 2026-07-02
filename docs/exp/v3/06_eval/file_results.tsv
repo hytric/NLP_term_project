@@ -1,0 +1,59 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+preprocessing/run_third_try_stage06_mlm_proxy_eval.py	stage06_eval_script	1	NOT_COMPUTED	PASS	deterministic target10 MLM proxy eval script
+docs/exp/third_try/06_eval/mlm_proxy_eval_smoke.tsv	stage06_smoke_metric	20	NOT_COMPUTED	PASS	2 rows per language smoke for XLM-R and seed13
+docs/exp/third_try/06_eval/mlm_proxy_summary_smoke.tsv	stage06_smoke_metric	6	NOT_COMPUTED	PASS	smoke summary
+docs/exp/third_try/06_eval/mlm_proxy_eval.tsv	stage06_proxy_metric	40	NOT_COMPUTED	PASS	XLM-R plus 3 fvt seeds across target10
+docs/exp/third_try/06_eval/mlm_proxy_summary.tsv	stage06_proxy_summary	12	NOT_COMPUTED	PASS	summary metrics for 4 model entries
+docs/exp/third_try/06_eval/mlm_proxy_language_comparison.tsv	stage06_proxy_summary	10	NOT_COMPUTED	PASS	language-level FVT mean vs XLM-R
+docs/exp/third_try/06_eval/target10_seed_summary.tsv	stage06_proxy_summary	4	NOT_COMPUTED	PASS_FOR_PROXY	seed stability for proxy only
+docs/exp/third_try/06_eval/task_coverage.tsv	stage06_eval_audit	6	NOT_COMPUTED	IN_PROGRESS	downstream/control still pending
+docs/exp/third_try/06_eval/frozen_proxy_seed13/downstream_results.tsv	stage06_frozen_proxy	33	NOT_COMPUTED	PASS	frozen encoder proxy for checkpoint seed13
+docs/exp/third_try/06_eval/frozen_proxy_seed17/downstream_results.tsv	stage06_frozen_proxy	33	NOT_COMPUTED	PASS	frozen encoder proxy for checkpoint seed17
+docs/exp/third_try/06_eval/frozen_proxy_seed23/downstream_results.tsv	stage06_frozen_proxy	33	NOT_COMPUTED	PASS	frozen encoder proxy for checkpoint seed23
+docs/exp/third_try/06_eval/frozen_proxy_seed_summary.tsv	stage06_frozen_proxy_summary	12	NOT_COMPUTED	PASS_FOR_PROXY	3-checkpoint frozen proxy aggregate
+docs/exp/third_try/06_eval/coptic_ud_inventory.tsv	stage06_downstream_inventory	3	NOT_COMPUTED	PASS	local Coptic UD data located
+preprocessing/prepare_third_try_coptic_ud_pos.py	stage06_downstream_converter	1	NOT_COMPUTED	PASS	converts UD Coptic-Scriptorium CoNLL-U to local tagging format
+preprocessing/run_third_try_coptic_pos.py	stage06_downstream_runner	1	NOT_COMPUTED	PASS	runs local Glot500 token tagger for one Coptic POS model
+preprocessing/evaluate_third_try_coptic_pos_metrics.py	stage06_metric_script	1	NOT_COMPUTED	PASS	computes POS token accuracy and macro F1 from gold/pred labels
+docs/exp/third_try/06_eval/coptic_pos_command.md	stage06_command_doc	1	NOT_COMPUTED	PASS	Coptic POS data/run/metric commands
+docs/exp/third_try/06_eval/coptic_pos_dataset.tsv	stage06_downstream_dataset	3	NOT_COMPUTED	PASS	Coptic POS train/dev/test converted counts
+docs/exp/third_try/06_eval/coptic_pos_results.tsv	stage06_downstream_metric	4	NOT_COMPUTED	PASS_FOR_COPTIC_PILOT	XLM-R plus fvt seeds 13/17/23 Coptic POS token accuracy
+docs/exp/third_try/06_eval/coptic_pos_summary.tsv	stage06_downstream_summary	8	NOT_COMPUTED	PASS_FOR_COPTIC_PILOT	Coptic-only downstream pilot aggregate
+docs/exp/third_try/06_eval/coptic_pos_label_metrics.tsv	stage06_downstream_diagnostic	56	NOT_COMPUTED	PASS	per-label Coptic POS precision/recall/F1
+/home/axt/mnt2/jongha/third_try/downstream/coptic_ud_pos_runs_step200	stage06_large_run_dir	4_model_dirs	NOT_COMPUTED	PASS_FOR_COPTIC_PILOT	Coptic POS step200 runs for XLM-R and fvt seeds
+preprocessing/run_third_try_stage06_high_resource_control_eval.py	stage06_control_eval_script	1	NOT_COMPUTED	PASS	evaluates held-out Bible control books for high-resource collapse proxy
+docs/exp/third_try/06_eval/high_resource_control_command.md	stage06_command_doc	1	NOT_COMPUTED	PASS	high-resource control smoke/full commands
+docs/exp/third_try/06_eval/high_resource_control_mlm_eval_smoke.tsv	stage06_control_smoke_metric	16	NOT_COMPUTED	PASS	2 rows per control language smoke for XLM-R and fvt seeds
+docs/exp/third_try/06_eval/high_resource_control_language_comparison_smoke.tsv	stage06_control_smoke_summary	4	NOT_COMPUTED	PASS	smoke language comparison
+docs/exp/third_try/06_eval/high_resource_control_summary_smoke.tsv	stage06_control_smoke_summary	6	NOT_COMPUTED	PASS	smoke aggregate
+docs/exp/third_try/06_eval/high_resource_control_mlm_eval.tsv	stage06_control_metric	16	NOT_COMPUTED	PASS	XLM-R plus fvt seeds on held-out Bible control books
+docs/exp/third_try/06_eval/high_resource_control_language_comparison.tsv	stage06_control_summary	4	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	0/4 high-resource control languages pass proxy threshold
+docs/exp/third_try/06_eval/high_resource_control_summary.tsv	stage06_control_summary	6	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	fvt mean avg MLM loss delta +0.703114 vs XLM-R
+docs/exp/third_try/06_eval/mlm_proxy_eval_ckpt150.tsv	stage06_proxy_metric	40	NOT_COMPUTED	PASS	checkpoint-150 target10 MLM proxy for XLM-R plus fvt seeds
+docs/exp/third_try/06_eval/mlm_proxy_summary_ckpt150.tsv	stage06_proxy_summary	12	NOT_COMPUTED	PASS	checkpoint-150 target10 MLM proxy summary
+docs/exp/third_try/06_eval/high_resource_control_mlm_eval_ckpt150.tsv	stage06_control_metric	16	NOT_COMPUTED	PASS	checkpoint-150 high-resource held-out Bible control proxy
+docs/exp/third_try/06_eval/high_resource_control_language_comparison_ckpt150.tsv	stage06_control_summary	4	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	checkpoint-150 also fails 0/4 no-large-collapse languages
+docs/exp/third_try/06_eval/high_resource_control_summary_ckpt150.tsv	stage06_control_summary	6	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	checkpoint-150 fvt mean avg MLM loss delta +0.757355 vs XLM-R
+docs/exp/third_try/06_eval/checkpoint_selection_proxy_summary.tsv	stage06_checkpoint_selection	2	NOT_COMPUTED	PASS_DIAGNOSTIC	checkpoint-150 vs checkpoint-200 target10/control proxy comparison
+docs/exp/third_try/06_eval/checkpoint_selection_proxy.md	stage06_checkpoint_selection_doc	1	NOT_COMPUTED	PASS_DIAGNOSTIC	retained early checkpoint selection does not rescue current candidate
+docs/exp/third_try/06_eval/checkpoint_selection_proxy_command.md	stage06_command_doc	1	NOT_COMPUTED	PASS	checkpoint-150 target10/control proxy commands
+docs/exp/third_try/06_eval/mlm_proxy_eval_replay_safe_seed13.tsv	stage06_proxy_metric	20	NOT_COMPUTED	PASS	replay-safe seed13 target10 MLM proxy for XLM-R and seed13
+docs/exp/third_try/06_eval/mlm_proxy_summary_replay_safe_seed13.tsv	stage06_proxy_summary	6	NOT_COMPUTED	PASS	replay-safe seed13 target10 MLM proxy summary
+docs/exp/third_try/06_eval/high_resource_control_mlm_eval_replay_safe_seed13.tsv	stage06_control_metric	8	NOT_COMPUTED	PASS	replay-safe seed13 high-resource held-out Bible control proxy
+docs/exp/third_try/06_eval/high_resource_control_language_comparison_replay_safe_seed13.tsv	stage06_control_summary	4	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	replay-safe seed13 still fails 0/4 no-large-collapse languages
+docs/exp/third_try/06_eval/high_resource_control_summary_replay_safe_seed13.tsv	stage06_control_summary	6	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	replay-safe seed13 fvt mean avg MLM loss delta +0.680942 vs XLM-R
+docs/exp/third_try/06_eval/mlm_proxy_eval_replay_safe.tsv	stage06_proxy_metric	40	NOT_COMPUTED	PASS	replay-safe 3-seed target10 MLM proxy for XLM-R plus fvt seeds
+docs/exp/third_try/06_eval/mlm_proxy_summary_replay_safe.tsv	stage06_proxy_summary	12	NOT_COMPUTED	PASS	replay-safe 3-seed target10 MLM proxy summary
+docs/exp/third_try/06_eval/high_resource_control_mlm_eval_replay_safe.tsv	stage06_control_metric	16	NOT_COMPUTED	PASS	replay-safe 3-seed high-resource held-out Bible control proxy
+docs/exp/third_try/06_eval/high_resource_control_language_comparison_replay_safe.tsv	stage06_control_summary	4	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	replay-safe 3-seed still fails 0/4 no-large-collapse languages
+docs/exp/third_try/06_eval/high_resource_control_summary_replay_safe.tsv	stage06_control_summary	6	NOT_COMPUTED	FAIL_POTENTIAL_COLLAPSE_PROXY	replay-safe 3-seed fvt mean avg MLM loss delta +0.675539 vs XLM-R
+docs/exp/third_try/06_eval/coptic_pos_results_replay_safe.tsv	stage06_downstream_metric	4	NOT_COMPUTED	PASS_FOR_COPTIC_PILOT	replay-safe Coptic POS token accuracy for XLM-R plus fvt seeds
+docs/exp/third_try/06_eval/coptic_pos_summary_replay_safe.tsv	stage06_downstream_summary	8	NOT_COMPUTED	PASS_FOR_COPTIC_PILOT	replay-safe Coptic-only downstream aggregate
+docs/exp/third_try/06_eval/coptic_pos_label_metrics_replay_safe.tsv	stage06_downstream_diagnostic	56	NOT_COMPUTED	PASS	replay-safe per-label Coptic POS precision/recall/F1
+docs/exp/third_try/06_eval/replay_safe_candidate_summary.tsv	stage06_retry_summary	12	NOT_COMPUTED	PASS_DIAGNOSTIC	replay-safe retry improves 200-step pilot but does not rescue positive claim
+docs/exp/third_try/06_eval/target10_downstream_availability.tsv	stage06_availability_audit	10	NOT_COMPUTED	PASS	local official/proxy downstream availability and unavailable reasons for target10
+docs/exp/third_try/06_eval/target10_language_evidence.tsv	stage06_language_evidence	10	NOT_COMPUTED	PASS_DIAGNOSTIC	target10 language-level tokenizer, MLM proxy, downstream availability, and Coptic POS evidence
+docs/exp/third_try/06_eval/coptic_syriac_evidence.md	stage06_language_evidence_doc	1	NOT_COMPUTED	PASS_DIAGNOSTIC	explicit Coptic/Syriac evidence and claim boundary
+docs/exp/third_try/06_eval/syriac_downstream_search.tsv	stage06_availability_audit	7	NOT_COMPUTED	PASS_DIAGNOSTIC	local Syriac downstream/proxy search results
+docs/exp/third_try/06_eval/score_table.tsv	stage06_gate_table	26	NOT_COMPUTED	IN_PROGRESS	replay-safe retry evaluated; control proxy still fails
+docs/exp/third_try/06_eval/results.md	stage06_report	1	NOT_COMPUTED	IN_PROGRESS	proxy and Coptic POS complete; replay-safe retry improves but control proxy still fails

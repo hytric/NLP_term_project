@@ -1,0 +1,16 @@
+role	iso	language	script	speakers	source_xml	seg_rows	status	notes
+core_replay	eng	English	Latin	328000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/English.xml	31102	USABLE	full Bible; primary English replay/control
+alternate_replay	eng	English WEB	Latin	328000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/English-WEB.xml	31102	USABLE_OPTIONAL	alternate English translation; avoid using both unless explicitly needed
+core_replay	deu	German	Latin	90300000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/German.xml	31102	USABLE	full Bible; high-resource replay/control
+core_replay	jpn	Japanese	Kanjii	122000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Japanese.xml	31087	USABLE	full Bible; high-resource replay/control
+alternate_replay	jpn	Japanese tokenized	Kanjii	122000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Japanese-tok.xml	31087	USABLE_OPTIONAL	tokenized alternate; use only if raw Japanese tokenization causes processing issue
+core_replay	kor	Korean	Hangul	66300000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Korean.xml	31102	USABLE	full Bible; high-resource replay/control
+optional_replay	fra	French	Latin	58000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/French.xml	31102	USABLE_OPTIONAL	full Bible; Romance high-resource control
+optional_replay	spa	Spanish	Latin	328000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Spanish.xml	31100	USABLE_OPTIONAL	full Bible; Romance high-resource control
+optional_replay	cmn	Mandarin Chinese	Chinese	840000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Chinese.xml	31101	USABLE_OPTIONAL	full Bible; non-Latin high-resource control
+optional_replay	cmn	Mandarin Chinese tokenized	Chinese	840000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Chinese-tok.xml	31101	USABLE_OPTIONAL	tokenized alternate; use only if raw Chinese tokenization causes processing issue
+optional_replay	ara	Arabic	Arabic	206000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Arabic.xml	31102	USABLE_OPTIONAL	full Bible; non-Latin high-resource control
+optional_replay	rus	Russian	Cyrillic	143000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Russian.xml	31102	USABLE_OPTIONAL	full Bible; Cyrillic high-resource control
+optional_replay	hin	Hindi	Devanagari	180000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Hindi.xml	31089	USABLE_OPTIONAL	full Bible; Indic high-resource control
+reference_optional	ell	Greek	Greek	13000000	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Greek.xml	31102	USABLE_OPTIONAL	full Bible; useful Coptic/Syriac pivot/reference, not core replay
+reference_optional	lat	Latin	Latin	Extinct	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Latin.xml	31211	USABLE_OPTIONAL	full Bible; useful ancient-language reference, not high-resource by speakers

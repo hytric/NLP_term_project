@@ -1,0 +1,9 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/09_top_tier_validation/score_table.tsv	3	881	bbe599c155a0a2857283b54a563804c4	PASS	method-matched score table
+method_matched_translation	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/09_top_tier_validation/method_matched_translation.tsv	3	881	bbe599c155a0a2857283b54a563804c4	PASS	same-method high/target ratios
+dev_selection_grid	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/09_top_tier_validation/dev_selection_grid.tsv	270	27297	234c7280914998a86a7d60e0d3b615f8	PASS	dev-only target pair selection grid
+top_tier_claim_contract	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/09_top_tier_validation/top_tier_claim_contract.md	41	5024	04ed59fa1446ba98d84cf83808a7b653	PASS	claim contract and required follow-up
+required_followups_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/09_top_tier_validation/required_followups.tsv	13	7243	e177738efe52be37670fa4b905a4ad68	PASS	required additional experiments table with v2 rerun status through Step 27
+required_followups_doc	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/09_top_tier_validation/required_followups.md	59	7264	f6a9ff42b49bec1fd6152daa01eb0683	PASS	required additional experiments summary with Step 10/11/12/24/25/26/27 update
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/09_top_tier_validation/results.md	47	1764	e4e6cd5942694ab7ec74d0cd853af2a8	PASS	step result summary
+runtime_config	/home/axt/mnt2/jongha/second_try/artifacts/09_top_tier_validation/step09_top_tier_20260611_144919_runtime.json	28	784	c983e05865065885694533777cbfdb91	PASS	large-artifact runtime config

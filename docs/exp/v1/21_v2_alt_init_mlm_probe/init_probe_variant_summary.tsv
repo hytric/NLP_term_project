@@ -1,0 +1,3 @@
+run_id	init_method	completed	raw_mean_final_loss	raw_delta_vs_fvt_mean	raw_ratio_vs_original_mean	added_improved_vs_fvt	base_nonworse_vs_fvt	all_nonworse_vs_fvt	mean_added_delta_vs_fvt	mean_base_delta_vs_fvt	mean_all_delta_vs_fvt	status	notes
+step21_v2_alt_init_probe_20260611_194617	mean	3/3	6.045238	1.098409	2.400802	0/3	0/3	0/3	1.937959	0.239632	1.094320	FAIL	passes only if raw mean and every category seed gate beat fvt
+step21_v2_alt_init_probe_20260611_194617	align	3/3	5.086652	0.139823	2.020110	0/3	0/3	0/3	0.153484	0.132847	0.143101	FAIL	passes only if raw mean and every category seed gate beat fvt

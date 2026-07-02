@@ -1,0 +1,12 @@
+iso	language	output_text	rows	included_split	excluded_splits	test_rows_included	md5	status
+acu	Achuar-Shiwiar	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_acu.txt	6123	train	dev,test	0	eedc2d2861a72aa76fada6690beb564e	PASS
+ake	Akawaio	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_ake.txt	6182	train	dev,test	0	6641d374df58f76d5d7c7e874f1c8ca1	PASS
+bsn	Barasana-Eduria	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_bsn.txt	6062	train	dev,test	0	77f7cc0daf2b63a43c906bdc0364721b	PASS
+chr	Cherokee	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_chr.txt	6400	train	dev,test	0	12662c23aff9fd683fd5931cf396d2ba	PASS
+cop	Coptic	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_cop.txt	6400	train	dev,test	0	16763c8ce5ecb33425dd5dab021af432	PASS
+kbh	Camsa	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_kbh.txt	5363	train	dev,test	0	e6610967e9c85ecfc7615c13096c61cf	PASS
+nhg	Nahuatl (Tetelcingo)	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_nhg.txt	6279	train	dev,test	0	af5cb910b98f9aff0fb2657ae3d065be	PASS
+oji	Ojibwa	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_oji.txt	6391	train	dev,test	0	58ea240d7d5b32e626dcc88e7900fba8	PASS
+syr	Syriac	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_syr.txt	6397	train	dev,test	0	836057bba1aa791f2fe16936196a9437	PASS
+usp	Uspanteco	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_usp.txt	6334	train	dev,test	0	ed85a0d81f78747cc2aa8660f248be8a	PASS
+ALL10	ALL10	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/tokenizer/target10_train_all.txt	61931	train	dev,test	0	4d2aed654ee8d9b1a682d75d386eb5c2	PASS

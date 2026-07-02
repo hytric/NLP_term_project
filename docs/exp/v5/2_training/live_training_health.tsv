@@ -1,0 +1,8 @@
+area	status	evidence	action
+progress_artifact	ready	mlm_progress=mlm_progress_ready_for_post_checkpoint_status	none
+random_trainer_process	ready	latest_step=10000/10000; status=ready	none
+fvt_trainer_or_queue	ready	status=ready; launcher_running=False	none
+random_log_freshness	completed	77809s old; path=/home/axt/mnt2/jongha/v5_glot50010/runs/logs/train_v5_v5_random_mlm_10k_20260627_005616.log	none
+critical_log_patterns	clean	critical=0; benign_matches=8	none
+gpu_2_3_activity	low_or_unknown	gpu2=11/49140MB 0%; gpu3=124/49140MB 0%	confirm this is an intentional idle/wait state
+post_checkpoint_eval_gate	ready	v5_random_ready=True; v5_fvt_ready=True	run status wrapper

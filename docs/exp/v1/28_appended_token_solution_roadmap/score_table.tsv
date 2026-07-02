@@ -1,0 +1,7 @@
+run_id	gate_id	criterion	observed	required	status	return_to	notes
+step28_solution_roadmap_20260612	G01_solution_candidates	concrete appended-token solution candidates listed	candidate_rows=6	at least 4	PASS	28_appended_token_solution_roadmap	all candidates target appended-token prediction
+step28_solution_roadmap_20260612	G02_experiment_protocol	falsifiable experiment protocols listed	protocol_rows=5	at least 3	PASS	28_appended_token_solution_roadmap	each has metrics and pass gate
+step28_solution_roadmap_20260612	G03_no_final_access	Step28 does not read ACT final data	NO_ACT_FINAL_ACCESS	NO_ACT_FINAL_ACCESS	PASS	12_v2_split_protocol	document synthesis only
+step28_solution_roadmap_20260612	G04_positive_claim_guard	solutions are not claimed as proven	PROPOSED_NOT_TESTED	claims remain hypothetical	PASS	26_top_tier_diagnostic_claim_synthesis	positive claim still requires future controls
+step28_solution_roadmap_20260612	G05_main_recommendation	recommended next method is explicit	S01+S02+S03 teacher-guided curriculum with base KL	one prioritized remedy	PASS	28_appended_token_solution_roadmap	highest-priority future experiment
+step28_solution_roadmap_20260612	G06_presentation_insert	presentation-ready solution slide text written	presentation_insert.md present	presentation insert exists	PASS	28_appended_token_solution_roadmap	Korean presentation support

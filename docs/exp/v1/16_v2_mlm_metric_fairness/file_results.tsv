@@ -1,0 +1,5 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/16_v2_mlm_metric_fairness/score_table.tsv	5	1283	cbbaa40853a091b23924c6f616940bd1	PASS	gate table
+normalized_mlm_scores	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/16_v2_mlm_metric_fairness/normalized_mlm_scores.tsv	6	1981	f1c344ad5db45a86061e40ff1eb0aa58	PASS	per-checkpoint normalized MLM diagnostics
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/16_v2_mlm_metric_fairness/v2_no_final_access_audit.tsv	2	485	3b818da1b5e31dd1cc9bfbdb1be1d4f0	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/16_v2_mlm_metric_fairness/results.md	37	1234	212ac17ae5f8b77b5518839af07cc812	PASS	step result summary

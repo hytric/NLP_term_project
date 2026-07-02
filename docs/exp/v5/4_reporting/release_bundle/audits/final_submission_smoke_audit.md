@@ -1,0 +1,32 @@
+# v5 Final Submission Smoke Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `final_submission_smoke_needs_repair`
+
+This smoke audit is the final one-page sanity check for the report/PPT
+handoff package. It does not replace metric-specific audits; it checks
+that the currently shareable artifacts, launch gate, rendered freshness,
+rendered overclaim guard, release bundle, and final-deliverable state agree.
+
+| Item | Status | Evidence | Action |
+| --- | --- | --- | --- |
+| launch_readiness | ready_to_launch | READY_TO_LAUNCH=yes; v5_random_ready=yes; v5_fvt_ready=yes; preflight=post_checkpoint_preflight_ready_to_launch | run paired all evaluation |
+| final_deliverable_state | execution_draft_ready | final_deliverable_audit=final_deliverable_pending_results | keep result claims locked until post-checkpoint rows are parsed |
+| reporting_package_state | needs_review | reporting_package_audit=needs_document_cleanup | repair reporting package |
+| share_artifacts_exist | ready | 4_reporting/03_final_report/paper_draft.pdf=127722; 4_reporting/03_final_report/paper_draft_ko.pdf=210539; 4_reporting/03_final_report/paper_draft.html=42091; 4_reporting/03_final_report/paper_draft_ko.html=30967; 4_reporting/02_slides/v5_final_deck_ko.pptx=30236; 4_reporting/02_slides/v5_final_deck_ko.pdf=80525; 4_reporting/02_slides/v5_final_deck_ko.html=16259; 4_reporting/02_slides/final_deck_ko.md=9241 | none |
+| rendered_artifact_freshness | ready | rendered_artifact_freshness_audit=rendered_artifact_freshness_ready | none |
+| deliverable_openability | ready | deliverable_openability_audit=deliverable_openability_ready | none |
+| rendered_surface_overclaim_guard | ready | surface_overclaim_audit has rendered_surface_scan_summary ready and unguarded=0 | none |
+| release_bundle_state | needs_review | release_bundle_audit=release_bundle_audit_needs_repair | repair release bundle |
+| slide_rendering_state | ready | slide_rendering_audit=slide_rendering_ready | none |
+| launch_command_guard | ready | command_consistency=post_checkpoint_command_consistency_ready; wrapper_status_launch_summary=yes | none |
+| post_checkpoint_provenance_guard | ready | post_checkpoint_provenance_audit=post_checkpoint_provenance_ready_waiting_models | none |
+| handoff_launch_gate_visibility | ready | dashboard and runbook expose READY_TO_LAUNCH yes/no and NEXT_COMMAND | none |
+| freeze_protocol_smoke_link | ready | freeze protocol points to smoke audit and rendered overclaim guard | none |
+
+Interpretation:
+
+- `final_submission_smoke_execution_draft_ready` means the report/PPT package is coherent for review/rehearsal, but final claims remain locked.
+- `final_submission_smoke_final_candidate` means final result gates and release packaging are consistent enough for final handoff review.
+- `final_submission_smoke_needs_repair` means fix the listed row before sharing the bundle.

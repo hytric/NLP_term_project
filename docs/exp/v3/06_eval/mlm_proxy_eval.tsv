@@ -1,0 +1,41 @@
+model_label	model_path	model_seed	language_id	language	script	rows	masked_tokens	mean_mlm_loss	mlm_perplexity	truncated_rows	device	fp16	mlm_probability	max_length	mask_seed	status
+xlmr_base	xlm-roberta-base	NA	acu	Achuar-Shiwiar	Latin	953	9111	6.127476	458.27819	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	ake	Akawaio	Latin	1003	13281	4.032243	56.387244	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	bsn	Barasana-Eduria	Latin	959	14174	4.639948	103.538978	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	chr	Cherokee	Cherokee	1007	4882	0.281844	1.325572	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	cop	Coptic	Coptic	1003	4952	0.172038	1.187722	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	kbh	Camsa	Latin	852	10756	5.804295	331.721339	4	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	nhg	Nahuatl Tetelcingo	Latin	1006	10106	5.802889	331.255299	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	oji	Ojibwa	Aboriginal Syllabics	1007	5772	0.159655	1.173106	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	syr	Syriac	Syriac	1007	11385	2.157834	8.652374	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	usp	Uspanteco	Latin	1007	11116	5.550147	257.275452	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	acu	Achuar-Shiwiar	Latin	953	8441	5.359051	212.523179	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	ake	Akawaio	Latin	1003	11200	4.552439	94.863462	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	bsn	Barasana-Eduria	Latin	959	10623	4.645286	104.09315	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	chr	Cherokee	Cherokee	1007	6856	5.332551	206.965242	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	cop	Coptic	Coptic	1003	6998	5.681128	293.279959	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	kbh	Camsa	Latin	852	7880	5.762413	318.114937	4	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	nhg	Nahuatl Tetelcingo	Latin	1006	7872	5.654051	285.445395	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	oji	Ojibwa	Aboriginal Syllabics	1007	8062	5.494728	243.405397	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	syr	Syriac	Syriac	1007	6040	5.17507	176.808963	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	usp	Uspanteco	Latin	1007	11382	5.165838	175.184115	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	acu	Achuar-Shiwiar	Latin	953	8477	5.437212	229.800711	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	ake	Akawaio	Latin	1003	11094	4.507132	90.661449	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	bsn	Barasana-Eduria	Latin	959	10405	4.71921	112.07962	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	chr	Cherokee	Cherokee	1007	6773	5.372804	215.466141	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	cop	Coptic	Coptic	1003	7102	5.730085	307.995396	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	kbh	Camsa	Latin	852	7977	5.824378	338.450517	4	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	nhg	Nahuatl Tetelcingo	Latin	1006	7893	5.565208	261.179548	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	oji	Ojibwa	Aboriginal Syllabics	1007	8097	5.555738	258.717889	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	syr	Syriac	Syriac	1007	6101	5.216527	184.293022	0	cuda	True	0.15	512	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	usp	Uspanteco	Latin	1007	11646	5.10283	164.486808	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	acu	Achuar-Shiwiar	Latin	953	8398	5.370966	215.07059	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	ake	Akawaio	Latin	1003	11190	4.596749	99.16145	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	bsn	Barasana-Eduria	Latin	959	10275	4.629155	102.427425	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	chr	Cherokee	Cherokee	1007	6844	5.416852	225.169252	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	cop	Coptic	Coptic	1003	7069	5.72955	307.83065	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	kbh	Camsa	Latin	852	7817	5.763736	318.536188	4	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	nhg	Nahuatl Tetelcingo	Latin	1006	7961	5.610739	273.346186	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	oji	Ojibwa	Aboriginal Syllabics	1007	8222	5.542702	255.367005	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	syr	Syriac	Syriac	1007	5985	5.262005	192.867857	0	cuda	True	0.15	512	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	usp	Uspanteco	Latin	1007	11549	5.181666	177.979106	0	cuda	True	0.15	512	13	PASS

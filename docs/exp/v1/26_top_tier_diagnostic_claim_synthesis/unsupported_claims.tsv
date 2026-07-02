@@ -1,0 +1,11 @@
+blocked_claim	failed_gate	evidence	required_threshold	status	return_to	rewrite_rule
+adapted_model_beats_original_or_original_control	Step15_v2_mlm_control	adapted/original ratio=1.964580	ratio<=1.100000	BLOCKED	objective_or_data_redesign	Say adapted model is not competitive under current controls
+raw_loss_failure_is_only_metric_artifact	Step16_v2_mlm_metric_fairness	word_ratio=1.438660; char_ratio=1.438660	ratio<=1.100000	BLOCKED	15_v2_mlm_control	Say normalized metrics also fail
+added_token_weighting_repairs_model	Step18_added_token_repair	added_improved=3/3; all_nonworse=0/3	added/base/all nonworse and improved seed-stably	BLOCKED	17_v2_added_token_failure_analysis	Say weighting trades off against all-token behavior
+new_row_only_repairs_model	Step19_new_row_only_repair	added_improved=0/3; base_nonworse=3/3	added improves 3/3 and base/all nonworse 3/3	BLOCKED	17_v2_added_token_failure_analysis	Say base preservation alone is insufficient
+staged_or_lower_rate_repairs_model	Step20_staged_added_token_repair	passing_variants=0/3	at least one seed-stable passing variant	BLOCKED	17_v2_added_token_failure_analysis	Say variants are closer but not top-tier sufficient
+alternative_initialization_rescues_failure	Step21_alt_init_mlm_probe	passing_methods=0/2; align raw mean worse than fvt	at least one method beats fvt and category gates pass	BLOCKED	14_v2_embedding_init	Say mean and align do not rescue the failure
+smaller_vocab_is_positive_model_success	Step24_8k_mlm_control	word_ratio=1.472019; char_ratio=1.472019	ratio<=1.100000	BLOCKED	objective_or_data_redesign	Say smaller vocab helps but remains noncompetitive
+longer_8k_budget_closes_gap	Step25_continued_budget_probe	word_ratio=1.587381; char_ratio=1.587381	ratio<=1.100000	BLOCKED	objective_or_data_redesign	Say longer budget alone worsens the normalized gap
+translation_reaches_80_percent_reference	Step09_method_matched_translation	selected adapted ratio=0.638034; LaBSE upper-bound ratio=0.567179	ratio>=0.800000	BLOCKED	09_top_tier_validation	Say method-matched translation success is unsupported
+v2_final_downstream_or_translation_ready	Step22_full_experiment_audit	positive_model_claim_allowed=0	positive model gates pass first	BLOCKED	15_v2_mlm_control;16_v2_mlm_metric_fairness	Say ACT final readout remains blocked

@@ -1,0 +1,5 @@
+selector	source	examples	corpus_bleu	corpus_chrfpp	sentence_mean_chrfpp	gain_vs_top1_sentence_mean	gap_to_oracle_sentence_mean	better_than_top1	tie_with_top1	worse_than_top1	oracle_rank_match	rank_counts	decision_counts
+top1_retrieval	baseline	879	3.700093	22.536232	22.740982	0.000000	6.177143	0	879	0	216	1:879	KEEP_TOP1:879
+existing_feature_reranker	baseline_existing_train_fit	879	3.556708	24.592120	24.772354	2.031373	4.145771	264	550	65	298	1:550,2:104,3:62,4:41,5:34,6:37,7:28,8:23	KEEP_TOP1:550,SWAP_TO_RANK_2:104,SWAP_TO_RANK_3:62,SWAP_TO_RANK_4:41,SWAP_TO_RANK_5:34,SWAP_TO_RANK_6:37,SWAP_TO_RANK_7:28,SWAP_TO_RANK_8:23
+oracle_at_8	oracle	879	5.222487	28.332685	28.918125	6.177143	0.000000	663	216	0	879	1:216,2:135,3:121,4:72,5:84,6:113,7:69,8:69	ORACLE:879
+logistic_regression	selected_by_validation_oof	879	3.060170	24.743778	24.913383	2.172401	4.004742	406	285	188	311	1:285,2:142,3:107,4:73,5:66,6:98,7:57,8:51	KEEP_TOP1:285,SWAP_TO_RANK_2:142,SWAP_TO_RANK_3:107,SWAP_TO_RANK_4:73,SWAP_TO_RANK_5:66,SWAP_TO_RANK_6:98,SWAP_TO_RANK_7:57,SWAP_TO_RANK_8:51

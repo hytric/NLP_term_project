@@ -1,0 +1,6 @@
+rank	model_key	weighted_mean_nll	weighted_pseudo_perplexity	all_token_avg_gold_probability_score	all_token_avg_gold_probability_percent	content_token_avg_gold_probability_score	content_token_avg_gold_probability_percent	content_token_top1_accuracy	content_token_top5_accuracy
+1	align_mlm200	4.986757	146.460676	0.006828	0.6828	0.000213	0.0213	0.045114	0.077521
+2	fvt_mlm200	5.033308	153.439754	0.006517	0.6517	0.000213	0.0213	0.040080	0.084566
+3	focus_mlm200	5.090770	162.514902	0.006153	0.6153	0.000175	0.0175	0.040108	0.076205
+4	random_mlm200	5.564147	260.902633	0.003833	0.3833	0.000083	0.0083	0.040033	0.070260
+5	mean_mlm200	6.439363	626.007745	0.001597	0.1597	0.000016	0.0016	0.037271	0.064516

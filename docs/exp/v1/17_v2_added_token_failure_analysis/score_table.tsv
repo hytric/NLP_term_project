@@ -1,0 +1,5 @@
+run_id	gate_id	criterion	observed	required	status	return_to	notes
+step17_v2_added_token_failure_20260611_173758	G01_required_checkpoints	all six Step15 checkpoints evaluated	6/6	6/6	PASS	15_v2_mlm_control	3 seeds x 2 families
+step17_v2_added_token_failure_20260611_173758	G02_no_final_access	ACT final data not read	NO_ACT_FINAL_ACCESS	NO_ACT_FINAL_ACCESS	PASS	12_v2_split_protocol	Step15 summary and Mark/dev manifest only
+step17_v2_added_token_failure_20260611_173758	G03_added_loss_hotspot	added-token loss materially exceeds adapted base-token loss	added/base=2.835906; added_loss=7.267345; base_loss=2.562618	ratio>1.250000 to localize failure to added tokens	PASS	14_v2_embedding_init	diagnostic gate only; PASS means repair should target added-token learning
+step17_v2_added_token_failure_20260611_173758	G04_adapted_vs_original_context	adapted all-token loss remains above original all-token loss	adapted/original=1.954529; adapted_all=4.935611; original_all=2.525218	recorded	PASS	15_v2_mlm_control	context for Step15/16 negative result

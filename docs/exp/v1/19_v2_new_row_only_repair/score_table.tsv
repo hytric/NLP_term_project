@@ -1,0 +1,8 @@
+run_id	gate_id	criterion	observed	required	status	return_to	notes
+step19_v2_new_row_only_repair_20260611_183952	G01_required_repair_runs	all new-row-only repair seeds complete	3/3	3/3	PASS	19_v2_new_row_only_repair	adapted Step15 checkpoint repaired per seed
+step19_v2_new_row_only_repair_20260611_183952	G02_no_final_access	ACT final data not read	NO_ACT_FINAL_ACCESS	NO_ACT_FINAL_ACCESS	PASS	12_v2_split_protocol	train text, Mark/dev manifest, Step15 metadata, and Step17 baseline only
+step19_v2_new_row_only_repair_20260611_183952	G03_trainable_audit	only appended rows effectively update	3/3	3/3	PASS	19_v2_new_row_only_repair	base row sample delta must be zero and added rows must change
+step19_v2_new_row_only_repair_20260611_183952	G04_added_loss_improves	added-token dev loss improves versus source Step15 checkpoint in every seed	0/3	3/3	FAIL	19_v2_new_row_only_repair	mean_delta=0.240600
+step19_v2_new_row_only_repair_20260611_183952	G05_base_loss_nonworse	base-token dev loss does not worsen versus source Step15 checkpoint in every seed	3/3	3/3	PASS	19_v2_new_row_only_repair	mean_delta=-0.048017
+step19_v2_new_row_only_repair_20260611_183952	G06_all_loss_nonworse	all-token dev loss does not worsen versus source Step15 checkpoint in every seed	0/3	3/3	FAIL	19_v2_new_row_only_repair	mean_delta=0.097944
+step19_v2_new_row_only_repair_20260611_183952	G07_repair_checkpoint_selection	best repaired checkpoint selected by lowest added-token dev loss	/home/axt/mnt2/jongha/second_try/checkpoints/19_v2_new_row_only_repair/new_row_only_seed13	one checkpoint path	PASS	19_v2_new_row_only_repair	seed=13; final_added_loss=7.431056

@@ -1,0 +1,11 @@
+iso	language	source_tsv	rows	splits	status
+acu	Achuar-Shiwiar	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7646	train,dev,test	PASS
+ake	Akawaio	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7734	train,dev,test	PASS
+bsn	Barasana-Eduria	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7548	train,dev,test	PASS
+chr	Cherokee	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7957	train,dev,test	PASS
+cop	Coptic	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7957	train,dev,test	PASS
+kbh	Camsa	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	6521	train,dev,test	PASS
+nhg	Nahuatl (Tetelcingo)	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7822	train,dev,test	PASS
+oji	Ojibwa	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7943	train,dev,test	PASS
+syr	Syriac	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7954	train,dev,test	PASS
+usp	Uspanteco	/home/axt/mnt2/jongha/second_try/artifacts/01_data_and_splits/downstream/target10_downstream_source.tsv	7890	train,dev,test	PASS

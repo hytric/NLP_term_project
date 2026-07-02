@@ -1,0 +1,11 @@
+scope	language_id	language	script	rows	words	chars_no_space	xlmr_tokens	tokens_per_word	tokens_per_char	single_char_token_ratio	unk_rate	mean_tokens_per_row	max_tokens_per_row	model	status
+target10_final_test	acu	Achuar-Shiwiar	Latin	953	22009	155368	61809	2.808351	0.397823	0.21094	0.0	64.857293	244	xlm-roberta-base	PASS
+target10_final_test	ake	Akawaio	Latin	1003	26231	140943	87061	3.319012	0.617704	0.597661	0.00129794	86.800598	244	xlm-roberta-base	PASS
+target10_final_test	bsn	Barasana-Eduria	Latin	959	26999	172850	95091	3.522019	0.550136	0.389963	0.0	99.156413	348	xlm-roberta-base	PASS
+target10_final_test	chr	Cherokee	Cherokee	1007	14472	64952	32304	2.232172	0.497352	0.103609	0.45013001	32.079444	77	xlm-roberta-base	PASS
+target10_final_test	cop	Coptic	Coptic	1003	16181	91664	33328	2.0597	0.363589	0.029675	0.48544767	33.228315	69	xlm-roberta-base	PASS
+target10_final_test	kbh	Camsa	Latin	852	22915	174802	82394	3.595636	0.471356	0.295179	0.0	96.706573	5123	xlm-roberta-base	PASS
+target10_final_test	nhg	Nahuatl Tetelcingo	Latin	1006	23062	159228	68308	2.961929	0.428995	0.236517	0.0	67.900596	191	xlm-roberta-base	PASS
+target10_final_test	oji	Ojibwa	Aboriginal Syllabics	1007	18547	82838	38832	2.093708	0.46877	0.05789	0.47576741	38.562066	96	xlm-roberta-base	PASS
+target10_final_test	syr	Syriac	Syriac	1007	15395	65813	76708	4.982657	1.165545	0.75249	0.24881368	76.174777	176	xlm-roberta-base	PASS
+target10_final_test	usp	Uspanteco	Latin	1007	29560	154138	75174	2.543099	0.487706	0.379027	0.0	74.65144	203	xlm-roberta-base	PASS

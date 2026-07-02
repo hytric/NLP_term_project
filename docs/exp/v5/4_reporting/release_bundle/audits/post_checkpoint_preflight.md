@@ -1,0 +1,34 @@
+# v5 Post-Checkpoint Preflight Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `post_checkpoint_preflight_ready_to_launch`
+
+This generated audit is the machine-readable Go/No-Go companion to
+`post_checkpoint_trigger_card_ko.md`. It verifies that the paired model
+rows, selected checkpoint manifest, metric queue, command guards, parser
+contract, provenance logs, and report/PPT handoff links agree before a long paired
+post-checkpoint evaluation is launched.
+
+| Item | Status | Evidence | Action |
+| --- | --- | --- | --- |
+| required_preflight_files | ready | all preflight artifacts exist | none |
+| matched_model_pair | ready | v5_random:ready_for_wrapper=yes;model_status=ready; v5_fvt:ready_for_wrapper=yes;model_status=ready | none |
+| selected_checkpoint_manifest | ready | v5_random:model_key=v5_random;required=yes;selection_rule=fixed matched 10K full-corpus run;selected_model_path=/home/axt/mnt2/jongha/v5_glot50010/runs/v5_random_mlm_10k;model_file=/home/axt/mnt2/jongha/v5_glot50010/runs/v5_random_mlm_10k/pytorch_mod; v5_fvt:model_key=v5_fvt;required=yes;selection_rule=fixed matched 10K full-corpus run;selected_model_path=/home/axt/mnt2/jongha/v5_glot50010/runs/v5_fvt_mlm_10k;model_file=/home/axt/mnt2/jongha/v5_glot50010/runs/v5_fvt_mlm_10k/pytorch_model.bin;tr | none |
+| paired_metric_queue | ready | pseudoperplexity:v5_random=measured; pseudoperplexity:v5_fvt=ready; retrieval_tatoeba:v5_random=measured; retrieval_tatoeba:v5_fvt=measured; retrieval_bible:v5_random=measured; retrieval_bible:v5_fvt=measured; text_classification:v5_random=measured; text_classification:v5_fvt=measured; ner:v5_random=measured; ner:v5_fvt=ready; pos:v5_random=measured; pos:v5_fvt=ready; roundtrip_alignment:v5_random=measured; roundtrip_alignment:v5_fvt=ready | none |
+| command_consistency | ready | post_checkpoint_command_consistency=post_checkpoint_command_consistency_ready | none |
+| parser_contract | ready | post_checkpoint_parser_contract=parser_contract_ready_waiting_models | none |
+| provenance_contract | ready | post_checkpoint_provenance_audit=post_checkpoint_provenance_ready_waiting_models | none |
+| checkpoint_selection_contract | ready | checkpoint_selection_contract=checkpoint_selection_contract_ready | none |
+| execution_plan | ready | post_checkpoint_execution_plan=post_checkpoint_execution_plan_ready_to_launch | none |
+| trigger_card_content | ready | all trigger-card command and claim-lock terms present | none |
+| handoff_links | ready | dashboard and runbook point to trigger card and wrapper status | none |
+
+Launch rule:
+
+```text
+Only `post_checkpoint_preflight_ready_to_launch` can precede the long
+`run_v5_post_checkpoint_evals.sh all` command. A waiting verdict means
+the evaluation remains locked by checkpoint availability, not by a
+broken report/PPT contract.
+```

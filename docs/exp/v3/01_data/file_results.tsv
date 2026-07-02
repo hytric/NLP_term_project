@@ -1,0 +1,9 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/01_data/corpus_manifest.tsv	stage01_doc_manifest	9	NOT_COMPUTED	PASS	source-level corpus inventory
+docs/exp/third_try/01_data/high_resource_manifest.tsv	stage01_doc_manifest	8	NOT_COMPUTED	PASS	high-resource role split
+docs/exp/third_try/01_data/mlm_mixture_manifest.tsv	stage01_doc_manifest	11	NOT_COMPUTED	PASS	component-level MLM manifest
+docs/exp/third_try/01_data/leakage_audit.tsv	stage01_audit	8	NOT_COMPUTED	PASS	target10 overlap and Bible-control heldout audit
+/home/axt/mnt2/jongha/third_try/manifests/stage01_20260613_r1/mlm_train_rows.tsv	large_row_manifest	966152	NOT_COMPUTED	PASS	row-level train index
+/home/axt/mnt2/jongha/third_try/manifests/stage01_20260613_r1/mlm_dev_rows.tsv	large_row_manifest	6521	NOT_COMPUTED	PASS	row-level dev index
+/home/axt/mnt2/jongha/third_try/manifests/stage01_20260613_r1/final_eval_rows.tsv	large_row_manifest	9804	NOT_COMPUTED	PASS	row-level final test index
+/home/axt/mnt2/jongha/third_try/manifests/stage01_20260613_r1/target10_train_exact_duplicate_exclusions.tsv	large_audit_manifest	108	NOT_COMPUTED	PASS	target10 train rows excluded by exact dev/final duplicate text

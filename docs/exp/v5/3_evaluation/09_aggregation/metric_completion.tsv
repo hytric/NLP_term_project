@@ -1,0 +1,8 @@
+metric	primary_score	direction	coverage_languages	coverage_has_data_total	coverage_has_data_target	measured_models	missing_models	status	folder	note
+pseudoperplexity	weighted_pseudo_perplexity	lower_is_better	102	102	10	glot500_base,v5_random,xlmr_base	v5_fvt	partial	docs/exp/v5/3_evaluation/01_pseudoperplexity	missing_model_outputs=v5_fvt
+retrieval_tatoeba	top10_accuracy	higher_is_better	102	63	0	glot500_base,v5_fvt,v5_random,xlmr_base		measured	docs/exp/v5/3_evaluation/02_retrieval_tatoeba	
+retrieval_bible	top10_accuracy	higher_is_better	102	74	0	glot500_base,v5_fvt,v5_random,xlmr_base		measured	docs/exp/v5/3_evaluation/03_retrieval_bible	
+text_classification	macro_f1	higher_is_better	102	1	0	glot500_base,v5_fvt,v5_random,xlmr_base		measured	docs/exp/v5/3_evaluation/04_text_classification	
+ner	f1	higher_is_better	102	78	0	glot500_base,v5_random,xlmr_base	v5_fvt	partial	docs/exp/v5/3_evaluation/05_ner	missing_model_outputs=v5_fvt
+pos	f1	higher_is_better	102	58	0	glot500_base,v5_random,xlmr_base	v5_fvt	partial	docs/exp/v5/3_evaluation/06_pos	missing_model_outputs=v5_fvt
+roundtrip_alignment	accuracy	higher_is_better	102	74	0	glot500_base,v5_random,xlmr_base	v5_fvt	partial	docs/exp/v5/3_evaluation/07_roundtrip_alignment	missing_model_outputs=v5_fvt

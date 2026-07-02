@@ -1,0 +1,5 @@
+job	status	evidence	snapshot	final_result_gate
+v5_random_mlm_10k	ready	/home/axt/mnt2/jongha/v5_glot50010/runs/logs/train_v5_v5_random_mlm_10k_20260627_005616.log	checkpoint exists	matched v5_random and v5_fvt checkpoints exist and are selected
+v5_fvt_mlm_10k	ready	/home/axt/mnt2/jongha/v5_glot50010/runs/logs/train_v5_v5_fvt_mlm_10k_20260627_203139.log	checkpoint exists	same 10K budget and checkpoint rule as v5_random
+glot500_base NER	ready	/home/axt/mnt2/jongha/v5_glot50010/evaluation/ner/glot500_base/glot500-base/test_results.txt	test_results.txt is nonempty (24194 bytes)	completed non-empty test_results.txt parsed by scripts/aggregate_v5_metrics.py
+glot500_base POS	ready	/home/axt/mnt2/jongha/v5_glot50010/evaluation/pos/glot500_base/glot500-base/test_results.txt	test_results.txt is nonempty (2658 bytes); train language is tur_Latn in local POS setup	completed non-empty test_results.txt parsed by scripts/aggregate_v5_metrics.py

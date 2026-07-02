@@ -1,0 +1,10 @@
+{
+    "test_retrieved_only_bleu": 2.635506978400803,
+    "test_retrieved_only_chrf": 21.912304958850257,
+    "test_retrieved_only_chrfpp": 18.621990838950946,
+    "test_retrieved_only_gen_len": 187.8125,
+    "test_retrieved_only_loss": 1.2140061855316162,
+    "test_retrieved_only_runtime": 143.4275,
+    "test_retrieved_only_samples_per_second": 0.446,
+    "test_retrieved_only_steps_per_second": 0.446
+}

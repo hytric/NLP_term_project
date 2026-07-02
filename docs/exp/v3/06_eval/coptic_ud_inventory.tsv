@@ -1,0 +1,4 @@
+split	path	sentences	status	notes
+train	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/UD_Coptic-Scriptorium/cop_scriptorium-ud-train.conllu	1467	AVAILABLE	next official/local downstream candidate
+dev	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/UD_Coptic-Scriptorium/cop_scriptorium-ud-dev.conllu	380	AVAILABLE	next official/local downstream candidate
+test	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/UD_Coptic-Scriptorium/cop_scriptorium-ud-test.conllu	405	AVAILABLE	next official/local downstream candidate

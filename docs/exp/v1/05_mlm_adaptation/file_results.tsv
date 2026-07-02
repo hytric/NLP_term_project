@@ -1,0 +1,6 @@
+file_role	path	location	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/05_mlm_adaptation/score_table.tsv	docs	6	1302	91a64cea3675b157ac63015e45fa4a5c	PASS	gate table
+mlm_results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/05_mlm_adaptation/mlm_results.tsv	docs	6	1302	91a64cea3675b157ac63015e45fa4a5c	PASS	MLM train/dev metrics
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/05_mlm_adaptation/checkpoint_selection.md	docs	15	462	7448126b320f1b43fb23f1d7cc0e3e15	PASS	selected checkpoint summary
+training_configs	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/05_mlm_adaptation/training_configs	docs	6	3759	DIRECTORY	PASS	per-candidate training configs
+selected_checkpoint	/home/axt/mnt2/jongha/second_try/checkpoints/05_mlm_adaptation/spm32000_fvt_seed13	large_checkpoint	7	1208279816	DIRECTORY	PASS	adapted MLM checkpoint

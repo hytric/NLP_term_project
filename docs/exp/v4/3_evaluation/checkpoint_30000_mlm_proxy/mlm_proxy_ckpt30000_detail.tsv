@@ -1,0 +1,21 @@
+model_label	model_path	model_seed	language_id	language	script	rows	masked_tokens	mean_mlm_loss	mlm_perplexity	truncated_rows	device	fp16	mlm_probability	max_length	mask_seed	status
+xlmr_base	xlm-roberta-base	base	acu	Achuar-Shiwiar	Latin	100	974	5.93519	378.111807	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	ake	Akawaio	Latin	100	1206	4.270315	71.544175	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	bsn	Barasana-Eduria	Latin	100	1506	4.376328	79.545407	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	chr	Cherokee	Cherokee	100	499	0.335636	1.39883	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	cop	Coptic	Coptic	100	502	0.131449	1.14048	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	kbh	Camsa	Latin	100	1287	5.820124	337.013949	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	nhg	Nahuatl Tetelcingo	Latin	100	926	6.158747	472.835383	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	oji	Ojibwa	Aboriginal Syllabics	100	547	0.105268	1.111008	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	syr	Syriac	Syriac	100	1035	2.111775	8.262898	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	base	usp	Uspanteco	Latin	100	1099	5.508417	246.760133	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	acu	Achuar-Shiwiar	Latin	100	525	3.201667	24.573452	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	ake	Akawaio	Latin	100	790	1.4411	4.22534	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	bsn	Barasana-Eduria	Latin	100	687	2.380686	10.812317	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	chr	Cherokee	Cherokee	100	443	3.420641	30.589002	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	cop	Coptic	Coptic	100	456	3.352796	28.58254	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	kbh	Camsa	Latin	100	587	2.895816	18.098256	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	nhg	Nahuatl Tetelcingo	Latin	100	514	2.946924	19.047267	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	oji	Ojibwa	Aboriginal Syllabics	100	545	3.099083	22.177596	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	syr	Syriac	Syriac	100	339	4.085546	59.474385	0	cuda	True	0.15	512	13	PASS
+ckpt30000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-30000	30000	usp	Uspanteco	Latin	100	801	1.373966	3.95099	0	cuda	True	0.15	512	13	PASS

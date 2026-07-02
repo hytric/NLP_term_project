@@ -1,0 +1,11 @@
+iso	language	script	aux_char_tokens_per_word	aux_byte_tokens_per_word	aux_byte_minus_char_tpw_delta_pct	aux_char_single_char_ratio	aux_byte_single_char_ratio	aux_char_byte_piece_rate	aux_byte_byte_piece_rate	append_char_tokens_per_word	append_byte_tokens_per_word	append_byte_minus_char_tpw_delta_pct	append_char_new_token_hit_rate	append_byte_new_token_hit_rate	status
+acu	Achuar-Shiwiar	Latin	1.69835	1.68986	-0.499897	0.214986	0.214658	0.0	0.0	1.858934	1.851952	-0.375592	0.500768	0.502742	MEASURED
+ake	Akawaio	Latin	2.195752	2.192941	-0.12802	0.359339	0.359472	0.0	0.0	2.264052	2.262157	-0.083699	0.349625	0.349889	MEASURED
+bsn	Barasana-Eduria	Latin	1.620647	1.61503	-0.34659	0.259409	0.259686	0.0	0.0	1.862727	1.858627	-0.220107	0.486341	0.487293	MEASURED
+chr	Cherokee	Cherokee	2.019016	1.995861	-1.146846	0.404543	0.39926	0.0	0.000168	2.331544	2.309396	-0.949928	0.518231	0.520682	MEASURED
+cop	Coptic	Coptic	1.630666	1.616378	-0.876206	0.141649	0.137536	0.0	0.0	1.783504	1.76823	-0.856404	0.772916	0.774799	MEASURED
+kbh	Camsa	Latin	1.820006	1.807623	-0.680382	0.247633	0.247307	0.0	0.000248	1.888408	1.874683	-0.726803	0.492455	0.496339	MEASURED
+nhg	Nahuatl (Tetelcingo)	Latin	1.583383	1.567665	-0.992685	0.182077	0.182255	0.0	0.0	1.684696	1.668757	-0.946105	0.507161	0.510502	MEASURED
+oji	Ojibwa	Aboriginal Syllabics	1.986749	1.959195	-1.386889	0.370181	0.362808	0.0	0.000742	2.14108	2.129525	-0.539681	0.574307	0.574995	MEASURED
+syr	Syriac	Syriac	1.479564	1.462875	-1.127967	0.18186	0.175398	0.0	0.0	1.591167	1.571185	-1.255808	0.760828	0.76624	MEASURED
+usp	Uspanteco	Latin	1.925391	1.922467	-0.151865	0.36309	0.361916	0.0	0.0	2.168784	2.167829	-0.044034	0.246409	0.247296	MEASURED

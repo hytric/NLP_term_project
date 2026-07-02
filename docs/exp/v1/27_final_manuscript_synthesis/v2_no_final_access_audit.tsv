@@ -1,0 +1,4 @@
+run_id	input_group	path_or_source	access_type	final_access	status	notes
+step27_final_manuscript_synthesis_20260611	step27_inputs	docs/exp/second_try	metadata_and_prior_results	NO_ACT_FINAL_ACCESS	PASS	document synthesis only
+step27_final_manuscript_synthesis_20260611	protected_final	v2_final_test_act_clean	not_read	NO_ACT_FINAL_ACCESS	PASS	no ACT final downstream or translation metrics used
+step27_final_manuscript_synthesis_20260611	outputs	27_final_manuscript_synthesis	documents_only	NO_ACT_FINAL_ACCESS	PASS	positive final readout remains blocked

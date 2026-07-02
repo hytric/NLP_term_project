@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>v5 Korean Paper Draft</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --paper: #f6f7fb;
+      --panel: #ffffff;
+      --accent: #0f766e;
+      --line: #d7dce6;
+      --code: #eef2f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Noto Sans CJK KR", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.58;
+    }
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 44px 34px 72px;
+      background: var(--panel);
+      min-height: 100vh;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+      margin-bottom: 28px;
+    }
+    h1, h2, h3, h4 {
+      line-height: 1.22;
+      letter-spacing: 0;
+      margin: 1.35em 0 0.55em;
+    }
+    h1 { font-size: 2.15rem; margin-top: 0; }
+    h2 { font-size: 1.55rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+    h3 { font-size: 1.22rem; color: #123d39; }
+    p { margin: 0.55rem 0; }
+    ul, ol { margin: 0.4rem 0 0.85rem 1.55rem; padding: 0; }
+    li { margin: 0.25rem 0; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0 1.2rem;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 0.48rem 0.58rem;
+      vertical-align: top;
+      text-align: left;
+    }
+    th { background: #eef7f6; color: #123d39; }
+    code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      background: var(--code);
+      border-radius: 4px;
+      padding: 0.08rem 0.24rem;
+      overflow-wrap: anywhere;
+    }
+    pre {
+      background: var(--code);
+      border-left: 4px solid var(--accent);
+      padding: 0.78rem 0.95rem;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-size: 0.88rem;
+    }
+    blockquote {
+      margin: 1rem 0;
+      padding: 0.8rem 1rem;
+      border-left: 4px solid var(--accent);
+      background: #f2fbf9;
+    }
+    @media print {
+      body { background: white; }
+      .page { max-width: none; padding: 24px; }
+      h2 { page-break-after: avoid; }
+      table, pre, blockquote { page-break-inside: avoid; }
+      .meta { color: #555; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <div class="meta">source: docs/exp/v5/4_reporting/03_final_report/paper_draft_ko.md · built 2026-06-28 18:08 KST</div>
+<h1>v5 한국어 논문형 보고서 초안</h1>
+<p>작성 상태: execution draft, 2026-06-28 refresh 기준</p>
+<p>이 문서는 최종 발표와 보고서 작성을 위한 한국어 논문형 원고 초안이다. 숫자와</p>
+<p>claim은 현재 측정된 artifact만 반영하며, after-MLM 및 downstream 결과는 matched</p>
+<p><code>v5_random</code>/<code>v5_fvt</code> checkpoint와 aggregation row가 생기기 전까지 조건부로 둔다.</p>
+<p>현재 checkpoint 진행률과 post-checkpoint Go/No-Go는 이 정적 원고 header가 아니라</p>
+<p><code>../final_action_dashboard_ko.md</code>와</p>
+<p><code>bash scripts/run_v5_post_checkpoint_evals.sh status</code> 출력을 우선한다.</p>
+<p>관련 gate:</p>
+<ul>
+<li>claim boundary: <code>claim_ledger.md</code></li>
+<li>method comparison: <code>../method_comparison_summary.md</code></li>
+<li>post-result patch plan: <code>../post_result_patch_plan_ko.md</code></li>
+<li>final claim rule: <code>../final_claim_decision_tree.md</code></li>
+<li>outcome matrix: <code>../post_checkpoint_outcome_matrix_ko.md</code></li>
+<li>final claim freeze audit: <code>../final_claim_freeze_audit.md</code></li>
+<li>final package audit: <code>../reporting_package_audit.md</code></li>
+</ul>
+<h2>초록</h2>
+<p>본 연구는 Glot500의 multilingual vocabulary expansion 및 continued MLM</p>
+<p>pretraining 흐름을 통제된 102개 language-script 설정에서 재연하고, vocabulary</p>
+<p>extension 이후 새 embedding row를 어떻게 초기화할지 비교한다. 실험 데이터는</p>
+<p>XLM-R seen Glot500 language-script 92개와 Glot500 내부 raw corpus에서 선택한</p>
+<p>target language-script 10개로 구성된다. target10은 모두 XLM-R seen language가</p>
+<p>아니며, 30,000 sentence 이상 조건과 raw directory 존재 조건을 만족한다.</p>
+<p>핵심 novelty는 새로운 corpus나 task가 아니라, 확장된 vocabulary row의</p>
+<p>initialization이다. Glot500-style random resize baseline과 비교하여,</p>
+<p>source-token decomposition 기반 FVT 초기화가 zero-step MLM proxy에서 더 좋은</p>
+<p>초기 상태를 만드는지 확인한다. 현재까지 full tokenizer, initialization audit,</p>
+<p>zero-step evaluation은 완료되었고, FVT는 v5 target group weighted NLL에서 random</p>
+<p>대비 9.626238 낮은 값을 보였다. 다만 after-MLM PPPL과 downstream transfer claim은</p>
+<p>matched checkpoint 및 downstream parsing 완료 후에만 승격한다.</p>
+<h2>1. 서론</h2>
+<p>다국어 사전학습 모델은 수백 개 언어를 지원하지만, 실제 성능은 tokenizer coverage,</p>
+<p>script, corpus size, related language support에 크게 좌우된다. Glot500은 더 많은</p>
+<p>language-script corpus와 vocabulary expansion, continued pretraining을 통해</p>
+<p>이 문제를 다룬다. 본 프로젝트는 전체 511개 언어의 full reproduction을 목표로</p>
+<p>하지 않고, 계산 가능한 subset에서 Glot500의 핵심 실험 구조를 충실히 재연한다.</p>
+<p>본 실험의 질문은 다음과 같다.</p>
+<ol>
+<li>Glot500-style tokenizer expansion과 continued MLM을 92+10 subset에서 재연할 수</li>
+</ol>
+<p>있는가?</p>
+<ol>
+<li>vocabulary extension 이후 새 token embedding row를 random으로 둘 때와</li>
+</ol>
+<p>source-token decomposition으로 초기화할 때 zero-step 및 after-MLM behavior가</p>
+<p>달라지는가?</p>
+<ol>
+<li>MLM proxy의 차이가 Glot500 downstream metric replay에서도 관찰되는가?</li>
+</ol>
+<h3>1.1 기여 요약</h3>
+<p>본 보고서의 기여는 세 가지로 정리한다.</p>
+<p>첫째, Glot500의 full-scale claim을 과장하지 않고, 92개 XLM-R-seen language-script와</p>
+<p>10개 Glot500-internal target language-script로 구성된 controlled replay package를</p>
+<p>구축한다. 이 package는 corpus merge, SentencePiece append tokenizer, continued MLM,</p>
+<p>metric-family coverage, claim freeze audit를 함께 묶어 재연 범위를 artifact 단위로</p>
+<p>검증한다.</p>
+<p>둘째, vocabulary extension 이후 새 embedding row initialization을 독립된 방법론 축으로</p>
+<p>분리한다. source-token decomposition 기반 FVT는 source row identity, <code>&lt;mask&gt;</code> remap,</p>
+<p>byte row accounting, LM-head tying을 보존하면서 zero-step target MLM proxy에서 random</p>
+<p>resize보다 낮은 weighted NLL을 보인다.</p>
+<p>셋째, Glot500 downstream task family를 생략하지 않고 local coverage와 blocker를</p>
+<p>명시한다. 따라서 최종 claim은 PPPL, retrieval, classification, tagging, Roundtrip</p>
+<p>alignment가 aggregation에 들어온 뒤에만 승격되며, target10 downstream coverage가 없는</p>
+<p>metric은 limitation으로 남긴다.</p>
+<h2>2. 재연 범위와 방법론 위치</h2>
+<p>본 실험은 full Glot500 reproduction이 아니라 controlled subset reproduction이다.</p>
+<p>따라서 허용되는 표현은 다음과 같다.</p>
+<ul>
+<li>허용: Glot500-style pipeline을 102-language subset에서 재연했다.</li>
+<li>불가: Glot500 511-language experiment를 완벽히 재현했다.</li>
+</ul>
+<p>tokenization 측면에서 V4/V5는 Glot500-style이다. auxiliary SentencePiece model을</p>
+<p>학습하고, XLM-R SPM에 없는 piece를 기존 SPM 뒤에 append한다. 반면 V3는 기존</p>
+<p>tokenizer에 새 token을 추가하는 Yamaguchi-style vocabulary expansion ablation에</p>
+<p>가깝다. 이 구분 덕분에 reproduction axis와 novelty axis가 분리된다. reproduction은</p>
+<p>Glot500-style tokenizer/continued MLM이고, novelty는 appended row initialization이다.</p>
+<h3>2.1 Glot500과 본 연구의 관계</h3>
+<p>Glot500은 language-script coverage를 넓히고, tokenizer vocabulary를 확장한 뒤,</p>
+<p>continued pretraining과 downstream evaluation으로 low-resource multilingual model의</p>
+<p>효과를 검증한다. 본 연구는 이 전체 규모를 다시 학습하지 않는다. 대신 Glot500의 핵심</p>
+<p>실험 논리를 보존한다. 즉, corpus scope를 고정하고, SentencePiece 기반 vocabulary</p>
+<p>expansion을 수행하고, continued MLM으로 representation을 갱신하고, Glot500에서 사용한</p>
+<p>metric family를 유지한다.</p>
+<p>따라서 v5의 contribution은 &quot;더 큰 Glot500&quot;이 아니라, Glot500-style pipeline을 작고</p>
+<p>검증 가능한 subset으로 재연하면서 vocabulary expansion 이후 initialization이라는</p>
+<p>새 질문을 붙이고, 두 방법론 축을 분리해 분석하는 데 있다. 재연 fidelity의 세부</p>
+<p>구분은 다음 표에 고정한다.</p>
+<pre><code>docs/exp/v5/4_reporting/00_tables/table_15_glot500_reproduction_fidelity.md</code></pre>
+<p>전체 실험 흐름을 요약한 overview figure는 다음 파일에 둔다.</p>
+<pre><code>docs/exp/v5/4_reporting/01_figures/generated/figure_01_experiment_pipeline.png</code></pre>
+<p>요약하면 v5는 experimental logic 수준에서는 충실하다. Glot500-internal data,</p>
+<p>SentencePiece append, continued MLM, metric-family accounting, head/tail/all-style</p>
+<p>reporting을 유지한다. 다만 full 511-language scale과 original compute budget은</p>
+<p>의도적으로 재연하지 않는다.</p>
+<h3>2.2 Yamaguchi-style Vocabulary Expansion과의 관계</h3>
+<p>Yamaguchi 계열 방법은 적은 target-language text로 vocabulary를 확장하고, 추가된 token</p>
+<p>embedding을 어떻게 초기화할지 다룬다는 점에서 본 연구의 novelty axis와 연결된다. 다만</p>
+<p>v5 tokenizer 자체는 V3식 <code>add_tokens()</code> route가 아니라 Glot500-style SPM append route를</p>
+<p>사용한다. 따라서 Yamaguchi-style은 v5의 tokenizer reproduction method가 아니라,</p>
+<p>새 vocabulary row initialization을 비교하는 motivation과 ablation framing에 가깝다.</p>
+<p>이 구분은 보고서와 발표에서 중요하다. tokenizer method를 Yamaguchi method라고 부르면</p>
+<p>Glot500 재연성이 흐려지고, 반대로 initialization novelty를 Glot500 reproduction만으로</p>
+<p>설명하면 본 연구의 방법론적 기여가 약해진다.</p>
+<h2>3. 데이터</h2>
+<p>head group은 XLM-R seen Glot500 language-script 중 local raw directory가 존재하는</p>
+<p>92개이다. target group은 Glot500 raw 안에 있으면서 XLM-R seen이 아니고,</p>
+<p>new length가 30,000 이상인 후보 중 지역, 문자, 어족 다양성을 고려해 고른 10개이다.</p>
+<p>target10:</p>
+<ul>
+<li><code>fur_Latn</code>: Friulian, Europe, Latin</li>
+<li><code>krc_Cyrl</code>: Karachay-Balkar, North Caucasus, Cyrillic</li>
+<li><code>acm_Arab</code>: Mesopotamian Arabic, West Asia, Arabic</li>
+<li><code>dzo_Tibt</code>: Dzongkha, Himalaya, Tibetan</li>
+<li><code>sat_Olck</code>: Santali, South Asia, Ol Chiki</li>
+<li><code>mad_Latn</code>: Madurese, Southeast Asia, Latin</li>
+<li><code>bam_Latn</code>: Bambara, West Africa, Latin</li>
+<li><code>kjb_Latn</code>: Q&#x27;anjob&#x27;al, Mesoamerica, Latin</li>
+<li><code>quw_Latn</code>: Tena Lowland Quichua, Andean South America, Latin</li>
+<li><code>rap_Latn</code>: Rapanui, Polynesia, Latin</li>
+</ul>
+<p>main merge는 92,452,251 lines로 완료되었고, missing language directory는 0개였다.</p>
+<p>이 값은 <code>../../0_tokenizer/merge/Glot500_v5_glot50010_xlmr100.report.json</code>과</p>
+<p><code>../../0_tokenizer/merge/Glot500_v5_glot50010_xlmr100.manifest.tsv</code>에서 확인한다.</p>
+<h2>4. 방법</h2>
+<h3>4.1 Tokenizer Expansion</h3>
+<p>full corpus에서 Glot500-style auxiliary SentencePiece tokenizer를 학습한 뒤,</p>
+<p>XLM-R-base tokenizer에 없는 pieces를 append했다. 최종 tokenizer는 368,687 HF tokens를</p>
+<p>가지며, XLM-R 대비 118,685 token strings가 추가되었다. <code>&lt;mask&gt;</code> id는 source</p>
+<p>250001에서 target 368686으로 이동했으므로, embedding 복사는 id prefix가 아니라 token</p>
+<p>identity 기준으로 수행해야 한다.</p>
+<p>main tokenizer audit은 20개 head language와 10개 target language에서 failure 0으로</p>
+<p>통과했다. audited 30개 언어 중 29개는 tokens/word가 감소했다. target10에서는 9개</p>
+<p>언어가 개선되었고, <code>dzo_Tibt</code>는 여전히 regression case로 남았다. 이 regression은</p>
+<p>보고서에서 failure를 숨기지 않고 score calibration 및 newly appended Tibetan piece의</p>
+<p>영향으로 분석한다.</p>
+<h3>4.2 Embedding Initialization</h3>
+<p>비교 대상은 다음과 같다.</p>
+<table>
+<thead><tr><th>Method</th><th>Description</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td><code>random</code></td><td>Hugging Face resize 기본 random row</td><td>Glot500-style baseline</td></tr>
+<tr><td><code>mean</code></td><td>source/global mean 기반 초기화</td><td>simple ablation</td></tr>
+<tr><td><code>fvt</code></td><td>target token surface를 source tokenizer로 분해하고 source embedding 평균 사용</td><td>main novelty</td></tr>
+<tr><td><code>align</code></td><td>script/character-aware fallback</td><td>exploratory ablation</td></tr>
+</tbody></table>
+<p>main checkpoint initialization audit에서 <code>v5_fvt</code>는 118,427개 새 row를</p>
+<p>source-token decomposition으로 초기화했고, 256 byte rows와 2 lexical fallback rows는</p>
+<p>global mean을 사용했다. source identity rows 250,002개가 보존되었고, <code>&lt;mask&gt;</code> remap</p>
+<p>max absolute difference는 0.0이며, LM head tying도 true로 확인되었다.</p>
+<h3>4.3 Continued MLM</h3>
+<p>continued MLM은 동일한 corpus, tokenizer, seed, schedule, checkpoint rule로</p>
+<p><code>v5_random</code>과 <code>v5_fvt</code>를 paired comparison한다. 이 단계의 핵심은 long training 후</p>
+<p>성능만 보는 것이 아니라, zero-step, early-step, selected checkpoint를 분리해서</p>
+<p>initialization effect가 언제 살아 있는지 확인하는 것이다.</p>
+<p>현재 상태에서는 paired 10K MLM run이 진행 중이며, matched checkpoint가 준비되기 전에는</p>
+<p>after-MLM claim을 승격하지 않는다.</p>
+<h3>4.4 Evaluation</h3>
+<p>Glot500에서 측정한 metric family는 v5에서도 모두 required로 둔다.</p>
+<table>
+<thead><tr><th>Metric family</th><th>Required</th><th>Current interpretation</th></tr></thead>
+<tbody>
+<tr><td>Pseudoperplexity / MLM proxy</td><td>yes</td><td>target10까지 raw-text 평가 가능</td></tr>
+<tr><td>Tatoeba retrieval</td><td>yes</td><td>available-language replay, target10 coverage limited</td></tr>
+<tr><td>Bible retrieval</td><td>yes</td><td>available-language replay, target10 coverage limited</td></tr>
+<tr><td>Text classification</td><td>yes</td><td>local English split 중심</td></tr>
+<tr><td>NER</td><td>yes</td><td>available-language replay</td></tr>
+<tr><td>POS</td><td>yes</td><td>available-language replay</td></tr>
+<tr><td>Roundtrip alignment</td><td>yes</td><td>XLM-R/Glot500-base/v5-random 측정 완료, FVT checkpoint 대기</td></tr>
+</tbody></table>
+<p>coverage가 없는 언어는 제외하지 않고, measured, excluded, blocked reason을 기록한다.</p>
+<p>따라서 downstream claim은 target10 전체에 대한 직접 claim이 아니라</p>
+<p>available-language/head/all replay로 해석해야 한다.</p>
+<h2>5. 현재 결과</h2>
+<h3>5.1 Setup Fidelity</h3>
+<p>scope, merge, tokenizer, initialization 단계는 main experiment 기준으로 준비되었다.</p>
+<p>핵심 값은 다음과 같다.</p>
+<table>
+<thead><tr><th>Item</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>seen language-scripts</td><td>92</td></tr>
+<tr><td>target language-scripts</td><td>10</td></tr>
+<tr><td>merged corpus lines</td><td>92,452,251</td></tr>
+<tr><td>missing language dirs</td><td>0</td></tr>
+<tr><td>final tokenizer size</td><td>368,687</td></tr>
+<tr><td>appended token strings</td><td>118,685</td></tr>
+</tbody></table>
+<h3>5.2 Tokenizer Result</h3>
+<p>main tokenizer audit은 failure 0으로 통과했다. audited target10 중 9개는 fertility가</p>
+<p>개선되었고, <code>dzo_Tibt</code>는 regression으로 남았다. 이 결과는 tokenizer expansion의</p>
+<p>전체 방향은 긍정적이지만, script-specific calibration 문제가 있을 수 있음을 보여준다.</p>
+<p>정량적으로는 audited 30개 언어 중 29개가 개선되었고(29/30), target10에서는 9개가</p>
+<p>개선되었다(9/10). <code>dzo_Tibt</code>는 <code>4.223938 -&gt; 5.552124</code> tokens/word로 악화되어</p>
+<p>visible limitation으로 유지한다.</p>
+<h3>5.3 Zero-Step Initialization Result</h3>
+<p>zero-step MLM proxy에서 FVT는 random resize보다 명확히 좋은 초기 상태를 보였다. mean</p>
+<p>initialization ablation의 target weighted NLL은 11.953142로, random보다는 좋지만 FVT에는</p>
+<p>미치지 못했다.</p>
+<table>
+<thead><tr><th>Split</th><th>random weighted NLL</th><th>FVT weighted NLL</th><th>Delta</th><th>Relative</th></tr></thead>
+<tbody>
+<tr><td>head sample</td><td>12.895301</td><td>6.621457</td><td>-6.273844</td><td>-48.65%</td></tr>
+<tr><td>v5 target</td><td>18.411756</td><td>8.785518</td><td>-9.626238</td><td>-52.28%</td></tr>
+<tr><td>all</td><td>16.511807</td><td>8.040183</td><td>-8.471624</td><td>-51.31%</td></tr>
+</tbody></table>
+<p>이 결과는 final downstream claim이 아니라 intrinsic initialization evidence이다.</p>
+<p>after-MLM PPPL과 downstream row가 준비되면 이 효과가 유지되는지, 줄어드는지, 또는</p>
+<p>task별로 달라지는지 확인한다.</p>
+<h3>5.4 Baseline and External Reference Rows</h3>
+<p>현재 final result table에 넣을 수 있는 measured row는 XLM-R-base baseline과</p>
+<p>Glot500-base external reference이다. Glot500-base는 같은 budget으로 재학습한 baseline이</p>
+<p>아니므로, equal-budget comparison이 아니라 reference scale로 해석한다.</p>
+<table>
+<thead><tr><th>Metric</th><th>XLM-R-base</th><th>Glot500-base</th><th>Interpretation</th></tr></thead>
+<tbody>
+<tr><td>target PPPL</td><td>61.980216</td><td>15.102934</td><td>target raw-text intrinsic reference</td></tr>
+<tr><td>Tatoeba all Top-10</td><td>0.566067</td><td>0.706649</td><td>available-language retrieval reference; v5-random 0.610353 measured</td></tr>
+<tr><td>Bible all Top-10</td><td>0.381153</td><td>0.509356</td><td>available-language Bible retrieval reference; v5-random 0.328019 measured</td></tr>
+<tr><td>Taxi1500 macro-F1</td><td>0.592876</td><td>0.743338</td><td>local text-classification reference; v5-random 0.702956 measured</td></tr>
+<tr><td>NER all F1</td><td>0.549858</td><td>0.627108</td><td>available-language tagging reference; v5-random 0.544628 measured</td></tr>
+<tr><td>POS all F1</td><td>0.481336</td><td>0.567542</td><td>available-language tagging reference with local train-language caveat; v5-random 0.481102 measured</td></tr>
+<tr><td>Roundtrip accuracy</td><td>0.185300</td><td>0.205189</td><td>available-language alignment reference; v5-random 0.190300 measured</td></tr>
+</tbody></table>
+<p>추가로 <code>v5_random</code> after-MLM PPPL은 측정 완료됐다. weighted PPPL은 target10</p>
+<p><code>39.222875</code>, head <code>18.726452</code>, all <code>20.138927</code>이다. 이 값은 random-initialized</p>
+<p>checkpoint의 measured row이며, 아직 FVT와의 method comparison claim은 아니다.</p>
+<p><code>v5_random</code> Tatoeba retrieval도 measured row가 생겼다. Top-10 accuracy는 head</p>
+<p><code>0.700285</code>, all available <code>0.610353</code>이다. target10 coverage는 여전히 <code>0/10</code>이므로</p>
+<p>available-language downstream row로만 해석한다.</p>
+<p><code>v5_random</code> Taxi1500도 measured row가 생겼다. macro-F1은 <code>0.702956</code>, accuracy는</p>
+<p><code>0.747748</code>이다. local English-only classification row이므로 target10 downstream</p>
+<p>claim으로 쓰지 않는다.</p>
+<p><code>v5_random</code> Roundtrip accuracy도 available 74-language setting에서 <code>0.190300</code>으로</p>
+<p>측정됐지만, FVT downstream row가 없으므로 downstream method claim은 여전히 잠겨 있다.</p>
+<p><code>v5_random</code> Bible Top-10도 같은 available 74-language setting에서 <code>0.328019</code>로</p>
+<p>측정됐다. 다만 FVT Bible row가 없으므로 이것도 method win claim으로 쓰지 않는다.</p>
+<p><code>v5_random</code> NER all F1은 <code>0.544628</code>, head F1은 <code>0.608020</code>이며, POS all F1은</p>
+<p><code>0.481102</code>, head F1은 <code>0.587430</code>이다. POS는 baseline/reference와 동일하게</p>
+<p><code>TRAIN_LANGS=tur_Latn</code> 조건에서 해석한다.</p>
+<p>중간 해석은 분명하다. <code>v5_random</code>은 method win이 아니라 diagnostic lower-bound row이다.</p>
+<p>target10 PPPL에서는 XLM-R보다 좋아졌지만 Glot500-base reference에는 아직 못 미치고,</p>
+<p>head/all PPPL에서는 두 reference보다 나쁘다. Downstream은 metric별로 섞인다. Tatoeba와</p>
+<p>Taxi1500에서는 XLM-R보다 높지만 Glot500-base에는 못 미치고, Bible retrieval에서는 두</p>
+<p>reference보다 낮으며, POS head에서는 두 reference보다 높고, Roundtrip에서는 XLM-R과</p>
+<p>Glot500-base 사이에 있다. 따라서 이 결과는 실험 설계를 약하게 만드는 것이 아니라,</p>
+<p>matched <code>v5_fvt</code>가 왜 결정적인 test인지 보여준다.</p>
+<p>이 표에서 아직 빠진 핵심 row는 <code>v5_fvt</code>의 after-MLM PPPL 및 available downstream</p>
+<p>결과이다. 이 row는 selected 10K checkpoint가 생긴 뒤</p>
+<p><code>scripts/run_v5_post_checkpoint_evals.sh</code> wrapper로만 채운다.</p>
+<h3>5.5 Current Finalization Gates</h3>
+<p>현재 결론 동결 상태는 <code>../final_claim_freeze_audit.md</code>가 관리한다. 현 단계에서</p>
+<p>허용되는 결론은 setup fidelity와 zero-step novelty까지이다. after-MLM PPPL 개선,</p>
+<p>downstream improvement, target10 downstream improvement는 모두 locked claim이다.</p>
+<p>이 구조는 보수적이지만 발표 방어에는 유리하다. live training log나 중간 dev score가</p>
+<p>좋아 보여도, aggregation에 들어간 measured row가 아니면 final report/PPT claim으로</p>
+<p>승격하지 않는다.</p>
+<h2>6. 논의</h2>
+<p>현재까지 가장 강한 기여는 “Glot500-style vocabulary expansion에서 새 row를 random으로</p>
+<p>두지 않아도 된다”는 실험적 근거이다. FVT는 target token을 기존 XLM-R tokenizer로</p>
+<p>분해한 뒤 source embedding 평균을 사용하므로, low-resource corpus만으로도 더 안정적인</p>
+<p>초기 embedding을 제공할 수 있다.</p>
+<p>다만 tokenizer 자체가 모든 언어에서 균일하게 이득을 주지는 않는다. <code>dzo_Tibt</code>는</p>
+<p>byte fallback이나 <code>&lt;unk&gt;</code> 문제가 아니라 새 Tibetan pieces의 segmentation score</p>
+<p>calibration 문제로 보인다. 이 failure case는 오히려 발표에서 설득력 있는 분석 포인트가</p>
+<p>된다. 좋은 실험은 성공만 있는 실험이 아니라, 어떤 조건에서 깨지는지도 보여준다.</p>
+<h2>7. Limitations</h2>
+<ul>
+<li>v5는 511-language full reproduction이 아니라 102-language controlled subset이다.</li>
+<li>PPPL은 target10 coverage 10/10이지만 retained downstream task coverage는 target10 0/10이므로 target10 downstream transfer를 직접</li>
+</ul>
+<p>주장하지 않는다.</p>
+<ul>
+<li>Roundtrip alignment는 available-language 기준 XLM-R/Glot500-base/v5-random row를</li>
+</ul>
+<p>측정했지만, target10 coverage는 0/10이고 FVT method row는 checkpoint 이후에만 확정한다.</p>
+<ul>
+<li>after-MLM 및 downstream novelty claim은 matched <code>v5_random</code>/<code>v5_fvt</code> checkpoint와</li>
+</ul>
+<p>parsed aggregation row 이후에만 확정한다.</p>
+<h2>8. 결론 초안</h2>
+<p>현재 안전한 결론은 다음과 같다.</p>
+<blockquote>
+<p>v5는 Glot500-style tokenizer expansion, continued MLM 준비, evaluation family</p>
+<p>accounting을 92+10 controlled subset에서 충실히 재연하는 구조를 갖췄다. 또한</p>
+<p>vocabulary extension 이후 source-token decomposition 기반 FVT initialization은</p>
+<p>zero-step MLM proxy에서 random resize보다 큰 이점을 보였다. 최종 after-MLM 및</p>
+<p>downstream transfer 결론은 matched checkpoint와 available-language metric replay</p>
+<p>완료 후 결정한다.</p>
+</blockquote>
+<h3>8.1 결과별 최종 결론 선택 규칙</h3>
+<p>checkpoint 이후 초록과 결론은 새로 즉흥 작성하지 않고,</p>
+<p><code>../post_checkpoint_outcome_matrix_ko.md</code>와 <code>../final_claim_decision_tree.md</code>가</p>
+<p>허용한 outcome만 사용한다.</p>
+<table>
+<thead><tr><th>Outcome</th><th>조건</th><th>최종 report/PPT 문장 방향</th></tr></thead>
+<tbody>
+<tr><td>bounded positive</td><td>FVT가 after-MLM PPPL과 available downstream 다수에서 우세</td><td>target10 coverage caveat를 단 제한적 positive claim</td></tr>
+<tr><td>intrinsic positive, downstream mixed</td><td>FVT가 PPPL에서는 우세하지만 downstream은 섞임</td><td>intrinsic adaptation 개선 claim, downstream은 coverage-dependent</td></tr>
+<tr><td>early-only diagnostic</td><td>zero-step은 우세하지만 after-MLM에서 우위가 사라짐</td><td>final superiority가 아니라 early adaptation diagnostic</td></tr>
+<tr><td>negative final comparison</td><td>PPPL/downstream에서 random이 같거나 우세</td><td>controlled negative result와 추가 objective 필요성</td></tr>
+<tr><td>incomplete evaluation</td><td>matched row 또는 parser output이 완결되지 않음</td><td>execution draft 결론 유지, final method claim 잠금</td></tr>
+</tbody></table>
+<p>최종 문장 승격 조건은 세 가지이다. 첫째, <code>3_evaluation/09_aggregation/</code>에</p>
+<p><code>v5_random</code>과 <code>v5_fvt</code> row가 모두 있어야 한다. 둘째,</p>
+<p><code>result_promotion_readiness_audit.md</code>가 결과 승격 가능 상태여야 한다. 셋째,</p>
+<p><code>final_claim_freeze_audit.md</code>가 pending/disallowed claim을 다시 잠근 상태여야 한다.</p>
+<p>하나라도 충족되지 않으면 위 안전 결론을 유지한다.</p>
+<h2>9. 재현성 요약</h2>
+<p>실행 경로와 문서 source of truth:</p>
+<ul>
+<li>top-level plan: <code>../../Plan.md</code></li>
+<li>living report: <code>../../Report.md</code></li>
+<li>selected data manifest:</li>
+</ul>
+<p><code>../../0_tokenizer/miscellaneous/glot50010_selected_manifest.tsv</code></p>
+<ul>
+<li>main merge report:</li>
+</ul>
+<p><code>../../0_tokenizer/merge/Glot500_v5_glot50010_xlmr100.report.json</code></p>
+<ul>
+<li>metric mapping: <code>../../3_evaluation/metric_mapping.md</code></li>
+<li>aggregation folder: <code>../../3_evaluation/09_aggregation/</code></li>
+<li>post-checkpoint runner: <code>../../../../scripts/run_v5_post_checkpoint_evals.sh</code></li>
+<li>reporting refresh: <code>../../../../scripts/refresh_v5_reporting.py</code></li>
+</ul>
+<p>최종 결과 반영 순서:</p>
+<ol>
+<li>matched <code>v5_random</code> and <code>v5_fvt</code> checkpoints를 확인한다.</li>
+<li><code>../../3_evaluation/post_checkpoint_eval_queue.md</code>에서 runnable metric rows를 확인한다.</li>
+<li><code>../../3_evaluation/post_checkpoint_execution_plan.md</code>에서 launch env, output/log 위치,</li>
+</ol>
+<p>promotion rule을 확인한다.</p>
+<ol>
+<li><code>post_checkpoint_preflight.md</code>가 <code>post_checkpoint_preflight_ready_to_launch</code>를</li>
+</ol>
+<p>보고한 뒤 guarded post-checkpoint runner로 PPPL 및 available downstream rows를 실행한다.</p>
+<ol>
+<li>reporting refresh를 실행한다.</li>
+<li><code>../post_result_patch_plan_ko.md</code>에서 <code>ready_for_patch</code> 행만 보고서와 PPT 수정 대상으로 삼는다.</li>
+<li><code>../final_claim_decision_tree.md</code>가 허용하는 conclusion wording만 보고서와 PPT에 반영한다.</li>
+</ol>
+<p>checkpoint가 준비된 뒤 실제 handoff 명령:</p>
+<pre><code>bash scripts/run_v5_post_checkpoint_evals.sh status
+SKIP_MEASURED=1 WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh all
+python3 scripts/refresh_v5_reporting.py --with-plots</code></pre>
+<h2>10. 참고문헌</h2>
+<p>본 한국어 원고의 citation boundary는 <code>citation_source_map.md</code>와</p>
+<p><code>external_source_verification.md</code>를 따른다. 인용은 배경과 방법론 계보를 설명하기</p>
+<p>위한 것이며, v5의 수치 결과는 항상 local artifact와 aggregation table에서만 온다.</p>
+<ul>
+<li>Ayyoob ImaniGooghari et al. 2023. *Glot500: Scaling Multilingual Corpora and</li>
+</ul>
+<p>Language Models to 500 Languages*. ACL 2023.</p>
+<p><code>https://aclanthology.org/2023.acl-long.61/</code>,</p>
+<p>DOI <code>10.18653/v1/2023.acl-long.61</code>.</p>
+<p>본 연구에서는 Glot500-style corpus/tokenizer/continued-MLM/evaluation 흐름의</p>
+<p>reproduction target으로 인용한다. v5가 511-language full scale을 재학습했다는</p>
+<p>근거로 사용하지 않는다.</p>
+<ul>
+<li>Glot500 official code. <code>https://github.com/cisnlp/Glot500</code>.</li>
+</ul>
+<p>inherited tokenizer/evaluation script lineage를 설명하는 code reference이다.</p>
+<p>local v5 재현성 근거는 <code>reproducibility_appendix.md</code>, <code>source_map.md</code>, 그리고</p>
+<p>generated audit files에 둔다.</p>
+<ul>
+<li>Atsuki Yamaguchi, Aline Villavicencio, Nikolaos Aletras. 2026.</li>
+</ul>
+<p>*How Can We Effectively Expand the Vocabulary of LLMs with 0.01GB of Target</p>
+<p>Language Text?* Computational Linguistics 52(1):295-330.</p>
+<p><code>https://aclanthology.org/2026.cl-1.9/</code>,</p>
+<p>DOI <code>10.1162/coli.a.581</code>.</p>
+<p>본 연구에서는 low-resource vocabulary expansion과 new-row initialization 문제의</p>
+<p>inspiration/contrast로 인용한다. v5 main tokenizer는 Yamaguchi-style add-token</p>
+<p>route가 아니라 Glot500-style SentencePiece append route이다.</p>
+<ul>
+<li>Low-resource continued vocabulary expansion official code.</li>
+</ul>
+<p><code>https://github.com/gucci-j/lowres-cve</code>.</p>
+<p>관련 구현 계보와 terminology bridge로만 사용한다. 실행된 v5 pipeline의 근거는</p>
+<p>local scripts와 generated artifacts이다.</p>
+  </article>
+</body>
+</html>

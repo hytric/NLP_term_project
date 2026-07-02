@@ -1,0 +1,15 @@
+metric	expected	actual	status
+unmapped prior experiments	0	0	PASS
+prior experiments labeled main	0	0	PASS
+allowed ablation claims recorded	yes	yes	PASS
+blocked overclaims recorded	yes	yes	PASS
+vocab size axis recorded	yes	yes	PASS
+init axis recorded	yes	yes	PASS
+fallback axis recorded	yes	byte-vs-char measured	PASS
+replay/control axis recorded	yes	yes	PASS
+replay-safe retry axis recorded	yes	yes_1000step_retry	PASS_DIAGNOSTIC
+checkpoint selection axis recorded	yes	retained checkpoint-150 vs 200 measured	PASS_DIAGNOSTIC
+appended-token failure axis recorded	yes	yes	PASS
+downstream proxy boundary recorded	yes	yes	PASS
+negative diagnostic summary recorded	yes	yes	PASS
+report placement recorded	yes	yes	PASS

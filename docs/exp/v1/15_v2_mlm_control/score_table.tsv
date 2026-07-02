@@ -1,0 +1,9 @@
+run_id	gate_id	criterion	observed	required	status	return_to	notes
+step15_v2_mlm_control_20260611_163731	G01_required_runs	all model-family/seed runs complete	6/6	6/6	PASS	15_v2_mlm_control	2 families x >=3 seeds
+step15_v2_mlm_control_20260611_163731	G02_seed_count	at least three seeds per family	3	>=3	PASS	15_v2_mlm_control	13,17,23
+step15_v2_mlm_control_20260611_163731	G03_no_final_access	ACT final data not read	NO_ACT_FINAL_ACCESS	NO_ACT_FINAL_ACCESS	PASS	12_v2_split_protocol	train txt and Mark/dev txt only
+step15_v2_mlm_control_20260611_163731	G04_adapted_improves	adapted checkpoint improves over zero-step in every seed	3/3	3/3	PASS	14_v2_embedding_init	self-comparison within adapted tokenizer
+step15_v2_mlm_control_20260611_163731	G05_original_control_complete	original XLM-R continued-pretraining control completes every seed	3/3	3/3	PASS	15_v2_mlm_control	control checkpoints saved
+step15_v2_mlm_control_20260611_163731	G06_competitive_control	adapted mean final dev loss is within configured control margin	ratio=1.964580; adapted_mean=4.946829; original_mean=2.518008	ratio<=1.100000	FAIL	15_v2_mlm_control	diagnostic because tokenizer vocabularies differ
+step15_v2_mlm_control_20260611_163731	G07_token_budget_match	all family/seed runs use matched train token budget	min_tokens=500008; max_tokens=500407; token_ratio=1.000798; target=500000	token_ratio<=1.020000	PASS	15_v2_mlm_control	token-matched control prevents original tokenizer from seeing more train tokens
+step15_v2_mlm_control_20260611_163731	G08_checkpoint_selection	selected adapted and original-control checkpoints are recorded	adapted=/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/adapted_extended_seed23; original=/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control_token500k/original_control_seed23	two checkpoint paths	PASS	15_v2_mlm_control	selection uses Mark/dev only

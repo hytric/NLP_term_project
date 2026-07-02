@@ -1,0 +1,41 @@
+{
+  "tokenizer": "/home/axt/mnt2/jongha/v5_glot50010/tokenization/output/Glot500_extended_spm",
+  "manifest": "docs/exp/v5/0_tokenizer/merge/Glot500_v5_glot50010_xlmr100.manifest.tsv",
+  "models": [
+    {
+      "key": "v5_random",
+      "model_path": "/home/axt/mnt2/jongha/v5_glot50010/initialized_models/v5_random"
+    },
+    {
+      "key": "v5_mean",
+      "model_path": "/home/axt/mnt2/jongha/v5_glot50010/initialized_models/v5_mean"
+    },
+    {
+      "key": "v5_fvt",
+      "model_path": "/home/axt/mnt2/jongha/v5_glot50010/initialized_models/v5_fvt"
+    }
+  ],
+  "languages": [
+    "lao_Laoo",
+    "mya_Mymr",
+    "ara_Arab",
+    "mar_Deva",
+    "hau_Latn",
+    "fur_Latn",
+    "krc_Cyrl",
+    "acm_Arab",
+    "dzo_Tibt",
+    "sat_Olck",
+    "mad_Latn",
+    "bam_Latn",
+    "kjb_Latn",
+    "quw_Latn",
+    "rap_Latn"
+  ],
+  "max_examples_per_language": 5,
+  "max_length": 96,
+  "mask_batch_size": 64,
+  "device": "cuda",
+  "result_title": "v5 Main Zero-Step MLM Proxy Results",
+  "elapsed_sec": 28.245
+}

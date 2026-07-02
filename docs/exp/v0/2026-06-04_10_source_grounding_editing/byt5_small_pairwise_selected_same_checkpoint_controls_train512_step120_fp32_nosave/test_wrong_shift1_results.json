@@ -1,0 +1,10 @@
+{
+    "test_wrong_shift1_bleu": 0.4304827633798438,
+    "test_wrong_shift1_chrf": 15.79518864314311,
+    "test_wrong_shift1_chrfpp": 12.825319208758495,
+    "test_wrong_shift1_gen_len": 191.0,
+    "test_wrong_shift1_loss": 1.3147876262664795,
+    "test_wrong_shift1_runtime": 56.4806,
+    "test_wrong_shift1_samples_per_second": 1.133,
+    "test_wrong_shift1_steps_per_second": 1.133
+}

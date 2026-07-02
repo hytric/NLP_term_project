@@ -1,0 +1,10 @@
+file_role	path	location	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/score_table.tsv	docs	3	1652	87efdced508a8b658a72d1d823b48235	PASS_NEGATIVE_RESULT	gate table with exploratory branch row superseded by Step 09
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/results.md	docs	77	3525	80235f62f7bbc4f01f62e2b76c55b9ec	PASS_NEGATIVE_RESULT	post-audit step result summary
+translation_data_manifest	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/translation_data_manifest.tsv	docs	3	493	209bed176bbd964a10a9ed9ffcda48f2	PASS	datasets and splits
+translation_results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/translation_results.tsv	docs	3	1652	87efdced508a8b658a72d1d823b48235	PASS_NEGATIVE_RESULT	reference original target and exploratory branch scores
+high_resource_reference	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/high_resource_reference.md	docs	9	172	1bc2a30c16fedbf3dc2e1b2fdec72807	PASS	reference score details
+sample_translations	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/sample_translations.md	docs	73	5553	57c6315aa3e11181584461077ac1ab8f	PASS	original failed sample outputs
+branch_sentence_embedding_samples	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/branch_sentence_embedding_samples.md	docs	31	2372	ba4715d065a46454fdf4c2b6a7476322	PASS	exploratory branch sample outputs with Step 09 caveat
+failure_cases	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/07_translation_benchmark/failure_cases.md	docs	39	1416	59410daef4d3a9687a3754b42145155d	PASS	original retrieval misses and exploratory branch note
+translation_branch	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/branches/branch_001_translation_retrieval_gap	docs	10	78194	DIRECTORY	PASS	branch scaffold and retry evidence

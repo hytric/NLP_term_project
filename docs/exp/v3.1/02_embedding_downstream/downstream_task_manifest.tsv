@@ -1,0 +1,17 @@
+model_key	model_group	seed	direction	feature_set	negative_policy	train_examples	dev_examples	cosine_threshold	cosine_dev_macro_f1	logistic_best_c	logistic_dev_macro_f1
+xlmr_base	xlmr_base	baseline	cop->syr	cosine	shifted_plus_hard	16167	2034	0.985774	0.4	0.1	0.667699
+xlmr_base	xlmr_base	baseline	cop->syr	diff_prod_cosine	shifted_plus_hard	16167	2034	0.985774	0.4	0.1	0.795569
+xlmr_base	xlmr_base	baseline	syr->cop	cosine	shifted_plus_hard	16167	2034	0.973439	0.45041	0.01	0.546536
+xlmr_base	xlmr_base	baseline	syr->cop	diff_prod_cosine	shifted_plus_hard	16167	2034	0.973439	0.45041	1.0	0.744382
+fvt_seed13	third_try_fvt	13	cop->syr	cosine	shifted_plus_hard	16167	2034	0.997587	0.4	0.01	0.633062
+fvt_seed13	third_try_fvt	13	cop->syr	diff_prod_cosine	shifted_plus_hard	16167	2034	0.997587	0.4	0.01	0.766719
+fvt_seed13	third_try_fvt	13	syr->cop	cosine	shifted_plus_hard	16167	2034	0.992259	0.488221	0.01	0.507419
+fvt_seed13	third_try_fvt	13	syr->cop	diff_prod_cosine	shifted_plus_hard	16167	2034	0.992259	0.488221	0.01	0.778023
+fvt_seed17	third_try_fvt	17	cop->syr	cosine	shifted_plus_hard	16167	2034	0.997965	0.4	0.1	0.636448
+fvt_seed17	third_try_fvt	17	cop->syr	diff_prod_cosine	shifted_plus_hard	16167	2034	0.997965	0.4	1.0	0.784753
+fvt_seed17	third_try_fvt	17	syr->cop	cosine	shifted_plus_hard	16167	2034	0.992303	0.487818	0.01	0.515207
+fvt_seed17	third_try_fvt	17	syr->cop	diff_prod_cosine	shifted_plus_hard	16167	2034	0.992303	0.487818	0.1	0.776126
+fvt_seed23	third_try_fvt	23	cop->syr	cosine	shifted_plus_hard	16167	2034	0.997762	0.4	0.1	0.632982
+fvt_seed23	third_try_fvt	23	cop->syr	diff_prod_cosine	shifted_plus_hard	16167	2034	0.997762	0.4	0.01	0.770689
+fvt_seed23	third_try_fvt	23	syr->cop	cosine	shifted_plus_hard	16167	2034	0.992454	0.492594	0.01	0.508639
+fvt_seed23	third_try_fvt	23	syr->cop	diff_prod_cosine	shifted_plus_hard	16167	2034	0.992454	0.492594	0.01	0.766745

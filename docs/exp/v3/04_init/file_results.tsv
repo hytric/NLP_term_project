@@ -1,0 +1,15 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	docs/exp/third_try/04_init/score_table.tsv	6	270	9fd2d2cb0e6e614ffc18a3569092b3df	PASS	third_try init gate table
+init_candidate_summary	docs/exp/third_try/04_init/init_candidate_summary.tsv	5	1393	562e13e33813436d0846209e15c8cd34	PASS	method-level init candidate summary
+new_row_stats	docs/exp/third_try/04_init/new_row_stats.tsv	5	763	d4eb6dc4c0bb33cf21fad7f7d28e1a97	PASS	new row norm/fallback stats
+row_copy_audit	docs/exp/third_try/04_init/row_copy_audit.tsv	5	483	5ccb5da07bc5b4f95c119c2c5e900fdd	PASS	base row drift audit
+zero_step_mlm	docs/exp/third_try/04_init/v2_zero_step_mlm.tsv	5	510	899f7827d0a7d6673ced6452f20ab051	PASS	Mark/dev zero-step MLM losses
+nearest_neighbors	docs/exp/third_try/04_init/v2_nearest_neighbors.md	43	1852	5b9ace7921ff3a174847f54ca6ef5675	PASS	nearest-neighbor diagnostics
+no_final_access_audit	docs/exp/third_try/04_init/v2_no_final_access_audit.tsv	2	482	9a36e9e11bc8f2b6d4227b557fabcb21	PASS	input access audit
+selected_init	docs/exp/third_try/04_init/selected_init.md	15	365	d4a1ed9de6fe8b9c7ec8466c642fb5c8	PASS	selected init pointer
+results	docs/exp/third_try/04_init/results.md	49	1495	0b8be9cf9b68927c92d8aa7dc8ecbdd3	PASS	stage result summary
+checkpoint_xlmr_v2_48000_random	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_random	7	1213977548	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_48000_mean	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_mean	7	1213977547	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_48000_fvt	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_fvt	7	1213977545	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_48000_align	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_align	7	1213977551	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_48000_focus	/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_focus	7	1213977551	DIRECTORY	PASS	initialized checkpoint

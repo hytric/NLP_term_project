@@ -1,0 +1,2 @@
+run_id	status	train_loss	eval_loss	perplexity	train_runtime_sec	train_samples	eval_samples	output_dir	notes
+stage05_smoke_fvt_seed13_20260613	PASS	7.336768	8.1263	3382.426	2.2096	16	8	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/smoke_fvt_seed13	loader/tokenizer/model/trainer/fp16/save/eval path verified on CUDA_VISIBLE_DEVICES=3

@@ -1,0 +1,10 @@
+{
+    "test_source_only_bleu": 0.029258106848588816,
+    "test_source_only_chrf": 0.07104775545930953,
+    "test_source_only_chrfpp": 0.2729235528693203,
+    "test_source_only_gen_len": 187.875,
+    "test_source_only_loss": 2.226273775100708,
+    "test_source_only_runtime": 159.2178,
+    "test_source_only_samples_per_second": 0.402,
+    "test_source_only_steps_per_second": 0.402
+}

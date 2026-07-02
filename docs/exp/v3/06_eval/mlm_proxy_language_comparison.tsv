@@ -1,0 +1,11 @@
+language_id	xlmr_base_loss	fvt_mean_loss	delta_loss_fvt_minus_base	seed_range	interpretation
+acu	6.127476	5.389076	-0.738400	0.078161	proxy_improved
+ake	4.032243	4.552107	0.519864	0.089617	proxy_worse
+bsn	4.639948	4.664550	0.024602	0.090055	roughly_flat_or_worse
+chr	0.281844	5.374069	5.092225	0.084301	unk_shortcut_metric_unfair
+cop	0.172038	5.713588	5.541550	0.048957	unk_shortcut_metric_unfair
+kbh	5.804295	5.783509	-0.020786	0.061965	roughly_flat_or_slightly_improved
+nhg	5.802889	5.609999	-0.192890	0.088843	proxy_improved
+oji	0.159655	5.531056	5.371401	0.061010	unk_shortcut_metric_unfair
+syr	2.157834	5.217867	3.060033	0.086935	unk_shortcut_metric_unfair
+usp	5.550147	5.150111	-0.400036	0.078836	proxy_improved

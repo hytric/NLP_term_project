@@ -1,0 +1,11 @@
+iso	language	script	original_train_rows	train_rows	duplicate_excluded_train_rows	dev_rows	final_test_rows	source	status
+acu	Achuar-Shiwiar	Latin	5170	5168	2	659	953	second_try_v2_clean_split	PASS
+ake	Akawaio	Latin	5179	5178	1	673	1003	second_try_v2_clean_split	PASS
+bsn	Barasana-Eduria	Latin	5103	5063	40	629	959	second_try_v2_clean_split	PASS
+chr	Cherokee	Cherokee	5393	5393	0	678	1007	second_try_v2_clean_split	PASS
+cop	Coptic	Coptic	5394	5388	6	678	1003	second_try_v2_clean_split	PASS
+kbh	Camsa	Latin	4511	4505	6	501	852	second_try_v2_clean_split	PASS
+nhg	Nahuatl Tetelcingo	Latin	5273	5267	6	673	1006	second_try_v2_clean_split	PASS
+oji	Ojibwa	Aboriginal Syllabics	5384	5384	0	674	1007	second_try_v2_clean_split	PASS
+syr	Syriac	Syriac	5390	5376	14	678	1007	second_try_v2_clean_split	PASS
+usp	Uspanteco	Latin	5327	5294	33	678	1007	second_try_v2_clean_split	PASS

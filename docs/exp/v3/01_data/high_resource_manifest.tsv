@@ -1,0 +1,9 @@
+component	role	language_id	language	script	rows_available	rows_used_for_train	docs	heldout_exclusion	source_path	status
+glotcc_eng-Latn	true_high_resource_web_replay	eng-Latn	English	Latin	200000	200000	11273	NOT_APPLICABLE	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_eng-Latn.jsonl	PASS
+glotcc_deu-Latn	true_high_resource_web_replay	deu-Latn	German	Latin	200000	200000	9572	NOT_APPLICABLE	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_deu-Latn.jsonl	PASS
+glotcc_jpn-Jpan	true_high_resource_web_replay	jpn-Jpan	Japanese	Japanese	200000	200000	20551	NOT_APPLICABLE	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_jpn-Jpan.jsonl	PASS
+glotcc_kor-Hang	true_high_resource_web_replay	kor-Hang	Korean	Hangul	200000	200000	14720	NOT_APPLICABLE	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_kor-Hang.jsonl	PASS
+bible_control_eng	domain_matched_control	eng	English	Latin	31102	28538	NA_BIBLE_VERSES	excluded_books=ACT,JOH,MAR;rows=2564	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/English.xml	PASS
+bible_control_deu	domain_matched_control	deu	German	Latin	31102	28538	NA_BIBLE_VERSES	excluded_books=ACT,JOH,MAR;rows=2564	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/German.xml	PASS
+bible_control_jpn	domain_matched_control	jpn	Japanese	Japanese	31087	28523	NA_BIBLE_VERSES	excluded_books=ACT,JOH,MAR;rows=2564	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Japanese.xml	PASS
+bible_control_kor	domain_matched_control	kor	Korean	Hangul	31101	28537	NA_BIBLE_VERSES	excluded_books=ACT,JOH,MAR;rows=2564	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Korean.xml	PASS

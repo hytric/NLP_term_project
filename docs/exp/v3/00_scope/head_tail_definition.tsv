@@ -1,0 +1,5 @@
+group_id	role	languages	definition	main_use
+target10_tail	low_resource_target	acu,ake,bsn,chr,cop,kbh,nhg,oji,syr,usp	existing target10 low-resource Bible languages	main tokenizer, MLM, evaluation target
+core_high_resource_web	high_resource_replay	eng-Latn,deu-Latn,jpn-Jpan,kor-Hang	GlotCC-V1 sampled web corpus	true high-resource replay in main MLM mixture
+core_high_resource_bible	domain_matched_control	eng,deu,jpn,kor	full Bible XML for high-resource languages	domain-matched replay/control only
+ancient_reference_optional	reference_optional	grc,lat	Greek/Latin Bible references	diagnostic or pivot only, not core high-resource

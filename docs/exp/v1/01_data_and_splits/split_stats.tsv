@@ -1,0 +1,11 @@
+iso	language	total_rows	train_rows	dev_rows	test_rows	shared_overlap_all10	source_xml	status
+acu	Achuar-Shiwiar	7646	6123	659	864	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Achuar-NT.xml	PASS
+ake	Akawaio	7734	6182	673	879	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Akawaio-NT.xml	PASS
+bsn	Barasana-Eduria	7548	6062	629	857	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Barasana-NT.xml	PASS
+chr	Cherokee	7957	6400	678	879	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Cherokee-NT.xml	PASS
+cop	Coptic	7957	6400	678	879	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Coptic-NT.xml	PASS
+kbh	Camsa	6521	5363	501	657	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Camsa-NT.xml	PASS
+nhg	Nahuatl (Tetelcingo)	7822	6279	673	870	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Nahuatl-NT.xml	PASS
+oji	Ojibwa	7943	6391	674	878	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Ojibwa-NT.xml	PASS
+syr	Syriac	7954	6397	678	879	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Syriac-NT.xml	PASS
+usp	Uspanteco	7890	6334	678	878	4892	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Uspanteco-NT.xml	PASS

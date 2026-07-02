@@ -1,0 +1,5 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/11_fresh_holdout_feasibility/score_table.tsv	2	617	5defeb7577fe811a9391ac8ee499c865	PASS_NEGATIVE_RESULT	fresh-heldout claim status
+data_availability	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/11_fresh_holdout_feasibility/data_availability.tsv	6	1646	8a06d838883282845e5b455511bd22dc	PASS_NEGATIVE_RESULT	candidate data source audit
+fresh_holdout_protocol	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/11_fresh_holdout_feasibility/fresh_holdout_protocol.md	21	1115	6b6dba629e6ec1ec077207e02dedf30d	PASS_NEGATIVE_RESULT	required protocol for F02/F03
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/11_fresh_holdout_feasibility/results.md	33	1333	e72dc76997f89ed56d7914b5f587d759	PASS_NEGATIVE_RESULT	step result summary with Step 12 supersession note

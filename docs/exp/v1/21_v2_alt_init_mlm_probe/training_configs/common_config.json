@@ -1,0 +1,19 @@
+{
+  "run_id": "step21_v2_alt_init_probe_20260611_194617",
+  "methods": [
+    "mean",
+    "align"
+  ],
+  "seeds": [
+    13,
+    17,
+    23
+  ],
+  "train_text": "/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_tokenizer_mlm_train.txt",
+  "dev_text": "/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_mlm_dev_mark.txt",
+  "train_rows_loaded": 52124,
+  "dev_rows_loaded": 6521,
+  "target_train_tokens": 500000,
+  "selection_data": "MAR_dev_only",
+  "final_access": "NO_ACT_FINAL_ACCESS"
+}

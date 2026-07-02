@@ -1,0 +1,9 @@
+direction	model_group	split	runs	seeds	chrf_mean	chrf_std	chrf_min	chrf_max	bleu_mean	loss_mean	length_ratio_mean	script_valid_mean	max_run_ratio_mean	elapsed_sec_mean
+cop->syr	third_try_fvt	dev	3	13,17,23	3.907288	0.828269	2.761627	4.6914	0.024552	3.674112	0.941778	1.0	0.462241	584.400582
+cop->syr	third_try_fvt	final_test	3	13,17,23	3.683624	0.699922	2.734319	4.401073	0.006311	3.75864	0.906098	1.0	0.529184	584.400582
+cop->syr	xlmr_base	dev	1	baseline	1.573229	0.0	1.573229	1.573229	0.0	1.918845	0.92451	1.0	0.593232	493.409109
+cop->syr	xlmr_base	final_test	1	baseline	1.416919	0.0	1.416919	1.416919	0.0	1.927357	0.772409	1.0	0.602095	493.409109
+syr->cop	third_try_fvt	dev	3	13,17,23	3.685877	0.074015	3.581631	3.746182	0.024338	3.545772	0.312247	1.0	0.486661	253.294561
+syr->cop	third_try_fvt	final_test	3	13,17,23	3.49488	0.118759	3.327708	3.592456	0.020539	3.616527	0.312496	1.0	0.477219	253.294561
+syr->cop	xlmr_base	dev	1	baseline	0.0	0.0	0.0	0.0	0.0	0.129405	0.670338	0.0	0.0	608.330932
+syr->cop	xlmr_base	final_test	1	baseline	0.0	0.0	0.0	0.0	0.0	0.100823	0.592279	0.0	0.0	608.330932

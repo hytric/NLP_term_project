@@ -1,0 +1,11 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/score_table.tsv	3	1003	92ce4bf15066bf06a9b350fb2c056ab1	PASS	v2 tokenizer summary scores
+metrics	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/v2_vocab_extension_metrics.tsv	30	9506	0ced9b6c5e29d3a434fbbd73606922f4	PASS	per-language dev tokenization metrics
+merge_report	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/v2_vocab_merge_report.tsv	3	1890	cdc26263780e4db62fde79c91b09b425	PASS	v2 tokenizer merge report
+examples	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/v2_tokenization_examples.md	245	15390	48baa44a60d9633e653f0c1768b00b87	PASS	dev-only tokenization examples
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/v2_no_final_access_audit.tsv	2	464	e494764acf365a738d280ed6e3c0dc4f	PASS	train/dev input audit
+selected_tokenizer	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/selected_tokenizer.md	11	303	baf1bb2aefc584702e4d5b605a8f8695	PASS	selected v2 tokenizer pointer
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/13_v2_tokenizer/results.md	38	854	cc0d307d6d1fdf6edb6593960e912b36	PASS	step result summary
+tokenizer_artifact	/home/axt/mnt2/jongha/second_try/artifacts/13_v2_tokenizer/tokenizers/xlmr_v2_target10_added_8000	4	5215778	DIRECTORY	PASS	large tokenizer artifact
+tokenizer_artifact	/home/axt/mnt2/jongha/second_try/artifacts/13_v2_tokenizer/tokenizers/xlmr_v2_target10_added_16000	4	5400180	DIRECTORY	PASS	large tokenizer artifact
+tokenizer_artifact	/home/axt/mnt2/jongha/second_try/artifacts/13_v2_tokenizer/tokenizers/xlmr_v2_target10_added_32000	4	5794095	DIRECTORY	PASS	large tokenizer artifact

@@ -1,0 +1,103 @@
+language_script	group	source_sentences	sampling_probability_pct	planned_samples	actual_samples	input_dir	exists_on_disk	status	notes
+lao_Laoo	seen	66966		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/lao_Laoo	yes	PASS	
+mya_Mymr	seen	945180		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/mya_Mymr	yes	PASS	
+ara_Arab	seen	24524122		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ara_Arab	yes	PASS	
+mar_Deva	seen	28748897		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/mar_Deva	yes	PASS	
+hau_Latn	seen	4368483		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/hau_Latn	yes	PASS	
+uzb_Latn	seen	3223485		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/uzb_Latn	yes	PASS	
+slv_Latn	seen	15719210		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/slv_Latn	yes	PASS	
+fin_Latn	seen	16730388		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/fin_Latn	yes	PASS	
+hun_Latn	seen	18800025		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/hun_Latn	yes	PASS	
+cmn_Hani	seen	80745		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/cmn_Hani	yes	PASS	
+est_Latn	seen	13600579		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/est_Latn	yes	PASS	
+bre_Latn	seen	748954		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/bre_Latn	yes	PASS	
+hrv_Latn	seen	17882932		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/hrv_Latn	yes	PASS	
+jav_Latn	seen	516833		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/jav_Latn	yes	PASS	
+ron_Latn	seen	19190217		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ron_Latn	yes	PASS	
+ell_Grek	seen	22033282		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ell_Grek	yes	PASS	
+nor_Latn	seen	14576191		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/nor_Latn	yes	PASS	
+slk_Latn	seen	14633631		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/slk_Latn	yes	PASS	
+vie_Latn	seen	15697827		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/vie_Latn	yes	PASS	
+amh_Ethi	seen	2862985		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/amh_Ethi	yes	PASS	
+epo_Latn	seen	8737198		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/epo_Latn	yes	PASS	
+bel_Cyrl	seen	5319675		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/bel_Cyrl	yes	PASS	
+xho_Latn	seen	1262364		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/xho_Latn	yes	PASS	
+hin_Deva	seen	7046700		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/hin_Deva	yes	PASS	
+tam_Taml	seen	3388255		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/tam_Taml	yes	PASS	
+mon_Cyrl	seen	4616960		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/mon_Cyrl	yes	PASS	
+ces_Latn	seen	20376340		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ces_Latn	yes	PASS	
+san_Deva	seen	165616		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/san_Deva	yes	PASS	
+hye_Armn	seen	1463123		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/hye_Armn	yes	PASS	
+pus_Arab	seen	731992		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/pus_Arab	yes	PASS	
+som_Arab	seen	14199		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/som_Arab	yes	PASS	
+kan_Knda	seen	41836495		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/kan_Knda	yes	PASS	
+isl_Latn	seen	19547941		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/isl_Latn	yes	PASS	
+ori_Orya	seen	410827		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ori_Orya	yes	PASS	
+afr_Latn	seen	5157787		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/afr_Latn	yes	PASS	
+deu_Latn	seen	31015993		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/deu_Latn	yes	PASS	
+urd_Arab	seen	6009594		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/urd_Arab	yes	PASS	
+bul_Cyrl	seen	21823004		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/bul_Cyrl	yes	PASS	
+tgl_Latn	seen	7411064		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/tgl_Latn	yes	PASS	
+eus_Latn	seen	12775959		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/eus_Latn	yes	PASS	
+pol_Latn	seen	19339945		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/pol_Latn	yes	PASS	
+lat_Latn	seen	1179913		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/lat_Latn	yes	PASS	
+tur_Latn	seen	29184662		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/tur_Latn	yes	PASS	
+fra_Latn	seen	39197581		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/fra_Latn	yes	PASS	
+cat_Latn	seen	8648271		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/cat_Latn	yes	PASS	
+uig_Arab	seen	307302		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/uig_Arab	yes	PASS	
+arb_Arab	seen	159884		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/arb_Arab	yes	PASS	
+sqi_Latn	seen	5526836		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/sqi_Latn	yes	PASS	
+sin_Sinh	seen	7293178		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/sin_Sinh	yes	PASS	
+msa_Latn	seen	3929084		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/msa_Latn	yes	PASS	
+swh_Latn	seen	95776		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/swh_Latn	yes	PASS	
+kor_Hang	seen	6468444		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/kor_Hang	yes	PASS	
+ukr_Cyrl	seen	7462046		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ukr_Cyrl	yes	PASS	
+kir_Cyrl	seen	1397566		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/kir_Cyrl	yes	PASS	
+yid_Hebr	seen	220214		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/yid_Hebr	yes	PASS	
+heb_Hebr	seen	18128962		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/heb_Hebr	yes	PASS	
+nld_Latn	seen	25061426		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/nld_Latn	yes	PASS	
+fry_Latn	seen	957422		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/fry_Latn	yes	PASS	
+azb_Arab	seen	33758		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/azb_Arab	yes	PASS	
+glg_Latn	seen	17852274		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/glg_Latn	yes	PASS	
+fas_Arab	seen	18277593		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/fas_Arab	yes	PASS	
+eng_Latn	seen	36122761		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/eng_Latn	yes	PASS	
+mkd_Cyrl	seen	14717004		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/mkd_Cyrl	yes	PASS	
+ind_Latn	seen	23018106		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ind_Latn	yes	PASS	
+por_Latn	seen	27824391		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/por_Latn	yes	PASS	
+spa_Latn	seen	37286756		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/spa_Latn	yes	PASS	
+dan_Latn	seen	19174573		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/dan_Latn	yes	PASS	
+khm_Khmr	seen	590429		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/khm_Khmr	yes	PASS	
+gla_Latn	seen	152563		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/gla_Latn	yes	PASS	
+uig_Latn	seen	9637		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/uig_Latn	yes	PASS	
+kat_Geor	seen	1004297		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/kat_Geor	yes	PASS	
+mlg_Latn	seen	3715802		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/mlg_Latn	yes	PASS	
+snd_Arab	seen	488730		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/snd_Arab	yes	PASS	
+ita_Latn	seen	23539857		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/ita_Latn	yes	PASS	
+hau_Arab	seen	9593		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/hau_Arab	yes	PASS	
+cym_Latn	seen	1244783		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/cym_Latn	yes	PASS	
+srp_Latn	seen	18371769		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/srp_Latn	yes	PASS	
+zho_Hani	seen	24143786		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/zho_Hani	yes	PASS	
+tha_Thai	seen	7735209		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/tha_Thai	yes	PASS	
+swe_Latn	seen	20725883		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/swe_Latn	yes	PASS	
+pan_Guru	seen	29052537		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/pan_Guru	yes	PASS	
+prs_Arab	seen	26823		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/prs_Arab	yes	PASS	
+pes_Arab	seen	57511		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/pes_Arab	yes	PASS	
+san_Latn	seen	25742		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/san_Latn	yes	PASS	
+kaz_Cyrl	seen	12378727		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/kaz_Cyrl	yes	PASS	
+kur_Latn	seen	407169		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/kur_Latn	yes	PASS	
+mal_Mlym	seen	48098273		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/mal_Mlym	yes	PASS	
+nep_Deva	seen	1317291		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/nep_Deva	yes	PASS	
+gle_Latn	seen	7225513		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/gle_Latn	yes	PASS	
+swa_Latn	seen	5989369		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/swa_Latn	yes	PASS	
+som_Latn	seen	3916769		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/som_Latn	yes	PASS	
+lit_Latn	seen	12479626		135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/lit_Latn	yes	PASS	
+acu_Latn	unseen	5168	9.9832587	140832	140832	/home/axt/mnt2/jongha/v4_tokenizer/raw/acu_Latn	yes	PASS	
+ake_Latn	unseen	5178	9.98905002	140914	140914	/home/axt/mnt2/jongha/v4_tokenizer/raw/ake_Latn	yes	PASS	
+bsn_Latn	unseen	5063	9.92197097	139968	139968	/home/axt/mnt2/jongha/v4_tokenizer/raw/bsn_Latn	yes	PASS	
+chr_Cher	unseen	5393	10.11171219	142645	142645	/home/axt/mnt2/jongha/v4_tokenizer/raw/chr_Cher	yes	PASS	
+cop_Copt	unseen	5388	10.10889883	142605	142605	/home/axt/mnt2/jongha/v4_tokenizer/raw/cop_Copt	yes	PASS	
+kbh_Latn	unseen	4505	9.58040817	135150	135150	/home/axt/mnt2/jongha/v4_tokenizer/raw/kbh_Latn	yes	PASS	
+nhg_Latn	unseen	5267	10.04025099	141636	141636	/home/axt/mnt2/jongha/v4_tokenizer/raw/nhg_Latn	yes	PASS	
+oji_Cans	unseen	5384	10.10664682	142573	142573	/home/axt/mnt2/jongha/v4_tokenizer/raw/oji_Cans	yes	PASS	
+syr_Syrc	unseen	5376	10.10213928	142510	142510	/home/axt/mnt2/jongha/v4_tokenizer/raw/syr_Syrc	yes	PASS	
+usp_Latn	unseen	5294	10.05566404	141854	141854	/home/axt/mnt2/jongha/v4_tokenizer/raw/usp_Latn	yes	PASS	

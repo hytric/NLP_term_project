@@ -1,0 +1,4 @@
+run_id	init_method	seed	output_dir	max_steps	status	final_eval_loss	final_perplexity	next_action
+fvt_seed13_pilot	fvt	13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	200	PASS_FOR_PILOT	3.921798	50.491170	include in 3-seed pilot summary; downstream still pending
+fvt_seed17_pilot	fvt	17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	200	PASS_FOR_PILOT	4.010451	55.171739	include in 3-seed pilot summary; downstream still pending
+fvt_seed23_pilot	fvt	23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	200	PASS_FOR_PILOT	4.011500	55.229646	include in 3-seed pilot summary; downstream still pending

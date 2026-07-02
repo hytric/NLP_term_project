@@ -1,0 +1,4 @@
+metric	value	model	status
+target10_avg_mlm_loss	3.472799	xlm-roberta-base	PASS
+target10_avg_mlm_perplexity	155.299643	xlm-roberta-base	PASS
+target10_total_masked_tokens	95941	xlm-roberta-base	PASS

@@ -1,0 +1,17 @@
+run_id	model_key	model_group	seed	direction	split	examples	mean_pred_chars	mean_ref_chars	length_ratio	exact_copy_rate	mean_source_copy_char_overlap	mean_script_valid_ratio	mean_max_run_ratio
+retrieval_trainbank_xlmr_base_cop_to_syr	xlmr_base	xlmr_base	baseline	cop->syr	dev	678	15.00589970501475	65.5693215339233	0.22885549757063164	0.0	0.0	1.0	0.15381373788453656
+retrieval_trainbank_xlmr_base_cop_to_syr	xlmr_base	xlmr_base	baseline	cop->syr	final_test	1006	15.00596421471173	79.70079522862824	0.18827872634979234	0.0	0.0	1.0	0.15381338343565346
+retrieval_trainbank_xlmr_base_syr_to_cop	xlmr_base	xlmr_base	baseline	syr->cop	dev	678	139.48377581120943	93.61061946902655	1.4900422260036554	0.0	0.0	1.0	0.017343396283332306
+retrieval_trainbank_xlmr_base_syr_to_cop	xlmr_base	xlmr_base	baseline	syr->cop	final_test	1006	143.27335984095427	106.23956262425448	1.3485876287695202	0.0	0.0	1.0	0.01700830706968228
+retrieval_trainbank_fvt_seed13_cop_to_syr	fvt_seed13	third_try_fvt	13	cop->syr	dev	678	46.84513274336283	65.5693215339233	0.714436746445924	0.0	0.0	1.0	0.0567388732211739
+retrieval_trainbank_fvt_seed13_cop_to_syr	fvt_seed13	third_try_fvt	13	cop->syr	final_test	1006	49.11630218687873	79.70079522862824	0.6162586213347635	0.0	0.0	1.0	0.05353701964039853
+retrieval_trainbank_fvt_seed13_syr_to_cop	fvt_seed13	third_try_fvt	13	syr->cop	dev	678	73.59292035398231	93.61061946902655	0.7861599546228021	0.0	0.0	1.0	0.03413445835695821
+retrieval_trainbank_fvt_seed13_syr_to_cop	fvt_seed13	third_try_fvt	13	syr->cop	final_test	1006	86.95526838966202	106.23956262425448	0.8184829289744285	0.0	0.0	1.0	0.02893894876637744
+retrieval_trainbank_fvt_seed17_cop_to_syr	fvt_seed17	third_try_fvt	17	cop->syr	dev	678	48.426253687315636	65.5693215339233	0.7385504768760123	0.0	0.0	1.0	0.05154975309842561
+retrieval_trainbank_fvt_seed17_cop_to_syr	fvt_seed17	third_try_fvt	17	cop->syr	final_test	1006	50.3051689860835	79.70079522862824	0.6311752453884434	0.0	0.0	1.0	0.049743389479969306
+retrieval_trainbank_fvt_seed17_syr_to_cop	fvt_seed17	third_try_fvt	17	syr->cop	dev	678	74.27138643067846	93.61061946902655	0.7934077015188756	0.0	0.0	1.0	0.02773813784576661
+retrieval_trainbank_fvt_seed17_syr_to_cop	fvt_seed17	third_try_fvt	17	syr->cop	final_test	1006	85.3986083499006	106.23956262425448	0.8038305715916427	0.0	0.0	1.0	0.02571051105950441
+retrieval_trainbank_fvt_seed23_cop_to_syr	fvt_seed23	third_try_fvt	23	cop->syr	dev	678	48.2787610619469	65.5693215339233	0.7363010617239518	0.0	0.0	1.0	0.05222414016661801
+retrieval_trainbank_fvt_seed23_cop_to_syr	fvt_seed23	third_try_fvt	23	cop->syr	final_test	1006	49.912524850894634	79.70079522862824	0.626248768380748	0.0	0.0	1.0	0.04997924540668006
+retrieval_trainbank_fvt_seed23_syr_to_cop	fvt_seed23	third_try_fvt	23	syr->cop	dev	678	73.95132743362832	93.61061946902655	0.7899886557005105	0.0	0.0	1.0	0.03134484175659919
+retrieval_trainbank_fvt_seed23_syr_to_cop	fvt_seed23	third_try_fvt	23	syr->cop	final_test	1006	88.00099403578528	106.23956262425448	0.828326019630042	0.0	0.0	1.0	0.02724482245060778

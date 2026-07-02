@@ -1,0 +1,13 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/03_tokenizer/candidates/targetheavy_48000/merge_report.json	stage03_report	1	NOT_COMPUTED	PASS	main tokenizer merge report
+docs/exp/third_try/03_tokenizer/candidates/targetheavy_48000/id_preservation_audit.tsv	stage03_audit	5	NOT_COMPUTED	PASS	id preservation audit
+docs/exp/third_try/03_tokenizer/candidates/targetheavy_48000/tokenization_before_after.tsv	stage03_metric	10	NOT_COMPUTED	PASS	target10 dev before/after metrics
+docs/exp/third_try/03_tokenizer/fallback_ablation.tsv	stage03_ablation_manifest	3	NOT_COMPUTED	PASS	byte-vs-char fallback ablation status
+docs/exp/third_try/03_tokenizer/fallback_ablation_summary.tsv	stage03_ablation_metric	3	NOT_COMPUTED	PASS	byte-vs-char fallback summary
+docs/exp/third_try/03_tokenizer/fallback_ablation_comparison.tsv	stage03_ablation_metric	10	NOT_COMPUTED	PASS	target10 language byte-vs-char comparison
+docs/exp/third_try/03_tokenizer/fallback_ablation_aux_metrics.tsv	stage03_ablation_metric	20	NOT_COMPUTED	PASS	auxiliary SentencePiece fallback metrics
+docs/exp/third_try/03_tokenizer/fallback_ablation_append_metrics.tsv	stage03_ablation_metric	20	NOT_COMPUTED	PASS	append-only XLM-R fallback metrics
+/home/axt/mnt2/jongha/third_try/tokenizers/stage03_targetheavy_20260613_r3/tokenizers/xlmr_third_try_mixture_added_48000	large_tokenizer	280851	DIRECTORY_NOT_COMPUTED	PASS	provisional main tokenizer candidate
+/home/axt/mnt2/jongha/third_try/tokenizers/stage03_fallback_20260613_r1/spm/byte_fallback_0_9995/third_try_byte_fallback_48000.model	large_tokenizer_ablation	1	FILE_NOT_HASHED	PASS	byte fallback auxiliary SentencePiece model
+docs/exp/third_try/03_tokenizer/candidate_comparison.tsv	stage03_metric	4	NOT_COMPUTED	PASS	candidate comparison including target-only reference
+docs/exp/third_try/03_tokenizer/selected_main_tokenizer.md	stage03_doc	1	NOT_COMPUTED	PASS	provisional selected tokenizer pointer

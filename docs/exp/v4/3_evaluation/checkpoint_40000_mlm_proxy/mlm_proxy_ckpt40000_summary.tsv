@@ -1,0 +1,7 @@
+model_label	model_path	model_seed	metric	value	status
+xlmr_base	xlm-roberta-base	base	target10_avg_mlm_loss	3.475325	PASS
+xlmr_base	xlm-roberta-base	base	target10_avg_mlm_perplexity	159.772407	PASS
+xlmr_base	xlm-roberta-base	base	target10_total_masked_tokens	9581	PASS
+ckpt40000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-40000	40000	target10_avg_mlm_loss	2.798925	PASS
+ckpt40000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-40000	40000	target10_avg_mlm_perplexity	22.536463	PASS
+ckpt40000	/home/axt/mnt2/jongha/v4_tokenizer/runs/Glot500_v4_target10_xlmr100_xlmr_base_mlm/checkpoint-40000	40000	target10_total_masked_tokens	5687	PASS

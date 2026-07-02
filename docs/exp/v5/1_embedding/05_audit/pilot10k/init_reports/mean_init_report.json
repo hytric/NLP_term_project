@@ -1,0 +1,41 @@
+{
+  "mode": "mean",
+  "base_model": "xlm-roberta-base",
+  "target_tokenizer": "/home/axt/mnt2/jongha/v5_glot50010/tokenization/pilot10k_output/Glot500_extended_spm",
+  "output_dir": "/home/axt/mnt2/jongha/v5_glot50010/pilot_initialized_models/v5_mean",
+  "seed": 13,
+  "source_tokenizer_len": 250002,
+  "target_tokenizer_len": 257593,
+  "source_spm_pieces": 250000,
+  "target_spm_pieces": 257591,
+  "source_embedding_rows": 250002,
+  "target_embedding_rows": 257593,
+  "initializer_range": 0.02,
+  "counts": {
+    "copied_source_identity": 250002,
+    "initialized_global_mean": 7591,
+    "new_byte_rows": 256,
+    "new_token_identity_rows": 7591,
+    "copied_with_id_remap": 1
+  },
+  "special_tokens": [
+    "</s>",
+    "<mask>",
+    "<pad>",
+    "<s>",
+    "<unk>"
+  ],
+  "source_mask_id": 250001,
+  "target_mask_id": 257592,
+  "mask_max_abs_diff_after_copy": 0.0,
+  "remapped_token_count": 1,
+  "remapped_tokens_sample": [
+    {
+      "token": "<mask>",
+      "source_id": 250001,
+      "target_id": 257592
+    }
+  ],
+  "lm_head_tied_after_init": true,
+  "row_report": "/home/axt/mnt2/jongha/v5_glot50010/pilot_initialized_models/v5_mean/init_rows.tsv"
+}

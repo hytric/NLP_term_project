@@ -1,0 +1,29 @@
+metric	metric_label	model_key	ready_status	coverage	target10_coverage	command	note
+pseudoperplexity	PPPL	glot500_base	measured	102/102	10/10	none	aggregation already has this metric/model row
+pseudoperplexity	PPPL	v5_fvt	ready	102/102	10/10	RUN_TRAIN_SOURCE_PPPL_DIAGNOSTIC=1 PPPL_EVAL_ROLE=train_source_diagnostic MAX_EXAMPLES_PER_LANGUAGE=100 MAX_LENGTH=128 MASK_BATCH_SIZE=64 bash scripts/run_v5_eval_metric.sh pppl v5_fvt <gpu>	ready to run as train-source diagnostic only; strict Glot500 PPPL requires held-out split
+pseudoperplexity	PPPL	v5_random	measured	102/102	10/10	none	aggregation already has this metric/model row
+pseudoperplexity	PPPL	xlmr_base	measured	102/102	10/10	none	aggregation already has this metric/model row
+retrieval_tatoeba	Tatoeba retrieval	glot500_base	measured	63/102	0/10	none	aggregation already has this metric/model row
+retrieval_tatoeba	Tatoeba retrieval	v5_fvt	measured	63/102	0/10	none	aggregation already has this metric/model row
+retrieval_tatoeba	Tatoeba retrieval	v5_random	measured	63/102	0/10	none	aggregation already has this metric/model row
+retrieval_tatoeba	Tatoeba retrieval	xlmr_base	measured	63/102	0/10	none	aggregation already has this metric/model row
+retrieval_bible	Bible retrieval	glot500_base	measured	74/102	0/10	none	aggregation already has this metric/model row
+retrieval_bible	Bible retrieval	v5_fvt	measured	74/102	0/10	none	aggregation already has this metric/model row
+retrieval_bible	Bible retrieval	v5_random	measured	74/102	0/10	none	aggregation already has this metric/model row
+retrieval_bible	Bible retrieval	xlmr_base	measured	74/102	0/10	none	aggregation already has this metric/model row
+text_classification	Taxi1500 text classification	glot500_base	measured	1/102	0/10	none	aggregation already has this metric/model row
+text_classification	Taxi1500 text classification	v5_fvt	measured	1/102	0/10	none	aggregation already has this metric/model row
+text_classification	Taxi1500 text classification	v5_random	measured	1/102	0/10	none	aggregation already has this metric/model row
+text_classification	Taxi1500 text classification	xlmr_base	measured	1/102	0/10	none	aggregation already has this metric/model row
+ner	NER	glot500_base	measured	78/102	0/10	none	aggregation already has this metric/model row
+ner	NER	v5_fvt	ready	78/102	0/10	TRAIN_LANGS=eng_Latn bash scripts/run_v5_eval_metric.sh ner v5_fvt <gpu>	ready to run with v5 wrapper
+ner	NER	v5_random	measured	78/102	0/10	none	aggregation already has this metric/model row
+ner	NER	xlmr_base	measured	78/102	0/10	none	aggregation already has this metric/model row
+pos	POS	glot500_base	measured	58/102	0/10	none	aggregation already has this metric/model row
+pos	POS	v5_fvt	ready	58/102	0/10	TRAIN_LANGS=tur_Latn bash scripts/run_v5_eval_metric.sh pos v5_fvt <gpu>	ready to run with v5 wrapper
+pos	POS	v5_random	measured	58/102	0/10	none	aggregation already has this metric/model row
+pos	POS	xlmr_base	measured	58/102	0/10	none	aggregation already has this metric/model row
+roundtrip_alignment	Roundtrip alignment	glot500_base	measured	74/102	0/10	none	aggregation already has this metric/model row
+roundtrip_alignment	Roundtrip alignment	v5_fvt	ready	74/102	0/10	bash scripts/run_v5_eval_metric.sh roundtrip_alignment v5_fvt <gpu>	ready to run with v5 wrapper
+roundtrip_alignment	Roundtrip alignment	v5_random	measured	74/102	0/10	none	aggregation already has this metric/model row
+roundtrip_alignment	Roundtrip alignment	xlmr_base	measured	74/102	0/10	none	aggregation already has this metric/model row

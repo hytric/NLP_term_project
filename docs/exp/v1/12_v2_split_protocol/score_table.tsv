@@ -1,0 +1,4 @@
+run_id	claim	evidence	observed	decision	status	notes
+step12_v2_split_20260611_153114	v2_fresh_final_split_created	v2_split_manifest.tsv	final_book=ACT; clean_final_rows=9804; min_clean_per_lang=852	SUPPORTED	PASS	ACT selected as fresh final test; exact duplicate final rows excluded from scoring
+step12_v2_split_20260611_153114	john_burned_test_excluded	v2_split_manifest.tsv	burned_book=JOH; burned_rows=8520	SUPPORTED	PASS	old John test feedback is excluded from v2 train/dev/final evidence
+step12_v2_split_20260611_153114	existing_checkpoints_invalid_for_v2_final_claims	v2_rerun_protocol.md	Step05/06/07/09 trained or selected under v1 split	SUPPORTED	PASS_NEGATIVE_RESULT	v2 top-tier claim requires tokenizer/MLM/downstream/translation rerun

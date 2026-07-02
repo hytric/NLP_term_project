@@ -1,0 +1,3 @@
+run_id	vocab_size	runs_completed	mean_final_raw_loss	raw_delta_vs_32k_mean	raw_ratio_vs_original_mean	added_improved_seeds	base_nonworse_seeds	all_nonworse_seeds	category_gate	mean_final_added_loss	mean_final_base_loss	mean_final_all_loss	status	notes
+step23_v2_vocab_objective_probe_20260611_203226	8000	3/3	4.541285	-0.405544	1.803523	3/3	3/3	3/3	PASS	6.497685	2.954342	4.536181	PASS	raw beats 32k and category gate passes
+step23_v2_vocab_objective_probe_20260611_203226	16000	3/3	4.798048	-0.148781	1.905494	3/3	3/3	3/3	PASS	6.926923	2.808645	4.788042	PASS	raw beats 32k and category gate passes

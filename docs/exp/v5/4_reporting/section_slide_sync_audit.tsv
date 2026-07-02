@@ -1,0 +1,8 @@
+item	status	evidence	action
+required sync artifacts	ready	all manuscript/slide sync artifacts exist	none
+manuscript_section_coverage	ready	sections=15	none
+slide_matrix_coverage	ready	slides=15	none
+report_slide_crosswalk_coverage	ready	slides_covered=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15	none
+claim_gate_consistency	ready	manuscript, slide matrix, and crosswalk mention the core pending/disallowed gates	none
+deck_script_conclusion_sync	ready	final deck and presenter script share conclusion-gate references	none
+conclusion_contract_dependency	ready	conclusion_selection_contract=conclusion_selection_contract_ready_waiting_results	none

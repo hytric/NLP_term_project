@@ -1,0 +1,10 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+plan	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/plan.md	44	2140	e4150c77333728d47b3ff7d80e21d4eb	PASS	step plan and exit criteria
+manuscript_outline	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/manuscript_outline.md	62	3833	a7b9d5f4c6058c23fadb5e980972bcea	PASS	title abstract sections and contributions
+paper_claims	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/paper_claims.md	59	3588	292182aa111231de283cc9035bab33ba	PASS	allowed claims numeric anchors forbidden claims and proposed remedy
+paper_tables	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/paper_tables.tsv	8	1986	50e1f730848eb769e1bed7729a0b9126	PASS	table and figure manifest
+reviewer_risk_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/reviewer_risk_audit.tsv	11	2624	14975ee29a58e519d48f17d5e4fe785a	PASS	top-tier reviewer risk audit including solution-roadmap objection
+reproducibility_checklist	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/reproducibility_checklist.tsv	10	1433	2332205cba9b7470166d1284a77433eb	PASS	artifact and claim reproducibility checklist
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/score_table.tsv	8	1930	5c879aad503e9f1cdb329648131a68c1	PASS	manuscript synthesis gate table
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/v2_no_final_access_audit.tsv	3	554	458cdaa7031d341d316c75d28e44a46d	PASS	Step27 no-final-access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/27_final_manuscript_synthesis/results.md	33	1403	480e1bd0b89f27303fa39f3b3c266e30	PASS	step result summary

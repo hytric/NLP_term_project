@@ -1,0 +1,15 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/score_table.tsv	3	751	d5d5611312208c6a0b74a55b343e1a35	PASS	v2 split claim status
+candidate_books	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_candidate_books.tsv	25	1385	8a1ceccd0ce7edfcb2594ad460eaac14	PASS	candidate final-test book comparison
+split_stats	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_split_stats.tsv	40	1484	a03ca1fb410cfa2b84bc29b651af51a8	PASS	v2 per-split per-language counts
+split_manifest	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_split_manifest.tsv	76972	21353011	6e928845584438ad99225b2a9849a0f5	PASS	row-level v2 split manifest
+duplicate_exclusions	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_final_duplicate_exclusions.tsv	3	216	b8290a1d4221487b1201023b5484f9a2	PASS	exact duplicate final rows excluded from scoring
+dev_manifest	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_dev_manifest.tsv	6521	1647141	cd2fedc4a8665afbd2c8818e79e04b6a	PASS	dev-only manifest for selection stages
+final_clean_manifest	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_final_test_act_clean.tsv	9804	2777993	5799bc6b56d84b02a10f58fe835dcc6c	PASS	clean final manifest for one-shot final reporting
+execution_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_execution_matrix.tsv	19	7210	11c8dc313db3cb29a84cb84e717ce56a	PASS	v2 rerun stage gates through Step 27 manuscript synthesis
+rerun_protocol	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_rerun_protocol.md	36	1308	b500574be651484fa51b28eed49587ec	PASS	required v2 rerun protocol
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/results.md	31	915	1bf6a8b8c879956e70016ae490187b38	PASS	step result summary
+v2_tokenizer_mlm_train	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_tokenizer_mlm_train.txt	52124	11270089	f32f647573e4ee948595ac7c63d55f7f	PASS	large train text artifact
+v2_mlm_dev	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_mlm_dev_mark.txt	6521	1256857	a7551d9711eeff33371bdab2067bd656	PASS	large dev text artifact
+v2_final_test_clean	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_final_test_act_clean.txt	9804	2079693	246882381fe69f25b702f49aea60b134	PASS	large clean final text artifact
+v2_burned_john_excluded	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_burned_john_excluded.txt	8520	1597049	12fc77f56af92f410d5f416cadc42263	PASS	large burned old test artifact

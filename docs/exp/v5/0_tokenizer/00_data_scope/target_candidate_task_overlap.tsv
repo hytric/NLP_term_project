@@ -1,0 +1,319 @@
+rank	language_script	language	language_name	script	new_length	current_v5_target	target_task_count	has_tatoeba	has_bible	has_roundtrip	has_ner	has_pos	bible_shared_verses	bible_source_file
+316	guj_Gujr	guj	Gujarati	Gujr	45738685	no	3	no	yes	yes	yes	no	7883	/disk3/moon/paralleltext/bibles/corpus/guj-x-bible.txt
+302	srp_Cyrl	srp	Serbian	Cyrl	3864091	no	3	no	yes	yes	yes	no	7941	/disk3/moon/paralleltext/bibles/corpus/srp-x-bible.txt
+293	sun_Latn	sun	Sundanese	Latn	2586011	no	3	no	yes	yes	yes	no	7938	/disk3/moon/paralleltext/bibles/corpus/sun-x-bible-formal.txt
+281	asm_Beng	asm	Assamese	Beng	1882353	no	3	no	yes	yes	yes	no	7939	/disk3/moon/paralleltext/bibles/corpus/asm-x-bible-asmfb.txt
+250	zsm_Latn	zsm	Standard Malay	Latn	859947	no	3	yes	yes	yes	no	no	7888	/disk3/moon/paralleltext/bibles/corpus/zsm-x-bible-goodnews.txt
+317	aze_Latn	aze	Azerbaijani	Latn	46300705	no	2	yes	no	no	yes	no	0	
+314	fil_Latn	fil	Filipino	Latn	33493255	no	2	no	yes	yes	no	no	7941	/disk3/moon/paralleltext/bibles/corpus/fil-x-bible-1905.txt
+309	bos_Latn	bos	Bosnian	Latn	11014744	no	2	yes	no	no	yes	no	0	
+318	hbs_Latn	hbs	Serbo-Croatian	Latn	63411156	no	0	no	no	no	no	no	0	
+315	mlt_Latn	mlt	Maltese	Latn	40654838	no	0	no	no	no	no	no	0	
+313	nob_Latn	nob	Norwegian Bokmål	Latn	32869205	no	0	no	no	no	no	no	0	
+312	tgk_Cyrl	tgk	Tajik	Cyrl	18659517	no	0	no	no	no	no	no	0	
+311	ceb_Latn	ceb	Cebuano	Latn	18149215	no	0	no	no	no	no	no	0	
+310	ltz_Latn	ltz	Luxembourgish	Latn	12997242	no	0	no	no	no	no	no	0	
+308	ory_Orya	ory	Odia	Orya	6266475	no	0	no	no	no	no	no	0	
+307	nno_Latn	nno	Norwegian Nynorsk	Latn	4899103	no	0	no	no	no	no	no	0	
+306	tat_Cyrl	tat	Tatar	Cyrl	4708088	no	0	no	no	no	no	no	0	
+305	ast_Latn	ast	Asturian	Latn	4683554	no	0	no	no	no	no	no	0	
+304	hbs_Cyrl	hbs	Serbo-Croatian	Cyrl	4598073	no	0	no	no	no	no	no	0	
+303	sna_Latn	sna	Shona	Latn	4019596	no	0	no	no	no	no	no	0	
+301	zul_Latn	zul	Zulu	Latn	3580113	no	0	no	no	no	no	no	0	
+300	arz_Arab	arz	Egyptian Arabic	Arab	3488224	no	0	no	no	no	no	no	0	
+299	nya_Latn	nya	Nyanja	Latn	3409030	no	0	no	no	no	no	no	0	
+298	hat_Latn	hat	Haitian	Latn	3226932	no	0	no	no	no	no	no	0	
+297	sot_Latn	sot	Southern Sotho	Latn	3205510	no	0	no	no	no	no	no	0	
+296	uzb_Cyrl	uzb	Uzbek	Cyrl	3029947	no	0	no	no	no	no	no	0	
+295	cos_Latn	cos	Corsican	Latn	3015055	no	0	no	no	no	no	no	0	
+294	als_Latn	als	Tosk Albanian	Latn	2954874	no	0	no	no	no	no	no	0	
+292	war_Latn	war	Waray (Philippines)	Latn	2584810	no	0	no	no	no	no	no	0	
+291	div_Thaa	div	Dhivehi	Thaa	2418687	no	0	no	no	no	no	no	0	
+290	yor_Latn	yor	Yoruba	Latn	2392359	no	0	no	no	no	no	no	0	
+289	fao_Latn	fao	Faroese	Latn	2365271	no	0	no	no	no	no	no	0	
+288	uzn_Cyrl	uzn	Northern Uzbek	Cyrl	2293672	no	0	no	no	no	no	no	0	
+287	smo_Latn	smo	Samoan	Latn	2290439	no	0	no	no	no	no	no	0	
+286	bak_Cyrl	bak	Bashkir	Cyrl	2264196	no	0	no	no	no	no	no	0	
+285	ilo_Latn	ilo	Iloko	Latn	2106531	no	0	no	no	no	no	no	0	
+284	tso_Latn	tso	Tsonga	Latn	2100708	no	0	no	no	no	no	no	0	
+283	mri_Latn	mri	Maori	Latn	2046850	no	0	no	no	no	no	no	0	
+282	hmn_Latn	hmn	Hmong	Latn	1903898	no	0	no	no	no	no	no	0	
+280	hil_Latn	hil	Hiligaynon	Latn	1798875	no	0	no	no	no	no	no	0	
+279	nso_Latn	nso	Pedi	Latn	1619354	no	0	no	no	no	no	no	0	
+278	ibo_Latn	ibo	Igbo	Latn	1543820	no	0	no	no	no	no	no	0	
+277	kin_Latn	kin	Kinyarwanda	Latn	1521612	no	0	no	no	no	no	no	0	
+276	oci_Latn	oci	Occitan (post 1500)	Latn	1449128	no	0	no	no	no	no	no	0	
+275	lin_Latn	lin	Lingala	Latn	1408460	no	0	no	no	no	no	no	0	
+274	tpi_Latn	tpi	Tok Pisin	Latn	1401844	no	0	no	no	no	no	no	0	
+273	twi_Latn	twi	Twi	Latn	1400979	no	0	no	no	no	no	no	0	
+272	wln_Latn	wln	Walloon	Latn	1363869	no	0	no	no	no	no	no	0	
+271	pap_Latn	pap	Papiamento	Latn	1360138	no	0	no	no	no	no	no	0	
+270	azj_Latn	azj	North Azerbaijani	Latn	1315834	no	0	no	no	no	no	no	0	
+269	bcl_Latn	bcl	Central Bikol	Latn	1284493	no	0	no	no	no	no	no	0	
+268	gaa_Latn	gaa	Ga	Latn	1222307	no	0	no	no	no	no	no	0	
+267	ton_Latn	ton	Tonga (Tonga Islands)	Latn	1216118	no	0	no	no	no	no	no	0	
+266	tah_Latn	tah	Tahitian	Latn	1190747	no	0	no	no	no	no	no	0	
+265	srn_Latn	srn	Sranan Tongo	Latn	1172349	no	0	no	no	no	no	no	0	
+264	ewe_Latn	ewe	Ewe	Latn	1161605	no	0	no	no	no	no	no	0	
+263	bem_Latn	bem	Bemba (Zambia)	Latn	1111969	no	0	no	no	no	no	no	0	
+262	bis_Latn	bis	Bislama	Latn	1070170	no	0	no	no	no	no	no	0	
+261	orm_Latn	orm	Oromo	Latn	1067699	no	0	no	no	no	no	no	0	
+260	haw_Latn	haw	Hawaiian	Latn	1062491	no	0	no	no	no	no	no	0	
+259	hmo_Latn	hmo	Hiri Motu	Latn	1033636	no	0	no	no	no	no	no	0	
+258	pag_Latn	pag	Pangasinan	Latn	983637	no	0	no	no	no	no	no	0	
+257	nds_Latn	nds	Low German	Latn	944715	no	0	no	no	no	no	no	0	
+256	run_Latn	run	Rundi	Latn	943828	no	0	no	no	no	no	no	0	
+255	aze_Arab	aze	Azerbaijani	Arab	904783	no	0	no	no	no	no	no	0	
+254	pnb_Arab	pnb	Western Panjabi	Arab	899895	no	0	no	no	no	no	no	0	
+253	fij_Latn	fij	Fijian	Latn	887134	no	0	no	no	no	no	no	0	
+252	ckb_Arab	ckb	Central Kurdish	Arab	874441	no	0	no	no	no	no	no	0	
+251	ven_Latn	ven	Venda	Latn	860249	no	0	no	no	no	no	no	0	
+249	chv_Cyrl	chv	Chuvash	Cyrl	859863	no	0	no	no	no	no	no	0	
+248	lua_Latn	lua	Luba-Lulua	Latn	854359	no	0	no	no	no	no	no	0	
+247	que_Latn	que	Quechua	Latn	838486	no	0	no	no	no	no	no	0	
+246	sag_Latn	sag	Sango	Latn	771048	no	0	no	no	no	no	no	0	
+245	toi_Latn	toi	Tonga (Zambia)	Latn	745385	no	0	no	no	no	no	no	0	
+244	che_Cyrl	che	Chechen	Cyrl	728201	no	0	no	no	no	no	no	0	
+243	pis_Latn	pis	Pijin	Latn	714783	no	0	no	no	no	no	no	0	
+242	kon_Latn	kon	Kongo	Latn	685194	no	0	no	no	no	no	no	0	
+241	oss_Cyrl	oss	Ossetian	Cyrl	683517	no	0	no	no	no	no	no	0	
+240	hyw_Armn	hyw	Western Armenian	Armn	679819	no	0	no	no	no	no	no	0	
+239	nan_Latn	nan	Min Nan Chinese	Latn	656389	no	0	no	no	no	no	no	0	
+238	lim_Latn	lim	Limburgan	Latn	652078	no	0	no	no	no	no	no	0	
+237	tuk_Latn	tuk	Turkmen	Latn	649411	no	0	no	no	no	no	no	0	
+236	tir_Ethi	tir	Tigrinya	Ethi	649117	no	0	no	no	no	no	no	0	
+235	tgk_Latn	tgk	Tajik	Latn	636541	no	0	no	no	no	no	no	0	
+234	min_Latn	min	Minangkabau	Latn	609065	no	0	no	no	no	no	no	0	
+233	lue_Latn	lue	Luvale	Latn	599429	no	0	no	no	no	no	no	0	
+232	tum_Latn	tum	Tumbuka	Latn	589857	no	0	no	no	no	no	no	0	
+231	ekk_Latn	ekk	Standard Estonian	Latn	582595	no	0	no	no	no	no	no	0	
+230	lug_Latn	lug	Ganda	Latn	566948	no	0	no	no	no	no	no	0	
+229	niu_Latn	niu	Niuean	Latn	566715	no	0	no	no	no	no	no	0	
+228	tzo_Latn	tzo	Tzotzil	Latn	540262	no	0	no	no	no	no	no	0	
+227	mah_Latn	mah	Marshallese	Latn	534614	no	0	no	no	no	no	no	0	
+226	tvl_Latn	tvl	Tuvalu	Latn	521556	no	0	no	no	no	no	no	0	
+225	vec_Latn	vec	Venetian	Latn	514240	no	0	no	no	no	no	no	0	
+224	lus_Latn	lus	Lushai	Latn	509250	no	0	no	no	no	no	no	0	
+223	crs_Latn	crs	Seselwa Creole French	Latn	508755	no	0	no	no	no	no	no	0	
+222	ndo_Latn	ndo	Ndonga	Latn	496613	no	0	no	no	no	no	no	0	
+221	yue_Hani	yue	Yue Chinese	Hani	484700	no	0	no	no	no	no	no	0	
+220	kua_Latn	kua	Kuanyama	Latn	473535	no	0	no	no	no	no	no	0	
+219	hin_Latn	hin	Hindi	Latn	466175	no	0	no	no	no	no	no	0	
+218	iku_Cans	iku	Inuktitut	Cans	465011	no	0	no	no	no	no	no	0	
+217	kal_Latn	kal	Kalaallisut	Latn	462430	no	0	no	no	no	no	no	0	
+216	tdt_Latn	tdt	Tetun Dili	Latn	459818	no	0	no	no	no	no	no	0	
+215	gsw_Latn	gsw	Swiss German	Latn	449240	no	0	no	no	no	no	no	0	
+214	swc_Latn	swc	Congo Swahili	Latn	446378	no	0	no	no	no	no	no	0	
+213	mon_Latn	mon	Mongolian	Latn	437950	no	0	no	no	no	no	no	0	
+212	mos_Latn	mos	Mossi	Latn	437666	no	0	no	no	no	no	no	0	
+211	kik_Latn	kik	Kikuyu	Latn	437228	no	0	no	no	no	no	no	0	
+210	gil_Latn	gil	Gilbertese	Latn	434529	no	0	no	no	no	no	no	0	
+209	pon_Latn	pon	Pohnpeian	Latn	434522	no	0	no	no	no	no	no	0	
+208	umb_Latn	umb	Umbundu	Latn	431589	no	0	no	no	no	no	no	0	
+207	lvs_Latn	lvs	Standard Latvian	Latn	422952	no	0	no	no	no	no	no	0	
+206	sco_Latn	sco	Scots	Latn	411591	no	0	no	no	no	no	no	0	
+205	arg_Latn	arg	Aragonese	Latn	410683	no	0	no	no	no	no	no	0	
+204	luo_Latn	luo	Luo (Kenya and Tanzania)	Latn	398974	no	0	no	no	no	no	no	0	
+203	gug_Latn	gug	Paraguayan Guaraní	Latn	392227	no	0	no	no	no	no	no	0	
+202	bar_Latn	bar	Bavarian	Latn	387070	no	0	no	no	no	no	no	0	
+201	chk_Latn	chk	Chuukese	Latn	380596	no	0	no	no	no	no	no	0	
+200	roh_Latn	roh	Romansh	Latn	377067	no	0	no	no	no	no	no	0	
+199	aym_Latn	aym	Aymara	Latn	373329	no	0	no	no	no	no	no	0	
+198	yap_Latn	yap	Yapese	Latn	358929	no	0	no	no	no	no	no	0	
+197	ssw_Latn	ssw	Swati	Latn	356561	no	0	no	no	no	no	no	0	
+196	quz_Latn	quz	Cusco Quechua	Latn	354781	no	0	no	no	no	no	no	0	
+195	sah_Cyrl	sah	Yakut	Cyrl	352697	no	0	no	no	no	no	no	0	
+194	tsn_Latn	tsn	Tswana	Latn	350954	no	0	no	no	no	no	no	0	
+193	lmo_Latn	lmo	Lombard	Latn	348135	no	0	no	no	no	no	no	0	
+192	ido_Latn	ido	Ido	Latn	331239	no	0	no	no	no	no	no	0	
+191	abk_Cyrl	abk	Abkhazian	Cyrl	321578	no	0	no	no	no	no	no	0	
+190	quy_Latn	quy	Ayacucho Quechua	Latn	311040	no	0	no	no	no	no	no	0	
+189	kam_Latn	kam	Kamba (Kenya)	Latn	310659	no	0	no	no	no	no	no	0	
+188	vol_Latn	vol	Volapük	Latn	310399	no	0	no	no	no	no	no	0	
+187	wal_Latn	wal	Wolaytta	Latn	309873	no	0	no	no	no	no	no	0	
+186	pam_Latn	pam	Pampanga	Latn	303737	no	0	no	no	no	no	no	0	
+185	seh_Latn	seh	Sena	Latn	300243	no	0	no	no	no	no	no	0	
+184	kmb_Latn	kmb	Kimbundu	Latn	296269	no	0	no	no	no	no	no	0	
+183	zai_Latn	zai	Isthmus Zapotec	Latn	277632	no	0	no	no	no	no	no	0	
+182	gym_Latn	gym	Ngäbere	Latn	274512	no	0	no	no	no	no	no	0	
+181	bod_Tibt	bod	Tibetan	Tibt	273489	no	0	no	no	no	no	no	0	
+180	nde_Latn	nde	North Ndebele	Latn	269931	no	0	no	no	no	no	no	0	
+179	fon_Latn	fon	Fon	Latn	268566	no	0	no	no	no	no	no	0	
+178	ber_Latn	ber		Latn	264426	no	0	no	no	no	no	no	0	
+177	nbl_Latn	nbl	South Ndebele	Latn	259158	no	0	no	no	no	no	no	0	
+176	kmr_Latn	kmr	Northern Kurdish	Latn	256677	no	0	no	no	no	no	no	0	
+175	guc_Latn	guc	Wayuu	Latn	249044	no	0	no	no	no	no	no	0	
+174	mam_Latn	mam	Mam	Latn	248348	no	0	no	no	no	no	no	0	
+173	cab_Latn	cab	Garifuna	Latn	240101	no	0	no	no	no	no	no	0	
+172	top_Latn	top	Papantla Totonac	Latn	239232	no	0	no	no	no	no	no	0	
+171	mco_Latn	mco	Coatlán Mixe	Latn	231209	no	0	no	no	no	no	no	0	
+170	bew_Cyrl	bew	Betawi	Cyrl	228180	no	0	no	no	no	no	no	0	
+169	pms_Latn	pms	Piemontese	Latn	227748	no	0	no	no	no	no	no	0	
+168	wuu_Hani	wuu	Wu Chinese	Hani	224088	no	0	no	no	no	no	no	0	
+167	plt_Latn	plt	Plateau Malagasy	Latn	220413	no	0	no	no	no	no	no	0	
+166	ada_Latn	ada	Adangme	Latn	219427	no	0	no	no	no	no	no	0	
+165	iba_Latn	iba	Iban	Latn	213615	no	0	no	no	no	no	no	0	
+164	kek_Latn	kek	Kekchí	Latn	209932	no	0	no	no	no	no	no	0	
+163	kac_Latn	kac	Kachin	Latn	205542	no	0	no	no	no	no	no	0	
+162	qvi_Latn	qvi	Imbabura Highland Quichua	Latn	205447	no	0	no	no	no	no	no	0	
+161	cak_Latn	cak	Kaqchikel	Latn	204472	no	0	no	no	no	no	no	0	
+160	kbp_Latn	kbp	Kabiyè	Latn	202877	no	0	no	no	no	no	no	0	
+159	ctu_Latn	ctu	Chol	Latn	201662	no	0	no	no	no	no	no	0	
+158	mau_Latn	mau	Huautla Mazatec	Latn	199134	no	0	no	no	no	no	no	0	
+157	scn_Latn	scn	Sicilian	Latn	199068	no	0	no	no	no	no	no	0	
+156	tyv_Cyrl	tyv	Tuvinian	Cyrl	198649	no	0	no	no	no	no	no	0	
+155	ina_Latn	ina	Interlingua (International Auxiliary Language Association)	Latn	197315	no	0	no	no	no	no	no	0	
+154	nch_Latn	nch	Central Huasteca Nahuatl	Latn	193129	no	0	no	no	no	no	no	0	
+153	ncj_Latn	ncj	Northern Puebla Nahuatl	Latn	192962	no	0	no	no	no	no	no	0	
+152	pau_Latn	pau	Palauan	Latn	190529	no	0	no	no	no	no	no	0	
+151	toj_Latn	toj	Tojolabal	Latn	189651	no	0	no	no	no	no	no	0	
+150	pcm_Latn	pcm	Nigerian Pidgin	Latn	187594	no	0	no	no	no	no	no	0	
+149	dyu_Latn	dyu	Dyula	Latn	186367	no	0	no	no	no	no	no	0	
+148	afb_Arab	afb	Gulf Arabic	Arab	183694	no	0	no	no	no	no	no	0	
+147	quc_Latn	quc	K'iche'	Latn	181559	no	0	no	no	no	no	no	0	
+146	new_Deva	new	Newari	Deva	181427	no	0	no	no	no	no	no	0	
+145	yao_Latn	yao	Yao	Latn	179965	no	0	no	no	no	no	no	0	
+144	ngl_Latn	ngl	Lomwe	Latn	178498	no	0	no	no	no	no	no	0	
+143	nyu_Latn	nyu	Nyungwe	Latn	177483	no	0	no	no	no	no	no	0	
+142	kab_Latn	kab	Kabyle	Latn	176015	no	0	no	no	no	no	no	0	
+141	tuk_Cyrl	tuk	Turkmen	Cyrl	175769	no	0	no	no	no	no	no	0	
+140	xmf_Geor	xmf	Mingrelian	Geor	174994	no	0	no	no	no	no	no	0	
+139	tgk_Arab	tgk	Tajik	Arab	163321	no	0	no	no	no	no	no	0	
+138	bpy_Beng	bpy	Bishnupriya	Beng	162838	no	0	no	no	no	no	no	0	
+137	cjk_Latn	cjk	Chokwe	Latn	160645	no	0	no	no	no	no	no	0	
+136	kea_Latn	kea	Kabuverdianu	Latn	158047	no	0	no	no	no	no	no	0	
+135	arn_Latn	arn	Mapudungun	Latn	155882	no	0	no	no	no	no	no	0	
+134	mwl_Latn	mwl	Mirandese	Latn	150054	no	0	no	no	no	no	no	0	
+133	nav_Latn	nav	Navajo	Latn	147702	no	0	no	no	no	no	no	0	
+132	ksw_Mymr	ksw	S'gaw Karen	Mymr	147674	no	0	no	no	no	no	no	0	
+131	hif_Latn	hif	Fiji Hindi	Latn	147261	no	0	no	no	no	no	no	0	
+130	wol_Latn	wol	Wolof	Latn	146992	no	0	no	no	no	no	no	0	
+129	sme_Latn	sme	Northern Sami	Latn	146803	no	0	no	no	no	no	no	0	
+128	gom_Latn	gom	Goan Konkani	Latn	143937	no	0	no	no	no	no	no	0	
+127	ahk_Latn	ahk	Akha	Latn	135068	no	0	no	no	no	no	no	0	
+126	kur_Arab	kur	Kurdish	Arab	134160	no	0	no	no	no	no	no	0	
+125	diq_Latn	diq	Dimli (individual language)	Latn	128908	no	0	no	no	no	no	no	0	
+124	srd_Latn	srd	Sardinian	Latn	127064	no	0	no	no	no	no	no	0	
+123	bzj_Latn	bzj	Belize Kriol English	Latn	124958	no	0	no	no	no	no	no	0	
+122	udm_Cyrl	udm	Udmurt	Cyrl	121705	no	0	no	no	no	no	no	0	
+121	meu_Latn	meu	Motu	Latn	120273	no	0	no	no	no	no	no	0	
+120	cbk_Latn	cbk	Chavacano	Latn	118789	no	0	no	no	no	no	no	0	
+119	ngu_Latn	ngu	Guerrero Nahuatl	Latn	116851	no	0	no	no	no	no	no	0	
+118	szl_Latn	szl	Silesian	Latn	112496	no	0	no	no	no	no	no	0	
+117	naq_Latn	naq	Khoekhoe	Latn	109747	no	0	no	no	no	no	no	0	
+116	hsb_Latn	hsb	Upper Sorbian	Latn	104802	no	0	no	no	no	no	no	0	
+115	apc_Arab	apc	North Levantine Arabic	Arab	102392	no	0	no	no	no	no	no	0	
+114	vls_Latn	vls	Vlaams	Latn	101900	no	0	no	no	no	no	no	0	
+113	mhr_Cyrl	mhr	Eastern Mari	Cyrl	100474	no	0	no	no	no	no	no	0	
+112	djk_Latn	djk	Eastern Maroon Creole	Latn	99234	no	0	no	no	no	no	no	0	
+111	grc_Grek	grc	Ancient Greek (to 1453)	Grek	96986	no	0	no	no	no	no	no	0	
+110	hbo_Hebr	hbo	Ancient Hebrew	Hebr	96484	no	0	no	no	no	no	no	0	
+109	alt_Cyrl	alt	Southern Altai	Cyrl	95148	no	0	no	no	no	no	no	0	
+108	miq_Latn	miq	Mískito	Latn	94343	no	0	no	no	no	no	no	0	
+107	kaa_Cyrl	kaa	Kara-Kalpak	Cyrl	88815	no	0	no	no	no	no	no	0	
+106	kos_Latn	kos	Kosraean	Latn	88603	no	0	no	no	no	no	no	0	
+105	grn_Latn	grn	Guarani	Latn	87568	no	0	no	no	no	no	no	0	
+104	lhu_Latn	lhu	Lahu	Latn	87255	no	0	no	no	no	no	no	0	
+103	lzh_Hani	lzh	Literary Chinese	Hani	86035	no	0	no	no	no	no	no	0	
+102	ajp_Arab	ajp	South Levantine Arabic	Arab	83297	no	0	no	no	no	no	no	0	
+101	gcf_Latn	gcf	Guadeloupean Creole French	Latn	80737	no	0	no	no	no	no	no	0	
+100	kjh_Cyrl	kjh	Khakas	Cyrl	79262	no	0	no	no	no	no	no	0	
+99	mgh_Latn	mgh	Makhuwa-Meetto	Latn	78117	no	0	no	no	no	no	no	0	
+98	rmy_Latn	rmy	Vlax Romani	Latn	76991	no	0	no	no	no	no	no	0	
+97	srm_Latn	srm	Saramaccan	Latn	76884	no	0	no	no	no	no	no	0	
+96	bak_Latn	bak	Bashkir	Latn	76809	no	0	no	no	no	no	no	0	
+95	yom_Latn	yom	Yombe	Latn	74818	no	0	no	no	no	no	no	0	
+94	mzn_Arab	mzn	Mazanderani	Arab	73719	no	0	no	no	no	no	no	0	
+93	kbd_Cyrl	kbd	Kabardian	Cyrl	67914	no	0	no	no	no	no	no	0	
+92	nap_Latn	nap	Neapolitan	Latn	65826	no	0	no	no	no	no	no	0	
+91	qub_Latn	qub	Huallaga Huánuco Quechua	Latn	64973	no	0	no	no	no	no	no	0	
+90	ote_Latn	ote	Mezquital Otomi	Latn	64224	no	0	no	no	no	no	no	0	
+89	bsb_Latn	bsb	Brunei Bisaya	Latn	63634	no	0	no	no	no	no	no	0	
+88	ayr_Latn	ayr	Central Aymara	Latn	61570	no	0	no	no	no	no	no	0	
+87	gom_Deva	gom	Goan Konkani	Deva	61140	no	0	no	no	no	no	no	0	
+86	aln_Latn	aln	Gheg Albanian	Latn	60989	no	0	no	no	no	no	no	0	
+85	ban_Latn	ban	Balinese	Latn	59805	no	0	no	no	no	no	no	0	
+84	ace_Latn	ace	Achinese	Latn	59333	no	0	no	no	no	no	no	0	
+83	ary_Arab	ary	Moroccan Arabic	Arab	56933	no	0	no	no	no	no	no	0	
+82	hus_Latn	hus	Huastec	Latn	56176	no	0	no	no	no	no	no	0	
+81	glv_Latn	glv	Manx	Latn	55641	no	0	no	no	no	no	no	0	
+80	frr_Latn	frr	Northern Frisian	Latn	55254	no	0	no	no	no	no	no	0	
+79	mai_Deva	mai	Maithili	Deva	54687	no	0	no	no	no	no	no	0	
+78	dzo_Tibt	dzo	Dzongkha	Tibt	52732	yes	0	no	no	no	no	no	0	
+77	nnb_Latn	nnb	Nande	Latn	52041	no	0	no	no	no	no	no	0	
+76	mps_Latn	mps	Dadibi	Latn	50645	no	0	no	no	no	no	no	0	
+75	kat_Latn	kat	Georgian	Latn	50424	no	0	no	no	no	no	no	0	
+74	tls_Latn	tls	Tambotalo	Latn	50286	no	0	no	no	no	no	no	0	
+73	bjn_Latn	bjn	Banjar	Latn	49068	no	0	no	no	no	no	no	0	
+72	acr_Latn	acr	Achi	Latn	48886	no	0	no	no	no	no	no	0	
+71	guj_Deva	guj	Gujarati	Deva	48870	no	0	no	no	no	no	no	0	
+70	dtp_Latn	dtp	Kadazan Dusun	Latn	48468	no	0	no	no	no	no	no	0	
+69	bik_Latn	bik	Bikol	Latn	46561	no	0	no	no	no	no	no	0	
+68	poh_Latn	poh	Poqomchi'	Latn	46454	no	0	no	no	no	no	no	0	
+67	hrx_Latn	hrx	Hunsrik	Latn	45716	no	0	no	no	no	no	no	0	
+66	quh_Latn	quh	South Bolivian Quechua	Latn	45566	no	0	no	no	no	no	no	0	
+65	rue_Cyrl	rue	Rusyn	Cyrl	45369	no	0	no	no	no	no	no	0	
+64	eml_Latn	eml		Latn	44630	no	0	no	no	no	no	no	0	
+63	acm_Arab	acm	Mesopotamian Arabic	Arab	44505	yes	0	no	no	no	no	no	0	
+62	ach_Latn	ach	Acoli	Latn	43974	no	0	no	no	no	no	no	0	
+61	vep_Latn	vep	Veps	Latn	43076	no	0	no	no	no	no	no	0	
+60	npi_Deva	npi	Nepali (individual language)	Deva	43072	no	0	no	no	no	no	no	0	
+59	tok_Latn	tok		Latn	42820	no	0	no	no	no	no	no	0	
+58	sgs_Latn	sgs	Samogitian	Latn	42467	no	0	no	no	no	no	no	0	
+57	lij_Latn	lij	Ligurian	Latn	42447	no	0	no	no	no	no	no	0	
+56	myv_Cyrl	myv	Erzya	Cyrl	42147	no	0	no	no	no	no	no	0	
+55	tat_Latn	tat	Tatar	Latn	41640	no	0	no	no	no	no	no	0	
+54	lfn_Latn	lfn	Lingua Franca Nova	Latn	41632	no	0	no	no	no	no	no	0	
+53	ful_Latn	ful	Fulah	Latn	41188	no	0	no	no	no	no	no	0	
+52	gor_Latn	gor	Gorontalo	Latn	41174	no	0	no	no	no	no	no	0	
+51	ile_Latn	ile	Interlingue	Latn	40984	no	0	no	no	no	no	no	0	
+50	teo_Latn	teo	Teso	Latn	40203	no	0	no	no	no	no	no	0	
+49	crh_Cyrl	crh	Crimean Tatar	Cyrl	39985	no	0	no	no	no	no	no	0	
+48	crh_Latn	crh	Crimean Tatar	Latn	39896	no	0	no	no	no	no	no	0	
+47	enm_Latn	enm	Middle English (1100-1500)	Latn	39809	no	0	no	no	no	no	no	0	
+46	sat_Olck	sat	Santali	Olck	39614	yes	0	no	no	no	no	no	0	
+45	mad_Latn	mad	Madurese	Latn	38993	yes	0	no	no	no	no	no	0	
+44	hnj_Latn	hnj	Hmong Njua	Latn	38611	no	0	no	no	no	no	no	0	
+43	ksh_Latn	ksh	Kölsch	Latn	38130	no	0	no	no	no	no	no	0	
+42	ikk_Latn	ikk	Ika	Latn	38071	no	0	no	no	no	no	no	0	
+41	bqc_Latn	bqc	Boko (Benin)	Latn	36881	no	0	no	no	no	no	no	0	
+40	kom_Cyrl	kom	Komi	Cyrl	35249	no	0	no	no	no	no	no	0	
+39	knv_Latn	knv	Tabo	Latn	35196	no	0	no	no	no	no	no	0	
+38	hui_Latn	hui	Huli	Latn	34926	no	0	no	no	no	no	no	0	
+37	kpg_Latn	kpg	Kapingamarangi	Latn	34900	no	0	no	no	no	no	no	0	
+36	zea_Latn	zea	Zeeuws	Latn	34426	no	0	no	no	no	no	no	0	
+35	aoj_Latn	aoj	Mufian	Latn	34349	no	0	no	no	no	no	no	0	
+34	csy_Latn	csy	Siyin Chin	Latn	34126	no	0	no	no	no	no	no	0	
+33	csb_Latn	csb	Kashubian	Latn	33743	no	0	no	no	no	no	no	0	
+32	quw_Latn	quw	Tena Lowland Quichua	Latn	33449	yes	0	no	no	no	no	no	0	
+31	rmy_Cyrl	rmy	Vlax Romani	Cyrl	33351	no	0	no	no	no	no	no	0	
+30	ixl_Latn	ixl	Ixil	Latn	33289	no	0	no	no	no	no	no	0	
+29	pfl_Latn	pfl	Pfaelzisch	Latn	33148	no	0	no	no	no	no	no	0	
+28	pcd_Latn	pcd	Picard	Latn	32867	no	0	no	no	no	no	no	0	
+27	tlh_Latn	tlh	Klingon	Latn	32863	no	0	no	no	no	no	no	0	
+26	suz_Deva	suz	Sunwar	Deva	32811	no	0	no	no	no	no	no	0	
+25	gcr_Latn	gcr	Guianese Creole French	Latn	32676	no	0	no	no	no	no	no	0	
+24	jbo_Latn	jbo	Lojban	Latn	32619	no	0	no	no	no	no	no	0	
+23	tbz_Latn	tbz	Ditammari	Latn	32264	no	0	no	no	no	no	no	0	
+22	bam_Latn	bam	Bambara	Latn	32150	yes	0	no	no	no	no	no	0	
+21	jam_Latn	jam	Jamaican Creole English	Latn	32048	no	0	no	no	no	no	no	0	
+20	rop_Latn	rop	Kriol	Latn	31889	no	0	no	no	no	no	no	0	
+19	tca_Latn	tca	Ticuna	Latn	31852	no	0	no	no	no	no	no	0	
+18	xav_Latn	xav	Xavánte	Latn	31765	no	0	no	no	no	no	no	0	
+17	bih_Deva	bih		Deva	31658	no	0	no	no	no	no	no	0	
+16	cuk_Latn	cuk	San Blas Kuna	Latn	31612	no	0	no	no	no	no	no	0	
+15	kjb_Latn	kjb	Q'anjob'al	Latn	31471	yes	0	no	no	no	no	no	0	
+14	hne_Deva	hne	Chhattisgarhi	Deva	31465	no	0	no	no	no	no	no	0	
+13	wbm_Latn	wbm	Wa	Latn	31394	no	0	no	no	no	no	no	0	
+12	zlm_Latn	zlm	Malay (individual language)	Latn	31345	no	0	no	no	no	no	no	0	
+11	rug_Latn	rug	Roviana	Latn	30857	no	0	no	no	no	no	no	0	
+10	aka_Latn	aka	Akan	Latn	30704	no	0	no	no	no	no	no	0	
+9	ext_Latn	ext	Extremaduran	Latn	30605	no	0	no	no	no	no	no	0	
+8	ksd_Latn	ksd	Kuanua	Latn	30550	no	0	no	no	no	no	no	0	
+7	mzh_Latn	mzh	Wichí Lhamtés Güisnay	Latn	30517	no	0	no	no	no	no	no	0	
+6	krc_Cyrl	krc	Karachay-Balkar	Cyrl	30353	yes	0	no	no	no	no	no	0	
+5	tuc_Latn	tuc	Mutu	Latn	30349	no	0	no	no	no	no	no	0	
+4	pls_Latn	pls	San Marcos Tlacoyalco Popoloca	Latn	30136	no	0	no	no	no	no	no	0	
+3	rap_Latn	rap	Rapanui	Latn	30102	yes	0	no	no	no	no	no	0	
+2	fur_Latn	fur	Friulian	Latn	30052	yes	0	no	no	no	no	no	0	
+1	kaa_Latn	kaa	Kara-Kalpak	Latn	30031	no	0	no	no	no	no	no	0	

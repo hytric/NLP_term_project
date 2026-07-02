@@ -1,0 +1,21 @@
+model_label	model_path	model_seed	language_id	language	script	rows	masked_tokens	mean_mlm_loss	mlm_perplexity	truncated_rows	device	fp16	mlm_probability	max_length	mask_seed	status
+xlmr_base	xlm-roberta-base	NA	acu	Achuar-Shiwiar	Latin	2	39	5.63141	279.05538	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	ake	Akawaio	Latin	2	23	3.429348	30.856512	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	bsn	Barasana-Eduria	Latin	2	57	3.142544	23.162715	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	chr	Cherokee	Cherokee	2	11	0.308416	1.361267	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	cop	Coptic	Coptic	2	10	0.002335	1.002337	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	kbh	Camsa	Latin	2	18	6.027778	414.792244	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	nhg	Nahuatl Tetelcingo	Latin	2	20	5.028125	152.646532	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	oji	Ojibwa	Aboriginal Syllabics	2	6	0.00297	1.002975	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	syr	Syriac	Syriac	2	25	2.41875	11.231811	0	cuda	True	0.15	512	13	PASS
+xlmr_base	xlm-roberta-base	NA	usp	Uspanteco	Latin	2	27	4.534722	93.197623	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	acu	Achuar-Shiwiar	Latin	2	26	6.5	665.141633	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	ake	Akawaio	Latin	2	21	4.830357	125.255687	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	bsn	Barasana-Eduria	Latin	2	44	4.78125	119.253324	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	chr	Cherokee	Cherokee	2	10	4.9	134.28978	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	cop	Coptic	Coptic	2	14	6.477679	650.459198	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	kbh	Camsa	Latin	2	15	7.445833	1712.711958	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	nhg	Nahuatl Tetelcingo	Latin	2	22	4.818182	123.739904	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	oji	Ojibwa	Aboriginal Syllabics	2	13	3.295673	26.995578	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	syr	Syriac	Syriac	2	10	6.6125	744.341548	0	cuda	True	0.15	512	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	usp	Uspanteco	Latin	2	36	5.798611	329.841129	0	cuda	True	0.15	512	13	PASS

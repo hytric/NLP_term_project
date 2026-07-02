@@ -1,0 +1,41 @@
+language_id	language	task	metric	value	model	status	notes
+acu	Achuar-Shiwiar	tokenization_baseline	tokens_per_word	2.808351	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+acu	Achuar-Shiwiar	tokenization_baseline	unk_rate	0.0	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+ake	Akawaio	tokenization_baseline	tokens_per_word	3.319012	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+ake	Akawaio	tokenization_baseline	unk_rate	0.00129794	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+bsn	Barasana-Eduria	tokenization_baseline	tokens_per_word	3.522019	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+bsn	Barasana-Eduria	tokenization_baseline	unk_rate	0.0	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+chr	Cherokee	tokenization_baseline	tokens_per_word	2.232172	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+chr	Cherokee	tokenization_baseline	unk_rate	0.45013001	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+cop	Coptic	tokenization_baseline	tokens_per_word	2.0597	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+cop	Coptic	tokenization_baseline	unk_rate	0.48544767	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+kbh	Camsa	tokenization_baseline	tokens_per_word	3.595636	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+kbh	Camsa	tokenization_baseline	unk_rate	0.0	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+nhg	Nahuatl Tetelcingo	tokenization_baseline	tokens_per_word	2.961929	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+nhg	Nahuatl Tetelcingo	tokenization_baseline	unk_rate	0.0	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+oji	Ojibwa	tokenization_baseline	tokens_per_word	2.093708	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+oji	Ojibwa	tokenization_baseline	unk_rate	0.47576741	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+syr	Syriac	tokenization_baseline	tokens_per_word	4.982657	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+syr	Syriac	tokenization_baseline	unk_rate	0.24881368	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+usp	Uspanteco	tokenization_baseline	tokens_per_word	2.543099	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+usp	Uspanteco	tokenization_baseline	unk_rate	0.0	xlm-roberta-base	PASS	target10 final-test tokenizer metric
+acu	Achuar-Shiwiar	deterministic_mlm_eval	mean_mlm_loss	6.120242	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+acu	Achuar-Shiwiar	deterministic_mlm_eval	mlm_perplexity	454.97484	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+ake	Akawaio	deterministic_mlm_eval	mean_mlm_loss	3.956841	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+ake	Akawaio	deterministic_mlm_eval	mlm_perplexity	52.291876	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+bsn	Barasana-Eduria	deterministic_mlm_eval	mean_mlm_loss	4.62507	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+bsn	Barasana-Eduria	deterministic_mlm_eval	mlm_perplexity	102.009885	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+chr	Cherokee	deterministic_mlm_eval	mean_mlm_loss	0.322251	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+chr	Cherokee	deterministic_mlm_eval	mlm_perplexity	1.380231	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+cop	Coptic	deterministic_mlm_eval	mean_mlm_loss	0.174034	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+cop	Coptic	deterministic_mlm_eval	mlm_perplexity	1.190096	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+kbh	Camsa	deterministic_mlm_eval	mean_mlm_loss	5.787822	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+kbh	Camsa	deterministic_mlm_eval	mlm_perplexity	326.301508	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+nhg	Nahuatl Tetelcingo	deterministic_mlm_eval	mean_mlm_loss	5.797338	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+nhg	Nahuatl Tetelcingo	deterministic_mlm_eval	mlm_perplexity	329.421339	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+oji	Ojibwa	deterministic_mlm_eval	mean_mlm_loss	0.157699	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+oji	Ojibwa	deterministic_mlm_eval	mlm_perplexity	1.170814	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+syr	Syriac	deterministic_mlm_eval	mean_mlm_loss	2.168048	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+syr	Syriac	deterministic_mlm_eval	mlm_perplexity	8.741207	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+usp	Uspanteco	deterministic_mlm_eval	mean_mlm_loss	5.618641	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred
+usp	Uspanteco	deterministic_mlm_eval	mlm_perplexity	275.514631	xlm-roberta-base	PASS	15pct deterministic masked-LM eval on GPU 3; PPPL still deferred

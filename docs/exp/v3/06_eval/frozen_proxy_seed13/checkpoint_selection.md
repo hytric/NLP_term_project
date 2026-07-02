@@ -1,0 +1,5 @@
+# Stage 06 Frozen Proxy Checkpoint Selection
+
+Path: `/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot`
+
+Selection basis: Stage 05 200-step fvt pilot seed 13. This is a proxy-evaluation input, not a final model selection.

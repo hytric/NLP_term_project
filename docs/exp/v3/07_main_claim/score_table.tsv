@@ -1,0 +1,14 @@
+metric	expected	actual	status
+tokenizer claim separated	yes	yes	PASS
+downstream claim separated	yes	yes	PASS
+seed stability recorded	yes	target10_downstream_seed_stability=NOT_RUN; Coptic-only checkpoint seeds recorded	PASS_RECORDED_BLOCKS_POSITIVE
+high-resource control recorded	yes	replay_safe_mean_loss_delta=+0.675539; languages_without_large_collapse=0/4	PASS_RECORDED_BLOCKS_POSITIVE
+retained checkpoint selection recorded	yes	checkpoint-150 worse than checkpoint-200	PASS_DIAGNOSTIC
+replay-safe retry recorded	yes	1000step_3seed_improves_but_does_not_rescue	PASS_DIAGNOSTIC
+init-method evidence recorded	yes	fvt best zero-step loss=7.925527	PASS
+fallback evidence recorded	yes	byte-vs-char comparison measured	PASS
+coptic/syriac explicit evidence recorded	yes	yes	PASS_DIAGNOSTIC
+unsupported positive claims	0	0	PASS
+deviation impact discussed	yes	yes	PASS
+positive claim eligibility	yes	no	FAIL_FOR_POSITIVE
+diagnostic negative eligibility	yes	yes	PASS_NEGATIVE_READY

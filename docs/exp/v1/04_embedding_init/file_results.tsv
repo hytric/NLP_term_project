@@ -1,0 +1,10 @@
+file_role	path	location	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/04_embedding_init/score_table.tsv	docs	5	1153	1d9554436087308081d6a1cdcbda7fac	PASS	gate table
+embedding_init_metrics	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/04_embedding_init/embedding_init_metrics.tsv	docs	5	1153	1d9554436087308081d6a1cdcbda7fac	PASS	shape, norm, fallback, loss metrics
+zero_step_mlm	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/04_embedding_init/zero_step_mlm.tsv	docs	5	303	ba6c7eb3cdf05162b82735662b80a301	PASS	zero-step MLM losses
+nearest_neighbors	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/04_embedding_init/nearest_neighbors.md	docs	43	1913	f9baaddf4769b5dd55b0d4967ce8c306	PASS	approximate nearest neighbors
+checkpoint_xlmr_target10_32000_random	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_random	large_checkpoint	7	1208280049	DIRECTORY	PASS	initialized model and tokenizer
+checkpoint_xlmr_target10_32000_mean	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_mean	large_checkpoint	7	1208280047	DIRECTORY	PASS	initialized model and tokenizer
+checkpoint_xlmr_target10_32000_fvt	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_fvt	large_checkpoint	7	1208280044	DIRECTORY	PASS	initialized model and tokenizer
+checkpoint_xlmr_target10_32000_align	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_align	large_checkpoint	7	1208280051	DIRECTORY	PASS	initialized model and tokenizer
+checkpoint_xlmr_target10_32000_focus	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_focus	large_checkpoint	7	1208280052	DIRECTORY	PASS	initialized model and tokenizer

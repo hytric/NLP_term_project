@@ -1,0 +1,13 @@
+model_label	model_path	model_seed	metric	value	status
+xlmr_base	xlm-roberta-base	NA	target10_avg_mlm_loss	3.472837	PASS
+xlmr_base	xlm-roberta-base	NA	target10_avg_mlm_perplexity	155.079528	PASS
+xlmr_base	xlm-roberta-base	NA	target10_total_masked_tokens	95535	PASS
+fvt_ckpt150_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot/checkpoint-150	13	target10_avg_mlm_loss	5.337659	PASS
+fvt_ckpt150_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot/checkpoint-150	13	target10_avg_mlm_perplexity	222.328033	PASS
+fvt_ckpt150_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot/checkpoint-150	13	target10_total_masked_tokens	85354	PASS
+fvt_ckpt150_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot/checkpoint-150	17	target10_avg_mlm_loss	5.351066	PASS
+fvt_ckpt150_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot/checkpoint-150	17	target10_avg_mlm_perplexity	226.168251	PASS
+fvt_ckpt150_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot/checkpoint-150	17	target10_total_masked_tokens	85565	PASS
+fvt_ckpt150_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot/checkpoint-150	23	target10_avg_mlm_loss	5.357886	PASS
+fvt_ckpt150_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot/checkpoint-150	23	target10_avg_mlm_perplexity	225.709108	PASS
+fvt_ckpt150_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot/checkpoint-150	23	target10_total_masked_tokens	85310	PASS

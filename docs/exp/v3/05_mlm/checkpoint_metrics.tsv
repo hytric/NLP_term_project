@@ -1,0 +1,16 @@
+run_id	step	metric_source	eval_loss	perplexity	notes
+fvt_seed13_pilot	50	trainer_state.json	4.343924	77.009135	scheduled eval
+fvt_seed13_pilot	100	trainer_state.json	4.097365	60.181494	scheduled eval
+fvt_seed13_pilot	150	trainer_state.json	4.045814	57.157696	scheduled eval
+fvt_seed13_pilot	200	trainer_state.json	3.993953	54.269004	scheduled eval during train loop
+fvt_seed13_pilot	final	eval_results.json	3.921798	50.491170	final do_eval after train
+fvt_seed17_pilot	50	trainer_state.json	4.341639	76.833369	scheduled eval
+fvt_seed17_pilot	100	trainer_state.json	4.101999	60.461046	scheduled eval
+fvt_seed17_pilot	150	trainer_state.json	4.022620	55.847219	scheduled eval
+fvt_seed17_pilot	200	trainer_state.json	3.971841	53.082183	scheduled eval during train loop
+fvt_seed17_pilot	final	eval_results.json	4.010451	55.171739	final do_eval after train
+fvt_seed23_pilot	50	trainer_state.json	4.344816	77.077870	scheduled eval
+fvt_seed23_pilot	100	trainer_state.json	4.175660	65.082789	scheduled eval
+fvt_seed23_pilot	150	trainer_state.json	4.065879	58.316166	scheduled eval
+fvt_seed23_pilot	200	trainer_state.json	4.028818	56.194431	scheduled eval during train loop
+fvt_seed23_pilot	final	eval_results.json	4.011500	55.229646	final do_eval after train

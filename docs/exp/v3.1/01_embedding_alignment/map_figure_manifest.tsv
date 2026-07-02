@@ -1,0 +1,9 @@
+model_key	direction	split	figure_path	status	points
+fvt_seed13	cop->syr	final_test	docs/exp/v3.1/01_embedding_alignment/figures/fvt_seed13_cop_to_syr_final_test_pca.png	PASS	2012
+fvt_seed13	syr->cop	final_test	docs/exp/v3.1/01_embedding_alignment/figures/fvt_seed13_syr_to_cop_final_test_pca.png	PASS	2012
+fvt_seed17	cop->syr	final_test	docs/exp/v3.1/01_embedding_alignment/figures/fvt_seed17_cop_to_syr_final_test_pca.png	PASS	2012
+fvt_seed17	syr->cop	final_test	docs/exp/v3.1/01_embedding_alignment/figures/fvt_seed17_syr_to_cop_final_test_pca.png	PASS	2012
+fvt_seed23	cop->syr	final_test	docs/exp/v3.1/01_embedding_alignment/figures/fvt_seed23_cop_to_syr_final_test_pca.png	PASS	2012
+fvt_seed23	syr->cop	final_test	docs/exp/v3.1/01_embedding_alignment/figures/fvt_seed23_syr_to_cop_final_test_pca.png	PASS	2012
+xlmr_base	cop->syr	final_test	docs/exp/v3.1/01_embedding_alignment/figures/xlmr_base_cop_to_syr_final_test_pca.png	PASS	2012
+xlmr_base	syr->cop	final_test	docs/exp/v3.1/01_embedding_alignment/figures/xlmr_base_syr_to_cop_final_test_pca.png	PASS	2012

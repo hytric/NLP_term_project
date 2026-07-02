@@ -1,0 +1,11 @@
+tokenizer	model_name	iso	language	script	sentences	avg_chars	avg_words	avg_tokens	tokens_per_word	tokens_per_char	single_char_token_pct	unk_token_pct
+target10_spm16k	target10_spm16k	acu	Achuar-Shiwiar	Latin	500	174.368	24.164	40.358	1.670	0.231	18.118	0.000
+target10_spm16k	target10_spm16k	ake	Akawaio	Latin	500	118.452	23.266	48.120	2.068	0.406	34.618	0.000
+target10_spm16k	target10_spm16k	bsn	Barasana-Eduria	Latin	500	184.680	28.334	45.390	1.602	0.246	24.190	0.000
+target10_spm16k	target10_spm16k	chr	Cherokee	Cherokee	500	67.472	15.066	30.130	2.000	0.447	37.803	0.000
+target10_spm16k	target10_spm16k	cop	Coptic	Coptic	500	81.590	14.752	26.202	1.776	0.321	15.930	0.000
+target10_spm16k	target10_spm16k	kbh	Camsa	Latin	500	259.896	34.392	60.692	1.765	0.234	21.878	0.000
+target10_spm16k	target10_spm16k	nhg	Nahuatl (Tetelcingo)	Latin	500	165.714	23.972	37.914	1.582	0.229	17.260	0.000
+target10_spm16k	target10_spm16k	oji	Ojibwa	Aboriginal Syllabics	500	83.464	17.560	38.842	2.212	0.465	38.881	0.000
+target10_spm16k	target10_spm16k	syr	Syriac	Syriac	500	56.572	13.836	22.034	1.593	0.389	20.133	0.000
+target10_spm16k	target10_spm16k	usp	Uspanteco	Latin	500	165.926	31.538	61.904	1.963	0.373	36.634	0.000

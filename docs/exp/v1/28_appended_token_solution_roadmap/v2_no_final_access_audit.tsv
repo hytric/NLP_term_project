@@ -1,0 +1,4 @@
+run_id	input_group	path_or_source	access_type	final_access	status	notes
+step28_solution_roadmap_20260612	step28_inputs	docs/exp/second_try	prior_results_and_claim_docs	NO_ACT_FINAL_ACCESS	PASS	document synthesis only
+step28_solution_roadmap_20260612	protected_final	v2_final_test_act_clean	not_read	NO_ACT_FINAL_ACCESS	PASS	no ACT final metrics used
+step28_solution_roadmap_20260612	outputs	28_appended_token_solution_roadmap	documents_only	NO_ACT_FINAL_ACCESS	PASS	solution hypotheses only

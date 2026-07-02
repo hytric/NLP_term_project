@@ -1,0 +1,5 @@
+language_id	language	script	total_bible_rows	train_control_rows	excluded_heldout_books	excluded_rows	status
+eng	English	Latin	31102	28538	ACT,JOH,MAR	2564	PASS
+deu	German	Latin	31102	28538	ACT,JOH,MAR	2564	PASS
+jpn	Japanese	Japanese	31087	28523	ACT,JOH,MAR	2564	PASS
+kor	Korean	Hangul	31101	28537	ACT,JOH,MAR	2564	PASS

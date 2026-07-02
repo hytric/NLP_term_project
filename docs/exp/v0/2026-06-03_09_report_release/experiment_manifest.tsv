@@ -1,0 +1,13 @@
+order	stage	status	key_outputs	next_action
+00	final_goal	complete	docs/exp/2026-06-03_00_final_goal/plan.md	keep scope fixed
+01	data_and_splits	complete	docs/exp/2026-06-03_01_data_and_splits/results.md	license confirmation before release
+02	tokenization_audit	complete	docs/exp/2026-06-03_02_tokenization_audit/results.md; target10_tokenization_metrics.tsv	use in paper table
+03	vocab_extension	complete	docs/exp/2026-06-03_03_vocab_extension/results.md; glot500_target10_merged_metrics.tsv	use in paper table
+04	embedding_init	complete	docs/exp/2026-06-03_04_embedding_init/results.md; embedding_init_metrics.tsv	use in method/results
+05	mlm_adaptation	complete_for_pilot	docs/exp/2026-06-03_05_mlm_adaptation/results.md; mlm_pilot10k_results.tsv	mean pilot10k selected
+06	nmt_baselines	diagnostic_complete	docs/exp/2026-06-03_06_nmt_baselines/results.md	do not scale collapsed direct/pivot runs
+07	pivot_backtranslation	gate_complete_negative	docs/exp/2026-06-03_07_pivot_backtranslation/results.md	do not generate synthetic BT from failed gate
+08	evaluation_analysis	draft_complete	docs/exp/2026-06-03_08_evaluation_analysis/final_metrics.tsv; paper_tables.md; qualitative_analysis.md; error_taxonomy.md	use for paper/report
+09	report_release	draft_in_progress	docs/exp/2026-06-03_09_report_release/progress_report.md; term_paper_outline.md; reproducibility_checklist.md; command_examples.md; claim_evidence_map.md; related_work_notes.md	add final prose and license citations
+10	source_grounding_editing	10c_same_checkpoint_controls_complete_negative	docs/exp/2026-06-04_10_source_grounding_editing/source_candidate_summary.md; candidate_decision_summary.md; pairwise_selector_summary.md; pairwise_selector_results.tsv; retrieval_edit_pilot_results.tsv; retrieval_edit_controls.md; retrieval_edit_qualitative.md; retrieval_edit_control_datasets.tsv; retrieval_edit_control_results.tsv	use 10C as failure analysis; do not claim neural source-grounded editing
+11	release_audit	goal_audit_complete_release_cleanup_pending	docs/exp/2026-06-04_11_release_audit/plan.md; release_audit_summary.md; artifact_inventory.tsv	clean worktree and finish source-specific redistribution decisions before public GitHub release

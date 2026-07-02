@@ -1,0 +1,6 @@
+model_key	phase	method	score_type	directed_pairs	total_examples	macro_margin_mean	macro_recall_at_1	macro_recall_at_5	macro_recall_at_10	macro_mrr	macro_hubness_at10_max_rate
+random_mlm200	mlm200	random	centered_csls_k10	90	56452	-0.563356	0.012318	0.041759	0.068257	0.036425	0.077437
+mean_mlm200	mlm200	mean	centered_csls_k10	90	56452	-0.637304	0.010675	0.038409	0.065668	0.03445	0.08429
+align_mlm200	mlm200	align	centered_csls_k10	90	56452	-0.473661	0.009456	0.034559	0.058497	0.031894	0.087349
+focus_mlm200	mlm200	focus	centered_csls_k10	90	56452	-0.516167	0.00868	0.03344	0.057186	0.030713	0.085429
+fvt_mlm200	mlm200	fvt	centered_csls_k10	90	56452	-0.480777	0.008798	0.032826	0.0576	0.030593	0.088414

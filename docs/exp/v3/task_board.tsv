@@ -1,0 +1,11 @@
+task_id	stage	status	priority	exit_evidence	next_action
+T00_SCOPE	00_scope	DONE	P0	target10 main set and high-resource replay set frozen	scope locked; proceed with Stage 01 mixture manifests
+T01_DATA	01_data	DONE	P0	leakage-safe corpus and split manifests	Stage 01 PASS; row-level manifests created
+T02_BASELINE	02_baseline	IN_PROGRESS	P0	XLM-R-B head/tail baseline table	run tokenizer and baseline evaluations on GPU 3 only when GPU is needed
+T03_TOKENIZER	03_tokenizer	DONE	P0	id-preserving appended tokenizer and fallback ablation	PASS_DEVIATION_AND_FALLBACK_ABLATION_DOCUMENTED; target-heavy high-resource 48k selected; byte-vs-char measured
+T04_INIT	04_init	DONE	P0	row-copy audit and multi-init model grid	PASS; random/mean/fvt/align/focus checkpoints created; fvt selected for pilot
+T05_MLM	05_mlm	IN_PROGRESS	P0	high-resource + low-resource full-MLM runs with >=3 seeds	fvt 3-seed 200-step pilot plus replay-safe 1000-step 3-seed retry complete; still compute-bounded versus full Glot500 budget
+T06_EVAL	06_eval	IN_PROGRESS	P0	target10 downstream improvement tables	MLM proxy, frozen Bible proxy, Coptic POS pilot/replay-safe retry, high-resource control proxy, target10 availability audit, explicit Coptic/Syriac evidence, retained checkpoint-selection proxy, and replay-safe retry evaluation complete; positive claim still blocked by high-resource control and target10 coverage
+T07_CLAIM	07_main_claim	DONE	P0	allowed and blocked claims finalized	PASS_NEGATIVE_MAIN_READY; use diagnostic negative wording for current candidate
+T08_ABLATION	08_ablation	DONE	P1	first/second try mapped as ablation/failure analysis	PASS_ABLATION_PACKAGE_READY; prior experiments mapped away from main claim
+T09_EXTENSION	09_extension_case	BLOCKED_ON_TARGET10_MAIN	P2	optional non-target10 extension deviations documented	apply frozen protocol only after target10 main/full positive path is complete

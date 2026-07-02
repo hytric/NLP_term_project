@@ -1,0 +1,3 @@
+run_id	vocab_size	init_method	new_rows	initialized_rows	missing_rows	fallback_rows	zero_step_dev_loss	checkpoint_path	status	notes
+step23_v2_vocab_objective_probe_20260611_203226	8000	fvt	6455	6455	0	0	7.467488	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/init/xlmr_v2_8000_fvt	PASS	created_fvt_init; final_ACT_not_read
+step23_v2_vocab_objective_probe_20260611_203226	16000	fvt	13927	13927	0	0	8.061425	/home/axt/mnt2/jongha/second_try/checkpoints/23_v2_vocab_size_objective_probe/init/xlmr_v2_16000_fvt	PASS	created_fvt_init; final_ACT_not_read

@@ -1,0 +1,13 @@
+{
+  "event": "done",
+  "output_prefix": "pseudoperplexity_gpu0",
+  "models": [
+    "xlmr_base",
+    "fvt_mlm200",
+    "focus_mlm200"
+  ],
+  "max_examples_per_lang": 50,
+  "max_length": 128,
+  "mask_batch_size": 64,
+  "elapsed_sec": 189.144
+}

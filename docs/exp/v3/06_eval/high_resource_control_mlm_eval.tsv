@@ -1,0 +1,17 @@
+model_label	model_path	model_seed	control_scope	language_id	language	script	heldout_books	rows	masked_tokens	mean_mlm_loss	mlm_perplexity	truncated_rows	device	fp16	mlm_probability	max_length	mask_seed	status
+xlmr_base	xlm-roberta-base	NA	bible_heldout_books	eng	English	Latin	ACT,JOH,MAR	2564	12065	2.280143	9.778082	0	cuda	True	0.15	256	13	PASS
+xlmr_base	xlm-roberta-base	NA	bible_heldout_books	deu	German	Latin	ACT,JOH,MAR	2564	12455	2.337446	10.354757	0	cuda	True	0.15	256	13	PASS
+xlmr_base	xlm-roberta-base	NA	bible_heldout_books	jpn	Japanese	Japanese	ACT,JOH,MAR	2564	13729	2.563769	12.984664	0	cuda	True	0.15	256	13	PASS
+xlmr_base	xlm-roberta-base	NA	bible_heldout_books	kor	Korean	Hangul	ACT,JOH,MAR	2564	11312	2.875957	17.742399	0	cuda	True	0.15	256	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	bible_heldout_books	eng	English	Latin	ACT,JOH,MAR	2564	12732	2.901744	18.205862	0	cuda	True	0.15	256	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	bible_heldout_books	deu	German	Latin	ACT,JOH,MAR	2564	12865	2.961574	19.328369	0	cuda	True	0.15	256	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	bible_heldout_books	jpn	Japanese	Japanese	ACT,JOH,MAR	2564	13954	3.377152	29.287247	0	cuda	True	0.15	256	13	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	bible_heldout_books	kor	Korean	Hangul	ACT,JOH,MAR	2564	11144	3.684314	39.817815	0	cuda	True	0.15	256	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	bible_heldout_books	eng	English	Latin	ACT,JOH,MAR	2564	12809	2.89147	18.019786	0	cuda	True	0.15	256	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	bible_heldout_books	deu	German	Latin	ACT,JOH,MAR	2564	12867	2.950168	19.109165	0	cuda	True	0.15	256	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	bible_heldout_books	jpn	Japanese	Japanese	ACT,JOH,MAR	2564	13967	3.361282	28.826134	0	cuda	True	0.15	256	13	PASS
+fvt_seed17	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot	17	bible_heldout_books	kor	Korean	Hangul	ACT,JOH,MAR	2564	11026	3.593475	36.360211	0	cuda	True	0.15	256	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	bible_heldout_books	eng	English	Latin	ACT,JOH,MAR	2564	12858	2.923045	18.597836	0	cuda	True	0.15	256	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	bible_heldout_books	deu	German	Latin	ACT,JOH,MAR	2564	13047	2.98801	19.846143	0	cuda	True	0.15	256	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	bible_heldout_books	jpn	Japanese	Japanese	ACT,JOH,MAR	2564	13810	3.314901	27.519666	0	cuda	True	0.15	256	13	PASS
+fvt_seed23	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed23_pilot	23	bible_heldout_books	kor	Korean	Hangul	ACT,JOH,MAR	2564	11087	3.662178	38.946058	0	cuda	True	0.15	256	13	PASS

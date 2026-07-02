@@ -1,0 +1,3 @@
+run_id	input_role	path	allowed_split	rows_or_lines	md5	final_access	status
+step13_v2_tokenizer_20260611_153357	train_text	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_tokenizer_mlm_train.txt	train	52124	f32f647573e4ee948595ac7c63d55f7f	NO	PASS
+step13_v2_tokenizer_20260611_153357	dev_manifest	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/12_v2_split_protocol/v2_dev_manifest.tsv	dev	6521	cd2fedc4a8665afbd2c8818e79e04b6a	NO	PASS

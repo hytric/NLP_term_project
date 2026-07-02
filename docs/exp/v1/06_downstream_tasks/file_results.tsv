@@ -1,0 +1,6 @@
+file_role	path	location	rows_or_lines	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/06_downstream_tasks/score_table.tsv	docs	33	5852	76785d218ba55141d728eb183a1ad568	PASS	gate table
+downstream_results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/06_downstream_tasks/downstream_results.tsv	docs	33	5852	76785d218ba55141d728eb183a1ad568	PASS	all task/model/seed rows
+downstream_dataset_stats	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/06_downstream_tasks/downstream_dataset_stats.tsv	docs	3	343	53711d71e03c6f86027be4bfa632c57e	PASS	dataset construction stats
+sample_predictions	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/06_downstream_tasks/sample_predictions.md	docs	6	293	470ebeaca5c6da13951e4e6b79f568b2	PASS	sample prediction notes
+failure_cases	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/06_downstream_tasks/failure_cases.md	docs	5	274	ba34855518a940ab9678a987288eec6b	PASS	adapted underperformance notes

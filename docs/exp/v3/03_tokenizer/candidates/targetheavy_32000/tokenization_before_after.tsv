@@ -1,0 +1,11 @@
+variant	iso	language	script	sentences	base_tokens_per_word	new_tokens_per_word	tokens_per_word_delta_pct	base_tokens_per_char	new_tokens_per_char	base_single_char_token_ratio	new_single_char_token_ratio	single_char_delta_pct	base_unk_rate	new_unk_rate	unk_delta_pct	status
+main_added_32000	acu	Achuar-Shiwiar	Latin	659	2.869407	1.923199	-32.975733	0.4009	0.2687	0.215368	0.210891	-2.078768	0.0	0.0	0.0	PASS
+main_added_32000	ake	Akawaio	Latin	673	3.345033	2.290588	-31.522708	0.631372	0.432346	0.608394	0.358101	-41.139952	0.0	0.0	0.0	PASS
+main_added_32000	bsn	Barasana-Eduria	Latin	629	3.518816	1.917827	-45.497946	0.551032	0.300324	0.390429	0.22832	-41.520737	0.0	0.0	0.0	PASS
+main_added_32000	chr	Cherokee	Cherokee	678	2.29698	2.4283	5.717072	0.51637	0.545891	0.128707	0.212677	65.241207	0.0	0.0	0.0	PASS
+main_added_32000	cop	Coptic	Coptic	678	2.03922	1.871699	-8.214955	0.383236	0.351754	0.020151	0.105928	425.671183	0.0	0.0	0.0	PASS
+main_added_32000	kbh	Camsa	Latin	501	3.579293	1.994033	-44.289752	0.476547	0.265485	0.305289	0.229126	-24.947836	0.0	0.0	0.0	PASS
+main_added_32000	nhg	Nahuatl (Tetelcingo)	Latin	673	3.023022	1.764094	-41.644685	0.435529	0.254154	0.256102	0.178651	-30.242247	0.0	0.0	0.0	PASS
+main_added_32000	oji	Ojibwa	Aboriginal Syllabics	674	2.132676	2.247657	5.391396	0.479516	0.505369	0.072251	0.176187	143.854064	0.0	0.0	0.0	PASS
+main_added_32000	syr	Syriac	Syriac	678	4.803247	1.718665	-64.218684	1.164648	0.416726	0.740728	0.138393	-81.316624	0.0	0.0	0.0	PASS
+main_added_32000	usp	Uspanteco	Latin	678	2.536658	2.177274	-14.167617	0.490776	0.421244	0.388324	0.340065	-12.427509	0.0	0.0	0.0	PASS

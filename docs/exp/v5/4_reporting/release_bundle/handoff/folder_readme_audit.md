@@ -1,0 +1,150 @@
+# v5 Folder README Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `folder_readmes_need_update`
+
+This generated audit checks that every v5 folder has a non-empty
+`README.md`, and that the main phase/metric/reporting folders expose
+purpose, current status, and the next line for moving to the following
+stage. It supports the handoff requirement that the experiment archive is
+readable during report and PPT assembly.
+
+| Item | Status | Evidence | Action |
+| --- | --- | --- | --- |
+| readme_inventory | needs_update | directories=109; missing=8; empty=0 | restore missing or empty README.md files |
+| readme:. | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/README.md | none |
+| readme:0_tokenizer | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/README.md | none |
+| readme:0_tokenizer/00_data_scope | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/00_data_scope/README.md | none |
+| readme:0_tokenizer/01_merge | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/01_merge/README.md | none |
+| readme:0_tokenizer/02_tokenizer_train | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/02_tokenizer_train/README.md | none |
+| readme:0_tokenizer/02_tokenizer_train/logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/02_tokenizer_train/logs/README.md | none |
+| readme:0_tokenizer/03_audit | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/03_audit/README.md | none |
+| readme:0_tokenizer/03_audit/main | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/03_audit/main/README.md | none |
+| readme:0_tokenizer/03_audit/main/examples_dzo | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/03_audit/main/examples_dzo/README.md | none |
+| readme:0_tokenizer/03_audit/pilot10k | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/03_audit/pilot10k/README.md | none |
+| readme:0_tokenizer/03_audit/pilot10k/examples_dzo | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/03_audit/pilot10k/examples_dzo/README.md | none |
+| readme:0_tokenizer/03_audit/pilot10k/examples_target10 | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/03_audit/pilot10k/examples_target10/README.md | none |
+| readme:0_tokenizer/merge | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/merge/README.md | none |
+| readme:0_tokenizer/miscellaneous | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/0_tokenizer/miscellaneous/README.md | none |
+| readme:1_embedding | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/README.md | none |
+| readme:1_embedding/00_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/00_random/README.md | none |
+| readme:1_embedding/01_mean | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/01_mean/README.md | none |
+| readme:1_embedding/02_fvt | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/02_fvt/README.md | none |
+| readme:1_embedding/03_align | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/03_align/README.md | none |
+| readme:1_embedding/04_zero_step_eval | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/04_zero_step_eval/README.md | none |
+| readme:1_embedding/04_zero_step_eval/main | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/04_zero_step_eval/main/README.md | none |
+| readme:1_embedding/04_zero_step_eval/pilot10k | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/04_zero_step_eval/pilot10k/README.md | none |
+| readme:1_embedding/05_audit | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/05_audit/README.md | none |
+| readme:1_embedding/05_audit/main | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/05_audit/main/README.md | none |
+| readme:1_embedding/05_audit/main/init_reports | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/05_audit/main/init_reports/README.md | none |
+| readme:1_embedding/05_audit/pilot10k | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/05_audit/pilot10k/README.md | none |
+| readme:1_embedding/05_audit/pilot10k/init_reports | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/1_embedding/05_audit/pilot10k/init_reports/README.md | none |
+| readme:2_training | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/2_training/README.md | none |
+| readme:2_training/00_pilot | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/2_training/00_pilot/README.md | none |
+| readme:2_training/01_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/2_training/01_random/README.md | none |
+| readme:2_training/02_fvt | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/2_training/02_fvt/README.md | none |
+| readme:2_training/03_mean | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/2_training/03_mean/README.md | none |
+| readme:2_training/04_align | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/2_training/04_align/README.md | none |
+| readme:2_training/05_checkpoint_selection | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/2_training/05_checkpoint_selection/README.md | none |
+| readme:3_evaluation | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/README.md | none |
+| readme:3_evaluation/00_coverage | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/00_coverage/README.md | none |
+| readme:3_evaluation/01_pseudoperplexity | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/README.md | none |
+| readme:3_evaluation/01_pseudoperplexity/glot500_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/glot500_base/README.md | none |
+| readme:3_evaluation/01_pseudoperplexity/glot500_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/glot500_base/command_logs/README.md | none |
+| readme:3_evaluation/01_pseudoperplexity/v5_fvt | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/v5_fvt/README.md | add README.md |
+| readme:3_evaluation/01_pseudoperplexity/v5_fvt/command_logs | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/v5_fvt/command_logs/README.md | add README.md |
+| readme:3_evaluation/01_pseudoperplexity/v5_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/v5_random/README.md | none |
+| readme:3_evaluation/01_pseudoperplexity/v5_random/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/v5_random/command_logs/README.md | none |
+| readme:3_evaluation/01_pseudoperplexity/xlmr_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/xlmr_base/README.md | none |
+| readme:3_evaluation/01_pseudoperplexity/xlmr_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/01_pseudoperplexity/xlmr_base/command_logs/README.md | none |
+| readme:3_evaluation/02_retrieval_tatoeba | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/README.md | none |
+| readme:3_evaluation/02_retrieval_tatoeba/glot500_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/glot500_base/README.md | none |
+| readme:3_evaluation/02_retrieval_tatoeba/glot500_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/glot500_base/command_logs/README.md | none |
+| readme:3_evaluation/02_retrieval_tatoeba/v5_fvt | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/v5_fvt/README.md | add README.md |
+| readme:3_evaluation/02_retrieval_tatoeba/v5_fvt/command_logs | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/v5_fvt/command_logs/README.md | add README.md |
+| readme:3_evaluation/02_retrieval_tatoeba/v5_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/v5_random/README.md | none |
+| readme:3_evaluation/02_retrieval_tatoeba/v5_random/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/v5_random/command_logs/README.md | none |
+| readme:3_evaluation/02_retrieval_tatoeba/xlmr_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/xlmr_base/README.md | none |
+| readme:3_evaluation/02_retrieval_tatoeba/xlmr_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/02_retrieval_tatoeba/xlmr_base/command_logs/README.md | none |
+| readme:3_evaluation/03_retrieval_bible | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/README.md | none |
+| readme:3_evaluation/03_retrieval_bible/glot500_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/glot500_base/README.md | none |
+| readme:3_evaluation/03_retrieval_bible/glot500_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/glot500_base/command_logs/README.md | none |
+| readme:3_evaluation/03_retrieval_bible/v5_fvt | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/v5_fvt/README.md | add README.md |
+| readme:3_evaluation/03_retrieval_bible/v5_fvt/command_logs | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/v5_fvt/command_logs/README.md | add README.md |
+| readme:3_evaluation/03_retrieval_bible/v5_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/v5_random/README.md | none |
+| readme:3_evaluation/03_retrieval_bible/v5_random/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/v5_random/command_logs/README.md | none |
+| readme:3_evaluation/03_retrieval_bible/xlmr_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/xlmr_base/README.md | none |
+| readme:3_evaluation/03_retrieval_bible/xlmr_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/03_retrieval_bible/xlmr_base/command_logs/README.md | none |
+| readme:3_evaluation/04_text_classification | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/README.md | none |
+| readme:3_evaluation/04_text_classification/glot500_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/glot500_base/README.md | none |
+| readme:3_evaluation/04_text_classification/glot500_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/glot500_base/command_logs/README.md | none |
+| readme:3_evaluation/04_text_classification/v5_fvt | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/v5_fvt/README.md | add README.md |
+| readme:3_evaluation/04_text_classification/v5_fvt/command_logs | missing | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/v5_fvt/command_logs/README.md | add README.md |
+| readme:3_evaluation/04_text_classification/v5_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/v5_random/README.md | none |
+| readme:3_evaluation/04_text_classification/v5_random/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/v5_random/command_logs/README.md | none |
+| readme:3_evaluation/04_text_classification/xlmr_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/xlmr_base/README.md | none |
+| readme:3_evaluation/04_text_classification/xlmr_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/04_text_classification/xlmr_base/command_logs/README.md | none |
+| readme:3_evaluation/05_ner | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/05_ner/README.md | none |
+| readme:3_evaluation/05_ner/glot500_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/05_ner/glot500_base/README.md | none |
+| readme:3_evaluation/05_ner/glot500_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/05_ner/glot500_base/command_logs/README.md | none |
+| readme:3_evaluation/05_ner/v5_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/05_ner/v5_random/README.md | none |
+| readme:3_evaluation/05_ner/v5_random/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/05_ner/v5_random/command_logs/README.md | none |
+| readme:3_evaluation/05_ner/xlmr_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/05_ner/xlmr_base/README.md | none |
+| readme:3_evaluation/05_ner/xlmr_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/05_ner/xlmr_base/command_logs/README.md | none |
+| readme:3_evaluation/06_pos | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/06_pos/README.md | none |
+| readme:3_evaluation/06_pos/glot500_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/06_pos/glot500_base/README.md | none |
+| readme:3_evaluation/06_pos/glot500_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/06_pos/glot500_base/command_logs/README.md | none |
+| readme:3_evaluation/06_pos/v5_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/06_pos/v5_random/README.md | none |
+| readme:3_evaluation/06_pos/v5_random/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/06_pos/v5_random/command_logs/README.md | none |
+| readme:3_evaluation/06_pos/xlmr_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/06_pos/xlmr_base/README.md | none |
+| readme:3_evaluation/06_pos/xlmr_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/06_pos/xlmr_base/command_logs/README.md | none |
+| readme:3_evaluation/07_roundtrip_alignment | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/07_roundtrip_alignment/README.md | none |
+| readme:3_evaluation/07_roundtrip_alignment/glot500_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/07_roundtrip_alignment/glot500_base/README.md | none |
+| readme:3_evaluation/07_roundtrip_alignment/glot500_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/07_roundtrip_alignment/glot500_base/command_logs/README.md | none |
+| readme:3_evaluation/07_roundtrip_alignment/v5_random | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/07_roundtrip_alignment/v5_random/README.md | none |
+| readme:3_evaluation/07_roundtrip_alignment/v5_random/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/07_roundtrip_alignment/v5_random/command_logs/README.md | none |
+| readme:3_evaluation/07_roundtrip_alignment/xlmr_base | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/07_roundtrip_alignment/xlmr_base/README.md | none |
+| readme:3_evaluation/07_roundtrip_alignment/xlmr_base/command_logs | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/07_roundtrip_alignment/xlmr_base/command_logs/README.md | none |
+| readme:3_evaluation/08_embedding_similarity | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/08_embedding_similarity/README.md | none |
+| readme:3_evaluation/09_aggregation | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/09_aggregation/README.md | none |
+| readme:4_reporting | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/README.md | none |
+| readme:4_reporting/00_tables | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/00_tables/README.md | none |
+| readme:4_reporting/01_figures | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/01_figures/README.md | none |
+| readme:4_reporting/01_figures/generated | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/01_figures/generated/README.md | none |
+| readme:4_reporting/02_slides | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/02_slides/README.md | none |
+| readme:4_reporting/03_final_report | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/03_final_report/README.md | none |
+| readme:4_reporting/release_bundle | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/README.md | none |
+| readme:4_reporting/release_bundle/audits | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/audits/README.md | none |
+| readme:4_reporting/release_bundle/figures | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/figures/README.md | none |
+| readme:4_reporting/release_bundle/handoff | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/handoff/README.md | none |
+| readme:4_reporting/release_bundle/reports | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/reports/README.md | none |
+| readme:4_reporting/release_bundle/scripts | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/scripts/README.md | none |
+| readme:4_reporting/release_bundle/slides | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/slides/README.md | none |
+| readme:4_reporting/release_bundle/tables | ready | /home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/release_bundle/tables/README.md | none |
+| content:. | ready | all required next-line tokens present | none |
+| content:0_tokenizer | ready | all required next-line tokens present | none |
+| content:1_embedding | ready | all required next-line tokens present | none |
+| content:2_training | ready | all required next-line tokens present | none |
+| content:3_evaluation | ready | all required next-line tokens present | none |
+| content:3_evaluation/01_pseudoperplexity | ready | all required next-line tokens present | none |
+| content:3_evaluation/02_retrieval_tatoeba | ready | all required next-line tokens present | none |
+| content:3_evaluation/03_retrieval_bible | ready | all required next-line tokens present | none |
+| content:3_evaluation/04_text_classification | ready | all required next-line tokens present | none |
+| content:3_evaluation/05_ner | ready | all required next-line tokens present | none |
+| content:3_evaluation/06_pos | ready | all required next-line tokens present | none |
+| content:3_evaluation/07_roundtrip_alignment | ready | all required next-line tokens present | none |
+| content:3_evaluation/08_embedding_similarity | ready | all required next-line tokens present | none |
+| content:3_evaluation/09_aggregation | ready | all required next-line tokens present | none |
+| content:4_reporting | ready | all required next-line tokens present | none |
+| content:4_reporting/00_tables | ready | all required next-line tokens present | none |
+| content:4_reporting/01_figures | ready | all required next-line tokens present | none |
+| content:4_reporting/02_slides | ready | all required next-line tokens present | none |
+| content:4_reporting/03_final_report | ready | all required next-line tokens present | none |
+
+Use:
+
+- Treat `folder_readmes_ready` as a documentation-navigation guard, not
+  as a substitute for metric completion.
+- Keep stage README files synchronized after checkpoint selection,
+  post-checkpoint evaluation, and final report/PPT freeze.

@@ -1,0 +1,4 @@
+variant	status	notes
+char_coverage_1_0	MEASURED_MAIN_COMPATIBLE	SentencePiece character coverage variant; matches the current main tokenizer training condition.
+byte_fallback_0_9995	MEASURED_ABLATION	Auxiliary SentencePiece byte fallback measured separately; BYTE pieces are skipped by append-only XLM-R add_tokens selection.
+append_only_byte_limitation	DOCUMENTED_LIMITATION	Byte fallback is not faithfully activated by literal added-token matching in the XLM-R tokenizer; use as diagnostic tokenizer ablation, not the main candidate.

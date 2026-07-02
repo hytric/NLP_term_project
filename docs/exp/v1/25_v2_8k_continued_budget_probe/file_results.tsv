@@ -1,0 +1,14 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/25_v2_8k_continued_budget_probe/score_table.tsv	8	2255	d2d243b752866dc75dfbe8b2d89a5ebf	PASS	continued-budget gate table
+continued_budget_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/25_v2_8k_continued_budget_probe/continued_budget_summary.tsv	6	3047	c9d683bc3035df72cf35dd1a107728ae	PASS	per-family per-seed continuation summary
+continued_budget_curves	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/25_v2_8k_continued_budget_probe/continued_budget_curves.tsv	18	2666	5f1047561ba7ded6f874595f79edd771	PASS	source/final continuation curves
+normalized_mlm_scores	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/25_v2_8k_continued_budget_probe/normalized_mlm_scores.tsv	6	2023	45d6ca0910bf5978bff10ddf86cbf75e	PASS	normalized Mark-dev MLM diagnostics
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/25_v2_8k_continued_budget_probe/checkpoint_selection.md	23	539	5f5b342adeae1b5dffb782db0df33af1	PASS	best continued 8k checkpoint
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/25_v2_8k_continued_budget_probe/v2_no_final_access_audit.tsv	3	704	8d732684b5f8ab3221617e2e94d5cb90	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/25_v2_8k_continued_budget_probe/results.md	37	1366	e57f5ffd83bd4c02f54047954559ccbc	PASS	step result summary
+checkpoint_adapted_8k_continued_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/25_v2_8k_continued_budget_probe/adapted_8k_continued_seed13	7	1138324416	DIRECTORY	PASS	continued-budget checkpoint
+checkpoint_adapted_8k_continued_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/25_v2_8k_continued_budget_probe/adapted_8k_continued_seed17	7	1138324416	DIRECTORY	PASS	continued-budget checkpoint
+checkpoint_adapted_8k_continued_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/25_v2_8k_continued_budget_probe/adapted_8k_continued_seed23	7	1138324416	DIRECTORY	PASS	continued-budget checkpoint
+checkpoint_original_control_continued_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/25_v2_8k_continued_budget_probe/original_control_continued_seed13	6	1118322851	DIRECTORY	PASS	continued-budget checkpoint
+checkpoint_original_control_continued_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/25_v2_8k_continued_budget_probe/original_control_continued_seed17	6	1118322851	DIRECTORY	PASS	continued-budget checkpoint
+checkpoint_original_control_continued_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/25_v2_8k_continued_budget_probe/original_control_continued_seed23	6	1118322850	DIRECTORY	PASS	continued-budget checkpoint

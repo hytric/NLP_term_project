@@ -1,0 +1,7 @@
+metric	expected	actual	status
+changed existing token ids	0	0	PASS
+changed special token ids	0	0	PASS
+appended token id violations	0	0	PASS
+fallback ablation separated from main	yes	yes	PASS
+selected main tokenizer recorded	yes	provisional	IN_PROGRESS
+avg tokens/word delta pct	<0	-10.242096	PASS

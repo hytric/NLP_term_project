@@ -1,0 +1,19 @@
+run_id	model_family	seed	stage	step	continued_train_tokens	total_train_tokens	dev_loss	status	notes
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	13	source_eval	0	0	500096	4.531390	PASS	source checkpoint re-evaluated on Mark/dev
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	13	dev_eval	800	315129	815225	4.345331	PASS	scheduled Mark/dev eval
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	13	final_eval	1273	500062	1000158	4.217168	PASS	final Mark/dev eval after continuation budget
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	17	source_eval	0	0	500050	4.532407	PASS	source checkpoint re-evaluated on Mark/dev
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	17	dev_eval	800	318288	818338	4.349874	PASS	scheduled Mark/dev eval
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	17	final_eval	1263	500203	1000253	4.213274	PASS	final Mark/dev eval after continuation budget
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	23	source_eval	0	0	500068	4.531063	PASS	source checkpoint re-evaluated on Mark/dev
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	23	dev_eval	800	313031	813099	4.380503	PASS	scheduled Mark/dev eval
+step25_v2_8k_continued_budget_20260611_212536	adapted_8k	23	final_eval	1275	500326	1000394	4.253093	PASS	final Mark/dev eval after continuation budget
+step25_v2_8k_continued_budget_20260611_212536	original_control	13	source_eval	0	0	500098	2.519233	PASS	source checkpoint re-evaluated on Mark/dev
+step25_v2_8k_continued_budget_20260611_212536	original_control	13	dev_eval	800	415134	915232	2.205289	PASS	scheduled Mark/dev eval
+step25_v2_8k_continued_budget_20260611_212536	original_control	13	final_eval	967	500532	1000630	2.130090	PASS	final Mark/dev eval after continuation budget
+step25_v2_8k_continued_budget_20260611_212536	original_control	17	source_eval	0	0	500407	2.547175	PASS	source checkpoint re-evaluated on Mark/dev
+step25_v2_8k_continued_budget_20260611_212536	original_control	17	dev_eval	800	416952	917359	2.196642	PASS	scheduled Mark/dev eval
+step25_v2_8k_continued_budget_20260611_212536	original_control	17	final_eval	961	500011	1000418	2.215324	PASS	final Mark/dev eval after continuation budget
+step25_v2_8k_continued_budget_20260611_212536	original_control	23	source_eval	0	0	500394	2.468781	PASS	source checkpoint re-evaluated on Mark/dev
+step25_v2_8k_continued_budget_20260611_212536	original_control	23	dev_eval	800	413356	913750	2.201825	PASS	scheduled Mark/dev eval
+step25_v2_8k_continued_budget_20260611_212536	original_control	23	final_eval	971	500453	1000847	2.157976	PASS	final Mark/dev eval after continuation budget

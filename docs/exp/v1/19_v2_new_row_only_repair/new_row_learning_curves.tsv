@@ -1,0 +1,7 @@
+run_id	seed	stage	step	train_tokens_seen	all_loss	base_loss	added_loss	added_base_ratio	status	notes
+step19_v2_new_row_only_repair_20260611_183952	13	source	0	0	4.949584	2.568715	7.250147	2.822480	PASS	source Step15 adapted checkpoint; standard eval mask
+step19_v2_new_row_only_repair_20260611_183952	13	final	1581	500183	5.021907	2.528663	7.431056	2.938729	PASS	new-row-only final; standard eval mask
+step19_v2_new_row_only_repair_20260611_183952	17	source	0	0	4.971819	2.658720	7.260270	2.730739	PASS	source Step15 adapted checkpoint; standard eval mask
+step19_v2_new_row_only_repair_20260611_183952	17	final	1571	500065	5.081273	2.593372	7.542665	2.908439	PASS	new-row-only final; standard eval mask
+step19_v2_new_row_only_repair_20260611_183952	23	source	0	0	4.944474	2.540300	7.280602	2.866040	PASS	source Step15 adapted checkpoint; standard eval mask
+step19_v2_new_row_only_repair_20260611_183952	23	final	1578	500183	5.056530	2.501650	7.539098	3.013650	PASS	new-row-only final; standard eval mask

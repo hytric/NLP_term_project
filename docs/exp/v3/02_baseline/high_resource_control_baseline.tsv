@@ -1,0 +1,9 @@
+scope	language_id	language	script	rows	words	chars_no_space	xlmr_tokens	tokens_per_word	tokens_per_char	single_char_token_ratio	unk_rate	mean_tokens_per_row	max_tokens_per_row	model	status
+glotcc_web_sample	eng-Latn	English	Latin	5000	182305	938399	259376	1.422759	0.276403	0.185538	1.928e-05	51.8752	463	xlm-roberta-base	PASS
+glotcc_web_sample	deu-Latn	German	Latin	5000	154663	965547	256762	1.660138	0.265924	0.173741	3.116e-05	51.3524	439	xlm-roberta-base	PASS
+glotcc_web_sample	jpn-Jpan	Japanese	Japanese	5000	12384	808690	453810	36.644864	0.561167	0.523834	0.00012781	90.762	1251	xlm-roberta-base	PASS
+glotcc_web_sample	kor-Hang	Korean	Hangul	5000	217779	756722	526350	2.4169	0.695566	0.598425	8.929e-05	105.27	1309	xlm-roberta-base	PASS
+bible_control_sample	eng	English Bible	Latin	5000	131351	552703	184785	1.406803	0.33433	0.186839	0.0	36.957	91	xlm-roberta-base	PASS
+bible_control_sample	deu	German Bible	Latin	5000	109913	522698	170694	1.552992	0.326563	0.178026	0.0	34.1388	88	xlm-roberta-base	PASS
+bible_control_sample	jpn	Japanese Bible	Japanese	5000	5001	278099	182998	36.592282	0.658032	0.659898	0.00027323	36.5996	96	xlm-roberta-base	PASS
+bible_control_sample	kor	Korean Bible	Hangul	5000	72089	201920	163509	2.268155	0.809771	0.700689	0.00031191	32.7018	86	xlm-roberta-base	PASS

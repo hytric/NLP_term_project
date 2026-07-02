@@ -1,0 +1,8 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/archive_step15_300step_20260611_160304/score_table.tsv	7	1572	8fb44134b2aced11a0d9c3882d4af16c	PASS	archived 300-step gate table
+seed_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/archive_step15_300step_20260611_160304/seed_summary.tsv	6	2783	9a25a563be6dbc118a63d35d6e1c2a54	PASS	archived 300-step per-seed summary
+mlm_learning_curves	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/archive_step15_300step_20260611_160304/mlm_learning_curves.tsv	18	3100	a433bd38b0c98c1f93c71e74ade64a10	PASS	archived 300-step learning curves
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/archive_step15_300step_20260611_160304/checkpoint_selection.md	45	1387	c12c43fd4d93244a2f9d4744d32a641b	PASS	archived 300-step checkpoint selection
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/archive_step15_300step_20260611_160304/v2_no_final_access_audit.tsv	3	666	1c65885ad32c3b56c410917a98ecaa14	PASS	archived 300-step access audit
+training_configs	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/archive_step15_300step_20260611_160304/training_configs	7	3883	DIRECTORY	PASS	archived 300-step configs
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/archive_step15_300step_20260611_160304/results.md	52	1674	fd70ec18e0141ed27b113a8e2f0690a5	PASS	archived 300-step results

@@ -1,0 +1,45 @@
+# v5 Surface Overclaim Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `surface_overclaim_guard_ready`
+
+This audit scans final report/PPT source surfaces for high-risk claims
+that are only allowed inside explicit guard contexts such as `not`,
+`disallowed`, `pending`, `locked`, `아직`, or `불가`. It is designed
+to prevent a forbidden claim from leaking into the final report or deck
+as an unqualified result statement.
+
+| Item | Status | Evidence | Action |
+| --- | --- | --- | --- |
+| surface_scan:Report.md | ready | high_risk_mentions=2; unguarded=0 | none |
+| surface_scan:README.md | ready | high_risk_mentions=0; unguarded=0 | none |
+| surface_scan:Plan.md | ready | high_risk_mentions=0; unguarded=0 | none |
+| surface_scan:4_reporting/one_page_summary_ko.md | ready | high_risk_mentions=3; unguarded=0 | none |
+| surface_scan:4_reporting/submission_file_index_ko.md | ready | high_risk_mentions=2; unguarded=0 | none |
+| surface_scan:4_reporting/final_submission_handoff_ko.md | ready | high_risk_mentions=4; unguarded=0 | none |
+| surface_scan:4_reporting/02_slides/ppt_content.md | ready | high_risk_mentions=2; unguarded=0 | none |
+| surface_scan:4_reporting/02_slides/final_deck_ko.md | ready | high_risk_mentions=6; unguarded=0 | none |
+| surface_scan:4_reporting/02_slides/presenter_script_ko.md | ready | high_risk_mentions=1; unguarded=0 | none |
+| surface_scan:4_reporting/02_slides/talk_track.md | ready | high_risk_mentions=1; unguarded=0 | none |
+| surface_scan:4_reporting/02_slides/defense_qa.md | ready | high_risk_mentions=2; unguarded=0 | none |
+| surface_scan:4_reporting/02_slides/defense_qa_ko.md | ready | high_risk_mentions=5; unguarded=0 | none |
+| surface_scan:4_reporting/02_slides/novelty_defense_matrix_ko.md | ready | high_risk_mentions=4; unguarded=0 | none |
+| surface_scan:4_reporting/03_final_report/paper_draft.md | ready | high_risk_mentions=3; unguarded=0 | none |
+| surface_scan:4_reporting/03_final_report/paper_draft_ko.md | ready | high_risk_mentions=4; unguarded=0 | none |
+| surface_scan:4_reporting/03_final_report/contribution_summary.md | ready | high_risk_mentions=2; unguarded=0 | none |
+| surface_scan:4_reporting/03_final_report/reproducibility_appendix.md | ready | high_risk_mentions=1; unguarded=0 | none |
+| surface_scan:4_reporting/03_final_report/result_interpretation_blocks.md | ready | high_risk_mentions=0; unguarded=0 | none |
+| rendered_surface_scan:4_reporting/02_slides/v5_final_deck_ko.html | ready | reader=text; high_risk_mentions=6; unguarded=0 | none |
+| rendered_surface_scan:4_reporting/02_slides/v5_final_deck_ko.pdf | ready | reader=pdftotext; high_risk_mentions=6; unguarded=0 | none |
+| rendered_surface_scan:4_reporting/03_final_report/paper_draft.html | ready | reader=text; high_risk_mentions=3; unguarded=0 | none |
+| rendered_surface_scan:4_reporting/03_final_report/paper_draft.pdf | ready | reader=pdftotext; high_risk_mentions=3; unguarded=0 | none |
+| rendered_surface_scan:4_reporting/03_final_report/paper_draft_ko.html | ready | reader=text; high_risk_mentions=4; unguarded=0 | none |
+| rendered_surface_scan:4_reporting/03_final_report/paper_draft_ko.pdf | ready | reader=pdftotext; high_risk_mentions=3; unguarded=0 | none |
+| rendered_surface_scan_summary | ready | high_risk_mentions=25; unguarded=0 | none |
+| surface_scan_summary | ready | high_risk_mentions=42; unguarded=0 | none |
+| safe_boundary_terms:Report.md | ready | all safe terms present | none |
+| safe_boundary_terms:4_reporting/02_slides/final_deck_ko.md | ready | all safe terms present | none |
+| safe_boundary_terms:4_reporting/03_final_report/paper_draft.md | ready | all safe terms present | none |
+| safe_boundary_terms:4_reporting/03_final_report/paper_draft_ko.md | ready | all safe terms present | none |
+| safe_boundary_terms:4_reporting/02_slides/presenter_script_ko.md | ready | all safe terms present | none |

@@ -1,0 +1,11 @@
+iso	language	bible_mlm	bible_retrieval_proxy	clean_final_act	local_official_downstream	status	notes
+acu	Achuar-Shiwiar	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval
+ake	Akawaio	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval
+bsn	Barasana-Eduria	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval
+chr	Cherokee	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval
+cop	Coptic	available	available	available	UD_Coptic-Scriptorium	MAIN_WITH_EXTRA_DOWNSTREAM	local UD Coptic train/dev/test available
+kbh	Camsa	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval
+nhg	Nahuatl Tetelcingo	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval
+oji	Ojibwa	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval
+syr	Syriac	available	available	available	aligned_bible_diagnostic	MAIN_WITH_DIAGNOSTIC	local aligned Bible diagnostics available; official downstream not locally confirmed
+usp	Uspanteco	available	available	available	none_confirmed	MAIN_WITH_PROXY	official downstream not locally confirmed; use representation/proxy plus shared target10 eval

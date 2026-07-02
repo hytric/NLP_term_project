@@ -1,0 +1,11 @@
+check_id	check	evidence	required	status	notes
+P01	All step folders through Step27 exist	docs/exp/second_try/00-27 step folders	00-27 present	PASS	Step27 added as manuscript synthesis
+P02	Each completed step has results score and file ledger	glob docs/exp/second_try/**/results.md; score_table.tsv; file_results.tsv	no missing required files	PASS	Validated after Step27
+P03	Score tables have no blanks or TBDs	all score_table.tsv	bad cells=0	PASS	Validated after Step27
+P04	File ledgers match current files	all file_results.tsv	path exists and file md5/bytes match	PASS	Validated after Step27
+P05	TSV column widths are consistent	all docs/exp/second_try/**/*.tsv	width issues=0	PASS	Validated after Step27
+P06	No v2 final access in synthesis path	v2_no_final_access_audit.tsv rows	final_access=NO and status PASS	PASS	Step13-27 no-final rows checked
+P07	Positive adapted-model claim removed	Step26/27 claim files	positive_claim_ready=0	PASS	Forbidden wording documented
+P08	Step23 overclaim prevented	Step26/27 claim files	Step23 labelled partial support only	PASS	Step24/25 failures cited
+P09	Translation success claim removed	Step09/10/26/27 files	translation ratio below 0.800000 and v1 shortcut invalidated	PASS	Method-matched failure cited
+P10	Future positive path documented	Step26 next_positive_experiments.tsv; Step27 reviewer audit	P0 controls and ACT freeze rules present	PASS	Positive path remains possible but not claimed

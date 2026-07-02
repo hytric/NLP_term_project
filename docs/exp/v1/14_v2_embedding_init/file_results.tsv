@@ -1,0 +1,13 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/score_table.tsv	5	1474	0ddabaff3bca65a85b2c3561c8171352	PASS	v2 init gate table
+embedding_init_scores	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/v2_embedding_init_scores.tsv	5	1474	0ddabaff3bca65a85b2c3561c8171352	PASS	v2 init scores
+zero_step_mlm	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/v2_zero_step_mlm.tsv	5	510	16c6da6d0c230cc1ecefc015c779f464	PASS	full Mark/dev zero-step MLM losses
+nearest_neighbors	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/v2_nearest_neighbors.md	43	1862	a546c29d7d7be5722b1ffdd2a7b1a83d	PASS	nearest-neighbor diagnostics
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/v2_no_final_access_audit.tsv	2	481	9d3e1607e56cd2a72250338de9a551c0	PASS	input access audit
+selected_init	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/selected_init.md	13	329	c175da5813a37281d7eaea5c49cb46c9	PASS	selected v2 init pointer
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/results.md	41	1052	c6e030ca717e91335e9fe169465f1b41	PASS	step result summary
+checkpoint_xlmr_v2_32000_random	/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_random	7	1208494151	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_32000_mean	/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_mean	7	1208494150	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_32000_fvt	/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_fvt	7	1208494148	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_32000_align	/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_align	7	1208494154	DIRECTORY	PASS	initialized checkpoint
+checkpoint_xlmr_v2_32000_focus	/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_focus	7	1208494155	DIRECTORY	PASS	initialized checkpoint

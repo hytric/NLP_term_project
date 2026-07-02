@@ -1,0 +1,11 @@
+decision	value	status	evidence
+base_model	xlm-roberta-base	LOCKED	scope_lock_20260612.md
+scale_baseline	xlm-roberta-large excluded	LOCKED	scope_lock_20260612.md
+main_target_set	acu,ake,bsn,chr,cop,kbh,nhg,oji,syr,usp	LOCKED	language_inventory.tsv
+coptic_syriac_role	main experiment	LOCKED	language_inventory.tsv
+true_high_resource_web	GlotCC-V1 eng-Latn,deu-Latn,jpn-Jpan,kor-Hang	LOCKED	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/high_resource_glotcc_manifest.tsv
+domain_matched_control	Bible English,German,Japanese,Korean	LOCKED	high_resource_inventory.tsv
+low_resource_split	second_try V2 clean split	LOCKED	current_dataset_inventory.md
+main_training	high-resource + low-resource full-model MLM	LOCKED	mixture_contract.tsv
+embedding_init	random plus non-random methods, >=3 seeds	LOCKED	scope_lock_20260612.md
+downstream_claim	target10 downstream improvement required	LOCKED	scope_lock_20260612.md

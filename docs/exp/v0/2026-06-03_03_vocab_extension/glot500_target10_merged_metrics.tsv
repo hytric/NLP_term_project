@@ -1,0 +1,11 @@
+tokenizer	model_name	iso	language	script	sentences	avg_chars	avg_words	avg_tokens	tokens_per_word	tokens_per_char	single_char_token_pct	unk_token_pct
+glot500_target10	data/processed/target10/glot500_target10_spm16k	acu	Achuar-Shiwiar	Latin	500	174.368	24.164	38.642	1.599	0.222	16.764	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	ake	Akawaio	Latin	500	118.452	23.266	47.070	2.023	0.397	34.561	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	bsn	Barasana-Eduria	Latin	500	184.680	28.334	44.672	1.577	0.242	23.455	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	chr	Cherokee	Cherokee	500	67.472	15.066	30.154	2.001	0.447	37.388	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	cop	Coptic	Coptic	500	81.590	14.752	26.246	1.779	0.322	15.172	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	kbh	Camsa	Latin	500	259.896	34.392	57.384	1.669	0.221	17.960	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	nhg	Nahuatl (Tetelcingo)	Latin	500	165.714	23.972	35.838	1.495	0.216	14.722	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	oji	Ojibwa	Aboriginal Syllabics	500	83.464	17.560	38.714	2.205	0.464	37.924	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	syr	Syriac	Syriac	500	56.572	13.836	22.146	1.601	0.391	18.414	0.000
+glot500_target10	data/processed/target10/glot500_target10_spm16k	usp	Uspanteco	Latin	500	165.926	31.538	59.890	1.899	0.361	35.675	0.000

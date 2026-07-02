@@ -1,0 +1,103 @@
+language_script	group	source_sentences	sampling_probability_pct	planned_samples	actual_samples	input_dir	exists_on_disk	status	notes
+lao_Laoo	seen	66966		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/lao_Laoo	yes	PASS	
+mya_Mymr	seen	945180		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/mya_Mymr	yes	PASS	
+ara_Arab	seen	24524122		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ara_Arab	yes	PASS	
+mar_Deva	seen	28748897		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/mar_Deva	yes	PASS	
+hau_Latn	seen	4368483		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/hau_Latn	yes	PASS	
+uzb_Latn	seen	3223485		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/uzb_Latn	yes	PASS	
+slv_Latn	seen	15719210		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/slv_Latn	yes	PASS	
+fin_Latn	seen	16730388		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/fin_Latn	yes	PASS	
+hun_Latn	seen	18800025		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/hun_Latn	yes	PASS	
+cmn_Hani	seen	80745		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/cmn_Hani	yes	PASS	
+est_Latn	seen	13600579		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/est_Latn	yes	PASS	
+bre_Latn	seen	748954		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/bre_Latn	yes	PASS	
+hrv_Latn	seen	17882932		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/hrv_Latn	yes	PASS	
+jav_Latn	seen	516833		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/jav_Latn	yes	PASS	
+ron_Latn	seen	19190217		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ron_Latn	yes	PASS	
+ell_Grek	seen	22033282		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ell_Grek	yes	PASS	
+nor_Latn	seen	14576191		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/nor_Latn	yes	PASS	
+slk_Latn	seen	14633631		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/slk_Latn	yes	PASS	
+vie_Latn	seen	15697827		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/vie_Latn	yes	PASS	
+amh_Ethi	seen	2862985		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/amh_Ethi	yes	PASS	
+epo_Latn	seen	8737198		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/epo_Latn	yes	PASS	
+bel_Cyrl	seen	5319675		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/bel_Cyrl	yes	PASS	
+xho_Latn	seen	1262364		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/xho_Latn	yes	PASS	
+hin_Deva	seen	7046700		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/hin_Deva	yes	PASS	
+tam_Taml	seen	3388255		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/tam_Taml	yes	PASS	
+mon_Cyrl	seen	4616960		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/mon_Cyrl	yes	PASS	
+ces_Latn	seen	20376340		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ces_Latn	yes	PASS	
+san_Deva	seen	165616		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/san_Deva	yes	PASS	
+hye_Armn	seen	1463123		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/hye_Armn	yes	PASS	
+pus_Arab	seen	731992		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/pus_Arab	yes	PASS	
+som_Arab	seen	14199		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/som_Arab	yes	PASS	
+kan_Knda	seen	41836495		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/kan_Knda	yes	PASS	
+isl_Latn	seen	19547941		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/isl_Latn	yes	PASS	
+ori_Orya	seen	410827		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ori_Orya	yes	PASS	
+afr_Latn	seen	5157787		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/afr_Latn	yes	PASS	
+deu_Latn	seen	31015993		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/deu_Latn	yes	PASS	
+urd_Arab	seen	6009594		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/urd_Arab	yes	PASS	
+bul_Cyrl	seen	21823004		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/bul_Cyrl	yes	PASS	
+tgl_Latn	seen	7411064		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/tgl_Latn	yes	PASS	
+eus_Latn	seen	12775959		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/eus_Latn	yes	PASS	
+pol_Latn	seen	19339945		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/pol_Latn	yes	PASS	
+lat_Latn	seen	1179913		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/lat_Latn	yes	PASS	
+tur_Latn	seen	29184662		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/tur_Latn	yes	PASS	
+fra_Latn	seen	39197581		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/fra_Latn	yes	PASS	
+cat_Latn	seen	8648271		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/cat_Latn	yes	PASS	
+uig_Arab	seen	307302		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/uig_Arab	yes	PASS	
+arb_Arab	seen	159884		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/arb_Arab	yes	PASS	
+sqi_Latn	seen	5526836		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/sqi_Latn	yes	PASS	
+sin_Sinh	seen	7293178		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/sin_Sinh	yes	PASS	
+msa_Latn	seen	3929084		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/msa_Latn	yes	PASS	
+swh_Latn	seen	95776		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/swh_Latn	yes	PASS	
+kor_Hang	seen	6468444		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/kor_Hang	yes	PASS	
+ukr_Cyrl	seen	7462046		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ukr_Cyrl	yes	PASS	
+kir_Cyrl	seen	1397566		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/kir_Cyrl	yes	PASS	
+yid_Hebr	seen	220214		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/yid_Hebr	yes	PASS	
+heb_Hebr	seen	18128962		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/heb_Hebr	yes	PASS	
+nld_Latn	seen	25061426		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/nld_Latn	yes	PASS	
+fry_Latn	seen	957422		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/fry_Latn	yes	PASS	
+azb_Arab	seen	33758		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/azb_Arab	yes	PASS	
+glg_Latn	seen	17852274		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/glg_Latn	yes	PASS	
+fas_Arab	seen	18277593		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/fas_Arab	yes	PASS	
+eng_Latn	seen	36122761		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/eng_Latn	yes	PASS	
+mkd_Cyrl	seen	14717004		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/mkd_Cyrl	yes	PASS	
+ind_Latn	seen	23018106		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ind_Latn	yes	PASS	
+por_Latn	seen	27824391		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/por_Latn	yes	PASS	
+spa_Latn	seen	37286756		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/spa_Latn	yes	PASS	
+dan_Latn	seen	19174573		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/dan_Latn	yes	PASS	
+khm_Khmr	seen	590429		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/khm_Khmr	yes	PASS	
+gla_Latn	seen	152563		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/gla_Latn	yes	PASS	
+uig_Latn	seen	9637		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/uig_Latn	yes	PASS	
+kat_Geor	seen	1004297		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/kat_Geor	yes	PASS	
+mlg_Latn	seen	3715802		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/mlg_Latn	yes	PASS	
+snd_Arab	seen	488730		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/snd_Arab	yes	PASS	
+ita_Latn	seen	23539857		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/ita_Latn	yes	PASS	
+hau_Arab	seen	9593		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/hau_Arab	yes	PASS	
+cym_Latn	seen	1244783		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/cym_Latn	yes	PASS	
+srp_Latn	seen	18371769		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/srp_Latn	yes	PASS	
+zho_Hani	seen	24143786		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/zho_Hani	yes	PASS	
+tha_Thai	seen	7735209		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/tha_Thai	yes	PASS	
+swe_Latn	seen	20725883		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/swe_Latn	yes	PASS	
+pan_Guru	seen	29052537		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/pan_Guru	yes	PASS	
+prs_Arab	seen	26823		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/prs_Arab	yes	PASS	
+pes_Arab	seen	57511		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/pes_Arab	yes	PASS	
+san_Latn	seen	25742		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/san_Latn	yes	PASS	
+kaz_Cyrl	seen	12378727		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/kaz_Cyrl	yes	PASS	
+kur_Latn	seen	407169		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/kur_Latn	yes	PASS	
+mal_Mlym	seen	48098273		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/mal_Mlym	yes	PASS	
+nep_Deva	seen	1317291		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/nep_Deva	yes	PASS	
+gle_Latn	seen	7225513		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/gle_Latn	yes	PASS	
+swa_Latn	seen	5989369		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/swa_Latn	yes	PASS	
+som_Latn	seen	3916769		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/som_Latn	yes	PASS	
+lit_Latn	seen	12479626		10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/lit_Latn	yes	PASS	
+fur_Latn	unseen	30052	9.48138733	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/fur_Latn	yes	PASS	
+krc_Cyrl	unseen	30353	9.50977761	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/krc_Cyrl	yes	PASS	
+acm_Arab	unseen	44505	10.66675981	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/acm_Arab	yes	PASS	
+dzo_Tibt	unseen	52732	11.22359915	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/dzo_Tibt	yes	PASS	
+sat_Olck	unseen	39614	10.30064651	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/sat_Olck	yes	PASS	
+mad_Latn	unseen	38993	10.2519356	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/mad_Latn	yes	PASS	
+bam_Latn	unseen	32150	9.67529393	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/bam_Latn	yes	PASS	
+kjb_Latn	unseen	31471	9.61353335	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/kjb_Latn	yes	PASS	
+quw_Latn	unseen	33449	9.79094962	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/quw_Latn	yes	PASS	
+rap_Latn	unseen	30102	9.48611707	10000	10000	/home/axt/mnt2/jongha/v5_glot50010/raw/rap_Latn	yes	PASS	

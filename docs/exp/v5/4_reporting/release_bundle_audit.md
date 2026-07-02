@@ -1,0 +1,240 @@
+# v5 Release Bundle Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `release_bundle_audit_needs_repair`
+
+This audit checks the report/PPT release bundle: copied file
+presence, byte sizes, PDF/PPTX/HTML readability, slide/page/heading
+counts, Q&A/rehearsal/claim-guard content, README coverage, and the
+explicit bundle status.
+
+| Item | Status | Evidence | Action |
+| --- | --- | --- | --- |
+| bundle_readme | ready | 4_reporting/release_bundle/README.md | none |
+| execution_draft_guard | ready | README records bundle status | none |
+| bundle_manifest | ready | rows=142 | none |
+| bundle_file:reports/paper_draft.pdf | ready | bytes=127722; expected=127722 | none |
+| bundle_file:reports/paper_draft_ko.pdf | ready | bytes=210539; expected=210539 | none |
+| bundle_file:reports/paper_draft.html | ready | bytes=42091; expected=42091 | none |
+| bundle_file:reports/paper_draft_ko.html | ready | bytes=30967; expected=30967 | none |
+| bundle_file:reports/paper_draft.md | ready | bytes=31375; expected=31375 | none |
+| bundle_file:reports/paper_draft_ko.md | ready | bytes=23944; expected=23944 | none |
+| bundle_file:reports/contribution_summary.md | ready | bytes=5087; expected=5087 | none |
+| bundle_file:reports/result_interpretation_blocks.md | ready | bytes=20266; expected=20266 | none |
+| bundle_file:reports/manuscript_completion_matrix.md | ready | bytes=7460; expected=7460 | none |
+| bundle_file:reports/paper_build_spec.md | ready | bytes=11019; expected=11019 | none |
+| bundle_file:reports/references.bib | ready | bytes=1845; expected=1845 | none |
+| bundle_file:reports/citation_source_map.md | ready | bytes=3133; expected=3133 | none |
+| bundle_file:reports/external_source_verification.md | ready | bytes=4216; expected=4216 | none |
+| bundle_file:slides/v5_final_deck_ko.pptx | ready | bytes=30236; expected=30236 | none |
+| bundle_file:slides/v5_final_deck_ko.pdf | ready | bytes=80525; expected=80525 | none |
+| bundle_file:slides/v5_final_deck_ko.html | ready | bytes=16259; expected=16259 | none |
+| bundle_file:slides/final_deck_ko.md | ready | bytes=9241; expected=9241 | none |
+| bundle_file:slides/presenter_script_ko.md | ready | bytes=18148; expected=18148 | none |
+| bundle_file:slides/rehearsal_plan_ko.md | ready | bytes=10075; expected=10075 | none |
+| bundle_file:slides/slide_claim_checklist.md | ready | bytes=3310; expected=3310 | none |
+| bundle_file:slides/slide_completion_matrix.md | ready | bytes=5878; expected=5878 | none |
+| bundle_file:slides/deck_build_spec.md | ready | bytes=8801; expected=8801 | none |
+| bundle_file:slides/slide_asset_manifest.md | ready | bytes=7318; expected=7318 | none |
+| bundle_file:slides/slide_asset_manifest.tsv | ready | bytes=6465; expected=6465 | none |
+| bundle_file:slides/slide_citation_map.md | ready | bytes=3993; expected=3993 | none |
+| bundle_file:slides/defense_qa_ko.md | ready | bytes=13909; expected=13909 | none |
+| bundle_file:slides/defense_qa.md | ready | bytes=11637; expected=11637 | none |
+| bundle_file:slides/novelty_defense_matrix_ko.md | ready | bytes=8651; expected=8651 | none |
+| bundle_file:handoff/one_page_summary_ko.md | ready | bytes=9170; expected=9170 | none |
+| bundle_file:handoff/presentation_readiness_checklist_ko.md | ready | bytes=4904; expected=4904 | none |
+| bundle_file:handoff/submission_file_index_ko.md | ready | bytes=5632; expected=5632 | none |
+| bundle_file:handoff/reviewer_response_crosswalk_ko.md | ready | bytes=7985; expected=7985 | none |
+| bundle_file:handoff/final_submission_handoff_ko.md | ready | bytes=11043; expected=11043 | none |
+| bundle_file:handoff/objective_requirement_trace_ko.md | ready | bytes=9528; expected=9528 | none |
+| bundle_file:handoff/objective_requirement_trace_ko.tsv | ready | bytes=7883; expected=7883 | none |
+| bundle_file:handoff/objective_completion_audit.md | ready | bytes=10369; expected=10369 | none |
+| bundle_file:handoff/objective_completion_audit.tsv | ready | bytes=9098; expected=9098 | none |
+| bundle_file:handoff/goal_readiness.md | ready | bytes=5628; expected=5628 | none |
+| bundle_file:handoff/goal_readiness.tsv | ready | bytes=3269; expected=3269 | none |
+| bundle_file:handoff/folder_readme_audit.md | ready | bytes=19870; expected=19870 | none |
+| bundle_file:handoff/folder_readme_audit.tsv | ready | bytes=17876; expected=17876 | none |
+| bundle_file:handoff/final_goal_acceptance_rubric_ko.md | ready | bytes=10819; expected=10819 | none |
+| bundle_file:handoff/final_result_update_checklist_ko.md | ready | bytes=13268; expected=13268 | none |
+| bundle_file:handoff/post_checkpoint_trigger_card_ko.md | ready | bytes=5288; expected=5288 | none |
+| bundle_file:handoff/post_checkpoint_outcome_matrix_ko.md | ready | bytes=11938; expected=11938 | none |
+| bundle_file:handoff/post_result_patch_plan_ko.md | ready | bytes=11971; expected=11971 | none |
+| bundle_file:handoff/post_result_patch_plan.tsv | ready | bytes=8463; expected=8463 | none |
+| bundle_file:handoff/final_freeze_protocol_ko.md | ready | bytes=9817; expected=9817 | none |
+| bundle_file:handoff/final_freeze_evidence_checklist_ko.md | ready | bytes=4643; expected=4643 | none |
+| bundle_file:handoff/final_handoff_runbook.md | ready | bytes=7420; expected=7420 | none |
+| bundle_file:handoff/final_action_dashboard_ko.md | ready | bytes=10092; expected=10092 | none |
+| bundle_file:handoff/final_action_dashboard_ko.tsv | ready | bytes=7790; expected=7790 | none |
+| bundle_file:handoff/final_assembly_manifest.md | ready | bytes=3934; expected=3934 | none |
+| bundle_file:handoff/final_assembly_manifest.tsv | ready | bytes=3004; expected=3004 | none |
+| bundle_file:handoff/result_delay_contingency_ko.md | ready | bytes=5752; expected=5752 | none |
+| bundle_file:final_claim_decision_tree.md | ready | bytes=2867; expected=2867 | none |
+| bundle_file:final_claim_decision_tree.tsv | ready | bytes=2559; expected=2559 | none |
+| bundle_file:claim_promotion_matrix.md | ready | bytes=4416; expected=4416 | none |
+| bundle_file:claim_promotion_matrix.tsv | ready | bytes=3459; expected=3459 | none |
+| bundle_file:handoff/post_checkpoint_execution_plan.md | ready | bytes=7837; expected=7837 | none |
+| bundle_file:handoff/post_checkpoint_eval_recovery.md | ready | bytes=7628; expected=7628 | none |
+| bundle_file:handoff/metric_mapping.md | ready | bytes=6380; expected=6380 | none |
+| bundle_file:handoff/glot500_metric_requirements.md | ready | bytes=4173; expected=4173 | none |
+| bundle_file:audits/training_loss_snapshot.md | ready | bytes=2019; expected=2019 | none |
+| bundle_file:audits/training_loss_snapshot.tsv | ready | bytes=31183; expected=31183 | none |
+| bundle_file:audits/post_checkpoint_provenance_audit.md | ready | bytes=13960; expected=13960 | none |
+| bundle_file:audits/post_checkpoint_provenance_audit.tsv | ready | bytes=12357; expected=12357 | none |
+| bundle_file:handoff/result_insertion_matrix.md | ready | bytes=11586; expected=11586 | none |
+| bundle_file:handoff/result_slot_inventory.md | ready | bytes=15072; expected=15072 | none |
+| bundle_file:handoff/result_slot_inventory.tsv | ready | bytes=16018; expected=16018 | none |
+| bundle_file:handoff/pending_result_registry.md | ready | bytes=5725; expected=5725 | none |
+| bundle_file:handoff/post_result_update_manifest.md | ready | bytes=6050; expected=6050 | none |
+| bundle_file:handoff/report_slide_crosswalk.md | ready | bytes=6146; expected=6146 | none |
+| bundle_file:handoff/final_package_checklist.md | ready | bytes=33120; expected=33120 | none |
+| bundle_file:handoff/source_map.md | ready | bytes=26469; expected=26469 | none |
+| bundle_file:tables/table_01_data_scope.md | ready | bytes=1415; expected=1415 | none |
+| bundle_file:tables/table_02_tokenizer_audit.md | ready | bytes=1381; expected=1381 | none |
+| bundle_file:tables/table_03_initialization_zero_step.md | ready | bytes=1259; expected=1259 | none |
+| bundle_file:tables/table_04_evaluation_coverage.md | ready | bytes=1940; expected=1940 | none |
+| bundle_file:tables/table_04_evaluation_coverage.tsv | ready | bytes=1093; expected=1093 | none |
+| bundle_file:tables/table_05_training_status.md | ready | bytes=1627; expected=1627 | none |
+| bundle_file:tables/table_06_pppl_partial.md | ready | bytes=1765; expected=1765 | none |
+| bundle_file:tables/table_07_tatoeba_partial.md | ready | bytes=1724; expected=1724 | none |
+| bundle_file:tables/table_08_text_classification_partial.md | ready | bytes=1291; expected=1291 | none |
+| bundle_file:tables/table_09_blocked_metric_notes.md | ready | bytes=2201; expected=2201 | none |
+| bundle_file:tables/table_10_ner_partial.md | ready | bytes=1717; expected=1717 | none |
+| bundle_file:tables/table_11_pos_partial.md | ready | bytes=1376; expected=1376 | none |
+| bundle_file:tables/table_12_bible_partial.md | ready | bytes=2438; expected=2438 | none |
+| bundle_file:tables/table_13_metric_fidelity_matrix.md | ready | bytes=4271; expected=4271 | none |
+| bundle_file:tables/table_14_roundtrip_partial.md | ready | bytes=2442; expected=2442 | none |
+| bundle_file:tables/table_15_glot500_reproduction_fidelity.md | ready | bytes=3887; expected=3887 | none |
+| bundle_file:figures/figure_plan.md | ready | bytes=2876; expected=2876 | none |
+| bundle_file:figures/captions.md | ready | bytes=1923; expected=1923 | none |
+| bundle_file:figures/figure_manifest.tsv | ready | bytes=1782; expected=1782 | none |
+| bundle_file:figures/figure_01_experiment_pipeline.png | ready | bytes=192288; expected=192288 | none |
+| bundle_file:figures/figure_01_experiment_pipeline.svg | ready | bytes=80712; expected=80712 | none |
+| bundle_file:figures/figure_02_tokenizer_fertility_delta.png | ready | bytes=138768; expected=138768 | none |
+| bundle_file:figures/figure_02_tokenizer_fertility_delta.svg | ready | bytes=57339; expected=57339 | none |
+| bundle_file:figures/figure_03_zero_step_initialization.png | ready | bytes=62392; expected=62392 | none |
+| bundle_file:figures/figure_03_zero_step_initialization.svg | ready | bytes=32541; expected=32541 | none |
+| bundle_file:figures/figure_05_evaluation_coverage.png | ready | bytes=60816; expected=60816 | none |
+| bundle_file:figures/figure_05_evaluation_coverage.svg | ready | bytes=33757; expected=33757 | none |
+| bundle_file:handoff/metric_execution_ledger.md | ready | bytes=3709; expected=3709 | none |
+| bundle_file:handoff/metric_execution_ledger.tsv | ready | bytes=2598; expected=2598 | none |
+| bundle_file:audits/metric_surface_completeness_audit.md | ready | bytes=4039; expected=4039 | none |
+| bundle_file:audits/metric_surface_completeness_audit.tsv | ready | bytes=2802; expected=2802 | none |
+| bundle_file:audits/rendered_artifact_freshness_audit.md | ready | bytes=2506; expected=2506 | none |
+| bundle_file:audits/rendered_artifact_freshness_audit.tsv | ready | bytes=1723; expected=1723 | none |
+| bundle_file:audits/deliverable_openability_audit.md | ready | bytes=1684; expected=1684 | none |
+| bundle_file:audits/deliverable_openability_audit.tsv | ready | bytes=1133; expected=1133 | none |
+| bundle_file:handoff/release_manifest.md | ready | bytes=16554; expected=16554 | none |
+| bundle_file:handoff/release_manifest.tsv | ready | bytes=22426; expected=22426 | none |
+| bundle_file:audits/method_comparison_summary.md | ready | bytes=3819; expected=3819 | none |
+| bundle_file:audits/method_comparison_summary.tsv | ready | bytes=5636; expected=5636 | none |
+| bundle_file:audits/comparison_materiality_audit.md | ready | bytes=3986; expected=3986 | none |
+| bundle_file:audits/comparison_materiality_audit.tsv | ready | bytes=3753; expected=3753 | none |
+| bundle_file:audits/result_insertion_contract_audit.md | ready | bytes=2506; expected=2506 | none |
+| bundle_file:audits/result_insertion_contract_audit.tsv | ready | bytes=1405; expected=1405 | none |
+| bundle_file:audits/claim_source_contract_audit.md | ready | bytes=7828; expected=7828 | none |
+| bundle_file:audits/claim_source_contract_audit.tsv | ready | bytes=6817; expected=6817 | none |
+| bundle_file:audits/reporting_package_audit.md | ready | bytes=41398; expected=41398 | none |
+| bundle_file:audits/final_deliverable_audit.md | ready | bytes=7989; expected=7989 | none |
+| bundle_file:audits/final_submission_smoke_audit.md | ready | bytes=2873; expected=2873 | none |
+| bundle_file:audits/final_submission_smoke_audit.tsv | ready | bytes=1903; expected=1903 | none |
+| bundle_file:audits/execution_readiness_review_ko.md | ready | bytes=6033; expected=6033 | none |
+| bundle_file:audits/final_claim_freeze_audit.md | ready | bytes=2612; expected=2612 | none |
+| bundle_file:audits/final_evidence_packet_audit.md | ready | bytes=3547; expected=3547 | none |
+| bundle_file:audits/final_evidence_packet_audit.tsv | ready | bytes=2736; expected=2736 | none |
+| bundle_file:audits/result_promotion_readiness_audit.md | ready | bytes=3080; expected=3080 | none |
+| bundle_file:audits/metric_fidelity_audit.md | ready | bytes=2996; expected=2996 | none |
+| bundle_file:audits/slide_rendering_audit.md | ready | bytes=1035; expected=1035 | none |
+| bundle_file:audits/slide_rendering_audit.tsv | ready | bytes=444; expected=444 | none |
+| bundle_file:audits/surface_overclaim_audit.md | ready | bytes=3895; expected=3895 | none |
+| bundle_file:audits/refresh_sequence_sync_audit.md | ready | bytes=1624; expected=1624 | none |
+| bundle_file:audits/post_checkpoint_command_consistency.md | ready | bytes=3390; expected=3390 | none |
+| bundle_file:audits/post_checkpoint_preflight.md | ready | bytes=2814; expected=2814 | none |
+| bundle_file:audits/post_checkpoint_preflight.tsv | ready | bytes=1941; expected=1941 | none |
+| bundle_file:scripts/run_v5_ready_to_final_package.sh | ready | bytes=2876; expected=2876 | none |
+| bundle_file:audits/checkpoint_selection_contract_audit.md | ready | bytes=1384; expected=1384 | none |
+| bundle_file:audits/live_training_health.md | ready | bytes=1681; expected=1681 | none |
+| bundle_file:audits/storage_readiness.md | ready | bytes=2999; expected=2999 | none |
+| bundle_file:audits/paired_launcher_transition.md | ready | bytes=1642; expected=1642 | none |
+| pdf_magic:reports/paper_draft.pdf | ready | 4_reporting/release_bundle/reports/paper_draft.pdf | none |
+| pdf_magic:reports/paper_draft_ko.pdf | ready | 4_reporting/release_bundle/reports/paper_draft_ko.pdf | none |
+| pdf_magic:slides/v5_final_deck_ko.pdf | ready | 4_reporting/release_bundle/slides/v5_final_deck_ko.pdf | none |
+| pdf_page_count:reports/paper_draft.pdf | ready | pages=28 | none |
+| pdf_page_count:reports/paper_draft_ko.pdf | ready | pages=19 | none |
+| pdf_page_count:slides/v5_final_deck_ko.pdf | ready | pages=15; expected=15 | none |
+| pptx_zip_structure | ready | 4_reporting/release_bundle/slides/v5_final_deck_ko.pptx | none |
+| pptx_slide_count | ready | slides=15; expected=15 | none |
+| html_slide_count:slides/v5_final_deck_ko.html | ready | slides=15; expected=15 | none |
+| html_heading_count:reports/paper_draft.html | ready | headings=16 | none |
+| html_heading_count:reports/paper_draft_ko.html | ready | headings=12 | none |
+| qa_question_count:slides/defense_qa_ko.md | ready | questions=19; minimum=17 | none |
+| qa_question_count:slides/defense_qa.md | ready | questions=19; minimum=15 | none |
+| rehearsal_plan_content:slides/rehearsal_plan_ko.md | ready | all required terms present | none |
+| reports_readme_content:reports/README.md | ready | all required terms present | none |
+| slides_readme_content:slides/README.md | ready | all required terms present | none |
+| handoff_readme_content:handoff/README.md | ready | all required terms present | none |
+| slide_claim_checklist_content:slides/slide_claim_checklist.md | ready | all required terms present | none |
+| metric_coverage_table_content:slides/final_deck_ko.md | ready | all required terms present | none |
+| novelty_defense_matrix_content:slides/novelty_defense_matrix_ko.md | ready | all required terms present | none |
+| contribution_summary_content:reports/contribution_summary.md | ready | all required terms present | none |
+| references_content:reports/references.bib | ready | all required terms present | none |
+| citation_source_map_content:reports/citation_source_map.md | ready | all required terms present | none |
+| external_source_verification_content:reports/external_source_verification.md | ready | all required terms present | none |
+| slide_citation_map_content:slides/slide_citation_map.md | ready | all required terms present | none |
+| metric_mapping_content:handoff/metric_mapping.md | ready | all required terms present | none |
+| metric_requirements_content:handoff/glot500_metric_requirements.md | ready | all required terms present | none |
+| slide_rendering_audit_content:audits/slide_rendering_audit.md | ready | all required terms present | none |
+| compressed_defense_qa_content:slides/defense_qa_ko.md | ready | all required terms present | none |
+| handoff_content:handoff/final_submission_handoff_ko.md | ready | all required terms present | none |
+| comparison_materiality_content:audits/comparison_materiality_audit.md | ready | all required terms present | none |
+| result_insertion_contract_content:audits/result_insertion_contract_audit.md | ready | all required terms present | none |
+| claim_source_contract_content:audits/claim_source_contract_audit.md | ready | all required terms present | none |
+| result_interpretation_blocks_content:reports/result_interpretation_blocks.md | ready | all required terms present | none |
+| evaluation_coverage_table_content:tables/table_04_evaluation_coverage.md | ready | all required terms present | none |
+| metric_fidelity_table_content:tables/table_13_metric_fidelity_matrix.md | ready | all required terms present | none |
+| metric_surface_completeness_content:audits/metric_surface_completeness_audit.md | ready | all required terms present | none |
+| rendered_artifact_freshness_content:audits/rendered_artifact_freshness_audit.md | ready | all required terms present | none |
+| deliverable_openability_content:audits/deliverable_openability_audit.md | ready | all required terms present | none |
+| roundtrip_table_content:tables/table_14_roundtrip_partial.md | ready | all required terms present | none |
+| reproduction_fidelity_table_content:tables/table_15_glot500_reproduction_fidelity.md | ready | all required terms present | none |
+| post_checkpoint_execution_plan_content:handoff/post_checkpoint_execution_plan.md | ready | all required terms present | none |
+| goal_readiness_content:handoff/goal_readiness.md | ready | all required terms present | none |
+| goal_readiness_tsv_content:handoff/goal_readiness.tsv | ready | all required terms present | none |
+| post_checkpoint_eval_recovery_content:handoff/post_checkpoint_eval_recovery.md | ready | all required terms present | none |
+| post_checkpoint_trigger_card_content:handoff/post_checkpoint_trigger_card_ko.md | ready | all required terms present | none |
+| post_checkpoint_preflight_content:audits/post_checkpoint_preflight.md | ready | all required terms present | none |
+| post_checkpoint_provenance_content:audits/post_checkpoint_provenance_audit.md | ready | all required terms present | none |
+| post_checkpoint_command_consistency_content:audits/post_checkpoint_command_consistency.md | invalid | missing=PPPL plus Tatoeba, Bible, Taxi1500, NER, POS, and Roundtrip | restore post-checkpoint command consistency and metric-family coverage guards |
+| ready_to_final_launcher_content:scripts/run_v5_ready_to_final_package.sh | ready | all required terms present | none |
+| submission_file_index_content:handoff/submission_file_index_ko.md | ready | all required terms present | none |
+| objective_requirement_trace_content:handoff/objective_requirement_trace_ko.md | ready | all required terms present | none |
+| result_update_checklist_content:handoff/final_result_update_checklist_ko.md | ready | all required terms present | none |
+| post_result_update_manifest_content:handoff/post_result_update_manifest.md | ready | all required terms present | none |
+| post_result_patch_plan_content:handoff/post_result_patch_plan_ko.md | ready | all required terms present | none |
+| result_insertion_matrix_content:handoff/result_insertion_matrix.md | ready | all required terms present | none |
+| report_slide_crosswalk_content:handoff/report_slide_crosswalk.md | ready | all required terms present | none |
+| final_package_checklist_content:handoff/final_package_checklist.md | ready | all required terms present | none |
+| source_map_content:handoff/source_map.md | ready | all required terms present | none |
+| goal_acceptance_rubric_content:handoff/final_goal_acceptance_rubric_ko.md | ready | all required terms present | none |
+| objective_completion_content:handoff/objective_completion_audit.md | ready | all required terms present | none |
+| final_evidence_packet_content:audits/final_evidence_packet_audit.md | ready | all required terms present | none |
+| reviewer_response_crosswalk_content:handoff/reviewer_response_crosswalk_ko.md | ready | all required terms present | none |
+| result_delay_contingency_content:handoff/result_delay_contingency_ko.md | ready | all required terms present | none |
+| final_freeze_evidence_content:handoff/final_freeze_evidence_checklist_ko.md | ready | all required terms present | none |
+| outcome_matrix_content:handoff/post_checkpoint_outcome_matrix_ko.md | ready | all required terms present | none |
+| final_claim_decision_tree_content:final_claim_decision_tree.md | ready | all required terms present | none |
+| claim_promotion_matrix_content:claim_promotion_matrix.md | ready | all required terms present | none |
+| surface_overclaim_content:audits/surface_overclaim_audit.md | ready | all required terms present | none |
+| final_submission_smoke_content:audits/final_submission_smoke_audit.md | ready | all required terms present | none |
+| execution_readiness_content:audits/execution_readiness_review_ko.md | invalid | missing=Verdict: `execution_ready_ | restore execution readiness review and persistent watcher handoff guard |
+| checkpoint_selection_contract_content:audits/checkpoint_selection_contract_audit.md | ready | all required terms present | none |
+| watcher_safety_content:audits/reporting_package_audit.md | ready | all required terms present | none |
+| final_handoff_runbook_content:handoff/final_handoff_runbook.md | ready | all required terms present | none |
+| final_action_dashboard_content:handoff/final_action_dashboard_ko.md | ready | all required terms present | none |
+| final_freeze_protocol_content:handoff/final_freeze_protocol_ko.md | ready | all required terms present | none |
+| slide_source_markdown_table_guard:slides/final_deck_ko.md | ready | no markdown table pipe lines in bundled final_deck_ko.md | none |
+| subdir_readme:reports | ready | 4_reporting/release_bundle/reports/README.md | none |
+| subdir_readme:slides | ready | 4_reporting/release_bundle/slides/README.md | none |
+| subdir_readme:handoff | ready | 4_reporting/release_bundle/handoff/README.md | none |
+| subdir_readme:audits | ready | 4_reporting/release_bundle/audits/README.md | none |
+| subdir_readme:scripts | ready | 4_reporting/release_bundle/scripts/README.md | none |

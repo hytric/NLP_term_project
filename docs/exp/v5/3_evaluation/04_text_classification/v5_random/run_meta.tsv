@@ -1,0 +1,9 @@
+field	value
+metric	text_classification
+model_key	v5_random
+model_path	/home/axt/mnt2/jongha/v5_glot50010/runs/v5_random_mlm_10k
+tokenizer_path	/home/axt/mnt2/jongha/v5_glot50010/tokenization/output/Glot500_extended_spm
+eval_data_root	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download
+eval_output_root	/home/axt/mnt2/jongha/v5_glot50010/evaluation
+gpu	0
+model_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5/3_evaluation/model_matrix.tsv

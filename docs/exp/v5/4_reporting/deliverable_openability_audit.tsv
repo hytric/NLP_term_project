@@ -1,0 +1,13 @@
+item	status	evidence	action
+source_nonempty:4_reporting/03_final_report/paper_draft.md	ready	bytes=31375	none
+source_nonempty:4_reporting/03_final_report/paper_draft_ko.md	ready	bytes=23944	none
+source_nonempty:4_reporting/02_slides/final_deck_ko.md	ready	bytes=9241	none
+source_nonempty:4_reporting/02_slides/presenter_script_ko.md	ready	bytes=18148	none
+source_nonempty:4_reporting/submission_file_index_ko.md	ready	bytes=5632	none
+report_html_headings:4_reporting/03_final_report/paper_draft.html	ready	headings=16	none
+report_html_headings:4_reporting/03_final_report/paper_draft_ko.html	ready	headings=12	none
+report_pdf_openable:4_reporting/03_final_report/paper_draft.pdf	ready	pdf_magic=True; pages=28	none
+report_pdf_openable:4_reporting/03_final_report/paper_draft_ko.pdf	ready	pdf_magic=True; pages=19	none
+deck_html_slides:4_reporting/02_slides/v5_final_deck_ko.html	ready	slides=15; expected=15	none
+deck_pptx_openable:4_reporting/02_slides/v5_final_deck_ko.pptx	ready	zip_ok=True; slides=15; expected=15	none
+deck_pdf_openable:4_reporting/02_slides/v5_final_deck_ko.pdf	ready	pdf_magic=True; pages=15; expected=15	none

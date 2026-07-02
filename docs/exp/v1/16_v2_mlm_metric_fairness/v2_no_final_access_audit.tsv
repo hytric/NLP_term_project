@@ -1,0 +1,3 @@
+run_id	input_role	path	allowed_split	rows_or_files	md5	final_access	status
+step16_v2_mlm_metric_fairness_20260611_172337	step15_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/seed_summary.tsv	checkpoint_metadata	6	ee07db384f15cf82bd968d8b56e027dd	NO	PASS
+step16_v2_mlm_metric_fairness_20260611_172337	dev_text	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_mlm_dev_mark.txt	MAR_dev	6521	a7551d9711eeff33371bdab2067bd656	NO	PASS

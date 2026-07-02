@@ -1,0 +1,9 @@
+mixture_component	role	required	source_path	sampling_rule	notes
+target10_v2_train	low_resource_target	yes	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_tokenizer_mlm_train.txt	always include; protect low-resource from being drowned	target10 remains main objective
+target10_v2_dev	low_resource_dev	yes	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_mlm_dev_mark.txt	dev only; no training	used for MLM/dev diagnostics
+target10_v2_final_test	low_resource_final_test	yes	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_final_test_act_clean.txt	never train	held-out final evidence
+glotcc_eng_Latn	high_resource_web_replay	yes	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_eng-Latn.jsonl	cap/downweight with alpha 0.3 or explicit row cap	true high-resource web replay
+glotcc_deu_Latn	high_resource_web_replay	yes	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_deu-Latn.jsonl	cap/downweight with alpha 0.3 or explicit row cap	true high-resource web replay
+glotcc_jpn_Jpan	high_resource_web_replay	yes	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_jpn-Jpan.jsonl	cap/downweight with alpha 0.3 or explicit row cap	true high-resource web replay
+glotcc_kor_Hang	high_resource_web_replay	yes	/home/axt/mnt2/jongha/third_try/high_resource/glotcc/glotcc_kor-Hang.jsonl	cap/downweight with alpha 0.3 or explicit row cap	true high-resource web replay
+bible_eng_deu_jpn_kor	domain_matched_control	yes	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles	domain-control rows only; avoid duplicate alternates	not sufficient alone as true high-resource corpus

@@ -1,0 +1,10 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+plan	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/plan.md	44	2303	c621be875506c657b4e9934a1f9c28b3	PASS	step plan and exit criteria
+final_claim_contract	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/final_claim_contract.md	53	3305	6af2e2fa8c02731e6d9a78997a25c369	PASS	allowed and forbidden final claim wording
+evidence_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/evidence_table.tsv	14	4598	4464aedb69756d355e37c8726159e06a	PASS	source-backed claim map
+unsupported_claims	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/unsupported_claims.tsv	10	2296	801f522242a12cb822155eff098fdad7	PASS	blocked positive claims and return paths
+next_positive_experiments	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/next_positive_experiments.tsv	6	2191	f23bb996676c87803cc118d6a4ef7076	PASS	required future experiments for positive claim
+paper_framing	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/paper_framing.md	46	3616	0b65b710f249c0ee0c6f7d1e7fc9456c	PASS	title abstract contribution and table guidance
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/score_table.tsv	8	2191	622773afc5749426bb7a85c974ed3e3b	PASS	diagnostic-claim gate table
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/v2_no_final_access_audit.tsv	3	564	31ad338ca522cdf2a68533bbe8ba6b10	PASS	Step26 no-final-access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/26_top_tier_diagnostic_claim_synthesis/results.md	40	2146	f2a7f86b50fb2d708c0edfff877603c9	PASS	step result summary

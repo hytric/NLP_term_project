@@ -1,0 +1,9 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+plan	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/plan.md	40	1824	4a791cad5bae66a983cb0974131a603e	PASS	step plan and exit criteria
+solution_roadmap	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/solution_roadmap.md	68	3704	2636f82789717c83b8cc569a0ed2e038	PASS	narrative appended-token remedy roadmap
+solution_candidates	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/solution_candidates.tsv	6	2652	31049d054f1322df84b50ea7585725d7	PASS	candidate solution table
+experiment_protocol	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/experiment_protocol.tsv	5	2100	32b1b0d35ec52433ca9a73e9a74063f0	PASS	falsifiable future experiment protocol
+presentation_insert	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/presentation_insert.md	46	1816	4462f2166e2cee8957fb73c1e8aa9591	PASS	Korean presentation insert
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/score_table.tsv	6	1367	560595b1a91c34324b78bb6b7a812370	PASS	roadmap gate table
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/v2_no_final_access_audit.tsv	3	491	5965efc6a3316114995ba73974c86716	PASS	Step28 no-final-access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/28_appended_token_solution_roadmap/results.md	38	1597	6fa05abd3189af65d9a4b04f529dd145	PASS	step result summary

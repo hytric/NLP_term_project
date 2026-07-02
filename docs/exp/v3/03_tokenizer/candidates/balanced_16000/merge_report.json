@@ -1,0 +1,26 @@
+{
+  "variant": "main_added_16000",
+  "base_model": "xlm-roberta-base",
+  "base_vocab_size": 250002,
+  "aux_vocab_size": 16000,
+  "aux_model": "/home/axt/mnt2/jongha/third_try/tokenizers/stage03_20260613_r1/spm_16000/third_try_mixture_unigram_16000.model",
+  "aux_vocab": "/home/axt/mnt2/jongha/third_try/tokenizers/stage03_20260613_r1/spm_16000/third_try_mixture_unigram_16000.vocab",
+  "tokenizer_dir": "/home/axt/mnt2/jongha/third_try/tokenizers/stage03_20260613_r1/tokenizers/xlmr_third_try_mixture_added_16000",
+  "selection_counts": {
+    "aux_pieces": 15997,
+    "raw_overlap": 12352,
+    "surface_overlap": 11134,
+    "skipped_non_normal": 3,
+    "skipped_empty_or_short": 8083,
+    "skipped_whitespace": 0,
+    "selected": 2621
+  },
+  "actual_added": 2621,
+  "extended_vocab_size": 252623,
+  "changed_existing_token_ids": 0,
+  "changed_special_token_ids": 0,
+  "appended_token_id_violations": 0,
+  "avg_tokens_per_word_delta_pct": -10.242096,
+  "avg_single_char_delta_pct": 61.494136,
+  "status": "PASS"
+}

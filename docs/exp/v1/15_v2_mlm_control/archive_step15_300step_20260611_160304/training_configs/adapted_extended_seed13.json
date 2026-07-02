@@ -1,0 +1,17 @@
+{
+  "run_id": "step15_v2_mlm_control_20260611_160304",
+  "model_family": "adapted_extended",
+  "seed": 13,
+  "source_checkpoint": "/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_fvt",
+  "tokenizer_source": "/home/axt/mnt2/jongha/second_try/checkpoints/14_v2_embedding_init/xlmr_v2_32000_fvt",
+  "train_steps": 300,
+  "batch_size": 8,
+  "eval_batch_size": 8,
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "eval_every": 150,
+  "train_limit": 0,
+  "dev_limit": 0,
+  "selection_data": "MAR_dev_only",
+  "final_access": "NO_ACT_FINAL_ACCESS"
+}

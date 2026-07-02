@@ -1,0 +1,31 @@
+{
+  "train": {
+    "train_runtime": 25.7361,
+    "train_samples_per_second": 7.771,
+    "train_steps_per_second": 1.943,
+    "train_loss": 1.9952032470703125,
+    "epoch": 0.78
+  },
+  "eval": {
+    "eval_loss": 1.4501392841339111,
+    "eval_bleu": 0.0,
+    "eval_chrf": 4.381824382317958,
+    "eval_chrfpp": 3.2863682867384685,
+    "eval_gen_len": 127.0,
+    "eval_runtime": 15.1187,
+    "eval_samples_per_second": 2.117,
+    "eval_steps_per_second": 2.117,
+    "epoch": 0.78,
+    "eval_perplexity": 4.263708340736106
+  },
+  "test": {
+    "test_loss": 1.4563039541244507,
+    "test_bleu": 0.0,
+    "test_chrf": 4.790720988646935,
+    "test_chrfpp": 3.593040741485201,
+    "test_gen_len": 127.0,
+    "test_runtime": 15.1028,
+    "test_samples_per_second": 2.119,
+    "test_steps_per_second": 2.119
+  }
+}

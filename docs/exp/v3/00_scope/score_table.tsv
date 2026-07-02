@@ -1,0 +1,9 @@
+metric	expected	actual	status
+target10 missing language count	0	0	PASS
+Coptic/Syriac main label present	yes	yes	PASS
+high-resource replay candidates recorded	yes	yes	PASS
+true high-resource web sample materialized	yes	yes	PASS
+domain-matched Bible control recorded	yes	yes	PASS
+train mixture contract present	yes	yes	PASS
+task availability recorded	yes	yes	PASS
+XLM-R-large excluded	yes	yes	PASS

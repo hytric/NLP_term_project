@@ -1,0 +1,7 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/02_baseline/tokenization_metrics.tsv	stage02_metric	10	NOT_COMPUTED	PASS	target10 XLM-R-base tokenization metrics
+docs/exp/third_try/02_baseline/baseline_eval.tsv	stage02_metric	40	NOT_COMPUTED	PASS_WITH_PENDING_DOWNSTREAM	tokenization and deterministic MLM eval done; downstream pending
+docs/exp/third_try/02_baseline/high_resource_control_baseline.tsv	stage02_metric	8	NOT_COMPUTED	PASS	GlotCC/Bible control tokenization sample metrics
+docs/exp/third_try/02_baseline/tokenization_samples.md	stage02_doc	10	NOT_COMPUTED	PASS	one final-test sample per target language
+docs/exp/third_try/02_baseline/mlm_eval_baseline.tsv	stage02_metric	10	NOT_COMPUTED	PASS	deterministic masked-LM eval on GPU 3
+docs/exp/third_try/02_baseline/mlm_eval_summary.tsv	stage02_metric	3	NOT_COMPUTED	PASS	target10 MLM eval average

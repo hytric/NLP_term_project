@@ -1,0 +1,51 @@
+# v5 Claim Source Contract Audit
+
+Last checked: 2026-06-28 18:08 KST
+
+Verdict: `claim_source_contract_ready_current`
+
+This generated audit verifies that final report/PPT result claims
+have explicit patch targets, required evidence, claim locks, and
+aggregation-only numeric sources before any post-checkpoint result
+is promoted from measured output into final prose or slides.
+
+| Item | Status | Evidence | Action |
+| --- | --- | --- | --- |
+| required_contract_tables | ready | patch_rows=10; update_rows=9; slot_rows=9 | none |
+| patch_plan:matched_checkpoint_pair | ready | status=ready_for_execution; gate=matched MLM checkpoints; files=2_training/05_checkpoint_selection/selected_checkpoint_manifest.md; 3_evaluation/model_matrix.tsv; 3_evaluation/post_checkpoint_eval_queue.md; 3_evaluation/post_checkpoint_preflight.md | none |
+| patch_plan:after_mlm_pppl | ready | status=waiting_checkpoints_or_results; gate=after-MLM PPPL; files=4_reporting/00_tables/table_06_pppl_partial.md; Report.md; 4_reporting/03_final_report/paper_draft.md; 4_reporting/03_final_report/paper_draft_ko.md; 4_reporting/method_comparison_summary.md | none |
+| patch_plan:tatoeba_retrieval | ready | status=waiting_checkpoints_or_results; gate=v5 available downstream replay; files=4_reporting/00_tables/table_07_tatoeba_partial.md; Report.md; paper/deck result sections | none |
+| patch_plan:bible_retrieval | ready | status=waiting_checkpoints_or_results; gate=Bible retrieval accounting; files=4_reporting/00_tables/table_12_bible_partial.md; Report.md; limitations; deck caveat slides | none |
+| patch_plan:text_classification | ready | status=waiting_checkpoints_or_results; gate=v5 available downstream replay; files=4_reporting/00_tables/table_08_text_classification_partial.md; Report.md; paper/deck result sections | none |
+| patch_plan:ner_pos_tagging | ready | status=waiting_checkpoints_or_results; gate=v5 available downstream replay; files=4_reporting/00_tables/table_10_ner_partial.md; 4_reporting/00_tables/table_11_pos_partial.md; Report.md | none |
+| patch_plan:roundtrip_alignment | ready | status=waiting_checkpoints_or_results; gate=Roundtrip alignment accounting; files=4_reporting/00_tables/table_14_roundtrip_partial.md; 4_reporting/00_tables/table_09_blocked_metric_notes.md; 4_reporting/00_tables/table_13_metric_fidelity_matrix.md; Report.md | none |
+| patch_plan:method_comparison_claim_gate | ready | status=waiting_checkpoints_or_results; gate=after-MLM PPPL; files=4_reporting/method_comparison_summary.md; 4_reporting/comparison_materiality_audit.md; 4_reporting/claim_promotion_matrix.md; 4_reporting/final_claim_decision_tree.md; 4_reporting/03_final_report/claim_ledger.md | none |
+| patch_plan:target10_downstream_boundary | ready | status=waiting_checkpoints_or_results; gate=v5 available downstream replay; files=Report.md; 4_reporting/03_final_report/result_interpretation_blocks.md; 4_reporting/02_slides/defense_qa_ko.md | none |
+| patch_plan:final_render_and_bundle | ready | status=waiting_checkpoints_or_results; gate=final report/PPT synchronization; files=4_reporting/03_final_report/*.md/html/pdf; 4_reporting/02_slides/final_deck_ko.md/html/pptx/pdf; 4_reporting/release_manifest.md; 4_reporting/release_bundle/ | none |
+| update_manifest:matched_checkpoint_pair | ready | slot=matched_v5_checkpoints; command=bash scripts/run_v5_post_checkpoint_evals.sh status; claim_rule=unlocks evaluation only; do not claim method improvement | none |
+| update_manifest:after_mlm_pppl | ready | slot=after_mlm_pppl; command=WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh pppl; claim_rule=may unlock intrinsic after-MLM FVT-vs-random claim | none |
+| update_manifest:method_comparison_claim_gate | ready | slot=method_comparison_claim_gate; command=python3 scripts/refresh_v5_reporting.py --with-plots; claim_rule=keep zero-step intrinsic claim separate; final method claim only after paired PPPL/downstream rows parse and materiality is not tie_band | none |
+| update_manifest:tatoeba_retrieval | ready | slot=tatoeba_retrieval; command=WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh downstream; claim_rule=available-language retrieval claim only; keep target10 0/10 boundary | none |
+| update_manifest:bible_retrieval | ready | slot=bible_retrieval; command=WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh bible; claim_rule=available-language Bible claim only; keep target10 0/10 boundary | none |
+| update_manifest:text_classification | ready | slot=text_classification; command=WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh downstream; claim_rule=limited local classification claim only; do not generalize to target10 | none |
+| update_manifest:ner_pos_tagging | ready | slot=ner_pos_tagging; command=WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh tagging; claim_rule=available-language tagging claim only; keep POS train-language caveat | none |
+| update_manifest:roundtrip_alignment | ready | slot=roundtrip_alignment; command=WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh roundtrip; claim_rule=retained Glot500 metric family; no performance claim until both v5 rows parse | none |
+| update_manifest:final_claim_selection | ready | slot=target10_downstream_boundary; command=python3 scripts/refresh_v5_reporting.py --with-plots; claim_rule=choose only the decision-tree outcome; keep disallowed claims locked; use tie_band as no clear practical separation | none |
+| slot_inventory:matched_v5_checkpoints | ready | status=replace_now; gate=matched MLM checkpoints; impact=unlocks post-checkpoint preflight; evaluation launch still waits for preflight ready-to-launch | none |
+| slot_inventory:after_mlm_pppl | ready | status=tracked_pending; gate=after-MLM PPPL; impact=may unlock intrinsic after-training FVT-vs-random claim | none |
+| slot_inventory:method_comparison_claim_gate | ready | status=tracked_pending; gate=after-MLM PPPL; impact=separates initialization novelty from final after-training method improvement | none |
+| slot_inventory:tatoeba_retrieval | ready | status=tracked_pending; gate=v5 available downstream replay; impact=available-language retrieval comparison only; target10 coverage remains separate | none |
+| slot_inventory:bible_retrieval | ready | status=tracked_pending; gate=Bible retrieval accounting; impact=available-language Bible comparison only; target10 Bible coverage remains 0/10 unless data changes | none |
+| slot_inventory:text_classification | ready | status=tracked_pending; gate=v5 available downstream replay; impact=limited local classification comparison; do not generalize to target10 downstream | none |
+| slot_inventory:ner_pos_tagging | ready | status=tracked_pending; gate=v5 available downstream replay; impact=available-language tagging comparison; keep POS `TRAIN_LANGS` train-language caveat | none |
+| slot_inventory:roundtrip_alignment | ready | status=tracked_pending; gate=Roundtrip alignment accounting; impact=retained metric-family fidelity; no performance claim until parsed outputs exist | none |
+| slot_inventory:target10_downstream_boundary | ready | status=tracked_coverage_limited; gate=v5 available downstream replay; impact=prevents unsupported target10 downstream improvement claim | none |
+| aggregation_only_numeric_claims | ready | source map, crosswalk, and pending registry reject live/stdout/single-row claim sources | none |
+
+Rule:
+
+- Final numeric claims must come from `3_evaluation/09_aggregation/`
+  or `4_reporting/00_tables/` after refresh, not from stdout, live
+  logs, single-model rows, or manual intuition.
+- `target10_downstream_boundary` remains locked while retained
+  downstream target10 coverage is `0/10`.

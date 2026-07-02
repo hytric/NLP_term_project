@@ -1,0 +1,7 @@
+metric	summary_group	model_key	score_name	score_value	aux_score_name	aux_score_value	direction	source_file
+pseudoperplexity	v5_target	glot500_base	weighted_pseudo_perplexity	15.102934	weighted_mean_nll	2.714889	lower_is_better	docs/exp/v5/3_evaluation/01_pseudoperplexity/glot500_base/summary.tsv
+pseudoperplexity	v5_target	v5_random	weighted_pseudo_perplexity	39.222875	weighted_mean_nll	3.669260	lower_is_better	docs/exp/v5/3_evaluation/01_pseudoperplexity/v5_random/summary.tsv
+pseudoperplexity	v5_target	xlmr_base	weighted_pseudo_perplexity	61.980216	weighted_mean_nll	4.126815	lower_is_better	docs/exp/v5/3_evaluation/01_pseudoperplexity/xlmr_base/summary.tsv
+ner	v5_target	glot500_base	f1	0.553191	languages	1	higher_is_better	/home/axt/mnt2/jongha/v5_glot50010/evaluation/ner/glot500_base/glot500-base/test_results.txt
+ner	v5_target	v5_random	f1	0.560554	languages	1	higher_is_better	/home/axt/mnt2/jongha/v5_glot50010/evaluation/ner/v5_random/v5_random_mlm_10k/test_results.txt
+ner	v5_target	xlmr_base	f1	0.459364	languages	1	higher_is_better	/home/axt/mnt2/jongha/v5_glot50010/evaluation/ner/xlmr_base/xlm-roberta-base/test_results.txt

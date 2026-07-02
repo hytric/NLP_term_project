@@ -1,0 +1,11 @@
+language_id	language	official_local_downstream	status	official_path	target10_proxy_available	proxy_status	notes
+acu	Achuar-Shiwiar	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed
+ake	Akawaio	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed
+bsn	Barasana-Eduria	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed
+chr	Cherokee	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed
+cop	Coptic	UD_Coptic-Scriptorium_POS	PASS_FOR_COPTIC_PILOT	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/UD_Coptic-Scriptorium	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	Coptic POS converted and run; token accuracy improves in 3/3 fvt checkpoint seeds
+kbh	Camsa	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed
+nhg	Nahuatl Tetelcingo	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed
+oji	Ojibwa	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed
+syr	Syriac	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching;legacy_cop_syr_parallel	PROXY_ONLY	frozen Bible proxy run; legacy Coptic-Syriac parallel data exists but translation/NMT is out of current encoder-only final claim without a fresh protocol
+usp	Uspanteco	none_found	NO_OFFICIAL_LOCAL_TASK	NA	bible_book_retrieval_parallel_matching	PASS_FOR_PROXY	frozen Bible proxy run; no separate local supervised task found under data/raw or data/processed

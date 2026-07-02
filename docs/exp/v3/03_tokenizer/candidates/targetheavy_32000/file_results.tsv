@@ -1,0 +1,6 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/03_tokenizer/candidates/targetheavy_32000/merge_report.json	stage03_report	1	NOT_COMPUTED	PASS	main tokenizer merge report
+docs/exp/third_try/03_tokenizer/candidates/targetheavy_32000/id_preservation_audit.tsv	stage03_audit	5	NOT_COMPUTED	PASS	id preservation audit
+docs/exp/third_try/03_tokenizer/candidates/targetheavy_32000/tokenization_before_after.tsv	stage03_metric	10	NOT_COMPUTED	PASS	target10 dev before/after metrics
+docs/exp/third_try/03_tokenizer/candidates/targetheavy_32000/fallback_ablation.tsv	stage03_ablation_manifest	2	NOT_COMPUTED	SUPERSEDED	fallback ablation completed for selected 48000 branch in docs/exp/third_try/03_tokenizer/fallback_ablation_summary.tsv
+/home/axt/mnt2/jongha/third_try/tokenizers/stage03_targetheavy_20260613_r2/tokenizers/xlmr_third_try_mixture_added_32000	large_tokenizer	268647	DIRECTORY_NOT_COMPUTED	PASS	provisional main tokenizer candidate

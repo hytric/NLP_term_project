@@ -1,0 +1,7 @@
+task_id	stage	status	priority	exit_evidence	next_action
+V32_00_DIAGNOSIS	00_problem_diagnosis	PLANNED	P0	v3.1 05_additional shows content-token MLM and retrieval weakness	freeze failure matrix and metric contract
+V32_01_TOKENIZER_REPAIR	01_tokenizer_repair	PLANNED	P0	chr/cop/oji content-token top-10 is 0 under structured inits	audit content-token coverage and decide keep vs append-only repair
+V32_02_BALANCED_MLM	02_balanced_mlm	PLANNED	P0	v3.1 MLM budget is only 6,400 chunks and high-resource source is underused as transfer	run high-resource-source-augmented MLM with fixed-mask content-token eval
+V32_03_SEMANTIC_ALIGNMENT	03_semantic_alignment	PLANNED	P0	MLM-only retrieval remains around 1% R@1 and negative margin	add contrastive/TLM-style item_id alignment stage
+V32_04_DOWNSTREAM_TRANSLATION	04_downstream_translation	PLANNED	P1	v3.1 downstream pair classification improves but decoder remains diagnostic	re-run pair classification, POS, retrieval-only, and decoder diagnostics
+V32_05_REPORT_PACKAGE	05_report_package	PLANNED	P1	v3.1 report needs stricter claim boundaries	package claim-evidence map and report-ready tables

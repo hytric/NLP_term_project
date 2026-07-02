@@ -1,0 +1,6 @@
+file_role	path	rows_or_lines	bytes	md5	status	notes
+plan	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/22_full_experiment_audit/plan.md	47	2200	ac37d7814da9503422bfd38abdf13332	PASS	audit plan and exit criteria through Step 27
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/22_full_experiment_audit/score_table.tsv	7	2184	17ed511c6f52c3707f523a9c906fd13f	PASS	audit gate table through Step 27
+shortcut_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/22_full_experiment_audit/shortcut_matrix.tsv	9	2847	92754eed8ae513cbf13e291d03a0388e	PASS	shortcut status matrix through Step 27
+next_experiments	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/22_full_experiment_audit/next_experiments.tsv	7	3564	927c5de2c34d5b9d662bdc783fe08d92	PASS	required next experiments matrix before Step 26 diagnostic synthesis
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/22_full_experiment_audit/results.md	48	3120	fc42c161f7e80e91dafc796f19d6552d	PASS	step result summary through Step 27

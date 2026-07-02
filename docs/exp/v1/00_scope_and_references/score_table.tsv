@@ -1,0 +1,13 @@
+item	decision	source	confidence	status	notes
+base_model	xlm-roberta-base	questions.md,plan.md	high	confirmed	base encoder for vocab extension and MLM adaptation
+architecture	encoder-only plus separate translation benchmark	questions.md,execution_rules.md	high	confirmed	downstream is encoder-only; translation is Step 07 benchmark
+target_languages	confirmed target10 maximize continuity	step_index.md,plan.md	medium	confirmed	target10 list fixed in plan; downstream may use subset if task data constrains
+tokenizer_method	SentencePiece unigram	reference_summary.md,questions.md	high	confirmed	model_type=unigram must be documented in commands
+vocab_grid	8k,16k,32k	questions.md,step_index.md	high	confirmed	all three must be evaluated through required gates
+init_methods	random,mean,fvt,align,focus required; Ofa/Wechsel optional	questions.md,execution_rules.md	high	confirmed	focus uses target Bible corpus auxiliary embeddings
+downstream_tasks	book/genre classification; verse retrieval/ranking; parallel verse matching	questions.md,downstream_tasks.md	high	confirmed	language identification diagnostic only
+split_policy	train all except Mark/John; dev Mark; test John by default	questions.md,step_index.md	high	confirmed	downstream classification may need documented task-specific split if label leakage arises
+checkpoint_policy	save gate-passing candidates only under /home/axt/mnt2/jongha/second_try	questions.md,execution_rules.md	high	confirmed	large checkpoints/manifests stay outside workspace
+gpu_policy	GPU4 requested; fallback GPU3 used because current nvidia-smi exposes only 0-3	execution_rules.md,nvidia-smi	high	confirmed	commands should use CUDA_VISIBLE_DEVICES=3 in current environment
+failure_policy	sequential gates; branch exploration when no guideline applies	execution_rules.md,step_index.md	high	confirmed	branch docs under docs/exp/second_try/branches and artifacts under mnt2
+translation_target	target score >= 80 percent of high-resource reference	execution_rules.md,07_translation_benchmark/plan.md	high	confirmed	primary metric to be defined in Step 07 high_resource_reference.md

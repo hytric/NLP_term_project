@@ -1,0 +1,5 @@
+run_id	input_role	path	allowed_split	rows_or_files	md5	final_access	status
+step21_v2_alt_init_probe_20260611_194617	step14_scores	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/14_v2_embedding_init/v2_embedding_init_scores.tsv	selected_on_MAR_dev	5	0ddabaff3bca65a85b2c3561c8171352	NO	PASS
+step21_v2_alt_init_probe_20260611_194617	step15_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/15_v2_mlm_control/seed_summary.tsv	checkpoint_metadata	6	ee07db384f15cf82bd968d8b56e027dd	NO	PASS
+step21_v2_alt_init_probe_20260611_194617	train_text	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_tokenizer_mlm_train.txt	train	52124	f32f647573e4ee948595ac7c63d55f7f	NO	PASS
+step21_v2_alt_init_probe_20260611_194617	dev_text	/home/axt/mnt2/jongha/second_try/artifacts/12_v2_split_protocol/v2_mlm_dev_mark.txt	MAR_dev	6521	a7551d9711eeff33371bdab2067bd656	NO	PASS

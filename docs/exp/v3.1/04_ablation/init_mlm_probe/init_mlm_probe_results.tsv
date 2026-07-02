@@ -1,0 +1,6 @@
+method	seed	max_steps	global_step	zero_step_dev_loss	final_eval_loss	loss_drop_from_zero_step	final_perplexity	train_loss	train_runtime_sec	output_dir	status	delta_vs_fvt_final_loss	final_loss_rank
+fvt	13	200	200	7.925527	3.921798	4.003729	50.491170	2.748325	276.965	/home/axt/mnt2/jongha/v3_1/init_mlm_probe_200step/fvt_seed13_step200	DONE	0.000000	1
+focus	13	200	200	16.760191	3.931313	12.828878	50.973852	3.867069	274.962	/home/axt/mnt2/jongha/v3_1/init_mlm_probe_200step/focus_seed13_step200	DONE	0.009515	2
+align	13	200	200	8.700895	4.060271	4.640624	57.990012	2.800971	321.853	/home/axt/mnt2/jongha/v3_1/init_mlm_probe_200step/align_seed13_step200	DONE	0.138473	3
+random	13	200	200	17.998567	4.937548	13.061019	139.427975	3.407702	273.941	/home/axt/mnt2/jongha/v3_1/init_mlm_probe_200step/random_seed13_step200	DONE	1.015750	4
+mean	13	200	200	10.910376	5.835072	5.075304	342.089214	3.240690	275.592	/home/axt/mnt2/jongha/v3_1/init_mlm_probe_200step/mean_seed13_step200	DONE	1.913274	5

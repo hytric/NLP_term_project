@@ -1,0 +1,6 @@
+check	expected	actual	status
+changed_existing_token_ids	0	0	PASS
+changed_special_token_ids	0	0	PASS
+appended_token_id_violations	0	0	PASS
+base_vocab_size	250002	250002	PASS
+actual_added_tokens	>0	18645	PASS

@@ -1,0 +1,8 @@
+metric	xlmr_base	fvt_seed13	fvt_seed17	fvt_seed23	fvt_mean	fvt_seed_range	status
+target10_avg_mlm_loss	3.472837	5.282255	5.303112	5.310412	5.298593	0.028157	PROXY_ONLY
+target10_avg_mlm_perplexity	155.079528	211.068380	216.313110	216.775571	214.719020	5.707191	PROXY_ONLY
+target10_languages_with_lower_loss_than_xlmr	NA	NA	NA	NA	4/10	NA	PROXY_ONLY
+coptic_pos_token_accuracy	0.253182	0.260991	0.257809	0.257424	0.258741	0.003567	COPTIC_ONLY_DOWNSTREAM_PILOT
+coptic_pos_macro_f1	0.163298	0.169313	0.162237	0.158390	0.163313	0.010923	COPTIC_ONLY_DOWNSTREAM_PILOT
+high_resource_control_avg_mlm_loss	2.514329	3.231196	3.199099	3.222034	3.217443	0.032097	FAIL_POTENTIAL_COLLAPSE_PROXY
+target10_downstream_seed_stability	NA	NA	NA	NA	NOT_RUN	NA	PENDING

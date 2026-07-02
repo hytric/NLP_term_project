@@ -1,0 +1,5 @@
+candidate	tokenizer_path	actual_added_tokens	avg_tpw_delta_pct	worst_tpw_delta_pct	worsened_languages	avg_single_delta_pct	id_status	status
+third_try_balanced_16k	/home/axt/mnt2/jongha/third_try/tokenizers/stage03_20260613_r1/tokenizers/xlmr_third_try_mixture_added_16000	2621	-10.242096	32.366836	chr,cop,oji	61.494136	PASS	MEASURED
+third_try_targetheavy_32k	/home/axt/mnt2/jongha/third_try/tokenizers/stage03_targetheavy_20260613_r2/tokenizers/xlmr_third_try_mixture_added_32000	18645	-27.142361	5.717072	chr,oji	40.109278	PASS	MEASURED
+third_try_targetheavy_48k	/home/axt/mnt2/jongha/third_try/tokenizers/stage03_targetheavy_20260613_r3/tokenizers/xlmr_third_try_mixture_added_48000	30849	-29.812358	1.504758	chr,oji	37.402719	PASS	MEASURED
+second_try_targetonly_32k	/home/axt/mnt2/jongha/second_try/artifacts/13_v2_tokenizer/tokenizers/xlmr_v2_target10_added_32000	29079	-29.907237	1.212549	chr,oji	38.135085	PASS_FROM_SECOND_TRY	MEASURED

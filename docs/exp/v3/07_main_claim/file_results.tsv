@@ -1,0 +1,9 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/07_main_claim/evidence_table.tsv	stage07_evidence	17	NOT_COMPUTED	PASS	claim evidence table
+docs/exp/third_try/07_main_claim/allowed_claims.md	stage07_claims	1	NOT_COMPUTED	PASS	allowed claim wording
+docs/exp/third_try/07_main_claim/blocked_claims.md	stage07_claims	1	NOT_COMPUTED	PASS	blocked overclaims
+docs/exp/third_try/07_main_claim/main_result_summary.md	stage07_summary	1	NOT_COMPUTED	PASS	main result synthesis
+docs/exp/third_try/07_main_claim/novelty_claims.md	stage07_summary	1	NOT_COMPUTED	PASS	novelty wording
+docs/exp/third_try/07_main_claim/limitation_and_deviation_summary.md	stage07_summary	1	NOT_COMPUTED	PASS	deviation and limitation summary
+docs/exp/third_try/07_main_claim/score_table.tsv	stage07_score	13	NOT_COMPUTED	PASS	stage score table
+docs/exp/third_try/07_main_claim/results.md	stage07_results	1	NOT_COMPUTED	PASS	stage results

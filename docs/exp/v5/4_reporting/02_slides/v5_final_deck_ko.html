@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>v5 Final Deck Korean</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5c667a;
+      --paper: #f7f8fb;
+      --panel: #ffffff;
+      --accent: #0f766e;
+      --line: #d7dce6;
+      --code: #eef2f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Noto Sans CJK KR", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+    }
+    main {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      padding: 4.5vh 6vw;
+      background: var(--panel);
+    }
+    .slide.active {
+      display: flex;
+      flex-direction: column;
+    }
+    .slide-kicker {
+      color: var(--accent);
+      font-size: 1.0rem;
+      font-weight: 700;
+      margin-bottom: 1.3rem;
+    }
+    h1 {
+      font-size: 2.35rem;
+      line-height: 1.16;
+      margin: 0 0 1.2rem;
+      letter-spacing: 0;
+    }
+    .slide-body {
+      font-size: 1.18rem;
+      line-height: 1.46;
+      max-width: 1120px;
+    }
+    p { margin: 0.55rem 0; }
+    ul { margin: 0.4rem 0 0.8rem 1.4rem; padding: 0; }
+    li { margin: 0.28rem 0; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.8rem 0 1rem;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 0.46rem 0.55rem;
+      vertical-align: top;
+      text-align: left;
+    }
+    th { background: #eef7f6; color: #123d39; }
+    pre {
+      background: var(--code);
+      border-left: 4px solid var(--accent);
+      padding: 0.7rem 0.9rem;
+      overflow-wrap: anywhere;
+      white-space: pre-wrap;
+      font-size: 0.84rem;
+      line-height: 1.35;
+    }
+    code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      background: var(--code);
+      padding: 0.08rem 0.24rem;
+      border-radius: 4px;
+    }
+    .controls {
+      position: fixed;
+      right: 1.3rem;
+      bottom: 1.1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .progress {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 5px;
+      background: var(--accent);
+      width: 0;
+      transition: width 0.12s ease-out;
+    }
+    @media print {
+      main { height: auto; overflow: visible; }
+      .slide {
+        display: flex !important;
+        page-break-after: always;
+        width: 100vw;
+        height: 100vh;
+      }
+      .controls, .progress { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    
+<section class="slide" data-slide="1">
+  <div class="slide-kicker">v5 Glot500-style replay · 01/15</div>
+  <h1>제목</h1>
+  <div class="slide-body">
+<p><strong>Controlled Glot500-Style Replay with Vocabulary-Extension Initialization</strong></p>
+<ul>
+<li>92 XLM-R-seen Glot500 language-scripts</li>
+<li>10 Glot500-internal non-XLM-R target language-scripts</li>
+<li>novelty: appended vocabulary row initialization</li>
+</ul>
+<p>Source:</p>
+<pre><code>docs/exp/v5/4_reporting/03_final_report/claim_ledger.md
+docs/exp/v5/4_reporting/final_claim_decision_tree.md</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="2">
+  <div class="slide-kicker">v5 Glot500-style replay · 02/15</div>
+  <h1>문제의식과 기여</h1>
+  <div class="slide-body">
+<p><strong>Problem: multilingual coverage is broad, but not uniform.</strong></p>
+<ul>
+<li>Reproduction: artifact-audited 92+10 Glot500-style replay</li>
+<li>Novelty: appended vocabulary row initialization with FVT</li>
+<li>Fidelity: PPPL, retrieval, classification, tagging, Roundtrip retained</li>
+<li>Claim rule: final method claims wait for matched checkpoints</li>
+</ul>
+  </div>
+</section>
+<section class="slide" data-slide="3">
+  <div class="slide-kicker">v5 Glot500-style replay · 03/15</div>
+  <h1>재연 범위</h1>
+  <div class="slide-body">
+<p><strong>Full Glot500 reproduction이 아니라 controlled subset replay이다.</strong></p>
+<p>Scope comparison:</p>
+<ul>
+<li>scale: Glot500 500+ languages -&gt; v5 102 language-scripts</li>
+<li>corpus: Glot500-c -&gt; 92 seen + 10 target</li>
+<li>tokenizer: SentencePiece expansion -&gt; SPM append-style expansion</li>
+<li>training: continued MLM -&gt; continued MLM</li>
+<li>evaluation: Glot500 metrics -&gt; same metric families</li>
+</ul>
+<p>Backup evidence:</p>
+<pre><code>docs/exp/v5/4_reporting/00_tables/table_15_glot500_reproduction_fidelity.md
+docs/exp/v5/4_reporting/01_figures/generated/figure_01_experiment_pipeline.png</code></pre>
+<p>금지 표현:</p>
+<pre><code>full 511-language Glot500 reproduction</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="4">
+  <div class="slide-kicker">v5 Glot500-style replay · 04/15</div>
+  <h1>Target10 선정</h1>
+  <div class="slide-body">
+<p><strong>Target10은 Glot500 내부 raw dataset에서 골랐다.</strong></p>
+<p>선정 조건:</p>
+<ul>
+<li>XLM-R seen이 아님</li>
+<li><code>new_length &gt;= 30000</code></li>
+<li>local raw directory 존재</li>
+<li>지역/문자/어족 다양성</li>
+</ul>
+<p>Coverage snapshot:</p>
+<ul>
+<li>scripts: Latn, Cyrl, Arab, Tibt, Olck</li>
+<li>regions: Europe, North Caucasus, West Asia, Himalaya, South/Southeast Asia,</li>
+</ul>
+<p>West Africa, Mesoamerica, Andean South America, Polynesia</p>
+<ul>
+<li>new_length range: 30,052-52,732</li>
+</ul>
+<p>Target codes:</p>
+<pre><code>fur_Latn, krc_Cyrl, acm_Arab, dzo_Tibt, sat_Olck,
+mad_Latn, bam_Latn, kjb_Latn, quw_Latn, rap_Latn</code></pre>
+<p>Source:</p>
+<pre><code>docs/exp/v5/0_tokenizer/miscellaneous/glot50010_selected_manifest.tsv</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="5">
+  <div class="slide-kicker">v5 Glot500-style replay · 05/15</div>
+  <h1>Corpus construction</h1>
+  <div class="slide-body">
+<p><strong>Data scope는 고정됐다.</strong></p>
+<p>Corpus snapshot:</p>
+<ul>
+<li>seen languages: 92</li>
+<li>target languages: 10</li>
+<li>merged lines: 92,452,251</li>
+<li>output size: 19G</li>
+<li>missing language dirs: 0</li>
+</ul>
+<p>Claim:</p>
+<pre><code>The 102-language corpus is reproducibly merged with no missing directories.</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="6">
+  <div class="slide-kicker">v5 Glot500-style replay · 06/15</div>
+  <h1>Tokenizer method</h1>
+  <div class="slide-body">
+<p><strong>v5는 Glot500-style SentencePiece append route를 따른다.</strong></p>
+<ul>
+<li>XLM-R SPM에 auxiliary SPM의 novel pieces를 append</li>
+<li>extended HF tokens: 368,687</li>
+<li>appended token strings: 118,685</li>
+<li><code>&lt;mask&gt;</code> id: 250001 -&gt; 368686</li>
+</ul>
+<p>Audit result:</p>
+<ul>
+<li>29/30 audited languages improved</li>
+<li>target10: 9/10 improved</li>
+<li><code>dzo_Tibt</code>: 4.223938 -&gt; 5.552124 tokens/word로 악화</li>
+</ul>
+<p>Figure:</p>
+<pre><code>docs/exp/v5/4_reporting/01_figures/generated/figure_02_tokenizer_fertility_delta.png</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="7">
+  <div class="slide-kicker">v5 Glot500-style replay · 07/15</div>
+  <h1>Novelty</h1>
+  <div class="slide-body">
+<p><strong>Novelty는 corpus가 아니라 appended vocabulary row initialization이다.</strong></p>
+<p>Initialization arms:</p>
+<ul>
+<li>random: HF default random resize, baseline</li>
+<li>mean: source/global mean, stable ablation</li>
+<li>fvt: source-token decomposition mean, main novelty</li>
+<li>align: script-aware fallback, exploratory</li>
+</ul>
+<p>핵심 질문:</p>
+<pre><code>new token row를 random으로 둘 것인가, 기존 tokenizer decomposition으로 초기화할 것인가?</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="8">
+  <div class="slide-kicker">v5 Glot500-style replay · 08/15</div>
+  <h1>Initialization audit</h1>
+  <div class="slide-body">
+<p><strong>초기화 비교는 row-copy correctness가 보장될 때만 의미가 있다.</strong></p>
+<p>필수 audit:</p>
+<ul>
+<li>source rows copied by token identity</li>
+<li><code>&lt;mask&gt;</code> row remapped explicitly</li>
+<li>byte fallback rows separated</li>
+<li>LM head tying verified</li>
+</ul>
+<p>Main FVT audit:</p>
+<ul>
+<li>source identity rows: 250,002</li>
+<li>FVT rows: 118,427</li>
+<li>byte/global-mean rows: 256</li>
+<li>lexical fallback rows: 2</li>
+<li><code>&lt;mask&gt;</code> max abs diff: 0.0</li>
+</ul>
+  </div>
+</section>
+<section class="slide" data-slide="9">
+  <div class="slide-kicker">v5 Glot500-style replay · 09/15</div>
+  <h1>Zero-step evidence</h1>
+  <div class="slide-body">
+<p><strong>FVT는 training 전 target MLM proxy에서 가장 좋다.</strong></p>
+<p>Zero-step target weighted NLL:</p>
+<ul>
+<li>random: 18.411756</li>
+<li>mean: 11.953142</li>
+<li>fvt: 8.785518</li>
+</ul>
+<p>FVT vs random:</p>
+<ul>
+<li>target: -9.626238 NLL</li>
+<li>relative reduction: 52.28%</li>
+</ul>
+<p>주의:</p>
+<pre><code>This is intrinsic zero-step evidence, not after-MLM or downstream proof.</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="10">
+  <div class="slide-kicker">v5 Glot500-style replay · 10/15</div>
+  <h1>Training setup</h1>
+  <div class="slide-body">
+<p><strong>Main method claim은 matched MLM checkpoint 이후에만 열린다.</strong></p>
+<p>Fixed comparison:</p>
+<ul>
+<li>model: XLM-R-base initialized with v5 tokenizer</li>
+<li>methods: <code>v5_random</code> vs <code>v5_fvt</code></li>
+<li>corpus/tokenizer/schedule/checkpoint rule 동일</li>
+<li>max steps: 10,000</li>
+<li>selected checkpoint: both 10K rows required</li>
+</ul>
+<p>Current gate:</p>
+<pre><code>v5_random_mlm_10k: selected 10K checkpoint ready
+v5_fvt_mlm_10k: running, model file pending
+post-checkpoint evaluation: locked until wrapper-ready + preflight</code></pre>
+<p>Source:</p>
+<pre><code>docs/exp/v5/3_evaluation/running_status.md
+docs/exp/v5/2_training/mlm_progress_eta.md</code></pre>
+<p>Speaker guard:</p>
+<pre><code>Live progress is not a model result; it only keeps the checkpoint gate honest.</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="11">
+  <div class="slide-kicker">v5 Glot500-style replay · 11/15</div>
+  <h1>Glot500 metrics</h1>
+  <div class="slide-body">
+<p><strong>Glot500에서 측정한 metric family를 모두 유지한다.</strong></p>
+<p>local coverage and target10 coverage:</p>
+<ul>
+<li>PPPL / MLM proxy: 102/102 local, target10 10/10</li>
+<li>Tatoeba retrieval: 63/102 local, target10 0/10</li>
+<li>Bible retrieval and Roundtrip alignment: 74/102 local, target10 0/10</li>
+<li>Text classification: 1/102 local, target10 0/10</li>
+<li>NER/POS: 78/102 audit and 58/102 local, target10 0/10</li>
+<li>v5 random PPPL/Tatoeba/Bible/Taxi1500/NER/POS/Roundtrip rows: measured;</li>
+</ul>
+<p>FVT rows wait for matched checkpoints</p>
+<p>Coverage principle:</p>
+<pre><code>missing task coverage is reported, not silently dropped.</code></pre>
+<p>Source:</p>
+<pre><code>docs/exp/v5/4_reporting/00_tables/table_13_metric_fidelity_matrix.md</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="12">
+  <div class="slide-kicker">v5 Glot500-style replay · 12/15</div>
+  <h1>Current measured rows</h1>
+  <div class="slide-body">
+<p><strong>현재는 baseline/reference rows와 v5-random PPPL/downstream rows가 측정됐고, FVT method claim은 checkpoint 대기다.</strong></p>
+<p>Measured baseline/reference rows:</p>
+<ul>
+<li>target PPPL: XLM-R 61.980216; Glot500-base 15.102934</li>
+<li>v5-random PPPL: target 39.222875; head 18.726452; all 20.138927</li>
+<li>Tatoeba all Top-10: XLM-R 0.566067; Glot500-base 0.706649; v5-random 0.610353</li>
+<li>Bible all Top-10: XLM-R 0.381153; Glot500-base 0.509356; v5-random 0.328019</li>
+<li>Taxi1500 macro-F1: XLM-R 0.592876; Glot500-base 0.743338; v5-random 0.702956</li>
+<li>NER all F1: XLM-R 0.549858; Glot500-base 0.627108; v5-random 0.544628</li>
+<li>POS all F1: XLM-R 0.481336; Glot500-base 0.567542; v5-random 0.481102</li>
+<li>Roundtrip acc.: XLM-R 0.185300; Glot500-base 0.205189; v5-random 0.190300</li>
+</ul>
+<p>Interpretation:</p>
+<pre><code>v5-random is a diagnostic row, not a method win.
+The decisive comparison is matched v5-random vs v5-FVT after the same 10K MLM budget.</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="13">
+  <div class="slide-kicker">v5 Glot500-style replay · 13/15</div>
+  <h1>Coverage and limitations</h1>
+  <div class="slide-body">
+<p><strong>Target10 downstream coverage는 현재 PPPL 중심이다.</strong></p>
+<ul>
+<li>PPPL target10 coverage: 10/10; retained downstream target10 coverage: 0/10</li>
+<li>NER target row is actual evaluated intersection, not target10-wide evidence</li>
+<li>Roundtrip은 74/102 available-language 기준 XLM-R/Glot500-base/v5-random 측정 완료,</li>
+</ul>
+<p>FVT row는 checkpoint 대기</p>
+<ul>
+<li><code>dzo_Tibt</code> tokenizer regression remains visible</li>
+</ul>
+<p>Conclusion boundary:</p>
+<pre><code>target10 downstream improvement is not a supported claim yet.</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="14">
+  <div class="slide-kicker">v5 Glot500-style replay · 14/15</div>
+  <h1>Conclusion</h1>
+  <div class="slide-body">
+<p><strong>현재 확정 결론은 setup fidelity + zero-step novelty이다.</strong></p>
+<p>Can say now:</p>
+<ul>
+<li>v5 reproduces the Glot500-style workflow on a controlled 102-language subset.</li>
+<li>tokenizer expansion and initialization audits are complete.</li>
+<li>FVT strongly improves zero-step target MLM proxy over random resize.</li>
+<li>all Glot500 metric families are retained with coverage/blocker accounting.</li>
+</ul>
+<p>Cannot say yet:</p>
+<ul>
+<li>FVT improves after-MLM PPPL.</li>
+<li>FVT improves downstream performance.</li>
+<li>target10 downstream improves.</li>
+</ul>
+<p>Final conclusion source:</p>
+<pre><code>docs/exp/v5/4_reporting/final_claim_decision_tree.md
+docs/exp/v5/4_reporting/post_checkpoint_outcome_matrix_ko.md
+docs/exp/v5/4_reporting/post_result_patch_plan_ko.md
+docs/exp/v5/4_reporting/final_claim_freeze_audit.md</code></pre>
+  </div>
+</section>
+<section class="slide" data-slide="15">
+  <div class="slide-kicker">v5 Glot500-style replay · 15/15</div>
+  <h1>Backup: execution path</h1>
+  <div class="slide-body">
+<p><strong>Checkpoint 이후 실행선</strong></p>
+<pre><code>bash scripts/run_v5_post_checkpoint_evals.sh status
+SKIP_MEASURED=1 WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh all
+python3 scripts/refresh_v5_reporting.py --with-plots
+sed -n &#x27;1,120p&#x27; docs/exp/v5/4_reporting/post_result_patch_plan_ko.md</code></pre>
+<p>Audit files:</p>
+<pre><code>docs/exp/v5/4_reporting/final_handoff_runbook.md
+docs/exp/v5/4_reporting/post_result_patch_plan_ko.md
+docs/exp/v5/3_evaluation/post_checkpoint_execution_plan.md
+docs/exp/v5/4_reporting/finalization_gate_status.md
+docs/exp/v5/4_reporting/final_claim_freeze_audit.md
+docs/exp/v5/4_reporting/reporting_package_audit.md
+docs/exp/v5/4_reporting/artifact_reference_audit.md</code></pre>
+<p>Final rule:</p>
+<pre><code>Only aggregation-promoted values become final report/PPT claims.</code></pre>
+  </div>
+</section>
+  </main>
+  <div class="controls">←/→ or Space · source: docs/exp/v5/4_reporting/02_slides/final_deck_ko.md · built 2026-06-28 18:08 KST</div>
+  <div class="progress" id="progress"></div>
+  <script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    let index = 0;
+    function show(next) {
+      index = Math.max(0, Math.min(slides.length - 1, next));
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+      document.getElementById('progress').style.width = (((index + 1) / slides.length) * 100) + '%';
+      location.hash = String(index + 1);
+    }
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') show(index + 1);
+      if (event.key === 'ArrowLeft' || event.key === 'PageUp') show(index - 1);
+      if (event.key === 'Home') show(0);
+      if (event.key === 'End') show(slides.length - 1);
+    });
+    const fromHash = parseInt(location.hash.replace('#', ''), 10);
+    show(Number.isFinite(fromHash) ? fromHash - 1 : 0);
+  </script>
+</body>
+</html>

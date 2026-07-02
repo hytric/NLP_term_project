@@ -1,0 +1,21 @@
+variant	iso	language	script	base_tokens_per_word	append_tokens_per_word	tokens_per_word_delta_vs_base_pct	base_single_char_token_ratio	append_single_char_token_ratio	single_char_delta_vs_base_pct	base_unk_rate	append_unk_rate	new_token_hit_rate	status
+char_coverage_1_0	acu	Achuar-Shiwiar	Latin	2.869407	1.858934	-35.215395	0.215368	0.209262	-2.835147	0.0	0.0	0.500768	MEASURED
+byte_fallback_0_9995	acu	Achuar-Shiwiar	Latin	2.869407	1.851952	-35.45872	0.215368	0.209108	-2.906653	0.0	0.0	0.502742	MEASURED
+char_coverage_1_0	ake	Akawaio	Latin	3.345033	2.264052	-32.316004	0.608394	0.358112	-41.138144	0.0	0.0	0.349625	MEASURED
+byte_fallback_0_9995	ake	Akawaio	Latin	3.345033	2.262157	-32.372655	0.608394	0.358094	-41.141103	0.0	0.0	0.349889	MEASURED
+char_coverage_1_0	bsn	Barasana-Eduria	Latin	3.518816	1.862727	-47.063814	0.390429	0.227144	-41.821945	0.0	0.0	0.486341	MEASURED
+byte_fallback_0_9995	bsn	Barasana-Eduria	Latin	3.518816	1.858627	-47.18033	0.390429	0.228431	-41.492307	0.0	0.0	0.487293	MEASURED
+char_coverage_1_0	chr	Cherokee	Cherokee	2.29698	2.331544	1.504758	0.128707	0.216993	68.59456	0.0	0.0	0.518231	MEASURED
+byte_fallback_0_9995	chr	Cherokee	Cherokee	2.29698	2.309396	0.540536	0.128707	0.217911	69.307808	0.0	0.0	0.520682	MEASURED
+char_coverage_1_0	cop	Coptic	Coptic	2.03922	1.783504	-12.539893	0.020151	0.101553	403.960101	0.0	0.0	0.772916	MEASURED
+byte_fallback_0_9995	cop	Coptic	Coptic	2.03922	1.76823	-13.288905	0.020151	0.100981	401.121532	0.0	0.0	0.774799	MEASURED
+char_coverage_1_0	kbh	Camsa	Latin	3.579293	1.888408	-47.240754	0.305289	0.224641	-26.416936	0.0	0.0	0.492455	MEASURED
+byte_fallback_0_9995	kbh	Camsa	Latin	3.579293	1.874683	-47.62421	0.305289	0.224574	-26.438883	0.0	0.0	0.496339	MEASURED
+char_coverage_1_0	nhg	Nahuatl (Tetelcingo)	Latin	3.023022	1.684696	-44.27113	0.256102	0.174675	-31.794754	0.0	0.0	0.507161	MEASURED
+byte_fallback_0_9995	nhg	Nahuatl (Tetelcingo)	Latin	3.023022	1.668757	-44.798384	0.256102	0.17484	-31.730326	0.0	0.0	0.510502	MEASURED
+char_coverage_1_0	oji	Ojibwa	Aboriginal Syllabics	2.132676	2.14108	0.394059	0.072251	0.176051	143.665832	0.0	0.0	0.574307	MEASURED
+byte_fallback_0_9995	oji	Ojibwa	Aboriginal Syllabics	2.132676	2.129525	-0.147749	0.072251	0.178334	146.825649	0.0	0.0	0.574995	MEASURED
+char_coverage_1_0	syr	Syriac	Syriac	4.803247	1.591167	-66.873096	0.740728	0.118873	-83.951869	0.0	0.0	0.760828	MEASURED
+byte_fallback_0_9995	syr	Syriac	Syriac	4.803247	1.571185	-67.289107	0.740728	0.117711	-84.108742	0.0	0.0	0.76624	MEASURED
+char_coverage_1_0	usp	Uspanteco	Latin	2.536658	2.168784	-14.50231	0.388324	0.333048	-14.234505	0.0	0.0	0.246409	MEASURED
+byte_fallback_0_9995	usp	Uspanteco	Latin	2.536658	2.167829	-14.539958	0.388324	0.332521	-14.370217	0.0	0.0	0.247296	MEASURED

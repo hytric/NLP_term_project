@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>v5 Paper Draft</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --paper: #f6f7fb;
+      --panel: #ffffff;
+      --accent: #0f766e;
+      --line: #d7dce6;
+      --code: #eef2f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Noto Sans CJK KR", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.58;
+    }
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 44px 34px 72px;
+      background: var(--panel);
+      min-height: 100vh;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+      margin-bottom: 28px;
+    }
+    h1, h2, h3, h4 {
+      line-height: 1.22;
+      letter-spacing: 0;
+      margin: 1.35em 0 0.55em;
+    }
+    h1 { font-size: 2.15rem; margin-top: 0; }
+    h2 { font-size: 1.55rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+    h3 { font-size: 1.22rem; color: #123d39; }
+    p { margin: 0.55rem 0; }
+    ul, ol { margin: 0.4rem 0 0.85rem 1.55rem; padding: 0; }
+    li { margin: 0.25rem 0; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0 1.2rem;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 0.48rem 0.58rem;
+      vertical-align: top;
+      text-align: left;
+    }
+    th { background: #eef7f6; color: #123d39; }
+    code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      background: var(--code);
+      border-radius: 4px;
+      padding: 0.08rem 0.24rem;
+      overflow-wrap: anywhere;
+    }
+    pre {
+      background: var(--code);
+      border-left: 4px solid var(--accent);
+      padding: 0.78rem 0.95rem;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-size: 0.88rem;
+    }
+    blockquote {
+      margin: 1rem 0;
+      padding: 0.8rem 1rem;
+      border-left: 4px solid var(--accent);
+      background: #f2fbf9;
+    }
+    @media print {
+      body { background: white; }
+      .page { max-width: none; padding: 24px; }
+      h2 { page-break-after: avoid; }
+      table, pre, blockquote { page-break-inside: avoid; }
+      .meta { color: #555; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <div class="meta">source: docs/exp/v5/4_reporting/03_final_report/paper_draft.md · built 2026-06-28 18:08 KST</div>
+<h1>Reproducing Glot500 on a Controlled 102-Language Setting with Vocabulary-Extension Initialization</h1>
+<p>Status: execution draft, refreshed 2026-06-28.</p>
+<p>This draft is written as a paper-style report. Unresolved result slots must be</p>
+<p>filled only from measured artifacts in <code>docs/exp/v5/3_evaluation/09_aggregation/</code></p>
+<p>or from explicit blocker/status notes.</p>
+<p>Live checkpoint progress and post-checkpoint Go/No-Go should be read from</p>
+<p><code>docs/exp/v5/4_reporting/final_action_dashboard_ko.md</code> and</p>
+<p><code>bash scripts/run_v5_post_checkpoint_evals.sh status</code>, not from this static</p>
+<p>draft header.</p>
+<h2>Abstract</h2>
+<p>We reproduce the core Glot500 training and evaluation pattern on a controlled</p>
+<p>102-language-script setting composed of 92 XLM-R-seen Glot500 language-scripts</p>
+<p>and 10 diverse Glot500-internal target language-scripts. The experiment keeps</p>
+<p>the Glot500-style corpus merge, SentencePiece vocabulary expansion, continued</p>
+<p>MLM pretraining, and downstream metric families, while intentionally reducing</p>
+<p>the language and compute scale. Our novelty is a focused comparison of</p>
+<p>initialization policies for newly appended vocabulary rows. In addition to the</p>
+<p>standard random resize baseline, we evaluate mean initialization and</p>
+<p>source-token decomposition initialization, which initializes a new token by</p>
+<p>averaging source embeddings obtained from the original tokenizer decomposition</p>
+<p>of that token surface. Before continued MLM, source-token decomposition</p>
+<p>substantially reduces target MLM proxy loss compared with random resize. Final</p>
+<p>after-MLM and downstream transfer claims remain conditional on matched</p>
+<p><code>v5_random</code> and <code>v5_fvt</code> checkpoints and on available downstream task coverage.</p>
+<h2>1. Introduction</h2>
+<p>Multilingual language models such as XLM-R cover many languages, but their</p>
+<p>tokenization and representation quality remain uneven across language, script,</p>
+<p>and resource level. Glot500 addresses this limitation by scaling multilingual</p>
+<p>corpora and continued pretraining to more than 500 languages. Reproducing the</p>
+<p>full Glot500 experiment is expensive, but its experimental pattern can be</p>
+<p>studied in a controlled subset.</p>
+<p>This report focuses on a 102-language-script replay. The head group consists</p>
+<p>of 92 local Glot500 language-scripts that are seen by XLM-R. The target group</p>
+<p>consists of 10 language-scripts selected from Glot500 raw data that are not</p>
+<p>XLM-R seen and have at least 30,000 rows. This setting lets us ask two linked</p>
+<p>questions. First, can we faithfully execute the Glot500-style tokenizer,</p>
+<p>continued pretraining, and metric pipeline in a controlled setting? Second,</p>
+<p>when the tokenizer is expanded, does the initialization of newly appended</p>
+<p>embedding rows affect early adaptation quality?</p>
+<p>The contribution is therefore not a new corpus. It is an experiment design</p>
+<p>that separates Glot500-style reproduction from a vocabulary-extension</p>
+<p>initialization novelty. The current strongest measured evidence is intrinsic:</p>
+<p>source-token decomposition initialization improves zero-step target MLM proxy</p>
+<p>loss over random and mean initialization while preserving source rows,</p>
+<p>special-token behavior, byte-row accounting, and LM-head tying.</p>
+<h3>1.1 Contributions</h3>
+<p>This report makes three bounded contributions.</p>
+<p>First, it builds an artifact-audited controlled replay package for the</p>
+<p>Glot500-style pipeline over 92 XLM-R-seen language-scripts and 10</p>
+<p>Glot500-internal target language-scripts. The package ties together corpus</p>
+<p>merge evidence, SentencePiece append-style tokenizer expansion, continued MLM</p>
+<p>handoff, metric-family coverage, and claim-freeze audits, while explicitly</p>
+<p>rejecting a full-scale 511-language reproduction claim.</p>
+<p>Second, it isolates vocabulary-row initialization as the method novelty. The</p>
+<p>source-token decomposition initializer preserves source row identity, remaps</p>
+<p><code>&lt;mask&gt;</code> by token identity, accounts for byte and fallback rows, keeps the LM</p>
+<p>head tied, and lowers zero-step target weighted NLL relative to random resize.</p>
+<p>Third, it keeps the Glot500 downstream metric families in the protocol rather</p>
+<p>than dropping coverage-limited tasks. PPPL, retrieval, classification, tagging,</p>
+<p>and Roundtrip alignment are all routed through aggregation, insertion, and</p>
+<p>claim-promotion gates; target10 downstream gaps remain visible limitations</p>
+<p>until measured task coverage exists.</p>
+<h2>2. Related Work And Positioning</h2>
+<p>Glot500 is the reproduction target for this experiment. The original Glot500</p>
+<p>paper scales multilingual corpus construction and continued pretraining to more</p>
+<p>than 500 languages, and its evaluation surface motivates the v5 requirement to</p>
+<p>retain PPPL, retrieval, classification, tagging, and roundtrip-style metric</p>
+<p>families. In v5, this citation supports the experimental pattern, not a claim</p>
+<p>that the full 511-language training scale has been rerun. The local evidence</p>
+<p>for the subset replay is instead the 92+10 merge report, tokenizer audit,</p>
+<p>metric mapping, and coverage tables.</p>
+<p>Yamaguchi et al. study low-resource continued vocabulary expansion and motivate</p>
+<p>the broader question of how newly introduced vocabulary rows should be handled.</p>
+<p>In this report, <code>Yamaguchi-style</code> refers to that inspiration and to the earlier</p>
+<p>add-token route used in prior attempts. The main v5 tokenizer is deliberately</p>
+<p>different: it follows the Glot500-style SentencePiece append route. The novelty</p>
+<p>claim is therefore narrower and local to v5: after appending vocabulary rows,</p>
+<p>we compare initialization policies for those rows, with source-token</p>
+<p>decomposition as the main method candidate.</p>
+<p>The citation boundary is maintained in:</p>
+<pre><code>docs/exp/v5/4_reporting/03_final_report/citation_source_map.md</code></pre>
+<h2>3. Scope And Reproduction Boundary</h2>
+<p>The allowed reproduction claim is:</p>
+<pre><code>We reproduce the Glot500-style training/evaluation pattern on a controlled
+102-language subset.</code></pre>
+<p>The disallowed claim is:</p>
+<pre><code>We fully reproduce the original 511-language Glot500 experiment.</code></pre>
+<p>This distinction is important. The v5 run keeps the experimental logic of</p>
+<p>Glot500, including SentencePiece append-style vocabulary expansion, continued</p>
+<p>MLM pretraining, head/tail/all reporting, and the retained metric families.</p>
+<p>However, it uses a smaller language set and a smaller compute budget.</p>
+<p><code>cis-lmu/glot500-base</code> is therefore an external reference model, not an</p>
+<p>equal-budget baseline.</p>
+<p>The detailed fidelity matrix is maintained in:</p>
+<pre><code>docs/exp/v5/4_reporting/00_tables/table_15_glot500_reproduction_fidelity.md</code></pre>
+<p>The overview pipeline figure is:</p>
+<pre><code>docs/exp/v5/4_reporting/01_figures/generated/figure_01_experiment_pipeline.png</code></pre>
+<p>The short interpretation is that v5 is faithful at the level of experimental</p>
+<p>logic: Glot500-internal data, tokenizer expansion, continued MLM, required</p>
+<p>metric-family accounting, and head/tail/all-style reporting. It is intentionally</p>
+<p>not faithful at the level of full language scale or original compute budget.</p>
+<h2>4. Data</h2>
+<p>The v5 corpus contains 92 head language-scripts and 10 target language-scripts.</p>
+<p>The target group is selected from Glot500 raw data with the following criteria:</p>
+<p>not XLM-R seen, <code>new_length &gt;= 30000</code>, local raw directory available, and</p>
+<p>regional/script diversity.</p>
+<p>Target10:</p>
+<pre><code>fur_Latn
+krc_Cyrl
+acm_Arab
+dzo_Tibt
+sat_Olck
+mad_Latn
+bam_Latn
+kjb_Latn
+quw_Latn
+rap_Latn</code></pre>
+<p>The full merge completed successfully.</p>
+<table>
+<thead><tr><th>Item</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>head language-scripts</td><td>92</td></tr>
+<tr><td>target language-scripts</td><td>10</td></tr>
+<tr><td>source seen sentences</td><td>1,025,635,434</td></tr>
+<tr><td>source target sentences</td><td>363,421</td></tr>
+<tr><td>planned total samples</td><td>92,452,251</td></tr>
+<tr><td>actual total samples</td><td>92,452,251</td></tr>
+<tr><td>missing language dirs</td><td>0</td></tr>
+<tr><td>merged file size</td><td>19G</td></tr>
+</tbody></table>
+<p>Primary artifacts:</p>
+<ul>
+<li>corpus:</li>
+</ul>
+<p><code>/home/axt/mnt2/jongha/v5_glot50010/data/Glot500_v5_glot50010_xlmr100.txt</code></p>
+<ul>
+<li>manifest:</li>
+</ul>
+<p><code>docs/exp/v5/0_tokenizer/merge/Glot500_v5_glot50010_xlmr100.manifest.tsv</code></p>
+<ul>
+<li>report:</li>
+</ul>
+<p><code>docs/exp/v5/0_tokenizer/merge/Glot500_v5_glot50010_xlmr100.report.json</code></p>
+<h2>5. Tokenizer Expansion</h2>
+<p>The main tokenizer follows the Glot500-style SentencePiece append route. An</p>
+<p>auxiliary SentencePiece tokenizer is trained on the controlled mixed corpus.</p>
+<p>Pieces that are absent from the original XLM-R SentencePiece model are</p>
+<p>appended to the base model.</p>
+<p>This differs from the earlier Yamaguchi-style add-token route used in prior</p>
+<p>experiments. The add-token route preserves existing tokenizer ids more</p>
+<p>directly, while the Glot500-style append route is closer to the target</p>
+<p>reproduction method but requires explicit special-token auditing. In v5,</p>
+<p><code>&lt;mask&gt;</code> moves from source id <code>250001</code> to target id <code>368686</code>, so model rows</p>
+<p>must be copied by token identity rather than by id prefix.</p>
+<p>Tokenizer result:</p>
+<table>
+<thead><tr><th>Item</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>base vocab size</td><td>250,002</td></tr>
+<tr><td>extended vocab size</td><td>368,687</td></tr>
+<tr><td>appended token count</td><td>118,685</td></tr>
+<tr><td>byte fallback rows</td><td>256</td></tr>
+<tr><td>source <code>&lt;mask&gt;</code> id</td><td>250001</td></tr>
+<tr><td>target <code>&lt;mask&gt;</code> id</td><td>368686</td></tr>
+<tr><td>audited languages improved</td><td>29/30</td></tr>
+<tr><td>target10 improved</td><td>9/10</td></tr>
+</tbody></table>
+<p>The main tokenizer reduced tokens per word for most audited languages. The</p>
+<p>main caveat is <code>dzo_Tibt</code>, which worsened from 4.223938 to 5.552124</p>
+<p>tokens/word. The regression is not explained by <code>&lt;unk&gt;</code> or byte fallback. It</p>
+<p>appears to be a score-calibration/fertility issue where newly appended Tibetan</p>
+<p>pieces can outcompete useful original pieces.</p>
+<h2>6. Embedding Initialization</h2>
+<p>We compare three initialized checkpoint families:</p>
+<table>
+<thead><tr><th>Method</th><th>Description</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td><code>random</code></td><td>Hugging Face resize with random new rows</td><td>Glot500-style baseline</td></tr>
+<tr><td><code>mean</code></td><td>source/global mean initialization</td><td>simple stable ablation</td></tr>
+<tr><td><code>fvt</code></td><td>source-token decomposition mean</td><td>main novelty candidate</td></tr>
+</tbody></table>
+<p>For all non-random checkpoints, source rows are copied by token identity. The</p>
+<p>source <code>&lt;mask&gt;</code> row is explicitly remapped to the target <code>&lt;mask&gt;</code> id. Byte rows</p>
+<p>and fallback rows are counted separately, and input embeddings and LM head are</p>
+<p>checked for consistency.</p>
+<p>Main FVT initialization audit:</p>
+<table>
+<thead><tr><th>Audit item</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>source identity rows copied</td><td>250,002</td></tr>
+<tr><td>new token rows</td><td>118,685</td></tr>
+<tr><td>FVT-initialized rows</td><td>118,427</td></tr>
+<tr><td>byte/global-mean rows</td><td>256</td></tr>
+<tr><td>global mean lexical fallback rows</td><td>2</td></tr>
+<tr><td><code>&lt;mask&gt;</code> max absolute diff</td><td>0.0</td></tr>
+<tr><td>LM head tied</td><td>true</td></tr>
+</tbody></table>
+<h2>7. Continued MLM Pretraining</h2>
+<p>The main after-training comparison requires matched <code>v5_random</code> and <code>v5_fvt</code></p>
+<p>checkpoints. The paired launcher trains <code>v5_random_mlm_10k</code> first and then</p>
+<p><code>v5_fvt_mlm_10k</code> with the same corpus, tokenizer, schedule, seed family, and</p>
+<p>checkpoint interval.</p>
+<p>Current live state is recorded in:</p>
+<pre><code>docs/exp/v5/3_evaluation/running_status.md</code></pre>
+<p>At the current check, <code>v5_random_mlm_10k</code> has produced the selected 10K</p>
+<p>checkpoint, while <code>v5_fvt_mlm_10k</code> is still running and has not yet produced a</p>
+<p>model file. This live status is not a result claim, and post-checkpoint</p>
+<p>evaluation remains locked until both rows report <code>ready_for_wrapper=yes</code> and</p>
+<p><code>post_checkpoint_preflight.md</code> reports <code>post_checkpoint_preflight_ready_to_launch</code>.</p>
+<table>
+<thead><tr><th>Setting</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>base model</td><td><code>xlm-roberta-base</code></td></tr>
+<tr><td>tokenizer</td><td>v5 extended tokenizer</td></tr>
+<tr><td>objective</td><td>MLM</td></tr>
+<tr><td>max length</td><td>512</td></tr>
+<tr><td>learning rate</td><td>5e-5</td></tr>
+<tr><td>max steps</td><td>10,000</td></tr>
+<tr><td>checkpoint interval</td><td>10,000</td></tr>
+<tr><td>primary comparison</td><td><code>v5_random</code> vs <code>v5_fvt</code></td></tr>
+</tbody></table>
+<h2>8. Evaluation Setup</h2>
+<p>All Glot500 metric families are retained as required evaluation targets.</p>
+<p>Coverage limitations are recorded rather than silently dropping a metric.</p>
+<table>
+<thead><tr><th>Metric</th><th>Score</th><th>Current coverage</th><th>Current status</th></tr></thead>
+<tbody>
+<tr><td>PPPL / MLM proxy</td><td>weighted PPPL</td><td>102/102, target10 10/10</td><td>XLM-R, Glot500-base, and v5-random rows measured; FVT waiting</td></tr>
+<tr><td>Tatoeba retrieval</td><td>Top-10 accuracy</td><td>63/102, target10 0/10</td><td>XLM-R, Glot500-base, and v5-random rows measured; FVT waiting</td></tr>
+<tr><td>Bible retrieval</td><td>Top-10 accuracy</td><td>74/102, target10 0/10</td><td>XLM-R, Glot500-base, and v5-random rows measured; FVT waiting</td></tr>
+<tr><td>Text classification</td><td>macro-F1</td><td>1/102, target10 0/10</td><td>XLM-R, Glot500-base, and v5-random rows measured; FVT waiting</td></tr>
+<tr><td>NER</td><td>F1</td><td>78/102 materialized coverage, target10 0/10; actual runner includes <code>fur_Latn</code></td><td>XLM-R baseline, Glot500-base reference, and v5-random rows measured; FVT waiting</td></tr>
+<tr><td>POS</td><td>F1</td><td>58/102, target10 0/10</td><td>XLM-R baseline, Glot500-base reference, and v5-random rows measured with <code>TRAIN_LANGS=tur_Latn</code>; FVT waiting</td></tr>
+<tr><td>Roundtrip alignment</td><td>accuracy</td><td>74/102, target10 0/10</td><td>XLM-R, Glot500-base, and v5-random rows measured; FVT waiting</td></tr>
+</tbody></table>
+<p>The target10 coverage boundary is central to interpretation. Target10 claims</p>
+<p>should focus on tokenization, zero-step initialization diagnostics, and</p>
+<p>after-MLM PPPL unless target10 downstream task data is later materialized.</p>
+<p>Downstream results should be reported over available languages with explicit</p>
+<p>head/all and coverage notes.</p>
+<p>For final assembly, the metric-by-metric fidelity boundary is also summarized</p>
+<p>in <code>00_tables/table_13_metric_fidelity_matrix.md</code>. This table is the canonical</p>
+<p>bridge between the reproduction claim and the local execution state: each</p>
+<p>Glot500 metric family is either measured for the relevant model columns,</p>
+<p>waiting on matched v5 checkpoints, coverage-limited, or explicitly blocked.</p>
+<h3>8.1 Glot500 Fidelity Map</h3>
+<p>The experiment is designed as a faithful subset replay rather than a scale</p>
+<p>match. Each Glot500 component is retained where local data and inherited</p>
+<p>runners make it executable; otherwise the missing component is kept as an</p>
+<p>explicit blocked metric instead of being removed from the protocol.</p>
+<table>
+<thead><tr><th>Glot500 component</th><th>v5 implementation</th><th>Evidence</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>multilingual corpus construction</td><td>92 XLM-R-seen Glot500 language-scripts + 10 Glot500-internal target language-scripts</td><td>merge report has <code>92,452,251</code> actual samples and <code>0</code> missing dirs</td><td>complete</td></tr>
+<tr><td>SentencePiece vocabulary expansion</td><td>auxiliary SPM pieces appended to XLM-R SPM</td><td>extended vocab <code>368,687</code>, appended rows <code>118,685</code></td><td>complete</td></tr>
+<tr><td>continued MLM pretraining</td><td>paired <code>v5_random</code> then <code>v5_fvt</code> 10K run</td><td>launcher active on GPUs <code>2,3</code></td><td>in progress</td></tr>
+<tr><td>intrinsic PPPL / MLM proxy</td><td>wrapper and aggregation over 102 language-scripts</td><td><code>xlmr_base</code>, <code>glot500_base</code>, and <code>v5_random</code> rows measured</td><td>partial, FVT row pending checkpoint</td></tr>
+<tr><td>sentence retrieval</td><td>Tatoeba runner retained</td><td><code>xlmr_base</code>, <code>glot500_base</code>, and <code>v5_random</code> rows measured over available languages</td><td>partial, FVT row pending checkpoint</td></tr>
+<tr><td>text classification</td><td>Taxi1500 runner retained</td><td><code>xlmr_base</code>, <code>glot500_base</code>, and <code>v5_random</code> rows measured on local English split</td><td>partial, coverage-limited, FVT row pending checkpoint</td></tr>
+<tr><td>sequence tagging</td><td>NER and POS runners retained</td><td>NER <code>xlmr_base</code>/<code>glot500_base</code>/<code>v5_random</code> measured; POS <code>xlmr_base</code>/<code>glot500_base</code>/<code>v5_random</code> measured with <code>TRAIN_LANGS=tur_Latn</code></td><td>partial, FVT rows pending checkpoint</td></tr>
+<tr><td>Bible retrieval</td><td>metric family retained</td><td>74/102 local parallel data materialized; XLM-R Top-10 <code>0.381153</code>, Glot500-base Top-10 <code>0.509356</code>, v5-random Top-10 <code>0.328019</code></td><td>partial, FVT row pending checkpoint</td></tr>
+<tr><td>roundtrip alignment</td><td>metric family retained</td><td>Bible-derived input set and v5 runner materialized; XLM-R accuracy <code>0.185300</code>; Glot500-base accuracy <code>0.205189</code>; v5-random accuracy <code>0.190300</code></td><td>partial, FVT row pending checkpoint</td></tr>
+</tbody></table>
+<p>This map is the basis for final wording. It supports a claim of Glot500-style</p>
+<p>experimental fidelity on a controlled subset, but not a claim of full-scale</p>
+<p>Glot500 reproduction.</p>
+<h3>8.2 Result Promotion Rules</h3>
+<p>The report separates four evidence levels:</p>
+<table>
+<thead><tr><th>Evidence level</th><th>Can appear in final tables?</th><th>Example</th><th>Allowed wording</th></tr></thead>
+<tbody>
+<tr><td>audited artifact</td><td>yes</td><td>merge report, tokenizer audit, init report, zero-step summary</td><td>proven setup or intrinsic result</td></tr>
+<tr><td>parsed metric output</td><td>yes</td><td>non-empty <code>test_results.txt</code> or <code>summary.tsv</code> parsed by aggregation</td><td>measured result</td></tr>
+<tr><td>live run snapshot</td><td>no</td><td>current training step, dev F1 during tagging training</td><td>execution progress only</td></tr>
+<tr><td>blocked or model-pending coverage row</td><td>yes, as limitation</td><td>FVT Bible/Roundtrip rows pending</td><td>retained metric with explicit status</td></tr>
+</tbody></table>
+<p>This rule prevents three common overstatements. First, a live dev score is not a</p>
+<p>downstream result until the final prediction/evaluation file is complete and</p>
+<p>parsed. Second, <code>cis-lmu/glot500-base</code> is an external reference, not an</p>
+<p>equal-budget baseline. Third, target10 downstream improvement cannot be claimed</p>
+<p>while target10 task coverage is absent outside PPPL.</p>
+<p>The final conclusion should therefore be written in two layers. The first layer</p>
+<p>contains completed evidence: data scope, tokenizer expansion, initialization</p>
+<p>audits, zero-step FVT advantage, and measured baseline/reference rows. The</p>
+<p>second layer states the open test: whether the zero-step FVT advantage survives</p>
+<p>matched continued MLM and transfers to available downstream tasks.</p>
+<h2>9. Results</h2>
+<h3>9.1 Tokenization</h3>
+<p>The tokenizer append run is structurally valid and improves audited fertility</p>
+<p>for 29/30 languages. It improves 9/10 target languages. The exception is</p>
+<p><code>dzo_Tibt</code>, which remains a visible failure case.</p>
+<h3>9.2 Zero-Step Initialization</h3>
+<p>Before continued MLM, initialization differences are large on the v5 target</p>
+<p>group.</p>
+<table>
+<thead><tr><th>Method</th><th>Target weighted NLL</th><th>Head weighted NLL</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><code>random</code></td><td>18.411756</td><td>12.895301</td><td>measured</td></tr>
+<tr><td><code>mean</code></td><td>11.953142</td><td>8.037017</td><td>measured</td></tr>
+<tr><td><code>fvt</code></td><td>8.785518</td><td>6.621457</td><td>measured</td></tr>
+</tbody></table>
+<p>FVT improves target weighted NLL by <code>-9.626238</code> compared with random resize</p>
+<p>and by <code>-3.167624</code> compared with mean initialization. The central comparison</p>
+<p>artifact is <code>docs/exp/v5/4_reporting/method_comparison_summary.md</code>; in that</p>
+<p>summary, FVT reduces weighted NLL relative to random by <code>52.28%</code> on v5 target,</p>
+<p><code>48.65%</code> on the head sample, and <code>51.31%</code> on all measured zero-step rows. This</p>
+<p>supports the initialization novelty at zero step. It does not by itself prove</p>
+<p>after-MLM or downstream improvement.</p>
+<h3>9.3 Baseline And Reference Evaluation</h3>
+<p>The current parsed baseline/reference rows establish the comparison scale for</p>
+<p>later v5 method results.</p>
+<table>
+<thead><tr><th>Metric</th><th>Model</th><th>Group</th><th>Score</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>PPPL</td><td><code>xlmr_base</code></td><td>v5 target</td><td>weighted PPPL</td><td>61.980216</td></tr>
+<tr><td>PPPL</td><td><code>xlmr_base</code></td><td>head</td><td>weighted PPPL</td><td>8.117338</td></tr>
+<tr><td>PPPL</td><td><code>xlmr_base</code></td><td>all</td><td>weighted PPPL</td><td>9.986271</td></tr>
+<tr><td>PPPL</td><td><code>glot500_base</code></td><td>v5 target</td><td>weighted PPPL</td><td>15.102934</td></tr>
+<tr><td>PPPL</td><td><code>glot500_base</code></td><td>head</td><td>weighted PPPL</td><td>10.213100</td></tr>
+<tr><td>PPPL</td><td><code>glot500_base</code></td><td>all</td><td>weighted PPPL</td><td>10.640353</td></tr>
+<tr><td>Tatoeba</td><td><code>xlmr_base</code></td><td>head</td><td>Top-10</td><td>0.656309</td></tr>
+<tr><td>Tatoeba</td><td><code>xlmr_base</code></td><td>all available</td><td>Top-10</td><td>0.566067</td></tr>
+<tr><td>Tatoeba</td><td><code>glot500_base</code></td><td>head</td><td>Top-10</td><td>0.743755</td></tr>
+<tr><td>Tatoeba</td><td><code>glot500_base</code></td><td>all available</td><td>Top-10</td><td>0.706649</td></tr>
+<tr><td>Tatoeba</td><td><code>v5_random</code></td><td>head</td><td>Top-10</td><td>0.700285</td></tr>
+<tr><td>Tatoeba</td><td><code>v5_random</code></td><td>all available</td><td>Top-10</td><td>0.610353</td></tr>
+<tr><td>Bible</td><td><code>xlmr_base</code></td><td>head/all available</td><td>Top-10</td><td>0.381153</td></tr>
+<tr><td>Bible</td><td><code>glot500_base</code></td><td>head/all available</td><td>Top-10</td><td>0.509356</td></tr>
+<tr><td>Bible</td><td><code>v5_random</code></td><td>head/all available</td><td>Top-10</td><td>0.328019</td></tr>
+<tr><td>Taxi1500</td><td><code>xlmr_base</code></td><td>head/all available</td><td>macro-F1</td><td>0.592876</td></tr>
+<tr><td>Taxi1500</td><td><code>glot500_base</code></td><td>head/all available</td><td>macro-F1</td><td>0.743338</td></tr>
+<tr><td>Taxi1500</td><td><code>v5_random</code></td><td>head/all available</td><td>macro-F1</td><td>0.702956</td></tr>
+<tr><td>NER</td><td><code>xlmr_base</code></td><td>all available</td><td>F1</td><td>0.549858</td></tr>
+<tr><td>NER</td><td><code>xlmr_base</code></td><td>head</td><td>F1</td><td>0.621207</td></tr>
+<tr><td>NER</td><td><code>xlmr_base</code></td><td>v5-target actual intersection</td><td>F1</td><td>0.459364</td></tr>
+<tr><td>NER</td><td><code>glot500_base</code></td><td>all available</td><td>F1</td><td>0.627108</td></tr>
+<tr><td>NER</td><td><code>glot500_base</code></td><td>head</td><td>F1</td><td>0.645915</td></tr>
+<tr><td>NER</td><td><code>glot500_base</code></td><td>v5-target actual intersection</td><td>F1</td><td>0.553191</td></tr>
+<tr><td>NER</td><td><code>v5_random</code></td><td>all available</td><td>F1</td><td>0.544628</td></tr>
+<tr><td>NER</td><td><code>v5_random</code></td><td>head</td><td>F1</td><td>0.608020</td></tr>
+<tr><td>NER</td><td><code>v5_random</code></td><td>v5-target actual intersection</td><td>F1</td><td>0.560554</td></tr>
+<tr><td>POS</td><td><code>xlmr_base</code></td><td>all available</td><td>F1</td><td>0.481336</td></tr>
+<tr><td>POS</td><td><code>xlmr_base</code></td><td>head</td><td>F1</td><td>0.571446</td></tr>
+<tr><td>POS</td><td><code>glot500_base</code></td><td>all available</td><td>F1</td><td>0.567542</td></tr>
+<tr><td>POS</td><td><code>glot500_base</code></td><td>head</td><td>F1</td><td>0.573832</td></tr>
+<tr><td>POS</td><td><code>v5_random</code></td><td>all available</td><td>F1</td><td>0.481102</td></tr>
+<tr><td>POS</td><td><code>v5_random</code></td><td>head</td><td>F1</td><td>0.587430</td></tr>
+<tr><td>Roundtrip</td><td><code>xlmr_base</code></td><td>head/all available</td><td>accuracy</td><td>0.185300</td></tr>
+<tr><td>Roundtrip</td><td><code>glot500_base</code></td><td>head/all available</td><td>accuracy</td><td>0.205189</td></tr>
+<tr><td>Roundtrip</td><td><code>v5_random</code></td><td>head/all available</td><td>accuracy</td><td>0.190300</td></tr>
+</tbody></table>
+<p>The NER v5-target row should be interpreted narrowly: it comes from the actual</p>
+<p>evaluated intersection and currently consists of <code>fur_Latn</code> only. It is not a</p>
+<p>target10-wide downstream result.</p>
+<p>The POS rows are available-language tagging references. XLM-R-base,</p>
+<p>Glot500-base, and v5-random POS runs use <code>TRAIN_LANGS=tur_Latn</code> because the</p>
+<p>local POS materialization does not include <code>train-eng_Latn.tsv</code>. The measured</p>
+<p>v5-random POS row has F1 <code>0.481102</code> over all available POS languages and</p>
+<p><code>0.587430</code> over the head group; the matched FVT POS row remains checkpoint-gated.</p>
+<h3>9.4 Pending Main Method Results</h3>
+<p>The <code>v5_random</code> after-MLM PPPL row is now measured. Its weighted PPPL is</p>
+<p><code>39.222875</code> on v5 target10, <code>18.726452</code> on the head group, and <code>20.138927</code></p>
+<p>on all 102 language-scripts. This is a measured random-initialized checkpoint</p>
+<p>row, not yet a method comparison: the corresponding <code>v5_fvt</code> PPPL row is still</p>
+<p>locked until the matched FVT checkpoint is ready and parsed by aggregation.</p>
+<p>The <code>v5_random</code> Tatoeba retrieval row is measured with Top-10 accuracy</p>
+<p><code>0.700285</code> on the 63-language head split and <code>0.610353</code> over all 98 available</p>
+<p>language-scripts. This fills the random-checkpoint available-language row; it is</p>
+<p>not a target10 downstream result because Tatoeba target10 coverage remains</p>
+<p><code>0/10</code>.</p>
+<p>The <code>v5_random</code> Taxi1500 row is measured with macro-F1 <code>0.702956</code> and accuracy</p>
+<p><code>0.747748</code> on the local English-only split. This is a limited available-language</p>
+<p>classification row; it does not unlock a target10 downstream claim.</p>
+<p>The <code>v5_random</code> Roundtrip row is also measured with accuracy <code>0.190300</code> over</p>
+<p>the same 74 available language-scripts as the XLM-R and Glot500-base reference</p>
+<p>rows. This is available-language downstream evidence for the random checkpoint</p>
+<p>only; downstream method claims remain locked until the matched <code>v5_fvt</code></p>
+<p>Roundtrip row exists.</p>
+<p>The <code>v5_random</code> Bible retrieval row is measured as well, with Top-10 accuracy</p>
+<p><code>0.328019</code> over the same 74 available Bible language-scripts. This is a</p>
+<p>single-checkpoint measured row, not evidence that the embedding initialization</p>
+<p>method wins; that comparison still requires the matched <code>v5_fvt</code> Bible row.</p>
+<p>The <code>v5_random</code> NER row is measured too, with F1 <code>0.544628</code> over all 164</p>
+<p>actual runner language rows, <code>0.608020</code> over the head group, and <code>0.560554</code> on</p>
+<p>the one-language v5-target actual intersection (<code>fur_Latn</code>). This is</p>
+<p>available-language tagging evidence for the random checkpoint only; it does not</p>
+<p>unlock a target10-wide downstream claim.</p>
+<p>The <code>v5_random</code> POS row is also measured with F1 <code>0.481102</code> over all available</p>
+<p>POS languages and <code>0.587430</code> over the head group under the same</p>
+<p><code>TRAIN_LANGS=tur_Latn</code> condition as the baseline/reference POS rows. It is a</p>
+<p>random-checkpoint tagging row, not yet a method win; that comparison requires</p>
+<p>the matched <code>v5_fvt</code> POS row.</p>
+<p>Taken together, the measured <code>v5_random</code> rows are best interpreted as a</p>
+<p>diagnostic lower-bound checkpoint. The random-initialized model improves</p>
+<p>target10 PPPL relative to XLM-R (<code>39.222875</code> versus <code>61.980216</code>) but is still</p>
+<p>substantially behind Glot500-base (<code>15.102934</code>), and its head/all PPPL remains</p>
+<p>worse than both references. Available-language downstream behavior is mixed:</p>
+<p>it improves over XLM-R on Tatoeba and Taxi1500 but not to the Glot500-base</p>
+<p>reference level; it is below both references on Bible retrieval; it is near</p>
+<p>XLM-R on all-language POS, above both references on head POS, and between</p>
+<p>XLM-R and Glot500-base on Roundtrip. This mixed profile strengthens the need</p>
+<p>for the matched <code>v5_fvt</code> test rather than weakening the design: the final</p>
+<p>method claim must depend on whether source-token-decomposition initialization</p>
+<p>improves over this random-checkpoint baseline after the same 10K MLM budget.</p>
+<p>The following rows are intentionally pending:</p>
+<ul>
+<li><code>v5_fvt</code> after-MLM PPPL.</li>
+<li><code>v5_fvt</code> Tatoeba retrieval.</li>
+<li><code>v5_fvt</code> Bible retrieval over available Bible languages.</li>
+<li><code>v5_fvt</code> text classification after the matched checkpoint.</li>
+<li><code>v5_fvt</code> NER and <code>v5_fvt</code> POS over available task languages.</li>
+<li><code>v5_fvt</code> Roundtrip alignment over available Roundtrip languages.</li>
+</ul>
+<p>The required post-checkpoint insertion path is:</p>
+<pre><code>bash scripts/run_v5_post_checkpoint_evals.sh status
+SKIP_MEASURED=1 WITH_PLOTS=1 GPU_RANDOM=0 GPU_FVT=1 bash scripts/run_v5_post_checkpoint_evals.sh all
+python3 scripts/refresh_v5_reporting.py --with-plots</code></pre>
+<p>Only rows parsed into <code>3_evaluation/09_aggregation/</code> should replace the</p>
+<p>pending labels above. If a metric remains unavailable, it must stay as</p>
+<p><code>blocked-data</code> or <code>coverage-limited</code> rather than disappearing from the results.</p>
+<p>The exact launch environment, output/log paths, and promotion rule are generated</p>
+<p>in <code>3_evaluation/post_checkpoint_execution_plan.md</code>.</p>
+<h3>9.5 Outcome-Conditioned Final Wording</h3>
+<p>After post-checkpoint evaluation, the abstract and conclusion should be</p>
+<p>updated from the decision tree rather than rewritten ad hoc. The outcome matrix</p>
+<p>for the Korean report/PPT is:</p>
+<pre><code>docs/exp/v5/4_reporting/post_checkpoint_outcome_matrix_ko.md</code></pre>
+<p>The English prose blocks are maintained in:</p>
+<pre><code>docs/exp/v5/4_reporting/03_final_report/result_interpretation_blocks.md</code></pre>
+<p>The file-by-file report/PPT edit order is maintained in:</p>
+<pre><code>docs/exp/v5/4_reporting/post_result_patch_plan_ko.md</code></pre>
+<p>The final report should choose exactly one of these outcome families:</p>
+<table>
+<thead><tr><th>Outcome family</th><th>Required evidence</th><th>Final wording rule</th></tr></thead>
+<tbody>
+<tr><td>bounded positive</td><td>FVT wins after-MLM PPPL and most available downstream rows</td><td>claim a bounded method benefit, while keeping target10 downstream coverage caveats</td></tr>
+<tr><td>intrinsic positive, downstream mixed</td><td>FVT wins after-MLM PPPL but downstream rows vary by task</td><td>claim intrinsic adaptation improvement only; describe downstream as task- and coverage-dependent</td></tr>
+<tr><td>early-only diagnostic</td><td>FVT wins zero-step but not after matched MLM</td><td>frame initialization as early-adaptation evidence rather than final superiority</td></tr>
+<tr><td>negative final comparison</td><td>FVT does not beat random in PPPL or downstream</td><td>report a controlled negative result and discuss training/objective implications</td></tr>
+<tr><td>incomplete evaluation</td><td>matched rows or parsers remain missing</td><td>keep the execution-draft conclusion and leave final method claims locked</td></tr>
+</tbody></table>
+<p>No final abstract or conclusion sentence should be upgraded unless</p>
+<p><code>post_result_patch_plan_ko.md</code>, <code>final_claim_decision_tree.md</code>,</p>
+<p><code>result_promotion_readiness_audit.md</code>, and <code>final_claim_freeze_audit.md</code></p>
+<p>agree on the same non-pending outcome and patch scope.</p>
+<h2>10. Analysis</h2>
+<p>The zero-step results suggest that new vocabulary rows are not a neutral</p>
+<p>implementation detail. Random resize creates a large target-group penalty</p>
+<p>before training. Mean initialization stabilizes the rows, but source-token</p>
+<p>decomposition produces the best current intrinsic result. The method appears</p>
+<p>especially useful when a new surface form can be decomposed into informative</p>
+<p>source subpieces by the original tokenizer.</p>
+<p>The tokenizer result is also instructive. A larger vocabulary can reduce</p>
+<p>fertility for most languages but still harm an individual script when appended</p>
+<p>piece scores alter segmentation behavior. The <code>dzo_Tibt</code> case should remain in</p>
+<p>the main analysis because it prevents overclaiming and points to a concrete</p>
+<p>repair direction: score calibration or script-aware filtering of appended</p>
+<p>pieces.</p>
+<h2>11. Limitations</h2>
+<p>This is not a 511-language Glot500 reproduction. It is a controlled</p>
+<p>102-language replay. The selected target10 has raw-text coverage but little</p>
+<p>downstream task coverage in the currently materialized evaluation data.</p>
+<p>Therefore target10 downstream improvement is not a supported claim.</p>
+<p>Bible retrieval and roundtrip alignment are retained as required metric</p>
+<p>families. Bible retrieval now has available-language local parallel data</p>
+<p>materialized for <code>74/102</code> language-scripts, with target10 coverage still</p>
+<p><code>0/10</code>. XLM-R-base, Glot500-base, and v5-random rows are measured, while the</p>
+<p>remaining gap is the matched v5-FVT row after checkpoint completion and</p>
+<p>post-checkpoint preflight. Roundtrip alignment now has Bible-derived inputs, a</p>
+<p>v5 runner, and measured XLM-R-base/Glot500-base/v5-random rows over 74</p>
+<p>language-scripts; its remaining gap is also v5-FVT execution after the matched</p>
+<p>checkpoint. These states should appear in final tables explicitly rather than</p>
+<p>being omitted.</p>
+<p><code>cis-lmu/glot500-base</code> is an external reference model with a different</p>
+<p>training scale. It is useful context, but it is not an equal-compute baseline.</p>
+<h2>Reproducibility Appendix</h2>
+<p>The full command/path appendix for reproducing or auditing v5 is maintained in:</p>
+<pre><code>docs/exp/v5/4_reporting/03_final_report/reproducibility_appendix.md</code></pre>
+<p>The appendix records the 92+10 scope lock, canonical local paths, merge and</p>
+<p>tokenizer commands, paired MLM launch, metric-wrapper pattern, model keys,</p>
+<p>required metric handling, result-promotion rules, and the post-result patch</p>
+<p>plan that keeps report/PPT edits tied to parsed aggregation rows.</p>
+<h2>12. Conclusion</h2>
+<p>The v5 setup establishes a faithful controlled replay of the Glot500-style</p>
+<p>workflow on a 102-language subset. The data scope is frozen, the full corpus</p>
+<p>merge is complete, the SentencePiece append tokenizer is trained and audited,</p>
+<p>and all Glot500 metric families are retained with coverage or blocker</p>
+<p>accounting. This is not a full 511-language reproduction, but it preserves the</p>
+<p>experimental structure needed to study tokenizer expansion, continued MLM, and</p>
+<p>head/tail/all evaluation under a tractable budget.</p>
+<p>The completed method evidence already supports the central novelty</p>
+<p>motivation. Newly appended vocabulary rows are not an implementation detail:</p>
+<p>source-token decomposition initialization lowers v5-target zero-step weighted</p>
+<p>NLL from <code>18.411756</code> under random resize to <code>8.785518</code>, while preserving source</p>
+<p>rows, remapping <code>&lt;mask&gt;</code> correctly, separating byte fallback rows, and keeping</p>
+<p>the LM head tied. The tokenizer audit is also mostly positive, improving</p>
+<p>fertility for <code>29/30</code> audited languages, with <code>dzo_Tibt</code> kept as a visible</p>
+<p>regression and analysis case.</p>
+<p>The remaining conclusion depends on matched <code>v5_random</code> and <code>v5_fvt</code></p>
+<p>continued-MLM checkpoints and the available downstream replay. Until those rows</p>
+<p>are parsed, the final claim should remain bounded: v5 demonstrates a controlled</p>
+<p>Glot500-style replay and a strong intrinsic initialization advantage before</p>
+<p>training; whether that advantage survives MLM and transfers to downstream tasks</p>
+<p>is the next measured gate.</p>
+<h2>References</h2>
+<ul>
+<li>Ayyoob ImaniGooghari et al. 2023. Glot500: Scaling Multilingual Corpora and</li>
+</ul>
+<p>Language Models to 500 Languages. ACL 2023.</p>
+<p><code>https://aclanthology.org/2023.acl-long.61/</code>, DOI <code>10.18653/v1/2023.acl-long.61</code>.</p>
+<ul>
+<li>Glot500 official code: <code>https://github.com/cisnlp/Glot500</code></li>
+<li>Atsuki Yamaguchi, Aline Villavicencio, Nikolaos Aletras. 2026. How Can We</li>
+</ul>
+<p>Effectively Expand the Vocabulary of LLMs with 0.01GB of Target Language</p>
+<p>Text? Computational Linguistics 52(1):295-330.</p>
+<p><code>https://aclanthology.org/2026.cl-1.9/</code>, DOI <code>10.1162/coli.a.581</code>.</p>
+<ul>
+<li>Yamaguchi et al. official code: <code>https://github.com/gucci-j/lowres-cve</code></li>
+</ul>
+  </article>
+</body>
+</html>

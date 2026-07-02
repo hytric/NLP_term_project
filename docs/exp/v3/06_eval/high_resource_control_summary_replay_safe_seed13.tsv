@@ -1,0 +1,7 @@
+metric	value	status	notes
+collapse_threshold_mean_loss_delta	0.500000	DIAGNOSTIC_THRESHOLD	language fails if fvt mean MLM loss exceeds XLM-R by more than this value
+xlmr_high_resource_control_avg_mlm_loss	2.514329	BASELINE	mean over English/German/Japanese/Korean held-out Bible control
+fvt_mean_high_resource_control_avg_mlm_loss	3.195271	COMPUTED	mean over 1 fvt checkpoint(s)
+fvt_mean_delta_avg_mlm_loss_vs_xlmr	0.680942	FAIL_POTENTIAL_COLLAPSE_PROXY	MLM proxy only; not downstream high-resource evaluation
+languages_without_large_collapse	0/4	MIXED_OR_FAIL	thresholded by mean MLM loss delta vs XLM-R
+max_language_delta_loss_vs_xlmr	0.790207	DIAGNOSTIC	largest fvt mean loss increase among control languages

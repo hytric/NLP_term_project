@@ -1,0 +1,6 @@
+vocab_size	init_method	mlm_dev_rows	batch_size	max_length	zero_step_dev_loss	device	status
+32000	random	200	4	128	20.809267	cuda	PASS
+32000	mean	200	4	128	12.437534	cuda	PASS
+32000	fvt	200	4	128	8.490678	cuda	PASS
+32000	align	200	4	128	9.039471	cuda	PASS
+32000	focus	200	4	128	15.581055	cuda	PASS

@@ -1,0 +1,6 @@
+vocab_size	init_method	new_rows	initialized_rows	missing_rows	fallback_rows	input_shape_ok	lm_head_shape_ok	weight_tying_ok	mean_norm	std_norm	zero_step_dev_loss	checkpoint_path	status	notes
+32000	random	29011	29011	0	0	PASS	PASS	PASS	0.553992	0.014175	20.809267	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_random	PASS	required baseline method
+32000	mean	29011	29011	0	0	PASS	PASS	PASS	2.598133	0.000000	12.437534	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_mean	PASS	required baseline method
+32000	fvt	29011	29011	0	0	PASS	PASS	PASS	4.586410	0.582020	8.490678	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_fvt	PASS	required baseline method
+32000	align	29011	29011	0	11120	PASS	PASS	PASS	4.389801	0.691121	9.039471	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_align	PASS	proxy external-free method
+32000	focus	29011	29011	0	11120	PASS	PASS	PASS	5.865720	0.000001	15.581055	/home/axt/mnt2/jongha/second_try/checkpoints/04_embedding_init/xlmr_target10_32000_focus	PASS	proxy external-free method

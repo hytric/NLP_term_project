@@ -1,0 +1,7 @@
+model_label	model_path	model_seed	metric	value	status
+xlmr_base	xlm-roberta-base	NA	target10_avg_mlm_loss	3.05264	PASS
+xlmr_base	xlm-roberta-base	NA	target10_avg_mlm_perplexity	100.83094	PASS
+xlmr_base	xlm-roberta-base	NA	target10_total_masked_tokens	236	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	target10_avg_mlm_loss	5.546009	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	target10_avg_mlm_perplexity	463.202974	PASS
+fvt_seed13	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed13_pilot	13	target10_total_masked_tokens	211	PASS

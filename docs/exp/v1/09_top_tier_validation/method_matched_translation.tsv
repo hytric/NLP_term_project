@@ -1,0 +1,4 @@
+run_id	method_id	claim_role	model_path	scoring	high_resource_dev_chrf	high_resource_test_chrf	selected_source_lang	selected_target_lang	target_dev_chrf	target_test_chrf	target_test_bleu	target_test_retrieval_acc	method_matched_ratio	threshold	status
+step09_top_tier_20260611_144919	original_xlmr_cosine	baseline	xlm-roberta-base	cosine	55.355494	61.959906	kbh	nhg	30.645372	28.979374	8.807693	0.070000	0.467712	0.800000	FAIL
+step09_top_tier_20260611_144919	selected_adapted_xlmr_cosine	main_model	/home/axt/mnt2/jongha/second_try/checkpoints/05_mlm_adaptation/spm32000_fvt_seed13	cosine	45.001093	47.785568	bsn	acu	32.110356	30.488796	9.828808	0.062500	0.638034	0.800000	FAIL
+step09_top_tier_20260611_144919	labse_csls_upper_bound	external_upper_bound	sentence-transformers/LaBSE	csls	100.000000	100.000000	nhg	kbh	59.748561	56.717922	48.196496	0.450000	0.567179	0.800000	FAIL

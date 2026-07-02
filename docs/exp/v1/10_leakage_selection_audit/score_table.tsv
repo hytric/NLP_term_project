@@ -1,0 +1,5 @@
+run_id	claim	evidence	observed	decision	status	notes
+step10_leakage_selection_20260611_150633	split_integrity_for_target10	target10_bible_verses.tsv	"{""dev_bad"": 0, ""duplicate_keys"": 0, ""split_overlap"": 0, ""test_bad"": 0, ""train_bad"": 0}"	SUPPORTED	PASS	book-level train/dev/test split integrity
+step10_leakage_selection_20260611_150633	no_exact_text_duplicate_risk	target10_bible_verses.tsv	"{""dev_test"": 0, ""train_dev"": 97, ""train_test"": 2}"	DISCLOSED_RISK	WARN_DISCLOSED	exact normalized duplicates across splits are reported separately from verse-id leakage
+step10_leakage_selection_20260611_150633	step07_translation_success_is_unbiased	07_translation_benchmark/run_step07.py	target pair selected on John/test	UNSUPPORTED	FAIL_INVALIDATES_CLAIM	Step07 original target-pair row is exploratory only
+step10_leakage_selection_20260611_150633	branch001_translation_success_is_top_tier_safe	branches/branch_001_translation_retrieval_gap/score_table.tsv; 09_top_tier_validation/score_table.tsv	prior branch test feedback plus mixed-method reference; Step09 ratio below threshold	UNSUPPORTED	FAIL_INVALIDATES_CLAIM	Branch001 is exploratory and superseded by Step09

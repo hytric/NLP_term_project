@@ -1,0 +1,9 @@
+metric	value	status	notes
+xlmr_base_test_token_accuracy	0.253182	BASELINE	Coptic UD POS; token-level accuracy
+fvt_mean_test_token_accuracy	0.258741	PASS_FOR_PILOT	mean over checkpoint seeds 13/17/23; downstream seed fixed at 13
+fvt_mean_delta_token_accuracy_vs_xlmr	0.005559	WEAK_POSITIVE_PILOT	not a final target10 claim
+fvt_positive_seed_count_by_token_accuracy	3	PASS_FOR_COPTIC_PILOT	requires >=3 target10 downstream seeds for final claim; this is Coptic-only
+fvt_seed_range_token_accuracy	0.003567	DIAGNOSTIC	checkpoint seed variance only
+xlmr_base_test_macro_f1	0.163298	BASELINE	macro over gold POS labels
+fvt_mean_test_macro_f1	0.163313	PASS_FOR_PILOT	mean over checkpoint seeds 13/17/23
+fvt_mean_delta_macro_f1_vs_xlmr	0.000015	WEAK_POSITIVE_PILOT	not a final target10 claim

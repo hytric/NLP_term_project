@@ -1,0 +1,4 @@
+dataset	split	rows	labels	notes
+classification_train_proxy	train_internal	2500	genre,iso	sampled from Step01 train only
+retrieval_parallel_test	test_john	1000	verse_id	shared verse ids across target10
+models	not_applicable	2	original_xlmr,selected_adapted	/home/axt/mnt2/jongha/third_try/checkpoints/05_mlm/fvt_seed17_pilot

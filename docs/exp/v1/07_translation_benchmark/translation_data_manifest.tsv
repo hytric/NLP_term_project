@@ -1,0 +1,4 @@
+dataset	source_lang	target_lang	rows	split	path
+high_resource_reference	spa	eng	100	John/test	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles
+target10_best_pair	usp	kbh	100	John/test	docs/exp/second_try/01_data_and_splits/target10_bible_verses.tsv
+branch001_dev_selected_pair	kbh	nhg	100	John/test	/home/axt/mnt2/jongha/second_try/branches/branch_001_translation_retrieval_gap/sentence_embedding/branch001_sentence_embedding_20260610_234706/selected_test_predictions.tsv

@@ -1,0 +1,9 @@
+direction	model_group	split	decoder_chrf_mean	retrieval_chrf_mean	decoder_minus_retrieval_chrf	decoder_runs	retrieval_runs	retrieval_seeds
+cop->syr	third_try_fvt	dev	3.907288	9.012326	-5.105038	3	3	13,17,23
+cop->syr	third_try_fvt	final_test	3.683624	8.375091	-4.691467	3	3	13,17,23
+cop->syr	xlmr_base	dev	1.573229	4.094026	-2.520797	1	1	baseline
+cop->syr	xlmr_base	final_test	1.416919	3.700732	-2.283813	1	1	baseline
+syr->cop	third_try_fvt	dev	3.685877	11.632042	-7.946165	3	3	13,17,23
+syr->cop	third_try_fvt	final_test	3.49488	12.25183	-8.75695	3	3	13,17,23
+syr->cop	xlmr_base	dev	0.0	18.894735	-18.894735	1	1	baseline
+syr->cop	xlmr_base	final_test	0.0	16.670608	-16.670608	1	1	baseline

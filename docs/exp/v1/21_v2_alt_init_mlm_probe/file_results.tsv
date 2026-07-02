@@ -1,0 +1,15 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/score_table.tsv	6	1621	5d2e3afa14d847850ae92d9b168cf468	PASS	probe gate table
+init_probe_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/init_probe_summary.tsv	6	2914	242c374689e9643c042fcd89ffb092b5	PASS	per-method per-seed MLM summary
+init_probe_learning_curves	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/init_probe_learning_curves.tsv	18	3162	a49bdc851510f795a9afae568ba90392	PASS	zero/final Mark-dev curves
+init_probe_category_loss	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/init_probe_category_loss.tsv	27	6010	c0509043d4038ae9adcc4b0ae88ea38c	PASS	category loss comparison with fvt baseline
+init_probe_variant_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/init_probe_variant_summary.tsv	2	613	d4bd8ef28c9bc1aa937ffed6db998739	PASS	per-method aggregate gates
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/checkpoint_selection.md	23	722	b5b7bb3f254d34dea24ccbda6799ec80	PASS	selected alternative init checkpoint
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/v2_no_final_access_audit.tsv	4	896	e78281969589cebe0757eaf7cf9f4b30	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/21_v2_alt_init_mlm_probe/results.md	43	1377	913eefe9860eae75b21ec65169d26621	PASS	step result summary
+checkpoint_mean_adapted_extended_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/21_v2_alt_init_mlm_probe/mean/adapted_extended_seed13	7	1208494236	DIRECTORY	PASS	alternative-init adapted checkpoint
+checkpoint_mean_adapted_extended_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/21_v2_alt_init_mlm_probe/mean/adapted_extended_seed17	7	1208494235	DIRECTORY	PASS	alternative-init adapted checkpoint
+checkpoint_mean_adapted_extended_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/21_v2_alt_init_mlm_probe/mean/adapted_extended_seed23	7	1208494235	DIRECTORY	PASS	alternative-init adapted checkpoint
+checkpoint_align_adapted_extended_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/21_v2_alt_init_mlm_probe/align/adapted_extended_seed13	7	1208494238	DIRECTORY	PASS	alternative-init adapted checkpoint
+checkpoint_align_adapted_extended_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/21_v2_alt_init_mlm_probe/align/adapted_extended_seed17	7	1208494239	DIRECTORY	PASS	alternative-init adapted checkpoint
+checkpoint_align_adapted_extended_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/21_v2_alt_init_mlm_probe/align/adapted_extended_seed23	7	1208494238	DIRECTORY	PASS	alternative-init adapted checkpoint

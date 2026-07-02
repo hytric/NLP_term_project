@@ -1,0 +1,6 @@
+token	base_id	candidate_id	status
+<s>	0	0	PASS
+<pad>	1	1	PASS
+</s>	2	2	PASS
+<unk>	3	3	PASS
+<mask>	250001	250001	PASS

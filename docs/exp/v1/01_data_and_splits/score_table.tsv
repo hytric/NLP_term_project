@@ -1,0 +1,11 @@
+iso	language	script	total_rows	train_rows	dev_rows	test_rows	tokenizer_train_rows	mlm_train_rows	mlm_dev_rows	downstream_rows	sample_rows	leakage_check	status
+acu	Achuar-Shiwiar	Latin	7646	6123	659	864	6123	6123	659	7646	11	PASS	PASS
+ake	Akawaio	Latin	7734	6182	673	879	6182	6182	673	7734	11	PASS	PASS
+bsn	Barasana-Eduria	Latin	7548	6062	629	857	6062	6062	629	7548	11	PASS	PASS
+chr	Cherokee	Cherokee	7957	6400	678	879	6400	6400	678	7957	11	PASS	PASS
+cop	Coptic	Coptic	7957	6400	678	879	6400	6400	678	7957	11	PASS	PASS
+kbh	Camsa	Latin	6521	5363	501	657	5363	5363	501	6521	11	PASS	PASS
+nhg	Nahuatl (Tetelcingo)	Latin	7822	6279	673	870	6279	6279	673	7822	11	PASS	PASS
+oji	Ojibwa	Aboriginal Syllabics	7943	6391	674	878	6391	6391	674	7943	11	PASS	PASS
+syr	Syriac	Syriac	7954	6397	678	879	6397	6397	678	7954	11	PASS	PASS
+usp	Uspanteco	Latin	7890	6334	678	878	6334	6334	678	7890	11	PASS	PASS

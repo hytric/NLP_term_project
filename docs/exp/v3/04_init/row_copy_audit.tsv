@@ -1,0 +1,6 @@
+init_method	base_embedding_row_drift_max_abs	base_lm_head_row_drift_max_abs	expected_new_rows	actual_new_rows	input_shape_ok	lm_head_shape_ok	weight_tying_ok	status
+random	0.0000000000	0.0000000000	30849	30849	PASS	PASS	PASS	PASS
+mean	0.0000000000	0.0000000000	30849	30849	PASS	PASS	PASS	PASS
+fvt	0.0000000000	0.0000000000	30849	30849	PASS	PASS	PASS	PASS
+align	0.0000000000	0.0000000000	30849	30849	PASS	PASS	PASS	PASS
+focus	0.0000000000	0.0000000000	30849	30849	PASS	PASS	PASS	PASS

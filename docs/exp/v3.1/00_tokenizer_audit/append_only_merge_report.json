@@ -1,0 +1,21 @@
+{
+  "base_tokenizer": "xlm-roberta-base",
+  "candidate_tokenizer": "/home/axt/mnt2/jongha/third_try/checkpoints/04_init/xlmr_v2_48000_fvt",
+  "base_vocab_size": 250002,
+  "candidate_vocab_size": 280851,
+  "candidate_len": 280851,
+  "appended_count": 30849,
+  "first_appended_id": 250002,
+  "last_appended_id": 280850,
+  "changed_existing_token_ids": 0,
+  "missing_base_tokens": 0,
+  "changed_special_token_ids": 0,
+  "appended_id_violations": 0,
+  "base_overlap_violations": 0,
+  "non_contiguous_append_ids": 0,
+  "duplicate_candidate_ids": 0,
+  "missing_candidate_ids": 0,
+  "append_method": "hf_added_tokens",
+  "appended_piece_list": "docs/exp/v3.1/00_tokenizer_audit/appended_piece_list.tsv",
+  "status": "PASS"
+}

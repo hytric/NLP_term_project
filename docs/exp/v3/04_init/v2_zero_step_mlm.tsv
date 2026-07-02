@@ -1,0 +1,6 @@
+run_id	vocab_size	init_method	dev_rows	masked_tokens	batch_size	max_length	zero_step_dev_loss	device	status
+step14_v2_init_20260613_010546	48000	random	1000	6113	16	128	17.998567	cuda	PASS
+step14_v2_init_20260613_010546	48000	mean	1000	6113	16	128	10.910376	cuda	PASS
+step14_v2_init_20260613_010546	48000	fvt	1000	6113	16	128	7.925527	cuda	PASS
+step14_v2_init_20260613_010546	48000	align	1000	6113	16	128	8.700895	cuda	PASS
+step14_v2_init_20260613_010546	48000	focus	1000	6113	16	128	16.760191	cuda	PASS

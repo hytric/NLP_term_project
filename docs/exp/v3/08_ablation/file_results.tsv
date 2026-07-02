@@ -1,0 +1,8 @@
+path	artifact_type	count_or_size	checksum_status	status	notes
+docs/exp/third_try/08_ablation/ablation_matrix.tsv	stage08_matrix	12	NOT_COMPUTED	PASS	ablation axis matrix
+docs/exp/third_try/08_ablation/second_try_mapping.tsv	stage08_mapping	15	NOT_COMPUTED	PASS	second_try mapped to ablation axes
+docs/exp/third_try/08_ablation/first_try_mapping.tsv	stage08_mapping	11	NOT_COMPUTED	PASS	first_try mapped to ablation axes
+docs/exp/third_try/08_ablation/negative_diagnostic_summary.md	stage08_summary	1	NOT_COMPUTED	PASS	negative diagnostic explanation
+docs/exp/third_try/08_ablation/report_placement.md	stage08_summary	1	NOT_COMPUTED	PASS	report placement guide
+docs/exp/third_try/08_ablation/score_table.tsv	stage08_score	14	NOT_COMPUTED	PASS	stage score table
+docs/exp/third_try/08_ablation/results.md	stage08_results	1	NOT_COMPUTED	PASS	stage results

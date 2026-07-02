@@ -1,0 +1,6 @@
+run_id	gate_id	criterion	observed	required	status	return_to	notes
+step18_v2_added_token_repair_20260611_175200	G01_required_repair_runs	all added-token repair seeds complete	3/3	3/3	PASS	18_v2_added_token_repair	adapted repair only; original control reused from Step15
+step18_v2_added_token_repair_20260611_175200	G02_no_final_access	ACT final data not read	NO_ACT_FINAL_ACCESS	NO_ACT_FINAL_ACCESS	PASS	12_v2_split_protocol	train text, Mark/dev manifest, and Step17 baseline only
+step18_v2_added_token_repair_20260611_175200	G03_added_loss_improves	added-token dev loss improves over Step17 baseline in every seed	3/3	3/3	PASS	18_v2_added_token_repair	mean_delta=-0.508373
+step18_v2_added_token_repair_20260611_175200	G04_all_loss_nonworse	all-token dev loss does not worsen versus Step17 baseline in every seed	0/3	3/3	FAIL	18_v2_added_token_repair	mean_delta=0.122137
+step18_v2_added_token_repair_20260611_175200	G05_repair_checkpoint_selection	best repaired checkpoint selected by lowest added-token dev loss	/home/axt/mnt2/jongha/second_try/checkpoints/18_v2_added_token_repair/added_weighted_seed23	one checkpoint path	PASS	18_v2_added_token_repair	seed=23; final_added_loss=6.721701

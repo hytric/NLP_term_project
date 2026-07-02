@@ -1,0 +1,7 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/24_v2_8k_mlm_control/score_table.tsv	8	2307	4cc2a0d2b8f8ae044ea2da888ac07baf	PASS	8k control gate table
+raw_control_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/24_v2_8k_mlm_control/raw_control_summary.tsv	6	1730	1fe8f8c8c3b48554bbf4e1c09b19810e	PASS	raw 8k-vs-original matched-budget summary
+normalized_mlm_scores	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/24_v2_8k_mlm_control/normalized_mlm_scores.tsv	6	1978	e0c1319f9b556ab63bbc49066f316ec3	PASS	normalized Mark-dev MLM diagnostics
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/24_v2_8k_mlm_control/checkpoint_selection.md	23	530	ebd922269abb25dadb627a2971865b03	PASS	best 8k checkpoint selected on Mark/dev
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/24_v2_8k_mlm_control/v2_no_final_access_audit.tsv	3	713	9b905a2e6c5dd575042db3ad8afbc3ed	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/24_v2_8k_mlm_control/results.md	38	1430	deca636825a1c7c485ebf771c1d1cd4a	PASS	step result summary

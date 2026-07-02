@@ -1,0 +1,5 @@
+direction	split	baseline_chrf	candidate_chrf_mean	candidate_chrf_std	delta_chrf	candidate_runs	candidate_seeds	baseline_script_valid	candidate_script_valid_mean
+cop->syr	dev	1.573229	3.907288	0.828269	2.334059	3	13,17,23	1.0	1.0
+cop->syr	final_test	1.416919	3.683624	0.699922	2.266705	3	13,17,23	1.0	1.0
+syr->cop	dev	0.0	3.685877	0.074015	3.685877	3	13,17,23	0.0	1.0
+syr->cop	final_test	0.0	3.49488	0.118759	3.49488	3	13,17,23	0.0	1.0

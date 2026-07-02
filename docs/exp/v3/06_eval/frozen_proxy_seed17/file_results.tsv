@@ -1,0 +1,6 @@
+file_role	path	location	rows_or_lines	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/third_try/06_eval/frozen_proxy_seed17/score_table.tsv	docs	33	5848	33c3996a8574abe2b62a6230e0b15995	PASS	gate table
+downstream_results	/home/axt/jongha/Glot500-py39-eval/docs/exp/third_try/06_eval/frozen_proxy_seed17/downstream_results.tsv	docs	33	5848	33c3996a8574abe2b62a6230e0b15995	PASS	all task/model/seed rows
+downstream_dataset_stats	/home/axt/jongha/Glot500-py39-eval/docs/exp/third_try/06_eval/frozen_proxy_seed17/downstream_dataset_stats.tsv	docs	3	328	999a813b875184e7ba949055c8a21e0f	PASS	dataset construction stats
+sample_predictions	/home/axt/jongha/Glot500-py39-eval/docs/exp/third_try/06_eval/frozen_proxy_seed17/sample_predictions.md	docs	6	278	24fcb8f7bc019707ad0b9ed0c3c77bc0	PASS	sample prediction notes
+failure_cases	/home/axt/jongha/Glot500-py39-eval/docs/exp/third_try/06_eval/frozen_proxy_seed17/failure_cases.md	docs	9	574	2068d905c5a00db6854f37723d4e1eb9	PASS	adapted underperformance notes

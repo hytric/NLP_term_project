@@ -1,0 +1,7 @@
+run_id	seed	stage	step	train_tokens_seen	all_loss	base_loss	added_loss	added_base_ratio	status	notes
+step18_v2_added_token_repair_20260611_175200	13	zero_step	0	0	8.688407	7.100040	10.248167	1.443396	PASS	standard eval mask
+step18_v2_added_token_repair_20260611_175200	13	final	1581	500183	4.987092	3.192234	6.749625	2.114389	PASS	standard eval mask
+step18_v2_added_token_repair_20260611_175200	17	zero_step	0	0	8.665259	7.056862	10.239586	1.451011	PASS	standard eval mask
+step18_v2_added_token_repair_20260611_175200	17	final	1571	500065	5.121533	3.401030	6.805592	2.001039	PASS	standard eval mask
+step18_v2_added_token_repair_20260611_175200	23	zero_step	0	0	8.698180	7.114396	10.253794	1.441274	PASS	standard eval mask
+step18_v2_added_token_repair_20260611_175200	23	final	1578	500183	5.064621	3.377534	6.721701	1.990121	PASS	standard eval mask

@@ -1,0 +1,12 @@
+file_role	path	rows_or_files	bytes	md5	status	notes
+score_table	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/score_table.tsv	7	1645	db7229a74484f0ef2e8b83b3d963e8a6	PASS	repair gate table
+new_row_repair_summary	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/new_row_repair_summary.tsv	3	2158	40152dfab96565ff4c8eb9e168ee7561	PASS	per-seed new-row repair summary
+new_row_category_loss	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/new_row_category_loss.tsv	18	3782	52b14e4c9832dc187d8273bd96547011	PASS	source/final category losses
+new_row_learning_curves	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/new_row_learning_curves.tsv	6	1011	eb120fc54f26c2375a1d4e369c4f65c0	PASS	source/final category curves
+trainable_parameters	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/trainable_parameters.tsv	3	1932	ffb6f4e366b0ded161a338a60465926c	PASS	trainable parameter and row-delta audit
+checkpoint_selection	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/checkpoint_selection.md	21	632	e96791f8752a4998daac5999d00c98ab	PASS	selected new-row repair checkpoint
+no_final_access_audit	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/v2_no_final_access_audit.tsv	4	946	5e816d4c3e3d67a20a11b005b60bb4e0	PASS	input access audit
+results	/home/axt/jongha/Glot500-py39-eval/docs/exp/second_try/19_v2_new_row_only_repair/results.md	45	1572	c4c9b1889aa0c8640a4936ee5d6bc1cb	PASS	step result summary
+checkpoint_new_row_only_seed13	/home/axt/mnt2/jongha/second_try/checkpoints/19_v2_new_row_only_repair/new_row_only_seed13	7	1208494130	DIRECTORY	PASS	new-row-only repaired checkpoint
+checkpoint_new_row_only_seed17	/home/axt/mnt2/jongha/second_try/checkpoints/19_v2_new_row_only_repair/new_row_only_seed17	7	1208494130	DIRECTORY	PASS	new-row-only repaired checkpoint
+checkpoint_new_row_only_seed23	/home/axt/mnt2/jongha/second_try/checkpoints/19_v2_new_row_only_repair/new_row_only_seed23	7	1208494130	DIRECTORY	PASS	new-row-only repaired checkpoint

@@ -1,0 +1,5 @@
+language_id	language	script	xlmr_mlm_loss	fvt_seed13_mlm_loss	fvt_seed17_mlm_loss	fvt_seed23_mlm_loss	fvt_mean_mlm_loss	delta_fvt_mean_loss_vs_xlmr	fvt_seed_range_loss	xlmr_mlm_perplexity	fvt_mean_mlm_perplexity	rows	heldout_books	status
+eng	English	Latin	2.280143	2.852863			2.852863	0.572720	0.000000	9.778082	17.337354	2564	ACT,JOH,MAR	FAIL_POTENTIAL_COLLAPSE_PROXY
+deu	German	Latin	2.337446	2.923088			2.923088	0.585642	0.000000	10.354757	18.598626	2564	ACT,JOH,MAR	FAIL_POTENTIAL_COLLAPSE_PROXY
+jpn	Japanese	Japanese	2.563769	3.338969			3.338969	0.775200	0.000000	12.984664	28.190038	2564	ACT,JOH,MAR	FAIL_POTENTIAL_COLLAPSE_PROXY
+kor	Korean	Hangul	2.875957	3.666164			3.666164	0.790207	0.000000	17.742399	39.101634	2564	ACT,JOH,MAR	FAIL_POTENTIAL_COLLAPSE_PROXY

@@ -1,0 +1,3 @@
+run_id	claim	evidence	observed	decision	status	notes
+step11_fresh_holdout_20260611_151223	fresh_heldout_available_in_current_second_try	data_availability.tsv	USABLE_NOW candidates=0	UNSUPPORTED	FAIL_BLOCKS_F02_F03	top-tier translation rerun needs a fresh held-out set not touched by adaptation, dev selection, or prior test feedback
+step11_fresh_holdout_20260611_151223	legacy_processed_data_can_be_used_directly	/home/axt/mnt2/jongha/Glot500-py39-eval/data/processed	legacy candidate files=20	UNSUPPORTED	FAIL_OUT_OF_SCOPE	user constrained second_try evidence; legacy files require reimport/provenance before use

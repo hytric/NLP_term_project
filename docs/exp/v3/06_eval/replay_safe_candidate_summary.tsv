@@ -1,0 +1,13 @@
+metric	original_200step_fvt	replay_safe_1000step_fvt	delta_or_reading	status	notes
+stage05_final_dev_mean_loss	3.981250	3.903145	-0.078105	PASS_RETRY_IMPROVES	replay-safe retry improves target10 dev MLM loss over the 200-step fvt pilot
+stage05_final_dev_seed_range	0.089701	0.058914	-0.030787	PASS_RETRY_STABLE	replay-safe retry has smaller final dev seed range
+target10_proxy_mean_loss	5.298593	5.245928	-0.052665	PASS_RETRY_IMPROVES_BUT_BELOW_BASE	XLM-R-base remains 3.472837, so this does not support a positive target10 proxy claim
+target10_proxy_languages_better_than_200step	NA	10/10	all_languages_improve_vs_200step	PASS_RETRY_IMPROVES	every target10 language has lower replay-safe mean MLM proxy loss than the 200-step fvt mean
+target10_proxy_languages_better_than_xlmr	4/10	5/10	+1_language	PASS_WEAK_PROXY	replay-safe improves the proxy count but still only half of target10 beats XLM-R-base
+high_resource_control_delta_loss	0.703114	0.675539	-0.027575	FAIL_POTENTIAL_COLLAPSE_PROXY	control degradation is smaller but remains above the +0.5 collapse threshold
+high_resource_control_no_large_collapse	0/4	0/4	unchanged	FAIL_POTENTIAL_COLLAPSE_PROXY	no high-resource control language passes the no-large-collapse proxy threshold
+coptic_pos_mean_token_accuracy	0.258741	0.259963	+0.001222	PASS_WEAK_COPTIC_PILOT	Coptic token accuracy improves slightly over the 200-step fvt pilot
+coptic_pos_delta_token_accuracy_vs_xlmr	0.005559	0.006781	+0.001222	PASS_WEAK_COPTIC_PILOT	Coptic token accuracy remains positive in 3/3 checkpoint seeds
+coptic_pos_positive_checkpoint_seeds	3/3	3/3	unchanged	PASS_WEAK_COPTIC_PILOT	Coptic-only downstream evidence is stable but not target10-wide
+coptic_pos_mean_macro_f1	0.163313	0.160642	-0.002671	NEGATIVE_PILOT	POS macro F1 worsens versus both the old fvt pilot and XLM-R-base
+positive_claim_eligibility	no	no	unchanged	FAIL_FOR_POSITIVE	positive claim remains blocked by high-resource control failure and sparse target10 downstream coverage

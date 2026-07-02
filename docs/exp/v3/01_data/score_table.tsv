@@ -1,0 +1,8 @@
+metric	expected	actual	status
+train/dev/test overlap	0	0	PASS
+missing source/license rows	0	0	PASS
+language rows with split count missing	0	0	PASS
+high-resource rows present	yes	yes	PASS
+low-resource rows present	yes	yes	PASS
+mixture manifest present	yes	yes	PASS
+GPU constraint recorded	GPU 3 only	CUDA_VISIBLE_DEVICES=3	PASS

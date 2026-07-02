@@ -1,0 +1,11 @@
+item	status	evidence	action
+refresh_script_exists	ready	/home/axt/jongha/Glot500-py39-eval/scripts/refresh_v5_reporting.py	none
+result_insertion_matrix_exists	ready	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5/4_reporting/result_insertion_matrix.md	none
+refresh_required_steps	ready	all required sync-sensitive steps are in refresh_v5_reporting.py	none
+matrix_required_steps	ready	result_insertion_matrix lists the refresh-sensitive steps	none
+matrix_handoff_gate_tokens	ready	matrix includes the six post-checkpoint handoff gate artifacts	none
+refresh_step_order	ready	order_ok	none
+matrix_step_order	ready	order_ok	none
+refresh_final_package_stabilization_order	ready	order_ok	none
+matrix_final_package_stabilization_order	ready	order_ok	none
+canonical_wording	ready	matrix points to refresh_v5_reporting.py and keeps the promotion rule	none

@@ -1,0 +1,6 @@
+run_label	seed	max_steps	learning_rate	train_loss	final_eval_loss	final_perplexity	runtime_sec	checkpoints	status	notes
+fvt_replay_safe_seed13	13	1000	1e-5	2.407281	3.875830	48.222692	1157.6308	checkpoint-500,checkpoint-750,checkpoint-1000	PASS_RETRY_CANDIDATE	lower-LR replay-safe retry from Stage04 fvt init
+fvt_replay_safe_seed17	17	1000	1e-5	2.383752	3.898863	49.346314	1161.1711	checkpoint-500,checkpoint-750,checkpoint-1000	PASS_RETRY_CANDIDATE	lower-LR replay-safe retry from Stage04 fvt init
+fvt_replay_safe_seed23	23	1000	1e-5	2.378278	3.934743	51.149024	1159.3877	checkpoint-500,checkpoint-750,checkpoint-1000	PASS_RETRY_CANDIDATE	lower-LR replay-safe retry from Stage04 fvt init
+mean	NA	1000	1e-5	2.389771	3.903145	49.572677	1159.3965	NA	PASS_RETRY_CANDIDATE	mean over seeds 13/17/23
+range	NA	1000	1e-5	0.029003	0.058914	2.926332	3.5403	NA	DIAGNOSTIC	seed range over seeds 13/17/23

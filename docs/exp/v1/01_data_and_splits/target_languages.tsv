@@ -1,0 +1,11 @@
+iso	language	filename	script	speakers	verse_count	source_xml	source_md5
+acu	Achuar-Shiwiar	Achuar-NT.xml	Latin	5,000	7646	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Achuar-NT.xml	8ec4702a249b5a7570bf9a01ffa84609
+ake	Akawaio	Akawaio-NT.xml	Latin	4,500	7734	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Akawaio-NT.xml	e7c06174b6990108f5fe26f5b6de34b1
+bsn	Barasana-Eduria	Barasana-NT.xml	Latin	1,890	7548	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Barasana-NT.xml	25ddc9f698e942fa0672e0a4a5d68d46
+chr	Cherokee	Cherokee-NT.xml	Cherokee	16,400	7957	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Cherokee-NT.xml	28a69b0a9aaae8135cd93e8cd9e34562
+cop	Coptic	Coptic-NT.xml	Coptic	Extinct	7957	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Coptic-NT.xml	5b8931845313c5381468ac1d2a1962da
+kbh	Camsa	Camsa-NT.xml	Latin	4,770	6521	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Camsa-NT.xml	b2f95cb255bfb83528c2e8da78491a94
+nhg	Nahuatl (Tetelcingo)	Nahuatl-NT.xml	Latin	3,500	7822	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Nahuatl-NT.xml	511ef8e751e7081efd41d23316cc9349
+oji	Ojibwa	Ojibwa-NT.xml	Aboriginal Syllabics	20,000	7943	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Ojibwa-NT.xml	cc6cf85e7c997212e9907578e0f7134c
+syr	Syriac	Syriac-NT.xml	Syriac	Extinct	7954	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Syriac-NT.xml	4a3f36d3c7fcbd7cb363337c162d2086
+usp	Uspanteco	Uspanteco-NT.xml	Latin	3,000	7890	/home/axt/mnt2/jongha/Glot500-py39-eval/data/raw/bible-corpus/bibles/Uspanteco-NT.xml	f99f68395d59408026df55ce0fb2a8cb

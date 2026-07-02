@@ -1,0 +1,4 @@
+model_key	phase	method	languages	total_examples	total_masked_tokens	macro_mean_nll	macro_pseudo_perplexity	weighted_mean_nll	weighted_pseudo_perplexity
+align_mlm200	mlm200	align	10	500	23213	4.941329	139.95617	4.950712	141.275524
+mean_mlm200	mlm200	mean	10	500	23213	6.496823	663.031898	6.428914	619.500824
+random_mlm200	mlm200	random	10	500	23213	5.57428	263.559777	5.548407	256.828019

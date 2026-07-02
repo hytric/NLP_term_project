@@ -1,0 +1,8 @@
+run_id	gate_id	criterion	observed	required	status	return_to	notes
+step15_v2_mlm_control_20260611_160304	G01_required_runs	all model-family/seed runs complete	6/6	6/6	PASS	15_v2_mlm_control	2 families x >=3 seeds
+step15_v2_mlm_control_20260611_160304	G02_seed_count	at least three seeds per family	3	>=3	PASS	15_v2_mlm_control	13,17,23
+step15_v2_mlm_control_20260611_160304	G03_no_final_access	ACT final data not read	NO_ACT_FINAL_ACCESS	NO_ACT_FINAL_ACCESS	PASS	12_v2_split_protocol	train txt and Mark/dev txt only
+step15_v2_mlm_control_20260611_160304	G04_adapted_improves	adapted checkpoint improves over zero-step in every seed	3/3	3/3	PASS	14_v2_embedding_init	self-comparison within adapted tokenizer
+step15_v2_mlm_control_20260611_160304	G05_original_control_complete	original XLM-R continued-pretraining control completes every seed	3/3	3/3	PASS	15_v2_mlm_control	control checkpoints saved
+step15_v2_mlm_control_20260611_160304	G06_competitive_control	adapted mean final dev loss is within configured control margin	ratio=1.798607; adapted_mean=5.618403; original_mean=3.123752	ratio<=1.100000	FAIL	15_v2_mlm_control	diagnostic because tokenizer vocabularies differ
+step15_v2_mlm_control_20260611_160304	G07_checkpoint_selection	selected adapted and original-control checkpoints are recorded	adapted=/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control/adapted_extended_seed13; original=/home/axt/mnt2/jongha/second_try/checkpoints/15_v2_mlm_control/original_control_seed13	two checkpoint paths	PASS	15_v2_mlm_control	selection uses Mark/dev only

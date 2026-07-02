@@ -1,0 +1,7 @@
+metric	expected	actual	status
+base embedding row drift	0	0.0000000000	PASS
+base LM head row drift	0	0.0000000000	PASS
+new row count mismatch	0	0	PASS
+random init present	yes	yes	PASS
+non-random init methods present	>=1	4	PASS
+init candidate summary present	yes	yes	PASS
