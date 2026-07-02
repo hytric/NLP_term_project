@@ -1,0 +1,370 @@
+task	language_script	group	coverage_file	reason
+Sentence Retrieval Tatoeba	ara_Arab	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	mar_Deva	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	slv_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	fin_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	hun_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	cmn_Hani	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	est_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	bre_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	hrv_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	ron_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	ell_Grek	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	slk_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	vie_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	amh_Ethi	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	epo_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	bel_Cyrl	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	xho_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	hin_Deva	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	tam_Taml	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	mon_Cyrl	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	ces_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	hye_Armn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	isl_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	afr_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	deu_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	urd_Arab	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	bul_Cyrl	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	tgl_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	eus_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	pol_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	lat_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	tur_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	fra_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	cat_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	uig_Arab	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	sqi_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	swh_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	kor_Hang	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	ukr_Cyrl	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	yid_Hebr	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	heb_Hebr	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	nld_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	fry_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	glg_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	mkd_Cyrl	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	ind_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	por_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	spa_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	dan_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	khm_Khmr	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	gla_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	kat_Geor	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	ita_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	cym_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	srp_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	tha_Thai	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	swe_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	pes_Arab	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	kaz_Cyrl	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	kur_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	mal_Mlym	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	gle_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	lit_Latn	head	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	zsm_Latn	v5_target	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	aze_Latn	v5_target	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Tatoeba	bos_Latn	v5_target	coverage_retrieval_tatoeba.tsv	available
+Sentence Retrieval Bible	mya_Mymr	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	mar_Deva	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	hau_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	uzb_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	slv_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	fin_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	hun_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	cmn_Hani	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	bre_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	hrv_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	jav_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	ron_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	ell_Grek	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	slk_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	vie_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	amh_Ethi	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	epo_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	bel_Cyrl	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	xho_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	hin_Deva	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	tam_Taml	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	ces_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	san_Deva	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	hye_Armn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	kan_Knda	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	isl_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	afr_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	deu_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	urd_Arab	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	bul_Cyrl	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	tgl_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	eus_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	pol_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	lat_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	tur_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	fra_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	cat_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	uig_Arab	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	arb_Arab	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	sqi_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	sin_Sinh	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	swh_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	kor_Hang	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	ukr_Cyrl	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	kir_Cyrl	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	heb_Hebr	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	nld_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	fry_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	azb_Arab	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	mkd_Cyrl	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	ind_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	por_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	spa_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	dan_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	khm_Khmr	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	gla_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	uig_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	kat_Geor	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	snd_Arab	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	ita_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	cym_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	srp_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	tha_Thai	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	swe_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	pan_Guru	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	prs_Arab	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	pes_Arab	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	san_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	kaz_Cyrl	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	mal_Mlym	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	nep_Deva	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	gle_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	som_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	lit_Latn	head	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	guj_Gujr	v5_target	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	asm_Beng	v5_target	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	srp_Cyrl	v5_target	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	sun_Latn	v5_target	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	zsm_Latn	v5_target	coverage_retrieval_bible.tsv	available
+Sentence Retrieval Bible	fil_Latn	v5_target	coverage_retrieval_bible.tsv	available
+Text Classification	eng_Latn	head	coverage_text_classification.tsv	available
+NER	mya_Mymr	head	coverage_ner.tsv	available
+NER	ara_Arab	head	coverage_ner.tsv	available
+NER	mar_Deva	head	coverage_ner.tsv	available
+NER	uzb_Latn	head	coverage_ner.tsv	available
+NER	slv_Latn	head	coverage_ner.tsv	available
+NER	fin_Latn	head	coverage_ner.tsv	available
+NER	hun_Latn	head	coverage_ner.tsv	available
+NER	est_Latn	head	coverage_ner.tsv	available
+NER	bre_Latn	head	coverage_ner.tsv	available
+NER	hrv_Latn	head	coverage_ner.tsv	available
+NER	jav_Latn	head	coverage_ner.tsv	available
+NER	ron_Latn	head	coverage_ner.tsv	available
+NER	ell_Grek	head	coverage_ner.tsv	available
+NER	nor_Latn	head	coverage_ner.tsv	available
+NER	slk_Latn	head	coverage_ner.tsv	available
+NER	vie_Latn	head	coverage_ner.tsv	available
+NER	amh_Ethi	head	coverage_ner.tsv	available
+NER	epo_Latn	head	coverage_ner.tsv	available
+NER	bel_Cyrl	head	coverage_ner.tsv	available
+NER	hin_Deva	head	coverage_ner.tsv	available
+NER	tam_Taml	head	coverage_ner.tsv	available
+NER	mon_Cyrl	head	coverage_ner.tsv	available
+NER	ces_Latn	head	coverage_ner.tsv	available
+NER	san_Deva	head	coverage_ner.tsv	available
+NER	hye_Armn	head	coverage_ner.tsv	available
+NER	pus_Arab	head	coverage_ner.tsv	available
+NER	kan_Knda	head	coverage_ner.tsv	available
+NER	isl_Latn	head	coverage_ner.tsv	available
+NER	ori_Orya	head	coverage_ner.tsv	available
+NER	afr_Latn	head	coverage_ner.tsv	available
+NER	deu_Latn	head	coverage_ner.tsv	available
+NER	urd_Arab	head	coverage_ner.tsv	available
+NER	bul_Cyrl	head	coverage_ner.tsv	available
+NER	tgl_Latn	head	coverage_ner.tsv	available
+NER	eus_Latn	head	coverage_ner.tsv	available
+NER	pol_Latn	head	coverage_ner.tsv	available
+NER	lat_Latn	head	coverage_ner.tsv	available
+NER	tur_Latn	head	coverage_ner.tsv	available
+NER	fra_Latn	head	coverage_ner.tsv	available
+NER	cat_Latn	head	coverage_ner.tsv	available
+NER	uig_Arab	head	coverage_ner.tsv	available
+NER	sqi_Latn	head	coverage_ner.tsv	available
+NER	sin_Sinh	head	coverage_ner.tsv	available
+NER	msa_Latn	head	coverage_ner.tsv	available
+NER	kor_Hang	head	coverage_ner.tsv	available
+NER	ukr_Cyrl	head	coverage_ner.tsv	available
+NER	kir_Cyrl	head	coverage_ner.tsv	available
+NER	yid_Hebr	head	coverage_ner.tsv	available
+NER	heb_Hebr	head	coverage_ner.tsv	available
+NER	nld_Latn	head	coverage_ner.tsv	available
+NER	fry_Latn	head	coverage_ner.tsv	available
+NER	glg_Latn	head	coverage_ner.tsv	available
+NER	fas_Arab	head	coverage_ner.tsv	available
+NER	eng_Latn	head	coverage_ner.tsv	available
+NER	mkd_Cyrl	head	coverage_ner.tsv	available
+NER	ind_Latn	head	coverage_ner.tsv	available
+NER	por_Latn	head	coverage_ner.tsv	available
+NER	spa_Latn	head	coverage_ner.tsv	available
+NER	dan_Latn	head	coverage_ner.tsv	available
+NER	khm_Khmr	head	coverage_ner.tsv	available
+NER	gla_Latn	head	coverage_ner.tsv	available
+NER	kat_Geor	head	coverage_ner.tsv	available
+NER	mlg_Latn	head	coverage_ner.tsv	available
+NER	snd_Arab	head	coverage_ner.tsv	available
+NER	ita_Latn	head	coverage_ner.tsv	available
+NER	cym_Latn	head	coverage_ner.tsv	available
+NER	zho_Hani	head	coverage_ner.tsv	available
+NER	tha_Thai	head	coverage_ner.tsv	available
+NER	swe_Latn	head	coverage_ner.tsv	available
+NER	pan_Guru	head	coverage_ner.tsv	available
+NER	kaz_Cyrl	head	coverage_ner.tsv	available
+NER	kur_Latn	head	coverage_ner.tsv	available
+NER	mal_Mlym	head	coverage_ner.tsv	available
+NER	nep_Deva	head	coverage_ner.tsv	available
+NER	gle_Latn	head	coverage_ner.tsv	available
+NER	swa_Latn	head	coverage_ner.tsv	available
+NER	som_Latn	head	coverage_ner.tsv	available
+NER	lit_Latn	head	coverage_ner.tsv	available
+NER	guj_Gujr	v5_target	coverage_ner.tsv	available
+NER	asm_Beng	v5_target	coverage_ner.tsv	available
+NER	srp_Cyrl	v5_target	coverage_ner.tsv	available
+NER	sun_Latn	v5_target	coverage_ner.tsv	available
+NER	aze_Latn	v5_target	coverage_ner.tsv	available
+NER	bos_Latn	v5_target	coverage_ner.tsv	available
+POS	ara_Arab	head	coverage_pos.tsv	available
+POS	mar_Deva	head	coverage_pos.tsv	available
+POS	slv_Latn	head	coverage_pos.tsv	available
+POS	fin_Latn	head	coverage_pos.tsv	available
+POS	hun_Latn	head	coverage_pos.tsv	available
+POS	est_Latn	head	coverage_pos.tsv	available
+POS	bre_Latn	head	coverage_pos.tsv	available
+POS	hrv_Latn	head	coverage_pos.tsv	available
+POS	jav_Latn	head	coverage_pos.tsv	available
+POS	ron_Latn	head	coverage_pos.tsv	available
+POS	ell_Grek	head	coverage_pos.tsv	available
+POS	nor_Latn	head	coverage_pos.tsv	available
+POS	slk_Latn	head	coverage_pos.tsv	available
+POS	vie_Latn	head	coverage_pos.tsv	available
+POS	amh_Ethi	head	coverage_pos.tsv	available
+POS	bel_Cyrl	head	coverage_pos.tsv	available
+POS	hin_Deva	head	coverage_pos.tsv	available
+POS	tam_Taml	head	coverage_pos.tsv	available
+POS	ces_Latn	head	coverage_pos.tsv	available
+POS	san_Deva	head	coverage_pos.tsv	available
+POS	hye_Armn	head	coverage_pos.tsv	available
+POS	isl_Latn	head	coverage_pos.tsv	available
+POS	afr_Latn	head	coverage_pos.tsv	available
+POS	deu_Latn	head	coverage_pos.tsv	available
+POS	urd_Arab	head	coverage_pos.tsv	available
+POS	bul_Cyrl	head	coverage_pos.tsv	available
+POS	tgl_Latn	head	coverage_pos.tsv	available
+POS	eus_Latn	head	coverage_pos.tsv	available
+POS	pol_Latn	head	coverage_pos.tsv	available
+POS	lat_Latn	head	coverage_pos.tsv	available
+POS	tur_Latn	head	coverage_pos.tsv	available
+POS	fra_Latn	head	coverage_pos.tsv	available
+POS	cat_Latn	head	coverage_pos.tsv	available
+POS	uig_Arab	head	coverage_pos.tsv	available
+POS	sqi_Latn	head	coverage_pos.tsv	available
+POS	sin_Sinh	head	coverage_pos.tsv	available
+POS	kor_Hang	head	coverage_pos.tsv	available
+POS	ukr_Cyrl	head	coverage_pos.tsv	available
+POS	heb_Hebr	head	coverage_pos.tsv	available
+POS	nld_Latn	head	coverage_pos.tsv	available
+POS	glg_Latn	head	coverage_pos.tsv	available
+POS	fas_Arab	head	coverage_pos.tsv	available
+POS	eng_Latn	head	coverage_pos.tsv	available
+POS	ind_Latn	head	coverage_pos.tsv	available
+POS	por_Latn	head	coverage_pos.tsv	available
+POS	spa_Latn	head	coverage_pos.tsv	available
+POS	dan_Latn	head	coverage_pos.tsv	available
+POS	gla_Latn	head	coverage_pos.tsv	available
+POS	ita_Latn	head	coverage_pos.tsv	available
+POS	cym_Latn	head	coverage_pos.tsv	available
+POS	srp_Latn	head	coverage_pos.tsv	available
+POS	zho_Hani	head	coverage_pos.tsv	available
+POS	tha_Thai	head	coverage_pos.tsv	available
+POS	swe_Latn	head	coverage_pos.tsv	available
+POS	kaz_Cyrl	head	coverage_pos.tsv	available
+POS	mal_Mlym	head	coverage_pos.tsv	available
+POS	gle_Latn	head	coverage_pos.tsv	available
+POS	lit_Latn	head	coverage_pos.tsv	available
+Roundtrip Alignment	mya_Mymr	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	mar_Deva	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	hau_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	uzb_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	slv_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	fin_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	hun_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	cmn_Hani	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	bre_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	hrv_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	jav_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	ron_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	ell_Grek	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	slk_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	vie_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	amh_Ethi	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	epo_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	bel_Cyrl	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	xho_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	hin_Deva	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	tam_Taml	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	ces_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	san_Deva	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	hye_Armn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	kan_Knda	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	isl_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	afr_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	deu_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	urd_Arab	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	bul_Cyrl	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	tgl_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	eus_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	pol_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	lat_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	tur_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	fra_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	cat_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	uig_Arab	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	arb_Arab	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	sqi_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	sin_Sinh	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	swh_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	kor_Hang	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	ukr_Cyrl	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	kir_Cyrl	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	heb_Hebr	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	nld_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	fry_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	azb_Arab	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	mkd_Cyrl	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	ind_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	por_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	spa_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	dan_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	khm_Khmr	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	gla_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	uig_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	kat_Geor	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	snd_Arab	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	ita_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	cym_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	srp_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	tha_Thai	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	swe_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	pan_Guru	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	prs_Arab	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	pes_Arab	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	san_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	kaz_Cyrl	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	mal_Mlym	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	nep_Deva	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	gle_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	som_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	lit_Latn	head	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	guj_Gujr	v5_target	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	asm_Beng	v5_target	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	srp_Cyrl	v5_target	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	sun_Latn	v5_target	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	zsm_Latn	v5_target	coverage_roundtrip_alignment.tsv	available
+Roundtrip Alignment	fil_Latn	v5_target	coverage_roundtrip_alignment.tsv	available

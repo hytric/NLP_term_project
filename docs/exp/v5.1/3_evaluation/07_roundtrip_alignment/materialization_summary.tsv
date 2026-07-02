@@ -1,0 +1,103 @@
+language_script	language	group	status	pivot_language_script	shared_verses	written_samples	output	reason
+lao_Laoo	lao	seen	skipped_bible_not_ready		0	0		too_few_shared_verses
+mya_Mymr	mya	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mya_Mymr.jsonl	available
+ara_Arab	ara	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+mar_Deva	mar	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mar_Deva.jsonl	available
+hau_Latn	hau	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hau_Latn.jsonl	available
+uzb_Latn	uzb	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.uzb_Latn.jsonl	available
+slv_Latn	slv	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.slv_Latn.jsonl	available
+fin_Latn	fin	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fin_Latn.jsonl	available
+hun_Latn	hun	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hun_Latn.jsonl	available
+cmn_Hani	cmn	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.cmn_Hani.jsonl	available
+est_Latn	est	seen	skipped_bible_not_ready		0	0		missing_source_bible
+bre_Latn	bre	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.bre_Latn.jsonl	available
+hrv_Latn	hrv	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hrv_Latn.jsonl	available
+jav_Latn	jav	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.jav_Latn.jsonl	available
+ron_Latn	ron	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ron_Latn.jsonl	available
+ell_Grek	ell	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ell_Grek.jsonl	available
+nor_Latn	nor	seen	skipped_bible_not_ready		0	0		missing_source_bible
+slk_Latn	slk	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.slk_Latn.jsonl	available
+vie_Latn	vie	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.vie_Latn.jsonl	available
+amh_Ethi	amh	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.amh_Ethi.jsonl	available
+epo_Latn	epo	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.epo_Latn.jsonl	available
+bel_Cyrl	bel	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.bel_Cyrl.jsonl	available
+xho_Latn	xho	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.xho_Latn.jsonl	available
+hin_Deva	hin	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hin_Deva.jsonl	available
+tam_Taml	tam	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tam_Taml.jsonl	available
+mon_Cyrl	mon	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+ces_Latn	ces	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ces_Latn.jsonl	available
+san_Deva	san	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.san_Deva.jsonl	available
+hye_Armn	hye	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hye_Armn.jsonl	available
+pus_Arab	pus	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+som_Arab	som	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+kan_Knda	kan	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kan_Knda.jsonl	available
+isl_Latn	isl	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.isl_Latn.jsonl	available
+ori_Orya	ori	seen	skipped_bible_not_ready		0	0		missing_source_bible
+afr_Latn	afr	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.afr_Latn.jsonl	available
+deu_Latn	deu	seen	ready	fra_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.deu_Latn.jsonl	available
+urd_Arab	urd	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.urd_Arab.jsonl	available
+bul_Cyrl	bul	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.bul_Cyrl.jsonl	available
+tgl_Latn	tgl	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tgl_Latn.jsonl	available
+eus_Latn	eus	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.eus_Latn.jsonl	available
+pol_Latn	pol	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.pol_Latn.jsonl	available
+lat_Latn	lat	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.lat_Latn.jsonl	available
+tur_Latn	tur	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tur_Latn.jsonl	available
+fra_Latn	fra	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fra_Latn.jsonl	available
+cat_Latn	cat	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.cat_Latn.jsonl	available
+uig_Arab	uig	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.uig_Arab.jsonl	available
+arb_Arab	arb	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.arb_Arab.jsonl	available
+sqi_Latn	sqi	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.sqi_Latn.jsonl	available
+sin_Sinh	sin	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.sin_Sinh.jsonl	available
+msa_Latn	msa	seen	skipped_bible_not_ready		0	0		missing_source_bible
+swh_Latn	swh	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.swh_Latn.jsonl	available
+kor_Hang	kor	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kor_Hang.jsonl	available
+ukr_Cyrl	ukr	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ukr_Cyrl.jsonl	available
+kir_Cyrl	kir	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kir_Cyrl.jsonl	available
+yid_Hebr	yid	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+heb_Hebr	heb	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.heb_Hebr.jsonl	available
+nld_Latn	nld	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.nld_Latn.jsonl	available
+fry_Latn	fry	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fry_Latn.jsonl	available
+azb_Arab	azb	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.azb_Arab.jsonl	available
+glg_Latn	glg	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+fas_Arab	fas	seen	skipped_bible_not_ready		0	0		missing_source_bible
+eng_Latn	eng	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+mkd_Cyrl	mkd	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mkd_Cyrl.jsonl	available
+ind_Latn	ind	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ind_Latn.jsonl	available
+por_Latn	por	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.por_Latn.jsonl	available
+spa_Latn	spa	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.spa_Latn.jsonl	available
+dan_Latn	dan	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.dan_Latn.jsonl	available
+khm_Khmr	khm	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.khm_Khmr.jsonl	available
+gla_Latn	gla	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.gla_Latn.jsonl	available
+uig_Latn	uig	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.uig_Latn.jsonl	available
+kat_Geor	kat	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kat_Geor.jsonl	available
+mlg_Latn	mlg	seen	skipped_bible_not_ready		0	0		missing_source_bible
+snd_Arab	snd	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.snd_Arab.jsonl	available
+ita_Latn	ita	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ita_Latn.jsonl	available
+hau_Arab	hau	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+cym_Latn	cym	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.cym_Latn.jsonl	available
+srp_Latn	srp	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.srp_Latn.jsonl	available
+zho_Hani	zho	seen	skipped_bible_not_ready		0	0		missing_source_bible
+tha_Thai	tha	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tha_Thai.jsonl	available
+swe_Latn	swe	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.swe_Latn.jsonl	available
+pan_Guru	pan	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.pan_Guru.jsonl	available
+prs_Arab	prs	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.prs_Arab.jsonl	available
+pes_Arab	pes	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.pes_Arab.jsonl	available
+san_Latn	san	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.san_Latn.jsonl	available
+kaz_Cyrl	kaz	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kaz_Cyrl.jsonl	available
+kur_Latn	kur	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+mal_Mlym	mal	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mal_Mlym.jsonl	available
+nep_Deva	nep	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.nep_Deva.jsonl	available
+gle_Latn	gle	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.gle_Latn.jsonl	available
+swa_Latn	swa	seen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+som_Latn	som	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.som_Latn.jsonl	available
+lit_Latn	lit	seen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.lit_Latn.jsonl	available
+guj_Gujr	guj	unseen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.guj_Gujr.jsonl	available
+asm_Beng	asm	unseen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.asm_Beng.jsonl	available
+srp_Cyrl	srp	unseen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.srp_Cyrl.jsonl	available
+sun_Latn	sun	unseen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.sun_Latn.jsonl	available
+zsm_Latn	zsm	unseen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.zsm_Latn.jsonl	available
+aze_Latn	aze	unseen	skipped_bible_not_ready		0	0		missing_source_bible
+fil_Latn	fil	unseen	ready	deu_Latn	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fil_Latn.jsonl	available
+bos_Latn	bos	unseen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list
+dzo_Tibt	dzo	unseen	skipped_bible_not_ready		0	0		skipped_flag_not_one
+sat_Olck	sat	unseen	skipped_bible_not_ready		0	0		skipped_not_in_bible_lang_list

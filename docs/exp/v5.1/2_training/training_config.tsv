@@ -1,0 +1,12 @@
+field	expected	observed	status	evidence
+optimizer	AdamW	AdamW	ok	`transformers/optimization.py` AdamW warning in trainer log
+learning_rate	initial=5e-5	initial=; latest=2.01e-05	check	`--learning_rate 5e-5`; live LR is scheduler value
+adam_beta1	0.9		check	`--adam_beta1` command argument
+adam_beta2	0.999		check	`--adam_beta2` command argument
+per_device_batch	8		check	`--per_device_train_batch_size` command argument
+gpu_count	3	3	ok	`CUDA_VISIBLE_DEVICES=0,1,3`
+gradient_accumulation	16		check	`--gradient_accumulation_steps` command argument
+effective_batch	384	384	ok	8 per-device x 3 GPUs x 16 grad accumulation
+sequence_length	512		check	`--max_seq_length` command argument
+max_steps	3000	3000	ok	`--max_steps` command argument
+fp16	True		check	`--fp16` command argument

@@ -1,0 +1,5 @@
+model_key	model_path	tokenizer_path	phase	role	required	downstream_eligible	model_status	tokenizer_status	ready_for_wrapper	notes
+xlmr_base	xlm-roberta-base	xlm-roberta-base	baseline	XLM-R base reference	yes	yes	remote_reference	remote_reference	yes	external reference; include for report comparison
+glot500_base	cis-lmu/glot500-base	cis-lmu/glot500-base	baseline	Glot500 base reference	yes	yes	remote_reference	remote_reference	yes	external reference; include for report comparison
+v51_random	/home/axt/mnt2/jongha/v5_1_glot50010/runs/v51_strict5pct_random_mlm_3k	/home/axt/mnt2/jongha/v5_1_glot50010/tokenization/output_strict_5pct/Glot500_extended_spm	continued_mlm	v5.1 strict 5pct random-new-token init	yes	yes	dir_exists_no_model_file	ready	no	main novelty baseline after checkpoint-3000
+v51_fvt	/home/axt/mnt2/jongha/v5_1_glot50010/runs/v51_strict5pct_fvt_mlm_3k	/home/axt/mnt2/jongha/v5_1_glot50010/tokenization/output_strict_5pct/Glot500_extended_spm	continued_mlm	v5.1 strict 5pct FVT/source-token-decomposition init	yes	yes	missing	ready	no	main novelty method after checkpoint-3000

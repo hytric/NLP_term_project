@@ -1,0 +1,11 @@
+task	unit	languages_total	languages_head	languages_target	train_count	dev_count	test_count	pair_or_sample_count	notes
+raw_text_strict_split	raw text examples	102	92	10	1169231705	100850	100851	1169433406	Source strict split table; pair_or_sample_count is source examples.
+mlm_pretraining_sample_5pct	sampled raw text lines	102	92	10	8130401	0	0	8130401	Actual lines written to strict 5% MLM train corpus.
+pseudoperplexity_heldout	raw text examples	102	92	10	0	100850	100851	201701	Held-out dev/test examples; final PPPL reporting split is test.
+retrieval_tatoeba	aligned sentence pairs	66	63	3	0	0	57479	57479	Materialized source-English Tatoeba test pairs.
+retrieval_bible	aligned verse pairs	80	74	6	0	0	622393	622393	Materialized source-English Bible verse pairs.
+roundtrip_alignment	roundtrip samples	80	74	6	0	0	40000	40000	Materialized JSONL roundtrip alignment samples.
+ner	CoNLL sentence examples	84	78	6	894300	405300	405300	1704900	PANX-style train/dev/test sentence counts.
+pos	CoNLL sentence examples	9	9	0	66894	9673	12851	89418	UDPOS-style train/dev/test sentence counts.
+text_classification_taxi1500	classification rows	1	1	0	860	106	111	1077	Taxi1500 train/dev/test row counts.
+embedding_similarity_pairs	diagnostic pair rows	1	1	0	0	0	22600	22600	Auxiliary embedding-similarity pair table.

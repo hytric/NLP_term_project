@@ -1,0 +1,7 @@
+task	available_total	head	v5_target	other_groups	coverage_file
+Sentence Retrieval Tatoeba	66	63	3		coverage_retrieval_tatoeba.tsv
+Sentence Retrieval Bible	80	74	6		coverage_retrieval_bible.tsv
+Text Classification	1	1	0		coverage_text_classification.tsv
+NER	84	78	6		coverage_ner.tsv
+POS	58	58	0		coverage_pos.tsv
+Roundtrip Alignment	80	74	6		coverage_roundtrip_alignment.tsv

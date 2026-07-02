@@ -1,0 +1,103 @@
+task	language_script	language	group	in_task_list	upstream_flag	local_data_exists	has_data	reason	data_path
+retrieval_tatoeba	lao_Laoo	lao	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	mya_Mymr	mya	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ara_Arab	ara	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	mar_Deva	mar	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	hau_Latn	hau	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	uzb_Latn	uzb	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	slv_Latn	slv	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	fin_Latn	fin	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	hun_Latn	hun	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	cmn_Hani	cmn	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	est_Latn	est	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	bre_Latn	bre	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	hrv_Latn	hrv	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	jav_Latn	jav	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ron_Latn	ron	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ell_Grek	ell	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	nor_Latn	nor	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	slk_Latn	slk	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	vie_Latn	vie	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	amh_Ethi	amh	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	epo_Latn	epo	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	bel_Cyrl	bel	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	xho_Latn	xho	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	hin_Deva	hin	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	tam_Taml	tam	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	mon_Cyrl	mon	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ces_Latn	ces	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	san_Deva	san	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	hye_Armn	hye	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	pus_Arab	pus	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	som_Arab	som	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	kan_Knda	kan	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	isl_Latn	isl	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ori_Orya	ori	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	afr_Latn	afr	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	deu_Latn	deu	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	urd_Arab	urd	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	bul_Cyrl	bul	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	tgl_Latn	tgl	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	eus_Latn	eus	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	pol_Latn	pol	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	lat_Latn	lat	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	tur_Latn	tur	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	fra_Latn	fra	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	cat_Latn	cat	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	uig_Arab	uig	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	arb_Arab	arb	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	sqi_Latn	sqi	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	sin_Sinh	sin	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	msa_Latn	msa	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	swh_Latn	swh	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	kor_Hang	kor	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ukr_Cyrl	ukr	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	kir_Cyrl	kir	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	yid_Hebr	yid	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	heb_Hebr	heb	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	nld_Latn	nld	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	fry_Latn	fry	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	azb_Arab	azb	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	glg_Latn	glg	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	fas_Arab	fas	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	eng_Latn	eng	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	mkd_Cyrl	mkd	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ind_Latn	ind	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	por_Latn	por	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	spa_Latn	spa	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	dan_Latn	dan	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	khm_Khmr	khm	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	gla_Latn	gla	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	uig_Latn	uig	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	kat_Geor	kat	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	mlg_Latn	mlg	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	snd_Arab	snd	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	ita_Latn	ita	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	hau_Arab	hau	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	cym_Latn	cym	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	srp_Latn	srp	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	zho_Hani	zho	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	tha_Thai	tha	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	swe_Latn	swe	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	pan_Guru	pan	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	prs_Arab	prs	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	pes_Arab	pes	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	san_Latn	san	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	kaz_Cyrl	kaz	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	kur_Latn	kur	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	mal_Mlym	mal	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	nep_Deva	nep	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	gle_Latn	gle	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	swa_Latn	swa	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	som_Latn	som	head	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	lit_Latn	lit	head	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	guj_Gujr	guj	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	asm_Beng	asm	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	srp_Cyrl	srp	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	sun_Latn	sun	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	zsm_Latn	zsm	v5_target	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	aze_Latn	aze	v5_target	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	fil_Latn	fil	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	bos_Latn	bos	v5_target	yes	1	yes	yes	available	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	dzo_Tibt	dzo	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba
+retrieval_tatoeba	sat_Olck	sat	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba

@@ -1,0 +1,677 @@
+task	language_script	group	unit	has_data	train_count	dev_count	test_count	pair_or_sample_count	source_path	notes
+raw_text_strict_split	lao_Laoo	head	raw text examples	yes	54337	1000	1000	56337	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	lao_Laoo	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	mya_Mymr	head	raw text examples	yes	909018	1000	1000	911018	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	mya_Mymr	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ara_Arab	head	raw text examples	yes	24519525	1000	1000	24521525	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ara_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	mar_Deva	head	raw text examples	yes	28747662	1000	1000	28749662	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	mar_Deva	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	hau_Latn	head	raw text examples	yes	4359657	1000	1000	4361657	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	hau_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	uzb_Latn	head	raw text examples	yes	3180187	1000	1000	3182187	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	uzb_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	slv_Latn	head	raw text examples	yes	15716268	1000	1000	15718268	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	slv_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	fin_Latn	head	raw text examples	yes	16727345	1000	1000	16729345	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	fin_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	hun_Latn	head	raw text examples	yes	18796712	1000	1000	18798712	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	hun_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	cmn_Hani	head	raw text examples	yes	55500	1000	1000	57500	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	cmn_Hani	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	est_Latn	head	raw text examples	yes	13596009	1000	1000	13598009	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	est_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	bre_Latn	head	raw text examples	yes	729939	1000	1000	731939	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	bre_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	hrv_Latn	head	raw text examples	yes	17879552	1000	1000	17881552	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	hrv_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	jav_Latn	head	raw text examples	yes	445504	1000	1000	447504	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	jav_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ron_Latn	head	raw text examples	yes	19187651	1000	1000	19189651	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ron_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ell_Grek	head	raw text examples	yes	22029905	1000	1000	22031905	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ell_Grek	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	nor_Latn	head	raw text examples	yes	14526502	1000	1000	14528502	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	nor_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	slk_Latn	head	raw text examples	yes	14632178	1000	1000	14634178	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	slk_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	vie_Latn	head	raw text examples	yes	15585157	1000	1000	15587157	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	vie_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	amh_Ethi	head	raw text examples	yes	2833527	1000	1000	2835527	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	amh_Ethi	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	epo_Latn	head	raw text examples	yes	8734217	1000	1000	8736217	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	epo_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	bel_Cyrl	head	raw text examples	yes	5316656	1000	1000	5318656	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	bel_Cyrl	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	xho_Latn	head	raw text examples	yes	1199261	1000	1000	1201261	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	xho_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	hin_Deva	head	raw text examples	yes	7002172	1000	1000	7004172	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	hin_Deva	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	tam_Taml	head	raw text examples	yes	3362892	1000	1000	3364892	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	tam_Taml	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	mon_Cyrl	head	raw text examples	yes	4612949	1000	1000	4614949	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	mon_Cyrl	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ces_Latn	head	raw text examples	yes	20372860	1000	1000	20374860	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ces_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	san_Deva	head	raw text examples	yes	153070	1000	1000	155070	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	san_Deva	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	hye_Armn	head	raw text examples	yes	1411139	1000	1000	1413139	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	hye_Armn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	pus_Arab	head	raw text examples	yes	728035	1000	1000	730035	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	pus_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	som_Arab	head	raw text examples	yes	10203	1000	1000	12203	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	som_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	kan_Knda	head	raw text examples	yes	41803904	1000	1000	41805904	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	kan_Knda	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	isl_Latn	head	raw text examples	yes	19544858	1000	1000	19546858	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	isl_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ori_Orya	head	raw text examples	yes	400076	1000	1000	402076	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ori_Orya	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	afr_Latn	head	raw text examples	yes	5154807	1000	1000	5156807	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	afr_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	deu_Latn	head	raw text examples	yes	31013917	1000	1000	31015917	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	deu_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	urd_Arab	head	raw text examples	yes	6006751	1000	1000	6008751	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	urd_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	bul_Cyrl	head	raw text examples	yes	21820051	1000	1000	21822051	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	bul_Cyrl	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	tgl_Latn	head	raw text examples	yes	7407827	1000	1000	7409827	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	tgl_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	eus_Latn	head	raw text examples	yes	12772851	1000	1000	12774851	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	eus_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	pol_Latn	head	raw text examples	yes	19336808	1000	1000	19338808	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	pol_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	lat_Latn	head	raw text examples	yes	1147896	1000	1000	1149896	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	lat_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	tur_Latn	head	raw text examples	yes	29180577	1000	1000	29182577	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	tur_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	fra_Latn	head	raw text examples	yes	39194744	1000	1000	39196744	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	fra_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	cat_Latn	head	raw text examples	yes	8630854	1000	1000	8632854	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	cat_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	uig_Arab	head	raw text examples	yes	296694	1000	1000	298694	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	uig_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	arb_Arab	head	raw text examples	yes	7697	1000	1000	9697	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	arb_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	sqi_Latn	head	raw text examples	yes	5471093	1000	1000	5473093	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	sqi_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	sin_Sinh	head	raw text examples	yes	7290412	1000	1000	7292412	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	sin_Sinh	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	msa_Latn	head	raw text examples	yes	3892332	1000	1000	3894332	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	msa_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	swh_Latn	head	raw text examples	yes	41876	1000	1000	43876	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	swh_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	kor_Hang	head	raw text examples	yes	6346091	1000	1000	6348091	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	kor_Hang	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ukr_Cyrl	head	raw text examples	yes	7435153	1000	1000	7437153	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ukr_Cyrl	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	kir_Cyrl	head	raw text examples	yes	1332662	1000	1000	1334662	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	kir_Cyrl	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	yid_Hebr	head	raw text examples	yes	216222	1000	1000	218222	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	yid_Hebr	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	heb_Hebr	head	raw text examples	yes	18124264	1000	1000	18126264	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	heb_Hebr	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	nld_Latn	head	raw text examples	yes	25058543	1000	1000	25060543	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	nld_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	fry_Latn	head	raw text examples	yes	923801	1000	1000	925801	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	fry_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	azb_Arab	head	raw text examples	yes	1	940	940	1881	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	azb_Arab	head	raw text examples	yes	0	940	940	1880	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	glg_Latn	head	raw text examples	yes	17846822	1000	1000	17848822	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	glg_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	fas_Arab	head	raw text examples	yes	18235931	1000	1000	18237931	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	fas_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	eng_Latn	head	raw text examples	yes	36119560	1000	1000	36121560	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	eng_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	mkd_Cyrl	head	raw text examples	yes	14713827	1000	1000	14715827	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	mkd_Cyrl	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ind_Latn	head	raw text examples	yes	23015064	1000	1000	23017064	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ind_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	por_Latn	head	raw text examples	yes	27820986	1000	1000	27822986	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	por_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	spa_Latn	head	raw text examples	yes	37283157	1000	1000	37285157	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	spa_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	dan_Latn	head	raw text examples	yes	19170974	1000	1000	19172974	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	dan_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	khm_Khmr	head	raw text examples	yes	563794	1000	1000	565794	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	khm_Khmr	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	gla_Latn	head	raw text examples	yes	122953	1000	1000	124953	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	gla_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	uig_Latn	head	raw text examples	yes	1	852	852	1705	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	uig_Latn	head	raw text examples	yes	0	852	852	1704	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	kat_Geor	head	raw text examples	yes	988785	1000	1000	990785	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	kat_Geor	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	mlg_Latn	head	raw text examples	yes	3701137	1000	1000	3703137	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	mlg_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	snd_Arab	head	raw text examples	yes	476110	1000	1000	478110	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	snd_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	ita_Latn	head	raw text examples	yes	23536832	1000	1000	23538832	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	ita_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	hau_Arab	head	raw text examples	yes	5594	1000	1000	7594	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	hau_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	cym_Latn	head	raw text examples	yes	1161276	1000	1000	1163276	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	cym_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	srp_Latn	head	raw text examples	yes	18369143	1000	1000	18371143	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	srp_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	zho_Hani	head	raw text examples	yes	24071937	1000	1000	24073937	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	zho_Hani	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	tha_Thai	head	raw text examples	yes	7625697	1000	1000	7627697	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	tha_Thai	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	swe_Latn	head	raw text examples	yes	20723321	1000	1000	20725321	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	swe_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	pan_Guru	head	raw text examples	yes	29023289	1000	1000	29025289	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	pan_Guru	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	prs_Arab	head	raw text examples	yes	8753	1000	1000	10753	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	prs_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	pes_Arab	head	raw text examples	yes	16762	1000	1000	18762	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	pes_Arab	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	san_Latn	head	raw text examples	yes	1	58	59	118	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	san_Latn	head	raw text examples	yes	0	58	59	117	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	kaz_Cyrl	head	raw text examples	yes	12343817	1000	1000	12345817	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	kaz_Cyrl	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	kur_Latn	head	raw text examples	yes	403169	1000	1000	405169	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	kur_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	mal_Mlym	head	raw text examples	yes	48093393	1000	1000	48095393	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	mal_Mlym	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	nep_Deva	head	raw text examples	yes	1297063	1000	1000	1299063	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	nep_Deva	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	gle_Latn	head	raw text examples	yes	7176230	1000	1000	7178230	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	gle_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	swa_Latn	head	raw text examples	yes	5985318	1000	1000	5987318	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	swa_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	som_Latn	head	raw text examples	yes	3913898	1000	1000	3915898	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	som_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	lit_Latn	head	raw text examples	yes	12423629	1000	1000	12425629	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	lit_Latn	head	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	guj_Gujr	target	raw text examples	yes	45736247	1000	1000	45738247	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	guj_Gujr	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	asm_Beng	target	raw text examples	yes	1874644	1000	1000	1876644	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	asm_Beng	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	srp_Cyrl	target	raw text examples	yes	3861064	1000	1000	3863064	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	srp_Cyrl	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	sun_Latn	target	raw text examples	yes	2544902	1000	1000	2546902	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	sun_Latn	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	zsm_Latn	target	raw text examples	yes	847033	1000	1000	849033	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	zsm_Latn	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	aze_Latn	target	raw text examples	yes	46290511	1000	1000	46292511	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	aze_Latn	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	fil_Latn	target	raw text examples	yes	33482266	1000	1000	33484266	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	fil_Latn	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	bos_Latn	target	raw text examples	yes	11010783	1000	1000	11012783	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	bos_Latn	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	dzo_Tibt	target	raw text examples	yes	42100	1000	1000	44100	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	dzo_Tibt	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+raw_text_strict_split	sat_Olck	target	raw text examples	yes	35581	1000	1000	37581	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PASS
+pseudoperplexity_heldout	sat_Olck	target	raw text examples	yes	0	1000	1000	2000	0_tokenizer/00_data_scope/strict_data_composition_by_language.tsv	PPPL uses held-out split; test is the final reporting split.
+mlm_pretraining_sample_5pct	lao_Laoo	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	mya_Mymr	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ara_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	mar_Deva	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	hau_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	uzb_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	slv_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	fin_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	hun_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	cmn_Hani	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	est_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	bre_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	hrv_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	jav_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ron_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ell_Grek	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	nor_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	slk_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	vie_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	amh_Ethi	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	epo_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	bel_Cyrl	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	xho_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	hin_Deva	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	tam_Taml	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	mon_Cyrl	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ces_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	san_Deva	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	hye_Armn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	pus_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	som_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	kan_Knda	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	isl_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ori_Orya	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	afr_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	deu_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	urd_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	bul_Cyrl	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	tgl_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	eus_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	pol_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	lat_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	tur_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	fra_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	cat_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	uig_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	arb_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	sqi_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	sin_Sinh	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	msa_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	swh_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	kor_Hang	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ukr_Cyrl	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	kir_Cyrl	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	yid_Hebr	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	heb_Hebr	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	nld_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	fry_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	azb_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	glg_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	fas_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	eng_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	mkd_Cyrl	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ind_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	por_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	spa_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	dan_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	khm_Khmr	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	gla_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	uig_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	kat_Geor	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	mlg_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	snd_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	ita_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	hau_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	cym_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	srp_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	zho_Hani	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	tha_Thai	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	swe_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	pan_Guru	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	prs_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	pes_Arab	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	san_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	kaz_Cyrl	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	kur_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	mal_Mlym	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	nep_Deva	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	gle_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	swa_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	som_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	lit_Latn	head	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	guj_Gujr	target	sampled raw text lines	yes	492799	0	0	492799	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	asm_Beng	target	sampled raw text lines	yes	189232	0	0	189232	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	srp_Cyrl	target	sampled raw text lines	yes	234800	0	0	234800	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	sun_Latn	target	sampled raw text lines	yes	208149	0	0	208149	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	zsm_Latn	target	sampled raw text lines	yes	149598	0	0	149598	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	aze_Latn	target	sampled raw text lines	yes	494608	0	0	494608	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	fil_Latn	target	sampled raw text lines	yes	448820	0	0	448820	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	bos_Latn	target	sampled raw text lines	yes	321497	0	0	321497	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	dzo_Tibt	target	sampled raw text lines	yes	64745	0	0	64745	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+mlm_pretraining_sample_5pct	sat_Olck	target	sampled raw text lines	yes	59421	0	0	59421	0_tokenizer/merge/Glot500_v51_glot50010_xlmr100_strict_5pct.manifest.tsv	PASS
+retrieval_tatoeba	ara_Arab	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	mar_Deva	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	slv_Latn	head	aligned sentence pairs	yes	0	0	823	823	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=823;eng_lines=823
+retrieval_tatoeba	fin_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	hun_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	cmn_Hani	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	est_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	bre_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	hrv_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	ron_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	ell_Grek	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	slk_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	vie_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	amh_Ethi	head	aligned sentence pairs	yes	0	0	168	168	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=168;eng_lines=168
+retrieval_tatoeba	epo_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	bel_Cyrl	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	xho_Latn	head	aligned sentence pairs	yes	0	0	142	142	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=142;eng_lines=142
+retrieval_tatoeba	hin_Deva	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	tam_Taml	head	aligned sentence pairs	yes	0	0	307	307	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=307;eng_lines=307
+retrieval_tatoeba	mon_Cyrl	head	aligned sentence pairs	yes	0	0	440	440	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=440;eng_lines=440
+retrieval_tatoeba	ces_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	hye_Armn	head	aligned sentence pairs	yes	0	0	742	742	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=742;eng_lines=742
+retrieval_tatoeba	isl_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	afr_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	deu_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	urd_Arab	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	bul_Cyrl	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	tgl_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	eus_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	pol_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	lat_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	tur_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	fra_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	cat_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	uig_Arab	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	sqi_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	swh_Latn	head	aligned sentence pairs	yes	0	0	390	390	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=390;eng_lines=390
+retrieval_tatoeba	kor_Hang	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	ukr_Cyrl	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	yid_Hebr	head	aligned sentence pairs	yes	0	0	848	848	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=848;eng_lines=848
+retrieval_tatoeba	heb_Hebr	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	nld_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	fry_Latn	head	aligned sentence pairs	yes	0	0	173	173	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=173;eng_lines=173
+retrieval_tatoeba	glg_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	mkd_Cyrl	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	ind_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	por_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	spa_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	dan_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	khm_Khmr	head	aligned sentence pairs	yes	0	0	722	722	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=722;eng_lines=722
+retrieval_tatoeba	gla_Latn	head	aligned sentence pairs	yes	0	0	829	829	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=829;eng_lines=829
+retrieval_tatoeba	kat_Geor	head	aligned sentence pairs	yes	0	0	746	746	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=746;eng_lines=746
+retrieval_tatoeba	ita_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	cym_Latn	head	aligned sentence pairs	yes	0	0	575	575	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=575;eng_lines=575
+retrieval_tatoeba	srp_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	tha_Thai	head	aligned sentence pairs	yes	0	0	548	548	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=548;eng_lines=548
+retrieval_tatoeba	swe_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	pes_Arab	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	kaz_Cyrl	head	aligned sentence pairs	yes	0	0	575	575	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=575;eng_lines=575
+retrieval_tatoeba	kur_Latn	head	aligned sentence pairs	yes	0	0	410	410	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=410;eng_lines=410
+retrieval_tatoeba	mal_Mlym	head	aligned sentence pairs	yes	0	0	687	687	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=687;eng_lines=687
+retrieval_tatoeba	gle_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	lit_Latn	head	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	zsm_Latn	target	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	aze_Latn	target	aligned sentence pairs	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=1000;eng_lines=1000
+retrieval_tatoeba	bos_Latn	target	aligned sentence pairs	yes	0	0	354	354	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_tatoeba	src_lines=354;eng_lines=354
+retrieval_bible	mya_Mymr	head	aligned verse pairs	yes	0	0	7912	7912	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7912;src_lines=7912;eng_lines=7912
+retrieval_bible	mar_Deva	head	aligned verse pairs	yes	0	0	7898	7898	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7898;src_lines=7898;eng_lines=7898
+retrieval_bible	hau_Latn	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	uzb_Latn	head	aligned verse pairs	yes	0	0	7917	7917	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7917;src_lines=7917;eng_lines=7917
+retrieval_bible	slv_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	fin_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	hun_Latn	head	aligned verse pairs	yes	0	0	7936	7936	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7936;src_lines=7936;eng_lines=7936
+retrieval_bible	cmn_Hani	head	aligned verse pairs	yes	0	0	7916	7916	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7916;src_lines=7916;eng_lines=7916
+retrieval_bible	bre_Latn	head	aligned verse pairs	yes	0	0	7935	7935	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7935;src_lines=7935;eng_lines=7935
+retrieval_bible	hrv_Latn	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	jav_Latn	head	aligned verse pairs	yes	0	0	7938	7938	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7938;src_lines=7938;eng_lines=7938
+retrieval_bible	ron_Latn	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	ell_Grek	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	slk_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	vie_Latn	head	aligned verse pairs	yes	0	0	7935	7935	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7935;src_lines=7935;eng_lines=7935
+retrieval_bible	amh_Ethi	head	aligned verse pairs	yes	0	0	7642	7642	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7642;src_lines=7642;eng_lines=7642
+retrieval_bible	epo_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	bel_Cyrl	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	xho_Latn	head	aligned verse pairs	yes	0	0	7814	7814	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7814;src_lines=7814;eng_lines=7814
+retrieval_bible	hin_Deva	head	aligned verse pairs	yes	0	0	7902	7902	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7902;src_lines=7902;eng_lines=7902
+retrieval_bible	tam_Taml	head	aligned verse pairs	yes	0	0	7894	7894	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7894;src_lines=7894;eng_lines=7894
+retrieval_bible	ces_Latn	head	aligned verse pairs	yes	0	0	7289	7289	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7289;src_lines=7289;eng_lines=7289
+retrieval_bible	san_Deva	head	aligned verse pairs	yes	0	0	7712	7712	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7712;src_lines=7712;eng_lines=7712
+retrieval_bible	hye_Armn	head	aligned verse pairs	yes	0	0	3732	3732	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=3732;src_lines=3732;eng_lines=3732
+retrieval_bible	kan_Knda	head	aligned verse pairs	yes	0	0	7831	7831	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7831;src_lines=7831;eng_lines=7831
+retrieval_bible	isl_Latn	head	aligned verse pairs	yes	0	0	7874	7874	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7874;src_lines=7874;eng_lines=7874
+retrieval_bible	afr_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	deu_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	urd_Arab	head	aligned verse pairs	yes	0	0	7894	7894	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7894;src_lines=7894;eng_lines=7894
+retrieval_bible	bul_Cyrl	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	tgl_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	eus_Latn	head	aligned verse pairs	yes	0	0	7852	7852	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7852;src_lines=7852;eng_lines=7852
+retrieval_bible	pol_Latn	head	aligned verse pairs	yes	0	0	7934	7934	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7934;src_lines=7934;eng_lines=7934
+retrieval_bible	lat_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	tur_Latn	head	aligned verse pairs	yes	0	0	7457	7457	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7457;src_lines=7457;eng_lines=7457
+retrieval_bible	fra_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	cat_Latn	head	aligned verse pairs	yes	0	0	7936	7936	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7936;src_lines=7936;eng_lines=7936
+retrieval_bible	uig_Arab	head	aligned verse pairs	yes	0	0	7838	7838	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7838;src_lines=7838;eng_lines=7838
+retrieval_bible	arb_Arab	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	sqi_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	sin_Sinh	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	swh_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	kor_Hang	head	aligned verse pairs	yes	0	0	7938	7938	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7938;src_lines=7938;eng_lines=7938
+retrieval_bible	ukr_Cyrl	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	kir_Cyrl	head	aligned verse pairs	yes	0	0	7841	7841	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7841;src_lines=7841;eng_lines=7841
+retrieval_bible	heb_Hebr	head	aligned verse pairs	yes	0	0	7714	7714	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7714;src_lines=7714;eng_lines=7714
+retrieval_bible	nld_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	fry_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	azb_Arab	head	aligned verse pairs	yes	0	0	7908	7908	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7908;src_lines=7908;eng_lines=7908
+retrieval_bible	mkd_Cyrl	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	ind_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	por_Latn	head	aligned verse pairs	yes	0	0	5917	5917	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=5917;src_lines=5917;eng_lines=5917
+retrieval_bible	spa_Latn	head	aligned verse pairs	yes	0	0	7910	7910	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7910;src_lines=7910;eng_lines=7910
+retrieval_bible	dan_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	khm_Khmr	head	aligned verse pairs	yes	0	0	7868	7868	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7868;src_lines=7868;eng_lines=7868
+retrieval_bible	gla_Latn	head	aligned verse pairs	yes	0	0	7931	7931	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7931;src_lines=7931;eng_lines=7931
+retrieval_bible	uig_Latn	head	aligned verse pairs	yes	0	0	7838	7838	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7838;src_lines=7838;eng_lines=7838
+retrieval_bible	kat_Geor	head	aligned verse pairs	yes	0	0	4868	4868	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=4868;src_lines=4868;eng_lines=4868
+retrieval_bible	snd_Arab	head	aligned verse pairs	yes	0	0	7921	7921	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7921;src_lines=7921;eng_lines=7921
+retrieval_bible	ita_Latn	head	aligned verse pairs	yes	0	0	7933	7933	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7933;src_lines=7933;eng_lines=7933
+retrieval_bible	cym_Latn	head	aligned verse pairs	yes	0	0	7940	7940	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7940;src_lines=7940;eng_lines=7940
+retrieval_bible	srp_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	tha_Thai	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	swe_Latn	head	aligned verse pairs	yes	0	0	7937	7937	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7937;src_lines=7937;eng_lines=7937
+retrieval_bible	pan_Guru	head	aligned verse pairs	yes	0	0	7889	7889	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7889;src_lines=7889;eng_lines=7889
+retrieval_bible	prs_Arab	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	pes_Arab	head	aligned verse pairs	yes	0	0	7891	7891	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7891;src_lines=7891;eng_lines=7891
+retrieval_bible	san_Latn	head	aligned verse pairs	yes	0	0	7712	7712	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7712;src_lines=7712;eng_lines=7712
+retrieval_bible	kaz_Cyrl	head	aligned verse pairs	yes	0	0	7915	7915	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7915;src_lines=7915;eng_lines=7915
+retrieval_bible	mal_Mlym	head	aligned verse pairs	yes	0	0	7938	7938	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7938;src_lines=7938;eng_lines=7938
+retrieval_bible	nep_Deva	head	aligned verse pairs	yes	0	0	7922	7922	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7922;src_lines=7922;eng_lines=7922
+retrieval_bible	gle_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	som_Latn	head	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	lit_Latn	head	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	guj_Gujr	target	aligned verse pairs	yes	0	0	7883	7883	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7883;src_lines=7883;eng_lines=7883
+retrieval_bible	asm_Beng	target	aligned verse pairs	yes	0	0	7939	7939	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7939;src_lines=7939;eng_lines=7939
+retrieval_bible	srp_Cyrl	target	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+retrieval_bible	sun_Latn	target	aligned verse pairs	yes	0	0	7938	7938	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7938;src_lines=7938;eng_lines=7938
+retrieval_bible	zsm_Latn	target	aligned verse pairs	yes	0	0	7888	7888	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7888;src_lines=7888;eng_lines=7888
+retrieval_bible	fil_Latn	target	aligned verse pairs	yes	0	0	7941	7941	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/retrieval_bible	shared_verses=7941;src_lines=7941;eng_lines=7941
+roundtrip_alignment	mya_Mymr	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mya_Mymr.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	mar_Deva	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mar_Deva.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	hau_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hau_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	uzb_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.uzb_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	slv_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.slv_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	fin_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fin_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	hun_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hun_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	cmn_Hani	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.cmn_Hani.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	bre_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.bre_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	hrv_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hrv_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	jav_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.jav_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	ron_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ron_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	ell_Grek	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ell_Grek.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	slk_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.slk_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	vie_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.vie_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	amh_Ethi	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.amh_Ethi.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	epo_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.epo_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	bel_Cyrl	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.bel_Cyrl.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	xho_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.xho_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	hin_Deva	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hin_Deva.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	tam_Taml	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tam_Taml.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	ces_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ces_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	san_Deva	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.san_Deva.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	hye_Armn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.hye_Armn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	kan_Knda	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kan_Knda.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	isl_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.isl_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	afr_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.afr_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	deu_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.deu_Latn.jsonl	pivot=fra_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	urd_Arab	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.urd_Arab.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	bul_Cyrl	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.bul_Cyrl.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	tgl_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tgl_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	eus_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.eus_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	pol_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.pol_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	lat_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.lat_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	tur_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tur_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	fra_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fra_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	cat_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.cat_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	uig_Arab	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.uig_Arab.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	arb_Arab	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.arb_Arab.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	sqi_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.sqi_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	sin_Sinh	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.sin_Sinh.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	swh_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.swh_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	kor_Hang	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kor_Hang.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	ukr_Cyrl	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ukr_Cyrl.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	kir_Cyrl	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kir_Cyrl.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	heb_Hebr	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.heb_Hebr.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	nld_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.nld_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	fry_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fry_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	azb_Arab	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.azb_Arab.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	mkd_Cyrl	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mkd_Cyrl.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	ind_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ind_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	por_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.por_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	spa_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.spa_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	dan_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.dan_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	khm_Khmr	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.khm_Khmr.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	gla_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.gla_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	uig_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.uig_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	kat_Geor	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kat_Geor.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	snd_Arab	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.snd_Arab.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	ita_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.ita_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	cym_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.cym_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	srp_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.srp_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	tha_Thai	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.tha_Thai.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	swe_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.swe_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	pan_Guru	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.pan_Guru.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	prs_Arab	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.prs_Arab.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	pes_Arab	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.pes_Arab.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	san_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.san_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	kaz_Cyrl	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.kaz_Cyrl.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	mal_Mlym	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.mal_Mlym.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	nep_Deva	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.nep_Deva.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	gle_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.gle_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	som_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.som_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	lit_Latn	head	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.lit_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	guj_Gujr	target	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.guj_Gujr.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	asm_Beng	target	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.asm_Beng.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	srp_Cyrl	target	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.srp_Cyrl.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	sun_Latn	target	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.sun_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	zsm_Latn	target	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.zsm_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+roundtrip_alignment	fil_Latn	target	roundtrip samples	yes	0	0	500	500	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment/roundtrip.fil_Latn.jsonl	pivot=deu_Latn;written_samples=500;jsonl_lines=500
+ner	mya_Mymr	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ara_Arab	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	mar_Deva	head	CoNLL sentence examples	yes	5000	1000	1000	7000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	uzb_Latn	head	CoNLL sentence examples	yes	1000	1000	1000	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	slv_Latn	head	CoNLL sentence examples	yes	15000	10000	10000	35000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	fin_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	hun_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	est_Latn	head	CoNLL sentence examples	yes	15000	10000	10000	35000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	bre_Latn	head	CoNLL sentence examples	yes	1000	1000	1000	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	hrv_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	jav_Latn	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ron_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ell_Grek	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	nor_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	slk_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	vie_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	amh_Ethi	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	epo_Latn	head	CoNLL sentence examples	yes	15000	10000	10000	35000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	bel_Cyrl	head	CoNLL sentence examples	yes	15000	1000	1000	17000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	hin_Deva	head	CoNLL sentence examples	yes	5000	1000	1000	7000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	tam_Taml	head	CoNLL sentence examples	yes	15000	1000	1000	17000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	mon_Cyrl	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ces_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	san_Deva	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	hye_Armn	head	CoNLL sentence examples	yes	15000	1000	1000	17000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	pus_Arab	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	kan_Knda	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	isl_Latn	head	CoNLL sentence examples	yes	1000	1000	1000	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ori_Orya	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	afr_Latn	head	CoNLL sentence examples	yes	5000	1000	1000	7000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	deu_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	urd_Arab	head	CoNLL sentence examples	yes	20000	1000	1000	22000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	bul_Cyrl	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	tgl_Latn	head	CoNLL sentence examples	yes	10000	1000	1000	12000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	eus_Latn	head	CoNLL sentence examples	yes	10000	10000	10000	30000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	pol_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	lat_Latn	head	CoNLL sentence examples	yes	5000	1000	1000	7000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	tur_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	fra_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	cat_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	uig_Arab	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	sqi_Latn	head	CoNLL sentence examples	yes	5000	1000	1000	7000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	sin_Sinh	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	msa_Latn	head	CoNLL sentence examples	yes	20000	1000	1000	22000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	kor_Hang	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ukr_Cyrl	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	kir_Cyrl	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	yid_Hebr	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	heb_Hebr	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	nld_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	fry_Latn	head	CoNLL sentence examples	yes	1000	1000	1000	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	glg_Latn	head	CoNLL sentence examples	yes	15000	10000	10000	35000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	fas_Arab	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	eng_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	mkd_Cyrl	head	CoNLL sentence examples	yes	10000	1000	1000	12000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ind_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	por_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	spa_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	dan_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	khm_Khmr	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	gla_Latn	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	kat_Geor	head	CoNLL sentence examples	yes	10000	10000	10000	30000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	mlg_Latn	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	snd_Arab	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	ita_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	cym_Latn	head	CoNLL sentence examples	yes	10000	1000	1000	12000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	zho_Hani	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	tha_Thai	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	swe_Latn	head	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	pan_Guru	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	kaz_Cyrl	head	CoNLL sentence examples	yes	1000	1000	1000	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	kur_Latn	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	mal_Mlym	head	CoNLL sentence examples	yes	10000	1000	1000	12000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	nep_Deva	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	gle_Latn	head	CoNLL sentence examples	yes	1000	1000	1000	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	swa_Latn	head	CoNLL sentence examples	yes	1000	1000	1000	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	som_Latn	head	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	lit_Latn	head	CoNLL sentence examples	yes	10000	10000	10000	30000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	guj_Gujr	target	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	asm_Beng	target	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	srp_Cyrl	target	CoNLL sentence examples	yes	20000	10000	10000	40000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	sun_Latn	target	CoNLL sentence examples	yes	100	100	100	300	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	aze_Latn	target	CoNLL sentence examples	yes	10000	1000	1000	12000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+ner	bos_Latn	target	CoNLL sentence examples	yes	15000	1000	1000	17000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/ner	
+pos	ara_Arab	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	mar_Deva	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	slv_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	fin_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	hun_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	est_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	bre_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	hrv_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	jav_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	ron_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	ell_Grek	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	nor_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	slk_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	vie_Latn	head	CoNLL sentence examples	yes	1400	800	800	3000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	
+pos	amh_Ethi	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	bel_Cyrl	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	hin_Deva	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	tam_Taml	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	ces_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	san_Deva	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	hye_Armn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	isl_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	afr_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	deu_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	urd_Arab	head	CoNLL sentence examples	yes	4043	552	535	5130	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	
+pos	bul_Cyrl	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	tgl_Latn	head	CoNLL sentence examples	yes	0	0	128	128	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev
+pos	eus_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	pol_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	lat_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	tur_Latn	head	CoNLL sentence examples	yes	52286	5211	5549	63046	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	
+pos	fra_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	cat_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	uig_Arab	head	CoNLL sentence examples	yes	1656	900	900	3456	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	
+pos	sqi_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	sin_Sinh	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	kor_Hang	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	ukr_Cyrl	head	CoNLL sentence examples	yes	28	673	681	1382	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	
+pos	heb_Hebr	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	nld_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	glg_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	fas_Arab	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	eng_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	ind_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	por_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	spa_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	dan_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	gla_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	ita_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	cym_Latn	head	CoNLL sentence examples	yes	2	1	4	7	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	
+pos	srp_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	zho_Hani	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	tha_Thai	head	CoNLL sentence examples	yes	0	0	1000	1000	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev
+pos	swe_Latn	head	CoNLL sentence examples	yes	7479	1536	3254	12269	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	
+pos	kaz_Cyrl	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	mal_Mlym	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	gle_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+pos	lit_Latn	head	CoNLL sentence examples	no	0	0	0	0	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/pos	missing_splits=train,dev,test
+text_classification_taxi1500	eng_Latn	head	classification rows	yes	860	106	111	1077	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/taxi1500	train=eng_train.tsv;dev=eng_dev.tsv;test=eng_test.tsv
+embedding_similarity_pairs	ALL	head	diagnostic pair rows	yes	0	0	22600	22600	3_evaluation/08_embedding_similarity/similarity_pairs.tsv	summary_head=21100;summary_target=1500

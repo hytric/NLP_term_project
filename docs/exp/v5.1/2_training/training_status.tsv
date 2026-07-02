@@ -1,0 +1,2 @@
+checked_at_kst	run_name	status	latest_step	progress_pct	eta_remaining	eta_at_kst	launcher_pid	trainer_pid	log_path	output_dir
+2026-06-28 21:56:49 KST	v51_strict5pct_random_mlm_3k	not_running	1869/3000	62.30%	2:31:56	2026-06-29 00:28 KST			/home/axt/mnt2/jongha/v5_1_glot50010/runs/logs/train_v5_v51_strict5pct_random_mlm_3k_20260628_182508.log	/home/axt/mnt2/jongha/v5_1_glot50010/runs/v51_strict5pct_random_mlm_3k

@@ -1,0 +1,75 @@
+{
+  "tasks": [
+    {
+      "task": "pseudoperplexity",
+      "languages": 102,
+      "head_languages": 92,
+      "target_languages": 10,
+      "has_data_total": 102,
+      "has_data_head": 92,
+      "has_data_target": 10,
+      "blocked_or_missing": 0
+    },
+    {
+      "task": "retrieval_tatoeba",
+      "languages": 102,
+      "head_languages": 92,
+      "target_languages": 10,
+      "has_data_total": 66,
+      "has_data_head": 63,
+      "has_data_target": 3,
+      "blocked_or_missing": 36
+    },
+    {
+      "task": "retrieval_bible",
+      "languages": 102,
+      "head_languages": 92,
+      "target_languages": 10,
+      "has_data_total": 80,
+      "has_data_head": 74,
+      "has_data_target": 6,
+      "blocked_or_missing": 22
+    },
+    {
+      "task": "text_classification",
+      "languages": 102,
+      "head_languages": 92,
+      "target_languages": 10,
+      "has_data_total": 1,
+      "has_data_head": 1,
+      "has_data_target": 0,
+      "blocked_or_missing": 101
+    },
+    {
+      "task": "ner",
+      "languages": 102,
+      "head_languages": 92,
+      "target_languages": 10,
+      "has_data_total": 84,
+      "has_data_head": 78,
+      "has_data_target": 6,
+      "blocked_or_missing": 18
+    },
+    {
+      "task": "pos",
+      "languages": 102,
+      "head_languages": 92,
+      "target_languages": 10,
+      "has_data_total": 58,
+      "has_data_head": 58,
+      "has_data_target": 0,
+      "blocked_or_missing": 44
+    },
+    {
+      "task": "roundtrip_alignment",
+      "languages": 102,
+      "head_languages": 92,
+      "target_languages": 10,
+      "has_data_total": 80,
+      "has_data_head": 74,
+      "has_data_target": 6,
+      "blocked_or_missing": 22
+    }
+  ],
+  "eval_data_root": "/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download"
+}

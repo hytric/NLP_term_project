@@ -1,0 +1,103 @@
+language_script	group	source_sentences	sampling_probability_pct	planned_samples	actual_samples	input_dir	exists_on_disk	status	notes
+lao_Laoo	seen	66966		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/lao_Laoo	yes	DRY_RUN	
+mya_Mymr	seen	945180		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/mya_Mymr	yes	DRY_RUN	
+ara_Arab	seen	24524122		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ara_Arab	yes	DRY_RUN	
+mar_Deva	seen	28748897		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/mar_Deva	yes	DRY_RUN	
+hau_Latn	seen	4368483		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/hau_Latn	yes	DRY_RUN	
+uzb_Latn	seen	3223485		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/uzb_Latn	yes	DRY_RUN	
+slv_Latn	seen	15719210		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/slv_Latn	yes	DRY_RUN	
+fin_Latn	seen	16730388		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/fin_Latn	yes	DRY_RUN	
+hun_Latn	seen	18800025		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/hun_Latn	yes	DRY_RUN	
+cmn_Hani	seen	80745		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/cmn_Hani	yes	DRY_RUN	
+est_Latn	seen	13600579		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/est_Latn	yes	DRY_RUN	
+bre_Latn	seen	748954		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/bre_Latn	yes	DRY_RUN	
+hrv_Latn	seen	17882932		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/hrv_Latn	yes	DRY_RUN	
+jav_Latn	seen	516833		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/jav_Latn	yes	DRY_RUN	
+ron_Latn	seen	19190217		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ron_Latn	yes	DRY_RUN	
+ell_Grek	seen	22033282		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ell_Grek	yes	DRY_RUN	
+nor_Latn	seen	14576191		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/nor_Latn	yes	DRY_RUN	
+slk_Latn	seen	14633631		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/slk_Latn	yes	DRY_RUN	
+vie_Latn	seen	15697827		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/vie_Latn	yes	DRY_RUN	
+amh_Ethi	seen	2862985		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/amh_Ethi	yes	DRY_RUN	
+epo_Latn	seen	8737198		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/epo_Latn	yes	DRY_RUN	
+bel_Cyrl	seen	5319675		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/bel_Cyrl	yes	DRY_RUN	
+xho_Latn	seen	1262364		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/xho_Latn	yes	DRY_RUN	
+hin_Deva	seen	7046700		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/hin_Deva	yes	DRY_RUN	
+tam_Taml	seen	3388255		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/tam_Taml	yes	DRY_RUN	
+mon_Cyrl	seen	4616960		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/mon_Cyrl	yes	DRY_RUN	
+ces_Latn	seen	20376340		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ces_Latn	yes	DRY_RUN	
+san_Deva	seen	165616		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/san_Deva	yes	DRY_RUN	
+hye_Armn	seen	1463123		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/hye_Armn	yes	DRY_RUN	
+pus_Arab	seen	731992		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/pus_Arab	yes	DRY_RUN	
+som_Arab	seen	14199		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/som_Arab	yes	DRY_RUN	
+kan_Knda	seen	41836495		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/kan_Knda	yes	DRY_RUN	
+isl_Latn	seen	19547941		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/isl_Latn	yes	DRY_RUN	
+ori_Orya	seen	410827		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ori_Orya	yes	DRY_RUN	
+afr_Latn	seen	5157787		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/afr_Latn	yes	DRY_RUN	
+deu_Latn	seen	31015993		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/deu_Latn	yes	DRY_RUN	
+urd_Arab	seen	6009594		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/urd_Arab	yes	DRY_RUN	
+bul_Cyrl	seen	21823004		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/bul_Cyrl	yes	DRY_RUN	
+tgl_Latn	seen	7411064		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/tgl_Latn	yes	DRY_RUN	
+eus_Latn	seen	12775959		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/eus_Latn	yes	DRY_RUN	
+pol_Latn	seen	19339945		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/pol_Latn	yes	DRY_RUN	
+lat_Latn	seen	1179913		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/lat_Latn	yes	DRY_RUN	
+tur_Latn	seen	29184662		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/tur_Latn	yes	DRY_RUN	
+fra_Latn	seen	39197581		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/fra_Latn	yes	DRY_RUN	
+cat_Latn	seen	8648271		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/cat_Latn	yes	DRY_RUN	
+uig_Arab	seen	307302		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/uig_Arab	yes	DRY_RUN	
+arb_Arab	seen	159884		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/arb_Arab	yes	DRY_RUN	
+sqi_Latn	seen	5526836		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/sqi_Latn	yes	DRY_RUN	
+sin_Sinh	seen	7293178		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/sin_Sinh	yes	DRY_RUN	
+msa_Latn	seen	3929084		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/msa_Latn	yes	DRY_RUN	
+swh_Latn	seen	95776		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/swh_Latn	yes	DRY_RUN	
+kor_Hang	seen	6468444		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/kor_Hang	yes	DRY_RUN	
+ukr_Cyrl	seen	7462046		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ukr_Cyrl	yes	DRY_RUN	
+kir_Cyrl	seen	1397566		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/kir_Cyrl	yes	DRY_RUN	
+yid_Hebr	seen	220214		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/yid_Hebr	yes	DRY_RUN	
+heb_Hebr	seen	18128962		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/heb_Hebr	yes	DRY_RUN	
+nld_Latn	seen	25061426		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/nld_Latn	yes	DRY_RUN	
+fry_Latn	seen	957422		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/fry_Latn	yes	DRY_RUN	
+azb_Arab	seen	33758		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/azb_Arab	yes	DRY_RUN	
+glg_Latn	seen	17852274		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/glg_Latn	yes	DRY_RUN	
+fas_Arab	seen	18277593		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/fas_Arab	yes	DRY_RUN	
+eng_Latn	seen	36122761		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/eng_Latn	yes	DRY_RUN	
+mkd_Cyrl	seen	14717004		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/mkd_Cyrl	yes	DRY_RUN	
+ind_Latn	seen	23018106		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ind_Latn	yes	DRY_RUN	
+por_Latn	seen	27824391		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/por_Latn	yes	DRY_RUN	
+spa_Latn	seen	37286756		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/spa_Latn	yes	DRY_RUN	
+dan_Latn	seen	19174573		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/dan_Latn	yes	DRY_RUN	
+khm_Khmr	seen	590429		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/khm_Khmr	yes	DRY_RUN	
+gla_Latn	seen	152563		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/gla_Latn	yes	DRY_RUN	
+uig_Latn	seen	9637		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/uig_Latn	yes	DRY_RUN	
+kat_Geor	seen	1004297		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/kat_Geor	yes	DRY_RUN	
+mlg_Latn	seen	3715802		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/mlg_Latn	yes	DRY_RUN	
+snd_Arab	seen	488730		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/snd_Arab	yes	DRY_RUN	
+ita_Latn	seen	23539857		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/ita_Latn	yes	DRY_RUN	
+hau_Arab	seen	9593		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/hau_Arab	yes	DRY_RUN	
+cym_Latn	seen	1244783		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/cym_Latn	yes	DRY_RUN	
+srp_Latn	seen	18371769		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/srp_Latn	yes	DRY_RUN	
+zho_Hani	seen	24143786		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/zho_Hani	yes	DRY_RUN	
+tha_Thai	seen	7735209		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/tha_Thai	yes	DRY_RUN	
+swe_Latn	seen	20725883		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/swe_Latn	yes	DRY_RUN	
+pan_Guru	seen	29052537		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/pan_Guru	yes	DRY_RUN	
+prs_Arab	seen	26823		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/prs_Arab	yes	DRY_RUN	
+pes_Arab	seen	57511		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/pes_Arab	yes	DRY_RUN	
+san_Latn	seen	25742		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/san_Latn	yes	DRY_RUN	
+kaz_Cyrl	seen	12378727		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/kaz_Cyrl	yes	DRY_RUN	
+kur_Latn	seen	407169		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/kur_Latn	yes	DRY_RUN	
+mal_Mlym	seen	48098273		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/mal_Mlym	yes	DRY_RUN	
+nep_Deva	seen	1317291		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/nep_Deva	yes	DRY_RUN	
+gle_Latn	seen	7225513		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/gle_Latn	yes	DRY_RUN	
+swa_Latn	seen	5989369		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/swa_Latn	yes	DRY_RUN	
+som_Latn	seen	3916769		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/som_Latn	yes	DRY_RUN	
+lit_Latn	seen	12479626		1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/lit_Latn	yes	DRY_RUN	
+guj_Gujr	unseen	45738685	18.50075816	9855994	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/guj_Gujr	yes	DRY_RUN	
+asm_Beng	unseen	1882353	7.10419289	3784649	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/asm_Beng	yes	DRY_RUN	
+srp_Cyrl	unseen	3864091	8.81492512	4696015	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/srp_Cyrl	yes	DRY_RUN	
+sun_Latn	unseen	2586011	7.81436215	4162981	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/sun_Latn	yes	DRY_RUN	
+zsm_Latn	unseen	859947	5.61624351	2991967	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/zsm_Latn	yes	DRY_RUN	
+aze_Latn	unseen	46300705	18.56866602	9892171	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/aze_Latn	yes	DRY_RUN	
+fil_Latn	unseen	33493255	16.84967896	8976407	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/fil_Latn	yes	DRY_RUN	
+bos_Latn	unseen	11014744	12.06970752	6429951	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/bos_Latn	yes	DRY_RUN	
+dzo_Tibt	unseen	52732	2.4306739	1294904	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/dzo_Tibt	yes	DRY_RUN	
+sat_Olck	unseen	39614	2.23079177	1188420	0	/home/axt/mnt2/jongha/v5_1_glot50010/raw/sat_Olck	yes	DRY_RUN	

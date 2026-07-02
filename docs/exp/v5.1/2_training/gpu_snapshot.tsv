@@ -1,0 +1,5 @@
+gpu	name	role	memory_used_mb	memory_total_mb	memory_pct	gpu_util_pct	memory_util_pct	power_draw_w	power_limit_w
+0	NVIDIA RTX A6000	v5.1_mlm_training	1842	49140	3.7%	0	0	95.39	300.00
+1	NVIDIA RTX A6000	v5.1_mlm_training	2144	49140	4.4%	0	0	19.40	300.00
+2	NVIDIA RTX A6000	other_process_or_available	11	49140	0.0%	0	0	20.47	300.00
+3	NVIDIA RTX A6000	v5.1_mlm_training	124	49140	0.3%	0	0	24.42	300.00

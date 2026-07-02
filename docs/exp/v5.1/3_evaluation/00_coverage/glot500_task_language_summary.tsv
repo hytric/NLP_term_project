@@ -1,0 +1,7 @@
+task	expected_head	expected_tail	listed_head	listed_tail	status	source	note
+Sentence Retrieval Tatoeba	70	28	70	28	PASS	evaluation/retrieval/tatoeba_lang_list.txt	official/local Glot500 lang_list with 1=head, 0=tail
+Sentence Retrieval Bible	94	275	94	275	PASS	evaluation/retrieval/bible_lang_list.txt	official/local Glot500 lang_list with 1=head, 0=tail
+NER	89	75	89	75	PASS	evaluation/tagging/ner_lang_list.txt	official/local Glot500 lang_list with 1=head, 0=tail
+POS	63	28	63	28	PASS	evaluation/tagging/pos_lang_list.txt	official/local Glot500 lang_list with 1=head, 0=tail
+Roundtrip Alignment	85	288			ORIGINAL_LIST_NOT_IN_REPO	not published in Glot500 repo; v5.1 local materialized list included separately	local materialized languages=80; this is not the 85/288 original table universe
+Text Classification	90	264			ORIGINAL_LIST_NOT_IN_REPO	Taxi1500/PBC-derived original test universe not materialized locally	local fork has English split only; public Taxi1500-c release intersections do not reproduce 90/264

@@ -1,0 +1,804 @@
+task	language_script	group	source	status
+Sentence Retrieval Tatoeba	mal_Mlym	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	aze_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ben_Beng	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	tel_Telu	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	fra_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	spa_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	nob_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	rus_Cyrl	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	deu_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	tur_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	mar_Deva	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	por_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	nld_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ara_Arab	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ita_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ind_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ell_Grek	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	bul_Cyrl	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	swe_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ces_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	isl_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	pol_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ron_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	dan_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	hun_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	srp_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ceb_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	heb_Hebr	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	hrv_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	glg_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	fin_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	slv_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	vie_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	mkd_Cyrl	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	slk_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	est_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	eus_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	lit_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	kaz_Cyrl	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	bos_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	epo_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	cat_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	tha_Thai	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ukr_Cyrl	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	tgl_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	gle_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	hin_Deva	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	kor_Hang	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	urd_Arab	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	sqi_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	bel_Cyrl	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	afr_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	nno_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	tat_Cyrl	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ast_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	mon_Cyrl	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	arz_Arab	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	tam_Taml	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	uzb_Cyrl	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	amh_Ethi	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	war_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	fao_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	hye_Armn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	oci_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	xho_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	cym_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	lat_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	kat_Geor	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	fry_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	nds_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	zsm_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	bre_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	tuk_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	khm_Khmr	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	jpn_Jpan	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	yue_Hani	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	gsw_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	lvs_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	kur_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ido_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	uig_Arab	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	pam_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	pms_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	wuu_Hani	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	yid_Hebr	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ina_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	kab_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	gla_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	cbk_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	hsb_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	mhr_Cyrl	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	swh_Latn	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	cmn_Hani	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	pes_Arab	head	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	dtp_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	lfn_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	ile_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Tatoeba	csb_Latn	tail	evaluation/retrieval/tatoeba_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mal_Mlym	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	aze_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	guj_Gujr	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ben_Beng	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kan_Knda	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tel_Telu	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mlt_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fra_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	spa_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fil_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nob_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	rus_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	deu_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tur_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pan_Guru	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mar_Deva	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	por_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nld_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	zho_Hani	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ita_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ind_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ell_Grek	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bul_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	swe_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ces_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	isl_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pol_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ron_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	dan_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hun_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tgk_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	srp_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fas_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ceb_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	heb_Hebr	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hrv_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fin_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	slv_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	vie_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mkd_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	slk_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nor_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	est_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ltz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	eus_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lit_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kaz_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lav_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	epo_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cat_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tha_Thai	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ukr_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tgl_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sin_Sinh	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gle_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hin_Deva	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kor_Hang	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ory_Orya	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	urd_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sqi_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bel_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	afr_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nno_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tat_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hau_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sna_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	msa_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	som_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	srp_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mlg_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	zul_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	arz_Arab	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nya_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tam_Taml	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hat_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	uzb_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sot_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	uzb_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	als_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	amh_Ethi	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sun_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	war_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	yor_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fao_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	uzn_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	smo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bak_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ilo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tso_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mri_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	asm_Beng	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hil_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nso_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ibo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kin_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hye_Armn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lin_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tpi_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	twi_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kir_Cyrl	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pap_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nep_Deva	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bcl_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	xho_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cym_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gaa_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ton_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lat_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	srn_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ewe_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bem_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	efi_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bis_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	haw_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hmo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kat_Geor	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pag_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	loz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fry_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mya_Mymr	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nds_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	run_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	rar_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fij_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ckb_Arab	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ven_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	zsm_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	chv_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sag_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	guw_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bre_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	toi_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	che_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pis_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	oss_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nan_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tuk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tir_Ethi	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	yua_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	min_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	khm_Khmr	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tum_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lug_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tzo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mah_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	jav_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	jpn_Jpan	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lus_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	crs_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ndo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	snd_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	yue_Hani	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kua_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hin_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kal_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tdt_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mfe_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mos_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kik_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cnh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gil_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pon_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ori_Orya	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	luo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nzi_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gug_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bar_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bci_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	chk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	yap_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ssw_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	quz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sah_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tsn_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	quy_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bbc_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	wal_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	uig_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pam_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	seh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	zai_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gym_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bod_Tibt	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nde_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	fon_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nbl_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kmr_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	guc_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mam_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nia_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nyn_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cab_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	top_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mco_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tzh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	plt_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	iba_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kek_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sop_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kac_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	qvi_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cak_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kbp_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ctu_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kri_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mau_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tyv_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	btx_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nch_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ncj_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pau_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	toj_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pcm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	dyu_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kss_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	quc_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	yao_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kab_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tuk_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ndc_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	san_Deva	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	qug_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	arb_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mck_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	arn_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pdt_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gla_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kmr_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nav_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ksw_Mymr	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mxv_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hif_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	wol_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sme_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gom_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bum_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mgr_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ahk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tsz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bzj_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	udm_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cce_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	meu_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cbk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bhw_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ngu_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nyy_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	naq_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	toh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nse_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	alz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mhr_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	djk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gkn_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	grc_Grek	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	swh_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	alt_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	miq_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kaa_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lhu_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lzh_Hani	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cmn_Hani	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kjh_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mgh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	rmy_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	srm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gur_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	yom_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cfm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lao_Laoo	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	qub_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ote_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ldi_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ayr_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bba_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	aln_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	leh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ban_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ace_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pes_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ary_Arab	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hus_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	glv_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mai_Deva	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	dzo_Tibt	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ctd_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nnb_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sxn_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mps_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gkp_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	acr_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	dtp_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	lam_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	poh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	quh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tob_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ach_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	npi_Deva	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	myv_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tih_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gor_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ium_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	teo_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kia_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	crh_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	enm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mad_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cac_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hnj_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ikk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	sba_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	zom_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bqc_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bim_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mdy_Ethi	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bts_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	gya_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	agw_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	knv_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	giz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hui_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kpg_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	aoj_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	csy_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	azb_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tpm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	quw_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ixl_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mbb_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tlh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	suz_Deva	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tbz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	bam_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	prk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	jam_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	nmf_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	caq_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	rop_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tca_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	yan_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	xav_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	cuk_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kjb_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hne_Deva	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	wbm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	zlm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tui_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ifb_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	izz_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	rug_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	aka_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pxm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kmm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mcn_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ifa_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	dln_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	ksd_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mzh_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	hra_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mwm_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	krc_Cyrl	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	tuc_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	mrw_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	pls_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	rap_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	kaa_Latn	tail	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	prs_Arab	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	san_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+Sentence Retrieval Bible	uig_Latn	head	evaluation/retrieval/bible_lang_list.txt	exact_matches_user_table
+NER	hbs_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mal_Mlym	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	aze_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	guj_Gujr	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ben_Beng	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	kan_Knda	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tel_Telu	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mlt_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	fra_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	spa_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	eng_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	rus_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	deu_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tur_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	pan_Guru	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mar_Deva	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	por_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	nld_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ara_Arab	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	zho_Hani	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ita_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ind_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ell_Grek	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bul_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	swe_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ces_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	isl_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	pol_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ron_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	dan_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	hun_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tgk_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	fas_Arab	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ceb_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	heb_Hebr	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	hrv_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	glg_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	fin_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	slv_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	vie_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mkd_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	slk_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	nor_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	est_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ltz_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	eus_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lit_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	kaz_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lav_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bos_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	epo_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	cat_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tha_Thai	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ukr_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tgl_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	sin_Sinh	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	gle_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	hin_Deva	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	kor_Hang	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	urd_Arab	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	swa_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	sqi_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bel_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	afr_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	nno_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tat_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ast_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mon_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	msa_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	som_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	srp_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mlg_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	arz_Arab	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tam_Taml	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	uzb_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	cos_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	als_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	amh_Ethi	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	sun_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	war_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	div_Thaa	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	yor_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	fao_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bak_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ilo_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mri_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	asm_Beng	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ibo_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	kin_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	hye_Armn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	oci_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lin_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	kir_Cyrl	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	nep_Deva	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	cym_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lat_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	kat_Geor	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	fry_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mya_Mymr	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	nds_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	pnb_Arab	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ckb_Arab	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	chv_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	que_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bre_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	pus_Arab	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	che_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	oss_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	nan_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lim_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	tuk_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	min_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	khm_Khmr	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	jav_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	vec_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	jpn_Jpan	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	snd_Arab	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	yue_Hani	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	sco_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ori_Orya	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	arg_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	kur_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bar_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	roh_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	aym_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	sah_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lmo_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ido_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	vol_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	uig_Arab	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bod_Tibt	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	pms_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	wuu_Hani	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	yid_Hebr	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	scn_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ina_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	xmf_Geor	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	san_Deva	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	gla_Latn	head	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mwl_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	diq_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	cbk_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	szl_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	hsb_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	vls_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mhr_Cyrl	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	grn_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lzh_Hani	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	mzn_Arab	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	nap_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ace_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	frr_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	eml_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	vep_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	sgs_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	lij_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	crh_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ksh_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	zea_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	csb_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	jbo_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	bih_Deva	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	ext_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+NER	fur_Latn	tail	evaluation/tagging/ner_lang_list.txt	exact_matches_user_table
+POS	mal_Mlym	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ben_Beng	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	tel_Telu	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	mlt_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	fra_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	spa_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	eng_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	rus_Cyrl	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	deu_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	tur_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	mar_Deva	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	por_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	nld_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ara_Arab	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	zho_Hani	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ita_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ind_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ell_Grek	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	bul_Cyrl	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	swe_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ces_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	isl_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	pol_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ron_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	dan_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	hun_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	srp_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	fas_Arab	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ceb_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	heb_Hebr	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	hrv_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	glg_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	fin_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	slv_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	vie_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	slk_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	nor_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	est_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	eus_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	lit_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	kaz_Cyrl	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	lav_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	cat_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	tha_Thai	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ukr_Cyrl	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	tgl_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	sin_Sinh	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	gle_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	hin_Deva	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	kor_Hang	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	urd_Arab	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	sqi_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	bel_Cyrl	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	afr_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	tat_Cyrl	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	tam_Taml	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	amh_Ethi	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	yor_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	fao_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	hye_Armn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	cym_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	lat_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	nds_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	bre_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	hyw_Armn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	jav_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	jpn_Jpan	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	yue_Hani	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	gsw_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	sah_Cyrl	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	uig_Arab	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	kmr_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	pcm_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	quc_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	san_Deva	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	gla_Latn	head	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	wol_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	sme_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	hsb_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	grc_Grek	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	hbo_Hebr	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	grn_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	lzh_Hani	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	ajp_Arab	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	nap_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	aln_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	glv_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	lij_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	myv_Cyrl	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	bam_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+POS	xav_Latn	tail	evaluation/tagging/pos_lang_list.txt	exact_matches_user_table
+Roundtrip Alignment	afr_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	amh_Ethi	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	arb_Arab	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	asm_Beng	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	azb_Arab	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	bel_Cyrl	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	bre_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	bul_Cyrl	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	cat_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	ces_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	cmn_Hani	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	cym_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	dan_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	deu_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	ell_Grek	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	epo_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	eus_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	fil_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	fin_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	fra_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	fry_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	gla_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	gle_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	guj_Gujr	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	hau_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	heb_Hebr	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	hin_Deva	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	hrv_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	hun_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	hye_Armn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	ind_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	isl_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	ita_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	jav_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	kan_Knda	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	kat_Geor	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	kaz_Cyrl	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	khm_Khmr	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	kir_Cyrl	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	kor_Hang	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	lat_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	lit_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	mal_Mlym	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	mar_Deva	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	mkd_Cyrl	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	mya_Mymr	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	nep_Deva	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	nld_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	pan_Guru	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	pes_Arab	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	pol_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	por_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	prs_Arab	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	ron_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	san_Deva	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	san_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	sin_Sinh	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	slk_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	slv_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	snd_Arab	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	som_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	spa_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	sqi_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	srp_Cyrl	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	srp_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	sun_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	swe_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	swh_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	tam_Taml	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	tgl_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	tha_Thai	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	tur_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	uig_Arab	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	uig_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	ukr_Cyrl	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	urd_Arab	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	uzb_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	vie_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	xho_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Roundtrip Alignment	zsm_Latn	local_v5.1_materialized	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/roundtrip_alignment	local_available_not_original_table_universe
+Text Classification	eng_Latn	local_v5.1_materialized_head	/home/axt/mnt2/jongha/v5_1_glot50010/eval_data_download/taxi1500	local_available_not_original_table_universe
