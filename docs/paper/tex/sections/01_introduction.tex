@@ -1,0 +1,28 @@
+\section{Introduction}
+
+Multilingual language model 연구는 크게 두 방향으로 확장되어 왔다. 하나는 모델 크기,
+학습 데이터, 연산량을 키워 높은 성능을 얻는 vertical scaling이고, 다른 하나는 더 많은
+언어와 script를 지원하도록 coverage 자체를 넓히는 horizontal scaling이다. Glot500은 후자에
+속한다. 원 논문은 511개 언어를 포함하는 Glot500-c corpus를 구축하고, XLM-R-base를
+vocabulary extension과 continued masked language modeling(MLM)으로 확장한
+Glot500-m을 제안한다 \citep{imani2023glot500,conneau2020xlmr}.
+
+본 프로젝트의 훌륭한 점은 Glot500의 큰 그림을 그대로 반복하려 하기보다, 계산 가능한
+범위에서 가장 불확실한 선택 하나를 분리했다는 데 있다. Glot500-style tokenizer 확장을
+하면 기존 XLM-R vocabulary에 없던 token들이 embedding matrix 뒤에 새 row로 추가된다.
+문제는 이 row를 어떻게 시작하느냐이다. 충분히 긴 pretraining을 한다면 random initialization도
+학습될 수 있지만, low-resource language와 짧은 continued pretraining budget에서는 초기값의
+영향이 오래 남을 수 있다.
+
+본 보고서는 다음 질문을 다룬다.
+
+\begin{enumerate}
+  \item Glot500-style SentencePiece append 방식은 target tail language의 subword fragmentation을 줄이는가?
+  \item 같은 tokenizer와 corpus를 고정했을 때, 새 token row initialization만 바꿔도 PPPL과 downstream 결과가 달라지는가?
+  \item sentence representation space에서도 언어별 identity 또는 family/typology 구조가 관찰되는가?
+\end{enumerate}
+
+중요한 claim boundary는 다음과 같다. 본 실험은 511개 language-script를 학습한 full
+Glot500 reproduction이 아니다. 또한 v5.2 Target7은 모두 Latin script이므로 script diversity
+자체를 주장하지 않는다. 대신 XLM-R-unseen tail language 중 downstream 평가가 가능한
+가장 작은 corpus band를 선택하여 initialization ablation을 정밀하게 비교한다.

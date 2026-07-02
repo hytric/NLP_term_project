@@ -1,0 +1,55 @@
+\section{Representation Analysis}
+
+\subsection{Sentence Embedding Extraction}
+
+Sentence representation analysis follows the Glot500 retrieval-style encoder usage. Each raw
+sentence is encoded with the model tokenizer, passed through \codepath{AutoModel}, and hidden
+states from layer index 7 are used. Special tokens and padding are excluded, token hidden states are
+mean-pooled, and sentence vectors are L2-normalized. For centered cosine analysis, the global
+sentence-vector mean is subtracted before normalization. A language centroid is the mean of that
+language's sentence vectors.
+
+\subsection{Family/Typology Structure}
+
+The v5.2 family similarity diagnostic samples 38 languages and 3,708 sentence points. The key
+claim is deliberately modest: the sentence representation space shows observable language identity
+and family/typology structure, not perfect cluster separation. Since all Target7 languages use Latin
+script, the analysis is useful precisely because it separates ``same script only'' from ``same family''
+relationships.
+
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}{.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{family_pair_boxplot_v52_fvt_step4000.png}
+    \caption{Relation buckets}
+  \end{subfigure}
+  \begin{subfigure}{.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{family_centroid_map_v52_fvt_step4000.png}
+    \caption{Centroid map}
+  \end{subfigure}
+  \caption{FVT step-4000 family similarity diagnostics. These figures are diagnostic analysis, not an official Glot500 metric.}
+  \label{fig:family}
+\end{figure}
+
+FVT step-4000 centered cosine scores show the expected ordering: same-language tail pairs are
+closest; tail-tail same-family pairs are closer than same macro-family; both are closer than
+different-family pairs. Tail-head pairs that only share Latin script are weaker than family-based
+relations. This supports the interpretation that the model is not merely grouping by script.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Relation type & Pairs & Mean centered cosine \\
+\midrule
+tail within language & 350 & 0.473 \\
+tail-tail same family & 50 & 0.307 \\
+tail-tail same macro-family & 100 & 0.182 \\
+tail-tail different family & 900 & 0.124 \\
+tail-head same family & 1,050 & 0.037 \\
+tail-head different family, same Latn script & 6,100 & -0.050 \\
+tail-head different family, different script & 1,856 & -0.079 \\
+\bottomrule
+\end{tabular}
+\end{center}

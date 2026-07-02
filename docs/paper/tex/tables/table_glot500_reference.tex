@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Glot500 original head/tail/all reference table from \citet{imani2023glot500}. Values are averages across five seeds; retrieval, tagging, classification, and roundtrip values are percentages.}
+\label{tab:glot500-reference}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{tail} & \multicolumn{3}{c}{head} & \multicolumn{3}{c}{all} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Metric & XLM-R-B & XLM-R-L & Glot500-m & XLM-R-B & XLM-R-L & Glot500-m & XLM-R-B & XLM-R-L & Glot500-m \\
+\midrule
+Pseudoperplexity & 304.2 & 168.6 & 12.2 & 12.5 & 8.4 & 11.8 & 247.8 & 136.4 & 11.6 \\
+Sentence Retrieval Tatoeba & 32.6 & 33.6 & 59.8 & 66.2 & 71.1 & 75.0 & 56.6 & 60.4 & 70.7 \\
+Sentence Retrieval Bible & 7.4 & 7.1 & 43.2 & 54.2 & 58.3 & 59.0 & 19.3 & 20.1 & 47.3 \\
+Text Classification & 13.7 & 13.9 & 46.6 & 51.3 & 60.5 & 54.7 & 23.3 & 25.8 & 48.7 \\
+NER & 47.5 & 51.8 & 60.7 & 61.8 & 66.0 & 63.9 & 55.3 & 59.5 & 62.4 \\
+POS & 41.7 & 43.5 & 62.3 & 76.4 & 78.4 & 76.0 & 65.8 & 67.7 & 71.8 \\
+Roundtrip Alignment & 2.6 & 3.1 & 4.5 & 3.4 & 4.1 & 5.5 & 2.8 & 3.3 & 4.7 \\
+\bottomrule
+\end{tabular}}
+\end{table}

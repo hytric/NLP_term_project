@@ -1,0 +1,59 @@
+\section{Data}
+
+\subsection{Target Definition}
+
+v5.2의 corpus universe는 `99` language-script이다. 이 중 `92`개는 XLM-R training language로
+표시된 seen/head language이고, `7`개는 XLM-R-unseen target tail language이다. 초기 feedback은
+``low-resource language를 task별 3개씩 포함하도록 고른 이유''를 더 명확히 요구했다. 이에
+따라 target은 단순히 가장 작은 corpus가 아니라 다음 조건으로 정의한다.
+
+\begin{quote}
+XLM-R-unseen tail languages in the smallest Glot500 corpus band that still supports downstream evaluation.
+\end{quote}
+
+strict `new\_length <= 10k` non-XLM-R tail language는 local task-list membership이 없어
+Tatoeba, Bible, NER, POS 등을 3개씩 채울 수 없다. 따라서 downstream evidence를 확보하기
+위해 약 30K--50K Glot500 sentence' band에서 task overlap이 가장 큰 7개 언어를 선택했다.
+이 결정은 \codepath{docs/exp/v5.2/1_data_scope/low_resource_task_fill_candidates_ko.md}와
+\codepath{preprocessing/prepare_v5_glot50010_merge_inputs.py}의
+\codepath{V52_OVERLAP_TASKFILL_GLOT5007}에 기록되어 있다.
+
+\input{tables/table_target7}
+
+\subsection{Task Coverage}
+
+Target7은 총 21개 task slot을 7개 언어로 압축한다. 이 표는 왜 downstream task를 사용할 수
+있는지, 그리고 어떤 결과를 target evidence로 말할 수 있는지의 근거이다.
+
+\input{tables/table_task_coverage}
+
+\subsection{Training Corpus}
+
+MLM training corpus는 \codepath{preprocessing/run_v52_glot5007_merge.sh}가
+\codepath{preprocessing/merge_files.py}를 호출하여 만든다. Sampling은 Glot500-style language
+sampling factor $\alpha=0.3$을 사용한다.
+
+\[
+P_i \propto n_i^\alpha
+\]
+
+여기서 $n_i$는 language-script $i$의 corpus size이다. $\alpha=1$이면 head language가 corpus
+크기만큼 압도적으로 자주 뽑히지만, $\alpha=0.3$은 head/tail ratio를 완화한다. 예를 들어
+1,000,000 sentence head와 1,000 sentence tail은 $\alpha=1$에서 1000:1이지만, $\alpha=0.3$에서는
+약 8:1 수준으로 줄어든다. v5.2 merge report의 핵심 수치는 다음과 같다.
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Item & Samples \\
+\midrule
+seen/head training samples & 4,147,176 \\
+target7 training samples & 335,083 \\
+total MLM training samples & 4,482,259 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+이 값은 \codepath{docs/exp/v5.2/LIVE_STATUS.md} 및
+\codepath{docs/exp/v5.2/0_tokenizer/merge/Glot500_v52_glot5007_xlmr100.report.json}의
+ready/PASS 상태와 일치한다.

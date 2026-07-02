@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{v5.2 step-4000 early diagnostic ablation. Values are target-focused/local available rows from \codepath{docs/exp/v5.2/3_evaluation/v52_final_downstream_table.tsv}. This table motivates the 50K five-way run; it is not the final convergence result.}
+\label{tab:ablation-results}
+\begin{tabular}{llrrrr}
+\toprule
+Metric & Score & Random & Mean & FVT & Best \\
+\midrule
+Pseudoperplexity & weighted PPPL $\downarrow$ & 119.582 & 128.259 & \textbf{58.026} & FVT \\
+Tatoeba retrieval & Acc10 $\uparrow$ & 0.249 & 0.246 & \textbf{0.283} & FVT \\
+Bible retrieval & Acc10 $\uparrow$ & 0.0064 & 0.0061 & \textbf{0.0064} & FVT \\
+Text classification & macro-F1 $\uparrow$ & 0.697 & \textbf{0.778} & 0.713 & Mean \\
+NER & F1 $\uparrow$ & 0.377 & 0.405 & \textbf{0.484} & FVT \\
+POS & F1 $\uparrow$ & 0.507 & 0.507 & \textbf{0.519} & FVT \\
+Roundtrip alignment & accuracy $\uparrow$ & 0.0188 & 0.0218 & \textbf{0.0262} & FVT \\
+\bottomrule
+\end{tabular}
+\end{table}

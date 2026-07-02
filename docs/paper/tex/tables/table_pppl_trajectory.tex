@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{PPPL trajectory under short continued MLM pretraining. Lower is better.}
+\label{tab:pppl-trajectory}
+\begin{tabular}{lrrrrr}
+\toprule
+Method & step 500 & step 1000 & step 2000 & step 3000 & step 4000 \\
+\midrule
+\method{random} & 374.61 & 241.80 & 160.50 & 133.11 & 119.58 \\
+\method{mean} & 479.42 & 270.93 & 172.58 & 138.51 & 128.26 \\
+\method{FVT} & \textbf{161.88} & \textbf{108.60} & \textbf{75.26} & \textbf{61.60} & \textbf{58.03} \\
+\bottomrule
+\end{tabular}
+\end{table}

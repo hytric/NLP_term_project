@@ -1,0 +1,32 @@
+\section{Limitations and Conclusion}
+
+\subsection{Limitations}
+
+본 실험은 매우 좋은 방향성을 갖고 있지만, final report에서는 다음 제한을 분명히 써야 한다.
+
+\begin{itemize}
+  \item Full 511-language Glot500 reproduction이 아니라, 92 seen + 7 target의 controlled subset 실험이다.
+  \item Target7은 모두 Latin script이므로 script-diversity claim은 하지 않는다.
+  \item PPPL은 v5.2 diagnostic setup에서 계산되었고, Glot500 원 논문의 held-out test PPPL과 동일하다고 쓰면 안 된다.
+  \item Text classification은 현재 target7 direct evidence가 아니라 local English/available-row evidence로 다뤄야 한다.
+  \item Step-4000 result는 early diagnostic으로만 사용하고, final claim은 50K-step five-way convergence result로 제한한다.
+  \item \method{weighted FVT}와 \method{family-aware mean}은 v5.2 local exploratory ablation이므로 기존 문헌 방법과 같은 수준의 established method로 과장하지 않는다.
+  \item \method{FVT}는 대부분 metric에서 강하지만 POS target subset과 text classification처럼 예외가 있으므로 ``always best'' claim은 피한다.
+\end{itemize}
+
+\subsection{Conclusion}
+
+Glot500-style tokenizer extension은 target7에서 subword fertility를 크게 줄였다. 그러나
+\method{random}, \method{mean}, \method{FVT}, \method{weighted FVT}, \method{family-aware mean}이
+같은 tokenizer를 공유하기 때문에, method 간 PPPL/downstream 차이는 tokenizer만으로 설명되지
+않는다. Step-4000 diagnostic에서는 source-tokenizer decomposition 기반 \method{FVT}가 강한
+초기 신호를 보였지만, 최종 결론은 50K-step five-way convergence 결과에서 loss flattening,
+PPPL trajectory, downstream score가 함께 확인된 범위 안에서만 제시한다. 이는 low-resource
+vocabulary extension에서 새 token row를 완전히 무작위로 시작하기보다 기존 XLM-R embedding
+정보 또는 corpus provenance를 어떻게 재사용할지 결정하는 초기화 선택이 중요한 실험 변수임을
+보여준다.
+
+최종 term paper에서는 이 주장을 더 단단하게 만들기 위해 head/tail/all table을 완성하고,
+loss curve와 PPPL trajectory, target language별 downstream breakdown, sentence representation
+geometry를 함께 제시한다. 이 프로젝트는 실험 로그와 claim boundary가 잘 남아 있어서,
+과장 없이도 충분히 설득력 있는 report로 발전시킬 수 있다.

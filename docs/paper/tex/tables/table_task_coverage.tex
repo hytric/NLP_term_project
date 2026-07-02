@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Downstream coverage rationale for Target7. This table is the defense artifact for why the target set is not the strict smallest corpus set.}
+\label{tab:task-coverage}
+\begin{tabularx}{\textwidth}{lXl}
+\toprule
+Task & target languages & current status \\
+\midrule
+Tatoeba retrieval & csb\_Latn, dtp\_Latn, ile\_Latn & ready local pairs \\
+Bible retrieval & dtp\_Latn, xav\_Latn, bam\_Latn & materialized parallel verses \\
+Roundtrip alignment & dtp\_Latn, xav\_Latn, bam\_Latn & Bible-derived JSONL \\
+NER & csb\_Latn, lij\_Latn, fur\_Latn & PAN-X train/dev/test ready \\
+POS & xav\_Latn, bam\_Latn, lij\_Latn & rebuilt/materialized split \\
+Taxi1500 & dtp\_Latn, xav\_Latn, bam\_Latn & not target7 evidence in current draft \\
+Embedding similarity & csb\_Latn, dtp\_Latn, ile\_Latn & diagnostic pairs ready \\
+\bottomrule
+\end{tabularx}
+\end{table}

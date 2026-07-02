@@ -1,0 +1,44 @@
+\section{Experiments}
+
+\subsection{Evaluation Surface}
+
+평가는 Glot500 논문이 사용한 metric family를 유지한다. 다만 local target7 coverage가 task마다
+다르므로, 결과 표에는 metric value와 함께 coverage를 반드시 보고한다.
+
+\begin{itemize}
+  \item Pseudoperplexity: MLM이 target sentence를 얼마나 자연스럽게 예측하는지 측정한다. 낮을수록 좋다.
+  \item Sentence Retrieval Tatoeba/Bible: English-aligned sentence를 top-$k$ retrieval로 찾는다. Top-10 accuracy를 사용한다.
+  \item Text Classification: Taxi1500 계열 macro-F1을 사용하지만, 현재 local target7 direct evidence가 아니므로 해석을 제한한다.
+  \item NER/POS: sequence labeling F1을 사용한다. NER는 target7 중 3개, POS는 target-relevant 3개가 있다.
+  \item Roundtrip Alignment: Bible-derived multi-way alignment가 원래 word로 돌아오는지를 accuracy로 측정한다.
+\end{itemize}
+
+평가 runner는 \codepath{evaluation/} 아래에 유지되어 있으며, v5.2 결과는
+\codepath{docs/exp/v5.2/3_evaluation/} 아래에 metric별로 저장되어 있다. Final 50K table은
+\codepath{docs/exp/v5.2/3_evaluation/09_aggregation/main_head_tail_all.tsv} 형식으로
+method별 head/tail/all row를 재생성해 채운다. 기존
+\codepath{docs/exp/v5.2/3_evaluation/v52_final_downstream_table.tsv}는 step-4000
+\method{random}/\method{mean}/\method{FVT} early diagnostic 근거로만 둔다.
+
+\subsection{Main Comparison}
+
+Main ablation은 50K-step convergence run에서 생성된 \method{random}, \method{mean},
+\method{FVT}, \method{weighted FVT}, \method{family-aware mean} checkpoint를 비교한다.
+Step-4000 \method{random}/\method{mean}/\method{FVT} table은 early diagnostic으로 appendix에
+남기되, final report의 main table은 동일한 final checkpoint policy를 적용한 5-way head/tail/all
+table로 대체한다. 이렇게 해야 각 method가 같은 tokenizer, corpus, MLM objective, evaluation
+protocol뿐 아니라 같은 convergence budget에서도 비교된다.
+
+\subsection{Figures Planned for the Report}
+
+보고서 본문에는 세 종류의 plot을 넣는다.
+
+\begin{enumerate}
+  \item Tokenization effect: target7 tokens/word reduction. Source:
+  \codepath{docs/exp/v5.2/0_tokenizer/03_tokenization_effect/tokenization_effect_change.png}.
+  \item Initialization convergence: method별 MLM training loss 및 PPPL trajectory. Source:
+  \codepath{docs/exp/v5.2/2_training/convergence_5way_loss_curve.png} 및
+  \codepath{docs/exp/v5.2/3_evaluation/v52_checkpoint_score_table.tsv}.
+  \item Representation geometry: 38-language family similarity / centroid map. Source:
+  \codepath{docs/exp/v5.2/3_evaluation/09_family_similarity/}.
+\end{enumerate}

@@ -1,0 +1,78 @@
+\section{Results}
+
+\subsection{Tokenizer Fertility}
+
+동일한 target7 raw sentence 3,500개에 대해 XLM-R tokenizer와 v5.2 extended tokenizer를
+비교하면, tokens/word가 2.204에서 1.592로 감소한다. 평균 reduction은 27.75\%이다. 이는
+Glot500-style vocabulary extension이 실제로 tail language의 subword fragmentation을 줄였다는
+근거이다.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=.82\linewidth]{tokenization_effect_change.png}
+  \caption{Target7 tokenization fertility reduction. All initialization variants share this tokenizer; therefore method-to-method result differences cannot be explained by tokenizer fertility alone.}
+  \label{fig:tokenization}
+\end{figure}
+
+\subsection{50K Five-Way Convergence Results}
+
+Final result의 중심 표는 50K-step convergence run에서 얻은 다섯 initialization checkpoint를
+같은 row schema로 비교한다. 각 metric은 \method{random}, \method{mean}, \method{FVT},
+\method{weighted FVT}, \method{family-aware mean}을 모두 포함하고, group은
+tail/target, head, all로 나눈다. Task coverage가 없는 group은 0점처럼 쓰지 않고
+``not available''로 표시한다.
+
+\input{tables/table_head_tail_all_draft}
+
+\subsection{Step-4000 Early Diagnostic}
+
+\input{tables/table_ablation_results}
+
+Step-4000 diagnostic에서 \method{FVT}는 PPPL, Tatoeba retrieval, Bible retrieval, NER, POS,
+roundtrip alignment에서 가장 좋다. Text classification은 \method{mean}이 가장 높으므로,
+보고서에서는 \method{FVT}를 ``모든 task에서 항상 최고''라고 쓰지 않는다. 더 정확한 문장은
+다음과 같다.
+
+\begin{quote}
+같은 tokenizer와 corpus를 공유하는 controlled setup의 early checkpoint에서 \method{FVT}는
+intrinsic MLM과 retrieval/alignment 계열에서 강한 initialization signal을 보인다.
+\end{quote}
+
+\subsection{Early PPPL Trajectory}
+
+\input{tables/table_pppl_trajectory}
+
+4K step 이하의 짧은 continued pretraining에서도 \method{FVT}는 처음부터 낮은 PPPL을 유지한다.
+이는 source tokenizer로 새 token surface를 재분해해 기존 embedding 정보를 재사용한 효과로
+해석할 수 있다. 다만 이 표는 convergence result가 아니라 early diagnostic이다.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=.9\linewidth]{convergence_5way_loss_curve.png}
+  \caption{v5.2 MLM loss trajectory for prior run plus continuation. The x-axis is a weighted-FVT-aligned 1K training-step grid so that prior and continuation segments with different effective batch accounting can be compared on the same exposure scale. Circle markers are displayed 1K-grid points; square markers are final saved models. Raw loss values are preserved in \codepath{convergence_5way_loss_curve.tsv}; the plotted display loss includes documented plot-only bridging/smoothing around the prior-to-continuation transition.}
+  \label{fig:loss}
+\end{figure}
+
+\subsection{Why the Convergence Plot Is Drawn This Way}
+
+Figure~\ref{fig:loss} is not just a decorative training curve. It is an argument for whether the
+initialization comparison has reached a point where final performance claims are defensible.
+The title, axes, point interval, and 50K queue all encode experimental decisions.
+
+\begin{itemize}
+  \item \textbf{Title.} ``v5.2 MLM Loss Trajectory: Prior Run + Continuation'' states that the figure combines the earlier 8h diagnostic run and the later convergence continuation, rather than showing only a fresh single run.
+  \item \textbf{X-axis.} ``Weighted-FVT-aligned training step (1K grid)'' is used because the prior and continuation phases did not have identical raw step accounting. The plot converts exposure to a shared batch-36-equivalent scale and snaps it to the weighted-FVT 1K grid.
+  \item \textbf{Y-axis.} ``MLM training loss'' is the Trainer logging loss from continued masked language modeling. This axis is used for convergence diagnosis, not as a direct downstream score.
+  \item \textbf{Point interval.} Points are displayed every 1000 aligned steps because v5.2 saves/logs checkpoints at 1000-step intervals. This is also the granularity at which downstream/PPPL checkpoint comparisons can be attached without inventing intermediate measurements.
+  \item \textbf{Why continue beyond 4K.} The 4K result is an early diagnostic. Earlier notes show that PPPL improvement slowed near 4K, but training loss was still decreasing, so 4K cannot be called convergence.
+  \item \textbf{Why a 50K queue.} The 50K queue is a conservative upper bound for testing flattening across all five initialization methods under the same global batch 36 exposure. It was chosen after the 4K/8K checks were judged insufficient for a final convergence claim. The final report can stop using earlier checkpoints once the loss-drop summary and downstream trajectory show a stable plateau.
+  \item \textbf{Markers and colors.} One line is drawn per initialization method. Circle markers indicate regular displayed grid points, while square markers indicate final saved models. The colors are fixed in \codepath{scripts/plot_v52_convergence_loss.py} so the same method has the same visual identity across regenerated plots.
+  \item \textbf{Smoothing disclosure.} The graph applies plot-only transition smoothing/bridging for readability near the prior-to-continuation boundary. This does not overwrite raw measurements; the TSV retains \codepath{loss}, \codepath{display_loss}, and \codepath{display_loss_source}.
+\end{itemize}
+
+\subsection{Glot500-Style Reporting Rule}
+
+Feedback asked that final tables follow Glot500's head/tail/all framing. The final report therefore
+uses the same three group views for every metric where coverage exists. This prevents a target-only
+improvement from being overstated as a global multilingual gain, and it also makes regressions on
+head languages visible.

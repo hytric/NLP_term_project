@@ -1,0 +1,62 @@
+\section{Method}
+
+\subsection{Tokenizer Extension}
+
+Tokenizer는 Glot500-style로 고정한다. \codepath{tokenization/train_v52_glot5007.sh}는 먼저
+XLM-R-base tokenizer의 \codepath{sentencepiece.bpe.model}을 output directory에 복사한다.
+그 다음 \codepath{tokenization/run.py}가 mixed corpus에서 SentencePiece unigram model을
+학습한다. 사용된 핵심 설정은 다음과 같다.
+
+\begin{itemize}
+  \item \codepath{--model_type=unigram}: Glot500 및 XLM-R 계열과 맞춘다.
+  \item \codepath{--byte_fallback=true}: 기존 subword로 처리되지 않는 문자를 UTF-8 byte piece로 분해한다.
+  \item \codepath{--character_coverage=1.0}: target7의 Latin-script 문자를 모두 보존한다.
+  \item \codepath{--input_sentence_size=20000000}: 전체 corpus를 scan하되 20M sentence sample로 SPM memory 사용을 통제한다.
+\end{itemize}
+
+학습된 auxiliary SentencePiece model에서 기존 XLM-R SPM에 없는 piece만 protobuf에 append한다.
+이 방식은 HuggingFace tokenizer의 \codepath{add_tokens()}를 쓰는 v3류 실험보다 Glot500 원
+논문 구현에 가깝다. 단, SPM protobuf를 직접 수정하면 \codepath{<mask>} id가 이동할 수
+있으므로 initialization 단계에서 token id prefix가 아니라 token string identity로 source row를
+복사해야 한다.
+
+\subsection{Embedding Initialization}
+
+모든 method는 같은 tokenizer, 같은 corpus, 같은 MLM schedule을 사용한다. 따라서 차이는
+새 vocabulary row의 초기값에서 온다.
+
+\input{tables/table_initialization_methods}
+
+구현은 \codepath{scripts/build_v5_initialized_checkpoint.py}에 있다. 이 script는 source
+tokenizer와 target tokenizer를 모두 읽은 뒤, source token과 동일한 string을 가진 target row는
+source embedding row를 그대로 복사한다. 새 token에 대해서만 method별 초기화를 적용한다.
+또한 \codepath{<mask>} token이 source id \codepath{250001}에서 target tokenizer의 마지막
+id로 이동할 수 있으므로, 해당 row를 token identity 기준으로 명시적으로 remap하고
+\codepath{mask_max_abs_diff_after_copy}를 검증한다.
+
+\subsection{Continued MLM Pretraining}
+
+MLM training은 \codepath{modeling/train_v52_glot5007_mlm.sh}가
+\codepath{modeling/run.py}를 호출한다. \codepath{modeling/run.py}는 HuggingFace
+\codepath{run_mlm.py}를 바탕으로 한 local variant이며, \codepath{AutoModelForMaskedLM},
+\codepath{DataCollatorForLanguageModeling}, \codepath{Trainer}를 사용한다. Text는 tokenizer로
+encoding된 뒤 max length 512 chunk로 concatenate/grouping되고, collator가 MLM probability
+0.15로 masked token batch를 만든다.
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Item & Setting \\
+\midrule
+base model & \codepath{xlm-roberta-base} \\
+objective & MLM \\
+learning rate & $5 \times 10^{-5}$ \\
+Adam betas & $(0.9, 0.999)$ \\
+effective batch & 384 \\
+max length & 512 \\
+MLM probability & 0.15 \\
+checkpoint interval & 1000 steps \\
+main convergence budget & 50K steps for five-way comparison \\
+\bottomrule
+\end{tabular}
+\end{center}

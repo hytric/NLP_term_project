@@ -1,0 +1,46 @@
+\begin{longtable}{p{.22\textwidth}p{.32\textwidth}p{.37\textwidth}}
+\caption{Reproducibility map for the v5.2 report draft.}\label{tab:repro-map}\\
+\toprule
+Stage & Code / artifact & Role in report \\
+\midrule
+\endfirsthead
+\toprule
+Stage & Code / artifact & Role in report \\
+\midrule
+\endhead
+Target selection &
+\codepath{preprocessing/prepare_v5_glot50010_merge_inputs.py} &
+Defines \codepath{V52_OVERLAP_TASKFILL_GLOT5007}; validates XLM-R-unseen status, min 30K sentence count, and raw-dir existence. \\
+Corpus prepare &
+\codepath{preprocessing/run_v52_glot5007_prepare.sh} &
+Creates target manifest and stats CSV for 92+7 setup. \\
+Corpus merge &
+\codepath{preprocessing/run_v52_glot5007_merge.sh},
+\codepath{preprocessing/merge_files.py} &
+Builds sampled MLM corpus with $\alpha=0.3$, manifest, and JSON report. \\
+Tokenizer &
+\codepath{tokenization/train_v52_glot5007.sh},
+\codepath{tokenization/run.py} &
+Trains SentencePiece unigram tokenizer, enables byte fallback, appends new pieces to XLM-R SPM protobuf. \\
+Initialization &
+\codepath{scripts/run_v52_build_initializers.sh},
+\codepath{scripts/build_v5_initialized_checkpoint.py} &
+Builds random/mean/FVT/weighted-FVT/family-aware mean initialized checkpoints; copies rows by token identity and checks mask remap. \\
+MLM training &
+\codepath{modeling/train_v52_glot5007_mlm.sh},
+\codepath{modeling/run.py} &
+Runs continued MLM with max length 512, LR $5e-5$, Adam betas $(0.9,0.999)$, MLM prob 0.15. \\
+Evaluation &
+\codepath{evaluation/retrieval/},
+\codepath{evaluation/tagging/},
+\codepath{evaluation/round-trip/},
+\codepath{evaluation/text_classification/} &
+Provides PPPL, retrieval, NER/POS, roundtrip, and text-classification metric families. \\
+Aggregation &
+\codepath{docs/exp/v5.2/3_evaluation/v52_final_downstream_table.tsv} &
+Source for step-4000 initialization ablation table. \\
+Live status &
+\codepath{docs/exp/v5.2/LIVE_STATUS.md} &
+Records which initializers/training runs are complete, missing, or running. \\
+\bottomrule
+\end{longtable}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Final 50K head/tail/all reporting grid. Each row should be filled from the completed 50K evaluation aggregation. Cells without task coverage should be marked NA rather than treated as zero.}
+\label{tab:head-tail-all-draft}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrrrl}
+\toprule
+Metric & Group & Score & Random & Mean & FVT & Weighted FVT & Family-aware mean & Coverage note \\
+\midrule
+Pseudoperplexity & tail/head/all & PPPL $\downarrow$ & TBD & TBD & TBD & TBD & TBD & lower is better \\
+Tatoeba retrieval & tail/head/all & Acc10 $\uparrow$ & TBD & TBD & TBD & TBD & TBD & report available languages per group \\
+Bible retrieval & tail/head/all & Acc10 $\uparrow$ & TBD & TBD & TBD & TBD & TBD & target group may be NA if no coverage \\
+Text classification & tail/head/all & macro-F1 $\uparrow$ & TBD & TBD & TBD & TBD & TBD & target group may be NA if no coverage \\
+NER & tail/head/all & F1 $\uparrow$ & TBD & TBD & TBD & TBD & TBD & include language count per group \\
+POS & tail/head/all & F1 $\uparrow$ & TBD & TBD & TBD & TBD & TBD & include language count per group \\
+Roundtrip alignment & tail/head/all & Acc. $\uparrow$ & TBD & TBD & TBD & TBD & TBD & target group may be NA if no coverage \\
+\bottomrule
+\end{tabular}}
+\end{table}

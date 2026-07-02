@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Embedding initialization methods. The tokenizer, corpus, and MLM schedule are fixed across methods.}
+\label{tab:init-methods}
+\begin{tabularx}{\textwidth}{lXX}
+\toprule
+Method & Definition & Interpretation \\
+\midrule
+\method{random} & New rows are sampled from the model initialization distribution, approximately $\mathcal{N}(0, 0.02)$. & Baseline matching the simplest Glot500-style resize behavior. \\
+\method{mean} & New lexical rows are set to the global mean of existing source lexical embeddings. & Stable centroid baseline; does not use token surface information. \\
+\method{FVT} & A new token surface is retokenized by the source XLM-R tokenizer; its source subtoken embeddings are averaged. & Reuses source subword morphology/orthography; main hypothesis. \\
+\method{weighted FVT} & FVT source subtoken embeddings are averaged with surface-length weights. & Tests whether longer source subtokens carry more useful lexical signal. \\
+\method{family-aware mean} & Token provenance is mapped to language family; new rows use frequency-weighted family source-token means. & Tests family/typology prior instead of pure surface decomposition. \\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,44 @@
+\section{Related Work}
+
+\subsection{Glot500 and Horizontal Scaling}
+
+Glot500은 XLM-R이 지원하는 약 100개 언어를 head language로, 그 밖의 언어를 tail
+language로 정의하고, multilingual model의 horizontal scaling을 제안한다
+\citep{imani2023glot500}. 원 논문은 language-script 단위 corpus cleaning, 30,000
+sentence' 이상 기준, SentencePiece unigram tokenizer 재학습, XLM-R vocabulary 확장,
+continued MLM pretraining을 하나의 pipeline으로 구성한다. Glot500-m은 XLM-R vocabulary
+250K에 약 151K new token을 추가해 401K vocabulary를 만들고, 600GB corpus에서 MLM으로
+continued pretraining한다.
+
+원 논문 Table 4는 Glot500-m이 tail group에서 특히 큰 개선을 보인다고 보고한다. 본
+보고서에서는 그 표를 단순 baseline으로 가져오는 데 그치지 않고, 왜 본 실험이 같은
+head/tail/all reporting structure를 따라야 하는지의 근거로 사용한다.
+
+\input{tables/table_glot500_reference}
+
+\subsection{SentencePiece Unigram and Vocabulary Extension}
+
+SentencePiece는 library 이름이고, 그 안에서 BPE 또는 unigram language model을 사용할 수
+있다 \citep{kudo2018sentencepiece}. XLM-R과 Glot500은 SentencePiece unigram 계열을 사용한다.
+Unigram LM은 가능한 subword 후보 집합을 크게 시작한 뒤, EM으로 token probability를
+추정하고 likelihood contribution이 낮은 token을 pruning하는 top-down 방식이다. 이 선택은
+BPE처럼 greedy merge만 누적하는 방식과 달리 여러 segmentation 후보를 확률적으로 다룬다.
+
+본 프로젝트의 tokenizer는 이 Glot500 흐름을 따른다. \codepath{tokenization/run.py}는
+\codepath{--model_type=unigram}, \codepath{--byte_fallback=true},
+\codepath{--character_coverage=1.0}으로 새 SentencePiece model을 학습하고, 기존 XLM-R
+SentencePiece protobuf에 없는 piece만 append한다.
+
+\subsection{Embedding Initialization for New Tokens}
+
+Vocabulary expansion 연구에서는 새 token을 추가한 뒤 embedding을 어떻게 초기화할지가
+중요하다. Yamaguchi et al.은 30K sentences, 약 0.01GB target language text만 있는
+low-resource setting에서 vocabulary expansion과 target parameter initialization을 비교하고,
+high-resource에서 자주 쓰이는 random initialization이 항상 최선이 아니라고 보고한다
+\citep{yamaguchi2025vocab}. Mean initialization은 기존 embedding centroid를 사용하고,
+FVT 계열은 새 token surface를 source tokenizer로 다시 분해한 뒤 source subtoken embedding을
+평균한다 \citep{hewitt2021newembeddings,vocabextensiontutorial2026}.
+
+본 연구는 decoder LLM이 아니라 XLM-R encoder 기반 MLM setting이지만, 질문은 같다. 새
+token row를 완전히 무작위로 시작할지, 기존 XLM-R tokenizer와 embedding space가 이미 가진
+표면형 정보를 재사용할지 비교한다.
