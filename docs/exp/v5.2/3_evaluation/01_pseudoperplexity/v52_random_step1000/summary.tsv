@@ -1,0 +1,3 @@
+model_key	summary_group	languages	total_examples	total_masked_tokens	macro_mean_nll	macro_pseudo_perplexity	weighted_mean_nll	weighted_pseudo_perplexity
+v52_random_step1000	all	7	140	5196	6.106396	448.718552	5.488100	241.797413
+v52_random_step1000	v5_target	7	140	5196	6.106396	448.718552	5.488100	241.797413

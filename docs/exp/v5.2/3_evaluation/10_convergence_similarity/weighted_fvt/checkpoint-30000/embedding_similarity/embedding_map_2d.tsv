@@ -1,0 +1,1048 @@
+model_key	point_id	language_script	group	x	y	text_preview
+v52_weighted_fvt_conv5way_step30000	p0	dtp_Latn	v5_target	-0.233358	-0.543994	Songkuro ginayo lo?
+v52_weighted_fvt_conv5way_step30000	p1	eng_Latn	v5_target	-0.517383	0.156787	How big will it be?
+v52_weighted_fvt_conv5way_step30000	p2	dtp_Latn	v5_target	-0.160279	-0.440403	Langad-langadon ku diya!
+v52_weighted_fvt_conv5way_step30000	p3	eng_Latn	v5_target	-0.392606	0.266856	My longing for you is killing me!
+v52_weighted_fvt_conv5way_step30000	p4	dtp_Latn	v5_target	0.405329	-0.499560	Tuminongkiad oku id solinaid piginawaan ku maya tanakwagu ku do tolu' toun di tinu.
+v52_weighted_fvt_conv5way_step30000	p5	eng_Latn	v5_target	-0.343007	0.275677	I recently broke up with my boyfriend of three years.
+v52_weighted_fvt_conv5way_step30000	p6	dtp_Latn	v5_target	0.283511	-0.615473	Nokoilo' oku papapanau do korita lolobi po mantad duo nohopod toun.
+v52_weighted_fvt_conv5way_step30000	p7	eng_Latn	v5_target	-0.369507	0.399509	I've been able to drive for more than twenty years.
+v52_weighted_fvt_conv5way_step30000	p8	dtp_Latn	v5_target	-0.388885	-0.277739	Luminabus i Tom.
+v52_weighted_fvt_conv5way_step30000	p9	eng_Latn	v5_target	-0.523385	-0.085552	Tom was out.
+v52_weighted_fvt_conv5way_step30000	p10	dtp_Latn	v5_target	-0.231636	-0.568481	Manu oku poposolon di Tom.
+v52_weighted_fvt_conv5way_step30000	p11	eng_Latn	v5_target	-0.441829	0.160208	I want to make Tom jealous.
+v52_weighted_fvt_conv5way_step30000	p12	dtp_Latn	v5_target	-0.208655	-0.591568	Orohian ko' do kumaau.
+v52_weighted_fvt_conv5way_step30000	p13	eng_Latn	v5_target	-0.578866	0.007213	You like swimming.
+v52_weighted_fvt_conv5way_step30000	p14	dtp_Latn	v5_target	-0.057902	-0.585344	Au kou mangandad no sominggu?
+v52_weighted_fvt_conv5way_step30000	p15	eng_Latn	v5_target	-0.381911	0.293340	Couldn't you have just waited a week?
+v52_weighted_fvt_conv5way_step30000	p16	dtp_Latn	v5_target	-0.018294	-0.558834	Osonong tomod ura tinan nu mantad doho.
+v52_weighted_fvt_conv5way_step30000	p17	eng_Latn	v5_target	-0.444738	0.356107	You're in better shape than I am.
+v52_weighted_fvt_conv5way_step30000	p18	dtp_Latn	v5_target	-0.198231	-0.484290	Mamadil oku kama dau.
+v52_weighted_fvt_conv5way_step30000	p19	eng_Latn	v5_target	-0.465655	0.173671	I'm gonna shoot him.
+v52_weighted_fvt_conv5way_step30000	p20	dtp_Latn	v5_target	0.086311	-0.658214	Nokoumbal kou nokorongou diti tangon no?
+v52_weighted_fvt_conv5way_step30000	p21	eng_Latn	v5_target	-0.436367	0.230643	Have you heard this story already?
+v52_weighted_fvt_conv5way_step30000	p22	dtp_Latn	v5_target	0.054288	-0.549596	Obuli ko' daa lumisok kaka ri?
+v52_weighted_fvt_conv5way_step30000	p23	eng_Latn	v5_target	-0.516103	0.151792	Can you keep a secret?
+v52_weighted_fvt_conv5way_step30000	p24	dtp_Latn	v5_target	0.214900	-0.512802	Apagon gatang ilo piano nga lobi apagon gatang nogi iri korita.
+v52_weighted_fvt_conv5way_step30000	p25	eng_Latn	v5_target	-0.310650	0.370086	A piano is expensive, but a car is more expensive.
+v52_weighted_fvt_conv5way_step30000	p26	dtp_Latn	v5_target	-0.064583	-0.524650	Minsingilo' ko' nangku boros Inggilis?
+v52_weighted_fvt_conv5way_step30000	p27	eng_Latn	v5_target	-0.441914	0.047708	Do you study English?
+v52_weighted_fvt_conv5way_step30000	p28	dtp_Latn	v5_target	0.019030	-0.501182	Milo' oku daa mokianu kamus nu?
+v52_weighted_fvt_conv5way_step30000	p29	eng_Latn	v5_target	-0.444470	0.020885	May I borrow your dictionary?
+v52_weighted_fvt_conv5way_step30000	p30	dtp_Latn	v5_target	-0.001550	-0.594736	Otopot toi maso id jam nu?
+v52_weighted_fvt_conv5way_step30000	p31	eng_Latn	v5_target	-0.540305	0.043917	Is your watch correct?
+v52_weighted_fvt_conv5way_step30000	p32	dtp_Latn	v5_target	0.422717	-0.505328	Tinantu i pososoriuk nopo tumau sompomogunan nga milo' gompion gisom do hatus toun tobontol.
+v52_weighted_fvt_conv5way_step30000	p33	eng_Latn	v5_target	-0.269414	0.386129	Some scientists predict that the world oil reserves will be used up within a century.
+v52_weighted_fvt_conv5way_step30000	p34	dtp_Latn	v5_target	-0.201537	-0.484660	Manu ko' do apol?
+v52_weighted_fvt_conv5way_step30000	p35	eng_Latn	v5_target	-0.541190	0.079808	Do you like apples?
+v52_weighted_fvt_conv5way_step30000	p36	dtp_Latn	v5_target	-0.226564	-0.501488	Mada oku dii.
+v52_weighted_fvt_conv5way_step30000	p37	eng_Latn	v5_target	-0.434917	0.174538	I don't think so.
+v52_weighted_fvt_conv5way_step30000	p38	dtp_Latn	v5_target	-0.340735	-0.485984	Olumis ilo wotik.
+v52_weighted_fvt_conv5way_step30000	p39	eng_Latn	v5_target	-0.518955	0.149291	That's a pretty colour.
+v52_weighted_fvt_conv5way_step30000	p40	dtp_Latn	v5_target	0.026213	-0.724453	Au oku nokoilo nunu o taakan ku kosodop.
+v52_weighted_fvt_conv5way_step30000	p41	eng_Latn	v5_target	-0.400697	0.294145	I can't remember what I ate last night.
+v52_weighted_fvt_conv5way_step30000	p42	dtp_Latn	v5_target	0.091160	-0.517760	Nokoumbal ko' minoi hilo'd Paris di gulu?
+v52_weighted_fvt_conv5way_step30000	p43	eng_Latn	v5_target	-0.422068	0.219990	Have you ever been to Paris?
+v52_weighted_fvt_conv5way_step30000	p44	dtp_Latn	v5_target	-0.016276	-0.615991	Kikaraja isido dot oruhai sabaagi do mananaip.
+v52_weighted_fvt_conv5way_step30000	p45	eng_Latn	v5_target	-0.326315	0.192877	She got a part-time job as a typist.
+v52_weighted_fvt_conv5way_step30000	p46	dtp_Latn	v5_target	0.257915	-0.395579	Manahak nopo do tunturu tokoro nga onuan disio do tunturu ngai iso longon.
+v52_weighted_fvt_conv5way_step30000	p47	eng_Latn	v5_target	-0.244852	0.449481	Give someone the little finger, and he will take the whole hand.
+v52_weighted_fvt_conv5way_step30000	p48	dtp_Latn	v5_target	-0.189641	-0.583037	Muhot oku diya po toruhai kio.
+v52_weighted_fvt_conv5way_step30000	p49	eng_Latn	v5_target	-0.433469	0.287477	I want to ask you one last favor.
+v52_weighted_fvt_conv5way_step30000	p50	dtp_Latn	v5_target	0.103870	-0.470379	Ih singa nopo nga wowoyoon hiri'd gowuton.
+v52_weighted_fvt_conv5way_step30000	p51	eng_Latn	v5_target	-0.288534	0.267733	The lion is the king of the jungle.
+v52_weighted_fvt_conv5way_step30000	p52	dtp_Latn	v5_target	-0.303779	-0.461856	Au tagal tikit.
+v52_weighted_fvt_conv5way_step30000	p53	eng_Latn	v5_target	-0.532745	0.097429	No tickets are needed.
+v52_weighted_fvt_conv5way_step30000	p54	dtp_Latn	v5_target	-0.149213	-0.547156	Au tagal yahai ponongkiboros diolo.
+v52_weighted_fvt_conv5way_step30000	p55	eng_Latn	v5_target	-0.420231	0.354772	We don't need to talk to them.
+v52_weighted_fvt_conv5way_step30000	p56	dtp_Latn	v5_target	-0.222727	-0.566939	Nunu binoli nu?
+v52_weighted_fvt_conv5way_step30000	p57	eng_Latn	v5_target	-0.497694	0.095389	What did you buy?
+v52_weighted_fvt_conv5way_step30000	p58	dtp_Latn	v5_target	-0.248003	-0.582840	Obulou ilo tawan.
+v52_weighted_fvt_conv5way_step30000	p59	eng_Latn	v5_target	-0.543403	0.046561	The sky is blue.
+v52_weighted_fvt_conv5way_step30000	p60	dtp_Latn	v5_target	0.320812	-0.482504	Orohian nogi mintong do pulitik tulun Amorika kokomoi do timpu pomilian do pirisidion.
+v52_weighted_fvt_conv5way_step30000	p61	eng_Latn	v5_target	-0.320430	0.399223	It's interesting to observe American politics, especially during a presidential election.
+v52_weighted_fvt_conv5way_step30000	p62	dtp_Latn	v5_target	-0.250179	-0.496402	Iti nopo nga bunsiling di Mike.
+v52_weighted_fvt_conv5way_step30000	p63	eng_Latn	v5_target	-0.412683	0.203185	This is Mike's bicycle.
+v52_weighted_fvt_conv5way_step30000	p64	dtp_Latn	v5_target	0.479737	-0.446234	I Tom nopo nga tambalut di tosonong, nga miagal do bakas kokitanan dau om iri no sabap au oku songkuro muhang dau.
+v52_weighted_fvt_conv5way_step30000	p65	eng_Latn	v5_target	-0.111524	0.534322	Tom is very good friend, but he looks like a wild boar so I don't consider him a potential love interest.
+v52_weighted_fvt_conv5way_step30000	p66	dtp_Latn	v5_target	-0.147328	-0.422431	I Andi Smith songulun mongigia boros Inggilis?
+v52_weighted_fvt_conv5way_step30000	p67	eng_Latn	v5_target	-0.432435	0.177062	Is Mrs. Smith an English teacher?
+v52_weighted_fvt_conv5way_step30000	p68	dtp_Latn	v5_target	0.122782	-0.480109	Papapanau i Tom korita di Mary montok pakayaan hilo'd id Boston.
+v52_weighted_fvt_conv5way_step30000	p69	eng_Latn	v5_target	-0.398753	0.235750	Tom drove Mary's car to Boston.
+v52_weighted_fvt_conv5way_step30000	p70	dtp_Latn	v5_target	-0.113786	-0.560698	Nokuro tu apatut yahai maan dilo?
+v52_weighted_fvt_conv5way_step30000	p71	eng_Latn	v5_target	-0.457801	0.294721	Why would we need to do that?
+v52_weighted_fvt_conv5way_step30000	p72	dtp_Latn	v5_target	0.005202	-0.549850	Apatut no korikot i Tom hilo'd pogun Australia dinondo.
+v52_weighted_fvt_conv5way_step30000	p73	eng_Latn	v5_target	-0.436374	0.259504	Tom should already be in Australia by now.
+v52_weighted_fvt_conv5way_step30000	p74	dtp_Latn	v5_target	-0.216359	-0.569601	Maan oku do tosikap kio.
+v52_weighted_fvt_conv5way_step30000	p75	eng_Latn	v5_target	-0.478127	0.013324	I have to hurry!
+v52_weighted_fvt_conv5way_step30000	p76	dtp_Latn	v5_target	-0.290337	-0.370242	Umbalan ku no koti.
+v52_weighted_fvt_conv5way_step30000	p77	eng_Latn	v5_target	-0.565531	0.109098	I have to try.
+v52_weighted_fvt_conv5way_step30000	p78	dtp_Latn	v5_target	-0.106721	-0.502455	Rongoho no sawo nu oi Tom.
+v52_weighted_fvt_conv5way_step30000	p79	eng_Latn	v5_target	-0.536322	0.235158	Listen to your wife, Tom.
+v52_weighted_fvt_conv5way_step30000	p80	dtp_Latn	v5_target	-0.062440	-0.633273	Atuukoi, iti nopo nga tangaraat nodi!
+v52_weighted_fvt_conv5way_step30000	p81	eng_Latn	v5_target	-0.364118	0.224805	Oh my god, it's complete chaos!
+v52_weighted_fvt_conv5way_step30000	p82	dtp_Latn	v5_target	-0.246205	-0.609451	Ongotumbayaan i toinsanan.
+v52_weighted_fvt_conv5way_step30000	p83	eng_Latn	v5_target	-0.595236	0.207206	Everybody believes it.
+v52_weighted_fvt_conv5way_step30000	p84	dtp_Latn	v5_target	-0.166072	-0.553584	Amu kopunong sisimbar nu.
+v52_weighted_fvt_conv5way_step30000	p85	eng_Latn	v5_target	-0.579242	0.088585	Your answer is wrong.
+v52_weighted_fvt_conv5way_step30000	p86	dtp_Latn	v5_target	-0.098057	-0.641768	Poopio ilo rinomos id labus.
+v52_weighted_fvt_conv5way_step30000	p87	eng_Latn	v5_target	-0.446433	0.101470	Put the garbage outside.
+v52_weighted_fvt_conv5way_step30000	p88	dtp_Latn	v5_target	-0.228566	-0.536523	Otopot ko diti?
+v52_weighted_fvt_conv5way_step30000	p89	eng_Latn	v5_target	-0.529304	0.202883	Are you sure this is real?
+v52_weighted_fvt_conv5way_step30000	p90	dtp_Latn	v5_target	-0.152839	-0.612785	Awasiu iti waig do tikanas.
+v52_weighted_fvt_conv5way_step30000	p91	eng_Latn	v5_target	-0.550938	0.136548	This soup tastes good.
+v52_weighted_fvt_conv5way_step30000	p92	dtp_Latn	v5_target	0.275759	-0.659547	Mamaraag i tongo injiniur dilo sunsuyon tu karaag dot oruhai.
+v52_weighted_fvt_conv5way_step30000	p93	eng_Latn	v5_target	-0.266382	0.411278	The engineers blew up the bridge because it was about to collapse.
+v52_weighted_fvt_conv5way_step30000	p94	dtp_Latn	v5_target	-0.174106	-0.577979	Honggo ko dii?
+v52_weighted_fvt_conv5way_step30000	p95	eng_Latn	v5_target	-0.521652	0.068993	Where are you?
+v52_weighted_fvt_conv5way_step30000	p96	dtp_Latn	v5_target	0.272693	-0.540324	Au oku milo wonsoyon dilo nga mogot daa haro uhupan di Tom.
+v52_weighted_fvt_conv5way_step30000	p97	eng_Latn	v5_target	-0.394974	0.410448	I can't do that unless I have Tom's help.
+v52_weighted_fvt_conv5way_step30000	p98	dtp_Latn	v5_target	-0.015341	-0.621472	Kapatai matu iyau id onom tulan kangku daa.
+v52_weighted_fvt_conv5way_step30000	p99	eng_Latn	v5_target	-0.472721	0.337133	I have expected his death for six months.
+v52_weighted_fvt_conv5way_step30000	p100	dtp_Latn	v5_target	-0.053193	-0.582969	Olunggui oku om ohuyan i.
+v52_weighted_fvt_conv5way_step30000	p101	eng_Latn	v5_target	-0.429474	0.081330	I'm broke and tired.
+v52_weighted_fvt_conv5way_step30000	p102	dtp_Latn	v5_target	-0.269428	-0.530992	Mumang ko doho iyadaan?
+v52_weighted_fvt_conv5way_step30000	p103	eng_Latn	v5_target	-0.506549	0.277803	Do you want me to leave?
+v52_weighted_fvt_conv5way_step30000	p104	dtp_Latn	v5_target	-0.246804	-0.567152	Mintong oku po kalandor ku.
+v52_weighted_fvt_conv5way_step30000	p105	eng_Latn	v5_target	-0.531008	0.118496	Let me check my calendar.
+v52_weighted_fvt_conv5way_step30000	p106	dtp_Latn	v5_target	-0.200287	-0.572304	Mulau yahai kangku daa.
+v52_weighted_fvt_conv5way_step30000	p107	eng_Latn	v5_target	-0.420924	0.295255	I think we're all a bit crazy.
+v52_weighted_fvt_conv5way_step30000	p108	dtp_Latn	v5_target	-0.165289	-0.624152	Mongowit oku dau muli walai kama.
+v52_weighted_fvt_conv5way_step30000	p109	eng_Latn	v5_target	-0.557879	0.188429	I should get him home.
+v52_weighted_fvt_conv5way_step30000	p110	dtp_Latn	v5_target	-0.026728	-0.541239	Kumoiso isio hiti'd gana'.
+v52_weighted_fvt_conv5way_step30000	p111	eng_Latn	v5_target	-0.498030	0.196913	He was a pioneer in this field.
+v52_weighted_fvt_conv5way_step30000	p112	dtp_Latn	v5_target	-0.118163	-0.613782	Au oku mokiuhup mantad dika.
+v52_weighted_fvt_conv5way_step30000	p113	eng_Latn	v5_target	-0.470940	0.291015	I haven't asked you for help.
+v52_weighted_fvt_conv5way_step30000	p114	dtp_Latn	v5_target	-0.205577	-0.463870	Nunu o mangan nu?
+v52_weighted_fvt_conv5way_step30000	p115	eng_Latn	v5_target	-0.346941	0.284457	What do you think you're doing?
+v52_weighted_fvt_conv5way_step30000	p116	dtp_Latn	v5_target	-0.142467	-0.546651	Nunu o tosorou nu?
+v52_weighted_fvt_conv5way_step30000	p117	eng_Latn	v5_target	-0.460457	0.130443	What are you thinking?
+v52_weighted_fvt_conv5way_step30000	p118	dtp_Latn	v5_target	-0.072583	-0.670112	Alansan no daa korongou ko.
+v52_weighted_fvt_conv5way_step30000	p119	eng_Latn	v5_target	-0.490030	0.187492	I wish you'd listen.
+v52_weighted_fvt_conv5way_step30000	p120	dtp_Latn	v5_target	-0.162884	-0.587403	Minaan oku do pomusarahan dot osinang.
+v52_weighted_fvt_conv5way_step30000	p121	eng_Latn	v5_target	-0.494405	0.142461	I made a lucky guess.
+v52_weighted_fvt_conv5way_step30000	p122	dtp_Latn	v5_target	0.112296	-0.580645	Miagal o Labit maya kawo o bongol om bosing.
+v52_weighted_fvt_conv5way_step30000	p123	eng_Latn	v5_target	-0.231308	0.097866	Rabbits are related to beavers and squirrels.
+v52_weighted_fvt_conv5way_step30000	p124	dtp_Latn	v5_target	-0.311659	-0.456742	Nunu ilo?
+v52_weighted_fvt_conv5way_step30000	p125	eng_Latn	v5_target	-0.519046	0.060643	What is that?
+v52_weighted_fvt_conv5way_step30000	p126	dtp_Latn	v5_target	-0.276789	-0.438019	Posik no.
+v52_weighted_fvt_conv5way_step30000	p127	eng_Latn	v5_target	-0.410391	0.277763	It's time to get up.
+v52_weighted_fvt_conv5way_step30000	p128	dtp_Latn	v5_target	0.104331	-0.575919	Aiso tulun milo poimpasi gisom do duo nahatus toun.
+v52_weighted_fvt_conv5way_step30000	p129	eng_Latn	v5_target	-0.376691	0.285685	Nobody can live to be two hundred years old.
+v52_weighted_fvt_conv5way_step30000	p130	dtp_Latn	v5_target	0.416879	-0.507580	Norongou oku dilo pomoinan nopo ti nga au mangasou pimbalajaran nu. Nga montok doho au milo.
+v52_weighted_fvt_conv5way_step30000	p131	eng_Latn	v5_target	-0.242003	0.538247	I've noticed that having fun doesn't interfere at all with your studies. I just can't.
+v52_weighted_fvt_conv5way_step30000	p132	dtp_Latn	v5_target	-0.006219	-0.613914	Momupu isido do gonob dau.
+v52_weighted_fvt_conv5way_step30000	p133	eng_Latn	v5_target	-0.489967	-0.019382	She washes her skirt.
+v52_weighted_fvt_conv5way_step30000	p134	dtp_Latn	v5_target	0.366680	-0.373691	Nung kosorou oku diri tootopot nga pinapadagang i Tom do korita dau kumaa di Mary do gatang 500 Dollar nopo.
+v52_weighted_fvt_conv5way_step30000	p135	eng_Latn	v5_target	-0.261249	0.447012	If I remember correctly, Tom sold his car to Mary for only 500 dollars.
+v52_weighted_fvt_conv5way_step30000	p136	dtp_Latn	v5_target	-0.052968	-0.528008	Maai no awi ti.
+v52_weighted_fvt_conv5way_step30000	p137	eng_Latn	v5_target	-0.446703	0.190152	Let's end this.
+v52_weighted_fvt_conv5way_step30000	p138	dtp_Latn	v5_target	-0.030329	-0.544515	Au noukab po Tatoeba.org tu haro kinoundaran.
+v52_weighted_fvt_conv5way_step30000	p139	eng_Latn	v5_target	-0.422279	-0.072320	Tatoeba.org is offline for maintenance.
+v52_weighted_fvt_conv5way_step30000	p140	dtp_Latn	v5_target	-0.144635	-0.581912	Osonong no maan nu dilo.
+v52_weighted_fvt_conv5way_step30000	p141	eng_Latn	v5_target	-0.432486	0.275570	You'd be good at it.
+v52_weighted_fvt_conv5way_step30000	p142	dtp_Latn	v5_target	0.032182	-0.656379	Obuli oku mamalanja dokoyu do tiinumon?
+v52_weighted_fvt_conv5way_step30000	p143	eng_Latn	v5_target	-0.516087	0.187622	Can I offer you a drink?
+v52_weighted_fvt_conv5way_step30000	p144	dtp_Latn	v5_target	-0.123055	-0.416073	I tanak ti nopo nga tanak ku.
+v52_weighted_fvt_conv5way_step30000	p145	eng_Latn	v5_target	-0.578497	0.101149	This boy is my son.
+v52_weighted_fvt_conv5way_step30000	p146	dtp_Latn	v5_target	0.060469	-0.626160	Au yau noilaan kaka yoku nopo nga i tulun Gipun.
+v52_weighted_fvt_conv5way_step30000	p147	eng_Latn	v5_target	-0.404717	0.393054	She doesn't know that I'm Japanese.
+v52_weighted_fvt_conv5way_step30000	p148	dtp_Latn	v5_target	0.021476	-0.683916	Somoonu yahai kopibooboros dilo kawagu.
+v52_weighted_fvt_conv5way_step30000	p149	eng_Latn	v5_target	-0.389738	0.319742	I'd rather discuss this at a later time.
+v52_weighted_fvt_conv5way_step30000	p150	dtp_Latn	v5_target	-0.215564	-0.410318	Orohian i Ania do kompiuto.
+v52_weighted_fvt_conv5way_step30000	p151	eng_Latn	v5_target	-0.524898	0.130899	Ania is interested in computers.
+v52_weighted_fvt_conv5way_step30000	p152	dtp_Latn	v5_target	-0.002236	-0.384860	Napatai i Tom id toun 2013 tu toruol do Pneumonia.
+v52_weighted_fvt_conv5way_step30000	p153	eng_Latn	v5_target	-0.341753	-0.022647	Tom died in 2013 of pneumonia.
+v52_weighted_fvt_conv5way_step30000	p154	dtp_Latn	v5_target	-0.145461	-0.607031	Apatut ko popoundaliu dilo?
+v52_weighted_fvt_conv5way_step30000	p155	eng_Latn	v5_target	-0.532928	0.178557	Will I have to move?
+v52_weighted_fvt_conv5way_step30000	p156	dtp_Latn	v5_target	-0.018617	-0.377430	Iman-imanon ku nopo nga mongugusap.
+v52_weighted_fvt_conv5way_step30000	p157	eng_Latn	v5_target	-0.423990	0.284129	My aim is to be a doctor.
+v52_weighted_fvt_conv5way_step30000	p158	dtp_Latn	v5_target	-0.226015	-0.491786	Milo' oku mambarai baino?
+v52_weighted_fvt_conv5way_step30000	p159	eng_Latn	v5_target	-0.499039	0.053242	Can I order now?
+v52_weighted_fvt_conv5way_step30000	p160	dtp_Latn	v5_target	-0.055872	-0.623127	Milo' oku mambarai lo tiso?
+v52_weighted_fvt_conv5way_step30000	p161	eng_Latn	v5_target	-0.489362	-0.021855	Can I order one?
+v52_weighted_fvt_conv5way_step30000	p162	dtp_Latn	v5_target	-0.225789	-0.605593	Maan oku awasi kumaa Tom bo.
+v52_weighted_fvt_conv5way_step30000	p163	eng_Latn	v5_target	-0.431665	0.213869	I'll be good to Tom.
+v52_weighted_fvt_conv5way_step30000	p164	dtp_Latn	v5_target	0.063960	-0.532772	A'haro duo susumikul hiti'd kalas dinondo.
+v52_weighted_fvt_conv5way_step30000	p165	eng_Latn	v5_target	-0.523882	0.135113	Two students are absent today.
+v52_weighted_fvt_conv5way_step30000	p166	dtp_Latn	v5_target	-0.011082	-0.576507	Haro isai milo' monguhup doho?
+v52_weighted_fvt_conv5way_step30000	p167	eng_Latn	v5_target	-0.470753	0.150632	Can someone help me?
+v52_weighted_fvt_conv5way_step30000	p168	dtp_Latn	v5_target	-0.120002	-0.449239	Milo' oku moboros montok Tom.
+v52_weighted_fvt_conv5way_step30000	p169	eng_Latn	v5_target	-0.587471	0.093305	I can speak to Tom.
+v52_weighted_fvt_conv5way_step30000	p170	dtp_Latn	v5_target	0.001846	-0.577825	Milo' ko' mangandad maya doho.
+v52_weighted_fvt_conv5way_step30000	p171	eng_Latn	v5_target	-0.585288	0.189736	You can stay with me.
+v52_weighted_fvt_conv5way_step30000	p172	dtp_Latn	v5_target	-0.090700	-0.534765	Milo' ko' mangandad maya dahai.
+v52_weighted_fvt_conv5way_step30000	p173	eng_Latn	v5_target	-0.538984	0.160427	You can stay with us.
+v52_weighted_fvt_conv5way_step30000	p174	dtp_Latn	v5_target	-0.090674	-0.529612	Nokokito do Tom kangku daa.
+v52_weighted_fvt_conv5way_step30000	p175	eng_Latn	v5_target	-0.554227	-0.033943	I bet it was Tom.
+v52_weighted_fvt_conv5way_step30000	p176	dtp_Latn	v5_target	-0.055844	-0.418306	Milo' ko' moboros montok Tom.
+v52_weighted_fvt_conv5way_step30000	p177	eng_Latn	v5_target	-0.569383	0.159315	You can talk to Tom.
+v52_weighted_fvt_conv5way_step30000	p178	dtp_Latn	v5_target	-0.109348	-0.493840	Milo' otumbayaan kaka i Tom?
+v52_weighted_fvt_conv5way_step30000	p179	eng_Latn	v5_target	-0.488098	-0.071201	Can Tom be trusted?
+v52_weighted_fvt_conv5way_step30000	p180	dtp_Latn	v5_target	-0.154843	-0.640434	Ingkuro no maan i Tom dilo?
+v52_weighted_fvt_conv5way_step30000	p181	eng_Latn	v5_target	-0.507949	0.082791	How can Tom do that?
+v52_weighted_fvt_conv5way_step30000	p182	dtp_Latn	v5_target	-0.170573	-0.606970	Kasaga' tokou maan dilo?
+v52_weighted_fvt_conv5way_step30000	p183	eng_Latn	v5_target	-0.557058	0.067399	Can we afford that?
+v52_weighted_fvt_conv5way_step30000	p184	dtp_Latn	v5_target	-0.183632	-0.566444	Kasaga' tokou maan diti?
+v52_weighted_fvt_conv5way_step30000	p185	eng_Latn	v5_target	-0.572673	0.084906	Can we afford this?
+v52_weighted_fvt_conv5way_step30000	p186	dtp_Latn	v5_target	0.646946	-0.134096	Ruminikot iyahai mantad mogisuwai-suwai o bansa om boros, nga’ koinsanai dahai nosompuru id hontolon di miagal. Lobi’ ma
+v52_weighted_fvt_conv5way_step30000	p187	eng_Latn	v5_target	0.095709	0.704172	We come from hundreds of ethnic and language backgrounds, yet we are united by common goals. Above all, we want to honor
+v52_weighted_fvt_conv5way_step30000	p188	dtp_Latn	v5_target	-0.111509	-0.552749	Alaid oku au nokopikito diya!
+v52_weighted_fvt_conv5way_step30000	p189	eng_Latn	v5_target	-0.380595	0.267424	I haven't seen you for so long!
+v52_weighted_fvt_conv5way_step30000	p190	dtp_Latn	v5_target	0.086777	-0.438527	Haro no susumikul do poingirikau hilo om mogiakan-akan.
+v52_weighted_fvt_conv5way_step30000	p191	eng_Latn	v5_target	-0.347509	0.325580	Some students were sitting on the bench and having lunch.
+v52_weighted_fvt_conv5way_step30000	p192	dtp_Latn	v5_target	-0.304675	-0.538710	Hiti no pakarajaan ku.
+v52_weighted_fvt_conv5way_step30000	p193	eng_Latn	v5_target	-0.465753	0.219174	That's where I work.
+v52_weighted_fvt_conv5way_step30000	p194	dtp_Latn	v5_target	0.326298	-0.557729	Otopot nodi toilaan nu dot osonong, nga iri podi kaala tu osusa o momonsoi dilo.
+v52_weighted_fvt_conv5way_step30000	p195	eng_Latn	v5_target	-0.204344	0.564023	It is true that yours is a good idea, but I am afraid it will be hard to put into practice.
+v52_weighted_fvt_conv5way_step30000	p196	dtp_Latn	v5_target	0.156553	-0.585578	Nung yoho nopo diya nga au oku mongoi maan dilo.
+v52_weighted_fvt_conv5way_step30000	p197	eng_Latn	v5_target	-0.303644	0.414658	If I were you, I wouldn't do a thing like that.
+v52_weighted_fvt_conv5way_step30000	p198	dtp_Latn	v5_target	-0.066582	-0.606686	Hinonggo oku milo' momoug?
+v52_weighted_fvt_conv5way_step30000	p199	eng_Latn	v5_target	-0.465260	0.040826	Where can I wash up?
+v52_weighted_fvt_conv5way_step30000	p200	dtp_Latn	v5_target	-0.231990	-0.520732	Tokou nga milo' korikot?
+v52_weighted_fvt_conv5way_step30000	p201	ile_Latn	v5_target	-0.585347	0.036996	Tu es un bon medico.
+v52_weighted_fvt_conv5way_step30000	p202	eng_Latn	v5_target	-0.484343	0.280707	You're a good doctor.
+v52_weighted_fvt_conv5way_step30000	p203	ile_Latn	v5_target	-0.417008	-0.345959	It va evenir bentost.
+v52_weighted_fvt_conv5way_step30000	p204	eng_Latn	v5_target	-0.493960	0.161996	It'll happen soon.
+v52_weighted_fvt_conv5way_step30000	p205	ile_Latn	v5_target	-0.199449	-0.156566	Qualmen se lee ti-ci ideogramme?
+v52_weighted_fvt_conv5way_step30000	p206	eng_Latn	v5_target	-0.364658	0.018900	How do you read this kanji?
+v52_weighted_fvt_conv5way_step30000	p207	ile_Latn	v5_target	-0.392308	-0.225275	Quo significa PTA?
+v52_weighted_fvt_conv5way_step30000	p208	eng_Latn	v5_target	-0.398192	0.096478	What does PTA mean?
+v52_weighted_fvt_conv5way_step30000	p209	ile_Latn	v5_target	-0.372057	-0.503887	Yo ha perdit mi horloge.
+v52_weighted_fvt_conv5way_step30000	p210	eng_Latn	v5_target	-0.531334	0.056446	I lost the watch.
+v52_weighted_fvt_conv5way_step30000	p211	ile_Latn	v5_target	-0.288430	-0.408392	To va bentost changear.
+v52_weighted_fvt_conv5way_step30000	p212	eng_Latn	v5_target	-0.475750	0.160426	That'll change soon.
+v52_weighted_fvt_conv5way_step30000	p213	ile_Latn	v5_target	-0.473467	-0.350720	Li café es tre calid.
+v52_weighted_fvt_conv5way_step30000	p214	eng_Latn	v5_target	-0.587340	0.096971	The coffee is very hot.
+v52_weighted_fvt_conv5way_step30000	p215	ile_Latn	v5_target	-0.372076	-0.349993	Quo manca?
+v52_weighted_fvt_conv5way_step30000	p216	eng_Latn	v5_target	-0.552905	0.067195	What is missing?
+v52_weighted_fvt_conv5way_step30000	p217	ile_Latn	v5_target	-0.363904	-0.491823	Quant tu besona?
+v52_weighted_fvt_conv5way_step30000	p218	eng_Latn	v5_target	-0.447783	0.178202	How much do you need?
+v52_weighted_fvt_conv5way_step30000	p219	ile_Latn	v5_target	-0.387137	-0.282556	Nequí venit!
+v52_weighted_fvt_conv5way_step30000	p220	eng_Latn	v5_target	-0.495466	-0.116185	No one came.
+v52_weighted_fvt_conv5way_step30000	p221	ile_Latn	v5_target	-0.342793	-0.341274	Li gemelles assistet.
+v52_weighted_fvt_conv5way_step30000	p222	eng_Latn	v5_target	-0.604659	-0.023455	The twins helped.
+v52_weighted_fvt_conv5way_step30000	p223	ile_Latn	v5_target	-0.476553	-0.203548	Quant esset ta?
+v52_weighted_fvt_conv5way_step30000	p224	eng_Latn	v5_target	-0.476012	0.159383	How many were there?
+v52_weighted_fvt_conv5way_step30000	p225	ile_Latn	v5_target	-0.403619	-0.294695	Mi matre es un fémina.
+v52_weighted_fvt_conv5way_step30000	p226	eng_Latn	v5_target	-0.606737	0.188532	My mother is a woman.
+v52_weighted_fvt_conv5way_step30000	p227	ile_Latn	v5_target	-0.376861	-0.492235	Ti flor odora bon.
+v52_weighted_fvt_conv5way_step30000	p228	eng_Latn	v5_target	-0.562801	0.108932	This flower smells nice.
+v52_weighted_fvt_conv5way_step30000	p229	ile_Latn	v5_target	-0.256525	-0.133430	Li puella con li long puellas ta es Judith.
+v52_weighted_fvt_conv5way_step30000	p230	eng_Latn	v5_target	-0.496060	0.254815	That girl who has long hair is Judy.
+v52_weighted_fvt_conv5way_step30000	p231	ile_Latn	v5_target	-0.453929	-0.156939	Noi ne va haver un chance.
+v52_weighted_fvt_conv5way_step30000	p232	eng_Latn	v5_target	-0.452976	0.239244	We won't stand a chance.
+v52_weighted_fvt_conv5way_step30000	p233	ile_Latn	v5_target	-0.575149	-0.156201	Noi ne es un pare.
+v52_weighted_fvt_conv5way_step30000	p234	eng_Latn	v5_target	-0.550625	0.192134	We're not a couple.
+v52_weighted_fvt_conv5way_step30000	p235	ile_Latn	v5_target	-0.570874	-0.135525	Yo ne have un dom.
+v52_weighted_fvt_conv5way_step30000	p236	eng_Latn	v5_target	-0.514761	0.252436	I don't have a house.
+v52_weighted_fvt_conv5way_step30000	p237	ile_Latn	v5_target	-0.383819	-0.378790	Yo svimmat in li mare.
+v52_weighted_fvt_conv5way_step30000	p238	eng_Latn	v5_target	-0.450841	-0.087634	I swam in the sea.
+v52_weighted_fvt_conv5way_step30000	p239	ile_Latn	v5_target	-0.425182	-0.536298	Li can apare malad.
+v52_weighted_fvt_conv5way_step30000	p240	eng_Latn	v5_target	-0.543459	0.258431	The dog seems to be sick.
+v52_weighted_fvt_conv5way_step30000	p241	ile_Latn	v5_target	-0.468774	-0.293802	Li nase de Tom esset rubi.
+v52_weighted_fvt_conv5way_step30000	p242	eng_Latn	v5_target	-0.405779	-0.102264	Tom's nose was red.
+v52_weighted_fvt_conv5way_step30000	p243	ile_Latn	v5_target	-0.074776	-0.018986	Li vive imita li arte mult plu quam li arte imita li vive.
+v52_weighted_fvt_conv5way_step30000	p244	eng_Latn	v5_target	-0.211738	0.215771	Life imitates art far more than art imitates life.
+v52_weighted_fvt_conv5way_step30000	p245	ile_Latn	v5_target	-0.591027	-0.118455	Yo have un dom.
+v52_weighted_fvt_conv5way_step30000	p246	eng_Latn	v5_target	-0.598121	0.133580	I have a house.
+v52_weighted_fvt_conv5way_step30000	p247	ile_Latn	v5_target	-0.520328	-0.266388	Tom ne es ancor in hem.
+v52_weighted_fvt_conv5way_step30000	p248	eng_Latn	v5_target	-0.507342	0.134909	Tom's not home yet.
+v52_weighted_fvt_conv5way_step30000	p249	ile_Latn	v5_target	-0.437829	-0.140465	Un infante ne es un matur hom.
+v52_weighted_fvt_conv5way_step30000	p250	eng_Latn	v5_target	-0.476723	0.253914	A child is not a mature person.
+v52_weighted_fvt_conv5way_step30000	p251	ile_Latn	v5_target	-0.297995	-0.512467	Li rubi jup es nov.
+v52_weighted_fvt_conv5way_step30000	p252	eng_Latn	v5_target	-0.547861	0.011799	The red skirt is new.
+v52_weighted_fvt_conv5way_step30000	p253	ile_Latn	v5_target	-0.317668	-0.202540	Li stradas ne es secur in li nocte.
+v52_weighted_fvt_conv5way_step30000	p254	eng_Latn	v5_target	-0.453447	0.291297	The streets aren't safe at night.
+v52_weighted_fvt_conv5way_step30000	p255	ile_Latn	v5_target	-0.390521	-0.149441	Ella ne es plu mi amica.
+v52_weighted_fvt_conv5way_step30000	p256	eng_Latn	v5_target	-0.570953	0.240149	She is no longer my friend.
+v52_weighted_fvt_conv5way_step30000	p257	ile_Latn	v5_target	-0.392122	-0.136957	Qualmen es li tempe in Boston?
+v52_weighted_fvt_conv5way_step30000	p258	eng_Latn	v5_target	-0.390873	0.232385	How's the weather in Boston?
+v52_weighted_fvt_conv5way_step30000	p259	ile_Latn	v5_target	-0.393108	-0.374320	Lass li infantes venir!
+v52_weighted_fvt_conv5way_step30000	p260	eng_Latn	v5_target	-0.503258	0.134826	Let the children come!
+v52_weighted_fvt_conv5way_step30000	p261	ile_Latn	v5_target	-0.564952	-0.146838	Tom ne comprende it.
+v52_weighted_fvt_conv5way_step30000	p262	eng_Latn	v5_target	-0.514266	0.201234	Tom doesn't get it.
+v52_weighted_fvt_conv5way_step30000	p263	ile_Latn	v5_target	-0.449323	-0.282900	Yo ancor ne parla bon francesi.
+v52_weighted_fvt_conv5way_step30000	p264	eng_Latn	v5_target	-0.414006	0.337717	I'm not good at speaking French yet.
+v52_weighted_fvt_conv5way_step30000	p265	ile_Latn	v5_target	-0.576248	-0.266324	Vu nequande es satisfat.
+v52_weighted_fvt_conv5way_step30000	p266	eng_Latn	v5_target	-0.520957	0.173917	You're never satisfied.
+v52_weighted_fvt_conv5way_step30000	p267	ile_Latn	v5_target	-0.316016	-0.474173	Ili ruinat mi vive.
+v52_weighted_fvt_conv5way_step30000	p268	eng_Latn	v5_target	-0.581713	0.098549	They ruined my life.
+v52_weighted_fvt_conv5way_step30000	p269	ile_Latn	v5_target	-0.479536	0.078672	It es evident que ella ne ama su marito.
+v52_weighted_fvt_conv5way_step30000	p270	eng_Latn	v5_target	-0.425781	0.382406	It's obvious that she doesn't love her husband.
+v52_weighted_fvt_conv5way_step30000	p271	ile_Latn	v5_target	-0.456998	-0.189744	Li conditiones esset desfacil.
+v52_weighted_fvt_conv5way_step30000	p272	eng_Latn	v5_target	-0.550011	0.145936	The conditions were difficult.
+v52_weighted_fvt_conv5way_step30000	p273	ile_Latn	v5_target	-0.521338	-0.375370	Il ama cates.
+v52_weighted_fvt_conv5way_step30000	p274	eng_Latn	v5_target	-0.553561	0.078677	He loves cats.
+v52_weighted_fvt_conv5way_step30000	p275	ile_Latn	v5_target	-0.453277	-0.364460	Il furtet mi horloge.
+v52_weighted_fvt_conv5way_step30000	p276	eng_Latn	v5_target	-0.517468	0.025901	He stole my watch.
+v52_weighted_fvt_conv5way_step30000	p277	ile_Latn	v5_target	-0.462244	-0.254118	Yo va dar it a Tom.
+v52_weighted_fvt_conv5way_step30000	p278	eng_Latn	v5_target	-0.433662	0.263273	I'll give it to Tom.
+v52_weighted_fvt_conv5way_step30000	p279	ile_Latn	v5_target	-0.306427	-0.417310	Ella melcat li vacca.
+v52_weighted_fvt_conv5way_step30000	p280	eng_Latn	v5_target	-0.560664	-0.115759	She milked the cow.
+v52_weighted_fvt_conv5way_step30000	p281	ile_Latn	v5_target	-0.499779	-0.019553	Yo ne dit que it esse facil.
+v52_weighted_fvt_conv5way_step30000	p282	eng_Latn	v5_target	-0.495567	0.249427	I didn't say it was easy.
+v52_weighted_fvt_conv5way_step30000	p283	ile_Latn	v5_target	-0.349887	0.188601	To ne es un cat. It es un cane.
+v52_weighted_fvt_conv5way_step30000	p284	eng_Latn	v5_target	-0.331701	0.339026	That's not a cat. It's a dog.
+v52_weighted_fvt_conv5way_step30000	p285	ile_Latn	v5_target	-0.491200	-0.085030	Il ne es plu interessat in me.
+v52_weighted_fvt_conv5way_step30000	p286	eng_Latn	v5_target	-0.474783	0.338932	He's no longer interested in me.
+v52_weighted_fvt_conv5way_step30000	p287	ile_Latn	v5_target	-0.530357	-0.170740	Ella ne have li billete.
+v52_weighted_fvt_conv5way_step30000	p288	eng_Latn	v5_target	-0.541064	0.276381	She doesn't have the ticket.
+v52_weighted_fvt_conv5way_step30000	p289	ile_Latn	v5_target	-0.359403	-0.369585	Tom labora.
+v52_weighted_fvt_conv5way_step30000	p290	eng_Latn	v5_target	-0.566401	-0.065987	Tom is working.
+v52_weighted_fvt_conv5way_step30000	p291	ile_Latn	v5_target	-0.225654	0.160783	Donald Trump va esser li sequent presidente del Unit States de America.
+v52_weighted_fvt_conv5way_step30000	p292	eng_Latn	v5_target	-0.264414	0.407609	Donald Trump will be the next president of the United States of America.
+v52_weighted_fvt_conv5way_step30000	p293	ile_Latn	v5_target	-0.462243	-0.172240	Tom studia in Harvard.
+v52_weighted_fvt_conv5way_step30000	p294	eng_Latn	v5_target	-0.517428	0.128581	Tom is studying at Harvard.
+v52_weighted_fvt_conv5way_step30000	p295	ile_Latn	v5_target	-0.471263	-0.407317	Li buxe esset tro pesant.
+v52_weighted_fvt_conv5way_step30000	p296	eng_Latn	v5_target	-0.540695	0.102720	The box was too heavy.
+v52_weighted_fvt_conv5way_step30000	p297	ile_Latn	v5_target	-0.328835	-0.344094	Yer pluviat.
+v52_weighted_fvt_conv5way_step30000	p298	eng_Latn	v5_target	-0.528408	0.051496	It rained yesterday.
+v52_weighted_fvt_conv5way_step30000	p299	ile_Latn	v5_target	-0.406092	-0.323538	Quo tu pensa pri ella?
+v52_weighted_fvt_conv5way_step30000	p300	eng_Latn	v5_target	-0.442225	0.201451	What do you think about her?
+v52_weighted_fvt_conv5way_step30000	p301	ile_Latn	v5_target	-0.534389	-0.035188	Tom es in grav dangere.
+v52_weighted_fvt_conv5way_step30000	p302	eng_Latn	v5_target	-0.520205	-0.014941	Tom is in grave danger.
+v52_weighted_fvt_conv5way_step30000	p303	ile_Latn	v5_target	-0.583014	-0.238492	Yo besona un medico.
+v52_weighted_fvt_conv5way_step30000	p304	eng_Latn	v5_target	-0.607117	0.123438	I need a doctor.
+v52_weighted_fvt_conv5way_step30000	p305	ile_Latn	v5_target	-0.492379	-0.100499	Ti frase ne es italian.
+v52_weighted_fvt_conv5way_step30000	p306	eng_Latn	v5_target	-0.468661	0.183687	This sentence is not in Italian.
+v52_weighted_fvt_conv5way_step30000	p307	ile_Latn	v5_target	-0.453959	-0.205320	Noi have du filias.
+v52_weighted_fvt_conv5way_step30000	p308	eng_Latn	v5_target	-0.581077	0.222426	We have two daughters.
+v52_weighted_fvt_conv5way_step30000	p309	ile_Latn	v5_target	-0.361267	-0.048048	Yo ne posse, benque yo vole.
+v52_weighted_fvt_conv5way_step30000	p310	eng_Latn	v5_target	-0.448320	0.175005	I cannot even though I want to.
+v52_weighted_fvt_conv5way_step30000	p311	ile_Latn	v5_target	-0.417305	-0.378355	U es mi fratre?
+v52_weighted_fvt_conv5way_step30000	p312	eng_Latn	v5_target	-0.555179	0.079534	Where is my brother?
+v52_weighted_fvt_conv5way_step30000	p313	ile_Latn	v5_target	-0.445544	-0.364057	It ne hay aqua.
+v52_weighted_fvt_conv5way_step30000	p314	eng_Latn	v5_target	-0.518819	0.151100	There is no water.
+v52_weighted_fvt_conv5way_step30000	p315	ile_Latn	v5_target	-0.317755	0.066782	Yo have du filias e du filios.
+v52_weighted_fvt_conv5way_step30000	p316	eng_Latn	v5_target	-0.365572	0.294452	I have two daughters and two sons.
+v52_weighted_fvt_conv5way_step30000	p317	ile_Latn	v5_target	-0.398695	-0.367280	Pro quo tu menti?
+v52_weighted_fvt_conv5way_step30000	p318	eng_Latn	v5_target	-0.449342	0.097544	Why are you lying?
+v52_weighted_fvt_conv5way_step30000	p319	ile_Latn	v5_target	-0.337405	-0.454079	Yo ama li sole.
+v52_weighted_fvt_conv5way_step30000	p320	eng_Latn	v5_target	-0.626070	0.055788	I love the sun.
+v52_weighted_fvt_conv5way_step30000	p321	ile_Latn	v5_target	-0.476044	-0.187767	Mi filia es ancor un infante.
+v52_weighted_fvt_conv5way_step30000	p322	eng_Latn	v5_target	-0.569461	0.205350	My daughter is but a child.
+v52_weighted_fvt_conv5way_step30000	p323	ile_Latn	v5_target	-0.263783	-0.412004	Marta ama te.
+v52_weighted_fvt_conv5way_step30000	p324	eng_Latn	v5_target	-0.578057	-0.042644	Marta loves you.
+v52_weighted_fvt_conv5way_step30000	p325	ile_Latn	v5_target	-0.168384	-0.007243	Yo porta mi costume de balne sub mi vestimentes.
+v52_weighted_fvt_conv5way_step30000	p326	eng_Latn	v5_target	-0.359750	0.295393	I'm wearing my swimsuit under my clothes.
+v52_weighted_fvt_conv5way_step30000	p327	ile_Latn	v5_target	-0.508961	0.031790	Il pensa que il es un heróe.
+v52_weighted_fvt_conv5way_step30000	p328	eng_Latn	v5_target	-0.577010	0.342030	He believes that he is a hero.
+v52_weighted_fvt_conv5way_step30000	p329	ile_Latn	v5_target	-0.300273	-0.412589	Yo va monstrar te li via.
+v52_weighted_fvt_conv5way_step30000	p330	eng_Latn	v5_target	-0.433120	0.294129	I'll show you the way.
+v52_weighted_fvt_conv5way_step30000	p331	ile_Latn	v5_target	-0.514485	-0.006488	Il ne dat it a me.
+v52_weighted_fvt_conv5way_step30000	p332	eng_Latn	v5_target	-0.454755	0.331130	He didn't give it to me.
+v52_weighted_fvt_conv5way_step30000	p333	ile_Latn	v5_target	-0.485905	0.020007	Tu esset un grand auxilie.
+v52_weighted_fvt_conv5way_step30000	p334	eng_Latn	v5_target	-0.436905	0.264381	You've been really helpful.
+v52_weighted_fvt_conv5way_step30000	p335	ile_Latn	v5_target	-0.618186	-0.025852	Yo have un filia.
+v52_weighted_fvt_conv5way_step30000	p336	eng_Latn	v5_target	-0.620249	0.133480	I have a daughter.
+v52_weighted_fvt_conv5way_step30000	p337	ile_Latn	v5_target	-0.483868	-0.205975	Tom ne venit a hem.
+v52_weighted_fvt_conv5way_step30000	p338	eng_Latn	v5_target	-0.468554	0.199199	Tom didn't come home.
+v52_weighted_fvt_conv5way_step30000	p339	ile_Latn	v5_target	-0.428694	-0.041340	Es il es un de tui amicos?
+v52_weighted_fvt_conv5way_step30000	p340	eng_Latn	v5_target	-0.544515	0.240186	Is he a friend of yours?
+v52_weighted_fvt_conv5way_step30000	p341	ile_Latn	v5_target	-0.577399	-0.039680	Yo have un amico.
+v52_weighted_fvt_conv5way_step30000	p342	eng_Latn	v5_target	-0.606040	0.108458	I have a friend.
+v52_weighted_fvt_conv5way_step30000	p343	ile_Latn	v5_target	-0.473225	-0.345466	Ella cocina nu.
+v52_weighted_fvt_conv5way_step30000	p344	eng_Latn	v5_target	-0.536302	0.130943	She's cooking now.
+v52_weighted_fvt_conv5way_step30000	p345	ile_Latn	v5_target	-0.438050	-0.408352	Il cocina nu.
+v52_weighted_fvt_conv5way_step30000	p346	eng_Latn	v5_target	-0.541978	0.136238	He's cooking now.
+v52_weighted_fvt_conv5way_step30000	p347	ile_Latn	v5_target	-0.412962	-0.387038	Li mann es fort.
+v52_weighted_fvt_conv5way_step30000	p348	eng_Latn	v5_target	-0.661938	0.029047	The man is strong.
+v52_weighted_fvt_conv5way_step30000	p349	ile_Latn	v5_target	-0.410893	-0.273485	It hat niveat.
+v52_weighted_fvt_conv5way_step30000	p350	eng_Latn	v5_target	-0.532711	0.054997	It had snowed.
+v52_weighted_fvt_conv5way_step30000	p351	ile_Latn	v5_target	-0.386911	0.117366	Il have un filio e du filias.
+v52_weighted_fvt_conv5way_step30000	p352	eng_Latn	v5_target	-0.409021	0.301600	He has a son and two daughters.
+v52_weighted_fvt_conv5way_step30000	p353	ile_Latn	v5_target	-0.450492	-0.441746	U es li cat?
+v52_weighted_fvt_conv5way_step30000	p354	eng_Latn	v5_target	-0.597065	0.029681	Where is the cat?
+v52_weighted_fvt_conv5way_step30000	p355	ile_Latn	v5_target	-0.505385	-0.236370	Yo ne vole far to.
+v52_weighted_fvt_conv5way_step30000	p356	eng_Latn	v5_target	-0.449237	0.279386	I don't want to do that.
+v52_weighted_fvt_conv5way_step30000	p357	ile_Latn	v5_target	-0.478655	-0.091721	To es un tre bon nova.
+v52_weighted_fvt_conv5way_step30000	p358	eng_Latn	v5_target	-0.476543	0.232937	That's very good news.
+v52_weighted_fvt_conv5way_step30000	p359	ile_Latn	v5_target	-0.488971	0.009100	Li internet es un labirinte.
+v52_weighted_fvt_conv5way_step30000	p360	eng_Latn	v5_target	-0.375576	0.150935	The Internet is a labyrinth.
+v52_weighted_fvt_conv5way_step30000	p361	ile_Latn	v5_target	-0.503350	-0.189338	To es vermen un bon nova.
+v52_weighted_fvt_conv5way_step30000	p362	eng_Latn	v5_target	-0.512464	0.198171	That is really good news.
+v52_weighted_fvt_conv5way_step30000	p363	ile_Latn	v5_target	-0.572483	-0.026855	Il have du filias.
+v52_weighted_fvt_conv5way_step30000	p364	eng_Latn	v5_target	-0.573030	0.195867	He has two daughters.
+v52_weighted_fvt_conv5way_step30000	p365	ile_Latn	v5_target	-0.586668	-0.155478	Yo have un bon nova.
+v52_weighted_fvt_conv5way_step30000	p366	eng_Latn	v5_target	-0.510473	0.148831	I have good news.
+v52_weighted_fvt_conv5way_step30000	p367	ile_Latn	v5_target	-0.434762	-0.307152	Yo regardat Tom morir.
+v52_weighted_fvt_conv5way_step30000	p368	eng_Latn	v5_target	-0.553533	-0.131090	I watched Tom die.
+v52_weighted_fvt_conv5way_step30000	p369	ile_Latn	v5_target	-0.367183	0.083265	Li filia de un rey es un princessa.
+v52_weighted_fvt_conv5way_step30000	p370	eng_Latn	v5_target	-0.353137	0.282799	A king's daughter is a princess.
+v52_weighted_fvt_conv5way_step30000	p371	ile_Latn	v5_target	-0.502690	-0.128413	Yo esset in li scola.
+v52_weighted_fvt_conv5way_step30000	p372	eng_Latn	v5_target	-0.529309	0.031058	I was in school.
+v52_weighted_fvt_conv5way_step30000	p373	ile_Latn	v5_target	-0.479199	-0.371798	Nequí esset ta.
+v52_weighted_fvt_conv5way_step30000	p374	eng_Latn	v5_target	-0.508654	0.127695	No one was there.
+v52_weighted_fvt_conv5way_step30000	p375	ile_Latn	v5_target	-0.562112	-0.054086	Noi deve trovar li clave.
+v52_weighted_fvt_conv5way_step30000	p376	eng_Latn	v5_target	-0.489905	0.310893	We've got to find the key.
+v52_weighted_fvt_conv5way_step30000	p377	ile_Latn	v5_target	-0.386620	-0.412854	Qualmen tu standa die?
+v52_weighted_fvt_conv5way_step30000	p378	eng_Latn	v5_target	-0.424111	0.120550	How are you today?
+v52_weighted_fvt_conv5way_step30000	p379	ile_Latn	v5_target	-0.459942	-0.138614	Ili have du filias.
+v52_weighted_fvt_conv5way_step30000	p380	eng_Latn	v5_target	-0.539912	0.187868	They have two daughters.
+v52_weighted_fvt_conv5way_step30000	p381	ile_Latn	v5_target	-0.396556	-0.379472	To changea omnicos.
+v52_weighted_fvt_conv5way_step30000	p382	eng_Latn	v5_target	-0.504145	0.090826	That changes everything.
+v52_weighted_fvt_conv5way_step30000	p383	ile_Latn	v5_target	-0.399001	-0.419683	Roses odora bon.
+v52_weighted_fvt_conv5way_step30000	p384	eng_Latn	v5_target	-0.521785	-0.079769	Roses smell good.
+v52_weighted_fvt_conv5way_step30000	p385	ile_Latn	v5_target	-0.384253	-0.314957	Yo fat projectes.
+v52_weighted_fvt_conv5way_step30000	p386	eng_Latn	v5_target	-0.496378	-0.035609	I made plans.
+v52_weighted_fvt_conv5way_step30000	p387	ile_Latn	v5_target	-0.605448	-0.104480	Mi fratre have un conto che Twitter.
+v52_weighted_fvt_conv5way_step30000	p388	eng_Latn	v5_target	-0.519225	0.233913	My brother has a Twitter account.
+v52_weighted_fvt_conv5way_step30000	p389	ile_Latn	v5_target	-0.412369	0.108892	Ella have un marito e du filias.
+v52_weighted_fvt_conv5way_step30000	p390	eng_Latn	v5_target	-0.407850	0.326707	She has a husband and two daughters.
+v52_weighted_fvt_conv5way_step30000	p391	ile_Latn	v5_target	-0.379126	-0.282547	Vaccas have ubres.
+v52_weighted_fvt_conv5way_step30000	p392	eng_Latn	v5_target	-0.485812	-0.240113	Cows have udders.
+v52_weighted_fvt_conv5way_step30000	p393	ile_Latn	v5_target	-0.633471	-0.060466	Yo es timid.
+v52_weighted_fvt_conv5way_step30000	p394	eng_Latn	v5_target	-0.335862	-0.373984	I am shy.
+v52_weighted_fvt_conv5way_step30000	p395	ile_Latn	v5_target	-0.265792	-0.485285	Tui nómine di it omnicos.
+v52_weighted_fvt_conv5way_step30000	p396	eng_Latn	v5_target	-0.530362	0.159235	Your name says it all.
+v52_weighted_fvt_conv5way_step30000	p397	ile_Latn	v5_target	-0.444091	-0.056225	Il have deci vaccas.
+v52_weighted_fvt_conv5way_step30000	p398	eng_Latn	v5_target	-0.571693	-0.230534	He has ten cows.
+v52_weighted_fvt_conv5way_step30000	p399	ile_Latn	v5_target	-0.269374	-0.551266	Tom melca li vacca.
+v52_weighted_fvt_conv5way_step30000	p400	eng_Latn	v5_target	-0.547057	-0.148768	Tom is milking the cow.
+v52_weighted_fvt_conv5way_step30000	p401	ile_Latn	v5_target	-0.573510	-0.103551	Noi deve advertir les.
+v52_weighted_fvt_conv5way_step30000	p402	csb_Latn	v5_target	-0.394645	-0.372414	Gdzeż won je?
+v52_weighted_fvt_conv5way_step30000	p403	eng_Latn	v5_target	-0.562791	0.086062	Where is he?
+v52_weighted_fvt_conv5way_step30000	p404	csb_Latn	v5_target	0.132752	-0.546861	Nó tim wodjimkú të trzimjesz mòjã rãkã.
+v52_weighted_fvt_conv5way_step30000	p405	eng_Latn	v5_target	-0.477665	0.311901	You are holding my hand in that picture.
+v52_weighted_fvt_conv5way_step30000	p406	csb_Latn	v5_target	-0.286945	-0.414925	Ve szkòli je novi knôp.
+v52_weighted_fvt_conv5way_step30000	p407	eng_Latn	v5_target	-0.384569	0.350152	There's a new boy in school.
+v52_weighted_fvt_conv5way_step30000	p408	csb_Latn	v5_target	0.105810	-0.432215	To dô vjele rzeczi wo mòji przirodze, co tëch të nje vjész.
+v52_weighted_fvt_conv5way_step30000	p409	eng_Latn	v5_target	-0.325021	0.420395	There are a lot of things you don't know about my personality.
+v52_weighted_fvt_conv5way_step30000	p410	csb_Latn	v5_target	-0.240035	-0.287519	Tvòja krev je czervjonô.
+v52_weighted_fvt_conv5way_step30000	p411	eng_Latn	v5_target	-0.575865	0.032986	Your blood is red.
+v52_weighted_fvt_conv5way_step30000	p412	csb_Latn	v5_target	-0.381921	-0.295921	To bëło przódë lat.
+v52_weighted_fvt_conv5way_step30000	p413	eng_Latn	v5_target	-0.428938	0.209357	It was a long time ago.
+v52_weighted_fvt_conv5way_step30000	p414	csb_Latn	v5_target	-0.469181	-0.183412	To bëło dôvno.
+v52_weighted_fvt_conv5way_step30000	p415	eng_Latn	v5_target	-0.412977	0.233854	That was a long time ago.
+v52_weighted_fvt_conv5way_step30000	p416	csb_Latn	v5_target	-0.328701	-0.161359	Wona je ta, co naszewo psa fùdrëje.
+v52_weighted_fvt_conv5way_step30000	p417	eng_Latn	v5_target	-0.447890	0.358191	She is the one who feeds our dog.
+v52_weighted_fvt_conv5way_step30000	p418	csb_Latn	v5_target	-0.020141	-0.421491	Jô móm vjele drëchóv, co mje pòmôgajõ.
+v52_weighted_fvt_conv5way_step30000	p419	eng_Latn	v5_target	-0.457372	0.380780	I have a lot of friends to help me.
+v52_weighted_fvt_conv5way_step30000	p420	csb_Latn	v5_target	-0.404100	-0.199476	To nje je to, co jô rzek.
+v52_weighted_fvt_conv5way_step30000	p421	eng_Latn	v5_target	-0.518095	0.239505	That's not what I said.
+v52_weighted_fvt_conv5way_step30000	p422	csb_Latn	v5_target	-0.088134	-0.537441	Zó czim vë szúkôce?
+v52_weighted_fvt_conv5way_step30000	p423	eng_Latn	v5_target	-0.414703	0.160307	What are you looking for?
+v52_weighted_fvt_conv5way_step30000	p424	csb_Latn	v5_target	-0.504696	-0.179729	Dërch je szansa.
+v52_weighted_fvt_conv5way_step30000	p425	eng_Latn	v5_target	-0.450722	0.244269	There's still a chance.
+v52_weighted_fvt_conv5way_step30000	p426	csb_Latn	v5_target	0.034261	-0.484809	Vë njigdë nje wodrzeklë nó to pitanjé.
+v52_weighted_fvt_conv5way_step30000	p427	eng_Latn	v5_target	-0.589740	0.161306	You never answered the question.
+v52_weighted_fvt_conv5way_step30000	p428	csb_Latn	v5_target	-0.084290	-0.207783	Tom je barzo dobri drëch, ale ma nje jesma ze sobõ.
+v52_weighted_fvt_conv5way_step30000	p429	eng_Latn	v5_target	-0.364742	0.414522	Tom is a very close friend, but he's not my boyfriend.
+v52_weighted_fvt_conv5way_step30000	p430	csb_Latn	v5_target	0.067051	-0.355338	Jô sã czëjã nôszczestlëvszi, cjéj jô bjegóm.
+v52_weighted_fvt_conv5way_step30000	p431	eng_Latn	v5_target	-0.446122	0.325606	I feel happiest when I'm running.
+v52_weighted_fvt_conv5way_step30000	p432	csb_Latn	v5_target	-0.120889	-0.140813	Ten starëszk je, jak to sã rzecze, chòdzõci słovôrz.
+v52_weighted_fvt_conv5way_step30000	p433	eng_Latn	v5_target	-0.349757	0.346330	That old man is, so to speak, a walking dictionary.
+v52_weighted_fvt_conv5way_step30000	p434	csb_Latn	v5_target	0.172708	-0.298987	Tom a Mary sã pòtka v lazaretovim bùfece, v dzénj smjerce Maryczënéwo tatka.
+v52_weighted_fvt_conv5way_step30000	p435	eng_Latn	v5_target	-0.238778	0.425246	Tom and Mary met in the hospital cafeteria the day Mary's father died.
+v52_weighted_fvt_conv5way_step30000	p436	csb_Latn	v5_target	-0.344576	-0.361607	Jô całi czas gòrznô bëła.
+v52_weighted_fvt_conv5way_step30000	p437	eng_Latn	v5_target	-0.490053	0.095815	I was nervous the whole time.
+v52_weighted_fvt_conv5way_step30000	p438	csb_Latn	v5_target	-0.221581	-0.356957	Chcesz të perscji vëknõc?
+v52_weighted_fvt_conv5way_step30000	p439	eng_Latn	v5_target	-0.444594	0.205854	Do you want to learn Persian?
+v52_weighted_fvt_conv5way_step30000	p440	csb_Latn	v5_target	-0.200859	-0.569712	Jô móm jabkò.
+v52_weighted_fvt_conv5way_step30000	p441	eng_Latn	v5_target	-0.579120	-0.063656	I have an apple.
+v52_weighted_fvt_conv5way_step30000	p442	csb_Latn	v5_target	-0.209716	-0.401135	Pòd mòjimi vërami je straszëdło.
+v52_weighted_fvt_conv5way_step30000	p443	eng_Latn	v5_target	-0.421678	0.307538	There is a monster under my bed.
+v52_weighted_fvt_conv5way_step30000	p444	csb_Latn	v5_target	-0.243290	-0.289491	Tom chce nasz wodkôz przed pôłnjã.
+v52_weighted_fvt_conv5way_step30000	p445	eng_Latn	v5_target	-0.502280	0.072563	Tom wants our report before lunch.
+v52_weighted_fvt_conv5way_step30000	p446	csb_Latn	v5_target	-0.267813	-0.531688	Jô lúbjã zajce.
+v52_weighted_fvt_conv5way_step30000	p447	eng_Latn	v5_target	-0.531570	-0.072013	I like hares.
+v52_weighted_fvt_conv5way_step30000	p448	csb_Latn	v5_target	-0.339675	-0.037277	Jô mëslił, że chcesz sã rozdac.
+v52_weighted_fvt_conv5way_step30000	p449	eng_Latn	v5_target	-0.623859	0.228860	I thought you wanted a divorce.
+v52_weighted_fvt_conv5way_step30000	p450	csb_Latn	v5_target	-0.359129	-0.447053	Je Tómk wumarłi?
+v52_weighted_fvt_conv5way_step30000	p451	eng_Latn	v5_target	-0.443000	-0.140777	Is Tom dead?
+v52_weighted_fvt_conv5way_step30000	p452	csb_Latn	v5_target	-0.262066	-0.369098	Chcã sã havajszczëznë wuczëc.
+v52_weighted_fvt_conv5way_step30000	p453	eng_Latn	v5_target	-0.551564	0.096761	I want to learn Hawaiian.
+v52_weighted_fvt_conv5way_step30000	p454	csb_Latn	v5_target	-0.004652	-0.288312	Jô sã mòcno pòspjévôł, temù jem vzõł taksóvkã.
+v52_weighted_fvt_conv5way_step30000	p455	eng_Latn	v5_target	-0.326417	0.438911	As I was in a hurry, I had to take a taxi.
+v52_weighted_fvt_conv5way_step30000	p456	csb_Latn	v5_target	-0.244298	-0.465005	Tom jinsztalëje novõ programã.
+v52_weighted_fvt_conv5way_step30000	p457	eng_Latn	v5_target	-0.488699	0.122363	Tom is installing new software.
+v52_weighted_fvt_conv5way_step30000	p458	csb_Latn	v5_target	-0.236583	-0.538789	Fadil a Layla mjeszka pòd jednim dakã.
+v52_weighted_fvt_conv5way_step30000	p459	eng_Latn	v5_target	-0.387326	0.203402	Fadil and Layla were living under the same roof.
+v52_weighted_fvt_conv5way_step30000	p460	csb_Latn	v5_target	0.102654	-0.253069	Jô jem zicher, że móm jewo gdzes pòtkóné, le nji mògã pamjãtac, chto won je.
+v52_weighted_fvt_conv5way_step30000	p461	eng_Latn	v5_target	-0.317306	0.409136	I am sure I met him somewhere, but I do not remember who he is.
+v52_weighted_fvt_conv5way_step30000	p462	csb_Latn	v5_target	-0.360279	-0.508098	Jô jem sztúdanjt.
+v52_weighted_fvt_conv5way_step30000	p463	eng_Latn	v5_target	-0.518440	0.030585	I'm a student.
+v52_weighted_fvt_conv5way_step30000	p464	csb_Latn	v5_target	-0.216346	-0.409163	Mùszã jô płacëc vprzódk?
+v52_weighted_fvt_conv5way_step30000	p465	eng_Latn	v5_target	-0.428233	0.251685	Do I have to pay in advance?
+v52_weighted_fvt_conv5way_step30000	p466	csb_Latn	v5_target	-0.402188	-0.106486	Tom mô diplomã z lesinstva.
+v52_weighted_fvt_conv5way_step30000	p467	eng_Latn	v5_target	-0.486961	0.181804	Tom has a degree in forestry.
+v52_weighted_fvt_conv5way_step30000	p468	csb_Latn	v5_target	-0.357854	-0.289564	Czas a pjõdze to je jedno.
+v52_weighted_fvt_conv5way_step30000	p469	eng_Latn	v5_target	-0.458194	-0.086720	Time is money.
+v52_weighted_fvt_conv5way_step30000	p470	csb_Latn	v5_target	-0.360834	-0.317322	Të zrobjił felã.
+v52_weighted_fvt_conv5way_step30000	p471	eng_Latn	v5_target	-0.445470	0.080717	You made an error.
+v52_weighted_fvt_conv5way_step30000	p472	csb_Latn	v5_target	-0.300782	-0.484972	Skõdkaż va jesta?
+v52_weighted_fvt_conv5way_step30000	p473	eng_Latn	v5_target	-0.446233	0.155410	Where are you from?
+v52_weighted_fvt_conv5way_step30000	p474	csb_Latn	v5_target	-0.245654	-0.343382	Ellie je barzo bjałczënô.
+v52_weighted_fvt_conv5way_step30000	p475	eng_Latn	v5_target	-0.541772	-0.108871	Ellie is very feminine.
+v52_weighted_fvt_conv5way_step30000	p476	csb_Latn	v5_target	-0.175868	-0.506045	Jô mùszã do szandaróv jic.
+v52_weighted_fvt_conv5way_step30000	p477	eng_Latn	v5_target	-0.409316	0.338385	I've got to go to the police.
+v52_weighted_fvt_conv5way_step30000	p478	csb_Latn	v5_target	-0.302894	-0.363524	Jes të ale bladi!
+v52_weighted_fvt_conv5way_step30000	p479	eng_Latn	v5_target	-0.502833	-0.088564	You look so pale.
+v52_weighted_fvt_conv5way_step30000	p480	csb_Latn	v5_target	-0.107877	-0.400653	Jakùż sã zvje pjes wod tvòjé sostrë?
+v52_weighted_fvt_conv5way_step30000	p481	eng_Latn	v5_target	-0.481019	0.257236	How is your sister's dog called?
+v52_weighted_fvt_conv5way_step30000	p482	csb_Latn	v5_target	0.046281	-0.357743	Jô mëszlã, co vszëtcë mjiższi lëdze bë mjelë na dietã jic.
+v52_weighted_fvt_conv5way_step30000	p483	eng_Latn	v5_target	-0.352873	0.305322	I think all fat people should go on a diet.
+v52_weighted_fvt_conv5way_step30000	p484	csb_Latn	v5_target	-0.264278	-0.242725	Já dáł Tomkôvi Marijin numer telefônu.
+v52_weighted_fvt_conv5way_step30000	p485	eng_Latn	v5_target	-0.375253	0.245027	I gave Tom Mary's phone number.
+v52_weighted_fvt_conv5way_step30000	p486	csb_Latn	v5_target	-0.027832	-0.463993	Ten njimá njižódnëch drëchóv.
+v52_weighted_fvt_conv5way_step30000	p487	eng_Latn	v5_target	-0.595848	0.255403	He does not have any friends.
+v52_weighted_fvt_conv5way_step30000	p488	csb_Latn	v5_target	-0.159910	-0.507034	Wôn zamk svôje wôčë.
+v52_weighted_fvt_conv5way_step30000	p489	eng_Latn	v5_target	-0.453847	0.135188	He closed his eyes.
+v52_weighted_fvt_conv5way_step30000	p490	csb_Latn	v5_target	-0.304367	-0.333038	To dô vjele lëdzi v tim parkú.
+v52_weighted_fvt_conv5way_step30000	p491	eng_Latn	v5_target	-0.426119	0.426988	There are a lot of people in the park.
+v52_weighted_fvt_conv5way_step30000	p492	csb_Latn	v5_target	-0.387855	-0.361350	To mjasto je pjãkné.
+v52_weighted_fvt_conv5way_step30000	p493	eng_Latn	v5_target	-0.566224	0.148721	The town is beautiful.
+v52_weighted_fvt_conv5way_step30000	p494	csb_Latn	v5_target	-0.059516	-0.468820	Mje sã nje vjidzi jewo ôrt gôdanjô.
+v52_weighted_fvt_conv5way_step30000	p495	eng_Latn	v5_target	-0.484216	0.297385	I do not like the way he talks.
+v52_weighted_fvt_conv5way_step30000	p496	csb_Latn	v5_target	-0.138740	-0.123085	Môja wôtčëzna je tam, gdze je môja dëša.
+v52_weighted_fvt_conv5way_step30000	p497	eng_Latn	v5_target	-0.313133	0.337673	My fatherland is there, where my soul is.
+v52_weighted_fvt_conv5way_step30000	p498	csb_Latn	v5_target	-0.107208	-0.437312	Kùleż dzévczãt je nó tim wobrazú?
+v52_weighted_fvt_conv5way_step30000	p499	eng_Latn	v5_target	-0.472738	0.304771	How many girls are there in this picture?
+v52_weighted_fvt_conv5way_step30000	p500	csb_Latn	v5_target	0.224062	-0.261888	Dzis reno mój drëch zjád všëden břád, chtëren môja sostra mjaa kûpjoné.
+v52_weighted_fvt_conv5way_step30000	p501	eng_Latn	v5_target	-0.287294	0.432339	This morning, my friends ate the fruits that my little sister had bought.
+v52_weighted_fvt_conv5way_step30000	p502	csb_Latn	v5_target	-0.150307	-0.556103	Won mô novõ mjiłosc nalazłé.
+v52_weighted_fvt_conv5way_step30000	p503	eng_Latn	v5_target	-0.454254	0.269950	He's found a new love.
+v52_weighted_fvt_conv5way_step30000	p504	csb_Latn	v5_target	0.035009	-0.222288	Jô jewo nje kùsznõł. Won kùsznõł mjã.
+v52_weighted_fvt_conv5way_step30000	p505	eng_Latn	v5_target	-0.384067	0.211509	I didn't kiss him. He kissed me.
+v52_weighted_fvt_conv5way_step30000	p506	csb_Latn	v5_target	-0.140647	-0.436032	Njichto rzúcił v Toma kam.
+v52_weighted_fvt_conv5way_step30000	p507	eng_Latn	v5_target	-0.415271	0.200452	Someone threw a rock at Tom.
+v52_weighted_fvt_conv5way_step30000	p508	csb_Latn	v5_target	-0.031112	-0.499821	Tom wocar so zmòklëznã z łësënë.
+v52_weighted_fvt_conv5way_step30000	p509	eng_Latn	v5_target	-0.329375	0.128923	Tom wiped the sweat from his forehead.
+v52_weighted_fvt_conv5way_step30000	p510	csb_Latn	v5_target	-0.396188	-0.348249	Kniżka je môłô.
+v52_weighted_fvt_conv5way_step30000	p511	eng_Latn	v5_target	-0.621628	0.114040	The book is small.
+v52_weighted_fvt_conv5way_step30000	p512	csb_Latn	v5_target	-0.109757	-0.255860	Chteż rzecze, co prosté rzeczë nje sõ dobré?
+v52_weighted_fvt_conv5way_step30000	p513	eng_Latn	v5_target	-0.362984	0.328576	Who says that simple things aren't good?
+v52_weighted_fvt_conv5way_step30000	p514	csb_Latn	v5_target	-0.029729	-0.515864	Nji móm dłëżé bòlenjô v głovje.
+v52_weighted_fvt_conv5way_step30000	p515	eng_Latn	v5_target	-0.461786	0.238383	My head doesn't ache anymore.
+v52_weighted_fvt_conv5way_step30000	p516	csb_Latn	v5_target	-0.428266	-0.304938	To nje je prôvda.
+v52_weighted_fvt_conv5way_step30000	p517	eng_Latn	v5_target	-0.578859	0.154668	This is not true.
+v52_weighted_fvt_conv5way_step30000	p518	csb_Latn	v5_target	-0.285781	-0.466579	Môce vë rezervacëjõ?
+v52_weighted_fvt_conv5way_step30000	p519	eng_Latn	v5_target	-0.449264	0.211371	Do you have a reservation?
+v52_weighted_fvt_conv5way_step30000	p520	csb_Latn	v5_target	-0.086431	-0.230452	Cjéjże sã ze mnõ wożenjisz?
+v52_weighted_fvt_conv5way_step30000	p521	eng_Latn	v5_target	-0.440075	0.331368	When are you going to marry me?
+v52_weighted_fvt_conv5way_step30000	p522	csb_Latn	v5_target	-0.276952	-0.418275	Jô znajã vszëtcji drobnotë.
+v52_weighted_fvt_conv5way_step30000	p523	eng_Latn	v5_target	-0.551880	0.164343	I know all the details.
+v52_weighted_fvt_conv5way_step30000	p524	csb_Latn	v5_target	-0.260978	-0.440280	Wogôrd nôleżi chëczóm.
+v52_weighted_fvt_conv5way_step30000	p525	eng_Latn	v5_target	-0.422130	0.247553	The garden belongs to the house.
+v52_weighted_fvt_conv5way_step30000	p526	csb_Latn	v5_target	0.041264	-0.463501	Wonji szúkalë za flachã, gdze bë mòglë telc pòstavjic.
+v52_weighted_fvt_conv5way_step30000	p527	eng_Latn	v5_target	-0.334437	0.409782	They were looking for a place at which they could pitch the tent.
+v52_weighted_fvt_conv5way_step30000	p528	csb_Latn	v5_target	-0.171461	-0.444829	Jô bë mjilé szed nazôd bënë.
+v52_weighted_fvt_conv5way_step30000	p529	eng_Latn	v5_target	-0.432393	0.223256	I'd better get back inside.
+v52_weighted_fvt_conv5way_step30000	p530	csb_Latn	v5_target	-0.084084	-0.554035	Të nje brëkùjesz mòjewo pòzvòlénjstva.
+v52_weighted_fvt_conv5way_step30000	p531	eng_Latn	v5_target	-0.482541	0.291196	You don't need my permission.
+v52_weighted_fvt_conv5way_step30000	p532	csb_Latn	v5_target	-0.285396	-0.445969	Vjidzã różã.
+v52_weighted_fvt_conv5way_step30000	p533	eng_Latn	v5_target	-0.537266	-0.073755	I see a rose.
+v52_weighted_fvt_conv5way_step30000	p534	csb_Latn	v5_target	-0.172217	-0.478054	Jidã pjechti.
+v52_weighted_fvt_conv5way_step30000	p535	eng_Latn	v5_target	-0.509021	0.000051	I go on foot.
+v52_weighted_fvt_conv5way_step30000	p536	csb_Latn	v5_target	-0.098680	-0.452603	Tómk kùsznõł jã v wobje skarnji.
+v52_weighted_fvt_conv5way_step30000	p537	eng_Latn	v5_target	-0.365329	-0.081976	Tom kissed her on both cheeks.
+v52_weighted_fvt_conv5way_step30000	p538	csb_Latn	v5_target	-0.041104	-0.527730	Vë jesce cerzplëvô bjałka.
+v52_weighted_fvt_conv5way_step30000	p539	eng_Latn	v5_target	-0.633007	0.115967	You are a patient woman.
+v52_weighted_fvt_conv5way_step30000	p540	csb_Latn	v5_target	-0.224710	-0.423337	Jô czãsto rézëjã.
+v52_weighted_fvt_conv5way_step30000	p541	eng_Latn	v5_target	-0.537230	-0.007861	I often travel.
+v52_weighted_fvt_conv5way_step30000	p542	csb_Latn	v5_target	-0.125043	-0.451732	Nje mëszlã velovac na nôblëższi velacëji.
+v52_weighted_fvt_conv5way_step30000	p543	eng_Latn	v5_target	-0.414655	0.354372	I don't plan to vote at the upcoming election.
+v52_weighted_fvt_conv5way_step30000	p544	csb_Latn	v5_target	-0.233401	-0.421002	Navjedzisz të mjã?
+v52_weighted_fvt_conv5way_step30000	p545	eng_Latn	v5_target	-0.429105	0.277018	Are you going to come visit me?
+v52_weighted_fvt_conv5way_step30000	p546	csb_Latn	v5_target	-0.208464	-0.455041	Tom robji v môłi fyrmje.
+v52_weighted_fvt_conv5way_step30000	p547	eng_Latn	v5_target	-0.461107	0.210523	Tom works for a small company.
+v52_weighted_fvt_conv5way_step30000	p548	csb_Latn	v5_target	-0.286498	-0.395470	Mòja jisba mô dva wokna.
+v52_weighted_fvt_conv5way_step30000	p549	eng_Latn	v5_target	-0.510232	0.149315	My room has two windows.
+v52_weighted_fvt_conv5way_step30000	p550	csb_Latn	v5_target	0.114443	-0.248659	Njechtërni lëdze vjerzõ, co lëczba trzënôsce przënôszô njeszczescé.
+v52_weighted_fvt_conv5way_step30000	p551	eng_Latn	v5_target	-0.301445	0.394679	Some people believe that the number 13 brings bad luck.
+v52_weighted_fvt_conv5way_step30000	p552	csb_Latn	v5_target	-0.125833	-0.362211	Przinjdzë a wuzdrzë.
+v52_weighted_fvt_conv5way_step30000	p553	eng_Latn	v5_target	-0.479376	-0.040486	Come and see.
+v52_weighted_fvt_conv5way_step30000	p554	csb_Latn	v5_target	-0.308010	-0.448477	Jô sã zvjã Sally.
+v52_weighted_fvt_conv5way_step30000	p555	eng_Latn	v5_target	-0.486578	0.102677	My name is Sally.
+v52_weighted_fvt_conv5way_step30000	p556	csb_Latn	v5_target	-0.283514	-0.242543	To je Tomóv zédzjerk.
+v52_weighted_fvt_conv5way_step30000	p557	eng_Latn	v5_target	-0.385262	0.176829	That's Tom's watch.
+v52_weighted_fvt_conv5way_step30000	p558	csb_Latn	v5_target	-0.081970	-0.468310	Acz wonji tú robjõ?
+v52_weighted_fvt_conv5way_step30000	p559	eng_Latn	v5_target	-0.505895	0.223697	What are they doing here?
+v52_weighted_fvt_conv5way_step30000	p560	csb_Latn	v5_target	-0.116924	-0.373579	Cjéjże të sã wożenjisz?
+v52_weighted_fvt_conv5way_step30000	p561	eng_Latn	v5_target	-0.477564	0.228776	When will you get married?
+v52_weighted_fvt_conv5way_step30000	p562	csb_Latn	v5_target	-0.273429	-0.310389	Perscji nje je żimcji jãzëk.
+v52_weighted_fvt_conv5way_step30000	p563	eng_Latn	v5_target	-0.497449	0.152403	Persian is not a difficult language.
+v52_weighted_fvt_conv5way_step30000	p564	csb_Latn	v5_target	-0.140040	-0.409197	Jô żdżã za autobùsã.
+v52_weighted_fvt_conv5way_step30000	p565	eng_Latn	v5_target	-0.473945	0.287485	I'm waiting for the bus.
+v52_weighted_fvt_conv5way_step30000	p566	csb_Latn	v5_target	-0.058221	-0.307992	Mój tatk vzõn mje vczerô vjeczór do kina.
+v52_weighted_fvt_conv5way_step30000	p567	eng_Latn	v5_target	-0.438718	0.297771	My father took me to the movies last night.
+v52_weighted_fvt_conv5way_step30000	p568	csb_Latn	v5_target	-0.203714	-0.510150	Móm vjele kniżk.
+v52_weighted_fvt_conv5way_step30000	p569	eng_Latn	v5_target	-0.527141	0.267791	I have a lot of books.
+v52_weighted_fvt_conv5way_step30000	p570	csb_Latn	v5_target	-0.359814	-0.417978	Mùzika a mjiłosc to je jedno.
+v52_weighted_fvt_conv5way_step30000	p571	eng_Latn	v5_target	-0.550676	-0.042054	Music is love.
+v52_weighted_fvt_conv5way_step30000	p572	csb_Latn	v5_target	-0.219386	-0.505316	Veznji ë bjéj!
+v52_weighted_fvt_conv5way_step30000	p573	eng_Latn	v5_target	-0.454606	0.155134	Take it and go!
+v52_weighted_fvt_conv5way_step30000	p574	csb_Latn	v5_target	0.224289	-0.077902	Tacjé jãzëcji jak rúscji, pòlascji, czescji a bùłgarscji majõ pòspólné słovjanscjé kòrzenje.
+v52_weighted_fvt_conv5way_step30000	p575	eng_Latn	v5_target	-0.134509	0.302364	Such languages as Russian, Polish, Czech and Bulgarian have common Slavic roots.
+v52_weighted_fvt_conv5way_step30000	p576	csb_Latn	v5_target	-0.090719	-0.371376	Wona je wosoblëvje vrazlëvô na môrz.
+v52_weighted_fvt_conv5way_step30000	p577	eng_Latn	v5_target	-0.489618	0.267885	She is exceedingly sensitive to the cold.
+v52_weighted_fvt_conv5way_step30000	p578	csb_Latn	v5_target	-0.296902	-0.394723	Je Tómk wużarti?
+v52_weighted_fvt_conv5way_step30000	p579	eng_Latn	v5_target	-0.451415	-0.371322	Is Tom drunk?
+v52_weighted_fvt_conv5way_step30000	p580	csb_Latn	v5_target	-0.256571	-0.429958	Won jú trzë lata je wumjarłi.
+v52_weighted_fvt_conv5way_step30000	p581	eng_Latn	v5_target	-0.488282	0.319581	He has been dead for three years.
+v52_weighted_fvt_conv5way_step30000	p582	csb_Latn	v5_target	-0.256328	-0.409882	Dvjérze sõ ôpen.
+v52_weighted_fvt_conv5way_step30000	p583	eng_Latn	v5_target	-0.513026	0.085410	The door is open.
+v52_weighted_fvt_conv5way_step30000	p584	csb_Latn	v5_target	-0.290982	-0.474183	Nje bãdzë głúpi.
+v52_weighted_fvt_conv5way_step30000	p585	eng_Latn	v5_target	-0.446890	0.106112	Don't be foolish.
+v52_weighted_fvt_conv5way_step30000	p586	csb_Latn	v5_target	-0.195600	-0.519006	Wona mô robòtã nalazłé.
+v52_weighted_fvt_conv5way_step30000	p587	eng_Latn	v5_target	-0.555369	0.118150	She found a job.
+v52_weighted_fvt_conv5way_step30000	p588	csb_Latn	v5_target	0.008728	-0.369648	Jô sã zavjatëjã, że wo Tomje wonji rzeklë vjele rzeczi.
+v52_weighted_fvt_conv5way_step30000	p589	eng_Latn	v5_target	-0.431267	0.326532	I bet they said a lot of things about Tom.
+v52_weighted_fvt_conv5way_step30000	p590	csb_Latn	v5_target	-0.010891	-0.478472	Të strõdë sõ dalek stõdk.
+v52_weighted_fvt_conv5way_step30000	p591	eng_Latn	v5_target	-0.522728	0.265597	Those beaches are far from here.
+v52_weighted_fvt_conv5way_step30000	p592	csb_Latn	v5_target	-0.027787	-0.483268	Won nji móże lëdac tacjéwo zortë zachòvanjô.
+v52_weighted_fvt_conv5way_step30000	p593	eng_Latn	v5_target	-0.386905	0.366560	He doesn't tolerate that type of behaviour.
+v52_weighted_fvt_conv5way_step30000	p594	csb_Latn	v5_target	-0.268162	-0.504283	Më so kúpjimë autół.
+v52_weighted_fvt_conv5way_step30000	p595	eng_Latn	v5_target	-0.565268	0.277178	We are gonna buy ourselves a car.
+v52_weighted_fvt_conv5way_step30000	p596	csb_Latn	v5_target	-0.263384	-0.028718	Ceż to je ten straszni zvãk?
+v52_weighted_fvt_conv5way_step30000	p597	eng_Latn	v5_target	-0.426954	0.104487	What is that awful noise?
+v52_weighted_fvt_conv5way_step30000	p598	csb_Latn	v5_target	-0.245263	-0.589645	Lëdze sõ njelogiczni.
+v52_weighted_fvt_conv5way_step30000	p599	eng_Latn	v5_target	-0.519263	-0.120418	Humans are illogical.
+v52_weighted_fvt_conv5way_step30000	p600	csb_Latn	v5_target	-0.243983	-0.398631	Ten sztimer pòtrzébùje kapténë.
+v52_weighted_fvt_conv5way_step30000	p601	eng_Latn	v5_target	-0.484396	0.210107	This ship needs a captain.
+v52_weighted_fvt_conv5way_step30000	p602	csb_Latn	v5_target	-0.208953	-0.184052	To, co wona rzekła, nje je richtich.
+v52_weighted_fvt_conv5way_step30000	p603	dtp_Latn	v5_target	0.706829	0.023903	Iti ngai' no ngaran di komolohingan di Yesus Kristus , i sinakagon di Daud , om i sinakagon di Abraham . Mantad nopo di 
+v52_weighted_fvt_conv5way_step30000	p604	eng_Latn	v5_target	0.032320	0.513111	The book of the generations of Jesus Christ , the son of David , the son of Abraham .
+v52_weighted_fvt_conv5way_step30000	p605	dtp_Latn	v5_target	0.554618	0.175196	I Abraham , i Isak , i Yakub , i Yohuda om i piro-piro tobpinai di Yohuda , i Piris om i Sira ( ngaran nopod tina' diyol
+v52_weighted_fvt_conv5way_step30000	p606	eng_Latn	v5_target	0.154240	0.523286	The son of Abraham was Isaac ; and the son of Isaac was Jacob ; and the sons of Jacob were Judah and his brothers ;
+v52_weighted_fvt_conv5way_step30000	p607	dtp_Latn	v5_target	0.630516	0.066773	Mantad no di Daud om gisom di natanggayan do pisangod o bansa'd Israil do hilo'd Babil om iti ngai' o ngaran do komolohi
+v52_weighted_fvt_conv5way_step30000	p608	eng_Latn	v5_target	0.183968	0.497183	And the son of Jesse was David the king ; and the son of David was Solomon by her who had been the wife of Uriah ;
+v52_weighted_fvt_conv5way_step30000	p609	dtp_Latn	v5_target	0.601107	0.066890	Mantad no di natanggayan do pisangod o bansa'd Israil do hilo'd Babil om gisom di kinosusuon di Yesus om iti ngai' o nga
+v52_weighted_fvt_conv5way_step30000	p610	eng_Latn	v5_target	0.228172	0.365572	And after the taking away to Babylon , Jechoniah had a son Shealtiel ; and Shealtiel had Zerubbabel ;
+v52_weighted_fvt_conv5way_step30000	p611	dtp_Latn	v5_target	0.653230	0.025425	Om mantad no di Abraham om gisom do napaganak i Daud , om hopod om apat o sinolusukan dot oinsanan . Om mantad no di Dau
+v52_weighted_fvt_conv5way_step30000	p612	eng_Latn	v5_target	0.275730	0.607150	So all the generations from Abraham to David are fourteen generations ; and from David to the taking away to Babylon , f
+v52_weighted_fvt_conv5way_step30000	p613	dtp_Latn	v5_target	0.709505	-0.133161	Poingkaa no susui di kinosusuon di Yesus Kristus . I Maria nopo i tina' dau , om nokopitunang no di Yusup . Nga' tontok 
+v52_weighted_fvt_conv5way_step30000	p614	eng_Latn	v5_target	0.148951	0.720274	Now the birth of Jesus Christ was in this way : when his mother Mary was going to be married to Joseph , before they cam
+v52_weighted_fvt_conv5way_step30000	p615	dtp_Latn	v5_target	0.683866	-0.202476	I Yusup nopo , i tunang di Maria diri nga' tulun dit otorodok do tumanud dot oturan do tugama' . Om pututon daa'ddi dau 
+v52_weighted_fvt_conv5way_step30000	p616	eng_Latn	v5_target	0.075812	0.618224	And Joseph , her husband , being an upright man , and not desiring to make her a public example , had a mind to put her 
+v52_weighted_fvt_conv5way_step30000	p617	dtp_Latn	v5_target	0.713766	-0.191968	Nga' maso' po di Yusup do momusorou'ddi , om pongipi no iyau . Om id suang nopo di nipi dau nga' nokokito iyau dot iso' 
+v52_weighted_fvt_conv5way_step30000	p618	eng_Latn	v5_target	0.202963	0.743001	But when he was giving thought to these things , an angel of the Lord came to him in a dream , saying , Joseph , son of 
+v52_weighted_fvt_conv5way_step30000	p619	dtp_Latn	v5_target	0.709593	-0.243304	Osusu nondo i Maria om kusai o tanak dau . Om pungaranan no kopio i tanak diri dot i Yesus , tu' iyau no popoidu' di tul
+v52_weighted_fvt_conv5way_step30000	p620	eng_Latn	v5_target	0.062988	0.680820	And she will give birth to a son ; and you will give him the name Jesus ; for he will give his people salvation from the
+v52_weighted_fvt_conv5way_step30000	p621	dtp_Latn	v5_target	0.620901	-0.307305	Om nosiliu ngai' pogi' o miagal diri nga' mamayaan di boros do Tuhan do pinolombus di nabi dau do poingkaa ,
+v52_weighted_fvt_conv5way_step30000	p622	eng_Latn	v5_target	-0.076980	0.561924	Now all this took place so that the word of the Lord by the prophet might come true ,
+v52_weighted_fvt_conv5way_step30000	p623	dtp_Latn	v5_target	0.691816	-0.220744	“ Haro nondo tondu' dit a' po nodudun do kusai do monontian om mogkosusu dot iso' o tanak do kusai . Om pungaranan nondo
+v52_weighted_fvt_conv5way_step30000	p624	eng_Latn	v5_target	0.137682	0.643659	See , the virgin will be with child , and will give birth to a son , and they will give him the name Immanuel , that is 
+v52_weighted_fvt_conv5way_step30000	p625	dtp_Latn	v5_target	0.674607	-0.317266	Om koposik poddi i Yusup , om wonsoyo' no dau o miagal di pinoboros di moloikat do Tuhan dot id dau . Om kowino' no dau 
+v52_weighted_fvt_conv5way_step30000	p626	eng_Latn	v5_target	-0.011240	0.609882	And Joseph did as the angel of the Lord had said to him , and took her as his wife ;
+v52_weighted_fvt_conv5way_step30000	p627	dtp_Latn	v5_target	0.731825	-0.142477	Nga' solinaid nopo dit a' po i Maria nosusu di tanak diri , om a' po i Yusup duminudun di Maria do miagal di wonsoyon do
+v52_weighted_fvt_conv5way_step30000	p628	eng_Latn	v5_target	-0.063912	0.598603	And he had no connection with her till she had given birth to a son ; and he gave him the name Jesus .
+v52_weighted_fvt_conv5way_step30000	p629	dtp_Latn	v5_target	0.675145	-0.193845	I Yesus nopo om pinogkosusu do hilo'd bandar do Baitlahim , it id pomogunan do Yudia . Iri nopo raja' do tontok diri om 
+v52_weighted_fvt_conv5way_step30000	p630	eng_Latn	v5_target	0.208848	0.597664	Now when the birth of Jesus took place in Beth-lehem of Judaea , in the days of Herod the king , there came wise men fro
+v52_weighted_fvt_conv5way_step30000	p631	dtp_Latn	v5_target	0.701329	-0.244207	Om boros ka diyolo' , “ Hinonggo i tanak di nosusu do sumiliu'd raja' do tulun do Yohudi ? Nokito dahai i rombituon dau 
+v52_weighted_fvt_conv5way_step30000	p632	eng_Latn	v5_target	0.074011	0.698247	Saying , Where is the King of the Jews whose birth has now taken place ? We have seen his star in the east and have come
+v52_weighted_fvt_conv5way_step30000	p633	dtp_Latn	v5_target	0.709139	-0.196741	Om kotigowo nopoddi i Raja' Horudis do nokorongou'ddi , om iri i tulun do hilo'd Yorusalim nga' nongkotigowo ngai' nogi'
+v52_weighted_fvt_conv5way_step30000	p634	eng_Latn	v5_target	0.002070	0.587565	And when it came to the ears of Herod the king , he was troubled , and all Jerusalem with him .
+v52_weighted_fvt_conv5way_step30000	p635	dtp_Latn	v5_target	0.713509	-0.246968	Om lohowo' ngai' noddi di Horudis i boyoon dot imam om i guru do Tourat do tumimung . Om uhoto' no dau iyolo' , “ Honggo
+v52_weighted_fvt_conv5way_step30000	p636	eng_Latn	v5_target	0.081539	0.636968	And he got together all the chief priests and scribes of the people , questioning them as to where the birth-place of th
+v52_weighted_fvt_conv5way_step30000	p637	dtp_Latn	v5_target	0.661326	-0.219601	Om simbar ka diyolo' , “ Hilo'd bandar do Baitlahim , i hilo'd pomogunan do Yudia . Tu' poingkaa tinulis do songulun o n
+v52_weighted_fvt_conv5way_step30000	p638	eng_Latn	v5_target	0.125277	0.531200	And they said to him , In Beth-lehem of Judaea ; for so it is said in the writings of the prophet ,
+v52_weighted_fvt_conv5way_step30000	p639	dtp_Latn	v5_target	0.713684	-0.214081	‘ Baitlahim nopo , i hilo'd pomogunan do Yudia , om okon i' ko' it okoro' kopio dot id pogialatan di bandar dot angagayo
+v52_weighted_fvt_conv5way_step30000	p640	eng_Latn	v5_target	0.243019	0.667634	You Beth-lehem , in the land of Judah , are not the least among the chiefs of Judah : out of you will come a ruler , who
+v52_weighted_fvt_conv5way_step30000	p641	dtp_Latn	v5_target	0.671310	-0.309052	Om koilo poddi i Horudis di boros do miagal diri , om pomolisok-lisok no iyau do minomolohou di tulun dit ongoilo diri .
+v52_weighted_fvt_conv5way_step30000	p642	eng_Latn	v5_target	-0.024087	0.574533	Then Herod sent for the wise men privately , and put questions to them about what time the star had been seen .
+v52_weighted_fvt_conv5way_step30000	p643	dtp_Latn	v5_target	0.731145	-0.187447	Om suhuo' no dau iyolo' do minongoi do hilo'd Baitlahim om bilinai no dau iyolo' , “ Pamanau kou no , om ihumon no kopio
+v52_weighted_fvt_conv5way_step30000	p644	eng_Latn	v5_target	0.195481	0.713199	And he sent them to Beth-lehem and said , Go and make certain where the young child is ; and when you have seen him , le
+v52_weighted_fvt_conv5way_step30000	p645	dtp_Latn	v5_target	0.672273	-0.233082	Om pamanau noddi iyolo' . Om hiri noddid tanga'd ralan , om kokito no kawagu diyolo' i rombituon di nokito diyolo' di gu
+v52_weighted_fvt_conv5way_step30000	p646	eng_Latn	v5_target	0.153622	0.640359	And after hearing the king , they went on their way ; and the star which they saw in the east went before them , till it
+v52_weighted_fvt_conv5way_step30000	p647	dtp_Latn	v5_target	0.685412	-0.157611	Om suang no iyolo' do hiri'd walai'ddi , om kokito no diyolo' i tanak om i Maria , i tina' di tanak . Om otud no iyolo' 
+v52_weighted_fvt_conv5way_step30000	p648	eng_Latn	v5_target	0.225803	0.665122	And they came into the house , and saw the young child with Mary , his mother ; and falling down on their faces they gav
+v52_weighted_fvt_conv5way_step30000	p649	dtp_Latn	v5_target	0.739224	-0.227551	Om poinsano' no iyolo'd Kinorohingan dot id suang do nipi dot a' gumuli' dot id di Horudis . Om uli' noddi iyolo' do min
+v52_weighted_fvt_conv5way_step30000	p650	eng_Latn	v5_target	0.051067	0.672841	And it was made clear to them by God in a dream that they were not to go back to Herod ; so they went into their country
+v52_weighted_fvt_conv5way_step30000	p651	dtp_Latn	v5_target	0.713203	-0.196567	Om kapamanau poddi i tulun dit ongoilo do komoyon do rombituon , om intalang no moloikat do Tuhan dot id suang do nipi d
+v52_weighted_fvt_conv5way_step30000	p652	eng_Latn	v5_target	0.209314	0.717248	And when they had gone , an angel of the Lord came to Joseph in a dream , saying , Get up and take the young child and h
+v52_weighted_fvt_conv5way_step30000	p653	dtp_Latn	v5_target	0.656311	-0.334325	Om tungag no i Yusup , om totuong iddi do tinanggayan dau i tanak om i tina' di tanak do minongoi do hilo'd Masir .
+v52_weighted_fvt_conv5way_step30000	p654	eng_Latn	v5_target	-0.100781	0.498065	So he took the young child and his mother by night , and went into Egypt ;
+v52_weighted_fvt_conv5way_step30000	p655	dtp_Latn	v5_target	0.729255	-0.201236	Om undorong nopoddi iyolo' do hilo'd Masir do gisom do napatai i Horudis . Om iyo noddi do nabayaan i pinoboros do Tuhan
+v52_weighted_fvt_conv5way_step30000	p656	eng_Latn	v5_target	0.119517	0.648336	And was there till the death of Herod ; so that the word of the Lord through the prophet might come true , Out of Egypt 
+v52_weighted_fvt_conv5way_step30000	p657	dtp_Latn	v5_target	0.694861	-0.191148	Om koilaai poddi di Horudis do nakalan iyau di tulun dit ongoilo di mantad hilo'd koulayon diri , om kotogod tomod no iy
+v52_weighted_fvt_conv5way_step30000	p658	eng_Latn	v5_target	0.232396	0.647518	Then Herod , when he saw that he had been tricked by the wise men , was very angry ; and he sent out , and put to death 
+v52_weighted_fvt_conv5way_step30000	p659	dtp_Latn	v5_target	0.250485	-0.373478	Om iyo noddi do nosiliu i pinoboros di Nabi Yoromia , do poingkaa ,
+v52_weighted_fvt_conv5way_step30000	p660	eng_Latn	v5_target	-0.166939	0.311974	Then the word of Jeremiah the prophet came true ,
+v52_weighted_fvt_conv5way_step30000	p661	dtp_Latn	v5_target	0.747268	-0.199940	“ Haro o mihad dot orongou do mantad hilo'd Rama do minglompud do mihad do mogihad . Mogihad i Rasil di tangaanak dau ; 
+v52_weighted_fvt_conv5way_step30000	p662	eng_Latn	v5_target	0.151330	0.622166	In Ramah there was a sound of weeping and great sorrow , Rachel weeping for her children , and she would not be comforte
+v52_weighted_fvt_conv5way_step30000	p663	dtp_Latn	v5_target	0.715059	-0.296598	Om kapatai poddi i Horudis , om intalang no kawagu o moloikat do Tuhan dot id di Yusup dot id suang do nipi , di hilo' p
+v52_weighted_fvt_conv5way_step30000	p664	eng_Latn	v5_target	-0.004937	0.551893	But when Herod was dead , an angel of the Lord came in a dream to Joseph in Egypt ,
+v52_weighted_fvt_conv5way_step30000	p665	dtp_Latn	v5_target	0.769204	-0.245323	Boros ka di moloikat , “ Iri nopo tulun di mamatai daa dilo tanak om nangapatai no . Om tungag nogi' om ngoyo' ilo tanak
+v52_weighted_fvt_conv5way_step30000	p666	eng_Latn	v5_target	0.134855	0.732566	Saying , Get up and take the young child and his mother , and go into the land of Israel : because they who were attempt
+v52_weighted_fvt_conv5way_step30000	p667	dtp_Latn	v5_target	0.650397	-0.342744	Om tungag noddi i Yusup , om tanggayai no dau i tanak diri om i Maria do guminuli' do hilo'd Israil .
+v52_weighted_fvt_conv5way_step30000	p668	eng_Latn	v5_target	0.006333	0.598742	And he got up , and took the young child and his mother , and came into the land of Israel .
+v52_weighted_fvt_conv5way_step30000	p669	dtp_Latn	v5_target	0.706438	-0.201717	Nga' korongou noddi i Yusup dot i Arkilaus i tanak di Horudis , o suminowoli di Horudis do suminiliu'd raja' do pomoguna
+v52_weighted_fvt_conv5way_step30000	p670	eng_Latn	v5_target	0.212676	0.677559	But when it came to his ears that Archelaus was ruling over Judaea in the place of his father Herod , he was in fear of 
+v52_weighted_fvt_conv5way_step30000	p671	dtp_Latn	v5_target	0.732682	-0.220329	Om undorong no iyau'd hilo' , dot id iso' bandar di roitan do Nasarit . Om iyo noddi do nabayaan i pinoboros di piro-pir
+v52_weighted_fvt_conv5way_step30000	p672	eng_Latn	v5_target	0.150775	0.690868	And he came and was living in a town named Nazareth : so that the word of the prophets might come true , He will be name
+v52_weighted_fvt_conv5way_step30000	p673	dtp_Latn	v5_target	0.672416	-0.331000	Om tontok noddi do ruminikot i Yohanis Gampamatis do hiri'd tana' do kowotuan do Yudia , om timpuun no iyau do monuduk .
+v52_weighted_fvt_conv5way_step30000	p674	eng_Latn	v5_target	-0.016943	0.445242	And in those days John the Baptist came preaching in the waste land of Judaea ,
+v52_weighted_fvt_conv5way_step30000	p675	dtp_Latn	v5_target	0.670988	-0.345566	Boros ka dau , “ Korologo kou no do momonsoi'd dusa , tu' a' no alaid om korikot no Pomorintaan do surga ! ” ka .
+v52_weighted_fvt_conv5way_step30000	p676	eng_Latn	v5_target	-0.062922	0.558785	Saying , Let your hearts be turned from sin ; for the kingdom of heaven is near .
+v52_weighted_fvt_conv5way_step30000	p677	dtp_Latn	v5_target	0.697954	-0.174898	Om i Yohanis no i tulun di komoyon di Nabi Yosaya , do tontok di minomoros iyau do poingkaa , “ Haro o tulun do mimboros
+v52_weighted_fvt_conv5way_step30000	p678	eng_Latn	v5_target	0.207856	0.619485	For this is he of whom Isaiah the prophet said , The voice of one crying in the waste land , Make ready the way of the L
+v52_weighted_fvt_conv5way_step30000	p679	dtp_Latn	v5_target	0.709346	-0.206650	Pakayan nopo di Yohanis om winonsoi mantad id hulu dot unta , om tagkos no dau om mantad id kulit do nintorusan . Om kan
+v52_weighted_fvt_conv5way_step30000	p680	eng_Latn	v5_target	0.034897	0.439826	Now John was clothed in camel's hair , with a leather band about him ; and his food was locusts and honey .
+v52_weighted_fvt_conv5way_step30000	p681	dtp_Latn	v5_target	0.732891	-0.140973	Om ogumu' o tulun do mantad hilo'd Yorusalim , om mantad id pointongkop do pomogunan do Yudia om mantad id piro-piro wat
+v52_weighted_fvt_conv5way_step30000	p682	eng_Latn	v5_target	-0.009073	0.460434	Then Jerusalem and all Judaea went out to him , and all the people from near Jordan ;
+v52_weighted_fvt_conv5way_step30000	p683	dtp_Latn	v5_target	0.629203	-0.338816	Om okuno' no diyolo' i dusa diyolo' , om botisai noddi iyolo' di Yohanis do hiri'd Bawang do Yordan .
+v52_weighted_fvt_conv5way_step30000	p684	eng_Latn	v5_target	-0.060323	0.599556	And they were given baptism by him in the river Jordan , saying openly that they had done wrong .
+v52_weighted_fvt_conv5way_step30000	p685	dtp_Latn	v5_target	0.688046	-0.265650	Om ogumu' i' daa o tulun do Parisi om Saduki do ruminikot do mongoi pokibatis . Nga' soira' di nokito di Yohanis iyolo' 
+v52_weighted_fvt_conv5way_step30000	p686	eng_Latn	v5_target	0.256870	0.656511	But when he saw a number of the Pharisees and Sadducees coming to his baptism , he said to them , Offspring of snakes , 
+v52_weighted_fvt_conv5way_step30000	p687	dtp_Latn	v5_target	0.420502	-0.501850	Pointalango' po dokoyu do nokorologo kopio kou do momonsoi'd dusa .
+v52_weighted_fvt_conv5way_step30000	p688	eng_Latn	v5_target	-0.350771	0.375489	Let your change of heart be seen in your works :
+v52_weighted_fvt_conv5way_step30000	p689	dtp_Latn	v5_target	0.697250	-0.276966	Kada' nogi' dokoyu soroho' do koidu' kou do mantad id hukuman , do momoros kou piya dot i Abraham o taki dokoyu . Ilaai 
+v52_weighted_fvt_conv5way_step30000	p690	eng_Latn	v5_target	0.082697	0.666912	And say not to yourselves , We have Abraham for our father ; because I say to you that God is able from these stones to 
+v52_weighted_fvt_conv5way_step30000	p691	dtp_Latn	v5_target	0.738376	-0.192634	Nokosodia' no kapak do panagad di kayu do porotopon do tana' o pananagad . Pointikid-tikid do kayu dit a' mongua' dot os
+v52_weighted_fvt_conv5way_step30000	p692	eng_Latn	v5_target	0.154958	0.625288	And even now the axe is put to the root of the trees ; every tree then which does not give good fruit is cut down , and 
+v52_weighted_fvt_conv5way_step30000	p693	dtp_Latn	v5_target	0.687966	-0.253744	Iyoho' nopo om waig noo pamatis ku dokoyu do popointalang do nokorologo kou do momonsoi'd dusa ; nga' iyau nopo i rumiko
+v52_weighted_fvt_conv5way_step30000	p694	eng_Latn	v5_target	0.217723	0.714835	Truly , I give baptism with water to those of you whose hearts are changed ; but he who comes after me is greater than I
+v52_weighted_fvt_conv5way_step30000	p695	dtp_Latn	v5_target	0.700890	-0.231692	Poingigit no dau o bakul do pangatap di gandum do gisom dot osompipian . Timungon nondo dau i gandum do posuangon do hir
+v52_weighted_fvt_conv5way_step30000	p696	eng_Latn	v5_target	0.202400	0.646549	In whose hand is the instrument with which he will make clean his grain ; he will put the good grain in his store , but 
+v52_weighted_fvt_conv5way_step30000	p697	dtp_Latn	v5_target	0.682010	-0.217490	Om tongkiad no i Yesus do mantad hilo'd Galilia om pakayaai no do hiri'd Bawang do Yordan do mongoi pokibatis di Yohanis
+v52_weighted_fvt_conv5way_step30000	p698	eng_Latn	v5_target	-0.039036	0.560880	Then Jesus came from Galilee to John at the Jordan , to be given baptism by him .
+v52_weighted_fvt_conv5way_step30000	p699	dtp_Latn	v5_target	0.732300	-0.172016	Nga' mada' i' daa i Yohanis do mamatis di Yesus . Boros ka di Yohanis , “ Iyoho' nogi' o tosorupai do botisan nu . Nga' 
+v52_weighted_fvt_conv5way_step30000	p700	eng_Latn	v5_target	0.018700	0.655511	But John would have kept him back , saying , It is I who have need of baptism from you , and do you come to me ?
+v52_weighted_fvt_conv5way_step30000	p701	dtp_Latn	v5_target	0.753505	-0.156905	Nga' boros ka di Yesus do suminimbar , “ Botisai oku nopo diya' do baino' poo . Om owonsoi ngai' to indo i korohian do K
+v52_weighted_fvt_conv5way_step30000	p702	eng_Latn	v5_target	0.127096	0.670877	But Jesus made answer , saying to him , Let it be so now : because so it is right for us to make righteousness complete 
+v52_weighted_fvt_conv5way_step30000	p703	dtp_Latn	v5_target	0.660324	-0.291208	Om kobotisai poddi i Yesus , om tilombus nopo iyau do tuminindal . Om sigog nopoddi do miniangkang o tawan om kokito no 
+v52_weighted_fvt_conv5way_step30000	p704	eng_Latn	v5_target	0.176117	0.681221	And Jesus , having been given baptism , straight away went up from the water ; and , the heavens opening , he saw the Sp
+v52_weighted_fvt_conv5way_step30000	p705	dtp_Latn	v5_target	0.725367	-0.225782	Om korongou noddi o boros do Kinorohingan do mantad hilo'd tawan do poingkaa , “ Iti no i Tanak ku di kosianan ku . Om i
+v52_weighted_fvt_conv5way_step30000	p706	eng_Latn	v5_target	0.029160	0.646884	And a voice came out of heaven , saying , This is my dearly loved Son , with whom I am well pleased .
+v52_weighted_fvt_conv5way_step30000	p707	dtp_Latn	v5_target	0.689960	-0.270054	Om angatai noddi i Yesus di Rusod do Kinorohingan do kuminaa do hiri'd tana' do kowotuan , om opogumbalan i' iyau do Rog
+v52_weighted_fvt_conv5way_step30000	p708	eng_Latn	v5_target	-0.050820	0.565451	Then Jesus was sent by the Spirit into the waste land to be tested by the Evil One .
+v52_weighted_fvt_conv5way_step30000	p709	dtp_Latn	v5_target	0.554354	-0.327463	Om a' i Yesus minakan do solinaid dot apat nohopod o tadau om apat nohopod o totuong . Om louson tomod diri iyau .
+v52_weighted_fvt_conv5way_step30000	p710	eng_Latn	v5_target	-0.030806	0.540636	And after going without food for forty days and forty nights , he was in need of it .
+v52_weighted_fvt_conv5way_step30000	p711	dtp_Latn	v5_target	0.700055	-0.245359	Om rikot noddi i Rogon om boro-boros no di Yesus , “ Okon toi ko' Tanak ko'd Kinorohingan ? Suhuo' pogi' ilo watu do sum
+v52_weighted_fvt_conv5way_step30000	p712	eng_Latn	v5_target	0.058107	0.621265	And the Evil One came and said to him , If you are the Son of God , give the word for these stones to become bread .
+v52_weighted_fvt_conv5way_step30000	p713	dtp_Latn	v5_target	0.716035	-0.215534	Nga' boros kad i Yesus , “ Nokotulis no dot id Buuk do Kinorohingan o poingkaa : Okon i' ko' roti noo o kapasi'd tulun ,
+v52_weighted_fvt_conv5way_step30000	p714	eng_Latn	v5_target	0.105912	0.668378	But he made answer and said , It is in the Writings , Bread is not man's only need , but every word which comes out of t
+v52_weighted_fvt_conv5way_step30000	p715	dtp_Latn	v5_target	0.735000	-0.086186	Om igitai po di Rogon i Yesus do minongoi do hilo'd Yorusalim , i bandar dot olidang . Om hirio' no di Rogon i Yesus id 
+v52_weighted_fvt_conv5way_step30000	p716	eng_Latn	v5_target	0.086848	0.618021	Then the Evil One took him to the holy town ; and he put him on the highest point of the Temple and said to him ,
+v52_weighted_fvt_conv5way_step30000	p717	dtp_Latn	v5_target	0.702441	-0.235746	Om boros kaddi di Rogon dot id di Yesus , “ Okon toi ko' Tanak ko'd Kinorohingan ? Tuhun pogi' , tu' haro i' o nokotulis
+v52_weighted_fvt_conv5way_step30000	p718	eng_Latn	v5_target	0.214766	0.714318	If you are the Son of God , let yourself go down ; for it is in the Writings , He will give his angels care over you ; a
+v52_weighted_fvt_conv5way_step30000	p719	dtp_Latn	v5_target	0.704687	-0.177017	Om boros ka di Yesus , “ Nga' haro i' o nokotulis dot id Buuk do Kinorohingan do poingkaa , ‘ Kada' pogumbal do Tuhan i 
+v52_weighted_fvt_conv5way_step30000	p720	eng_Latn	v5_target	-0.073520	0.596434	Jesus said to him , Again it is in the Writings , You may not put the Lord your God to the test .
+v52_weighted_fvt_conv5way_step30000	p721	dtp_Latn	v5_target	0.733690	-0.208677	Om igitai po kawagu di Rogon i Yesus do minongoi dot id iso' o nuluhon dit akawas kopio . Om potuduko' no di Rogon dot i
+v52_weighted_fvt_conv5way_step30000	p722	eng_Latn	v5_target	0.132474	0.661354	Again , the Evil One took him up to a very high mountain , and let him see all the kingdoms of the world and the glory o
+v52_weighted_fvt_conv5way_step30000	p723	dtp_Latn	v5_target	0.732355	-0.269661	Om boros ka di Rogon dot id di Yesus , “ Patahakon ngai' ku nopo daa iti dot id diya' , ondung motud ko no do tumuku' do
+v52_weighted_fvt_conv5way_step30000	p724	eng_Latn	v5_target	-0.001526	0.681407	And he said to him , All these things will I give you , if you will go down on your face and give me worship .
+v52_weighted_fvt_conv5way_step30000	p725	dtp_Latn	v5_target	0.735931	-0.129818	Om boros ka di Yesus , “ Poggidu' no oi Gampamalid ! Nokotulis no dot id Buuk do Kinorohingan o poingkaa , ‘ Tuku' no do
+v52_weighted_fvt_conv5way_step30000	p726	eng_Latn	v5_target	0.061006	0.626510	Then said Jesus to him , Away , Satan : for it is in the Writings , Give worship to the Lord your God and be his servant
+v52_weighted_fvt_conv5way_step30000	p727	dtp_Latn	v5_target	0.494011	-0.329887	Om tongkiad noddi di Yesus i Rogon . Om rikot no piro-piro moloikat do minongoi ponguhup di Yesus .
+v52_weighted_fvt_conv5way_step30000	p728	eng_Latn	v5_target	-0.058824	0.622169	Then the Evil One went away from him , and angels came and took care of him .
+v52_weighted_fvt_conv5way_step30000	p729	dtp_Latn	v5_target	0.598358	-0.365389	Om korongou poddi i Yesus do nokogiil i Yohanis , om pakayaai no dau do hilo'd Galilia .
+v52_weighted_fvt_conv5way_step30000	p730	eng_Latn	v5_target	-0.035292	0.599226	Now when it came to his ears that John had been put in prison , he went away to Galilee ;
+v52_weighted_fvt_conv5way_step30000	p731	dtp_Latn	v5_target	0.711084	-0.167575	Om undaliu no iyau do mantad hilo'd Nasarit om ongoi no iyau iyon do hiri'd bandar do Kapornaum , i tid disan di Tasik G
+v52_weighted_fvt_conv5way_step30000	p732	eng_Latn	v5_target	0.267793	0.543187	And going away from Nazareth , he came and made his living-place in Capernaum , which is by the sea , in the country of 
+v52_weighted_fvt_conv5way_step30000	p733	dtp_Latn	v5_target	0.585186	-0.201564	Om kabayaai noddi i pinoboros di Nabi Yosaya , di nowonsoi di Yesus o miagal diri . Poingkaa o pinoboros di Nabi Yosaya 
+v52_weighted_fvt_conv5way_step30000	p734	eng_Latn	v5_target	-0.127315	0.406479	So that the word of the prophet Isaiah might come true ,
+v52_weighted_fvt_conv5way_step30000	p735	dtp_Latn	v5_target	0.733068	-0.140214	“ Iri nopo tana' do Sibulon om tana' do Naptali , i ralan do kumaa hilo'd tasik , i tid soborong do Bawang do Yordan , i
+v52_weighted_fvt_conv5way_step30000	p736	eng_Latn	v5_target	0.226851	0.468454	The land of Zebulun and the land of Naphtali , by the way of the sea , the other side of Jordan , Galilee of the Gentile
+v52_weighted_fvt_conv5way_step30000	p737	dtp_Latn	v5_target	0.700754	-0.205529	Kokito indo do tanawau di kosorong kopio i tulun di poingiyon dot id totuong ! Oulinahan indo do tanawau di kosorong kop
+v52_weighted_fvt_conv5way_step30000	p738	eng_Latn	v5_target	0.106236	0.619301	The people who were in the dark saw a great light , and to those in the land of the shade of death did the dawn come up 
+v52_weighted_fvt_conv5way_step30000	p739	dtp_Latn	v5_target	0.730325	-0.259016	Om mantad poddi om popinsusui no i Yesus do poingkaa , “ Korologo kou nod momonsoi'd dusa , tu' a' no alaid om korikot n
+v52_weighted_fvt_conv5way_step30000	p740	eng_Latn	v5_target	0.049562	0.664009	From that time Jesus went about preaching and saying , Let your hearts be turned from sin , for the kingdom of heaven is
+v52_weighted_fvt_conv5way_step30000	p741	dtp_Latn	v5_target	0.662295	-0.192641	Om tontok di manau-panau i Yesus do hiri'd tisan di Tasik Galilia , om kokito no dau o duwo tulun do monginginsada' di m
+v52_weighted_fvt_conv5way_step30000	p742	eng_Latn	v5_target	0.246695	0.682493	And when he was walking by the sea of Galilee , he saw two brothers , Simon , whose other name was Peter , and Andrew , 
+v52_weighted_fvt_conv5way_step30000	p743	dtp_Latn	v5_target	0.684583	-0.309136	Om boros ka di Yesus dot id diyolo' , “ Tanud kou pogi' doho' , om tudukan ku i' iyokoyu do mamarambot do tulun , ” ka d
+v52_weighted_fvt_conv5way_step30000	p744	eng_Latn	v5_target	-0.025963	0.596657	And he said to them , Come after me , and I will make you fishers of men .
+v52_weighted_fvt_conv5way_step30000	p745	dtp_Latn	v5_target	0.485017	-0.471206	Om olomus nopoddi iyolo' do tuminongkiad di rambot om tanud no di Yesus .
+v52_weighted_fvt_conv5way_step30000	p746	eng_Latn	v5_target	-0.255007	0.376220	And straight away they let go the nets and went after him .
+v52_weighted_fvt_conv5way_step30000	p747	dtp_Latn	v5_target	0.720717	-0.140769	Om lombus po kawagu i Yesus do minamanau , om kokito no dau o duwo kawagu tulun do miobpinai . Iyolo' nopo nga' i Yakub 
+v52_weighted_fvt_conv5way_step30000	p748	eng_Latn	v5_target	0.279630	0.660877	And going on from there he saw two other brothers , James , the son of Zebedee , and John , his brother , in the boat wi
+v52_weighted_fvt_conv5way_step30000	p749	dtp_Latn	v5_target	0.635325	-0.185835	Om diiri i' om diiri do tinongkiadan diyolo' i parau' om i tapa' diyolo' , om tanud no iyolo' di Yesus .
+v52_weighted_fvt_conv5way_step30000	p750	eng_Latn	v5_target	-0.205010	0.477144	And they went straight from the boat and their father and came after him .
+v52_weighted_fvt_conv5way_step30000	p751	dtp_Latn	v5_target	0.686528	-0.230411	Om tongkop no i Yesus di pomogunan do Galilia . Om minonuduk iyau do hiri'd walai'd sasambayangan om pinopopinsusui iyau
+v52_weighted_fvt_conv5way_step30000	p752	eng_Latn	v5_target	0.202065	0.621337	And Jesus went about in all Galilee , teaching in their Synagogues and preaching the good news of the kingdom , and maki
+v52_weighted_fvt_conv5way_step30000	p753	dtp_Latn	v5_target	0.679529	-0.219976	Om nokotongkop o habar di Yesus dot id do pomogunan do Siria , gisom dot ogumu' tomod diri o tulun do ruminikot dot id d
+v52_weighted_fvt_conv5way_step30000	p754	eng_Latn	v5_target	0.223999	0.688590	And news of him went out through all Syria ; and they took to him all who were ill with different diseases and pains , t
+v52_weighted_fvt_conv5way_step30000	p755	dtp_Latn	v5_target	0.703867	-0.052394	Iri nopo tulun di minoyo' di Yesus do maso'ddi nga' ogumu' kopio . Haro mantad hilo'd Galilia , om haro mantad hilo'd Ho
+v52_weighted_fvt_conv5way_step30000	p756	eng_Latn	v5_target	0.140249	0.487264	And there went after him great numbers from Galilee and Decapolis and Jerusalem and Judaea and from the other side of Jo
+v52_weighted_fvt_conv5way_step30000	p757	dtp_Latn	v5_target	0.730246	-0.213079	Om soira' di nokito di Yesus i tulun dot ogumu'ddi , om takad no iyau do hiri'd nulu-nulu , om irikau no . Om rikot ngai
+v52_weighted_fvt_conv5way_step30000	p758	eng_Latn	v5_target	0.042319	0.594691	And seeing great masses of people he went up into the mountain ; and when he was seated his disciples came to him .
+v52_weighted_fvt_conv5way_step30000	p759	dtp_Latn	v5_target	0.097191	-0.556077	om timpuun no iyau do minonuduk diyolo' :
+v52_weighted_fvt_conv5way_step30000	p760	eng_Latn	v5_target	-0.184004	0.407335	And with these words he gave them teaching , saying ,
+v52_weighted_fvt_conv5way_step30000	p761	dtp_Latn	v5_target	0.683488	-0.358485	Boros ka dau , “ Olumaag no i tulun di kopuriman do mosikin dot id suang do rusod ; tu' kasanganu indo iyolo' do Pomorin
+v52_weighted_fvt_conv5way_step30000	p762	eng_Latn	v5_target	-0.103004	0.527192	Happy are the poor in spirit : for the kingdom of heaven is theirs .
+v52_weighted_fvt_conv5way_step30000	p763	dtp_Latn	v5_target	0.355856	-0.501139	Olumaag no i tulun di tumongob ; tu' insasamadan i' iyolo'd Kinorohingan !
+v52_weighted_fvt_conv5way_step30000	p764	eng_Latn	v5_target	-0.253017	0.433889	Happy are those who are sad : for they will be comforted .
+v52_weighted_fvt_conv5way_step30000	p765	dtp_Latn	v5_target	0.493441	-0.475359	Olumaag no i tulun dit osiriba' o ginawo ; tu' asanganu indo diyolo' iti pomogunan .
+v52_weighted_fvt_conv5way_step30000	p766	eng_Latn	v5_target	-0.174639	0.392306	Happy are the gentle : for the earth will be their heritage .
+v52_weighted_fvt_conv5way_step30000	p767	dtp_Latn	v5_target	0.722423	-0.242095	Olumaag no i tulun dit orohian do momonsoi'd korohian do Kinorohingan , do poinghalib mantad ko' korohiano' do minum ko'
+v52_weighted_fvt_conv5way_step30000	p768	eng_Latn	v5_target	-0.047026	0.576810	Happy are those whose heart's desire is for righteousness : for they will have their desire .
+v52_weighted_fvt_conv5way_step30000	p769	dtp_Latn	v5_target	0.578642	-0.359257	Olumaag no i tulun dit osianan do tulun do suwai ; tu' iyolo' nga' kosianan indo do Kinorohingan !
+v52_weighted_fvt_conv5way_step30000	p770	eng_Latn	v5_target	-0.195449	0.442569	Happy are those who have mercy : for they will be given mercy .
+v52_weighted_fvt_conv5way_step30000	p771	dtp_Latn	v5_target	0.445626	-0.536647	Olumaag no i tulun dit olidang o ginawo ; tu' kokito indo iyolo'd Kinorohingan .
+v52_weighted_fvt_conv5way_step30000	p772	eng_Latn	v5_target	-0.250894	0.356778	Happy are the clean in heart : for they will see God .
+v52_weighted_fvt_conv5way_step30000	p773	dtp_Latn	v5_target	0.406875	-0.542795	Olumaag no i tulun di popiulud ; tu' roitan indo iyolo'd tangaanak do Kinorohingan !
+v52_weighted_fvt_conv5way_step30000	p774	eng_Latn	v5_target	-0.144496	0.493319	Happy are the peacemakers : for they will be named sons of God .
+v52_weighted_fvt_conv5way_step30000	p775	dtp_Latn	v5_target	0.637397	-0.370361	Olumaag no i tulun dit inggoriton tu' momonsoi iyolo'd korohian do Kinorohingan ; kasanganu indo iyolo' do Pomorintaan d
+v52_weighted_fvt_conv5way_step30000	p776	eng_Latn	v5_target	-0.000545	0.601799	Happy are those who are attacked on account of righteousness : for the kingdom of heaven will be theirs .
+v52_weighted_fvt_conv5way_step30000	p777	dtp_Latn	v5_target	0.648602	-0.388704	Olumaag kou no dot indaraaton kou piya , om inggoriton , om pinsingudutan , dot i tumanud kou doho' o kopongiyo'ddian .
+v52_weighted_fvt_conv5way_step30000	p778	eng_Latn	v5_target	0.092366	0.629059	Happy are you when men give you a bad name , and are cruel to you , and say all evil things against you falsely , becaus
+v52_weighted_fvt_conv5way_step30000	p779	dtp_Latn	v5_target	0.741739	-0.253254	Tu' iri piro-piro nabi dit id gulu ko' iyokoyu nga' noinggorit i' do miagal diri . Kotood kou no om kooropod kou no kopi
+v52_weighted_fvt_conv5way_step30000	p780	eng_Latn	v5_target	0.043377	0.610229	Be glad and full of joy ; for great is your reward in heaven : for so were the prophets attacked who were before you .
+v52_weighted_fvt_conv5way_step30000	p781	dtp_Latn	v5_target	0.695622	-0.238687	Om boros ka kawagu di Yesus , “ Iyokoyu no miagal do silaon dot id toinsanan o tulun do hiti'd pomogunan . Nga' ondung m
+v52_weighted_fvt_conv5way_step30000	p782	eng_Latn	v5_target	0.176384	0.655328	You are the salt of the earth ; but if its taste goes from the salt , how will you make it salt again ? it is then good 
+v52_weighted_fvt_conv5way_step30000	p783	dtp_Latn	v5_target	0.607135	-0.415883	Iyokoyu no miagal do tanawau diti pomogunan . Iri nopo bandar dit id timpak do nulu-nulu om a' no milo'd lisokon .
+v52_weighted_fvt_conv5way_step30000	p784	eng_Latn	v5_target	-0.070370	0.545685	You are the light of the world . A town put on a hill may be seen by all .
+v52_weighted_fvt_conv5way_step30000	p785	dtp_Latn	v5_target	0.687780	-0.224008	Aiso' i' o tulun di modtutud do lampung om tinggouban nogindod kakanan . Suwai ko' potimpakon i' dau i lampung diri dot 
+v52_weighted_fvt_conv5way_step30000	p786	eng_Latn	v5_target	0.128082	0.633933	And a burning light is not put under a vessel , but on its table ; so that its rays may be shining on all who are in the
+v52_weighted_fvt_conv5way_step30000	p787	dtp_Latn	v5_target	0.720666	-0.285775	Om iyo nogiddi tu' potitihon no kopio o tanawau dokoyu dot id tulun do suwai , om okito indo diyolo' i wonsoyon dokoyu d
+v52_weighted_fvt_conv5way_step30000	p788	eng_Latn	v5_target	0.070885	0.637043	Even so let your light be shining before men , so that they may see your good works and give glory to your Father in hea
+v52_weighted_fvt_conv5way_step30000	p789	dtp_Latn	v5_target	0.717081	-0.165847	Om boros ka di Yesus , “ Kada' kou pomusorou do kinorikatan ku nopo om mongoi pananus ngai' di Tourat di Musa om i ponud
+v52_weighted_fvt_conv5way_step30000	p790	eng_Latn	v5_target	0.067860	0.619997	Let there be no thought that I have come to put an end to the law or the prophets . I have not come for destruction , bu
+v52_weighted_fvt_conv5way_step30000	p791	dtp_Latn	v5_target	0.713392	-0.270268	Ilaai no dokoyu ! Do solinaid nopod haro o tawan om pomogunan , om iso' pod hurup ko' titik do hurup dit okooro' dot id 
+v52_weighted_fvt_conv5way_step30000	p792	eng_Latn	v5_target	0.137320	0.665267	Truly I say to you , Till heaven and earth come to an end , not the smallest letter or part of a letter will in any way 
+v52_weighted_fvt_conv5way_step30000	p793	dtp_Latn	v5_target	0.686138	-0.109018	Iyo nopoddi , om isai nopo tulun di tumolibamban dot ongoiso' piya di toturan diri , dot iri piya daa i toturan dit okoo
+v52_weighted_fvt_conv5way_step30000	p794	eng_Latn	v5_target	0.251094	0.692705	Whoever then goes against the smallest of these laws , teaching men to do the same , will be named least in the kingdom 
+v52_weighted_fvt_conv5way_step30000	p795	dtp_Latn	v5_target	0.684799	-0.281132	Iyo nopoddi , om soro-soroho' no dokoyu : Milo kou id sumuang di Pomorintaan do surga , ondung poimaha' o kotorodoko' do
+v52_weighted_fvt_conv5way_step30000	p796	eng_Latn	v5_target	0.207455	0.687751	For I say to you , If your righteousness is not greater than the righteousness of the scribes and Pharisees , you will n
+v52_weighted_fvt_conv5way_step30000	p797	dtp_Latn	v5_target	0.744473	-0.157053	Om boros ka kawagu di Yesus , “ Koilo kou i' di ponudukan di taki-aki toko' do poingkaa , ‘ Kada' kou pamatai ; tu' isai
+v52_weighted_fvt_conv5way_step30000	p798	eng_Latn	v5_target	0.085597	0.676310	You have knowledge that it was said in old times , You may not put to death ; and , Whoever puts to death will be in dan
+v52_weighted_fvt_conv5way_step30000	p799	dtp_Latn	v5_target	0.715190	-0.126066	Nga' baino' nopo om poingkaa o doho'd poboroson dot id dokoyu : Isai nopo i tumogod do tulun do suwai , om bisaraon no ;
+v52_weighted_fvt_conv5way_step30000	p800	eng_Latn	v5_target	0.217420	0.681315	But I say to you that everyone who is angry with his brother will be in danger of being judged ; and he who says to his 
+v52_weighted_fvt_conv5way_step30000	p801	dtp_Latn	v5_target	0.683499	-0.304941	Iyo nopoddi , om ondung haro o tiso' dokoyu di maso'd papatahak do porsombahan dot id Kinorohingan , om sigog indo dot o
+v52_weighted_fvt_conv5way_step30000	p802	eng_Latn	v5_target	0.003072	0.622331	If then you are making an offering at the altar and there it comes to your mind that your brother has something against 
+v52_weighted_fvt_conv5way_step30000	p803	dtp_Latn	v5_target	0.715000	-0.261520	om mositi' no do tongkiadan po dau i porsombahan dau'ddi do hiri'd dotimbabaan di pananaraban do porsombahan , om mongoi
+v52_weighted_fvt_conv5way_step30000	p804	xav_Latn	v5_target	0.499828	0.310460	Ã hã rob'ui'éré hã Zezu Cristuhu hi'rata norĩ za'ratazé . Ta hã Dawihi nhihudu , duré Abra'ãhã nhihudu .
+v52_weighted_fvt_conv5way_step30000	p805	xav_Latn	v5_target	0.451382	0.159522	Abra'ã hã Izatihi mama . Izati hã Zacoho mama . Zaco hã Zuda norĩ mama , tisisãnawã norĩ me .
+v52_weighted_fvt_conv5way_step30000	p806	xav_Latn	v5_target	0.595926	0.163746	Zuda hã Perezihi mama , duré Zeraha mama . Ĩna zahuré hã Tama na ĩsisi hã . Duré Perezi hã Esirõhõ mama . Duré Esirõ hã 
+v52_weighted_fvt_conv5way_step30000	p807	eng_Latn	v5_target	0.264135	0.429907	And the sons of Judah were Perez and Zerah by Tamar ; and the son of Perez was Hezron ; and the son of Hezron was Ram ;
+v52_weighted_fvt_conv5way_step30000	p808	xav_Latn	v5_target	0.479297	0.060772	Arã hã Aminadabehe mama . Duré Aminadabe hã Nasõhõ mama . Duré Nasõ hã Samohõ mama .
+v52_weighted_fvt_conv5way_step30000	p809	eng_Latn	v5_target	0.235561	0.342894	And the son of Ram was Amminadab ; and the son of Amminadab was Nahshon ; and the son of Nahshon was Salmon ;
+v52_weighted_fvt_conv5way_step30000	p810	xav_Latn	v5_target	0.588214	0.302604	Samo hã Bu'azihi mama . Bu'azihi na hã Ra'abi na ĩsisi hã . Duré Bu'azi hã Obedihi mama . Obedihi na nhisi hã , Ruti na 
+v52_weighted_fvt_conv5way_step30000	p811	eng_Latn	v5_target	0.246329	0.372563	And the son of Salmon by Rahab was Boaz ; and the son of Boaz by Ruth was Obed ; and the son of Obed was Jesse ;
+v52_weighted_fvt_conv5way_step30000	p812	xav_Latn	v5_target	0.591624	0.123032	Zésé hã Dawihi mama , dama ĩpire mama . Dawi hã Saromahã mama . Uri'asi ĩdâ'â mro wa , ma podo , Saroma hã .
+v52_weighted_fvt_conv5way_step30000	p813	xav_Latn	v5_target	0.487400	0.106633	Saroma hã Robu'ãhã mama . Duré Robu'ã hã Abizaha mama . Duré Abiza hã Azaha mama .
+v52_weighted_fvt_conv5way_step30000	p814	eng_Latn	v5_target	0.277180	0.381336	And the son of Solomon was Rehoboam ; and the son of Rehoboam was Abijah ; and the son of Abijah was Asa ;
+v52_weighted_fvt_conv5way_step30000	p815	xav_Latn	v5_target	0.481131	0.094799	Aza hã Zosapaha mama . Duré Zosapa hã Zorãhã mama . Zorã hã Uzi'asihi hi'rada .
+v52_weighted_fvt_conv5way_step30000	p816	eng_Latn	v5_target	0.300968	0.346377	And the son of Asa was Jehoshaphat ; and the son of Jehoshaphat was Joram ; and the son of Joram was Uzziah ;
+v52_weighted_fvt_conv5way_step30000	p817	xav_Latn	v5_target	0.485121	0.110073	Uzi'asi hã Zotãhã mama . Duré Zotã hã Acasihi mama . Duré Acasi hã Ezetizaha mama , ta hã .
+v52_weighted_fvt_conv5way_step30000	p818	eng_Latn	v5_target	0.291648	0.332837	And the son of Uzziah was Jotham ; and the son of Jotham was Ahaz ; and the son of Ahaz was Hezekiah ;
+v52_weighted_fvt_conv5way_step30000	p819	xav_Latn	v5_target	0.496461	0.108700	Ezetiza hã Manaséhé mama . Duré Manasé hã Amosihi mama . Amosi hã Zozi'asihi mama , ta hã .
+v52_weighted_fvt_conv5way_step30000	p820	eng_Latn	v5_target	0.246952	0.361946	And the son of Hezekiah was Manasseh ; and the son of Manasseh was Amon ; and the son of Amon was Josiah ;
+v52_weighted_fvt_conv5way_step30000	p821	xav_Latn	v5_target	0.687474	0.263651	Zozi'asi hã Zeconiza norĩ mama , tisisãnawã norĩ me . Babironiza u Izarazéhé nhihudu norĩ , da te séme da , da te simroi
+v52_weighted_fvt_conv5way_step30000	p822	eng_Latn	v5_target	0.096258	0.554353	And the sons of Josiah were Jechoniah and his brothers , at the time of the taking away to Babylon .
+v52_weighted_fvt_conv5way_step30000	p823	xav_Latn	v5_target	0.699051	0.255206	Tawamhã Izarazéhé nhihudu norĩ , Babironiza u da te simroi mono za'u si , ma tô Zeconiza hã poto , Sarati'é hã . Sarati'
+v52_weighted_fvt_conv5way_step30000	p824	xav_Latn	v5_target	0.515187	0.198083	Zorobabé hã Abi'udihi mama . Duré Abi'udi hã Eri'atĩhĩ mama . Duré Eri'atĩ hã Azoho mama .
+v52_weighted_fvt_conv5way_step30000	p825	eng_Latn	v5_target	0.189466	0.095885	And Zerubbabel had Abiud ; and Abiud had Eliakim ; and Eliakim had Azor ;
+v52_weighted_fvt_conv5way_step30000	p826	xav_Latn	v5_target	0.462561	0.121154	Azo hã Sadotihi mama . Duré Sadoti hã Atĩhĩ mama . Duré Atĩ hã Eri'udihi mama .
+v52_weighted_fvt_conv5way_step30000	p827	eng_Latn	v5_target	0.074285	0.098333	And Azor had Zadok ; and Zadok had Achim ; and Achim had Eliud ;
+v52_weighted_fvt_conv5way_step30000	p828	xav_Latn	v5_target	0.505613	0.165146	Eri'udi hã Eri'azaha mama . Duré Eri'aza hã Matãhã mama . Duré Matã hã Zacoho mama , ta hã .
+v52_weighted_fvt_conv5way_step30000	p829	eng_Latn	v5_target	0.166317	0.242648	And Eliud had Eleazar ; and Eleazar had Matthan ; and Matthan had Jacob ;
+v52_weighted_fvt_conv5way_step30000	p830	xav_Latn	v5_target	0.634242	0.338687	Zaco hã Zuzéhé mama . Zuzé hã Marizaha mro . Mariza hã , Zezusihi na , ta hã . Zezusi hã , ta hã Cristu , 'Re ĩhâimana u
+v52_weighted_fvt_conv5way_step30000	p831	eng_Latn	v5_target	0.025214	0.570007	And the son of Jacob was Joseph the husband of Mary , who gave birth to Jesus , whose name is Christ .
+v52_weighted_fvt_conv5way_step30000	p832	xav_Latn	v5_target	0.607349	0.372892	Ãne hã 14 na dahi'rata norĩ hâiba za'ra hã , Abra'ãhã hawimhã , Dawihi u hã . Duré 14 na dahi'rata norĩ hâiba za'ra hã D
+v52_weighted_fvt_conv5way_step30000	p833	xav_Latn	v5_target	0.665130	0.300639	Tawamhã ãne Zezu Cristuhu potozé hã : Mariza hã Zezusi , ãma ĩna da hã ma tô sima ropisutu zahuré Zuzéhé me , sina mro z
+v52_weighted_fvt_conv5way_step30000	p834	xav_Latn	v5_target	0.606053	0.357375	Tawamhã aibâ hã Marizaha ãma ĩmro da hã 're morĩ wẽ di , Zuzé na ĩsisi hã . Ta hã marĩ ĩwẽ si te te 're 'manharĩ u'âsi .
+v52_weighted_fvt_conv5way_step30000	p835	xav_Latn	v5_target	0.629797	0.354193	Ãne na te te sima rosa'rata wamhã , hâiwa hawi Wanhib'apito ma romhuri'wa hã ma tô tãma sihâi'ré , sõtõ 'rowi . Ãne te t
+v52_weighted_fvt_conv5way_step30000	p836	xav_Latn	v5_target	0.604721	0.402762	Ĩ'ra hã 'watébrémi na te za tãma podo . Tawamhã Zezusi na te za ĩsisi . Danho'reptui'wa te wasu'u , ĩsisi hã . Taha si t
+v52_weighted_fvt_conv5way_step30000	p837	xav_Latn	v5_target	0.623740	0.404611	Ãne da hã ma tô pisutu , Zezusihi ma , 'Re ĩhâimana u'âsi mono hã duréihã tizadawa wasu'u 'rata 'wai ma , Iza'izaha ma ,
+v52_weighted_fvt_conv5way_step30000	p838	xav_Latn	v5_target	0.663006	0.175290	Tawamhã Zuzé hã utu wamhã , hâiwa hawi Wanhib'apito ma romhuri'wa te te tãma ĩwaihu'uzéb zarina , ma tô ãma timro oto , 
+v52_weighted_fvt_conv5way_step30000	p839	xav_Latn	v5_target	0.663184	0.375337	Tane nherẽ , Zuzé hã te te sima ãma rosa'rata õ di a'â Marizaha ãma , ĩ'ra tãma waptã'ã õ ré . Taré te ĩré 'madâ . Tawam
+v52_weighted_fvt_conv5way_step30000	p840	xav_Latn	v5_target	0.655208	0.351344	Tawamhã Zezusi hã ma tô podo , Berẽ na 'ri nho'õmo nhisi ãma , Zudeza na danhipti'a nho'õmo nhisi ãma . Apito Erodi hã ,
+v52_weighted_fvt_conv5way_step30000	p841	xav_Latn	v5_target	0.618631	0.416673	Tawamhã te sô anharĩ za'ra , Zezusihi zô : — E mahãta 'watébrémi , zudezu norĩ nhib'apito da , ĩpodo hã . Wa norĩ hã wa 
+v52_weighted_fvt_conv5way_step30000	p842	xav_Latn	v5_target	0.584078	0.152167	Tawamhã apito Erodi te te wapari wamhã , hâtâ'â uptabi di , uburé Zeruzarẽ ãma 're ĩdasi'ubumroi mono norĩ zama .
+v52_weighted_fvt_conv5way_step30000	p843	xav_Latn	v5_target	0.612975	0.420391	Tawamhã apito Erodi hã ma tô 'rã'õtõ , 'Re ĩhâimana u'âsi mono ma , da'ãma romhuri'wa ĩpire norĩ hã , duré ĩsimiroti na 
+v52_weighted_fvt_conv5way_step30000	p844	xav_Latn	v5_target	0.592205	0.402148	Tawamhã ma ãma sada'âbâ za'ra : — Berẽ na 'ri nho'õmo nhisi ãma te za waptãrã , Zudeza na danhipti'a nho'õmo nhisi ãma .
+v52_weighted_fvt_conv5way_step30000	p845	xav_Latn	v5_target	0.616679	0.412536	“ A norĩ wa'wa hã Berẽ ãma 're aihâimana za'ra wa'aba mono norĩ hã Zudaha nhihudu norĩ nhipti'ai ãma 're aihâimana za'ra
+v52_weighted_fvt_conv5way_step30000	p846	xav_Latn	v5_target	0.667689	0.352578	Tawamhã Erodi hã ma tô sô tihârâ za'ra , bâtâ pusizém hawi ĩsihutu norĩ zô , pi'uriwi te te sadanharĩ za'ra da , ta norĩ
+v52_weighted_fvt_conv5way_step30000	p847	xav_Latn	v5_target	0.562202	0.408023	Te te sadanharĩ za'ra pari , ma tô tãma rob'ru za'ra , Berẽ u si'aba'ré da . Ãne te duré tãma rob'ru za'ra : — Mo oto ai
+v52_weighted_fvt_conv5way_step30000	p848	xav_Latn	v5_target	0.637300	0.358843	Tawamhã apito mreme te te wapari za'ra parimhã , robzabui'wa norĩ hã te oto ai'aba'ré , Berẽ u . Tawamhã bâdâdi na si'ab
+v52_weighted_fvt_conv5way_step30000	p849	xav_Latn	v5_target	0.526652	0.333094	Tawamhã aibâ norĩ hã wasi te te 'madâ'â za'ra wamhã , toi uptabi za'ra di . Taha wa , te 're to za'ra .
+v52_weighted_fvt_conv5way_step30000	p850	eng_Latn	v5_target	-0.214456	0.414719	And when they saw the star they were full of joy .
+v52_weighted_fvt_conv5way_step30000	p851	xav_Latn	v5_target	0.604877	0.365823	Tawamhã 'ri para u ma tô asisi . Sisisi wamhã , ma tô sabu za'ra 'watébrémi hã , ĩna ĩré sãmra ré , Mariza hã . Tawamhã 
+v52_weighted_fvt_conv5way_step30000	p852	xav_Latn	v5_target	0.673819	0.352533	Tawamhã rosawẽrẽ na ma tô 'Re ĩhâimana u'âsi mono hã tãma waihu'u za'ra , bâtâ pusizém hawi ĩsihutu norĩ ma , apâ si'aba
+v52_weighted_fvt_conv5way_step30000	p853	xav_Latn	v5_target	0.638463	0.341394	Tawamhã aibâ norĩ si'aba'ré za'u si , ma tô hâiwa hawi Wanhib'apito ma romhuri'wa hã Zuzéhé ma sihâi'ré , sõtõ 'rowi . Ã
+v52_weighted_fvt_conv5way_step30000	p854	xav_Latn	v5_target	0.636369	0.271176	Tawamhã Zuzé hã ma tô udu . Utu wamhã , awa'awi ma tô ai'utére hã sa'ra . Ĩna hã ma tô ĩré saprõ barana , Ezitu u .
+v52_weighted_fvt_conv5way_step30000	p855	xav_Latn	v5_target	0.639324	0.388948	Tawamhã tame te oto ĩré aimasisi zahuré , apito Erodi hã ĩdâ'âzéb u . Ãne ma tô tiromhâiba , duréihã 'Re ĩhâimana u'âsi 
+v52_weighted_fvt_conv5way_step30000	p856	xav_Latn	v5_target	0.622654	0.398256	Tawamhã apito Erodi hã aibâ norĩ , bâtâ pusizém hawi we ĩsi'aba'ré norĩ hã pi'uriwi tiwi ĩsi'aba'ré na te te ãma rowaihu
+v52_weighted_fvt_conv5way_step30000	p857	xav_Latn	v5_target	0.622291	0.388954	Ãne ma tô tiromhâiba , duréihã 'Re ĩhâimana u'âsi mono zadawa wasu'u 'rata 'wa te te ĩrowasu'uzéb zarina , Zeremiasi hã 
+v52_weighted_fvt_conv5way_step30000	p858	xav_Latn	v5_target	0.613461	0.376021	“ Rama na romnhisi ãma hã dawawa hã ma tô wapari za'ra ni , dazadari 'rãihâ hã . Raté hã te aiwa'õ , ti'ra norĩ ãma . Pẽ
+v52_weighted_fvt_conv5way_step30000	p859	xav_Latn	v5_target	0.663376	0.211061	Tawamhã apito Erodi dâ'â parimhã , ma tô hâiwa ãma Wanhib'apito ma romhuri'wa hã Zuzéhé ma sihâi'ré , sõtõ 'rowi , Ezitu
+v52_weighted_fvt_conv5way_step30000	p860	xav_Latn	v5_target	0.656196	0.315817	Ãne te tãma tinha : — Oto ai'utu . 'Watébrémi hã oto subzari aba . Ĩna ĩré saprõni , Izarazéhé nhihudu norĩ nhipti'ai u 
+v52_weighted_fvt_conv5way_step30000	p861	xav_Latn	v5_target	0.553812	0.089614	Tawamhã Zuzé hã utu wamhã , ma tô apâ saprõni zahuré 'watébrémi hã , ĩna me , Izarazéhé nhihudu norĩ nhipti'ai u .
+v52_weighted_fvt_conv5way_step30000	p862	xav_Latn	v5_target	0.650687	0.356042	Tane nherẽ , ma tô wapa Aterazu , apito Erodihi 'ra wasu'u hã , timama nhowa're're ĩsébré na hã Zudeza ãma te te 're ĩda
+v52_weighted_fvt_conv5way_step30000	p863	xav_Latn	v5_target	0.604250	0.413926	Tame te oto 're simasisi zahuré , Nazaré na 'ri wa'õtõ nhisi ãma . Ãne ĩromhâimanazé hã , duréihã 'Re ĩhâimana u'âsi mon
+v52_weighted_fvt_conv5way_step30000	p864	xav_Latn	v5_target	0.679484	0.374628	Tawamhã wahub ahâ na ãma wahu pari , ma tô Zuwã Batita hã mo a'ubuni u , Zudeza na danhipti'a nho'õmo nhisi ãma , 'Re ĩh
+v52_weighted_fvt_conv5way_step30000	p865	xav_Latn	v5_target	0.617160	0.402956	Ãne te dama rowasu'u : — Ma'ãpé , aiwasété wi aipizari za'ra wa'aba . 'Re ĩhâimana u'âsi mono , da'ãma 're ĩsib'a'uwẽ mo
+v52_weighted_fvt_conv5way_step30000	p866	xav_Latn	v5_target	0.600658	0.414978	Duréihã Iza'iza hã ma tô Zuwã Batitaha ãma rob'ui'éré siro , 'Re ĩhâimana u'âsi mono zadawa wasu'u 'rata 'wa hã . Ãne ĩs
+v52_weighted_fvt_conv5way_step30000	p867	xav_Latn	v5_target	0.648067	0.265077	Zuwã hã awaru ba'õmore zéré 'manharĩ na te 're si'uza . Duré romhâ 'manharĩ hâiwaré na te 're si'usisi . 'Riti na si te 
+v52_weighted_fvt_conv5way_step30000	p868	xav_Latn	v5_target	0.632616	0.393298	Tawamhã Zeruzarẽ ãma 're ĩdasi'ubumroi mono norĩ hã , duré Zudeza na danhipti'a nho'õmo nhisi ãma daza'rui mono bâ 're ĩ
+v52_weighted_fvt_conv5way_step30000	p869	xav_Latn	v5_target	0.593800	0.448045	Taha wa , dawasété na ma tô 're dasiwẽ'õ za'ra 'râwi , sõ'awi , 'Re ĩhâimana u'âsi mono ma . Dawasété na 're dasiwẽ'õ za
+v52_weighted_fvt_conv5way_step30000	p870	xav_Latn	v5_target	0.597367	0.441252	Tawamhã Zuwã hã ma tô 'madâ'â za'ra , parisezu norĩ hã ahâ uptabi na , duré sadusezu norĩ hã . Te ĩtẽme ai'aba'ré , â da
+v52_weighted_fvt_conv5way_step30000	p871	xav_Latn	v5_target	0.538836	0.407944	Sena na aiwasédé hã ĩrẽme za'ra wa'aba zém na , da te 're aiwaihu'u za'ra wa'aba mono da , te za oto 're anomro wẽ wa'ab
+v52_weighted_fvt_conv5way_step30000	p872	xav_Latn	v5_target	0.585718	0.438647	Duré Abra'ãhã nhihudu wẽ te , asina 're rosa'rata za'ra wa'aba mono õ di za , 'Re ĩhâimana u'âsi mono te te 're ĩ'aihâ z
+v52_weighted_fvt_conv5way_step30000	p873	xav_Latn	v5_target	0.629314	0.364190	Hâtâra hã te za oto ni'wa hã sarõtõ , wedepa nhihârizéb da hã . Uburé wede hã 're ĩ'rãi pese za'ra mono õ hã te za te te
+v52_weighted_fvt_conv5way_step30000	p874	xav_Latn	v5_target	0.599070	0.432082	Te duré dama tinha : — Wa hã wa tô â uptabi na si te 're aihâiba ubu za'ra wa'wa , â dawabzuri hã te aima 're ab'manharĩ
+v52_weighted_fvt_conv5way_step30000	p875	xav_Latn	v5_target	0.607331	0.378062	Wei morĩ wapsi , te za da'ãma aipo'o . Buru nho , da te 're upõrĩ za'ra mono parimhã , te za da te 're sa'wari za'ra , ĩ
+v52_weighted_fvt_conv5way_step30000	p876	xav_Latn	v5_target	0.666017	0.287698	Tawamhã Zezusi hã ma tô mo , Darireza na danhipti'a nho'õmo nhisi hawi , Zodã pa u , tame Zuwã Batita , â dawabzuri hã t
+v52_weighted_fvt_conv5way_step30000	p877	xav_Latn	v5_target	0.613766	0.381025	Tane nherẽ , ma tô pibu Zuwã Batita hã , ĩsimirosa'rada hã te te tiwi ãma saprĩ da , â dawabzuri te te tãma 'manharĩ tõ 
+v52_weighted_fvt_conv5way_step30000	p878	xav_Latn	v5_target	0.601913	0.392135	Tawamhã Zezusi hã asa te tãma tinha : — Tane tô . Ĩbâ ma te asina ĩ̱ma ĩwaihu . Tane nherẽ , te za ĩ̱ma ĩ'manha , 'Re ĩh
+v52_weighted_fvt_conv5way_step30000	p879	xav_Latn	v5_target	0.631159	0.339915	Tawamhã â dawabzuri te te tãma 'manharĩ pari , ma tô â hawi watobro , Zezusi hã . Watobro wi , ma tô hâiwa hã tãma si'ri
+v52_weighted_fvt_conv5way_step30000	p880	xav_Latn	v5_target	0.552811	0.325906	Tawamhã hâiwa hawi te we ãma tinha : — Ã hã ĩ̱'ra . Ĩ̱ma sawi uptabi di . Tãma ĩ̱to za'ẽtẽ uptabi di . — Ãne te we tinha
+v52_weighted_fvt_conv5way_step30000	p881	xav_Latn	v5_target	0.576445	0.324305	Tawamhã 'Re ĩhâimana u'âsi mono pẽ'ẽzani hã ma tô Zezusi hã saprõ a'ubuni u , tame Wa'uburé hã te te nasi pibu da .
+v52_weighted_fvt_conv5way_step30000	p882	xav_Latn	v5_target	0.688908	0.226248	Tawamhã a'ubuni wi sãmra ré , ma tô bâdâ hã 40 na ãma ai'utõ , sai ãna sãmra ré hã . 40 na ma duré ãma timara . Tãma mra
+v52_weighted_fvt_conv5way_step30000	p883	xav_Latn	v5_target	0.611807	0.423012	Tawamhã Wa'uburé ma tô ĩtẽme wi . Ĩtẽme wisi wamhã , te tãma tinha : — Sena a hã 'Re ĩhâimana u'âsi mono 'ra wamhã , ma'
+v52_weighted_fvt_conv5way_step30000	p884	xav_Latn	v5_target	0.566392	0.447025	Tawamhã Zezusi asa te tãma tinha , ãne : — 'Re ĩhâimana u'âsi mono mreme na rob'ui'éré hã ãne : “ Dasa na si 're danhipt
+v52_weighted_fvt_conv5way_step30000	p885	xav_Latn	v5_target	0.685727	0.359006	Taha pari , Wa'uburé hã ma tô Zezusi hã saprõ Zeruzarẽ u , 'ri nho'u ĩwẽ uptabi u , te te duré pibu da . 'Re ĩhâimana u'
+v52_weighted_fvt_conv5way_step30000	p886	xav_Latn	v5_target	0.601821	0.401101	Tawamhã ãne te tãma tinha , Wa'uburé hã : — Sena a hã 'Re ĩhâimana u'âsi mono 'ra wamhã , ma'ãpé atobro , ti'ai u . 'Re 
+v52_weighted_fvt_conv5way_step30000	p887	xav_Latn	v5_target	0.581190	0.457600	Tawamhã Zezusi hã te asa tãma tinha : — Mare di . “ Asib'apito za'ra wa'wa hã , 'Re ĩhâimana u'âsi mono hã marĩ hã te te
+v52_weighted_fvt_conv5way_step30000	p888	xav_Latn	v5_target	0.682567	0.376745	Taha pari , te duré Wa'uburé Zezusi hã saprõ , ẽtẽ 'rãihâ u , danhib'apito norĩ nhipti'ai mono bâ te te rob'madâ'â mono 
+v52_weighted_fvt_conv5way_step30000	p889	xav_Latn	v5_target	0.636131	0.359598	Tawamhã Wa'uburé te ãne tãma ropisutu , Zezusihi ma : — Asib'apito na ĩ̱'ãma aiwata da , te za aihi'rãtitõ ĩ̱ma aime . T
+v52_weighted_fvt_conv5way_step30000	p890	xav_Latn	v5_target	0.553068	0.459458	Tawamhã Zezusi te asa tãma tinha : — Satanasi , mo oto aimorĩ , ĩ̱nhiti . 'Re ĩhâimana u'âsi mono zadawa wasu'u'wa , ma 
+v52_weighted_fvt_conv5way_step30000	p891	xav_Latn	v5_target	0.605609	0.300845	Tawamhã Wa'uburé ma tô ĩhawi mo . Morĩ wamhã , hâiwa ãma romhuri'wa norĩ hã ma tô we ĩtẽme aihutu , te te siwi pawaptob 
+v52_weighted_fvt_conv5way_step30000	p892	xav_Latn	v5_target	0.589970	0.340522	Tawamhã Zezusi hã Zuwã da te ĩsẽrẽzé wasu'u te te wapari wa , ma tô mo , Darireza na danhipti'a nho'õmo nhisi u .
+v52_weighted_fvt_conv5way_step30000	p893	xav_Latn	v5_target	0.688573	0.274301	Tawamhã Nazaré ãma 're ĩsãmra mono da hã , te te sima rowẽ õ di oto . Taha wa , Capana'u na 'ri nho'õmo nhisi u si ma tô
+v52_weighted_fvt_conv5way_step30000	p894	xav_Latn	v5_target	0.598806	0.422819	Ãne ma tô Zezusi hã 'manha , duréihã Iza'iza hã te te ãma ĩrob'ui'érézéb zarina te te sina uwaimrami da , 'Re ĩhâimana u
+v52_weighted_fvt_conv5way_step30000	p895	xav_Latn	v5_target	0.629399	0.370542	“ Zeburõhõ nhihudu norĩ nhipti'ai ãma 're ĩdahâimana za'ra mono , duré Naptarihi nhihudu norĩ nhipti'ai ãma zama , ĩsõ'u
+v52_weighted_fvt_conv5way_step30000	p896	xav_Latn	v5_target	0.619146	0.398147	Tawamhã ta hawim haré ma oto romhuri na sãna'rata Zezusi hã , Timama zadawa wasu'u na . Ãne ma tinhimirowasu'u na dama ã
+v52_weighted_fvt_conv5way_step30000	p897	xav_Latn	v5_target	0.657676	0.284008	Tawamhã Zezusi hã Darireza na ĩsõ'u nhisi zaihâi baba 're morĩ wamhã , ma tô aibâ norĩ hã sãmri zahuré , tepe mrami na r
+v52_weighted_fvt_conv5way_step30000	p898	xav_Latn	v5_target	0.656653	0.367913	Tawamhã Zezusi hã te sô tihârâ zahuré : — We ane wa'aba , ĩ̱siré 're ane wa'aba da oto , romhuri na aima ĩ̱sisanho wa'ab
+v52_weighted_fvt_conv5way_step30000	p899	xav_Latn	v5_target	0.583979	0.045738	Taha wa , ma te awa'awi tãma marẽme zahuré abazipara ma , Zezusihi siré 're neb zahuré da oto .
+v52_weighted_fvt_conv5way_step30000	p900	xav_Latn	v5_target	0.677040	0.294712	Tawamhã syry na sina pahâ wi , ma duré 'madâ'â zahuré , Ti'adu norĩ hã Zuwãhã me . Ta norĩ hã Zebedehe 'ra zahuré . Tima
+v52_weighted_fvt_conv5way_step30000	p901	xav_Latn	v5_target	0.593794	0.129051	Sô hârâ zahuré wamhã , awa'awi ma tô tinhimiromhuri ma marẽme zahuré . Timama zama ma rẽme zahuré , Zezusihi siré 're ne
+v52_weighted_fvt_conv5way_step30000	p902	xav_Latn	v5_target	0.620755	0.406677	Tawamhã daza'rui mono bâ te 're mo Zezusi hã , Darireza na danhipti'a nho'õmo nhisi ãma hã . Zudezu norĩ te , rowahutuzé
+v52_weighted_fvt_conv5way_step30000	p903	xav_Latn	v5_target	0.615989	0.415786	Tawamhã Zezusi te te ĩda'apesezém na , ma tô rowasu'u hã te te ropé , Siriza na danhipti'a nho'õmo nhisi ãma . Taha wa ,
+v52_weighted_fvt_conv5way_step30000	p904	xav_Latn	v5_target	0.688928	0.296204	Taha wa , ma tô da'ahâ uptabi na ĩsarina dasi'ré , Darireza hawi , duré Decapori hawimhã , duré Zeruzarẽ hawimhã , duré 
+v52_weighted_fvt_conv5way_step30000	p905	xav_Latn	v5_target	0.649648	0.367764	Tawamhã Zezusi hã da'ahâ uptabi na te te da'madâ'â wamhã , ẽtẽ 'rãihâ na ma tô sai'u , tame a'â sãmra da . Tawamhã ĩsiré
+v52_weighted_fvt_conv5way_step30000	p906	xav_Latn	v5_target	0.424164	0.154590	Tawamhã tame ma tô Zezusi hã tinhimirowahutu na tãma sãna'rata za'ra , ãne :
+v52_weighted_fvt_conv5way_step30000	p907	xav_Latn	v5_target	0.571947	0.428846	— Ni'wam norĩ hã umnhasi sina 'râwi 're ĩsipawapto waihu'u za'ra mono õ na 're siwaihu'u za'ra mono wamhã , duré 'Re ĩhâ
+v52_weighted_fvt_conv5way_step30000	p908	xav_Latn	v5_target	0.576064	0.448028	— Duré , ni'wam norĩ hã ti'ab ré dawasété u'âsi 're danomro mono wa , da'ãma 're ĩpẽ'ẽzé za'ra mono norĩ hã ta norĩ ma s
+v52_weighted_fvt_conv5way_step30000	p909	xav_Latn	v5_target	0.588047	0.448906	— Duré , ni'wam norĩ hã tiwaihu'u pese na 'râwi 're ĩsi'madâ'â ze za'ra mono õ norĩ hã , 'Re ĩhâimana u'âsi mono si te t
+v52_weighted_fvt_conv5way_step30000	p910	xav_Latn	v5_target	0.583358	0.468535	— Duré , ni'wam norĩ hã 'Re ĩhâimana u'âsi mono te te sima 're ĩwẽ za'ra mono zéb uwaibaba , uburé marĩ ĩwẽ hã te te tãm
+v52_weighted_fvt_conv5way_step30000	p911	xav_Latn	v5_target	0.584713	0.444151	— Duré , ni'wam norĩ hã da'ãma 're ĩpẽ'ẽzé za'ra mono zéb zarina , da'ãma 're ĩsina mono norĩ hã , ta norĩ ma si , tãma 
+v52_weighted_fvt_conv5way_step30000	p912	xav_Latn	v5_target	0.579497	0.426494	— Duré , ni'wam norĩ hã marĩ wasété zô 're sipizari za'ra mono ãna 'Re ĩhâimana u'âsi mono ma si , tãma 're ĩsihâiba nho
+v52_weighted_fvt_conv5way_step30000	p913	xav_Latn	v5_target	0.561863	0.454970	— Duré , rowẽ na dasiré 're dahâimana za'ra mono da , ni'wam norĩ hã tinhimiroti wẽ na te te 're dapawaptob u'âsi za'ra 
+v52_weighted_fvt_conv5way_step30000	p914	xav_Latn	v5_target	0.570047	0.459559	— Duré , ni'wam norĩ hã 'Re ĩhâimana u'âsi mono te te sima 're ĩwẽ za'ra mono zéb zarina , uburé marĩ ĩwẽ hã te te 're '
+v52_weighted_fvt_conv5way_step30000	p915	xav_Latn	v5_target	0.561109	0.416878	Tawamhã ãne te duré tãma rowahutu za'ra : — Ĩ̱zazei'wa oto 're anomro aba mono wa , da te ai'ãma 're wasété za'ra wa'aba
+v52_weighted_fvt_conv5way_step30000	p916	xav_Latn	v5_target	0.569162	0.447389	Taha wa , ma'ãpé atoi u'âsi , ãma 're anomro aba mono za . 'Re ĩhâimana u'âsi mono hã te za marĩ ĩwẽ hã sa'ẽtẽ na te te 
+v52_weighted_fvt_conv5way_step30000	p917	xav_Latn	v5_target	0.592292	0.402601	Tawamhã ãne te duré tãma rowasu'u za'ra , tisiré 're ĩnomro mono norĩ ma : — Ãne wa za duré aima ãma romnhimiré'é za'ra 
+v52_weighted_fvt_conv5way_step30000	p918	bam_Latn	v5_target	0.519115	-0.123983	Nin ye Yesu Krisita buruju sɛbɛn ye . Yesu bɔra Dawuda bɔnsɔn na , Dawuda bɔra Ibrahima bɔnsɔn na .
+v52_weighted_fvt_conv5way_step30000	p919	bam_Latn	v5_target	0.461218	-0.021433	Ibrahima ye Isaka bange . Isaka ye Yakuba bange . Yakuba ye Juda ni a balimakɛw bange .
+v52_weighted_fvt_conv5way_step30000	p920	bam_Latn	v5_target	0.519148	-0.049563	Juda ye Farɛs ni Zara bange . Tamar tun ye olu ba ye . Farɛs ye Esrɔm bange . Esrɔm ye Aram bange .
+v52_weighted_fvt_conv5way_step30000	p921	bam_Latn	v5_target	0.379187	-0.143821	Aram ye Aminadab bange . Aminadab ye Nasɔn bange . Nasɔn ye Salmɔn bange .
+v52_weighted_fvt_conv5way_step30000	p922	bam_Latn	v5_target	0.584035	0.000041	Salmɔn ye Boaz bange . Rahab tun ye o ba ye . Boaz ye Obɛd bange . Ruti tun ye o ba ye . Obɛd ye Isayi bange .
+v52_weighted_fvt_conv5way_step30000	p923	bam_Latn	v5_target	0.456652	-0.192278	Isayi ye masakɛ Dawuda bange . Masakɛ Dawuda ye Solomani bange . Ale ba tun ye Uri muso ye fɔlɔ .
+v52_weighted_fvt_conv5way_step30000	p924	bam_Latn	v5_target	0.295452	-0.000621	Solomani ye Roboam bange . Roboam ye Abiya bange . Abiya ye Asaf bange .
+v52_weighted_fvt_conv5way_step30000	p925	bam_Latn	v5_target	0.305158	0.013087	Asaf ye Josafat bange . Josafat ye Joram bange . Joram ye Oziyasi bange .
+v52_weighted_fvt_conv5way_step30000	p926	bam_Latn	v5_target	0.318810	0.014422	Oziyasi ye Joatam bange . Joatam ye Akaz bange . Akaz ye Ezekiyasi bange .
+v52_weighted_fvt_conv5way_step30000	p927	bam_Latn	v5_target	0.286397	-0.073132	Ezekiyasi ye Manase bange . Manase ye Amɔn bange . Amɔn ye Josiyasi bange .
+v52_weighted_fvt_conv5way_step30000	p928	bam_Latn	v5_target	0.540706	-0.211779	Josiyasi ye Jekoniyasi ni a balimakɛw bange . O tuma la Israɛl mɔgɔw cɛra ka taa Babilonɛ jamana la .
+v52_weighted_fvt_conv5way_step30000	p929	bam_Latn	v5_target	0.523771	-0.084176	O mɔgɔ cɛli kɛlen kɔ ka taa Babilonɛ , Jekoniyasi ye Salatiɛl bange . Salatiɛl ye Zorobabɛl bange .
+v52_weighted_fvt_conv5way_step30000	p930	bam_Latn	v5_target	0.389307	0.017320	Zorobabɛl ye Abiudi bange . Abiudi ye Eliyakim bange . Eliyakim ye Azɔr bange .
+v52_weighted_fvt_conv5way_step30000	p931	bam_Latn	v5_target	0.315465	-0.029310	Azɔr ye Sadɔk bange . Sadɔk ye Akim bange . Akim ye Eliudi bange .
+v52_weighted_fvt_conv5way_step30000	p932	bam_Latn	v5_target	0.348390	0.108239	Eliudi ye Eleazar bange . Eleazar ye Matan bange . Matan ye Yakuba bange .
+v52_weighted_fvt_conv5way_step30000	p933	bam_Latn	v5_target	0.496261	-0.130414	Yakuba ye Yusufu bange . Yusufu kɛra Mariyama cɛ ye . Yesu min bɛ wele Krisita , Mariyama ye o bange .
+v52_weighted_fvt_conv5way_step30000	p934	bam_Latn	v5_target	0.618650	-0.008332	Bɔnsɔn yɛlɛma ko tan ni naani kɛra Ibrahima ni Dawuda cɛ . O kɔ , bɔnsɔn yɛlɛma ko tan ni naani kɛra Dawuda ni Israɛl mɔ
+v52_weighted_fvt_conv5way_step30000	p935	bam_Latn	v5_target	0.683440	-0.114351	Yesu Krisita bange cogo filɛ . A ba Mariyama maminɛlen tun bɛ Yusufu fɛ . Sani u ka jɛ , Mariyama y'a sɔrɔ ko a ye kɔnɔ 
+v52_weighted_fvt_conv5way_step30000	p936	bam_Latn	v5_target	0.653489	-0.092651	A cɛ Yusufu tun ye mɔgɔ tilennen ye , a tun t'a fɛ ka Mariyama tɔgɔ tiɲɛ . A y'a latigɛ a yɛrɛ kɔnɔ ko a na o furu ko da
+v52_weighted_fvt_conv5way_step30000	p937	bam_Latn	v5_target	0.685462	-0.031681	Ka Yusufu to o miirili la , Matigi ka mɛlɛkɛ dɔ y'i jira a la sugo la k'a fɔ a ye ko : « Dawuda bɔnsɔn Yusufu , i kana s
+v52_weighted_fvt_conv5way_step30000	p938	bam_Latn	v5_target	0.603663	-0.214527	A na denkɛ bange , i na o tɔgɔ da Yesu , katuguni ale na a ka mɔgɔw kisi u ka jurumuw ma . »
+v52_weighted_fvt_conv5way_step30000	p939	bam_Latn	v5_target	0.477704	-0.356024	O kow bɛɛ kɛra ten walisa Matigi tun ye min fɔ kira dɔ da la , o ka dafa , ko :
+v52_weighted_fvt_conv5way_step30000	p940	bam_Latn	v5_target	0.616148	-0.151951	« A filɛ , npogotigi cɛ dɔnbali na kɔnɔ ta ka denkɛ bange , o tɔgɔ na da ko Emanuɛl , » o kɔrɔ ko Ala bɛ an cɛma .
+v52_weighted_fvt_conv5way_step30000	p941	bam_Latn	v5_target	0.617070	-0.105322	Yusufu wulila ka bɔ sunɔgɔ la , a y'a kɛ ka kɛɲɛ ni Matigi ka mɛlɛkɛ ka kuma fɔlen ye . A ye Mariyama furu siri ,
+v52_weighted_fvt_conv5way_step30000	p942	bam_Latn	v5_target	0.473652	-0.225790	nka u ma jɛ sani Mariyama ka jigin a denkɛ fɔlɔ la . Yusufu ye den tɔgɔ da Yesu .
+v52_weighted_fvt_conv5way_step30000	p943	bam_Latn	v5_target	0.601846	-0.136841	Yesu bangera Jude jamana la Bɛtilɛhɛm , masakɛ Hɛrɔde tile la . A bangelen kɔ , dɔnbaa dɔw nana ka bɔ kɔrɔn fɛ ka se Jer
+v52_weighted_fvt_conv5way_step30000	p944	bam_Latn	v5_target	0.594390	-0.073434	U ye ɲininkali kɛ ko : « Yahutuw ka masakɛ min bangera sisan , o bɛ min ? An ye a ka dolo ye k'an to kɔrɔn fɛ , an nana 
+v52_weighted_fvt_conv5way_step30000	p945	bam_Latn	v5_target	0.486286	-0.293719	Masakɛ Hɛrɔde y'o mɛn minkɛ , a ni Jerusalɛmkaw bɛɛ kɔnɔnafilila o kuma kosɔn .
+v52_weighted_fvt_conv5way_step30000	p946	bam_Latn	v5_target	0.570801	-0.221150	Hɛrɔde ye sarakalasebaaw kuntigiw ni a ka mɔgɔw ka sariya karamɔgɔw bɛɛ lajɛ ka u ɲininka ko : « Krisita ka kan ka bange
+v52_weighted_fvt_conv5way_step30000	p947	bam_Latn	v5_target	0.500412	-0.241480	U y'a jaabi ko : « Jude jamana Bɛtilɛhɛm katuguni a sɛbɛnnen bɛ kira dɔ fɛ ko :
+v52_weighted_fvt_conv5way_step30000	p948	bam_Latn	v5_target	0.701474	-0.051292	` E Bɛtilɛhɛm min bɛ Jude jamana la , i tɛ Jude faamaduguw bɛɛ la dɔgɔmannin ye dɛ , k'a masɔrɔ kuntigi dɔ na bɔ i la , 
+v52_weighted_fvt_conv5way_step30000	p949	bam_Latn	v5_target	0.535477	-0.308462	O kɔ , Hɛrɔde ye o dɔnbaaw wele dogo la ka u ɲininka kosɛbɛ o dolo ye waati ko la .
+v52_weighted_fvt_conv5way_step30000	p950	bam_Latn	v5_target	0.682777	-0.000399	O kɛlen , a ye u ci ka taa Bɛtilɛhɛm . A ko : « A' ye taa o denyɛnin ɲini kosɛbɛ . Aw mana a ye , a' ye na o fɔ ne ye , 
+v52_weighted_fvt_conv5way_step30000	p951	bam_Latn	v5_target	0.676934	-0.040504	Dɔnbaaw ye masakɛ ka kuma mɛn minkɛ , u taara . U tun ye dolo min ye k'u to kɔrɔn fɛ , o filɛ , o taara u ɲɛ fo ka se de
+v52_weighted_fvt_conv5way_step30000	p952	bam_Latn	v5_target	0.384372	-0.484342	Dɔnbaaw ye o dolo ye tuma min na , u ɲagalila kosɛbɛ .
+v52_weighted_fvt_conv5way_step30000	p953	bam_Latn	v5_target	0.670845	-0.088541	U donnen so kɔnɔ , u ye denyɛnin ni a ba Mariyama ye . U y'u bi duguma ka denyɛnin bato . U ye u ka minɛnw dayɛlɛ ka den
+v52_weighted_fvt_conv5way_step30000	p954	bam_Latn	v5_target	0.590414	-0.205977	O kɔ , dɔnbaaw lasɔminen Ala fɛ sugo la ko u kana kɔsegin Hɛrɔde yɔrɔ , u taara u ka jamana la sira wɛrɛ fɛ .
+v52_weighted_fvt_conv5way_step30000	p955	bam_Latn	v5_target	0.656094	-0.039701	Dɔnbaaw taalen kɔ , Matigi ka mɛlɛkɛ dɔ y'i jira Yusufu la sugo la k'a fɔ a ye ko : « Wuli ka boli ka taa ni den ni a ba
+v52_weighted_fvt_conv5way_step30000	p956	bam_Latn	v5_target	0.436293	-0.353972	Yusufu wulila o su yɛrɛ la ka boli ka taa ni den ni a ba ye Misira .
+v52_weighted_fvt_conv5way_step30000	p957	bam_Latn	v5_target	0.670468	-0.114280	U tora yen fo ka taa Hɛrɔde sa . O kow kɛra walisa min fɔra Matigi fɛ a ka kira dɔ da la , o ka dafa , ko : « Ne ye ne d
+v52_weighted_fvt_conv5way_step30000	p958	bam_Latn	v5_target	0.629295	-0.076423	Hɛrɔde y'a ye ko dɔnbaaw y'a janfa minkɛ , a diminna kosɛbɛ . A ye mɔgɔw ci ka taa Bɛtilɛhɛm ni a dafɛ duguw denmisɛn cɛ
+v52_weighted_fvt_conv5way_step30000	p959	bam_Latn	v5_target	0.186941	-0.477813	Kira Jeremi ye min fɔ , o dafara ten . A tun ko :
+v52_weighted_fvt_conv5way_step30000	p960	bam_Latn	v5_target	0.666775	-0.058462	« Mɔgɔw ye kasikan mɛn ka bɔ Rama , kulo ni kasikanba . Rasɛl bɛ a ka denmisɛnw su kasi . A tɛ sɔn a dusu ka saalo , k'a
+v52_weighted_fvt_conv5way_step30000	p961	bam_Latn	v5_target	0.568442	-0.162595	Hɛrɔde salen kɔ , Matigi ka mɛlɛkɛ dɔ y'i jira Yusufu la sugo la k'a to Misira .
+v52_weighted_fvt_conv5way_step30000	p962	bam_Latn	v5_target	0.643379	-0.090750	O mɛlɛkɛ ko : « Wuli ka kɔsegin ni den ni a ba ye Israɛl jamana la , sabu minnu tun b'a fɛ ka den faga , olu sara . »
+v52_weighted_fvt_conv5way_step30000	p963	bam_Latn	v5_target	0.382663	-0.312138	Yusufu wulila ka kɔsegin ni den ni a ba ye Israɛl jamana la .
+v52_weighted_fvt_conv5way_step30000	p964	bam_Latn	v5_target	0.679889	-0.073488	A y'a mɛn minkɛ ko Arkɛlaus sigira a fa Hɛrɔde nɔ na ka kɛ Jude jamana masakɛ ye , Yusufu siranna , a ma sɔn ka taa yen 
+v52_weighted_fvt_conv5way_step30000	p965	bam_Latn	v5_target	0.604048	-0.246094	A sigira dugu dɔ la yen min tɔgɔ ko Nazarɛti , walisa kiraw tun ye min fɔ ko Yesu na wele Nazarɛtika , o ka dafa .
+v52_weighted_fvt_conv5way_step30000	p966	bam_Latn	v5_target	0.450980	-0.391829	O donw na , Yuhana Batiselikɛla nana Jude kungokolon kɔnɔ ka waajuli daminɛ .
+v52_weighted_fvt_conv5way_step30000	p967	bam_Latn	v5_target	0.614920	-0.257065	A tun bɛ welewele da ko : « A' ye nimisa aw ka jurumuw la , katuguni sankolo masaya surunyara . »
+v52_weighted_fvt_conv5way_step30000	p968	bam_Latn	v5_target	0.688863	-0.099960	Kira Esayi tun kumana mɔgɔ min ko la , Yuhana don . Esayi ko : « Pɛrɛnkan bɛ bɔ kungokolon kɔnɔ ko : ` A' ye Matigi ka s
+v52_weighted_fvt_conv5way_step30000	p969	bam_Latn	v5_target	0.627715	-0.168989	Yuhana ka fini tun dilara ni ɲaamɛ si ye , a ka cɛsirilan tun ye wolo ye . A ka dumuni tun ye ntɔn ni wo kɔnɔ di ye .
+v52_weighted_fvt_conv5way_step30000	p970	bam_Latn	v5_target	0.501945	-0.217339	Mɔgɔw tun bɛ taa Yuhana sɛgɛrɛ ka bɔ Jerusalɛm ni Jurdɛn ba da la ani Jude jamana bɛɛ la .
+v52_weighted_fvt_conv5way_step30000	p971	bam_Latn	v5_target	0.536423	-0.187199	U tun bɛ u jɔ u ka jurumuw la . Yuhana tun bɛ u batise Jurdɛn baji la .
+v52_weighted_fvt_conv5way_step30000	p972	bam_Latn	v5_target	0.683638	-0.057801	Yuhana y'a ye tuma min na ko Farisiɛn caman ni Saduseɛn caman nana a fɛ ka batise , a y'a fɔ u ye ko : « Fɔnfɔnnindenw ,
+v52_weighted_fvt_conv5way_step30000	p973	bam_Latn	v5_target	0.481436	-0.233367	Kɛwale minnu b'a jira ko aw nimisara aw ka jurumuw la , a' ye olu kɛ .
+v52_weighted_fvt_conv5way_step30000	p974	bam_Latn	v5_target	0.621545	-0.012589	Aw kana a fɔ aw yɛrɛw kɔnɔ ko Ibrahima ye aw fa ye . Tiɲɛ la ne b'a fɔ aw ye ko Ala bɛ se ka nin kabakurunw yɛlɛma ka u 
+v52_weighted_fvt_conv5way_step30000	p975	bam_Latn	v5_target	0.567274	-0.171643	Hali sisan , jele talen bɛ jiriw dili tigɛli kama ka ban . Jiri o jiri tɛ den ɲuman kɛ o bɛ tigɛ ka fili tasuma la .
+v52_weighted_fvt_conv5way_step30000	p976	bam_Latn	v5_target	0.691476	-0.064202	Ne kɔni bɛ aw batise ji la k'a jira ko aw nimisara aw ka jurumuw la , nka dɔ bɛ na ne kɔ , o fanga ka bon ni ne ta ye , 
+v52_weighted_fvt_conv5way_step30000	p977	bam_Latn	v5_target	0.630866	-0.001954	A ka ɲɔfyɛ minɛn bɛ a bolo . A na a ka ɲɔ gosilen fyɛ ka bɔ ɲaga la . A na a ka ɲɔkisɛ kɛ jiginɛ kɔnɔ ka a ɛɛɲɛ jeni tas
+v52_weighted_fvt_conv5way_step30000	p978	bam_Latn	v5_target	0.526213	-0.232830	O tuma la Yesu bɔra Galile jamana la ka taa Yuhana sɛgɛrɛ Jurdɛn ba da la ko Yuhana ka a batise .
+v52_weighted_fvt_conv5way_step30000	p979	bam_Latn	v5_target	0.573220	-0.022331	Ale tun b'a fɛ ka ban , a y'a fɔ Yesu ye ko : « Ne ka kan ka batise e fɛ , i bɛ na ne ma wa ? »
+v52_weighted_fvt_conv5way_step30000	p980	bam_Latn	v5_target	0.587817	-0.159698	Yesu y'a jaabi ko : « A to a ka kɛ sisan . A ka ɲi an ka Ala sago dafa ten . » Ayiwa Yuhana sɔnna .
+v52_weighted_fvt_conv5way_step30000	p981	bam_Latn	v5_target	0.662170	-0.223063	Yesu batiselen kɔ , a bɔra ji la . O yɔrɔnin kelen , sankolo dayɛlɛla . A ye Ala Ni jigintɔ ye i ko jɛnɛntuban , ka na s
+v52_weighted_fvt_conv5way_step30000	p982	bam_Latn	v5_target	0.536834	-0.255221	Kumakan dɔ bɔra sankolo la ko : « Nin ye ne Denkɛ kanulen ye , a ko ka di ne ye haali . »
+v52_weighted_fvt_conv5way_step30000	p983	bam_Latn	v5_target	0.509262	-0.196040	O kɔ , Ni Senu ye Yesu ɲɛminɛ ka taa kungokolon kɔnɔ walisa Sitanɛ k'a kɔrɔbɔ .
+v52_weighted_fvt_conv5way_step30000	p984	bam_Latn	v5_target	0.589263	-0.151308	Yesu ye tile binaani ni su binaani kɛ sun na , a ma dumuni kɛ , o kɔ , kɔngɔ y'a minɛ .
+v52_weighted_fvt_conv5way_step30000	p985	bam_Latn	v5_target	0.612084	-0.049652	Kɔrɔbɔlikɛla gɛrɛla a la k'a fɔ a ye ko : « Ni i ye Ala Denkɛ ye , a fɔ ko nin kabakurunw ka yɛlɛma ka kɛ nbuurukunw ye 
+v52_weighted_fvt_conv5way_step30000	p986	bam_Latn	v5_target	0.624012	-0.031627	Yesu y'a jaabi ko : « A sɛbɛnnen bɛ ko : ` Dumunifɛn dama tɛ mɔgɔ balo , nka kuma minnu bɛɛ bɛ bɔ Ala da la , a bɛ balo 
+v52_weighted_fvt_conv5way_step30000	p987	bam_Latn	v5_target	0.547031	-0.262482	O kɔ , Sitanɛ taara ni Yesu ye dugu senuma kɔnɔ k'a bila Alabatosoba kuncɛ ma ,
+v52_weighted_fvt_conv5way_step30000	p988	bam_Latn	v5_target	0.683498	-0.020653	k'a fɔ a ye ko : « Ni i ye Ala Denkɛ ye , i cun duguma , katuguni a sɛbɛnnen bɛ ko : ` Ala na i ko fɔ a ka mɛlɛkɛw ye , 
+v52_weighted_fvt_conv5way_step30000	p989	bam_Latn	v5_target	0.501420	-0.120495	Yesu y'a fɔ a ye ko : « A sɛbɛnnen bɛ fana ko : ` I kana i Matigi Ala kɔrɔbɔ . ' »
+v52_weighted_fvt_conv5way_step30000	p990	bam_Latn	v5_target	0.570566	-0.302918	Sitanɛ taara ni Yesu ye ko kura ka taa kulu jamanjan kan ka diɲɛ masayaw ni u bonya bɛɛ jira a la ,
+v52_weighted_fvt_conv5way_step30000	p991	bam_Latn	v5_target	0.564839	-0.090496	k'a fɔ a ye ko : « Ni i b'i ɲɔngiri ne kɔrɔ ka ne bato , ne na ninnu bɛɛ di i ma . »
+v52_weighted_fvt_conv5way_step30000	p992	bam_Latn	v5_target	0.635850	-0.112781	Nka Yesu ko : « Taa ka bɔ yan , Sitanɛ , katuguni a sɛbɛnnen bɛ ko : ` I ka i Matigi Ala bato ka baara kɛ o kelenpe ye .
+v52_weighted_fvt_conv5way_step30000	p993	bam_Latn	v5_target	0.328435	-0.324503	O kɔ , Sitanɛ taara . Mɛlɛkɛ dɔw nana Yesu mago ɲɛ .
+v52_weighted_fvt_conv5way_step30000	p994	bam_Latn	v5_target	0.487185	-0.249305	Yesu y'a mɛn tuma min na ko Yuhana bilara kaso la , a bɔra yen ka taa Galile jamana la .
+v52_weighted_fvt_conv5way_step30000	p995	bam_Latn	v5_target	0.618361	-0.194831	A bɔra Nazarɛti dugu la , a taara i sigi Kapɛrnaum , o tun ye Galile ba da la dugu dɔ ye , Zabulɔn ni Nefitali jamana la
+v52_weighted_fvt_conv5way_step30000	p996	bam_Latn	v5_target	0.303167	-0.373297	O kɛra walisa kira Esayi ye min fɔ , o ka dafa , a ko :
+v52_weighted_fvt_conv5way_step30000	p997	bam_Latn	v5_target	0.481888	-0.292229	« Zabulɔn jamana ni Nefitali jamana , baji da la , Jurdɛn ba kɔfɛ , siya wɛrɛw ka Galile .
+v52_weighted_fvt_conv5way_step30000	p998	bam_Latn	v5_target	0.545791	-0.074174	Minnu sigilen tun bɛ dibi la , olu ye kɛnɛyeelenba ye . Minnu sigilen tun bɛ dibi la saya yɔrɔ la , kɛnɛyeelen bɔra olu 
+v52_weighted_fvt_conv5way_step30000	p999	bam_Latn	v5_target	0.727352	-0.146505	Kabini o tuma la Yesu ye waajuli daminɛ . A tun b'a fɔ ko : « A' ye nimisa aw ka jurumuw la katuguni sankolo masaya suru
+v52_weighted_fvt_conv5way_step30000	p1000	bam_Latn	v5_target	0.638851	-0.079866	Yesu taamatɔ Galile ba kɛrɛ fɛ , a ye balimakɛ fila ye minnu tun ye mɔnnikɛlaw ye , Simɔn min bɛ wele Piɛrɛ ani a balima
+v52_weighted_fvt_conv5way_step30000	p1001	bam_Latn	v5_target	0.516109	-0.127714	Yesu y'a fɔ u ye ko : « A' ye tugu ne la , ne na aw kɛ mɔgɔ ɲininaw ye . »
+v52_weighted_fvt_conv5way_step30000	p1002	bam_Latn	v5_target	0.251209	-0.339330	U sinna ka u ka jɔw to yen ka tugu Yesu la .
+v52_weighted_fvt_conv5way_step30000	p1003	bam_Latn	v5_target	0.682812	-0.054465	A taara ɲɛfɛ tun ka balimakɛ fila wɛrɛ ye . Olu tun ye Zebede denkɛw Yakuba ni Yuhana ye . U ni u fa Zebede tun bɛ kurun
+v52_weighted_fvt_conv5way_step30000	p1004	bam_Latn	v5_target	0.224439	-0.377026	U sinna ka kurun ni u fa to yen ka tugu Yesu la .
+v52_weighted_fvt_conv5way_step30000	p1005	bam_Latn	v5_target	0.624945	-0.097286	Yesu tun bɛ yaala Galile jamana yɔrɔ bɛɛ la ka mɔgɔw kalan u ka Alabatosow kɔnɔ . A tun bɛ sankolo masaya Kibaru Duman f
+v52_weighted_fvt_conv5way_step30000	p1006	bam_Latn	v5_target	0.620508	-0.043641	Yesu tɔgɔ tun bɛ fɔ Siri jamana yɔrɔ bɛɛ la , o de la , mɔgɔw nana Yesu sɛgɛrɛ ni u ka banabaatɔw ye . Mɔgɔ minnu tɔɔrɔl
+v52_weighted_fvt_conv5way_step30000	p1007	bam_Latn	v5_target	0.504744	-0.185681	Jamaba tugura a nɔfɛ ka bɔ Galile jamana ni Dekapole ni Jerusalɛm ni Jude jamana ani Jurdɛn ba kɔfɛ .
+v52_weighted_fvt_conv5way_step30000	p1008	bam_Latn	v5_target	0.532056	-0.221787	Yesu ye jama ye tuma min na , a yɛlɛnna kulu kan k'i sigi . A ka kalandenw gɛrɛla a la ,
+v52_weighted_fvt_conv5way_step30000	p1009	bam_Latn	v5_target	0.052482	-0.431750	a y'a daminɛ ka u kalan ko :
+v52_weighted_fvt_conv5way_step30000	p1010	bam_Latn	v5_target	0.621493	-0.151198	« Minnu y'a dɔn ko u ye faantanw ye Ala ta fan fɛ , olu ye dubadenw ye , katuguni sankolo masaya ye u ta ye .
+v52_weighted_fvt_conv5way_step30000	p1011	bam_Latn	v5_target	0.528596	-0.331423	« Minnu dusu kasilen don , olu ye dubadenw ye , katuguni u dusuw na saalo .
+v52_weighted_fvt_conv5way_step30000	p1012	bam_Latn	v5_target	0.501120	-0.402837	« Minnu sabalilen don , olu ye dubadenw ye , katuguni u na dugukolo sɔrɔ ciyɛn ye .
+v52_weighted_fvt_conv5way_step30000	p1013	bam_Latn	v5_target	0.618396	-0.181987	« Tilennenya nege bɛ minnu na i n'a fɔ kɔngɔ ni minnɔgɔ , olu ye dubadenw ye , katuguni u na wasa .
+v52_weighted_fvt_conv5way_step30000	p1014	bam_Latn	v5_target	0.394425	-0.317133	« Makarikɛlaw ye dubadenw ye , katuguni makari na kɛ u la .
+v52_weighted_fvt_conv5way_step30000	p1015	bam_Latn	v5_target	0.470044	-0.329746	« Minnu dusukunw jɛlen don , olu ye dubadenw ye , katuguni u na Ala ye .
+v52_weighted_fvt_conv5way_step30000	p1016	bam_Latn	v5_target	0.618087	-0.202832	« Minnu b'a ɲini hɛrɛ ka to mɔgɔw ni ɲɔgɔn cɛ , olu ye dubadenw ye , katuguni u na wele Ala denw .
+v52_weighted_fvt_conv5way_step30000	p1017	bam_Latn	v5_target	0.559055	-0.366742	« Minnu tɔɔrɔla tilennenya kosɔn , olu ye dubadenw ye , katuguni sankolo masaya ye u ta ye .
+v52_weighted_fvt_conv5way_step30000	p1018	bam_Latn	v5_target	0.671021	-0.134596	« Ni mɔgɔw bɛ aw neni , ka tugu aw nɔfɛ ka aw tɔɔrɔ , ka ko jugu caman nkalon da aw la ne kosɔn , o tuma la aw ye dubade
+v52_weighted_fvt_conv5way_step30000	p1019	xav_Latn	v5_target	0.568564	0.412502	— Ãne wa za duré aima ãma romnhimiré'é za'ra wa'wa . A norĩ wa'wa hã rob'uiwẽzém ne , te za dama 're aihâimana za'ra wa'
+v52_weighted_fvt_conv5way_step30000	p1020	xav_Latn	v5_target	0.626738	0.339426	Duré , rob'uiwẽzé hã da te ro'o wamhã , e piza'a na te za upsibi ni . Mare di . Ĩsima'warazém na si te za sõ'awi da te '
+v52_weighted_fvt_conv5way_step30000	p1021	xav_Latn	v5_target	0.552045	0.424873	Tane duré , a norĩ wa'wa hã te za sõ'awi dama 're aihâimana za'ra wa'aba mo , rob'uiwẽzé hã sõ'awi te te dama 're ĩrob'u
+v52_weighted_fvt_conv5way_step30000	p1022	xav_Latn	v5_target	0.602479	0.421118	— Duré , rosa'rata na ĩ̱'ãma upa za'ra wa'aba õ di za , duréihã 'Re ĩhâimana u'âsi mono nhimiroti 'rata na Mozési te te 
+v52_weighted_fvt_conv5way_step30000	p1023	xav_Latn	v5_target	0.594300	0.390868	Tô sena , wa za ãne aima waihu'u sirõmo za'ra wa'wa . Hâiwa norĩ hã ti'ai me nimahã na si'utõrĩ zahuré da nherẽ , duréih
+v52_weighted_fvt_conv5way_step30000	p1024	xav_Latn	v5_target	0.594971	0.422724	Duré , ni'wam norĩ hã 'Re ĩhâimana u'âsi mono nhimiroti 'rata na rob'ui'éré hã nima hã roti hã taré dama 're 'maihâimana
+v52_weighted_fvt_conv5way_step30000	p1025	xav_Latn	v5_target	0.580047	0.415003	Ãne wa za duré aima waihu'u za'ra wa'wa . Parisezu norĩ hâimanazém nhipai u , duré 'Re ĩhâimana u'âsi mono nhimiroti na 
+v52_weighted_fvt_conv5way_step30000	p1026	xav_Latn	v5_target	0.589247	0.427352	— Ãne hã ma tô duré 're ĩwapari za'ra wa'aba mo , duréihã 'Re ĩhâimana u'âsi mono te te dama ĩrotizé hã : “ 'Re danhimro
+v52_weighted_fvt_conv5way_step30000	p1027	xav_Latn	v5_target	0.591841	0.428279	Ãne na roti hã tô sena nherẽ , wa za oto wa hã aimawi aima waihu'u za'ra wa'wa , ãne na roti na hã . Ni'wam norĩ hã tisi
+v52_weighted_fvt_conv5way_step30000	p1028	xav_Latn	v5_target	0.604380	0.410770	Ãté a norĩ wa'wa hã te za 're anomro aba mo , 'Re ĩhâimana u'âsi mono nhorõwa u , marĩ hã tãma asõprubzéb da hã , wedeza
+v52_weighted_fvt_conv5way_step30000	p1029	dtp_Latn	v5_target	0.686290	-0.191240	Ondung haro o tulun di mamadawa dokoyu om i mangangat dokoyu do mibisara' dot id kut , om lumomus kou no kopio do mongoi
+v52_weighted_fvt_conv5way_step30000	p1030	eng_Latn	v5_target	0.189119	0.696976	Come to an agreement quickly with him who has a cause against you at law , while you are with him on the way , for fear 
+v52_weighted_fvt_conv5way_step30000	p1031	xav_Latn	v5_target	0.597022	0.402768	— Ãté ni'wa hã te za sima ai'ãma rosa'rata 'wa , dama rowairébé'wai u te te ai'mazaprõni aba da , marĩ tiwi ĩ'mai'manhar
+v52_weighted_fvt_conv5way_step30000	p1032	dtp_Latn	v5_target	0.749652	-0.273184	Om ilaai no dokoyu dot : A' kou no milo'd lumabus do mantad hiri'd giil , dot a' po dokoyu abayaran ngai' i nakadanda' d
+v52_weighted_fvt_conv5way_step30000	p1033	eng_Latn	v5_target	-0.017792	0.623893	Truly I say to you , You will not come out from there till you have made payment of the very last farthing .
+v52_weighted_fvt_conv5way_step30000	p1034	xav_Latn	v5_target	0.598108	0.335414	Dazazéb 're , da te ai'manherẽ aba wamhã , marĩ hã dawi ĩ'mai'manharĩ wasété aba wa'rãmi , dama asi'maiwa'âbâ 'rãsutu pe
+v52_weighted_fvt_conv5way_step30000	p1035	bam_Latn	v5_target	0.626310	-0.209824	Aw ka ɲagali ka nisɔndiya kosɛbɛ haali , katuguni aw ka baraji ka bon sankolo la . Kira minnu tun bɛ aw ɲɛ , mɔgɔw ye ol
+v52_weighted_fvt_conv5way_step30000	p1036	bam_Latn	v5_target	0.642560	-0.060364	« Aw ye kɔgɔ ye diɲɛ la , nka ni kɔgɔ timiya bɔra a la , mun na a timiya tun ? A tɛ foyi ɲɛ tun fɔ ka fili kɛnɛma , mɔgɔ
+v52_weighted_fvt_conv5way_step30000	p1037	bam_Latn	v5_target	0.447814	-0.220477	« Aw ye kɛnɛyeelen ye diɲɛ la . Dugu min sigilen bɛ kulu kan , o tɛ se ka dogo .
+v52_weighted_fvt_conv5way_step30000	p1038	bam_Latn	v5_target	0.564764	-0.154114	Mɔgɔ tɛ lanpa mana ka minɛn dɔ biri a da la , nka a b'a sigi fɛn dɔ kan , walisa a ka yeelen bɔ so kɔnɔ mɔgɔw bɛɛ ye .
+v52_weighted_fvt_conv5way_step30000	p1039	bam_Latn	v5_target	0.543157	-0.194129	Aw ka yeelen ka bɔ mɔgɔw ɲɛ na o cogo la , walisa u ka aw ka kɛwale ɲumanw ye ka aw sankolola Fa bonya .
+v52_weighted_fvt_conv5way_step30000	p1040	bam_Latn	v5_target	0.583163	-0.221083	« Aw kana miiri ko ne nana sariya ni kiraw ka kalan ban . Ne ma na u ban , ne nana olu de dafa .
+v52_weighted_fvt_conv5way_step30000	p1041	bam_Latn	v5_target	0.696516	-0.121774	Tiɲɛ la ne b'a fɔ aw ye ko , ka sankolo ni dugukolo to yen , hali sariya sɛbɛnden ncinin wala a ko misɛnmannin , o si tɛ
+v52_weighted_fvt_conv5way_step30000	p1042	bam_Latn	v5_target	0.604689	0.012225	O de kosɔn , mɔgɔ o mɔgɔ bɛ nin sariyaw bɛɛ la dɔgɔmannin kelen tiɲɛ ka mɔgɔw kalan ten , o na kɛ sankolo masaya la mɔgɔ
+v52_weighted_fvt_conv5way_step30000	p1043	bam_Latn	v5_target	0.646357	-0.205536	Ne b'a fɔ aw ye ko ni aw ka tilennenya ma tɛmɛn sariya karamɔgɔw ni Farisiɛnw ta kan , aw tɛ se ka don sankolo masaya la
+v52_weighted_fvt_conv5way_step30000	p1044	bam_Latn	v5_target	0.588475	-0.054925	« Aw y'a mɛn ko a fɔra aw bɛnbaw ye ko : ` I kana mɔgɔ faga . Ko mɔgɔ o mɔgɔ bɛ a mɔgɔ ɲɔgɔn faga , o ka kan ni kiri ye 
+v52_weighted_fvt_conv5way_step30000	p1045	bam_Latn	v5_target	0.665817	-0.042233	Nka ne kɔni b'a fɔ aw ye ko mɔgɔ o mɔgɔ diminna a balima kɔrɔ , o ka kan ni kiri ye . Min bɛ a balima wele nalonma , kir
+v52_weighted_fvt_conv5way_step30000	p1046	bam_Latn	v5_target	0.606785	-0.150094	I nalen saraka bɔ yɔrɔ la ka i ka saraka bɔ Ala ye , ni i hakili jiginna a la yen ko i ye i balima hakɛ ta ,

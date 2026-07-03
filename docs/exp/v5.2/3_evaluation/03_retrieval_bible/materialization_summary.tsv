@@ -1,0 +1,8 @@
+language_script	language	group	flag	status	source_file	english_file	shared_verses	src_output	eng_output
+dtp_Latn	dtp		0	ready	/disk3/moon/paralleltext/bibles/corpus/dtp-x-bible.txt	/disk3/moon/paralleltext/bibles/corpus/eng-x-bible-basic.txt	7887	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/retrieval_bible/bible.dtp_Latn-eng_Latn.dtp_Latn	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/retrieval_bible/bible.dtp_Latn-eng_Latn.eng_Latn
+xav_Latn	xav		0	ready	/disk3/moon/paralleltext/bibles/corpus/xav-x-bible.txt	/disk3/moon/paralleltext/bibles/corpus/eng-x-bible-basic.txt	7418	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/retrieval_bible/bible.xav_Latn-eng_Latn.xav_Latn	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/retrieval_bible/bible.xav_Latn-eng_Latn.eng_Latn
+bam_Latn	bam		0	ready	/disk3/moon/paralleltext/bibles/corpus/bam-x-bible.txt	/disk3/moon/paralleltext/bibles/corpus/eng-x-bible-basic.txt	7933	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/retrieval_bible/bible.bam_Latn-eng_Latn.bam_Latn	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/retrieval_bible/bible.bam_Latn-eng_Latn.eng_Latn
+csb_Latn	csb			missing_source_bible		/disk3/moon/paralleltext/bibles/corpus/eng-x-bible-basic.txt	0		
+ile_Latn	ile			missing_source_bible		/disk3/moon/paralleltext/bibles/corpus/eng-x-bible-basic.txt	0		
+lij_Latn	lij			missing_source_bible		/disk3/moon/paralleltext/bibles/corpus/eng-x-bible-basic.txt	0		
+fur_Latn	fur			missing_source_bible		/disk3/moon/paralleltext/bibles/corpus/eng-x-bible-basic.txt	0		

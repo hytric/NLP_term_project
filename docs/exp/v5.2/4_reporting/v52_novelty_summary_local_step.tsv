@@ -1,0 +1,2 @@
+xlmr_tokens_per_word	v52_tokens_per_word	reduction_pct	fvt_latest_loss	random_latest_loss	fvt_random_loss_gap	random_latest_step	mean_latest_step	mean_latest_loss	fvt_latest_step	weighted_fvt_latest_step	weighted_fvt_latest_loss
+2.204	1.592	27.754	2.8282	3.1948	0.367	21484	21484	3.3513	21484	15000	2.976

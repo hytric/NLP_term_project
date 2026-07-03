@@ -1,0 +1,11 @@
+language_script	language_name	new_length	full_glot500_bottom_rank	full_glot500_top_rank	bottom_percentile	resource_label	local_task_list_membership	local_measured_target_claim	v5_role
+fur_Latn	Friulian	30052	120/679	560/679	17.7	genuine_low_resource	NER	pending_materialization_repair	main_target
+rap_Latn	Rapanui	30102	121/679	559/679	17.8	genuine_low_resource	Bible	pending_materialization_repair	main_target
+krc_Cyrl	Karachay-Balkar	30353	125/679	555/679	18.4	genuine_low_resource	Bible	pending_materialization_repair	main_target
+kjb_Latn	Q'anjob'al	31471	145/679	535/679	21.4	genuine_low_resource	Bible	pending_materialization_repair	main_target
+bam_Latn	Bambara	32150	157/679	523/679	23.1	genuine_low_resource	Bible,POS	pending_materialization_repair	main_target
+quw_Latn	Tena Lowland Quichua	33449	168/679	512/679	24.7	genuine_low_resource	Bible	pending_materialization_repair	main_target
+mad_Latn	Madurese	38993	193/679	487/679	28.4	genuine_low_resource	Bible	pending_materialization_repair	main_target
+sat_Olck	Santali	39614	194/679	486/679	28.6	genuine_low_resource	none	no_official_membership	main_target
+acm_Arab	Mesopotamian Arabic	44505	217/679	463/679	32.0	genuine_low_resource	none	no_official_membership	main_target
+dzo_Tibt	Dzongkha	52732	242/679	438/679	35.6	genuine_low_resource	Bible	pending_materialization_repair	main_target

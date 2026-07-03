@@ -1,0 +1,100 @@
+task	language_script	language	group	in_task_list	upstream_flag	local_data_exists	has_data	reason	data_path
+roundtrip_alignment	lao_Laoo	lao	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	mya_Mymr	mya	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ara_Arab	ara	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	mar_Deva	mar	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	hau_Latn	hau	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	uzb_Latn	uzb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	slv_Latn	slv	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	fin_Latn	fin	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	hun_Latn	hun	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	cmn_Hani	cmn	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	est_Latn	est	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	bre_Latn	bre	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	hrv_Latn	hrv	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	jav_Latn	jav	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ron_Latn	ron	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ell_Grek	ell	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	nor_Latn	nor	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	slk_Latn	slk	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	vie_Latn	vie	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	amh_Ethi	amh	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	epo_Latn	epo	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	bel_Cyrl	bel	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	xho_Latn	xho	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	hin_Deva	hin	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	tam_Taml	tam	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	mon_Cyrl	mon	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ces_Latn	ces	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	san_Deva	san	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	hye_Armn	hye	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	pus_Arab	pus	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	som_Arab	som	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	kan_Knda	kan	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	isl_Latn	isl	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ori_Orya	ori	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	afr_Latn	afr	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	deu_Latn	deu	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	urd_Arab	urd	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	bul_Cyrl	bul	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	tgl_Latn	tgl	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	eus_Latn	eus	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	pol_Latn	pol	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	lat_Latn	lat	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	tur_Latn	tur	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	fra_Latn	fra	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	cat_Latn	cat	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	uig_Arab	uig	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	arb_Arab	arb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	sqi_Latn	sqi	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	sin_Sinh	sin	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	msa_Latn	msa	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	swh_Latn	swh	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	kor_Hang	kor	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ukr_Cyrl	ukr	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	kir_Cyrl	kir	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	yid_Hebr	yid	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	heb_Hebr	heb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	nld_Latn	nld	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	fry_Latn	fry	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	azb_Arab	azb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	glg_Latn	glg	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	fas_Arab	fas	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	eng_Latn	eng	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	mkd_Cyrl	mkd	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ind_Latn	ind	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	por_Latn	por	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	spa_Latn	spa	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	dan_Latn	dan	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	khm_Khmr	khm	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	gla_Latn	gla	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	uig_Latn	uig	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	kat_Geor	kat	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	mlg_Latn	mlg	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	snd_Arab	snd	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ita_Latn	ita	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	hau_Arab	hau	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	cym_Latn	cym	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	srp_Latn	srp	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	zho_Hani	zho	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	tha_Thai	tha	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	swe_Latn	swe	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	pan_Guru	pan	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	prs_Arab	prs	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	pes_Arab	pes	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	san_Latn	san	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	kaz_Cyrl	kaz	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	kur_Latn	kur	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	mal_Mlym	mal	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	nep_Deva	nep	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	gle_Latn	gle	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	swa_Latn	swa	head	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	som_Latn	som	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	lit_Latn	lit	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	dtp_Latn	dtp	v5_target	yes	0	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	xav_Latn	xav	v5_target	yes	0	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	bam_Latn	bam	v5_target	yes	0	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	csb_Latn	csb	v5_target	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	ile_Latn	ile	v5_target	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	lij_Latn	lij	v5_target	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment
+roundtrip_alignment	fur_Latn	fur	v5_target	no		no	no	not_in_task_or_bible_proxy_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/roundtrip_alignment

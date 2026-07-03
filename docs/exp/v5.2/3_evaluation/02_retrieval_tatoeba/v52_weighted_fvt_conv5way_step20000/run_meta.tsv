@@ -1,0 +1,10 @@
+field	value
+metric	retrieval_tatoeba
+model_key	v52_weighted_fvt_conv5way_step20000
+model_path	/home/axt/mnt2/jongha/v5.2_glot5007/runs/convergence_5way/weighted_fvt/checkpoint-20000
+tokenizer_path	/home/axt/mnt2/jongha/v5.2_glot5007/tokenization/output/Glot500_extended_spm
+eval_data_root	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download
+eval_output_root	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation
+gpu	2
+docs_exp_root	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2
+model_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2/3_evaluation/model_matrix.tsv

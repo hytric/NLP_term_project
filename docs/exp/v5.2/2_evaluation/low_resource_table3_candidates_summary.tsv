@@ -1,0 +1,8 @@
+resource_bucket	tail_total_in_glot500_stats	any_known_table3_task_list	any_actionable_task	tatoeba_list	tatoeba_local	bible_list	bible_source_ready	ner_list	ner_local	pos_list	pos_local	roundtrip_local_jsonl	roundtrip_bible_proxy
+lt30k	109	0	0	0	0	0	0	0	0	0	0	0	0
+30k_50k	113	89	85	4	4	75	71	12	12	4	0	0	71
+50k_100k	70	40	36	0	0	34	32	6	6	8	0	0	32
+100k_300k	124	79	77	7	7	69	66	13	13	6	0	0	66
+300k_1M	101	70	69	9	9	56	56	23	23	6	0	1	56
+1M_10M	52	45	45	8	8	41	40	20	20	3	0	3	40
+10M_plus	10	10	10	4	4	8	6	8	8	2	0	2	6

@@ -1,0 +1,46 @@
+index	task	model_key	gpu	status	started_at	finished_at
+1	retrieval_tatoeba	v52_random_conv5way_step20000	3	skipped		
+3	retrieval_tatoeba	v52_random_conv5way_step40000	3	skipped		
+5	retrieval_tatoeba	v52_mean_conv5way_step10000	3	skipped		
+7	retrieval_tatoeba	v52_mean_conv5way_step30000	3	skipped		
+9	retrieval_tatoeba	v52_mean_conv5way_step50000	3	running	2026-07-03T10:41:06	
+9	retrieval_tatoeba	v52_mean_conv5way_step50000	3	complete	2026-07-03T10:41:06	2026-07-03T10:41:06
+11	retrieval_tatoeba	v52_fvt_conv5way_step20000	3	skipped		
+13	retrieval_tatoeba	v52_fvt_conv5way_step40000	3	skipped		
+15	retrieval_tatoeba	v52_weighted_fvt_conv5way_step10000	3	skipped		
+17	retrieval_tatoeba	v52_weighted_fvt_conv5way_step30000	3	skipped		
+19	retrieval_tatoeba	v52_weighted_fvt_conv5way_step50000	3	skipped		
+21	retrieval_tatoeba	v52_family_mean_conv5way_step20000	3	skipped		
+23	retrieval_tatoeba	v52_family_mean_conv5way_step40000	3	skipped		
+25	retrieval_bible	v52_random_conv5way_step10000	3	skipped		
+27	retrieval_bible	v52_random_conv5way_step30000	3	skipped		
+29	retrieval_bible	v52_random_conv5way_step50000	3	running	2026-07-03T10:41:06	
+29	retrieval_bible	v52_random_conv5way_step50000	3	complete	2026-07-03T10:41:06	2026-07-03T10:41:06
+31	retrieval_bible	v52_mean_conv5way_step20000	3	skipped		
+33	retrieval_bible	v52_mean_conv5way_step40000	3	skipped		
+35	retrieval_bible	v52_fvt_conv5way_step10000	3	skipped		
+37	retrieval_bible	v52_fvt_conv5way_step30000	3	skipped		
+39	retrieval_bible	v52_fvt_conv5way_step50000	3	skipped		
+41	retrieval_bible	v52_weighted_fvt_conv5way_step20000	3	skipped		
+43	retrieval_bible	v52_weighted_fvt_conv5way_step40000	3	skipped		
+45	retrieval_bible	v52_family_mean_conv5way_step10000	3	skipped		
+47	retrieval_bible	v52_family_mean_conv5way_step30000	3	skipped		
+49	retrieval_bible	v52_family_mean_conv5way_step50000	3	skipped		
+51	roundtrip_alignment	v52_random_conv5way_step20000	3	skipped		
+53	roundtrip_alignment	v52_random_conv5way_step40000	3	skipped		
+55	roundtrip_alignment	v52_mean_conv5way_step10000	3	skipped		
+57	roundtrip_alignment	v52_mean_conv5way_step30000	3	skipped		
+59	roundtrip_alignment	v52_mean_conv5way_step50000	3	running	2026-07-03T10:41:06	
+59	roundtrip_alignment	v52_mean_conv5way_step50000	3	complete	2026-07-03T10:41:06	2026-07-03T10:41:06
+61	roundtrip_alignment	v52_fvt_conv5way_step20000	3	skipped		
+63	roundtrip_alignment	v52_fvt_conv5way_step40000	3	skipped		
+65	roundtrip_alignment	v52_weighted_fvt_conv5way_step10000	3	skipped		
+67	roundtrip_alignment	v52_weighted_fvt_conv5way_step30000	3	skipped		
+69	roundtrip_alignment	v52_weighted_fvt_conv5way_step50000	3	skipped		
+71	roundtrip_alignment	v52_family_mean_conv5way_step20000	3	skipped		
+73	roundtrip_alignment	v52_family_mean_conv5way_step40000	3	skipped		
+75	ner	v52_random_conv5way_step10000	3	running	2026-07-03T10:41:06	
+75	ner	v52_random_conv5way_step10000	3	complete	2026-07-03T10:41:06	2026-07-03T10:41:12
+77	ner	v52_random_conv5way_step30000	3	running	2026-07-03T10:41:12	
+75	ner	v52_random_conv5way_step10000	3	complete	2026-07-03T10:32:00	2026-07-03T11:32:00
+77	ner	v52_random_conv5way_step30000	3	running	2026-07-03T11:32:00	

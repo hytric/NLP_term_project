@@ -1,0 +1,8 @@
+task	languages	head_languages	target_languages	has_data_total	has_data_head	has_data_target	blocked_or_missing
+pseudoperplexity	99	92	7	99	92	7	0
+retrieval_tatoeba	99	92	7	66	63	3	33
+retrieval_bible	99	92	7	74	74	0	25
+text_classification	99	92	7	1	1	0	98
+ner	99	92	7	81	78	3	18
+pos	99	92	7	7	7	0	92
+roundtrip_alignment	99	92	7	74	74	0	25

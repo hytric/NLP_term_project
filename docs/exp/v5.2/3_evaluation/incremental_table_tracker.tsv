@@ -1,0 +1,8 @@
+task	candidates	now_table_fillable	while_mlm_runs	final_claim_gate	near_term_action
+tatoeba_retrieval	csb_Latn,dtp_Latn,ile_Latn	coverage,pair_counts,baseline_rows,checkpoint_pending	add zero-step or checkpoint rows when model path exists	paired random/FVT rows parsed	add candidates to low-resource subset table and run retrieval wrapper
+bible_retrieval	dtp_Latn,xav_Latn,bam_Latn	coverage,shared_verse_counts,materialization_plan	materialize Bible files while MLM runs	paired random/FVT rows parsed on materialized files	rerun materializer with tail flag included
+roundtrip_alignment	dtp_Latn,xav_Latn,bam_Latn	coverage,shared_verse_counts,materialization_plan	build JSONL after Bible materialization	paired random/FVT rows parsed on roundtrip JSONL	materialize Bible first, then roundtrip JSONL
+ner	csb_Latn,lij_Latn,fur_Latn	coverage,train_dev_test_counts,baseline_rows_possible	run NER rows when checkpoint path exists	paired random/FVT test rows parsed	add target subset accounting for three NER languages
+pos	xav_Latn,bam_Latn,lij_Latn	Table3_91_coverage,pos_rebuilt_counts,baseline_rows,checkpoint_rows	recompute POS rows on recovered pos_rebuilt split	paired random/mean/FVT rows parsed on 91-language Table3 split	report all91/head63/tail28 breakdown
+taxi1500	dtp_Latn,xav_Latn,bam_Latn	original_table3_note,local_missing_table	track as pending until PBC/Taxi1500 target data generated	no claim without target Taxi1500 files	keep as limitation or generate Taxi1500 from PBC pipeline
+embedding_similarity	csb_Latn,dtp_Latn,ile_Latn	pair_counts,source_pair_table	run sentence-embedding similarity per checkpoint	diagnostic only, not downstream claim	build similarity_pairs.tsv and update plots/scores per checkpoint

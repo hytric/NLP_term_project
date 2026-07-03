@@ -1,0 +1,84 @@
+language_script	language_name	script	new_length	resource_bucket	table3_known_task_list_count	task_list_tasks	actionable_task_count	actionable_tasks	bible_shared_verses
+lzh_Hani	Literary Chinese	Hani	86035	50k_100k	3	Bible,NER,POS	3	Bible,NER,RoundtripBibleProxy	7929
+dtp_Latn	Kadazan Dusun	Latn	48468	30k_50k	2	Tatoeba,Bible	3	Tatoeba,Bible,RoundtripBibleProxy	7887
+ace_Latn	Achinese	Latn	59333	50k_100k	2	Bible,NER	3	Bible,NER,RoundtripBibleProxy	7887
+xav_Latn	Xavánte	Latn	31765	30k_50k	2	Bible,POS	2	Bible,RoundtripBibleProxy	7418
+bam_Latn	Bambara	Latn	32150	30k_50k	2	Bible,POS	2	Bible,RoundtripBibleProxy	7933
+csb_Latn	Kashubian	Latn	33743	30k_50k	2	Tatoeba,NER	2	Tatoeba,NER	0
+myv_Cyrl	Erzya	Cyrl	42147	30k_50k	2	Bible,POS	2	Bible,RoundtripBibleProxy	7927
+glv_Latn	Manx	Latn	55641	50k_100k	2	Bible,POS	2	Bible,RoundtripBibleProxy	7941
+aln_Latn	Gheg Albanian	Latn	60989	50k_100k	2	Bible,POS	2	Bible,RoundtripBibleProxy	7941
+kaa_Latn	Kara-Kalpak	Latn	30031	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7880
+pls_Latn	San Marcos Tlacoyalco Popoloca	Latn	30136	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7930
+tuc_Latn	Mutu	Latn	30349	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7639
+krc_Cyrl	Karachay-Balkar	Cyrl	30353	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7936
+mzh_Latn	Wichí Lhamtés Güisnay	Latn	30517	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7817
+ksd_Latn	Kuanua	Latn	30550	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+rug_Latn	Roviana	Latn	30857	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7913
+zlm_Latn	Malay (individual language)	Latn	31345	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7939
+wbm_Latn	Wa	Latn	31394	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+hne_Deva	Chhattisgarhi	Deva	31465	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7940
+kjb_Latn	Q'anjob'al	Latn	31471	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7907
+cuk_Latn	San Blas Kuna	Latn	31612	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+tca_Latn	Ticuna	Latn	31852	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7727
+rop_Latn	Kriol	Latn	31889	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7649
+jam_Latn	Jamaican Creole English	Latn	32048	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7940
+tbz_Latn	Ditammari	Latn	32264	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7932
+suz_Deva	Sunwar	Deva	32811	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+tlh_Latn	Klingon	Latn	32863	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7936
+ixl_Latn	Ixil	Latn	33289	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7799
+quw_Latn	Tena Lowland Quichua	Latn	33449	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+csy_Latn	Siyin Chin	Latn	34126	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7907
+aoj_Latn	Mufian	Latn	34349	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7811
+kpg_Latn	Kapingamarangi	Latn	34900	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7919
+hui_Latn	Huli	Latn	34926	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7841
+knv_Latn	Tabo	Latn	35196	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7782
+bqc_Latn	Boko (Benin)	Latn	36881	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7921
+ikk_Latn	Ika	Latn	38071	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7940
+hnj_Latn	Hmong Njua	Latn	38611	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7932
+mad_Latn	Madurese	Latn	38993	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7886
+enm_Latn	Middle English (1100-1500)	Latn	39809	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+crh_Cyrl	Crimean Tatar	Cyrl	39985	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	4750
+teo_Latn	Teso	Latn	40203	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+gor_Latn	Gorontalo	Latn	41174	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7885
+npi_Deva	Nepali (individual language)	Deva	43072	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7888
+ach_Latn	Acoli	Latn	43974	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7940
+quh_Latn	South Bolivian Quechua	Latn	45566	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7892
+poh_Latn	Poqomchi'	Latn	46454	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+acr_Latn	Achi	Latn	48886	30k_50k	1	Bible	2	Bible,RoundtripBibleProxy	7914
+mps_Latn	Dadibi	Latn	50645	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7849
+nnb_Latn	Nande	Latn	52041	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7936
+mai_Deva	Maithili	Deva	54687	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7910
+hus_Latn	Huastec	Latn	56176	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7926
+ary_Arab	Moroccan Arabic	Arab	56933	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	3544
+ban_Latn	Balinese	Latn	59805	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7925
+ayr_Latn	Central Aymara	Latn	61570	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7899
+ote_Latn	Mezquital Otomi	Latn	64224	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7934
+qub_Latn	Huallaga Huánuco Quechua	Latn	64973	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7915
+yom_Latn	Yombe	Latn	74818	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7938
+srm_Latn	Saramaccan	Latn	76884	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7774
+rmy_Latn	Vlax Romani	Latn	76991	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7941
+mgh_Latn	Makhuwa-Meetto	Latn	78117	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	781
+kjh_Cyrl	Khakas	Cyrl	79262	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7853
+lhu_Latn	Lahu	Latn	87255	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7927
+kaa_Cyrl	Kara-Kalpak	Cyrl	88815	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7880
+miq_Latn	Mískito	Latn	94343	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7927
+alt_Cyrl	Southern Altai	Cyrl	95148	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7892
+djk_Latn	Eastern Maroon Creole	Latn	99234	50k_100k	1	Bible	2	Bible,RoundtripBibleProxy	7866
+lij_Latn	Ligurian	Latn	42447	30k_50k	2	NER,POS	1	NER	0
+nap_Latn	Neapolitan	Latn	65826	50k_100k	2	NER,POS	1	NER	0
+grn_Latn	Guarani	Latn	87568	50k_100k	2	NER,POS	1	NER	0
+fur_Latn	Friulian	Latn	30052	30k_50k	1	NER	1	NER	0
+ext_Latn	Extremaduran	Latn	30605	30k_50k	1	NER	1	NER	0
+bih_Deva		Deva	31658	30k_50k	1	NER	1	NER	0
+jbo_Latn	Lojban	Latn	32619	30k_50k	1	NER	1	NER	0
+zea_Latn	Zeeuws	Latn	34426	30k_50k	1	NER	1	NER	0
+ksh_Latn	Kölsch	Latn	38130	30k_50k	1	NER	1	NER	0
+crh_Latn	Crimean Tatar	Latn	39896	30k_50k	1	NER	1	NER	0
+ile_Latn	Interlingue	Latn	40984	30k_50k	1	Tatoeba	1	Tatoeba	0
+lfn_Latn	Lingua Franca Nova	Latn	41632	30k_50k	1	Tatoeba	1	Tatoeba	0
+sgs_Latn	Samogitian	Latn	42467	30k_50k	1	NER	1	NER	0
+vep_Latn	Veps	Latn	43076	30k_50k	1	NER	1	NER	0
+eml_Latn		Latn	44630	30k_50k	1	NER	1	NER	0
+frr_Latn	Northern Frisian	Latn	55254	50k_100k	1	NER	1	NER	0
+mzn_Arab	Mazanderani	Arab	73719	50k_100k	1	NER	1	NER	0

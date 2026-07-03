@@ -1,0 +1,75 @@
+{
+  "tasks": [
+    {
+      "task": "pseudoperplexity",
+      "languages": 99,
+      "head_languages": 92,
+      "target_languages": 7,
+      "has_data_total": 99,
+      "has_data_head": 92,
+      "has_data_target": 7,
+      "blocked_or_missing": 0
+    },
+    {
+      "task": "retrieval_tatoeba",
+      "languages": 99,
+      "head_languages": 92,
+      "target_languages": 7,
+      "has_data_total": 66,
+      "has_data_head": 63,
+      "has_data_target": 3,
+      "blocked_or_missing": 33
+    },
+    {
+      "task": "retrieval_bible",
+      "languages": 99,
+      "head_languages": 92,
+      "target_languages": 7,
+      "has_data_total": 74,
+      "has_data_head": 74,
+      "has_data_target": 0,
+      "blocked_or_missing": 25
+    },
+    {
+      "task": "text_classification",
+      "languages": 99,
+      "head_languages": 92,
+      "target_languages": 7,
+      "has_data_total": 1,
+      "has_data_head": 1,
+      "has_data_target": 0,
+      "blocked_or_missing": 98
+    },
+    {
+      "task": "ner",
+      "languages": 99,
+      "head_languages": 92,
+      "target_languages": 7,
+      "has_data_total": 81,
+      "has_data_head": 78,
+      "has_data_target": 3,
+      "blocked_or_missing": 18
+    },
+    {
+      "task": "pos",
+      "languages": 99,
+      "head_languages": 92,
+      "target_languages": 7,
+      "has_data_total": 7,
+      "has_data_head": 7,
+      "has_data_target": 0,
+      "blocked_or_missing": 92
+    },
+    {
+      "task": "roundtrip_alignment",
+      "languages": 99,
+      "head_languages": 92,
+      "target_languages": 7,
+      "has_data_total": 74,
+      "has_data_head": 74,
+      "has_data_target": 0,
+      "blocked_or_missing": 25
+    }
+  ],
+  "eval_data_root": "/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download"
+}

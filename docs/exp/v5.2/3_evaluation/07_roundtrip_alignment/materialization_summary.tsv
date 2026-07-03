@@ -1,0 +1,8 @@
+language_script	language	group	status	pivot_language_script	shared_verses	written_samples	output	reason
+dtp_Latn	dtp		ready	xav_Latn	7393	7393	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/roundtrip_alignment/roundtrip.dtp_Latn.jsonl	available
+xav_Latn	xav		ready	dtp_Latn	7393	7393	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/roundtrip_alignment/roundtrip.xav_Latn.jsonl	available
+bam_Latn	bam		ready	dtp_Latn	7883	7883	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target/roundtrip_alignment/roundtrip.bam_Latn.jsonl	available
+csb_Latn	csb		skipped_bible_not_ready		0	0		missing_source_bible
+ile_Latn	ile		skipped_bible_not_ready		0	0		missing_source_bible
+lij_Latn	lij		skipped_bible_not_ready		0	0		missing_source_bible
+fur_Latn	fur		skipped_bible_not_ready		0	0		missing_source_bible

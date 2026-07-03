@@ -1,0 +1,8 @@
+source	pair_type	pairs
+bible	aligned_bible_src_eng	300
+bible	same_language_bible_adjacent	300
+roundtrip	roundtrip_eng_pivot	300
+roundtrip	roundtrip_src_eng	300
+roundtrip	roundtrip_src_pivot	300
+tatoeba	aligned_tatoeba_src_eng	300
+tatoeba	same_language_tatoeba_adjacent	300

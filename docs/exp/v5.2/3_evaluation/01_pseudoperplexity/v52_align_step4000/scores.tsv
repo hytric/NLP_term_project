@@ -1,0 +1,8 @@
+model_key	language_script	group	examples	masked_tokens	mean_nll	pseudo_perplexity	elapsed_sec
+v52_align_step4000	dtp_Latn	v5_target	20	246	7.551571	1903.730806	0.825
+v52_align_step4000	xav_Latn	v5_target	20	1518	2.100797	8.172684	15.430
+v52_align_step4000	bam_Latn	v5_target	20	616	5.708660	301.466975	3.541
+v52_align_step4000	csb_Latn	v5_target	20	704	4.992538	147.309830	4.813
+v52_align_step4000	ile_Latn	v5_target	20	468	2.943057	18.973767	2.074
+v52_align_step4000	lij_Latn	v5_target	20	851	4.263344	71.047143	5.931
+v52_align_step4000	fur_Latn	v5_target	20	793	5.065474	158.455495	6.743

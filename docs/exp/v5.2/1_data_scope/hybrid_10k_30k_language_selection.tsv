@@ -1,0 +1,23 @@
+layer	priority	language_script	language_name	new_length	estimated_train_if_1k_dev_1k_test	role	downstream_membership	status
+core_10k	1	mzn_Latn	Mazanderani	1201	0	intrinsic_mlm_core	none	needs_small_split_policy
+core_10k	2	udm_Latn	Udmurt	4616	2616	intrinsic_mlm_core	none	ready_raw
+core_10k	3	koi_Latn	Komi-Permyak	4749	2749	intrinsic_mlm_core	none	ready_raw
+core_10k	4	kom_Latn	Komi	5538	3538	intrinsic_mlm_core	none	ready_raw
+core_10k	5	wuu_Latn	Wu Chinese	5631	3631	intrinsic_mlm_core	none	ready_raw
+core_10k	6	rup_Latn	Macedo-Romanian	6794	4794	intrinsic_mlm_core	none	ready_raw
+core_10k	7	bod_Latn	Tibetan	7689	5689	intrinsic_mlm_core	none	ready_raw
+core_10k	8	mrj_Latn	Western Mari	8755	6755	intrinsic_mlm_core	none	ready_raw
+core_10k	9	dty_Deva	Dotyali	9010	7010	intrinsic_mlm_core	none	ready_raw
+core_10k	10	ceb_Hani	Cebuano	9433	7433	intrinsic_mlm_core	none	ready_raw
+core_train10k	11	xmf_Latn	Mingrelian	10673	8673	intrinsic_mlm_core	none	ready_raw
+core_train10k	12	chv_Latn	Chuvash	10693	8693	intrinsic_mlm_core	none	ready_raw
+core_train10k	13	sat_Latn	Santali	11724	9724	intrinsic_mlm_core	none	ready_raw
+fallback_overlap_tatoeba_embedding	1	csb_Latn	Kashubian	33743	31743	downstream_fill	Tatoeba/NER/Embedding	ready
+fallback_overlap_tatoeba_embedding	2	dtp_Latn	Kadazan Dusun	48468	46468	downstream_fill	Tatoeba/Bible/Roundtrip/Taxi1500/Embedding	materializable
+fallback_overlap_tatoeba_embedding	3	ile_Latn	Interlingue	40984	38984	downstream_fill	Tatoeba/Embedding	ready
+fallback_overlap_bible_roundtrip_taxi_pos	1	dtp_Latn	Kadazan Dusun	48468	46468	downstream_fill	Tatoeba/Bible/Roundtrip/Taxi1500/Embedding	materializable
+fallback_overlap_bible_roundtrip_taxi_pos	2	xav_Latn	Xavante	31765	29765	downstream_fill	Bible/Roundtrip/POS/Taxi1500	materializable_pos_pending
+fallback_overlap_bible_roundtrip_taxi_pos	3	bam_Latn	Bambara	32150	30150	downstream_fill	Bible/Roundtrip/POS/Taxi1500	materializable_pos_pending
+fallback_overlap_ner_pos	1	csb_Latn	Kashubian	33743	31743	downstream_fill	Tatoeba/NER/Embedding	ready
+fallback_overlap_ner_pos	2	lij_Latn	Ligurian	42447	40447	downstream_fill	NER/POS	ner_ready_pos_pending
+fallback_overlap_ner_pos	3	fur_Latn	Friulian	30052	28052	downstream_fill	NER	ready

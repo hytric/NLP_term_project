@@ -1,0 +1,407 @@
+task	language_script	new_length	resource_bucket
+NER	fur_Latn	30052	30k_50k
+NER	ext_Latn	30605	30k_50k
+NER	bih_Deva	31658	30k_50k
+NER	jbo_Latn	32619	30k_50k
+NER	csb_Latn	33743	30k_50k
+NER	zea_Latn	34426	30k_50k
+NER	ksh_Latn	38130	30k_50k
+NER	crh_Latn	39896	30k_50k
+NER	lij_Latn	42447	30k_50k
+NER	sgs_Latn	42467	30k_50k
+NER	vep_Latn	43076	30k_50k
+NER	eml_Latn	44630	30k_50k
+NER	frr_Latn	55254	50k_100k
+NER	ace_Latn	59333	50k_100k
+NER	nap_Latn	65826	50k_100k
+NER	mzn_Arab	73719	50k_100k
+NER	lzh_Hani	86035	50k_100k
+NER	grn_Latn	87568	50k_100k
+NER	mhr_Cyrl	100474	100k_300k
+NER	vls_Latn	101900	100k_300k
+NER	hsb_Latn	104802	100k_300k
+NER	szl_Latn	112496	100k_300k
+NER	cbk_Latn	118789	100k_300k
+NER	diq_Latn	128908	100k_300k
+NER	mwl_Latn	150054	100k_300k
+NER	xmf_Geor	174994	100k_300k
+NER	ina_Latn	197315	100k_300k
+NER	scn_Latn	199068	100k_300k
+NER	wuu_Hani	224088	100k_300k
+NER	pms_Latn	227748	100k_300k
+NER	bod_Tibt	273489	100k_300k
+NER	vol_Latn	310399	300k_1M
+NER	ido_Latn	331239	300k_1M
+NER	lmo_Latn	348135	300k_1M
+NER	sah_Cyrl	352697	300k_1M
+NER	aym_Latn	373329	300k_1M
+NER	roh_Latn	377067	300k_1M
+NER	bar_Latn	387070	300k_1M
+NER	arg_Latn	410683	300k_1M
+NER	sco_Latn	411591	300k_1M
+NER	yue_Hani	484700	300k_1M
+NER	vec_Latn	514240	300k_1M
+NER	min_Latn	609065	300k_1M
+NER	tuk_Latn	649411	300k_1M
+NER	lim_Latn	652078	300k_1M
+NER	nan_Latn	656389	300k_1M
+NER	oss_Cyrl	683517	300k_1M
+NER	che_Cyrl	728201	300k_1M
+NER	que_Latn	838486	300k_1M
+NER	chv_Cyrl	859863	300k_1M
+NER	ckb_Arab	874441	300k_1M
+NER	pnb_Arab	899895	300k_1M
+NER	nds_Latn	944715	300k_1M
+NER	lin_Latn	1408460	1M_10M
+NER	oci_Latn	1449128	1M_10M
+NER	kin_Latn	1521612	1M_10M
+NER	ibo_Latn	1543820	1M_10M
+NER	mri_Latn	2046850	1M_10M
+NER	ilo_Latn	2106531	1M_10M
+NER	bak_Cyrl	2264196	1M_10M
+NER	fao_Latn	2365271	1M_10M
+NER	yor_Latn	2392359	1M_10M
+NER	div_Thaa	2418687	1M_10M
+NER	war_Latn	2584810	1M_10M
+NER	als_Latn	2954874	1M_10M
+NER	cos_Latn	3015055	1M_10M
+NER	arz_Arab	3488224	1M_10M
+NER	ast_Latn	4683554	1M_10M
+NER	tat_Cyrl	4708088	1M_10M
+NER	nno_Latn	4899103	1M_10M
+NER	ltz_Latn	12997242	10M_plus
+NER	ceb_Latn	18149215	10M_plus
+NER	tgk_Cyrl	18659517	10M_plus
+NER	mlt_Latn	40654838	10M_plus
+NER	hbs_Latn	63411156	10M_plus
+POS	xav_Latn	31765	30k_50k
+POS	bam_Latn	32150	30k_50k
+POS	myv_Cyrl	42147	30k_50k
+POS	lij_Latn	42447	30k_50k
+POS	glv_Latn	55641	50k_100k
+POS	aln_Latn	60989	50k_100k
+POS	nap_Latn	65826	50k_100k
+POS	ajp_Arab	83297	50k_100k
+POS	lzh_Hani	86035	50k_100k
+POS	grn_Latn	87568	50k_100k
+POS	hbo_Hebr	96484	50k_100k
+POS	grc_Grek	96986	50k_100k
+POS	hsb_Latn	104802	100k_300k
+POS	sme_Latn	146803	100k_300k
+POS	wol_Latn	146992	100k_300k
+POS	quc_Latn	181559	100k_300k
+POS	pcm_Latn	187594	100k_300k
+POS	kmr_Latn	256677	100k_300k
+POS	sah_Cyrl	352697	300k_1M
+POS	gsw_Latn	449240	300k_1M
+POS	yue_Hani	484700	300k_1M
+POS	hyw_Armn	679819	300k_1M
+POS	nds_Latn	944715	300k_1M
+POS	fao_Latn	2365271	1M_10M
+POS	yor_Latn	2392359	1M_10M
+POS	tat_Cyrl	4708088	1M_10M
+POS	ceb_Latn	18149215	10M_plus
+POS	mlt_Latn	40654838	10M_plus
+Sentence Retrieval Bible	kaa_Latn	30031	30k_50k
+Sentence Retrieval Bible	rap_Latn	30102	30k_50k
+Sentence Retrieval Bible	pls_Latn	30136	30k_50k
+Sentence Retrieval Bible	mrw_Latn	30304	30k_50k
+Sentence Retrieval Bible	tuc_Latn	30349	30k_50k
+Sentence Retrieval Bible	krc_Cyrl	30353	30k_50k
+Sentence Retrieval Bible	mwm_Latn	30432	30k_50k
+Sentence Retrieval Bible	hra_Latn	30472	30k_50k
+Sentence Retrieval Bible	mzh_Latn	30517	30k_50k
+Sentence Retrieval Bible	ksd_Latn	30550	30k_50k
+Sentence Retrieval Bible	dln_Latn	30620	30k_50k
+Sentence Retrieval Bible	ifa_Latn	30621	30k_50k
+Sentence Retrieval Bible	mcn_Latn	30666	30k_50k
+Sentence Retrieval Bible	kmm_Latn	30671	30k_50k
+Sentence Retrieval Bible	pxm_Latn	30698	30k_50k
+Sentence Retrieval Bible	aka_Latn	30704	30k_50k
+Sentence Retrieval Bible	rug_Latn	30857	30k_50k
+Sentence Retrieval Bible	izz_Latn	30894	30k_50k
+Sentence Retrieval Bible	ifb_Latn	30980	30k_50k
+Sentence Retrieval Bible	tui_Latn	31161	30k_50k
+Sentence Retrieval Bible	zlm_Latn	31345	30k_50k
+Sentence Retrieval Bible	wbm_Latn	31394	30k_50k
+Sentence Retrieval Bible	hne_Deva	31465	30k_50k
+Sentence Retrieval Bible	kjb_Latn	31471	30k_50k
+Sentence Retrieval Bible	cuk_Latn	31612	30k_50k
+Sentence Retrieval Bible	xav_Latn	31765	30k_50k
+Sentence Retrieval Bible	yan_Latn	31775	30k_50k
+Sentence Retrieval Bible	tca_Latn	31852	30k_50k
+Sentence Retrieval Bible	rop_Latn	31889	30k_50k
+Sentence Retrieval Bible	caq_Latn	31903	30k_50k
+Sentence Retrieval Bible	nmf_Latn	31997	30k_50k
+Sentence Retrieval Bible	jam_Latn	32048	30k_50k
+Sentence Retrieval Bible	prk_Latn	32085	30k_50k
+Sentence Retrieval Bible	bam_Latn	32150	30k_50k
+Sentence Retrieval Bible	tbz_Latn	32264	30k_50k
+Sentence Retrieval Bible	suz_Deva	32811	30k_50k
+Sentence Retrieval Bible	tlh_Latn	32863	30k_50k
+Sentence Retrieval Bible	mbb_Latn	33240	30k_50k
+Sentence Retrieval Bible	ixl_Latn	33289	30k_50k
+Sentence Retrieval Bible	quw_Latn	33449	30k_50k
+Sentence Retrieval Bible	tpm_Latn	33517	30k_50k
+Sentence Retrieval Bible	csy_Latn	34126	30k_50k
+Sentence Retrieval Bible	aoj_Latn	34349	30k_50k
+Sentence Retrieval Bible	kpg_Latn	34900	30k_50k
+Sentence Retrieval Bible	hui_Latn	34926	30k_50k
+Sentence Retrieval Bible	giz_Latn	35040	30k_50k
+Sentence Retrieval Bible	knv_Latn	35196	30k_50k
+Sentence Retrieval Bible	agw_Latn	35585	30k_50k
+Sentence Retrieval Bible	gya_Latn	35902	30k_50k
+Sentence Retrieval Bible	bts_Latn	36216	30k_50k
+Sentence Retrieval Bible	mdy_Ethi	36370	30k_50k
+Sentence Retrieval Bible	bim_Latn	36835	30k_50k
+Sentence Retrieval Bible	bqc_Latn	36881	30k_50k
+Sentence Retrieval Bible	zom_Latn	37013	30k_50k
+Sentence Retrieval Bible	sba_Latn	38040	30k_50k
+Sentence Retrieval Bible	ikk_Latn	38071	30k_50k
+Sentence Retrieval Bible	hnj_Latn	38611	30k_50k
+Sentence Retrieval Bible	cac_Latn	38812	30k_50k
+Sentence Retrieval Bible	mad_Latn	38993	30k_50k
+Sentence Retrieval Bible	enm_Latn	39809	30k_50k
+Sentence Retrieval Bible	crh_Cyrl	39985	30k_50k
+Sentence Retrieval Bible	kia_Latn	40035	30k_50k
+Sentence Retrieval Bible	teo_Latn	40203	30k_50k
+Sentence Retrieval Bible	ium_Latn	40683	30k_50k
+Sentence Retrieval Bible	gor_Latn	41174	30k_50k
+Sentence Retrieval Bible	tih_Latn	41873	30k_50k
+Sentence Retrieval Bible	myv_Cyrl	42147	30k_50k
+Sentence Retrieval Bible	npi_Deva	43072	30k_50k
+Sentence Retrieval Bible	ach_Latn	43974	30k_50k
+Sentence Retrieval Bible	tob_Latn	44473	30k_50k
+Sentence Retrieval Bible	quh_Latn	45566	30k_50k
+Sentence Retrieval Bible	poh_Latn	46454	30k_50k
+Sentence Retrieval Bible	lam_Latn	46853	30k_50k
+Sentence Retrieval Bible	dtp_Latn	48468	30k_50k
+Sentence Retrieval Bible	acr_Latn	48886	30k_50k
+Sentence Retrieval Bible	gkp_Latn	50549	50k_100k
+Sentence Retrieval Bible	mps_Latn	50645	50k_100k
+Sentence Retrieval Bible	sxn_Latn	51749	50k_100k
+Sentence Retrieval Bible	nnb_Latn	52041	50k_100k
+Sentence Retrieval Bible	ctd_Latn	52135	50k_100k
+Sentence Retrieval Bible	dzo_Tibt	52732	50k_100k
+Sentence Retrieval Bible	mai_Deva	54687	50k_100k
+Sentence Retrieval Bible	glv_Latn	55641	50k_100k
+Sentence Retrieval Bible	hus_Latn	56176	50k_100k
+Sentence Retrieval Bible	ary_Arab	56933	50k_100k
+Sentence Retrieval Bible	ace_Latn	59333	50k_100k
+Sentence Retrieval Bible	ban_Latn	59805	50k_100k
+Sentence Retrieval Bible	leh_Latn	59944	50k_100k
+Sentence Retrieval Bible	aln_Latn	60989	50k_100k
+Sentence Retrieval Bible	bba_Latn	61123	50k_100k
+Sentence Retrieval Bible	ayr_Latn	61570	50k_100k
+Sentence Retrieval Bible	ldi_Latn	61827	50k_100k
+Sentence Retrieval Bible	ote_Latn	64224	50k_100k
+Sentence Retrieval Bible	qub_Latn	64973	50k_100k
+Sentence Retrieval Bible	cfm_Latn	70227	50k_100k
+Sentence Retrieval Bible	yom_Latn	74818	50k_100k
+Sentence Retrieval Bible	gur_Latn	76151	50k_100k
+Sentence Retrieval Bible	srm_Latn	76884	50k_100k
+Sentence Retrieval Bible	rmy_Latn	76991	50k_100k
+Sentence Retrieval Bible	mgh_Latn	78117	50k_100k
+Sentence Retrieval Bible	kjh_Cyrl	79262	50k_100k
+Sentence Retrieval Bible	lzh_Hani	86035	50k_100k
+Sentence Retrieval Bible	lhu_Latn	87255	50k_100k
+Sentence Retrieval Bible	kaa_Cyrl	88815	50k_100k
+Sentence Retrieval Bible	miq_Latn	94343	50k_100k
+Sentence Retrieval Bible	alt_Cyrl	95148	50k_100k
+Sentence Retrieval Bible	grc_Grek	96986	50k_100k
+Sentence Retrieval Bible	gkn_Latn	97041	50k_100k
+Sentence Retrieval Bible	djk_Latn	99234	50k_100k
+Sentence Retrieval Bible	mhr_Cyrl	100474	100k_300k
+Sentence Retrieval Bible	alz_Latn	104392	100k_300k
+Sentence Retrieval Bible	nse_Latn	105189	100k_300k
+Sentence Retrieval Bible	toh_Latn	107583	100k_300k
+Sentence Retrieval Bible	naq_Latn	109747	100k_300k
+Sentence Retrieval Bible	nyy_Latn	115914	100k_300k
+Sentence Retrieval Bible	ngu_Latn	116851	100k_300k
+Sentence Retrieval Bible	bhw_Latn	117381	100k_300k
+Sentence Retrieval Bible	cbk_Latn	118789	100k_300k
+Sentence Retrieval Bible	meu_Latn	120273	100k_300k
+Sentence Retrieval Bible	cce_Latn	120636	100k_300k
+Sentence Retrieval Bible	udm_Cyrl	121705	100k_300k
+Sentence Retrieval Bible	bzj_Latn	124958	100k_300k
+Sentence Retrieval Bible	tsz_Latn	133251	100k_300k
+Sentence Retrieval Bible	ahk_Latn	135068	100k_300k
+Sentence Retrieval Bible	mgr_Latn	138953	100k_300k
+Sentence Retrieval Bible	bum_Latn	141673	100k_300k
+Sentence Retrieval Bible	gom_Latn	143937	100k_300k
+Sentence Retrieval Bible	sme_Latn	146803	100k_300k
+Sentence Retrieval Bible	wol_Latn	146992	100k_300k
+Sentence Retrieval Bible	hif_Latn	147261	100k_300k
+Sentence Retrieval Bible	mxv_Latn	147591	100k_300k
+Sentence Retrieval Bible	ksw_Mymr	147674	100k_300k
+Sentence Retrieval Bible	nav_Latn	147702	100k_300k
+Sentence Retrieval Bible	kmr_Cyrl	151728	100k_300k
+Sentence Retrieval Bible	pdt_Latn	155485	100k_300k
+Sentence Retrieval Bible	arn_Latn	155882	100k_300k
+Sentence Retrieval Bible	mck_Latn	157521	100k_300k
+Sentence Retrieval Bible	qug_Latn	162500	100k_300k
+Sentence Retrieval Bible	ndc_Latn	174305	100k_300k
+Sentence Retrieval Bible	tuk_Cyrl	175769	100k_300k
+Sentence Retrieval Bible	kab_Latn	176015	100k_300k
+Sentence Retrieval Bible	yao_Latn	179965	100k_300k
+Sentence Retrieval Bible	quc_Latn	181559	100k_300k
+Sentence Retrieval Bible	kss_Latn	185868	100k_300k
+Sentence Retrieval Bible	dyu_Latn	186367	100k_300k
+Sentence Retrieval Bible	pcm_Latn	187594	100k_300k
+Sentence Retrieval Bible	toj_Latn	189651	100k_300k
+Sentence Retrieval Bible	pau_Latn	190529	100k_300k
+Sentence Retrieval Bible	ncj_Latn	192962	100k_300k
+Sentence Retrieval Bible	nch_Latn	193129	100k_300k
+Sentence Retrieval Bible	btx_Latn	193701	100k_300k
+Sentence Retrieval Bible	tyv_Cyrl	198649	100k_300k
+Sentence Retrieval Bible	mau_Latn	199134	100k_300k
+Sentence Retrieval Bible	kri_Latn	201087	100k_300k
+Sentence Retrieval Bible	ctu_Latn	201662	100k_300k
+Sentence Retrieval Bible	kbp_Latn	202877	100k_300k
+Sentence Retrieval Bible	cak_Latn	204472	100k_300k
+Sentence Retrieval Bible	qvi_Latn	205447	100k_300k
+Sentence Retrieval Bible	kac_Latn	205542	100k_300k
+Sentence Retrieval Bible	sop_Latn	206501	100k_300k
+Sentence Retrieval Bible	kek_Latn	209932	100k_300k
+Sentence Retrieval Bible	iba_Latn	213615	100k_300k
+Sentence Retrieval Bible	plt_Latn	220413	100k_300k
+Sentence Retrieval Bible	tzh_Latn	230706	100k_300k
+Sentence Retrieval Bible	mco_Latn	231209	100k_300k
+Sentence Retrieval Bible	top_Latn	239232	100k_300k
+Sentence Retrieval Bible	cab_Latn	240101	100k_300k
+Sentence Retrieval Bible	nyn_Latn	241992	100k_300k
+Sentence Retrieval Bible	nia_Latn	247406	100k_300k
+Sentence Retrieval Bible	mam_Latn	248348	100k_300k
+Sentence Retrieval Bible	guc_Latn	249044	100k_300k
+Sentence Retrieval Bible	kmr_Latn	256677	100k_300k
+Sentence Retrieval Bible	nbl_Latn	259158	100k_300k
+Sentence Retrieval Bible	fon_Latn	268566	100k_300k
+Sentence Retrieval Bible	nde_Latn	269931	100k_300k
+Sentence Retrieval Bible	bod_Tibt	273489	100k_300k
+Sentence Retrieval Bible	gym_Latn	274512	100k_300k
+Sentence Retrieval Bible	zai_Latn	277632	100k_300k
+Sentence Retrieval Bible	seh_Latn	300243	300k_1M
+Sentence Retrieval Bible	pam_Latn	303737	300k_1M
+Sentence Retrieval Bible	wal_Latn	309873	300k_1M
+Sentence Retrieval Bible	bbc_Latn	310420	300k_1M
+Sentence Retrieval Bible	quy_Latn	311040	300k_1M
+Sentence Retrieval Bible	tsn_Latn	350954	300k_1M
+Sentence Retrieval Bible	sah_Cyrl	352697	300k_1M
+Sentence Retrieval Bible	quz_Latn	354781	300k_1M
+Sentence Retrieval Bible	ssw_Latn	356561	300k_1M
+Sentence Retrieval Bible	yap_Latn	358929	300k_1M
+Sentence Retrieval Bible	chk_Latn	380596	300k_1M
+Sentence Retrieval Bible	bci_Latn	384059	300k_1M
+Sentence Retrieval Bible	bar_Latn	387070	300k_1M
+Sentence Retrieval Bible	gug_Latn	392227	300k_1M
+Sentence Retrieval Bible	nzi_Latn	394247	300k_1M
+Sentence Retrieval Bible	luo_Latn	398974	300k_1M
+Sentence Retrieval Bible	pon_Latn	434522	300k_1M
+Sentence Retrieval Bible	gil_Latn	434529	300k_1M
+Sentence Retrieval Bible	cnh_Latn	436667	300k_1M
+Sentence Retrieval Bible	kik_Latn	437228	300k_1M
+Sentence Retrieval Bible	mos_Latn	437666	300k_1M
+Sentence Retrieval Bible	mfe_Latn	447435	300k_1M
+Sentence Retrieval Bible	tdt_Latn	459818	300k_1M
+Sentence Retrieval Bible	kal_Latn	462430	300k_1M
+Sentence Retrieval Bible	hin_Latn	466175	300k_1M
+Sentence Retrieval Bible	kua_Latn	473535	300k_1M
+Sentence Retrieval Bible	yue_Hani	484700	300k_1M
+Sentence Retrieval Bible	ndo_Latn	496613	300k_1M
+Sentence Retrieval Bible	crs_Latn	508755	300k_1M
+Sentence Retrieval Bible	lus_Latn	509250	300k_1M
+Sentence Retrieval Bible	mah_Latn	534614	300k_1M
+Sentence Retrieval Bible	tzo_Latn	540262	300k_1M
+Sentence Retrieval Bible	lug_Latn	566948	300k_1M
+Sentence Retrieval Bible	tum_Latn	589857	300k_1M
+Sentence Retrieval Bible	min_Latn	609065	300k_1M
+Sentence Retrieval Bible	yua_Latn	610052	300k_1M
+Sentence Retrieval Bible	tir_Ethi	649117	300k_1M
+Sentence Retrieval Bible	tuk_Latn	649411	300k_1M
+Sentence Retrieval Bible	nan_Latn	656389	300k_1M
+Sentence Retrieval Bible	oss_Cyrl	683517	300k_1M
+Sentence Retrieval Bible	pis_Latn	714783	300k_1M
+Sentence Retrieval Bible	che_Cyrl	728201	300k_1M
+Sentence Retrieval Bible	toi_Latn	745385	300k_1M
+Sentence Retrieval Bible	guw_Latn	767918	300k_1M
+Sentence Retrieval Bible	sag_Latn	771048	300k_1M
+Sentence Retrieval Bible	chv_Cyrl	859863	300k_1M
+Sentence Retrieval Bible	ven_Latn	860249	300k_1M
+Sentence Retrieval Bible	ckb_Arab	874441	300k_1M
+Sentence Retrieval Bible	fij_Latn	887134	300k_1M
+Sentence Retrieval Bible	rar_Latn	894515	300k_1M
+Sentence Retrieval Bible	run_Latn	943828	300k_1M
+Sentence Retrieval Bible	nds_Latn	944715	300k_1M
+Sentence Retrieval Bible	loz_Latn	964418	300k_1M
+Sentence Retrieval Bible	pag_Latn	983637	300k_1M
+Sentence Retrieval Bible	hmo_Latn	1033636	1M_10M
+Sentence Retrieval Bible	haw_Latn	1062491	1M_10M
+Sentence Retrieval Bible	bis_Latn	1070170	1M_10M
+Sentence Retrieval Bible	efi_Latn	1082621	1M_10M
+Sentence Retrieval Bible	bem_Latn	1111969	1M_10M
+Sentence Retrieval Bible	ewe_Latn	1161605	1M_10M
+Sentence Retrieval Bible	srn_Latn	1172349	1M_10M
+Sentence Retrieval Bible	ton_Latn	1216118	1M_10M
+Sentence Retrieval Bible	gaa_Latn	1222307	1M_10M
+Sentence Retrieval Bible	bcl_Latn	1284493	1M_10M
+Sentence Retrieval Bible	pap_Latn	1360138	1M_10M
+Sentence Retrieval Bible	twi_Latn	1400979	1M_10M
+Sentence Retrieval Bible	tpi_Latn	1401844	1M_10M
+Sentence Retrieval Bible	lin_Latn	1408460	1M_10M
+Sentence Retrieval Bible	kin_Latn	1521612	1M_10M
+Sentence Retrieval Bible	ibo_Latn	1543820	1M_10M
+Sentence Retrieval Bible	nso_Latn	1619354	1M_10M
+Sentence Retrieval Bible	hil_Latn	1798875	1M_10M
+Sentence Retrieval Bible	mri_Latn	2046850	1M_10M
+Sentence Retrieval Bible	tso_Latn	2100708	1M_10M
+Sentence Retrieval Bible	ilo_Latn	2106531	1M_10M
+Sentence Retrieval Bible	bak_Cyrl	2264196	1M_10M
+Sentence Retrieval Bible	smo_Latn	2290439	1M_10M
+Sentence Retrieval Bible	uzn_Cyrl	2293672	1M_10M
+Sentence Retrieval Bible	fao_Latn	2365271	1M_10M
+Sentence Retrieval Bible	yor_Latn	2392359	1M_10M
+Sentence Retrieval Bible	war_Latn	2584810	1M_10M
+Sentence Retrieval Bible	als_Latn	2954874	1M_10M
+Sentence Retrieval Bible	uzb_Cyrl	3029947	1M_10M
+Sentence Retrieval Bible	sot_Latn	3205510	1M_10M
+Sentence Retrieval Bible	hat_Latn	3226932	1M_10M
+Sentence Retrieval Bible	nya_Latn	3409030	1M_10M
+Sentence Retrieval Bible	arz_Arab	3488224	1M_10M
+Sentence Retrieval Bible	zul_Latn	3580113	1M_10M
+Sentence Retrieval Bible	sna_Latn	4019596	1M_10M
+Sentence Retrieval Bible	tat_Cyrl	4708088	1M_10M
+Sentence Retrieval Bible	nno_Latn	4899103	1M_10M
+Sentence Retrieval Bible	ory_Orya	6266475	1M_10M
+Sentence Retrieval Bible	ltz_Latn	12997242	10M_plus
+Sentence Retrieval Bible	ceb_Latn	18149215	10M_plus
+Sentence Retrieval Bible	tgk_Cyrl	18659517	10M_plus
+Sentence Retrieval Bible	nob_Latn	32869205	10M_plus
+Sentence Retrieval Bible	mlt_Latn	40654838	10M_plus
+Sentence Retrieval Tatoeba	csb_Latn	33743	30k_50k
+Sentence Retrieval Tatoeba	ile_Latn	40984	30k_50k
+Sentence Retrieval Tatoeba	lfn_Latn	41632	30k_50k
+Sentence Retrieval Tatoeba	dtp_Latn	48468	30k_50k
+Sentence Retrieval Tatoeba	mhr_Cyrl	100474	100k_300k
+Sentence Retrieval Tatoeba	hsb_Latn	104802	100k_300k
+Sentence Retrieval Tatoeba	cbk_Latn	118789	100k_300k
+Sentence Retrieval Tatoeba	kab_Latn	176015	100k_300k
+Sentence Retrieval Tatoeba	ina_Latn	197315	100k_300k
+Sentence Retrieval Tatoeba	wuu_Hani	224088	100k_300k
+Sentence Retrieval Tatoeba	pms_Latn	227748	100k_300k
+Sentence Retrieval Tatoeba	pam_Latn	303737	300k_1M
+Sentence Retrieval Tatoeba	ido_Latn	331239	300k_1M
+Sentence Retrieval Tatoeba	lvs_Latn	422952	300k_1M
+Sentence Retrieval Tatoeba	gsw_Latn	449240	300k_1M
+Sentence Retrieval Tatoeba	yue_Hani	484700	300k_1M
+Sentence Retrieval Tatoeba	tuk_Latn	649411	300k_1M
+Sentence Retrieval Tatoeba	nds_Latn	944715	300k_1M
+Sentence Retrieval Tatoeba	oci_Latn	1449128	1M_10M
+Sentence Retrieval Tatoeba	fao_Latn	2365271	1M_10M
+Sentence Retrieval Tatoeba	war_Latn	2584810	1M_10M
+Sentence Retrieval Tatoeba	uzb_Cyrl	3029947	1M_10M
+Sentence Retrieval Tatoeba	arz_Arab	3488224	1M_10M
+Sentence Retrieval Tatoeba	ast_Latn	4683554	1M_10M
+Sentence Retrieval Tatoeba	tat_Cyrl	4708088	1M_10M
+Sentence Retrieval Tatoeba	nno_Latn	4899103	1M_10M
+Sentence Retrieval Tatoeba	ceb_Latn	18149215	10M_plus
+Sentence Retrieval Tatoeba	nob_Latn	32869205	10M_plus

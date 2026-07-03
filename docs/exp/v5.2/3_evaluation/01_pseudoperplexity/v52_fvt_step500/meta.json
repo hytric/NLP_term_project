@@ -1,0 +1,26 @@
+{
+  "tokenizer": "/home/axt/mnt2/jongha/v5.2_glot5007/tokenization/output/Glot500_extended_spm",
+  "manifest": "/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2/0_tokenizer/merge/Glot500_v52_glot5007_xlmr100.manifest.tsv",
+  "models": [
+    {
+      "key": "v52_fvt_step500",
+      "model_path": "/home/axt/mnt2/jongha/v5.2_glot5007/runs/v52_fvt_mlm_8h/checkpoint-500"
+    }
+  ],
+  "languages": [
+    "dtp_Latn",
+    "xav_Latn",
+    "bam_Latn",
+    "csb_Latn",
+    "ile_Latn",
+    "lij_Latn",
+    "fur_Latn"
+  ],
+  "max_examples_per_language": 20,
+  "max_length": 128,
+  "mask_batch_size": 16,
+  "device": "cuda",
+  "examples_cache": "/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/cache/pppl_examples_train_ex20_allhead0_headlimit0.json",
+  "result_title": "v5.2 Target7 Pseudoperplexity / MLM Proxy Results",
+  "elapsed_sec": 44.231
+}

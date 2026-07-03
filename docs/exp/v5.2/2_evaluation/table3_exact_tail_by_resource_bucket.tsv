@@ -1,0 +1,5 @@
+task	table3_head	table3_tail	expected_tail	missing_from_languages_stats	lt30k	30k_50k	50k_100k	100k_300k	300k_1M	1M_10M	10M_plus	30k_100k	30k_300k	lt300k	300k_plus
+Sentence Retrieval Tatoeba	70	28	28	0	0	4	0	7	7	8	2	4	11	11	17
+Sentence Retrieval Bible	94	275	275	0	0	75	34	69	54	38	5	109	178	178	97
+NER	89	75	75	0	0	12	6	13	22	17	5	18	31	31	44
+POS	63	28	28	0	0	4	8	6	5	3	2	12	18	18	10

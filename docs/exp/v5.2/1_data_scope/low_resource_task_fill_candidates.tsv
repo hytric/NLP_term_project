@@ -1,0 +1,22 @@
+task	rank	language_script	language_name	glot500_new_length	eval_items_or_target	evidence_basis	local_status	action_needed
+tatoeba_retrieval	1	csb_Latn	Kashubian	33743	253 pairs	local Tatoeba pair files + Tatoeba task list	ready	add/keep in retrieval runner
+tatoeba_retrieval	2	dtp_Latn	Kadazan Dusun	48468	1000 pairs	local Tatoeba pair files + Tatoeba task list	ready	add/keep in retrieval runner
+tatoeba_retrieval	3	ile_Latn	Interlingue	40984	1000 pairs	local Tatoeba pair files + Tatoeba task list	ready	add/keep in retrieval runner
+bible_retrieval	1	dtp_Latn	Kadazan Dusun	48468	7887 shared verses	Bible task list + /disk3 Bible corpus	materializable	run Bible materializer with tail flag included
+bible_retrieval	2	xav_Latn	Xavante	31765	7418 shared verses	Bible task list + /disk3 Bible corpus	materializable	run Bible materializer with tail flag included
+bible_retrieval	3	bam_Latn	Bambara	32150	7933 shared verses	Bible task list + /disk3 Bible corpus	materializable	run Bible materializer with tail flag included
+roundtrip_alignment	1	dtp_Latn	Kadazan Dusun	48468	7887 Bible shared verses	Bible-derived roundtrip materializer	materializable	materialize Bible first, then roundtrip JSONL
+roundtrip_alignment	2	xav_Latn	Xavante	31765	7418 Bible shared verses	Bible-derived roundtrip materializer	materializable	materialize Bible first, then roundtrip JSONL
+roundtrip_alignment	3	bam_Latn	Bambara	32150	7933 Bible shared verses	Bible-derived roundtrip materializer	materializable	materialize Bible first, then roundtrip JSONL
+ner	1	csb_Latn	Kashubian	33743	100 train / 100 dev / 100 test	PAN-X local files + NER task list	ready	run NER with target subset accounting
+ner	2	lij_Latn	Ligurian	42447	100 train / 100 dev / 100 test	PAN-X local files + NER task list	ready	run NER with target subset accounting
+ner	3	fur_Latn	Friulian	30052	100 train / 100 dev / 100 test	PAN-X local files + NER task list	ready	run NER with target subset accounting
+pos	1	xav_Latn	Xavante	31765	task-list candidate; local test only	POS task list	materialization_needed	download/materialize UD train/dev/test splits
+pos	2	bam_Latn	Bambara	32150	task-list candidate	POS task list	materialization_needed	download/materialize UD train/dev/test splits
+pos	3	lij_Latn	Ligurian	42447	task-list candidate	POS task list	materialization_needed	download/materialize UD train/dev/test splits
+taxi1500	1	dtp_Latn	Kadazan Dusun	48468	target 860/106/111 rows if generated	Taxi1500/PBC generation candidate via Bible corpus	not_local_ready	obtain/generate Taxi1500 language data
+taxi1500	2	xav_Latn	Xavante	31765	target 860/106/111 rows if generated	Taxi1500/PBC generation candidate via Bible corpus	not_local_ready	obtain/generate Taxi1500 language data
+taxi1500	3	bam_Latn	Bambara	32150	target 860/106/111 rows if generated	Taxi1500/PBC generation candidate via Bible corpus	not_local_ready	obtain/generate Taxi1500 language data
+embedding_similarity	1	csb_Latn	Kashubian	33743	253 Tatoeba pairs	local parallel pair files	ready	build similarity pairs
+embedding_similarity	2	dtp_Latn	Kadazan Dusun	48468	1000 Tatoeba pairs	local parallel pair files	ready	build similarity pairs
+embedding_similarity	3	ile_Latn	Interlingue	40984	1000 Tatoeba pairs	local parallel pair files	ready	build similarity pairs

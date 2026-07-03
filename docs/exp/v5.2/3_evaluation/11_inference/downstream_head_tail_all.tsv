@@ -1,0 +1,451 @@
+metric	method	step	model_key	summary_group	score_name	score_value	languages	expected_tail_languages	tail_languages_scored	direction	status	source_file
+retrieval_tatoeba	random	10000	v52_random_conv5way_step10000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	10000	v52_random_conv5way_step10000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	10000	v52_random_conv5way_step10000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	20000	v52_random_conv5way_step20000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	20000	v52_random_conv5way_step20000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	20000	v52_random_conv5way_step20000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	30000	v52_random_conv5way_step30000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	30000	v52_random_conv5way_step30000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	30000	v52_random_conv5way_step30000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	40000	v52_random_conv5way_step40000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	40000	v52_random_conv5way_step40000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	40000	v52_random_conv5way_step40000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	50000	v52_random_conv5way_step50000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	50000	v52_random_conv5way_step50000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	random	50000	v52_random_conv5way_step50000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	10000	v52_mean_conv5way_step10000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	10000	v52_mean_conv5way_step10000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	10000	v52_mean_conv5way_step10000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	20000	v52_mean_conv5way_step20000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	20000	v52_mean_conv5way_step20000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	20000	v52_mean_conv5way_step20000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	30000	v52_mean_conv5way_step30000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	30000	v52_mean_conv5way_step30000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	30000	v52_mean_conv5way_step30000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	40000	v52_mean_conv5way_step40000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	40000	v52_mean_conv5way_step40000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	40000	v52_mean_conv5way_step40000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	50000	v52_mean_conv5way_step50000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	50000	v52_mean_conv5way_step50000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	mean	50000	v52_mean_conv5way_step50000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	10000	v52_fvt_conv5way_step10000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	10000	v52_fvt_conv5way_step10000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	10000	v52_fvt_conv5way_step10000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	20000	v52_fvt_conv5way_step20000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	20000	v52_fvt_conv5way_step20000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	20000	v52_fvt_conv5way_step20000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	30000	v52_fvt_conv5way_step30000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	30000	v52_fvt_conv5way_step30000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	30000	v52_fvt_conv5way_step30000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	40000	v52_fvt_conv5way_step40000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	40000	v52_fvt_conv5way_step40000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	40000	v52_fvt_conv5way_step40000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	50000	v52_fvt_conv5way_step50000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	50000	v52_fvt_conv5way_step50000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	fvt	50000	v52_fvt_conv5way_step50000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	10000	v52_family_mean_conv5way_step10000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	10000	v52_family_mean_conv5way_step10000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	10000	v52_family_mean_conv5way_step10000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	20000	v52_family_mean_conv5way_step20000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	20000	v52_family_mean_conv5way_step20000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	20000	v52_family_mean_conv5way_step20000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	30000	v52_family_mean_conv5way_step30000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	30000	v52_family_mean_conv5way_step30000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	30000	v52_family_mean_conv5way_step30000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	40000	v52_family_mean_conv5way_step40000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	40000	v52_family_mean_conv5way_step40000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	40000	v52_family_mean_conv5way_step40000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	50000	v52_family_mean_conv5way_step50000	head	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	50000	v52_family_mean_conv5way_step50000	tail	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_tatoeba	family_mean	50000	v52_family_mean_conv5way_step50000	all	top10_accuracy		0	csb_Latn,dtp_Latn,ile_Latn		higher_is_better	pending	
+retrieval_bible	random	10000	v52_random_conv5way_step10000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	10000	v52_random_conv5way_step10000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	10000	v52_random_conv5way_step10000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	20000	v52_random_conv5way_step20000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	20000	v52_random_conv5way_step20000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	20000	v52_random_conv5way_step20000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	30000	v52_random_conv5way_step30000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	30000	v52_random_conv5way_step30000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	30000	v52_random_conv5way_step30000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	40000	v52_random_conv5way_step40000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	40000	v52_random_conv5way_step40000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	40000	v52_random_conv5way_step40000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	50000	v52_random_conv5way_step50000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	50000	v52_random_conv5way_step50000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	random	50000	v52_random_conv5way_step50000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	10000	v52_mean_conv5way_step10000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	10000	v52_mean_conv5way_step10000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	10000	v52_mean_conv5way_step10000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	20000	v52_mean_conv5way_step20000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	20000	v52_mean_conv5way_step20000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	20000	v52_mean_conv5way_step20000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	30000	v52_mean_conv5way_step30000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	30000	v52_mean_conv5way_step30000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	30000	v52_mean_conv5way_step30000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	40000	v52_mean_conv5way_step40000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	40000	v52_mean_conv5way_step40000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	40000	v52_mean_conv5way_step40000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	50000	v52_mean_conv5way_step50000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	50000	v52_mean_conv5way_step50000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	mean	50000	v52_mean_conv5way_step50000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	10000	v52_fvt_conv5way_step10000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	10000	v52_fvt_conv5way_step10000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	10000	v52_fvt_conv5way_step10000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	20000	v52_fvt_conv5way_step20000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	20000	v52_fvt_conv5way_step20000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	20000	v52_fvt_conv5way_step20000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	30000	v52_fvt_conv5way_step30000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	30000	v52_fvt_conv5way_step30000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	30000	v52_fvt_conv5way_step30000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	40000	v52_fvt_conv5way_step40000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	40000	v52_fvt_conv5way_step40000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	40000	v52_fvt_conv5way_step40000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	50000	v52_fvt_conv5way_step50000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	50000	v52_fvt_conv5way_step50000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	fvt	50000	v52_fvt_conv5way_step50000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	10000	v52_family_mean_conv5way_step10000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	10000	v52_family_mean_conv5way_step10000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	10000	v52_family_mean_conv5way_step10000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	20000	v52_family_mean_conv5way_step20000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	20000	v52_family_mean_conv5way_step20000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	20000	v52_family_mean_conv5way_step20000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	30000	v52_family_mean_conv5way_step30000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	30000	v52_family_mean_conv5way_step30000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	30000	v52_family_mean_conv5way_step30000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	40000	v52_family_mean_conv5way_step40000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	40000	v52_family_mean_conv5way_step40000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	40000	v52_family_mean_conv5way_step40000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	50000	v52_family_mean_conv5way_step50000	head	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	50000	v52_family_mean_conv5way_step50000	tail	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+retrieval_bible	family_mean	50000	v52_family_mean_conv5way_step50000	all	top10_accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	10000	v52_random_conv5way_step10000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	10000	v52_random_conv5way_step10000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	10000	v52_random_conv5way_step10000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	20000	v52_random_conv5way_step20000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	20000	v52_random_conv5way_step20000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	20000	v52_random_conv5way_step20000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	30000	v52_random_conv5way_step30000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	30000	v52_random_conv5way_step30000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	30000	v52_random_conv5way_step30000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	40000	v52_random_conv5way_step40000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	40000	v52_random_conv5way_step40000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	40000	v52_random_conv5way_step40000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	50000	v52_random_conv5way_step50000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	50000	v52_random_conv5way_step50000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	random	50000	v52_random_conv5way_step50000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	10000	v52_mean_conv5way_step10000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	10000	v52_mean_conv5way_step10000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	10000	v52_mean_conv5way_step10000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	20000	v52_mean_conv5way_step20000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	20000	v52_mean_conv5way_step20000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	20000	v52_mean_conv5way_step20000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	30000	v52_mean_conv5way_step30000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	30000	v52_mean_conv5way_step30000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	30000	v52_mean_conv5way_step30000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	40000	v52_mean_conv5way_step40000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	40000	v52_mean_conv5way_step40000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	40000	v52_mean_conv5way_step40000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	50000	v52_mean_conv5way_step50000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	50000	v52_mean_conv5way_step50000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	mean	50000	v52_mean_conv5way_step50000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	10000	v52_fvt_conv5way_step10000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	10000	v52_fvt_conv5way_step10000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	10000	v52_fvt_conv5way_step10000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	20000	v52_fvt_conv5way_step20000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	20000	v52_fvt_conv5way_step20000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	20000	v52_fvt_conv5way_step20000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	30000	v52_fvt_conv5way_step30000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	30000	v52_fvt_conv5way_step30000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	30000	v52_fvt_conv5way_step30000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	40000	v52_fvt_conv5way_step40000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	40000	v52_fvt_conv5way_step40000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	40000	v52_fvt_conv5way_step40000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	50000	v52_fvt_conv5way_step50000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	50000	v52_fvt_conv5way_step50000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	fvt	50000	v52_fvt_conv5way_step50000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	10000	v52_family_mean_conv5way_step10000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	10000	v52_family_mean_conv5way_step10000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	10000	v52_family_mean_conv5way_step10000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	20000	v52_family_mean_conv5way_step20000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	20000	v52_family_mean_conv5way_step20000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	20000	v52_family_mean_conv5way_step20000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	30000	v52_family_mean_conv5way_step30000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	30000	v52_family_mean_conv5way_step30000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	30000	v52_family_mean_conv5way_step30000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	40000	v52_family_mean_conv5way_step40000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	40000	v52_family_mean_conv5way_step40000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	40000	v52_family_mean_conv5way_step40000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	50000	v52_family_mean_conv5way_step50000	head	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	50000	v52_family_mean_conv5way_step50000	tail	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+roundtrip_alignment	family_mean	50000	v52_family_mean_conv5way_step50000	all	accuracy		0	dtp_Latn,xav_Latn,bam_Latn		higher_is_better	pending	
+ner	random	10000	v52_random_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	10000	v52_random_conv5way_step10000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	10000	v52_random_conv5way_step10000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	20000	v52_random_conv5way_step20000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	20000	v52_random_conv5way_step20000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	20000	v52_random_conv5way_step20000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	30000	v52_random_conv5way_step30000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	30000	v52_random_conv5way_step30000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	30000	v52_random_conv5way_step30000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	40000	v52_random_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	40000	v52_random_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	40000	v52_random_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	50000	v52_random_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	50000	v52_random_conv5way_step50000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	50000	v52_random_conv5way_step50000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	10000	v52_mean_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	10000	v52_mean_conv5way_step10000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	10000	v52_mean_conv5way_step10000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	20000	v52_mean_conv5way_step20000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	20000	v52_mean_conv5way_step20000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	20000	v52_mean_conv5way_step20000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	30000	v52_mean_conv5way_step30000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	30000	v52_mean_conv5way_step30000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	30000	v52_mean_conv5way_step30000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	40000	v52_mean_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	40000	v52_mean_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	40000	v52_mean_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	50000	v52_mean_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	50000	v52_mean_conv5way_step50000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	50000	v52_mean_conv5way_step50000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	10000	v52_fvt_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	10000	v52_fvt_conv5way_step10000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	10000	v52_fvt_conv5way_step10000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	20000	v52_fvt_conv5way_step20000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	20000	v52_fvt_conv5way_step20000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	20000	v52_fvt_conv5way_step20000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	30000	v52_fvt_conv5way_step30000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	30000	v52_fvt_conv5way_step30000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	30000	v52_fvt_conv5way_step30000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	40000	v52_fvt_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	40000	v52_fvt_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	40000	v52_fvt_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	50000	v52_fvt_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	50000	v52_fvt_conv5way_step50000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	50000	v52_fvt_conv5way_step50000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	10000	v52_family_mean_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	10000	v52_family_mean_conv5way_step10000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	10000	v52_family_mean_conv5way_step10000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	20000	v52_family_mean_conv5way_step20000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	20000	v52_family_mean_conv5way_step20000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	20000	v52_family_mean_conv5way_step20000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	30000	v52_family_mean_conv5way_step30000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	30000	v52_family_mean_conv5way_step30000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	30000	v52_family_mean_conv5way_step30000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	40000	v52_family_mean_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	40000	v52_family_mean_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	40000	v52_family_mean_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+pos	random	10000	v52_random_conv5way_step10000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	10000	v52_random_conv5way_step10000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	10000	v52_random_conv5way_step10000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	20000	v52_random_conv5way_step20000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	20000	v52_random_conv5way_step20000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	20000	v52_random_conv5way_step20000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	30000	v52_random_conv5way_step30000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	30000	v52_random_conv5way_step30000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	30000	v52_random_conv5way_step30000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	40000	v52_random_conv5way_step40000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	40000	v52_random_conv5way_step40000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	40000	v52_random_conv5way_step40000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	50000	v52_random_conv5way_step50000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	50000	v52_random_conv5way_step50000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	50000	v52_random_conv5way_step50000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	10000	v52_mean_conv5way_step10000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	10000	v52_mean_conv5way_step10000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	10000	v52_mean_conv5way_step10000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	20000	v52_mean_conv5way_step20000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	20000	v52_mean_conv5way_step20000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	20000	v52_mean_conv5way_step20000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	30000	v52_mean_conv5way_step30000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	30000	v52_mean_conv5way_step30000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	30000	v52_mean_conv5way_step30000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	40000	v52_mean_conv5way_step40000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	40000	v52_mean_conv5way_step40000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	40000	v52_mean_conv5way_step40000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	50000	v52_mean_conv5way_step50000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	50000	v52_mean_conv5way_step50000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	mean	50000	v52_mean_conv5way_step50000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	10000	v52_fvt_conv5way_step10000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	10000	v52_fvt_conv5way_step10000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	10000	v52_fvt_conv5way_step10000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	20000	v52_fvt_conv5way_step20000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	20000	v52_fvt_conv5way_step20000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	20000	v52_fvt_conv5way_step20000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	30000	v52_fvt_conv5way_step30000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	30000	v52_fvt_conv5way_step30000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	30000	v52_fvt_conv5way_step30000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	40000	v52_fvt_conv5way_step40000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	40000	v52_fvt_conv5way_step40000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	40000	v52_fvt_conv5way_step40000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	50000	v52_fvt_conv5way_step50000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	50000	v52_fvt_conv5way_step50000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	fvt	50000	v52_fvt_conv5way_step50000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	10000	v52_family_mean_conv5way_step10000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	10000	v52_family_mean_conv5way_step10000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	10000	v52_family_mean_conv5way_step10000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	20000	v52_family_mean_conv5way_step20000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	20000	v52_family_mean_conv5way_step20000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	20000	v52_family_mean_conv5way_step20000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	30000	v52_family_mean_conv5way_step30000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	30000	v52_family_mean_conv5way_step30000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	30000	v52_family_mean_conv5way_step30000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	40000	v52_family_mean_conv5way_step40000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	40000	v52_family_mean_conv5way_step40000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	40000	v52_family_mean_conv5way_step40000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	50000	v52_family_mean_conv5way_step50000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	50000	v52_family_mean_conv5way_step50000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	family_mean	50000	v52_family_mean_conv5way_step50000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+text_classification	random	10000	v52_random_conv5way_step10000	head	macro_f1		0			higher_is_better	pending	
+text_classification	random	10000	v52_random_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	random	10000	v52_random_conv5way_step10000	all	macro_f1		0			higher_is_better	pending	
+text_classification	random	20000	v52_random_conv5way_step20000	head	macro_f1		0			higher_is_better	pending	
+text_classification	random	20000	v52_random_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	random	20000	v52_random_conv5way_step20000	all	macro_f1		0			higher_is_better	pending	
+text_classification	random	30000	v52_random_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
+text_classification	random	30000	v52_random_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	random	30000	v52_random_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
+text_classification	random	40000	v52_random_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
+text_classification	random	40000	v52_random_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	random	40000	v52_random_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
+text_classification	random	50000	v52_random_conv5way_step50000	head	macro_f1		0			higher_is_better	pending	
+text_classification	random	50000	v52_random_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	random	50000	v52_random_conv5way_step50000	all	macro_f1		0			higher_is_better	pending	
+text_classification	mean	10000	v52_mean_conv5way_step10000	head	macro_f1		0			higher_is_better	pending	
+text_classification	mean	10000	v52_mean_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	mean	10000	v52_mean_conv5way_step10000	all	macro_f1		0			higher_is_better	pending	
+text_classification	mean	20000	v52_mean_conv5way_step20000	head	macro_f1		0			higher_is_better	pending	
+text_classification	mean	20000	v52_mean_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	mean	20000	v52_mean_conv5way_step20000	all	macro_f1		0			higher_is_better	pending	
+text_classification	mean	30000	v52_mean_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
+text_classification	mean	30000	v52_mean_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	mean	30000	v52_mean_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
+text_classification	mean	40000	v52_mean_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
+text_classification	mean	40000	v52_mean_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	mean	40000	v52_mean_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
+text_classification	mean	50000	v52_mean_conv5way_step50000	head	macro_f1		0			higher_is_better	pending	
+text_classification	mean	50000	v52_mean_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	mean	50000	v52_mean_conv5way_step50000	all	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	10000	v52_fvt_conv5way_step10000	head	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	10000	v52_fvt_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	10000	v52_fvt_conv5way_step10000	all	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	20000	v52_fvt_conv5way_step20000	head	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	20000	v52_fvt_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	20000	v52_fvt_conv5way_step20000	all	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	30000	v52_fvt_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	30000	v52_fvt_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	30000	v52_fvt_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	40000	v52_fvt_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	40000	v52_fvt_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	40000	v52_fvt_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	50000	v52_fvt_conv5way_step50000	head	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	50000	v52_fvt_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	50000	v52_fvt_conv5way_step50000	all	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	head	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	all	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	head	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	all	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	head	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	all	macro_f1		0			higher_is_better	pending	

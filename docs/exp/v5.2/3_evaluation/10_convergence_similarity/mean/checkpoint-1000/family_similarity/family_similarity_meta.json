@@ -1,0 +1,12 @@
+{
+  "languages": 38,
+  "points": 3708,
+  "pairs": 11956,
+  "models": [
+    "v52_mean_conv5way_step1000"
+  ],
+  "layer_index": 7,
+  "samples_per_language": 100,
+  "pair_samples": 50,
+  "raw_root": "/home/axt/mnt2/jongha/v5.2_glot5007/raw"
+}

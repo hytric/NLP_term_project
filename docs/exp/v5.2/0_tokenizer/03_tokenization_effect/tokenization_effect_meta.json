@@ -1,0 +1,11 @@
+{
+  "base_tokenizer": "xlm-roberta-base",
+  "target_tokenizer": "/home/axt/mnt2/jongha/v5.2_glot5007/tokenization/output/Glot500_extended_spm",
+  "base_len": 250002,
+  "target_len": 366666,
+  "novel_token_count": 116664,
+  "samples_per_language": 500,
+  "manifest": "docs/exp/v5.2/0_tokenizer/miscellaneous/glot5007_selected_manifest.tsv",
+  "summary_rows": 8,
+  "example_rows": 3500
+}

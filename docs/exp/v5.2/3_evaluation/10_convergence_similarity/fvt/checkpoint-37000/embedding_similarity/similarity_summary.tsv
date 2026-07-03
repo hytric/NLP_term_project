@@ -1,0 +1,15 @@
+model_key	pair_type	group	pairs	mean_cosine	mean_centered_cosine	min_cosine	max_cosine
+v52_fvt_conv5way_step37000	aligned_bible_src_eng	all	300	0.921903	0.071706	0.874964	0.969310
+v52_fvt_conv5way_step37000	aligned_bible_src_eng	v5_target	300	0.921903	0.071706	0.874964	0.969310
+v52_fvt_conv5way_step37000	aligned_tatoeba_src_eng	all	300	0.926567	0.199711	0.859617	0.983645
+v52_fvt_conv5way_step37000	aligned_tatoeba_src_eng	v5_target	300	0.926567	0.199711	0.859617	0.983645
+v52_fvt_conv5way_step37000	roundtrip_eng_pivot	all	300	0.918941	0.034692	0.874964	0.949603
+v52_fvt_conv5way_step37000	roundtrip_eng_pivot	v5_target	300	0.918941	0.034692	0.874964	0.949603
+v52_fvt_conv5way_step37000	roundtrip_src_eng	all	300	0.918750	0.049062	0.874964	0.949603
+v52_fvt_conv5way_step37000	roundtrip_src_eng	v5_target	300	0.918750	0.049062	0.874964	0.949603
+v52_fvt_conv5way_step37000	roundtrip_src_pivot	all	300	0.935277	0.313544	0.879350	0.978767
+v52_fvt_conv5way_step37000	roundtrip_src_pivot	v5_target	300	0.935277	0.313544	0.879350	0.978767
+v52_fvt_conv5way_step37000	same_language_bible_adjacent	all	300	0.978752	0.758906	0.921333	0.997525
+v52_fvt_conv5way_step37000	same_language_bible_adjacent	v5_target	300	0.978752	0.758906	0.921333	0.997525
+v52_fvt_conv5way_step37000	same_language_tatoeba_adjacent	all	300	0.947467	0.389280	0.879390	0.995362
+v52_fvt_conv5way_step37000	same_language_tatoeba_adjacent	v5_target	300	0.947467	0.389280	0.879390	0.995362

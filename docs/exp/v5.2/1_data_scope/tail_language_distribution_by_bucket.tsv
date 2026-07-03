@@ -1,0 +1,14 @@
+scope	bin	count	percent	min_new_length	max_new_length	local_task_list_any	local_task_list_tatoeba	local_task_list_bible	local_task_list_ner	local_task_list_pos
+all_non_xlmr_tail	lt30k	109	18.8	1201	29979	0	0	0	0	0
+all_non_xlmr_tail	30k_50k	113	19.5	30015	49068	89	4	75	12	4
+all_non_xlmr_tail	50k_100k	70	12.1	50286	99234	40	0	34	6	8
+all_non_xlmr_tail	100k_300k	124	21.4	100474	298442	79	7	69	13	6
+all_non_xlmr_tail	300k_1M	101	17.4	300243	983637	70	9	56	23	6
+all_non_xlmr_tail	1M_10M	52	9.0	1033636	6266475	45	8	41	20	3
+all_non_xlmr_tail	10M_plus	10	1.7	11014744	63411156	10	4	8	8	2
+local_non_xlmr_min30k_candidate_pool	30k_50k	73	23.0	30031	49068					
+local_non_xlmr_min30k_candidate_pool	50k_100k	39	12.3	50286	99234					
+local_non_xlmr_min30k_candidate_pool	100k_300k	72	22.6	100474	296269					
+local_non_xlmr_min30k_candidate_pool	300k_1M	74	23.3	300243	983637					
+local_non_xlmr_min30k_candidate_pool	1M_10M	50	15.7	1033636	6266475					
+local_non_xlmr_min30k_candidate_pool	10M_plus	10	3.1	11014744	63411156					

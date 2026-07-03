@@ -1,0 +1,100 @@
+task	language_script	language	group	in_task_list	upstream_flag	local_data_exists	has_data	reason	data_path
+retrieval_bible	lao_Laoo	lao	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	mya_Mymr	mya	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ara_Arab	ara	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	mar_Deva	mar	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	hau_Latn	hau	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	uzb_Latn	uzb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	slv_Latn	slv	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	fin_Latn	fin	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	hun_Latn	hun	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	cmn_Hani	cmn	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	est_Latn	est	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	bre_Latn	bre	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	hrv_Latn	hrv	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	jav_Latn	jav	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ron_Latn	ron	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ell_Grek	ell	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	nor_Latn	nor	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	slk_Latn	slk	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	vie_Latn	vie	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	amh_Ethi	amh	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	epo_Latn	epo	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	bel_Cyrl	bel	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	xho_Latn	xho	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	hin_Deva	hin	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	tam_Taml	tam	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	mon_Cyrl	mon	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ces_Latn	ces	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	san_Deva	san	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	hye_Armn	hye	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	pus_Arab	pus	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	som_Arab	som	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	kan_Knda	kan	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	isl_Latn	isl	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ori_Orya	ori	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	afr_Latn	afr	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	deu_Latn	deu	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	urd_Arab	urd	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	bul_Cyrl	bul	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	tgl_Latn	tgl	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	eus_Latn	eus	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	pol_Latn	pol	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	lat_Latn	lat	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	tur_Latn	tur	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	fra_Latn	fra	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	cat_Latn	cat	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	uig_Arab	uig	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	arb_Arab	arb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	sqi_Latn	sqi	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	sin_Sinh	sin	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	msa_Latn	msa	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	swh_Latn	swh	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	kor_Hang	kor	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ukr_Cyrl	ukr	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	kir_Cyrl	kir	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	yid_Hebr	yid	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	heb_Hebr	heb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	nld_Latn	nld	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	fry_Latn	fry	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	azb_Arab	azb	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	glg_Latn	glg	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	fas_Arab	fas	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	eng_Latn	eng	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	mkd_Cyrl	mkd	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ind_Latn	ind	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	por_Latn	por	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	spa_Latn	spa	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	dan_Latn	dan	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	khm_Khmr	khm	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	gla_Latn	gla	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	uig_Latn	uig	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	kat_Geor	kat	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	mlg_Latn	mlg	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	snd_Arab	snd	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ita_Latn	ita	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	hau_Arab	hau	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	cym_Latn	cym	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	srp_Latn	srp	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	zho_Hani	zho	head	yes	1	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	tha_Thai	tha	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	swe_Latn	swe	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	pan_Guru	pan	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	prs_Arab	prs	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	pes_Arab	pes	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	san_Latn	san	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	kaz_Cyrl	kaz	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	kur_Latn	kur	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	mal_Mlym	mal	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	nep_Deva	nep	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	gle_Latn	gle	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	swa_Latn	swa	head	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	som_Latn	som	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	lit_Latn	lit	head	yes	1	yes	yes	available	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	dtp_Latn	dtp	v5_target	yes	0	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	xav_Latn	xav	v5_target	yes	0	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	bam_Latn	bam	v5_target	yes	0	no	no	missing_local_materialization	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	csb_Latn	csb	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	ile_Latn	ile	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	lij_Latn	lij	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible
+retrieval_bible	fur_Latn	fur	v5_target	no		no	no	not_in_task_or_flag_zero	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download/retrieval_bible

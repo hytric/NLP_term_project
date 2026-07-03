@@ -1,0 +1,9 @@
+model_key	relation_type	pairs	mean_cosine	mean_centered_cosine	min_cosine	max_cosine
+v52_family_mean_conv5way_step23000	tail_head_different_family_different_script	1856	0.895092	-0.076681	0.812177	0.946233
+v52_family_mean_conv5way_step23000	tail_head_different_family_same_script	6100	0.901498	-0.044758	0.794334	0.964517
+v52_family_mean_conv5way_step23000	tail_head_same_family	1050	0.922420	0.060585	0.849073	0.970979
+v52_family_mean_conv5way_step23000	tail_head_same_macro_family	1550	0.914975	-0.049838	0.823289	0.964009
+v52_family_mean_conv5way_step23000	tail_tail_different_family	900	0.901812	0.083677	0.829978	0.971145
+v52_family_mean_conv5way_step23000	tail_tail_same_family	50	0.942143	0.280713	0.889714	0.974672
+v52_family_mean_conv5way_step23000	tail_tail_same_macro_family	100	0.929871	0.149904	0.887681	0.966741
+v52_family_mean_conv5way_step23000	tail_within_language	350	0.952344	0.491145	0.859822	0.994466

@@ -1,0 +1,10 @@
+field	value
+metric	retrieval_bible
+model_key	v52_fvt_conv5way_step50000
+model_path	/home/axt/mnt2/jongha/v5.2_glot5007/runs/convergence_5way/fvt/checkpoint-50000
+tokenizer_path	/home/axt/mnt2/jongha/v5.2_glot5007/tokenization/output/Glot500_extended_spm
+eval_data_root	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target
+eval_output_root	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation
+gpu	3
+docs_exp_root	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2
+model_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2/3_evaluation/model_matrix.tsv

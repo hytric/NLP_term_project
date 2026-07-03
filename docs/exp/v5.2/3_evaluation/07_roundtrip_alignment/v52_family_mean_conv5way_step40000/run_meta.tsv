@@ -1,0 +1,10 @@
+field	value
+metric	roundtrip_alignment
+model_key	v52_family_mean_conv5way_step40000
+model_path	/home/axt/mnt2/jongha/v5.2_glot5007/runs/convergence_5way/family_mean/checkpoint-40000
+tokenizer_path	/home/axt/mnt2/jongha/v5.2_glot5007/tokenization/output/Glot500_extended_spm
+eval_data_root	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target
+eval_output_root	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation
+gpu	3
+docs_exp_root	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2
+model_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2/3_evaluation/model_matrix.tsv

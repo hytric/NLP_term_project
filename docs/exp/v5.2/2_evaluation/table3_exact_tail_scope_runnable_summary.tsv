@@ -1,0 +1,17 @@
+task	scope	table3_tail_in_scope	runnable_or_source_ready	coverage_of_table3_tail_percent	runnable_of_table3_tail_percent
+Sentence Retrieval Tatoeba	30k_100k	4	4	14.3	14.3
+Sentence Retrieval Tatoeba	30k_300k	11	11	39.3	39.3
+Sentence Retrieval Tatoeba	300k_plus	17	17	60.7	60.7
+Sentence Retrieval Tatoeba	all_table3_tail	28	28	100.0	100.0
+Sentence Retrieval Bible	30k_100k	109	103	39.6	37.5
+Sentence Retrieval Bible	30k_300k	178	169	64.7	61.5
+Sentence Retrieval Bible	300k_plus	97	95	35.3	34.5
+Sentence Retrieval Bible	all_table3_tail	275	264	100.0	96.0
+NER	30k_100k	18	18	24.0	24.0
+NER	30k_300k	31	31	41.3	41.3
+NER	300k_plus	44	44	58.7	58.7
+NER	all_table3_tail	75	75	100.0	100.0
+POS	30k_100k	12	1	42.9	3.6
+POS	30k_300k	18	3	64.3	10.7
+POS	300k_plus	10	5	35.7	17.9
+POS	all_table3_tail	28	8	100.0	28.6

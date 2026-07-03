@@ -1,0 +1,16 @@
+group	language_script	new_length	note
+smallest_tail	mzn_Latn	1201	all_non_xlmr_tail bottom 30 example
+smallest_tail	udm_Latn	4616	all_non_xlmr_tail bottom 30 example
+smallest_tail	koi_Latn	4749	all_non_xlmr_tail bottom 30 example
+smallest_tail	kom_Latn	5538	all_non_xlmr_tail bottom 30 example
+smallest_tail	wuu_Latn	5631	all_non_xlmr_tail bottom 30 example
+smallest_min30k_candidate	kaa_Latn	30031	local candidate pool bottom example
+smallest_min30k_candidate	fur_Latn	30052	local candidate pool bottom example; v5 main target
+smallest_min30k_candidate	rap_Latn	30102	local candidate pool bottom example; v5 main target
+smallest_min30k_candidate	pls_Latn	30136	local candidate pool bottom example
+smallest_min30k_candidate	tuc_Latn	30349	local candidate pool bottom example
+largest_tail	hbs_Latn	63411156	all_non_xlmr_tail top example
+largest_tail	aze_Latn	46300705	all_non_xlmr_tail top example; v5.1 target
+largest_tail	guj_Gujr	45738685	all_non_xlmr_tail top example; v5.1 target
+largest_tail	mlt_Latn	40654838	all_non_xlmr_tail top example
+largest_tail	fil_Latn	33493255	all_non_xlmr_tail top example; v5.1 target

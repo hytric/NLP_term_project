@@ -1,0 +1,3 @@
+model_key	summary_group	languages	total_examples	total_masked_tokens	macro_mean_nll	macro_pseudo_perplexity	weighted_mean_nll	weighted_pseudo_perplexity
+v52_align_step2500	all	7	140	5196	4.787124	119.955896	4.198330	66.575042
+v52_align_step2500	v5_target	7	140	5196	4.787124	119.955896	4.198330	66.575042

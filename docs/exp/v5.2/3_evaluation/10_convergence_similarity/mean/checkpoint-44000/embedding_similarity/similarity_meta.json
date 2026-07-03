@@ -1,0 +1,13 @@
+{
+  "pairs": "/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2/3_evaluation/10_convergence_similarity/mean/checkpoint-44000/embedding_similarity/similarity_pairs.tsv",
+  "models": [
+    "v52_mean_conv5way_step44000"
+  ],
+  "layer_index": 7,
+  "max_length": 128,
+  "batch_size": 32,
+  "device": "cuda",
+  "experiment_label": "v5.2",
+  "points": 1047,
+  "score_rows": 2100
+}

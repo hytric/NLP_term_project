@@ -1,0 +1,12 @@
+language_script	new_length	resource_label	nominal_downstream_tasks	locally_materialized_tasks	v51_selected	diagnostic_role
+jpn_Jpan	510722	low_mid	Tatoeba,Bible,NER,POS	Tatoeba,NER	no	downstream_available_non_xlmr_candidate_needs_xlmr_membership_check
+zsm_Latn	859947	low_mid	Tatoeba,Bible	Tatoeba,Bible,Roundtrip	yes	downstream_available_target
+asm_Beng	1882353	mid	Bible,NER	Bible,Roundtrip,NER	yes	downstream_available_target
+sun_Latn	2586011	mid	Bible,NER	Bible,Roundtrip,NER	yes	downstream_available_target
+srp_Cyrl	3864091	mid	Bible,NER	Bible,Roundtrip,NER	yes	downstream_available_target
+bos_Latn	11014744	high	Tatoeba,NER	Tatoeba,NER	yes	downstream_available_target
+fil_Latn	33493255	very_high	Bible	Bible,Roundtrip	yes	downstream_available_target
+guj_Gujr	45738685	very_high	Bible,NER	Bible,Roundtrip,NER	yes	downstream_available_target
+aze_Latn	46300705	very_high	Tatoeba,Bible,NER	Tatoeba,NER	yes	downstream_available_target
+dzo_Tibt	52732	genuine_low_resource	none	none	yes	PPPL_only_anchor
+sat_Olck	39614	genuine_low_resource	none	none	yes	PPPL_only_anchor
