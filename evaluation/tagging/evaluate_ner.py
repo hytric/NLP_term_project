@@ -22,6 +22,9 @@ from run_tag import run
 
 
 def tokenize_preprocess(args):
+    def _split_langs(value):
+        return [item.strip() for item in value.replace(",", " ").split() if item.strip()]
+
     def _preprocess_one_file(infile, outfile, idxfile, tokenizer, max_seq_len):
         if not os.path.exists(infile):
             print(f'{infile} not exists')
@@ -68,11 +71,14 @@ def tokenize_preprocess(args):
         'xlmr': XLMRobertaTokenizer,
     }
     tokenizer = TOKENIZERS[model_type].from_pretrained(args.model_name_or_path, do_lower_case=args.do_lower_case, cache_dir=args.cache_dir if args.cache_dir else None)
-    for lang in args.predict_langs:
+    train_langs = _split_langs(args.train_langs)
+    preprocess_langs = list(dict.fromkeys(list(args.predict_langs) + train_langs))
+    train_lang_set = set(train_langs)
+    for lang in preprocess_langs:
         out_dir = os.path.join(args.data_dir, lang)
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
-        if lang == 'eng_Latn':
+        if lang == 'eng_Latn' or lang in train_lang_set:
             files = ['dev', 'test', 'train']
         else:
             files = ['dev', 'test']
@@ -182,19 +188,28 @@ def main():
     parser.add_argument("--eval_patience", type=int, default=-1, help="wait N times of decreasing dev score before early stop during training")
     args = parser.parse_args()
     
-    args.predict_langs = []
-    with open('ner_lang_list.txt', 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            args.predict_langs.append(line.strip().split('\t')[0])
+    env_predict_langs = os.environ.get("NER_PREDICT_LANGS") or os.environ.get("PREDICT_LANGS")
+    if env_predict_langs:
+        args.predict_langs = [
+            item.strip()
+            for chunk in env_predict_langs.replace(",", " ").split()
+            for item in [chunk]
+            if item.strip()
+        ]
+    else:
+        args.predict_langs = []
+        with open('ner_lang_list.txt', 'r') as f:
+            lines = f.readlines()
+            for line in lines:
+                args.predict_langs.append(line.strip().split('\t')[0])
 
     args.data_dir = args.data_dir + args.model_name_or_path.split('/')[-1]
     if not os.path.exists(args.data_dir):
         os.makedirs(args.data_dir)
     args.output_dir = args.output_dir + args.model_name_or_path.split('/')[-1]
-    if not os.path.exists(args.output_dir):
-        os.makedirs(args.output_dir)
-    else:
+    output_dir_exists = os.path.exists(args.output_dir)
+    os.makedirs(args.output_dir, exist_ok=True)
+    if output_dir_exists and not args.overwrite_output_dir:
         args.do_train = False
     args.log_file = args.output_dir + '/train.log'
     
@@ -203,4 +218,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
