@@ -451,9 +451,9 @@ ner	mean	30000	v52_mean_conv5way_step30000	fur_Latn	tail	f1	0.594203	complete	/h
 ner	mean	40000	v52_mean_conv5way_step40000	csb_Latn	tail	f1	0.576159	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	mean	40000	v52_mean_conv5way_step40000	lij_Latn	tail	f1	0.349315	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	mean	40000	v52_mean_conv5way_step40000	fur_Latn	tail	f1	0.584838	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step40000/checkpoint-40000/test_results.txt
-ner	mean	50000	v52_mean_conv5way_step43000	csb_Latn	tail	f1		pending	
-ner	mean	50000	v52_mean_conv5way_step43000	lij_Latn	tail	f1		pending	
-ner	mean	50000	v52_mean_conv5way_step43000	fur_Latn	tail	f1		pending	
+ner	mean	50000	v52_mean_conv5way_step43000	csb_Latn	tail	f1	0.575251	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	mean	50000	v52_mean_conv5way_step43000	lij_Latn	tail	f1	0.350168	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	mean	50000	v52_mean_conv5way_step43000	fur_Latn	tail	f1	0.551237	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step43000/checkpoint-43000/test_results.txt
 ner	fvt	10000	v52_fvt_conv5way_step10000	csb_Latn	tail	f1	0.568627	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	fvt	10000	v52_fvt_conv5way_step10000	lij_Latn	tail	f1	0.361775	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	fvt	10000	v52_fvt_conv5way_step10000	fur_Latn	tail	f1	0.553030	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step10000/checkpoint-10000/test_results.txt
@@ -466,9 +466,9 @@ ner	fvt	30000	v52_fvt_conv5way_step30000	fur_Latn	tail	f1		pending
 ner	fvt	40000	v52_fvt_conv5way_step40000	csb_Latn	tail	f1		pending	
 ner	fvt	40000	v52_fvt_conv5way_step40000	lij_Latn	tail	f1		pending	
 ner	fvt	40000	v52_fvt_conv5way_step40000	fur_Latn	tail	f1		pending	
-ner	fvt	50000	v52_fvt_conv5way_step43000	csb_Latn	tail	f1		pending	
-ner	fvt	50000	v52_fvt_conv5way_step43000	lij_Latn	tail	f1		pending	
-ner	fvt	50000	v52_fvt_conv5way_step43000	fur_Latn	tail	f1		pending	
+ner	fvt	50000	v52_fvt_conv5way_step43000	csb_Latn	tail	f1	0.586319	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	fvt	50000	v52_fvt_conv5way_step43000	lij_Latn	tail	f1	0.379310	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	fvt	50000	v52_fvt_conv5way_step43000	fur_Latn	tail	f1	0.572491	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step43000/checkpoint-43000/test_results.txt
 ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	csb_Latn	tail	f1		pending	
 ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	lij_Latn	tail	f1		pending	
 ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	fur_Latn	tail	f1		pending	
@@ -481,9 +481,9 @@ ner	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	fur_Latn	tail	f1		pen
 ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	csb_Latn	tail	f1		pending	
 ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	lij_Latn	tail	f1		pending	
 ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	fur_Latn	tail	f1		pending	
-ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	csb_Latn	tail	f1		pending	
-ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	lij_Latn	tail	f1		pending	
-ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	fur_Latn	tail	f1		pending	
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	csb_Latn	tail	f1	0.593857	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_weighted_fvt_conv5way_step50000/checkpoint-50000/test_results.txt
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	lij_Latn	tail	f1	0.357388	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_weighted_fvt_conv5way_step50000/checkpoint-50000/test_results.txt
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	fur_Latn	tail	f1	0.566176	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_weighted_fvt_conv5way_step50000/checkpoint-50000/test_results.txt
 ner	family_mean	10000	v52_family_mean_conv5way_step10000	csb_Latn	tail	f1		pending	
 ner	family_mean	10000	v52_family_mean_conv5way_step10000	lij_Latn	tail	f1		pending	
 ner	family_mean	10000	v52_family_mean_conv5way_step10000	fur_Latn	tail	f1		pending	
@@ -496,9 +496,7 @@ ner	family_mean	30000	v52_family_mean_conv5way_step30000	fur_Latn	tail	f1		pendi
 ner	family_mean	40000	v52_family_mean_conv5way_step40000	csb_Latn	tail	f1		pending	
 ner	family_mean	40000	v52_family_mean_conv5way_step40000	lij_Latn	tail	f1		pending	
 ner	family_mean	40000	v52_family_mean_conv5way_step40000	fur_Latn	tail	f1		pending	
-ner	family_mean	50000	v52_family_mean_conv5way_step50000	csb_Latn	tail	f1		pending	
-ner	family_mean	50000	v52_family_mean_conv5way_step50000	lij_Latn	tail	f1		pending	
-ner	family_mean	50000	v52_family_mean_conv5way_step50000	fur_Latn	tail	f1		pending	
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	csb_Latn	tail	f1	0.558140	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_family_mean_conv5way_step50000/checkpoint-50000/test_results.txt
 pos	random	10000	v52_random_conv5way_step10000	xav_Latn	tail	f1		pending	
 pos	random	10000	v52_random_conv5way_step10000	bam_Latn	tail	f1		pending	
 pos	random	10000	v52_random_conv5way_step10000	lij_Latn	tail	f1		pending	
@@ -511,9 +509,97 @@ pos	random	30000	v52_random_conv5way_step30000	lij_Latn	tail	f1		pending
 pos	random	40000	v52_random_conv5way_step40000	xav_Latn	tail	f1		pending	
 pos	random	40000	v52_random_conv5way_step40000	bam_Latn	tail	f1		pending	
 pos	random	40000	v52_random_conv5way_step40000	lij_Latn	tail	f1		pending	
-pos	random	50000	v52_random_conv5way_step43000	xav_Latn	tail	f1		pending	
-pos	random	50000	v52_random_conv5way_step43000	bam_Latn	tail	f1		pending	
-pos	random	50000	v52_random_conv5way_step43000	lij_Latn	tail	f1		pending	
+pos	random	50000	v52_random_conv5way_step43000	mal_Mlym	head	f1	0.831250	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ben_Beng	head	f1	0.776224	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	tel_Telu	head	f1	0.753510	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	mlt_Latn	head	f1	0.211586	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	fra_Latn	head	f1	0.543504	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	spa_Latn	head	f1	0.561646	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	eng_Latn	head	f1	0.585841	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	rus_Cyrl	head	f1	0.701754	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	deu_Latn	head	f1	0.589753	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	tur_Latn	head	f1	0.864934	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	mar_Deva	head	f1	0.738794	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	por_Latn	head	f1	0.614011	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	nld_Latn	head	f1	0.592264	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ara_Arab	head	f1	0.398608	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	zho_Hani	head	f1	0.411459	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ita_Latn	head	f1	0.588112	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ind_Latn	head	f1	0.613877	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ell_Grek	head	f1	0.582375	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	bul_Cyrl	head	f1	0.612615	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	swe_Latn	head	f1	0.636865	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ces_Latn	head	f1	0.667315	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	isl_Latn	head	f1	0.638799	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	pol_Latn	head	f1	0.672893	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ron_Latn	head	f1	0.541932	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	dan_Latn	head	f1	0.636085	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	hun_Latn	head	f1	0.752488	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	srp_Latn	head	f1	0.677971	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	fas_Arab	head	f1	0.587937	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ceb_Latn	head	f1	0.434018	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	heb_Hebr	head	f1	0.609397	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	hrv_Latn	head	f1	0.675784	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	glg_Latn	head	f1	0.590371	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	fin_Latn	head	f1	0.757573	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	slv_Latn	head	f1	0.605334	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	vie_Latn	head	f1	0.571034	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	slk_Latn	head	f1	0.683780	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	nor_Latn	head	f1	0.585553	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	est_Latn	head	f1	0.752980	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	eus_Latn	head	f1	0.574692	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	lit_Latn	head	f1	0.763717	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	kaz_Cyrl	head	f1	0.758698	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	lav_Latn	head	f1	0.756407	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	cat_Latn	head	f1	0.549003	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	tha_Thai	head	f1	0.339033	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ukr_Cyrl	head	f1	0.693437	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	tgl_Latn	head	f1	0.698597	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	sin_Sinh	head	f1	0.589070	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	gle_Latn	head	f1	0.461591	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	hin_Deva	head	f1	0.665883	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	kor_Hang	head	f1	0.521422	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	urd_Arab	head	f1	0.640672	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	sqi_Latn	head	f1	0.546307	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	bel_Cyrl	head	f1	0.695169	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	afr_Latn	head	f1	0.566965	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	tat_Cyrl	head	f1	0.482906	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	tam_Taml	head	f1	0.730306	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	amh_Ethi	head	f1	0.654893	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	yor_Latn	head	f1	0.215052	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	fao_Latn	head	f1	0.515983	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	hye_Armn	head	f1	0.793111	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	cym_Latn	head	f1	0.489539	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	lat_Latn	head	f1	0.566859	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	nds_Latn	head	f1	0.355984	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	bre_Latn	head	f1	0.386749	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	hyw_Armn	head	f1	0.700489	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	jav_Latn	head	f1	0.624850	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	jpn_Jpan	head	f1	0.300159	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	yue_Hani	head	f1	0.426043	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	gsw_Latn	head	f1	0.322942	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	sah_Cyrl	head	f1	0.271698	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	uig_Arab	head	f1	0.645842	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	kmr_Latn	head	f1	0.639845	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	pcm_Latn	head	f1	0.310278	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	quc_Latn	head	f1	0.296662	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	san_Deva	head	f1	0.154769	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	gla_Latn	head	f1	0.422448	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	wol_Latn	head	f1	0.276988	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	sme_Latn	head	f1	0.320484	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	hsb_Latn	head	f1	0.552645	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	grc_Grek	head	f1	0.388635	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	hbo_Hebr	head	f1	0.346932	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	grn_Latn	head	f1	0.122034	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	lzh_Hani	head	f1	0.224387	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	ajp_Arab	head	f1	0.472050	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	nap_Latn	head	f1	0.285714	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	aln_Latn	head	f1	0.365884	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	glv_Latn	head	f1	0.282188	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	lij_Latn	tail	f1	0.509483	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	myv_Cyrl	head	f1	0.413307	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	bam_Latn	tail	f1	0.305287	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	xav_Latn	tail	f1	0.085366	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
 pos	mean	10000	v52_mean_conv5way_step10000	xav_Latn	tail	f1		pending	
 pos	mean	10000	v52_mean_conv5way_step10000	bam_Latn	tail	f1		pending	
 pos	mean	10000	v52_mean_conv5way_step10000	lij_Latn	tail	f1		pending	

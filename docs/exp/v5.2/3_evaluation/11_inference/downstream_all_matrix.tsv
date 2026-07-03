@@ -25,11 +25,11 @@ text_classification	fvt	macro_f1	higher_is_better	0.723635	0.796671	0.796598	0.7
 text_classification	weighted_fvt	macro_f1	higher_is_better	0.711387	0.785554	0.711748	0.707101	0.749227
 text_classification	family_mean	macro_f1	higher_is_better	0.672124	0.785616	0.732175	0.659542	0.742077
 ner	random	f1	higher_is_better	0.447264	0.465865	0.464167	0.469994	0.482479
-ner	mean	f1	higher_is_better	0.472720	0.488270	0.511267	0.503437	
-ner	fvt	f1	higher_is_better	0.494477	0.515031			
-ner	weighted_fvt	f1	higher_is_better					
+ner	mean	f1	higher_is_better	0.472720	0.488270	0.511267	0.503437	0.492219
+ner	fvt	f1	higher_is_better	0.494477	0.515031			0.512707
+ner	weighted_fvt	f1	higher_is_better					0.505807
 ner	family_mean	f1	higher_is_better					
-pos	random	f1	higher_is_better					
+pos	random	f1	higher_is_better					0.535491
 pos	mean	f1	higher_is_better					
 pos	fvt	f1	higher_is_better					
 pos	weighted_fvt	f1	higher_is_better					

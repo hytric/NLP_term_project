@@ -401,9 +401,9 @@ ner	mean	30000	v52_mean_conv5way_step30000	all	f1	0.511267	3	csb_Latn,lij_Latn,f
 ner	mean	40000	v52_mean_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	mean	40000	v52_mean_conv5way_step40000	tail	f1	0.503437	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	mean	40000	v52_mean_conv5way_step40000	all	f1	0.503437	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step40000/checkpoint-40000/test_results.txt
-ner	mean	50000	v52_mean_conv5way_step43000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	mean	50000	v52_mean_conv5way_step43000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	mean	50000	v52_mean_conv5way_step43000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	mean	50000	v52_mean_conv5way_step43000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	mean	50000	v52_mean_conv5way_step43000	tail	f1	0.492219	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	mean	50000	v52_mean_conv5way_step43000	all	f1	0.492219	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step43000/checkpoint-43000/test_results.txt
 ner	fvt	10000	v52_fvt_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	fvt	10000	v52_fvt_conv5way_step10000	tail	f1	0.494477	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	fvt	10000	v52_fvt_conv5way_step10000	all	f1	0.494477	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step10000/checkpoint-10000/test_results.txt
@@ -416,9 +416,9 @@ ner	fvt	30000	v52_fvt_conv5way_step30000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		h
 ner	fvt	40000	v52_fvt_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	fvt	40000	v52_fvt_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	fvt	40000	v52_fvt_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	fvt	50000	v52_fvt_conv5way_step43000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	fvt	50000	v52_fvt_conv5way_step43000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	fvt	50000	v52_fvt_conv5way_step43000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	fvt	50000	v52_fvt_conv5way_step43000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	fvt	50000	v52_fvt_conv5way_step43000	tail	f1	0.512707	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	fvt	50000	v52_fvt_conv5way_step43000	all	f1	0.512707	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_fvt_conv5way_step43000/checkpoint-43000/test_results.txt
 ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
@@ -431,9 +431,9 @@ ner	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	f1		0	csb_Latn,li
 ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_weighted_fvt_conv5way_step50000/checkpoint-50000/test_results.txt
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	f1	0.505807	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_weighted_fvt_conv5way_step50000/checkpoint-50000/test_results.txt
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	f1	0.505807	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_weighted_fvt_conv5way_step50000/checkpoint-50000/test_results.txt
 ner	family_mean	10000	v52_family_mean_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	family_mean	10000	v52_family_mean_conv5way_step10000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	family_mean	10000	v52_family_mean_conv5way_step10000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
@@ -446,9 +446,9 @@ ner	family_mean	30000	v52_family_mean_conv5way_step30000	all	f1		0	csb_Latn,lij_
 ner	family_mean	40000	v52_family_mean_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	family_mean	40000	v52_family_mean_conv5way_step40000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
 ner	family_mean	40000	v52_family_mean_conv5way_step40000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	family_mean	50000	v52_family_mean_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	family_mean	50000	v52_family_mean_conv5way_step50000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	family_mean	50000	v52_family_mean_conv5way_step50000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_family_mean_conv5way_step50000/checkpoint-50000/test_results.txt
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	tail	f1	0.558140	1	csb_Latn,lij_Latn,fur_Latn	csb_Latn	higher_is_better	partial	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_family_mean_conv5way_step50000/checkpoint-50000/test_results.txt
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	all	f1	0.558140	1	csb_Latn,lij_Latn,fur_Latn	csb_Latn	higher_is_better	partial	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_family_mean_conv5way_step50000/checkpoint-50000/test_results.txt
 pos	random	10000	v52_random_conv5way_step10000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
 pos	random	10000	v52_random_conv5way_step10000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
 pos	random	10000	v52_random_conv5way_step10000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
@@ -461,9 +461,9 @@ pos	random	30000	v52_random_conv5way_step30000	all	f1		0	xav_Latn,bam_Latn,lij_L
 pos	random	40000	v52_random_conv5way_step40000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
 pos	random	40000	v52_random_conv5way_step40000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
 pos	random	40000	v52_random_conv5way_step40000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
-pos	random	50000	v52_random_conv5way_step43000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
-pos	random	50000	v52_random_conv5way_step43000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
-pos	random	50000	v52_random_conv5way_step43000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
+pos	random	50000	v52_random_conv5way_step43000	head	f1	0.543518	88	xav_Latn,bam_Latn,lij_Latn		higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	tail	f1	0.300045	3	xav_Latn,bam_Latn,lij_Latn	bam_Latn,lij_Latn,xav_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+pos	random	50000	v52_random_conv5way_step43000	all	f1	0.535491	91	xav_Latn,bam_Latn,lij_Latn	bam_Latn,lij_Latn,xav_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/pos/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
 pos	mean	10000	v52_mean_conv5way_step10000	head	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
 pos	mean	10000	v52_mean_conv5way_step10000	tail	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	
 pos	mean	10000	v52_mean_conv5way_step10000	all	f1		0	xav_Latn,bam_Latn,lij_Latn		higher_is_better	pending	

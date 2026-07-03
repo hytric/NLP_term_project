@@ -36,11 +36,11 @@ Blank cells are not available yet.
 | text_classification | weighted_fvt | macro_f1 | higher_is_better | 0.711387 | 0.785554 | 0.711748 | 0.707101 | 0.749227 |
 | text_classification | family_mean | macro_f1 | higher_is_better | 0.672124 | 0.785616 | 0.732175 | 0.659542 | 0.742077 |
 | ner | random | f1 | higher_is_better | 0.447264 | 0.465865 | 0.464167 | 0.469994 | 0.482479 |
-| ner | mean | f1 | higher_is_better | 0.472720 | 0.488270 | 0.511267 | 0.503437 |  |
-| ner | fvt | f1 | higher_is_better | 0.494477 | 0.515031 |  |  |  |
-| ner | weighted_fvt | f1 | higher_is_better |  |  |  |  |  |
+| ner | mean | f1 | higher_is_better | 0.472720 | 0.488270 | 0.511267 | 0.503437 | 0.492219 |
+| ner | fvt | f1 | higher_is_better | 0.494477 | 0.515031 |  |  | 0.512707 |
+| ner | weighted_fvt | f1 | higher_is_better |  |  |  |  | 0.505807 |
 | ner | family_mean | f1 | higher_is_better |  |  |  |  |  |
-| pos | random | f1 | higher_is_better |  |  |  |  |  |
+| pos | random | f1 | higher_is_better |  |  |  |  | 0.535491 |
 | pos | mean | f1 | higher_is_better |  |  |  |  |  |
 | pos | fvt | f1 | higher_is_better |  |  |  |  |  |
 | pos | weighted_fvt | f1 | higher_is_better |  |  |  |  |  |
@@ -453,8 +453,8 @@ Blank cells are not available yet.
 | ner | mean | 40000 | tail | f1 | 0.503437 | 3 | complete |
 | ner | mean | 40000 | all | f1 | 0.503437 | 3 | complete |
 | ner | mean | 50000 | head | f1 |  | 0 | pending |
-| ner | mean | 50000 | tail | f1 |  | 0 | pending |
-| ner | mean | 50000 | all | f1 |  | 0 | pending |
+| ner | mean | 50000 | tail | f1 | 0.492219 | 3 | complete |
+| ner | mean | 50000 | all | f1 | 0.492219 | 3 | complete |
 | ner | fvt | 10000 | head | f1 |  | 0 | pending |
 | ner | fvt | 10000 | tail | f1 | 0.494477 | 3 | complete |
 | ner | fvt | 10000 | all | f1 | 0.494477 | 3 | complete |
@@ -468,8 +468,8 @@ Blank cells are not available yet.
 | ner | fvt | 40000 | tail | f1 |  | 0 | pending |
 | ner | fvt | 40000 | all | f1 |  | 0 | pending |
 | ner | fvt | 50000 | head | f1 |  | 0 | pending |
-| ner | fvt | 50000 | tail | f1 |  | 0 | pending |
-| ner | fvt | 50000 | all | f1 |  | 0 | pending |
+| ner | fvt | 50000 | tail | f1 | 0.512707 | 3 | complete |
+| ner | fvt | 50000 | all | f1 | 0.512707 | 3 | complete |
 | ner | weighted_fvt | 10000 | head | f1 |  | 0 | pending |
 | ner | weighted_fvt | 10000 | tail | f1 |  | 0 | pending |
 | ner | weighted_fvt | 10000 | all | f1 |  | 0 | pending |
@@ -483,8 +483,8 @@ Blank cells are not available yet.
 | ner | weighted_fvt | 40000 | tail | f1 |  | 0 | pending |
 | ner | weighted_fvt | 40000 | all | f1 |  | 0 | pending |
 | ner | weighted_fvt | 50000 | head | f1 |  | 0 | pending |
-| ner | weighted_fvt | 50000 | tail | f1 |  | 0 | pending |
-| ner | weighted_fvt | 50000 | all | f1 |  | 0 | pending |
+| ner | weighted_fvt | 50000 | tail | f1 | 0.505807 | 3 | complete |
+| ner | weighted_fvt | 50000 | all | f1 | 0.505807 | 3 | complete |
 | ner | family_mean | 10000 | head | f1 |  | 0 | pending |
 | ner | family_mean | 10000 | tail | f1 |  | 0 | pending |
 | ner | family_mean | 10000 | all | f1 |  | 0 | pending |
@@ -498,8 +498,8 @@ Blank cells are not available yet.
 | ner | family_mean | 40000 | tail | f1 |  | 0 | pending |
 | ner | family_mean | 40000 | all | f1 |  | 0 | pending |
 | ner | family_mean | 50000 | head | f1 |  | 0 | pending |
-| ner | family_mean | 50000 | tail | f1 |  | 0 | pending |
-| ner | family_mean | 50000 | all | f1 |  | 0 | pending |
+| ner | family_mean | 50000 | tail | f1 | 0.558140 | 1 | partial |
+| ner | family_mean | 50000 | all | f1 | 0.558140 | 1 | partial |
 | pos | random | 10000 | head | f1 |  | 0 | pending |
 | pos | random | 10000 | tail | f1 |  | 0 | pending |
 | pos | random | 10000 | all | f1 |  | 0 | pending |
@@ -512,9 +512,9 @@ Blank cells are not available yet.
 | pos | random | 40000 | head | f1 |  | 0 | pending |
 | pos | random | 40000 | tail | f1 |  | 0 | pending |
 | pos | random | 40000 | all | f1 |  | 0 | pending |
-| pos | random | 50000 | head | f1 |  | 0 | pending |
-| pos | random | 50000 | tail | f1 |  | 0 | pending |
-| pos | random | 50000 | all | f1 |  | 0 | pending |
+| pos | random | 50000 | head | f1 | 0.543518 | 88 | complete |
+| pos | random | 50000 | tail | f1 | 0.300045 | 3 | complete |
+| pos | random | 50000 | all | f1 | 0.535491 | 91 | complete |
 | pos | mean | 10000 | head | f1 |  | 0 | pending |
 | pos | mean | 10000 | tail | f1 |  | 0 | pending |
 | pos | mean | 10000 | all | f1 |  | 0 | pending |
@@ -1007,9 +1007,9 @@ Blank cells are not available yet.
 | ner | mean | 40000 | csb_Latn | f1 | 0.576159 | complete |
 | ner | mean | 40000 | lij_Latn | f1 | 0.349315 | complete |
 | ner | mean | 40000 | fur_Latn | f1 | 0.584838 | complete |
-| ner | mean | 50000 | csb_Latn | f1 |  | pending |
-| ner | mean | 50000 | lij_Latn | f1 |  | pending |
-| ner | mean | 50000 | fur_Latn | f1 |  | pending |
+| ner | mean | 50000 | csb_Latn | f1 | 0.575251 | complete |
+| ner | mean | 50000 | lij_Latn | f1 | 0.350168 | complete |
+| ner | mean | 50000 | fur_Latn | f1 | 0.551237 | complete |
 | ner | fvt | 10000 | csb_Latn | f1 | 0.568627 | complete |
 | ner | fvt | 10000 | lij_Latn | f1 | 0.361775 | complete |
 | ner | fvt | 10000 | fur_Latn | f1 | 0.553030 | complete |
@@ -1022,9 +1022,9 @@ Blank cells are not available yet.
 | ner | fvt | 40000 | csb_Latn | f1 |  | pending |
 | ner | fvt | 40000 | lij_Latn | f1 |  | pending |
 | ner | fvt | 40000 | fur_Latn | f1 |  | pending |
-| ner | fvt | 50000 | csb_Latn | f1 |  | pending |
-| ner | fvt | 50000 | lij_Latn | f1 |  | pending |
-| ner | fvt | 50000 | fur_Latn | f1 |  | pending |
+| ner | fvt | 50000 | csb_Latn | f1 | 0.586319 | complete |
+| ner | fvt | 50000 | lij_Latn | f1 | 0.379310 | complete |
+| ner | fvt | 50000 | fur_Latn | f1 | 0.572491 | complete |
 | ner | weighted_fvt | 10000 | csb_Latn | f1 |  | pending |
 | ner | weighted_fvt | 10000 | lij_Latn | f1 |  | pending |
 | ner | weighted_fvt | 10000 | fur_Latn | f1 |  | pending |
@@ -1037,9 +1037,9 @@ Blank cells are not available yet.
 | ner | weighted_fvt | 40000 | csb_Latn | f1 |  | pending |
 | ner | weighted_fvt | 40000 | lij_Latn | f1 |  | pending |
 | ner | weighted_fvt | 40000 | fur_Latn | f1 |  | pending |
-| ner | weighted_fvt | 50000 | csb_Latn | f1 |  | pending |
-| ner | weighted_fvt | 50000 | lij_Latn | f1 |  | pending |
-| ner | weighted_fvt | 50000 | fur_Latn | f1 |  | pending |
+| ner | weighted_fvt | 50000 | csb_Latn | f1 | 0.593857 | complete |
+| ner | weighted_fvt | 50000 | lij_Latn | f1 | 0.357388 | complete |
+| ner | weighted_fvt | 50000 | fur_Latn | f1 | 0.566176 | complete |
 | ner | family_mean | 10000 | csb_Latn | f1 |  | pending |
 | ner | family_mean | 10000 | lij_Latn | f1 |  | pending |
 | ner | family_mean | 10000 | fur_Latn | f1 |  | pending |
@@ -1052,9 +1052,7 @@ Blank cells are not available yet.
 | ner | family_mean | 40000 | csb_Latn | f1 |  | pending |
 | ner | family_mean | 40000 | lij_Latn | f1 |  | pending |
 | ner | family_mean | 40000 | fur_Latn | f1 |  | pending |
-| ner | family_mean | 50000 | csb_Latn | f1 |  | pending |
-| ner | family_mean | 50000 | lij_Latn | f1 |  | pending |
-| ner | family_mean | 50000 | fur_Latn | f1 |  | pending |
+| ner | family_mean | 50000 | csb_Latn | f1 | 0.558140 | complete |
 | pos | random | 10000 | xav_Latn | f1 |  | pending |
 | pos | random | 10000 | bam_Latn | f1 |  | pending |
 | pos | random | 10000 | lij_Latn | f1 |  | pending |
@@ -1067,9 +1065,9 @@ Blank cells are not available yet.
 | pos | random | 40000 | xav_Latn | f1 |  | pending |
 | pos | random | 40000 | bam_Latn | f1 |  | pending |
 | pos | random | 40000 | lij_Latn | f1 |  | pending |
-| pos | random | 50000 | xav_Latn | f1 |  | pending |
-| pos | random | 50000 | bam_Latn | f1 |  | pending |
-| pos | random | 50000 | lij_Latn | f1 |  | pending |
+| pos | random | 50000 | lij_Latn | f1 | 0.509483 | complete |
+| pos | random | 50000 | bam_Latn | f1 | 0.305287 | complete |
+| pos | random | 50000 | xav_Latn | f1 | 0.085366 | complete |
 | pos | mean | 10000 | xav_Latn | f1 |  | pending |
 | pos | mean | 10000 | bam_Latn | f1 |  | pending |
 | pos | mean | 10000 | lij_Latn | f1 |  | pending |
