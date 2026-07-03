@@ -13,12 +13,12 @@
 
 ## 8.2 Limitations
 
-- **Script 편중.** Target7은 모두 Latin script라 script diversity 결론을 내릴 수 없다.
-- **Coverage 불균형.** task마다 target coverage가 다르다. NER은 언어당 100문장 subset, Bible retrieval은 50K에서도 ~0.8로 floor(§6.3), Text classification은 target test set이 없어 English/head-only다.
-- **Downstream coverage subset.** 본 보고서는 PPPL·Tatoeba·Bible·Roundtrip·Text·NER과 수렴 loss로 보고한다. 계산 비용이 큰 일부 sequence-labeling 평가는 5개 초기화 전부에 대해 완주하지 못해 제외했으며, 이는 방법론 문제가 아니라 compute/time 제약이다(future work).
-- **수렴 단정 불가.** 50K에서 loss는 평탄화됐으나 완전 수렴이라 단정하지 않는다. 절대 성능은 full-scale Glot500(예: PPPL 7.7, Tatoeba 45.7)에 못 미친다(50K vs 480K, 축소 budget 한계). 본 실험의 관심사는 초기화 방법 사이의 비교다.
-- **Local variants.** `weighted_fvt`, `family_mean`은 표준 방법이 아니라 이 실험의 local variant다.
-- **Seed variance.** 단일 run 설정이라 seed 분산은 충분히 평가되지 않았다.
+- **해석 범위.** 본 실험은 초기화 방법만 통제해 비교한 축소 budget study이므로 해석 범위는 Target7 Latin-script 언어와 50K training window 안으로 제한된다.
+- **Script와 계통 확장.** 향후에는 non-Latin 및 더 넓은 계통의 target 언어로 확장해 family prior가 script가 달라져도 유지되는지 검증해야 한다.
+- **평가 coverage 균형화.** task별 head/tail coverage와 샘플 수를 맞춘 평가셋으로 PPPL·retrieval·sequence labeling·classification 전이를 같은 기준에서 비교할 필요가 있다.
+- **Training dynamics 확장.** 10K 이전 snapshot과 50K 이후 longer run을 추가하면 family geometry가 형성되는 early phase와 downstream 수렴 구간을 분리해 볼 수 있다.
+- **초기화 ablation.** `weighted_fvt`, `family_mean`은 local variant이고 단일 run이므로 multi-seed와 더 큰 budget에서 안정성을 확인해야 한다. 또한 surface FVT와 family prior를 token provenance confidence에 따라 혼합하는 ablation으로 확장할 수 있다.
+- **분석 coverage 확대.** 현재 family similarity 분석도 38개 language subset에 기반하므로, 더 넓은 Glot500 coverage로 확장하는 것이 다음 단계다.
 
 ## 8.3 Conclusion
 

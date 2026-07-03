@@ -20,10 +20,21 @@ make pdf-pdflatex   # pdflatex + kotex (nanum 폰트 설치 시)
 
 ## 구성 파일
 
-- `main.tex` — 본문(그림은 `figs/`, 부록 표는 `Btables.tex`를 `\input`).
+- `main.tex` — 본문(그림은 `figs/`, 부록 표는 `Btables.tex`를 `\input`; `Btables_head_tail_all.tex`가 있으면 자동으로 추가 `\input`).
 - `figs/` — 생성된 plot(crossover, sim\_trend, map2d\_steps, strip\_*, initmap\_* 등). 없으면 아래 스크립트로 재생성.
 - `Btables.tex` — 부록 B의 초기화 방법별 step 표(자동 생성).
+- `Btables_head_tail_all.tex` — head/tail/all 통합 부록 표(선택 생성).
 
 ## 그림/표 재생성
 
 `figs/`와 `Btables.tex`는 `docs/exp/v5.2/3_evaluation/11_inference/downstream_head_tail_all.tsv` 등 원자료에서 matplotlib/PIL로 생성한다(생성 스크립트는 커밋 이력 참조). 원자료 경로가 바뀌면 재생성 후 컴파일한다.
+
+Head 평가값이 추가된 뒤 head/tail/all 통합 부록 표는 다음 명령으로 생성한다.
+
+```bash
+python scripts/render_v52_tex_head_tail_appendix.py \
+  --input docs/exp/v5.2/3_evaluation/11_inference/downstream_head_tail_all.tsv \
+  --output docs/paper/tex_ko/Btables_head_tail_all.tex
+```
+
+`main.tex`은 `Btables_head_tail_all.tex`가 있을 때만 해당 appendix 섹션을 포함한다.

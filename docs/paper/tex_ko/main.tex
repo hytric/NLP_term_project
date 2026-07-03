@@ -21,6 +21,9 @@
 \usepackage{microtype}
 % --- 의존성 없는 pseudocode 프레임 (BasicTeX/Overleaf 모두 컴파일) ---
 \usepackage{float}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
 \newfloat{algorithm}{htbp}{loa}
 \floatname{algorithm}{Algorithm}
 \newcounter{pcln}
@@ -54,7 +57,7 @@
 \newcommand{\dn}{$\downarrow$}
 \newcommand{\up}{$\uparrow$}
 
-\title{XLM-R 기반 저자원 언어 Vocabulary Extension:\\ Embedding Initialization 방법론 비교와 수렴 분석}
+\title{XLM-R 기반 저자원 언어 Vocabulary Extension:\\ Family-aware Embedding Initialization과 수렴 분석}
 \author{Jongha Kim}
 \date{Term Project Report (한글본) \\ 2026년 7월}
 
@@ -64,11 +67,11 @@
 % =====================================================================
 \begin{abstract}
 \noindent
-XLM-R은 100개 언어를 학습한 강력한 multilingual masked language model(MLM)이지만, 학습에 포함되지 않은 tail language에서는 한 단어가 여러 subword로 과도하게 쪼개지고(over-fragmentation) 어휘·형태 정보가 표현 공간에 정렬되지 않는 문제가 남는다. Glot500은 mixed corpus로 SentencePiece unigram tokenizer를 재학습해 vocabulary를 확장하고 확장 모델을 MLM으로 continued pretraining하여 이 문제를 완화했다. 그러나 vocabulary를 확장하면 embedding matrix 뒤에 기존에 없던 새 token row가 추가되는데, 이 row를 어떤 벡터로 시작하느냐(embedding initialization)는 tokenizer 설계와 독립적인 modeling 선택임에도 대개 임의의 random으로 처리되고 체계적으로 비교된 적이 드물다.
+XLM-R은 100개 언어를 학습한 강력한 multilingual masked language model(MLM)이지만, 학습에 포함되지 않은 tail language에서는 한 단어가 여러 subword로 과도하게 쪼개지고(over-fragmentation) 어휘·형태 정보가 표현 공간에 정렬되지 않는 문제가 남는다. Glot500은 mixed corpus로 SentencePiece unigram tokenizer를 재학습해 vocabulary를 확장하고 확장 모델을 MLM으로 continued pretraining하여 이 문제를 완화했으며, 관련 언어가 함께 있을 때 저자원 언어 표현이 좋아지는 related-language help를 보고했다. 본 보고서의 핵심 novelty는 이 related-language/family prior를 새 token embedding 초기화로 직접 옮기는 것이다. 즉 vocabulary를 확장할 때 새 row를 random으로 두지 않고, 해당 token이 유래한 language family의 source token embedding 평균에서 시작하게 만든다.
 
-본 보고서는 이 초기화 선택만을 통제 변인으로 두고 다섯 방법을 비교한다: \rand, \meanm, \fvt, 그리고 우리가 추가한 두 변형 \wfvt, \famm. \texttt{xlm-roberta-base} 위에서 92개 XLM-R-seen replay 언어와 7개 XLM-R-unseen target(Target7)을 사용하고, tokenizer는 Glot500 방식으로 고정한 채 초기화만 바꿔 동일한 corpus·objective·schedule·evaluation protocol로 50K-step까지 continued MLM pretraining을 수행한다. 평가는 Glot500 downstream suite(pseudoperplexity, Tatoeba/Bible retrieval, NER, roundtrip alignment, text classification)로 하며, 시작점인 XLM-R-B와 XLM-R-L을 baseline으로 둔다.
+본 보고서는 family-aware initialization인 \famm\ 을 주된 제안으로 둔다. 비교를 위해 \rand, \meanm, 표면형 subtoken 재사용 방식인 \fvt, 그리고 \fvt\ 의 길이 가중 변형 \wfvt\ 도 함께 평가한다. \texttt{xlm-roberta-base} 위에서 92개 XLM-R-seen replay 언어와 7개 XLM-R-unseen target(Target7)을 사용하고, tokenizer는 Glot500 방식으로 고정한 채 초기화만 바꿔 동일한 corpus·objective·schedule·evaluation protocol로 50K-step까지 continued MLM pretraining을 수행한다. 평가는 Glot500 downstream suite(pseudoperplexity, Tatoeba/Bible retrieval, NER, roundtrip alignment, text classification)로 하며, 시작점인 XLM-R-B와 XLM-R-L을 baseline으로 둔다.
 
-세 가지를 관찰한다. (1) 확장 tokenizer는 Target7의 tokens/word를 2.204에서 1.592로 27.75\% 낮춘다. (2) 같은 tokenizer를 공유함에도 초기화에 따라 50K 수렴 loss가 갈리며, FVT 계열이 가장 낮고 \meanm\ 은 \rand\ 보다도 높다. (3) 50K downstream에서 우리가 추가한 두 변형이 target PPPL·Tatoeba·NER·roundtrip에서 최고이고, 특히 \famm\ 은 NER에서 ablation 최고이며, 학습 초반 앞서던 plain \fvt\ 를 수렴 구간에서 추월한다. 요컨대 저자원 vocabulary adaptation에서 embedding initialization은 수렴과 downstream 성능을 실제로 바꾸는 중요한 선택이며, source subtoken/계통 정보를 재사용하는 FVT 계열이 지속적으로 유리하다.
+세 가지를 관찰한다. (1) 확장 tokenizer는 Target7의 tokens/word를 2.204에서 1.592로 27.75\% 낮춘다. (2) 2D similarity map의 family clustering과 downstream task 결과를 연결해 보면, 모델은 유사 family 언어를 가까운 표현 공간에 묶어 학습하고, 이 구조를 초기값에 반영한 \famm\ 이 target PPPL·Tatoeba·NER에서 최고다. (3) \wfvt\ 는 loss·Roundtrip을 포함한 균형점에서 강하지만, target downstream이라는 목표에서는 계통 prior를 직접 쓰는 \famm\ 이 가장 이상적인 초기화 지점으로 수렴한다. 요컨대 저자원 vocabulary adaptation에서 embedding initialization은 수렴과 downstream 성능을 실제로 바꾸며, 핵심 novelty는 Glot500의 related-language help를 family-aware embedding initialization으로 구현하고 검증한 데 있다.
 \end{abstract}
 
 % =====================================================================
@@ -84,9 +87,9 @@ Glot500은 horizontal scaling을 위해 vocabulary extension과 continued MLM pr
 
 \subsection{기여}
 \begin{enumerate}\setlength\itemsep{0.15em}
-\item tokenizer를 고정하고 초기화만 바꾸는 통제된 5-way ablation을 설계하고, 표면 길이 가중 \wfvt\ 와 계통 prior \famm\ 두 방법을 제안한다.
-\item 초기화가 50K-step 수렴 loss와 downstream 성능을 유의하게 바꿈을 보인다. 특히 두 변형이 수렴 구간에서 plain FVT를 추월하며, \famm\ 이 target 지표에서 가장 좋다.
-\item 문장 표현 공간의 계통 구조가 학습 과정에서 어떻게 형성되는지 step별로 분석한다.
+\item Glot500의 related-language help를 새 token row 초기화로 옮긴 family-aware 방법 \famm\ 을 주된 제안으로 제시하고, tokenizer를 고정한 5-way ablation으로 검증한다.
+\item 2D similarity map의 family clustering과 downstream task 결과를 연결해, 계통 기반 초기화가 target PPPL·Tatoeba·NER에서 가장 좋은 지점으로 수렴함을 보인다.
+\item 문장 표현 공간의 계통 구조가 학습 과정에서 어떻게 형성되는지 step별로 분석하고, 이를 초기화 prior 선택의 해석 근거로 사용한다.
 \end{enumerate}
 
 % =====================================================================
@@ -468,14 +471,14 @@ tail--head 다른 family·다른 script & 1{,}856 & $-0.063$ \\
 \end{figure}
 
 \subsection{종합: 가장 이상적인 초기화}
-\rand·\meanm\ 은 모든 축에서 하위이고 개선은 전부 FVT 계열에서 나온다. \famm\ 이 target downstream 최강(PPPL·Tatoeba·NER 최고)이나 전체 corpus loss는 3위로 target에 특화된다. \wfvt\ 가 가장 균형(loss·Roundtrip 최고, 나머지 상위권)이다. plain \fvt\ 는 ``빠른 출발, 조기 포화'' 프로파일이다. 결론적으로 target 성능이 목표면 \famm, 전반적 균형이 목표면 \wfvt\ 가 최선이다.
+표현 공간 분석과 downstream 결과를 함께 보면 핵심은 ``어떤 언어 정보를 새 embedding row에 먼저 넣는가''이다. 그림~\ref{fig:map2d}의 2D map은 모델이 유사한 언어를 가까운 표현 공간에 묶어 학습함을 보여준다. 이는 Glot500이 보고한 related-language help, 즉 주변의 관련 언어가 있을수록 저자원 언어 표현이 좋아진다는 관찰과 같은 방향이다\cite{glot500}. 이 구조를 초기값에 직접 반영한 계통 기반 초기화인 \famm\ 이 target PPPL·Tatoeba·NER에서 최고이고, 이는 실제 downstream task 결과가 family prior의 유효성을 뒷받침한다는 뜻이다. 다만 \wfvt\ 는 loss·Roundtrip 최고와 나머지 지표 상위권을 동시에 얻어 가장 균형적이다. plain \fvt\ 는 ``빠른 출발, 조기 포화'' 프로파일이다. 결론적으로 target 성능이 목표면 \famm, 전반적 균형이 목표면 \wfvt\ 가 최선이다.
 
 % =====================================================================
 \section{결론 및 한계}
 
-\paragraph{결론.} \texttt{xlm-roberta-base}에 Glot500식 vocabulary extension을 적용하고 새 embedding row 초기화를 다섯 방법으로 50K-step까지 통제 비교했다. (1) 확장 tokenizer는 Target7 fragmentation을 27.75\% 줄였다. (2) 같은 tokenizer·corpus에서도 초기화에 따라 50K 수렴 loss가 갈렸고 FVT 계열이 최저, \meanm\ 이 \rand\ 보다도 높았다. (3) 50K downstream에서 우리가 추가한 \wfvt·\famm\ 이 target PPPL·Tatoeba·NER·Roundtrip에서 최고였고, 학습 초반 앞서던 plain FVT를 수렴 구간에서 추월했다. (4) 문장 표현 공간에서는 script보다 family 구조가 강하게 나타났고 그 구조는 학습 초반에 먼저 형성되었다. 요컨대 embedding initialization은 저자원 vocabulary adaptation에서 수렴과 downstream을 실제로 바꾸며, source subtoken/계통 정보를 재사용하는 FVT 계열(특히 target이면 \famm, 균형이면 \wfvt)이 지속적으로 유리하다.
+\paragraph{결론.} \texttt{xlm-roberta-base}에 Glot500식 vocabulary extension을 적용하고 새 embedding row 초기화를 다섯 방법으로 50K-step까지 통제 비교했다. (1) 확장 tokenizer는 Target7 fragmentation을 27.75\% 줄였다. (2) 같은 tokenizer·corpus에서도 초기화에 따라 50K 수렴 loss가 갈렸고 FVT 계열이 최저, \meanm\ 이 \rand\ 보다도 높았다. (3) 50K downstream에서 우리가 추가한 \wfvt·\famm\ 이 target PPPL·Tatoeba·NER·Roundtrip에서 최고였고, 학습 초반 앞서던 plain FVT를 수렴 구간에서 추월했다. (4) similarity 2D map과 centered cosine은 XLM-R에서 출발해 Glot500식 mixed corpus로 이어 학습한 encoder가 유사한 family 언어를 가까운 표현 공간에 연결지어 학습함을 보여준다. 이는 Glot500의 related-language help와 같은 방향이다. 따라서 가장 직접적인 결론은 family 구조가 단순한 시각화 결과에 그치지 않고 초기화 선택과 downstream 성능을 설명한다는 점이다. 계통 기반 초기화인 \famm\ 은 이 family prior를 새 token row에 주입하기 때문에 target PPPL·Tatoeba·NER에서 가장 좋은 지점으로 수렴했고, \wfvt\ 는 전체 loss와 Roundtrip까지 포함한 균형점에서 가장 강했다.
 
-\paragraph{한계.} 계산 비용이 큰 일부 sequence-labeling(POS) 평가는 5-way 완주하지 못해 제외했다(compute 제약, future work). task별 target coverage가 다르고(NER 100문장 subset, Bible floor, Text head/EN-only), 50K는 완전 수렴이 아니라 절대 성능은 full Glot500에 미달한다. \wfvt·\famm\ 은 local variant이며 단일 run이라 seed 분산은 충분히 평가되지 않았다. family similarity 분석은 전체 99개가 아니라 38개 language subset에 대한 것이다.
+\paragraph{한계와 발전 방향.} 본 실험은 초기화 방법만 통제해 비교한 축소 budget study이므로 해석 범위는 Target7 Latin-script 언어와 50K training window 안으로 제한된다. 향후에는 non-Latin 및 더 넓은 계통의 target 언어로 확장해 family prior가 script가 달라져도 유지되는지 검증하고, task별 head/tail coverage와 샘플 수를 맞춘 평가셋으로 PPPL·retrieval·sequence labeling·classification 전이를 같은 기준에서 비교할 필요가 있다. 또한 10K 이전 snapshot과 50K 이후 longer run을 추가하면 family geometry가 형성되는 early phase와 downstream 수렴 구간을 분리해 볼 수 있다. \wfvt·\famm\ 은 local variant이고 단일 run이므로 multi-seed와 더 큰 budget에서 안정성을 확인해야 하며, surface FVT와 family prior를 token provenance confidence에 따라 혼합하는 ablation으로도 확장할 수 있다. 현재 family similarity 분석도 38개 language subset에 기반하므로, 더 넓은 Glot500 coverage로 확장하는 것이 다음 단계다.
 
 % =====================================================================
 \begin{thebibliography}{99}
@@ -600,17 +603,35 @@ Text \up & head & 59.3 & 72.9 & 72.6 & 68.2 & \textbf{77.4} & 74.9 & 74.2 \\
 
 \input{Btables.tex}
 
-\subsection{초기화 방법별 step별 2D embedding map (전체)}
-그림~\ref{fig:strips}는 다섯 초기화 각각에 대해 step 10K/20K/30K/40K/최종(\rand\ 43K, \meanm\ 45K, 나머지 50K)의 문장 임베딩 2D map을 모두 보인 것이다. 색=language family, 삼각형=tail(Target7), 원=head/reference. 모든 방법에서 계통 군집 구조가 조기에 형성되어 step에 걸쳐 안정적으로 유지된다.
+\IfFileExists{Btables_head_tail_all.tex}{%
+\clearpage
+\subsection{Head/tail/all step별 결과 (전체)}
+Head 평가가 완료된 지표는 아래 자동 생성 표에 tail/all과 함께 통합한다. 빈 칸은 해당 group 결과가 아직 없거나 coverage가 없는 경우다.
+\input{Btables_head_tail_all.tex}
+}{}
 
-\begin{figure}[htbp]\centering
-\includegraphics[width=\linewidth]{strip_random.png}\\[3pt]
-\includegraphics[width=\linewidth]{strip_mean.png}\\[3pt]
-\includegraphics[width=\linewidth]{strip_fvt.png}\\[3pt]
-\includegraphics[width=\linewidth]{strip_weighted_fvt.png}\\[3pt]
-\includegraphics[width=\linewidth]{strip_family_mean.png}
-\caption{초기화 방법별·step별 2D embedding map 전체. 위에서부터 \rand, \meanm, \fvt, \wfvt, \famm; 각 행은 왼쪽부터 step 10K, 20K, 30K, 40K, 최종.}
+\clearpage
+\subsection{초기화 방법별 step별 2D embedding map (전체)}
+그림~\ref{fig:strips}는 다섯 초기화 각각에 대해 step 10K/20K/30K/40K/최종(\rand\ 43K, \meanm\ 45K, 나머지 50K)의 문장 임베딩 2D map을 한 줄에 하나씩 보인 것이다. 색=language family, 삼각형=tail(Target7), 원=head/reference. 모든 방법에서 계통 군집 구조가 조기에 형성되어 step에 걸쳐 안정적으로 유지된다.
+
+\begin{figure}[p]\centering
+\includegraphics[width=0.95\linewidth]{strip_random.png}\par\vspace{1pt}
+\includegraphics[width=0.95\linewidth]{strip_mean.png}\par\vspace{1pt}
+\includegraphics[width=0.95\linewidth]{strip_fvt.png}\par\vspace{1pt}
+\includegraphics[width=0.95\linewidth]{strip_weighted_fvt.png}\par\vspace{1pt}
+\includegraphics[width=0.95\linewidth]{strip_family_mean.png}
+\caption{초기화 방법별·step별 2D embedding map 전체. 위에서부터 \rand, \meanm, \fvt, \wfvt, \famm; 각 줄은 왼쪽부터 step 10K, 20K, 30K, 40K, 최종.}
 \label{fig:strips}
+\end{figure}
+
+\clearpage
+\subsection{38개 언어 centroid 2D map}
+그림~\ref{fig:centroidmap}은 \fvt\ 50K checkpoint에서 sampled 38개 언어의 sentence-vector centroid를 2D PCA로 나타낸 것이다. 삼각형은 Target7 tail 언어이고, 원은 head/reference 언어이다.
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.88\linewidth]{centroid_fvt_50k.png}
+\caption{38개 언어 centroid의 2D PCA map(\fvt, 50K). Target7은 삼각형으로 표시하고, 나머지 head/reference 언어는 원으로 표시한다.}
+\label{fig:centroidmap}
 \end{figure}
 
 \end{document}

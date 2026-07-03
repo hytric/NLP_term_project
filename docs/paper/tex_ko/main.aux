@@ -10,19 +10,19 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Glot500과 horizontal language scaling}{2}{subsection.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Corpus collection.}{2}{section*.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Tokenization.}{2}{section*.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{MLM continued pretraining.}{2}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{MLM continued pretraining.}{3}{section*.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Glot500의 분석.}{3}{section*.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Vocabulary extension의 두 계열}{3}{subsection.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Embedding initialization / vocabulary transfer}{3}{subsection.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}평가 프로토콜}{3}{subsection.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}데이터}{3}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}언어 범위와 데이터 출처}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}데이터}{4}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}언어 범위와 데이터 출처}{4}{subsection.3.1}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Target7 언어와 각 언어가 커버하는 평가 task.}}{4}{table.caption.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}언어 선택 이유: task 중심 설계}{4}{subsection.3.2}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Task별 평가 대상 target 언어(각 3개)와 평가 규모.}}{4}{table.caption.6}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{tab:taskcov}{{2}{4}{Task별 평가 대상 target 언어(각 3개)와 평가 규모}{table.caption.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}학습 corpus와 sampling}{4}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}학습 corpus와 sampling}{5}{subsection.3.3}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 학습/평가 데이터 규모(samples).}}{5}{table.caption.7}\protected@file@percent }
 \newlabel{tab:corpus}{{3}{5}{학습/평가 데이터 규모(samples)}{table.caption.7}{}}
 \@writefile{toc}{\contentsline {paragraph}{Temperature sampling ($\alpha =0.3$).}{5}{section*.8}\protected@file@percent }
@@ -72,14 +72,14 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Step 변화에 따른 clustering}{11}{subsection.7.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 표현 구조의 step별 변화(\texttt  {fvt}). 언어/계통 유사도(실선)는 10K에 이미 형성되어 평탄하고, 의미 정렬(점선, src--eng)은 완만히 개선된다.}}{11}{figure.caption.21}\protected@file@percent }
 \newlabel{fig:simtrend}{{3}{11}{표현 구조의 step별 변화(\fvt ). 언어/계통 유사도(실선)는 10K에 이미 형성되어 평탄하고, 의미 정렬(점선, src--eng)은 완만히 개선된다}{figure.caption.21}{}}
-\bibcite{glot500}{1}
+\citation{glot500}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.3}38개 언어 2D PCA와 step별 변화}{12}{subsection.7.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces 문장 임베딩 2D map의 step별 변화(\texttt  {fvt}; 왼쪽=10K, 오른쪽=50K). 색=language family, 삼각형=tail(Target7), 원=head/reference. 계통 군집 구조가 조기에 형성되어 step에 걸쳐 안정적으로 유지된다.}}{12}{figure.caption.22}\protected@file@percent }
 \newlabel{fig:map2d}{{4}{12}{문장 임베딩 2D map의 step별 변화(\fvt ; 왼쪽=10K, 오른쪽=50K). 색=language family, 삼각형=tail(Target7), 원=head/reference. 계통 군집 구조가 조기에 형성되어 step에 걸쳐 안정적으로 유지된다}{figure.caption.22}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.4}종합: 가장 이상적인 초기화}{12}{subsection.7.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {8}결론 및 한계}{12}{section.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{결론.}{12}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{한계.}{12}{section*.24}\protected@file@percent }
+\bibcite{glot500}{1}
 \bibcite{xlmr}{2}
 \bibcite{spm}{3}
 \bibcite{unigram}{4}
@@ -96,10 +96,11 @@
 \bibcite{pppl}{15}
 \bibcite{roundtrip}{16}
 \bibcite{bert}{17}
+\@writefile{toc}{\contentsline {paragraph}{한계와 발전 방향.}{13}{section*.24}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {A}부록 A: 보조 자료}{13}{appendix.A}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Bible retrieval floor}{13}{subsection.A.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Bible retrieval Acc10 ($\times 100$)의 step별 값. 모든 방법이 floor.}}{13}{table.caption.26}\protected@file@percent }
-\newlabel{tab:bible}{{9}{13}{Bible retrieval Acc10 ($\times 100$)의 step별 값. 모든 방법이 floor}{table.caption.26}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Bible retrieval Acc10 ($\times 100$)의 step별 값. 모든 방법이 floor.}}{14}{table.caption.26}\protected@file@percent }
+\newlabel{tab:bible}{{9}{14}{Bible retrieval Acc10 ($\times 100$)의 step별 값. 모든 방법이 floor}{table.caption.26}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Related-language pivot 추가 실험 (제안)}{14}{subsection.A.2}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces related-language pivot 매핑.}}{14}{table.caption.27}\protected@file@percent }
 \newlabel{tab:pivot}{{10}{14}{related-language pivot 매핑}{table.caption.27}{}}
@@ -109,14 +110,17 @@
 \@writefile{toc}{\contentsline {section}{\numberline {B}부록 B: 전체 결과}{14}{appendix.B}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {B.1}전체 50K score (head/tail/all)}{14}{subsection.B.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {B.2}초기화 방법별 step별 결과 (전체)}{14}{subsection.B.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}초기화 방법별 step별 2D embedding map (전체)}{14}{subsection.B.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces 초기화 방법별·step별 2D embedding map 전체. 위에서부터 \texttt  {random}, \texttt  {mean}, \texttt  {fvt}, \texttt  {weighted\_fvt}, \texttt  {family\_mean}; 각 행은 왼쪽부터 step 10K, 20K, 30K, 40K, 최종.}}{15}{figure.caption.35}\protected@file@percent }
-\newlabel{fig:strips}{{5}{15}{초기화 방법별·step별 2D embedding map 전체. 위에서부터 \rand , \meanm , \fvt , \wfvt , \famm ; 각 행은 왼쪽부터 step 10K, 20K, 30K, 40K, 최종}{figure.caption.35}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces 전체 50K score (head/tail/all). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{16}{table.caption.29}\protected@file@percent }
-\newlabel{tab:full}{{12}{16}{전체 50K score (head/tail/all). retrieval/roundtrip/text $\times 100$, PPPL raw}{table.caption.29}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces 초기화 \texttt  {random}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{16}{table.caption.30}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces 초기화 \texttt  {mean}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{16}{table.caption.31}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces 초기화 \texttt  {fvt}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{16}{table.caption.32}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces 초기화 \texttt  {weighted\_fvt}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{17}{table.caption.33}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces 초기화 \texttt  {family\_mean}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{17}{table.caption.34}\protected@file@percent }
-\gdef \@abspage@last{17}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces 전체 50K score (head/tail/all). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{15}{table.caption.29}\protected@file@percent }
+\newlabel{tab:full}{{12}{15}{전체 50K score (head/tail/all). retrieval/roundtrip/text $\times 100$, PPPL raw}{table.caption.29}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces 초기화 \texttt  {random}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{15}{table.caption.30}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces 초기화 \texttt  {mean}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{15}{table.caption.31}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces 초기화 \texttt  {fvt}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{15}{table.caption.32}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces 초기화 \texttt  {weighted\_fvt}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{16}{table.caption.33}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces 초기화 \texttt  {family\_mean}의 step별 target 결과 (tail; Text만 head). retrieval/roundtrip/text $\times 100$, PPPL raw.}}{16}{table.caption.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}초기화 방법별 step별 2D embedding map (전체)}{17}{subsection.B.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces 초기화 방법별·step별 2D embedding map 전체. 위에서부터 \texttt  {random}, \texttt  {mean}, \texttt  {fvt}, \texttt  {weighted\_fvt}, \texttt  {family\_mean}; 각 줄은 왼쪽부터 step 10K, 20K, 30K, 40K, 최종.}}{18}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:strips}{{5}{18}{초기화 방법별·step별 2D embedding map 전체. 위에서부터 \rand , \meanm , \fvt , \wfvt , \famm ; 각 줄은 왼쪽부터 step 10K, 20K, 30K, 40K, 최종}{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.4}38개 언어 centroid 2D map}{19}{subsection.B.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 38개 언어 centroid의 2D PCA map(\texttt  {fvt}, 50K). Target7은 삼각형으로 표시하고, 나머지 head/reference 언어는 원으로 표시한다.}}{19}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:centroidmap}{{6}{19}{38개 언어 centroid의 2D PCA map(\fvt , 50K). Target7은 삼각형으로 표시하고, 나머지 head/reference 언어는 원으로 표시한다}{figure.caption.36}{}}
+\gdef \@abspage@last{19}
