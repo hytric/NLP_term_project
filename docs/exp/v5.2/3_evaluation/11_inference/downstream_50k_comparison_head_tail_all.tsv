@@ -1,0 +1,50 @@
+metric	method	step	model_key	score_name	direction	head	tail	all	head_status	tail_status	all_status	head_languages	tail_languages	all_languages
+pppl	random	50000	v52_random_conv5way_step43000	weighted_pseudo_perplexity	lower_is_better	23.931637	20.171426	23.590025	complete	complete	complete	92	7	99
+pppl	mean	50000	v52_mean_conv5way_step43000	weighted_pseudo_perplexity	lower_is_better	26.290482	23.019622	25.998324	complete	complete	complete	92	7	99
+pppl	fvt	50000	v52_fvt_conv5way_step43000	weighted_pseudo_perplexity	lower_is_better	15.893001	16.343671	15.930423	complete	complete	complete	92	7	99
+pppl	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	weighted_pseudo_perplexity	lower_is_better	14.647185	13.890946	14.582022	complete	complete	complete	92	7	99
+pppl	family_mean	50000	v52_family_mean_conv5way_step50000	weighted_pseudo_perplexity	lower_is_better	18.152506	12.262258	17.563337	complete	complete	complete	92	7	99
+pppl	xlmr_base	baseline	xlmr_base	weighted_pseudo_perplexity	lower_is_better	8.052377	98.239305	10.193684	complete	complete	complete	92	7	99
+pppl	xlmr_large	baseline	xlmr_large	weighted_pseudo_perplexity	lower_is_better	4.906473	63.715695	6.247878	complete	complete	complete	92	7	99
+retrieval_tatoeba	random	50000	v52_random_conv5way_step43000	top10_accuracy	higher_is_better	0.720682	0.333734	0.703093	complete	complete	complete	63	3	66
+retrieval_tatoeba	mean	50000	v52_mean_conv5way_step43000	top10_accuracy	higher_is_better	0.700381	0.331639	0.683620	complete	complete	complete	63	3	66
+retrieval_tatoeba	fvt	50000	v52_fvt_conv5way_step43000	top10_accuracy	higher_is_better	0.721875	0.344449	0.704719	complete	complete	complete	63	3	66
+retrieval_tatoeba	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	top10_accuracy	higher_is_better	0.735167	0.357751	0.718011	complete	complete	complete	63	3	66
+retrieval_tatoeba	family_mean	50000	v52_family_mean_conv5way_step50000	top10_accuracy	higher_is_better	0.732720	0.360846	0.715817	complete	complete	complete	63	3	66
+retrieval_tatoeba	xlmr_base	baseline	xlmr_base	top10_accuracy	higher_is_better	0.656309	0.205146	0.635802	complete	complete	complete	63	3	66
+retrieval_tatoeba	xlmr_large	baseline	xlmr_large	top10_accuracy	higher_is_better	0.543256	0.216225	0.528391	complete	complete	complete	63	3	66
+retrieval_bible	random	50000	v52_random_conv5way_step43000	top10_accuracy	higher_is_better	0.356001	0.007888	0.342438	complete	complete	complete	74	3	77
+retrieval_bible	mean	50000	v52_mean_conv5way_step43000	top10_accuracy	higher_is_better	0.389718	0.007767	0.374837	complete	complete	complete	74	3	77
+retrieval_bible	fvt	50000	v52_fvt_conv5way_step43000	top10_accuracy	higher_is_better	0.396249	0.008378	0.381137	complete	complete	complete	74	3	77
+retrieval_bible	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	top10_accuracy	higher_is_better	0.398280	0.008856	0.383107	complete	complete	complete	74	3	77
+retrieval_bible	family_mean	50000	v52_family_mean_conv5way_step50000	top10_accuracy	higher_is_better	0.396871	0.007517	0.381701	complete	complete	complete	74	3	77
+retrieval_bible	xlmr_base	baseline	xlmr_base	top10_accuracy	higher_is_better	0.381150	0.005197	0.366503	complete	complete	complete	74	3	77
+retrieval_bible	xlmr_large	baseline	xlmr_large	top10_accuracy	higher_is_better	0.172682	0.003383	0.166086	complete	complete	complete	74	3	77
+roundtrip_alignment	random	50000	v52_random_conv5way_step43000	accuracy	higher_is_better	0.193918	0.026667	0.187401	complete	complete	complete	74	3	77
+roundtrip_alignment	mean	50000	v52_mean_conv5way_step43000	accuracy	higher_is_better	0.196301	0.027200	0.189713	complete	complete	complete	74	3	77
+roundtrip_alignment	fvt	50000	v52_fvt_conv5way_step43000	accuracy	higher_is_better	0.209936	0.032167	0.203010	complete	complete	complete	74	3	77
+roundtrip_alignment	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	accuracy	higher_is_better	0.210516	0.033833	0.203632	complete	complete	complete	74	3	77
+roundtrip_alignment	family_mean	50000	v52_family_mean_conv5way_step50000	accuracy	higher_is_better	0.197346	0.031567	0.190887	complete	complete	complete	74	3	77
+roundtrip_alignment	xlmr_base	baseline	xlmr_base	accuracy	higher_is_better	0.185300	0.023833	0.179009	complete	complete	complete	74	3	77
+roundtrip_alignment	xlmr_large	baseline	xlmr_large	accuracy	higher_is_better	0.136826	0.026633	0.132532	complete	complete	complete	74	3	77
+ner	random	50000	v52_random_conv5way_step43000	f1	higher_is_better	0.614090	0.482479	0.609215	complete	complete	complete	78	3	81
+ner	mean	50000	v52_mean_conv5way_step43000	f1	higher_is_better	0.624994	0.492219	0.620076	complete	complete	complete	78	3	81
+ner	fvt	50000	v52_fvt_conv5way_step43000	f1	higher_is_better	0.626671	0.512707	0.622450	complete	complete	complete	78	3	81
+ner	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	f1	higher_is_better	0.620538	0.505807	0.616289	complete	complete	complete	78	3	81
+ner	family_mean	50000	v52_family_mean_conv5way_step50000	f1	higher_is_better	0.627779	0.495854	0.622893	complete	complete	complete	78	3	81
+ner	xlmr_base	baseline	xlmr_base	f1	higher_is_better	0.622234	0.456640	0.616101	complete	complete	complete	78	3	81
+ner	xlmr_large	baseline	xlmr_large	f1	higher_is_better	0.675131	0.538518	0.670071	complete	complete	complete	78	3	81
+pos	random	50000	v52_random_conv5way_step43000	f1	higher_is_better	0.543518	0.300045	0.535491	complete	complete	complete	88	3	91
+pos	mean	50000	v52_mean_conv5way_step43000	f1	higher_is_better	0.550786	0.299987	0.542518	complete	complete	complete	88	3	91
+pos	fvt	50000	v52_fvt_conv5way_step43000	f1	higher_is_better	0.556719	0.298253	0.548198	complete	complete	complete	88	3	91
+pos	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	f1	higher_is_better	0.551888	0.309186	0.543887	complete	complete	complete	88	3	91
+pos	family_mean	50000	v52_family_mean_conv5way_step50000	f1	higher_is_better	0.554110	0.322369	0.546470	complete	complete	complete	88	3	91
+pos	xlmr_base	baseline	xlmr_base	f1	higher_is_better	0.547887	0.281760	0.539113	complete	complete	complete	88	3	91
+pos	xlmr_large	baseline	xlmr_large	f1	higher_is_better	0.554514	0.231247	0.543857	complete	complete	complete	88	3	91
+text_classification	random	50000	v52_random_conv5way_step43000	macro_f1	higher_is_better	0.725865		0.725865	complete	not_applicable	complete	1	0	1
+text_classification	mean	50000	v52_mean_conv5way_step43000	macro_f1	higher_is_better	0.682036		0.682036	complete	not_applicable	complete	1	0	1
+text_classification	fvt	50000	v52_fvt_conv5way_step43000	macro_f1	higher_is_better	0.773809		0.773809	complete	not_applicable	complete	1	0	1
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	macro_f1	higher_is_better	0.749227		0.749227	complete	not_applicable	complete	1	0	1
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	macro_f1	higher_is_better	0.742077		0.742077	complete	not_applicable	complete	1	0	1
+text_classification	xlmr_base	baseline	xlmr_base	macro_f1	higher_is_better	0.592876		0.592876	complete	not_applicable	complete	1	0	1
+text_classification	xlmr_large	baseline	xlmr_large	macro_f1	higher_is_better	0.729472		0.729472	complete	not_applicable	complete	1	0	1

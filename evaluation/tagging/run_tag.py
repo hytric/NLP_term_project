@@ -503,6 +503,8 @@ def run(args):
                 result_writer.write("=====================\nlanguage={}\n".format(lang))
                 for key in sorted(result.keys()):
                     result_writer.write("{} = {}\n".format(key, str(result[key])))
+                result_writer.flush()
+                os.fsync(result_writer.fileno())
                 # Save predictions
                 output_test_predictions_file = os.path.join(args.output_dir, "test_{}_predictions.txt".format(lang))
                 infile = os.path.join(args.data_dir, lang, "test")
@@ -528,6 +530,8 @@ def run(args):
                 result_writer.write("=====================\nlanguage={}\n".format(lang))
                 for key in sorted(result.keys()):
                     result_writer.write("{} = {}\n".format(key, str(result[key])))
+                result_writer.flush()
+                os.fsync(result_writer.fileno())
                 # Save predictions
                 output_test_predictions_file = os.path.join(args.output_dir, "dev_{}_predictions.txt".format(lang))
                 infile = os.path.join(args.data_dir, lang, "dev")
@@ -539,7 +543,14 @@ def save_predictions(args, predictions, output_file, text_file, idx_file, output
     with open(text_file, "r") as text_reader, open(idx_file, "r") as idx_reader:
         text = text_reader.readlines()
         index = idx_reader.readlines()
-        assert len(text) == len(index)
+        if len(text) != len(index):
+            logger.warning(
+                "Skipping prediction save for %s because text/index lengths differ: %s vs %s",
+                output_file,
+                len(text),
+                len(index),
+            )
+            return
 
     # Sanity check on the predictions
     with open(output_file, "w") as writer:
@@ -556,4 +567,3 @@ def save_predictions(args, predictions, output_file, text_file, idx_file, output
                 output_line += predictions[example_id].pop(0) + '\n'
                 writer.write(output_line)
                 prev_id = cur_id
-

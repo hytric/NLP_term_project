@@ -1,9 +1,9 @@
 metric	method	score_name	direction	step_10000	step_20000	step_30000	step_40000	step_50000
-pppl	random	weighted_pseudo_perplexity	lower_is_better					
-pppl	mean	weighted_pseudo_perplexity	lower_is_better					
-pppl	fvt	weighted_pseudo_perplexity	lower_is_better					
-pppl	weighted_fvt	weighted_pseudo_perplexity	lower_is_better					
-pppl	family_mean	weighted_pseudo_perplexity	lower_is_better					
+pppl	random	weighted_pseudo_perplexity	lower_is_better	30.509651	24.385066			23.590025
+pppl	mean	weighted_pseudo_perplexity	lower_is_better					25.998324
+pppl	fvt	weighted_pseudo_perplexity	lower_is_better					15.930423
+pppl	weighted_fvt	weighted_pseudo_perplexity	lower_is_better					14.582022
+pppl	family_mean	weighted_pseudo_perplexity	lower_is_better					17.563337
 retrieval_tatoeba	random	top10_accuracy	higher_is_better	0.700800	0.699629	0.703266	0.702602	0.703093
 retrieval_tatoeba	mean	top10_accuracy	higher_is_better	0.665954	0.680983	0.682303	0.682362	0.683620
 retrieval_tatoeba	fvt	top10_accuracy	higher_is_better	0.692096	0.703904	0.703688	0.704676	0.704719
@@ -11,14 +11,14 @@ retrieval_tatoeba	weighted_fvt	top10_accuracy	higher_is_better	0.664172	0.703515
 retrieval_tatoeba	family_mean	top10_accuracy	higher_is_better	0.664888	0.684763	0.714476	0.715130	0.715817
 retrieval_bible	random	top10_accuracy	higher_is_better	0.339054	0.341764	0.343583	0.342460	0.342438
 retrieval_bible	mean	top10_accuracy	higher_is_better	0.373329	0.375498	0.376140	0.374389	0.374837
-retrieval_bible	fvt	top10_accuracy	higher_is_better	0.370069	0.380615	0.381527		
-retrieval_bible	weighted_fvt	top10_accuracy	higher_is_better					
-retrieval_bible	family_mean	top10_accuracy	higher_is_better					
-roundtrip_alignment	random	accuracy	higher_is_better					
-roundtrip_alignment	mean	accuracy	higher_is_better					
-roundtrip_alignment	fvt	accuracy	higher_is_better					
-roundtrip_alignment	weighted_fvt	accuracy	higher_is_better					
-roundtrip_alignment	family_mean	accuracy	higher_is_better					
+retrieval_bible	fvt	top10_accuracy	higher_is_better	0.370069	0.380615	0.381527	0.381922	0.381137
+retrieval_bible	weighted_fvt	top10_accuracy	higher_is_better	0.354393	0.369808	0.391966	0.392852	0.383107
+retrieval_bible	family_mean	top10_accuracy	higher_is_better					0.381701
+roundtrip_alignment	random	accuracy	higher_is_better					0.187401
+roundtrip_alignment	mean	accuracy	higher_is_better					0.189713
+roundtrip_alignment	fvt	accuracy	higher_is_better					0.203010
+roundtrip_alignment	weighted_fvt	accuracy	higher_is_better					0.203632
+roundtrip_alignment	family_mean	accuracy	higher_is_better					0.190887
 text_classification	random	macro_f1	higher_is_better	0.669056	0.683697	0.681637	0.770660	0.725865
 text_classification	mean	macro_f1	higher_is_better	0.786852	0.682232	0.718823	0.787870	0.682036
 text_classification	fvt	macro_f1	higher_is_better	0.723635	0.796671	0.796598	0.797343	0.773809
@@ -26,11 +26,11 @@ text_classification	weighted_fvt	macro_f1	higher_is_better	0.711387	0.785554	0.7
 text_classification	family_mean	macro_f1	higher_is_better	0.672124	0.785616	0.732175	0.659542	0.742077
 ner	random	f1	higher_is_better	0.602750	0.603085	0.601556	0.606080	0.609215
 ner	mean	f1	higher_is_better	0.606040	0.621109	0.620389	0.614223	0.620076
-ner	fvt	f1	higher_is_better	0.612335	0.622119			
-ner	weighted_fvt	f1	higher_is_better					
-ner	family_mean	f1	higher_is_better					
+ner	fvt	f1	higher_is_better	0.612335	0.622119			0.622450
+ner	weighted_fvt	f1	higher_is_better					0.616289
+ner	family_mean	f1	higher_is_better					0.622893
 pos	random	f1	higher_is_better					0.535491
 pos	mean	f1	higher_is_better					0.542518
-pos	fvt	f1	higher_is_better					
+pos	fvt	f1	higher_is_better					0.548198
 pos	weighted_fvt	f1	higher_is_better					0.543887
-pos	family_mean	f1	higher_is_better					
+pos	family_mean	f1	higher_is_better					0.546470

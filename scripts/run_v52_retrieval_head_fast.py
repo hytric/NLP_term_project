@@ -151,6 +151,34 @@ def data_file(data_dir: Path, task: str, lang: str, side: str) -> Path:
     return data_dir / f"{prefix}.{lang}-eng_Latn.{side}"
 
 
+def complete_result_blocks(path: Path) -> dict[str, str]:
+    if not path.exists() or path.stat().st_size == 0:
+        return {}
+
+    blocks: dict[str, str] = {}
+    for raw_block in path.read_text(encoding="utf-8", errors="ignore").split("====================="):
+        lines = [line.strip() for line in raw_block.splitlines() if line.strip()]
+        lang = ""
+        metrics = set()
+        for line in lines:
+            if line.startswith("language="):
+                lang = line.split("=", 1)[1].strip()
+            elif line.startswith("Acc"):
+                metrics.add(line.split("=", 1)[0].strip())
+        if lang and {"Acc1", "Acc5", "Acc10"}.issubset(metrics):
+            blocks[lang] = "\n".join(lines)
+    return blocks
+
+
+def rewrite_complete_results(path: Path, blocks: dict[str, str]) -> None:
+    with path.open("w", encoding="utf-8") as out:
+        for block in blocks.values():
+            out.write("=====================\n")
+            out.write(block.rstrip() + "\n")
+        out.flush()
+        os.fsync(out.fileno())
+
+
 def run(args: argparse.Namespace) -> None:
     data_dir = Path(args.data_dir)
     output_dir = Path(args.output_dir)
@@ -162,10 +190,20 @@ def run(args: argparse.Namespace) -> None:
     model, tokenizer = load_model(args.model_name_or_path, device)
 
     languages = parse_languages(args.languages)
+    result_path = output_dir / "test_results.txt"
+    completed = complete_result_blocks(result_path)
+    if completed:
+        rewrite_complete_results(result_path, completed)
+        print(f"[resume] found {len(completed)} complete language rows in {result_path}")
+    pending_languages = [lang for lang in languages if lang not in completed]
+    for lang in languages:
+        if lang in completed:
+            print(f"[skip] {args.task} {lang} already complete")
+
     rows = []
     target_embedding_cache: dict[str, np.ndarray] = {}
-    with (output_dir / "test_results.txt").open("w", encoding="utf-8") as results:
-        for lang in languages:
+    with result_path.open("a", encoding="utf-8") as results:
+        for lang in pending_languages:
             src_file = data_file(data_dir, args.task, lang, lang)
             tgt_file = data_file(data_dir, args.task, lang, "eng_Latn")
             if not src_file.exists() or not tgt_file.exists():
@@ -218,12 +256,13 @@ def run(args: argparse.Namespace) -> None:
             results.write(f"Acc5 = {acc5}\n")
             results.write(f"Acc10 = {acc10}\n")
             results.flush()
+            os.fsync(results.fileno())
             with (output_dir / f"test_{lang}_predictions.txt").open("w", encoding="utf-8") as out:
                 for row in pred:
                     out.write(str(row) + "\n")
             rows.append((lang, acc1, acc5, acc10))
 
-    print(f"wrote {len(rows)} language rows to {output_dir}")
+    print(f"wrote {len(rows)} new language rows to {output_dir}; total={len(completed) + len(rows)}")
 
 
 def main() -> None:

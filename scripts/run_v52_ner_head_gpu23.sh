@@ -20,6 +20,12 @@ MAX_LENGTH="${MAX_LENGTH:-256}"
 SEED="${SEED:-1}"
 METHODS="${METHODS:-random mean fvt weighted_fvt family_mean}"
 STEPS="${STEPS:-10000 20000 30000 40000 50000}"
+DISABLE_FILE="${DISABLE_FILE:-${V52_ROOT}/runs/disable_v52_background_waiters}"
+
+if [[ -e "${DISABLE_FILE}" && "${ALLOW_V52_BACKGROUND_QUEUE:-0}" != "1" && "${STEPS}" != "50000" ]]; then
+  echo "[disabled] ${DISABLE_FILE} exists; refusing non-50k NER head queue STEPS='${STEPS}'."
+  exit 0
+fi
 
 QUEUE_FILE="${LOG_DIR}/queue.tsv"
 MISSING_FILE="${LOG_DIR}/missing_trained.tsv"
@@ -147,17 +153,53 @@ head_count() {
 
 result_count() {
   local key="$1"
-  local expected="${2:-0}"
-  local count=0 file
-  while IFS= read -r file; do
-    [[ -n "${file}" ]] || continue
-    local n
-    n="$(grep -c '^language=' "${file}" 2>/dev/null || true)"
-    if [[ "${n}" -gt "${count}" ]]; then
-      count="${n}"
-    fi
-  done < <(find "${V52_ROOT}/evaluation/ner_head/${key}" -name test_results.txt -type f -size +0c 2>/dev/null)
-  printf '%s' "${count}"
+  completed_languages "${key}" | awk 'NF {n++} END {print n+0}'
+}
+
+completed_languages() {
+  local key="$1"
+  local result_dir="${V52_ROOT}/evaluation/ner_head/${key}"
+  [[ -d "${result_dir}" ]] || return 0
+  find "${result_dir}" -name test_results.txt -type f -size +0c 2>/dev/null \
+    | sort \
+    | while IFS= read -r file; do
+        awk -F '=' '/^language=/ {print $2}' "${file}"
+      done \
+    | awk 'NF && !seen[$0]++'
+}
+
+missing_languages() {
+  local key="$1"
+  local done_file
+  done_file="$(mktemp "${LOG_DIR}/done_langs.XXXXXX")"
+  completed_languages "${key}" > "${done_file}"
+  awk -v done_file="${done_file}" '
+    BEGIN {
+      while ((getline line < done_file) > 0) {
+        if (line != "") done[line] = 1
+      }
+      close(done_file)
+    }
+    {
+      for (i = 1; i <= NF; i++) {
+        if (!done[$i]) {
+          if (n++ > 0) printf " "
+          printf "%s", $i
+        }
+      }
+    }
+    END {printf "\n"}
+  ' "${HEAD_LANGS_FILE}"
+  rm -f "${done_file}"
+}
+
+archive_partial_results() {
+  local current_result="$1" out_prefix="$2" gpu="$3"
+  [[ -s "${current_result}" ]] || return 0
+  local archive_dir
+  archive_dir="${out_prefix}/partial_gpu${gpu}_$(date '+%Y%m%d_%H%M%S')_$$"
+  mkdir -p "${archive_dir}"
+  cp -f "${current_result}" "${archive_dir}/test_results.txt"
 }
 
 copy_tokenizer_files() {
@@ -185,7 +227,7 @@ tokenizer_dir_for() {
 
 run_one() {
   local index="$1" method="$2" step="$3" key="$4" model_path="$5" source_dir="$6" best_checkpoint="$7" gpu="$8"
-  local expected out_prefix out_dir link_path log_file status_file count tokenizer_dir
+  local expected out_prefix out_dir link_path log_file status_file count tokenizer_dir predict_langs current_result
   expected="$(head_count)"
   count="$(result_count "${key}" "${expected}")"
   if [[ "${count}" -ge "${expected}" && "${expected}" -gt 0 ]]; then
@@ -199,6 +241,13 @@ run_one() {
   out_prefix="${V52_ROOT}/evaluation/ner_head/${key}"
   out_dir="${out_prefix}/$(basename "${link_path}")"
   copy_tokenizer_files "${tokenizer_dir}" "${out_dir}"
+  current_result="${out_dir}/test_results.txt"
+  predict_langs="$(missing_languages "${key}")"
+  if [[ -z "${predict_langs}" ]]; then
+    printf '[fail] ner_head %s has no missing languages but count=%s/%s\n' "${key}" "${count}" "${expected}" >&2
+    return 1
+  fi
+  archive_partial_results "${current_result}" "${out_prefix}" "${gpu}"
 
   log_file="${LOG_DIR}/${index}_ner_head_${key}_gpu${gpu}.log"
   status_file="${LOG_DIR}/status_gpu${gpu}.tsv"
@@ -211,7 +260,7 @@ run_one() {
   (
     cd "${ROOT}/evaluation/tagging"
     CUDA_VISIBLE_DEVICES="${gpu}" \
-    NER_PREDICT_LANGS="$(cat "${HEAD_LANGS_FILE}")" \
+    NER_PREDICT_LANGS="${predict_langs}" \
     "${PYTHON_BIN}" evaluate_ner.py \
       --model_type xlmr \
       --model_name_or_path "${link_path}" \
@@ -287,6 +336,9 @@ stop_pgid_if_requested() {
 }
 
 run_all() {
+  write_head_langs
+  write_queue
+  export REFRESH_QUEUE=0
   local gpu_list=(${GPUS})
   local total="${#gpu_list[@]}"
   local shard=0

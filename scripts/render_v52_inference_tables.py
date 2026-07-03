@@ -373,7 +373,7 @@ def summarize_groups(
                 status = "complete"
                 if group == "head" and expected_head and not expected_head.issubset(present_languages):
                     status = "partial"
-                if group in {"tail", "all"} and expected_tail and set(present_tail) != expected_tail:
+                elif group in {"tail", "all"} and expected_tail and set(present_tail) != expected_tail:
                     status = "partial"
                 if group == "all":
                     expected_all = set(expected_tail) | set(expected_head)
@@ -425,7 +425,7 @@ def summarize_groups(
                 if expected_all and not expected_all.issubset(present_languages):
                     status = "partial"
         else:
-            status = empty_status
+            status = "not_applicable" if group == "tail" and not expected_tail else empty_status
         out.append(
             {
                 "metric": task,
@@ -555,6 +555,72 @@ def all_matrix_rows(summary_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 item[f"step_{step}"] = matrix_cell(rows_by_key.get((metric, method, str(step))))
             matrix.append(item)
     return matrix
+
+
+def comparison_head_tail_all_rows(
+    summary_rows: list[dict[str, Any]],
+    baseline_summary_rows: list[dict[str, Any]],
+    step: int = 50000,
+) -> list[dict[str, Any]]:
+    grouped: dict[tuple[str, str, str], dict[str, Any]] = {}
+    task_order = list(TASKS)
+    method_order = list(METHODS) + list(BASELINES)
+
+    for row in summary_rows:
+        if str(row.get("step")) != str(step):
+            continue
+        key = (str(row["metric"]), str(row["method"]), str(row["step"]))
+        grouped.setdefault(
+            key,
+            {
+                "metric": row["metric"],
+                "method": row["method"],
+                "step": row["step"],
+                "model_key": row["model_key"],
+                "score_name": row["score_name"],
+                "direction": row["direction"],
+            },
+        )
+        group = str(row["summary_group"])
+        grouped[key][group] = row.get("score_value", "")
+        grouped[key][f"{group}_status"] = row.get("status", "")
+        grouped[key][f"{group}_languages"] = row.get("languages", "")
+
+    for row in baseline_summary_rows:
+        key = (str(row["metric"]), str(row["method"]), "baseline")
+        grouped.setdefault(
+            key,
+            {
+                "metric": row["metric"],
+                "method": row["method"],
+                "step": "baseline",
+                "model_key": row["model_key"],
+                "score_name": row["score_name"],
+                "direction": row["direction"],
+            },
+        )
+        group = str(row["summary_group"])
+        grouped[key][group] = row.get("score_value", "")
+        grouped[key][f"{group}_status"] = row.get("status", "")
+        grouped[key][f"{group}_languages"] = row.get("languages", "")
+
+    def sort_key(row: dict[str, Any]) -> tuple[int, int, str]:
+        metric = str(row.get("metric", ""))
+        method = str(row.get("method", ""))
+        return (
+            task_order.index(metric) if metric in task_order else len(task_order),
+            method_order.index(method) if method in method_order else len(method_order),
+            str(row.get("step", "")),
+        )
+
+    rows = []
+    for row in sorted(grouped.values(), key=sort_key):
+        for group in ("head", "tail", "all"):
+            row.setdefault(group, "")
+            row.setdefault(f"{group}_status", "")
+            row.setdefault(f"{group}_languages", "")
+        rows.append(row)
+    return rows
 
 
 def append_all_matrix(lines: list[str], summary_rows: list[dict[str, Any]]) -> None:
@@ -737,6 +803,27 @@ def main() -> None:
     write_tsv(out_dir / "downstream_language_scores.tsv", language_rows_out, language_fields)
     write_tsv(out_dir / "downstream_baseline_head_tail_all.tsv", baseline_summary_rows, summary_fields)
     write_tsv(out_dir / "downstream_baseline_language_scores.tsv", baseline_language_rows_out, language_fields)
+    write_tsv(
+        out_dir / "downstream_50k_comparison_head_tail_all.tsv",
+        comparison_head_tail_all_rows(summary_rows, baseline_summary_rows, 50000),
+        [
+            "metric",
+            "method",
+            "step",
+            "model_key",
+            "score_name",
+            "direction",
+            "head",
+            "tail",
+            "all",
+            "head_status",
+            "tail_status",
+            "all_status",
+            "head_languages",
+            "tail_languages",
+            "all_languages",
+        ],
+    )
     write_tsv(
         out_dir / "downstream_all_matrix.tsv",
         all_matrix_rows(summary_rows),

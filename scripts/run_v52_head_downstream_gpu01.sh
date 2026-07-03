@@ -14,6 +14,12 @@ GPUS="${GPUS:-0 1}"
 METHODS="${METHODS:-random mean fvt weighted_fvt family_mean}"
 STEPS="${STEPS:-10000 20000 30000 40000 50000}"
 TASKS="${TASKS:-retrieval_tatoeba retrieval_bible roundtrip_alignment}"
+DISABLE_FILE="${DISABLE_FILE:-${V52_ROOT}/runs/disable_v52_background_waiters}"
+
+if [[ -e "${DISABLE_FILE}" && "${ALLOW_V52_BACKGROUND_QUEUE:-0}" != "1" && "${STEPS}" != "50000" ]]; then
+  echo "[disabled] ${DISABLE_FILE} exists; refusing non-50k head queue STEPS='${STEPS}'."
+  exit 0
+fi
 
 RETRIEVAL_DATA_ROOT="${RETRIEVAL_DATA_ROOT:-${ROOT}/evaluation/download_data/download}"
 ROUNDTRIP_DATA_DIR="${ROUNDTRIP_DATA_DIR:-${ROOT}/evaluation/download_data/download/roundtrip_alignment}"
