@@ -11,6 +11,49 @@
 - Target7: `dtp_Latn`, `xav_Latn`, `bam_Latn`, `csb_Latn`, `ile_Latn`, `lij_Latn`, `fur_Latn`.
 - Script: 모두 Latin script.
 
+table 넣기
+language_script
+language full name
+region
+new_length
+Covered tasks
+dtp_Latn
+Kadazan Dusun
+Southeast Asia
+48,468
+Tatoeba, Bible, Roundtrip, Taxi1500, Embedding similarity
+xav_Latn
+Xavánte
+South America
+31,765
+Bible, Roundtrip, POS, Taxi1500
+bam_Latn
+Bambara
+West Africa
+32,150
+Bible, Roundtrip, POS, Taxi1500
+csb_Latn
+Kashubian
+Europe
+33,743
+Tatoeba, NER, Embedding similarity
+ile_Latn
+Interlingue
+Constructed/Europe
+40,984
+Tatoeba, Embedding similarity
+lij_Latn
+Ligurian
+Europe
+42,447
+NER, POS
+fur_Latn
+Friulian
+Europe
+30,052
+NER
+
+
 ## Target7 선택 이유
 
 1. XLM-R에 명시적으로 seen language로 포함되지 않은 language-script를 우선한다.
