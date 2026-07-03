@@ -15,11 +15,13 @@ from typing import Any
 
 METHODS = ("random", "mean", "fvt", "weighted_fvt", "family_mean")
 STEPS = (10000, 20000, 30000, 40000, 50000)
+BASELINES = ("xlmr_base", "xlmr_large")
 TARGET7 = {"dtp_Latn", "xav_Latn", "bam_Latn", "csb_Latn", "ile_Latn", "lij_Latn", "fur_Latn"}
 
 TASKS: dict[str, dict[str, Any]] = {
     "pppl": {
         "folder": "01_pseudoperplexity",
+        "coverage": "pseudoperplexity",
         "score_name": "weighted_pseudo_perplexity",
         "block_key": "weighted_pseudo_perplexity",
         "direction": "lower_is_better",
@@ -108,6 +110,14 @@ def fmt(value: float | None) -> str:
     return f"{value:.6f}"
 
 
+def exp_safe(value: float) -> float:
+    if math.isnan(value):
+        return float("nan")
+    if value > 50:
+        return float("inf")
+    return math.exp(value)
+
+
 def fair_target_keys(path: Path) -> dict[str, str]:
     targets: dict[str, str] = {}
     for row in read_tsv(path):
@@ -132,7 +142,8 @@ def model_key(method: str, step: int, conv5way: bool, fair_targets: dict[str, st
 
 def coverage_lookup(eval_dir: Path, task: str) -> dict[str, str]:
     out: dict[str, str] = {}
-    for row in read_tsv(eval_dir / "00_coverage" / f"coverage_{task}.tsv"):
+    coverage_task = TASKS.get(task, {}).get("coverage", task)
+    for row in read_tsv(eval_dir / "00_coverage" / f"coverage_{coverage_task}.tsv"):
         lang = row.get("language_script") or row.get("language")
         group = row.get("group", "")
         if lang and group:
@@ -142,7 +153,8 @@ def coverage_lookup(eval_dir: Path, task: str) -> dict[str, str]:
 
 def available_coverage_languages(eval_dir: Path, task: str, group: str) -> set[str]:
     out: set[str] = set()
-    for row in read_tsv(eval_dir / "00_coverage" / f"coverage_{task}.tsv"):
+    coverage_task = TASKS.get(task, {}).get("coverage", task)
+    for row in read_tsv(eval_dir / "00_coverage" / f"coverage_{coverage_task}.tsv"):
         lang = row.get("language_script") or row.get("language")
         row_group = row.get("group", "")
         if row_group == "v5_target":
@@ -300,6 +312,8 @@ def collect_pppl(eval_dir: Path, model: str) -> tuple[list[dict[str, Any]], str]
         language = row.get("language_script", "")
         try:
             value = float(row["pseudo_perplexity"])
+            mean_nll = float(row["mean_nll"])
+            masked_tokens = int(row["masked_tokens"])
         except (KeyError, TypeError, ValueError):
             continue
         rows.append(
@@ -307,6 +321,8 @@ def collect_pppl(eval_dir: Path, model: str) -> tuple[list[dict[str, Any]], str]
                 "language": language,
                 "group": "tail" if language in TARGET7 else "head",
                 "score_value": value,
+                "mean_nll": mean_nll,
+                "masked_tokens": masked_tokens,
                 "source_file": str(path),
             }
         )
@@ -335,34 +351,34 @@ def summarize_groups(
 ) -> list[dict[str, Any]]:
     spec = TASKS[task]
     if task == "pppl":
-        summary = Path(source_file).with_name("summary.tsv") if source_file else Path()
-        summary_rows = {row.get("summary_group", ""): row for row in read_tsv(summary)}
-        complete_group = summary_rows.get("v5_target") or summary_rows.get("all")
         out: list[dict[str, Any]] = []
+        expected_tail = set(spec["tail_languages"])
+        expected_head = available_coverage_languages(eval_dir, task, "head")
+        groups = {
+            "head": [row for row in language_rows if row["group"] == "head"],
+            "tail": [row for row in language_rows if row["group"] == "tail"],
+            "all": list(language_rows),
+        }
         for group in ("head", "tail", "all"):
-            if group == "head":
-                out.append(
-                    {
-                        "metric": task,
-                        "method": method,
-                        "step": step,
-                        "model_key": model,
-                        "summary_group": group,
-                        "score_name": spec["score_name"],
-                        "score_value": "",
-                        "languages": 0,
-                        "expected_tail_languages": ",".join(spec["tail_languages"]),
-                        "tail_languages_scored": "",
-                        "direction": spec["direction"],
-                        "status": "not_applicable" if language_rows else empty_status,
-                        "source_file": str(summary) if summary else source_file,
-                    }
+            rows = groups[group]
+            total_tokens = sum(int(row.get("masked_tokens", 0)) for row in rows)
+            present_languages = {row["language"] for row in rows}
+            present_tail = sorted({row["language"] for row in rows if row["language"] in expected_tail})
+            if rows and total_tokens:
+                weighted_nll = (
+                    sum(float(row["mean_nll"]) * int(row["masked_tokens"]) for row in rows) / total_tokens
                 )
-                continue
-            if complete_group:
-                score_value = complete_group.get(spec["score_name"], "")
-                languages = complete_group.get("languages", "")
+                score_value = fmt(exp_safe(weighted_nll))
+                languages = len(rows)
                 status = "complete"
+                if group == "head" and expected_head and not expected_head.issubset(present_languages):
+                    status = "partial"
+                if group in {"tail", "all"} and expected_tail and set(present_tail) != expected_tail:
+                    status = "partial"
+                if group == "all":
+                    expected_all = set(expected_tail) | set(expected_head)
+                    if expected_all and not expected_all.issubset(present_languages):
+                        status = "partial"
             else:
                 score_value = ""
                 languages = 0
@@ -378,10 +394,10 @@ def summarize_groups(
                     "score_value": score_value,
                     "languages": languages,
                     "expected_tail_languages": ",".join(spec["tail_languages"]),
-                    "tail_languages_scored": ",".join(spec["tail_languages"]) if complete_group else "",
+                    "tail_languages_scored": ",".join(present_tail),
                     "direction": spec["direction"],
                     "status": status,
-                    "source_file": str(summary) if summary else source_file,
+                    "source_file": source_file,
                 }
             )
         return out
@@ -453,6 +469,46 @@ def add_pending_language_rows(
                 "source_file": "",
             }
         )
+
+
+def collect_task_rows(
+    eval_root: Path,
+    eval_dir: Path,
+    tasks: list[str],
+    models: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    summary_rows: list[dict[str, Any]] = []
+    language_rows_out: list[dict[str, Any]] = []
+    available_models = ready_models(eval_dir / "model_matrix.tsv")
+    for task in tasks:
+        if task not in TASKS:
+            raise ValueError(f"unknown task: {task}")
+        for model_spec in models:
+            method = str(model_spec["method"])
+            step = model_spec["step"]
+            key = str(model_spec["model_key"])
+            rows, source = collect_language_rows(eval_root, eval_dir, task, key)
+            empty_status = "pending" if key in available_models else "missing_model"
+            if rows:
+                for row in rows:
+                    language_rows_out.append(
+                        {
+                            "metric": task,
+                            "method": method,
+                            "step": step,
+                            "model_key": key,
+                            "language": row["language"],
+                            "group": row["group"],
+                            "score_name": TASKS[task]["score_name"],
+                            "score_value": fmt(float(row["score_value"])),
+                            "status": "complete",
+                            "source_file": row["source_file"],
+                        }
+                    )
+            else:
+                add_pending_language_rows(language_rows_out, task, method, step, key, empty_status)
+            summary_rows.extend(summarize_groups(eval_dir, task, method, step, key, rows, source, empty_status))
+    return summary_rows, language_rows_out
 
 
 def matrix_cell(row: dict[str, Any] | None) -> str:
@@ -565,6 +621,47 @@ def render_md(path: Path, summary_rows: list[dict[str, Any]], language_rows: lis
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def append_baseline_md(
+    path: Path,
+    baseline_summary_rows: list[dict[str, Any]],
+    baseline_language_rows: list[dict[str, Any]],
+) -> None:
+    if not baseline_summary_rows:
+        return
+    lines = path.read_text(encoding="utf-8").rstrip().splitlines()
+    lines.extend(
+        [
+            "",
+            "## Baseline Head/Tail/All",
+            "",
+            "| Metric | Baseline | Group | Score | Value | Langs | Status |",
+            "| --- | --- | --- | --- | ---: | ---: | --- |",
+        ]
+    )
+    for row in baseline_summary_rows:
+        lines.append(
+            "| {metric} | {method} | {summary_group} | {score_name} | {score_value} | {languages} | {status} |".format(
+                **row
+            )
+        )
+    lines.extend(
+        [
+            "",
+            "## Baseline Tail Language Rows",
+            "",
+            "| Metric | Baseline | Language | Score | Value | Status |",
+            "| --- | --- | --- | --- | ---: | --- |",
+        ]
+    )
+    for row in [item for item in baseline_language_rows if item.get("group") == "tail"]:
+        lines.append(
+            "| {metric} | {method} | {language} | {score_name} | {score_value} | {status} |".format(
+                **row
+            )
+        )
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--eval-dir", default="docs/exp/v5.2/3_evaluation")
@@ -575,6 +672,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--methods", default=",".join(METHODS))
     parser.add_argument("--steps", default=",".join(str(step) for step in STEPS))
     parser.add_argument("--tasks", default=",".join(TASKS))
+    parser.add_argument("--baselines", default=",".join(BASELINES))
     parser.add_argument("--legacy-step-keys", action="store_true", help="Use v52_<method>_stepN keys instead of conv5way keys.")
     return parser.parse_args()
 
@@ -587,39 +685,26 @@ def main() -> None:
     methods = parse_csv_list(args.methods)
     steps = [int(item) for item in parse_csv_list(args.steps)]
     tasks = parse_csv_list(args.tasks)
+    baselines = parse_csv_list(args.baselines)
     conv5way = not args.legacy_step_keys
-    available_models = ready_models(Path(args.model_matrix))
     fair_targets = fair_target_keys(Path(args.fair_targets)) if conv5way else {}
 
-    summary_rows: list[dict[str, Any]] = []
-    language_rows_out: list[dict[str, Any]] = []
-    for task in tasks:
-        if task not in TASKS:
-            raise ValueError(f"unknown task: {task}")
-        for method in methods:
-            for step in steps:
-                key = model_key(method, step, conv5way, fair_targets)
-                rows, source = collect_language_rows(eval_root, eval_dir, task, key)
-                empty_status = "pending" if key in available_models else "missing_model"
-                if rows:
-                    for row in rows:
-                        language_rows_out.append(
-                            {
-                                "metric": task,
-                                "method": method,
-                                "step": step,
-                                "model_key": key,
-                                "language": row["language"],
-                                "group": row["group"],
-                                "score_name": TASKS[task]["score_name"],
-                                "score_value": fmt(float(row["score_value"])),
-                                "status": "complete",
-                                "source_file": row["source_file"],
-                            }
-                        )
-                else:
-                    add_pending_language_rows(language_rows_out, task, method, step, key, empty_status)
-                summary_rows.extend(summarize_groups(eval_dir, task, method, step, key, rows, source, empty_status))
+    model_specs = [
+        {"method": method, "step": step, "model_key": model_key(method, step, conv5way, fair_targets)}
+        for method in methods
+        for step in steps
+    ]
+    summary_rows, language_rows_out = collect_task_rows(eval_root, eval_dir, tasks, model_specs)
+    baseline_specs = [
+        {"method": baseline, "step": "baseline", "model_key": baseline}
+        for baseline in baselines
+    ]
+    baseline_summary_rows, baseline_language_rows_out = collect_task_rows(
+        eval_root,
+        eval_dir,
+        tasks,
+        baseline_specs,
+    )
 
     summary_fields = [
         "metric",
@@ -650,12 +735,15 @@ def main() -> None:
     ]
     write_tsv(out_dir / "downstream_head_tail_all.tsv", summary_rows, summary_fields)
     write_tsv(out_dir / "downstream_language_scores.tsv", language_rows_out, language_fields)
+    write_tsv(out_dir / "downstream_baseline_head_tail_all.tsv", baseline_summary_rows, summary_fields)
+    write_tsv(out_dir / "downstream_baseline_language_scores.tsv", baseline_language_rows_out, language_fields)
     write_tsv(
         out_dir / "downstream_all_matrix.tsv",
         all_matrix_rows(summary_rows),
         ["metric", "method", "score_name", "direction"] + [f"step_{step}" for step in STEPS],
     )
     render_md(out_dir / "downstream_tables.md", summary_rows, language_rows_out)
+    append_baseline_md(out_dir / "downstream_tables.md", baseline_summary_rows, baseline_language_rows_out)
     print(f"wrote downstream inference tables to {out_dir}")
 
 
