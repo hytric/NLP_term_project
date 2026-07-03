@@ -1,44 +1,66 @@
 \section{Experiments}
 
-\subsection{Evaluation Surface}
+All five initialization methods share the same tokenizer, corpus, MLM objective, training budget,
+and evaluation runner.
+Score differences therefore reflect only the interaction between initialization and
+training dynamics.
 
-평가는 Glot500 논문이 사용한 metric family를 유지한다. 다만 local target7 coverage가 task마다
-다르므로, 결과 표에는 metric value와 함께 coverage를 반드시 보고한다.
+\paragraph{Common sentence embedding.}
+Retrieval and similarity tasks use the Glot500 retrieval-style encoder:
+hidden states from layer 7 (0-indexed) are mean-pooled over non-special tokens,
+then L2-normalized.
+For centered cosine analysis, the global sentence-vector mean is subtracted before normalization.
 
-\begin{itemize}
-  \item Pseudoperplexity: MLM이 target sentence를 얼마나 자연스럽게 예측하는지 측정한다. 낮을수록 좋다.
-  \item Sentence Retrieval Tatoeba/Bible: English-aligned sentence를 top-$k$ retrieval로 찾는다. Top-10 accuracy를 사용한다.
-  \item Text Classification: Taxi1500 계열 macro-F1을 사용하지만, 현재 local target7 direct evidence가 아니므로 해석을 제한한다.
-  \item NER/POS: sequence labeling F1을 사용한다. NER는 target7 중 3개, POS는 target-relevant 3개가 있다.
-  \item Roundtrip Alignment: Bible-derived multi-way alignment가 원래 word로 돌아오는지를 accuracy로 측정한다.
-\end{itemize}
+\subsection{Pseudoperplexity (PPPL \dn)}
 
-평가 runner는 \codepath{evaluation/} 아래에 유지되어 있으며, v5.2 결과는
-\codepath{docs/exp/v5.2/3_evaluation/} 아래에 metric별로 저장되어 있다. Final 50K table은
-\codepath{docs/exp/v5.2/3_evaluation/09_aggregation/main_head_tail_all.tsv} 형식으로
-method별 head/tail/all row를 재생성해 채운다. 기존
-\codepath{docs/exp/v5.2/3_evaluation/v52_final_downstream_table.tsv}는 step-4000
-\method{random}/\method{mean}/\method{FVT} early diagnostic 근거로만 둔다.
+Following \citet{salazar2020pppl}, we compute pseudoperplexity over the held-out target
+sentence pool.
+PPPL masks each token position in turn and accumulates the negative log-likelihood of
+the true token:
+\[
+\mathrm{PPPL}(x) = \exp\!\left(\frac{1}{n}\sum_{t=1}^{n} -\log p_\theta(x_t \mid x_{\setminus t})\right).
+\]
+Lower is better.
+We use 100 sentences per Target7 language (700 total).
+Because all five methods use the same tokenizer, PPPL differences across methods
+cannot arise from tokenizer fertility; they reflect model quality alone.
 
-\subsection{Main Comparison}
+\subsection{Sentence Retrieval --- Tatoeba and Bible (\up)}
 
-Main ablation은 50K-step convergence run에서 생성된 \method{random}, \method{mean},
-\method{FVT}, \method{weighted FVT}, \method{family-aware mean} checkpoint를 비교한다.
-Step-4000 \method{random}/\method{mean}/\method{FVT} table은 early diagnostic으로 appendix에
-남기되, final report의 main table은 동일한 final checkpoint policy를 적용한 5-way head/tail/all
-table로 대체한다. 이렇게 해야 각 method가 같은 tokenizer, corpus, MLM objective, evaluation
-protocol뿐 아니라 같은 convergence budget에서도 비교된다.
+Following \citet{hu2020xtreme} and \citet{artetxe2019tatoeba}, we embed English and target
+sentences and retrieve the top-10 nearest neighbors by cosine similarity.
+A query is a hit if the correct translation appears in the top 10 (Acc@10).
+Tatoeba provides up to 1,000 English-aligned sentence pairs per language;
+Bible provides $\sim$7,000--8,000 verse-aligned pairs per language, making it
+substantially harder (see Appendix~A for analysis of the Bible floor).
 
-\subsection{Figures Planned for the Report}
+\subsection{NER (\up)}
 
-보고서 본문에는 세 종류의 plot을 넣는다.
+We follow the XTREME NER protocol \citep{hu2020xtreme} using WikiANN \citep{pan2017wikiann}.
+A token-classification head is attached to the encoder and fine-tuned on English WikiANN
+for 10 epochs (LR $2\times10^{-5}$, batch $8\times4$, max length 256).
+Zero-shot transfer to the three NER-evaluable Target7 languages (\texttt{csb, lij, fur})
+is evaluated with seqeval entity-level F1 on BIO-tagged sequences
+(\texttt{O, B-PER, I-PER, B-ORG, I-ORG, B-LOC, I-LOC}).
 
-\begin{enumerate}
-  \item Tokenization effect: target7 tokens/word reduction. Source:
-  \codepath{docs/exp/v5.2/0_tokenizer/03_tokenization_effect/tokenization_effect_change.png}.
-  \item Initialization convergence: method별 MLM training loss 및 PPPL trajectory. Source:
-  \codepath{docs/exp/v5.2/2_training/convergence_5way_loss_curve.png} 및
-  \codepath{docs/exp/v5.2/3_evaluation/v52_checkpoint_score_table.tsv}.
-  \item Representation geometry: 38-language family similarity / centroid map. Source:
-  \codepath{docs/exp/v5.2/3_evaluation/09_family_similarity/}.
-\end{enumerate}
+\subsection{Roundtrip Alignment (\up)}
+
+Following \citet{dufter2018roundtrip}, we assess representation quality without gold labels
+by computing word alignment through a language cycle and measuring the fraction of source words
+that return to themselves.
+We use SimAlign \citep{jalili2020simalign} with layer-7 embeddings on the Bible corpus.
+Each experiment uses five random sets of three intermediate language-scripts and reports the mean.
+
+\subsection{Text Classification --- Taxi1500 (\up)}
+
+We use Taxi1500 \citep{ma2023taxi1500} for 6-class text classification.
+A sequence-classification head is fine-tuned on English for 30 epochs
+(LR $2\times10^{-5}$, effective batch 16).
+Because the local Taxi1500 materialization covers only English, we report only the
+English head score; target-language transfer is marked \texttt{not\_applicable}.
+
+\paragraph{Alignment with Glot500 protocol.}
+NER learning rate 2e-5 with Adam and English-only fine-tuning matches the Glot500 paper.
+Text classification effective batch 16 matches Glot500.
+Retrieval, roundtrip, and PPPL involve no fine-tuning, so initialization and MLM training
+are the sole sources of score differences.

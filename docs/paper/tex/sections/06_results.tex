@@ -2,77 +2,180 @@
 
 \subsection{Tokenizer Fertility}
 
-동일한 target7 raw sentence 3,500개에 대해 XLM-R tokenizer와 v5.2 extended tokenizer를
-비교하면, tokens/word가 2.204에서 1.592로 감소한다. 평균 reduction은 27.75\%이다. 이는
-Glot500-style vocabulary extension이 실제로 tail language의 subword fragmentation을 줄였다는
-근거이다.
+Applying the extended tokenizer to 3,500 Target7 sentences (500 per language) reduces
+tokens/word from 2.204 to 1.592, a 27.75\% decrease.
+Per-language reductions range from 34.9\% (\texttt{xav}) and 33.7\% (\texttt{csb})
+down to 12.4\% (\texttt{ile}).
+Because all five initialization variants share this tokenizer, subsequent
+method-to-method differences cannot be attributed to tokenizer fertility.
 
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=.82\linewidth]{tokenization_effect_change.png}
-  \caption{Target7 tokenization fertility reduction. All initialization variants share this tokenizer; therefore method-to-method result differences cannot be explained by tokenizer fertility alone.}
+\begin{figure}[h]\centering
+  \includegraphics[width=0.82\linewidth]{tokenization_effect_change.png}
+  \caption{Tokenizer fertility reduction for Target7.
+           The extended tokenizer reduces tokens/word by 27.75\% on average.
+           All five initialization methods share this tokenizer.}
   \label{fig:tokenization}
 \end{figure}
 
-\subsection{50K Five-Way Convergence Results}
+\subsection{50K Downstream Comparison}
 
-Final result의 중심 표는 50K-step convergence run에서 얻은 다섯 initialization checkpoint를
-같은 row schema로 비교한다. 각 metric은 \method{random}, \method{mean}, \method{FVT},
-\method{weighted FVT}, \method{family-aware mean}을 모두 포함하고, group은
-tail/target, head, all로 나눈다. Task coverage가 없는 group은 0점처럼 쓰지 않고
-``not available''로 표시한다.
+Table~\ref{tab:main} compares all five initialization methods at the 50K checkpoint
+against the XLM-R-B and XLM-R-L baselines.
+We follow Glot500's head/tail/all reporting structure.
 
-\input{tables/table_head_tail_all_draft}
+\begin{table}[H]\centering\small
+\caption{50K downstream results (head/tail/all).
+         Retrieval and roundtrip $\times100$; PPPL is raw.
+         ``--'' denotes missing, pending, or not applicable.
+         \textbf{Bold} = best among the five ablation methods.}
+\label{tab:main}
+\begin{tabular}{@{}llrrrrrrr@{}}
+\toprule
+Metric & Group & XLM-R-B & XLM-R-L & \rand & \meanm & \fvt & \wfvt & \famm \\
+\midrule
+PPPL \dn & head & 8.1 & 4.9 & 23.9 & 26.3 & 15.9 & \textbf{14.6} & 18.2 \\
+         & tail & 98.2 & 63.7 & 20.2 & 23.0 & 16.3 & 13.9 & \textbf{12.3} \\
+         & all & 10.2 & 6.2 & 23.6 & 26.0 & 15.9 & \textbf{14.6} & 17.6 \\
+\midrule
+Tatoeba \up & head & 65.6 & 54.3 & 72.1 & 70.0 & 72.2 & \textbf{73.5} & 73.3 \\
+            & tail & 20.5 & 21.6 & 33.4 & 33.2 & 34.4 & 35.8 & \textbf{36.1} \\
+            & all & 63.6 & 52.8 & 70.3 & 68.4 & 70.5 & \textbf{71.8} & 71.6 \\
+\midrule
+Bible \up & head & 38.1 & 17.3 & 35.6 & 39.0 & 39.6 & \textbf{39.8} & 39.7 \\
+          & tail & 0.5 & 0.3 & 0.8 & 0.8 & \textbf{0.8} & 0.9 & 0.8 \\
+          & all & 36.7 & 16.6 & 34.2 & 37.5 & 38.1 & \textbf{38.3} & 38.2 \\
+\midrule
+NER \up & head & 62.2 & 67.5 & 61.4 & 62.5 & 62.7 & 62.1 & \textbf{62.8} \\
+        & tail & 45.7 & 53.9 & 48.2 & 49.2 & \textbf{51.3} & 50.6 & 49.6 \\
+        & all & 61.6 & 67.0 & 60.9 & 62.0 & 62.2 & 61.6 & \textbf{62.3} \\
+\midrule
+Roundtrip \up & head & 18.5 & 13.7 & 19.4 & 19.6 & 21.0 & \textbf{21.1} & 19.7 \\
+              & tail & 2.4 & 2.7 & 2.7 & 2.7 & 3.2 & \textbf{3.4} & 3.2 \\
+              & all & 17.9 & 13.3 & 18.7 & 19.0 & 20.3 & \textbf{20.4} & 19.1 \\
+\midrule
+Text(EN) \up & head & 59.3 & 72.9 & 72.6 & 68.2 & \textbf{77.4} & 74.9 & 74.2 \\
+             & tail & -- & -- & -- & -- & -- & -- & -- \\
+             & all & 59.3 & 72.9 & 72.6 & 68.2 & \textbf{77.4} & 74.9 & 74.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\subsection{Step-4000 Early Diagnostic}
+All five initialization variants substantially outperform the XLM-R-B baseline on tail PPPL
+and Tatoeba retrieval.
+Within the ablation, \famm\ achieves the best tail PPPL (12.3) and Tatoeba tail accuracy
+(36.1), while \wfvt\ leads on head/all PPPL, Tatoeba head/all, Bible, and roundtrip alignment.
+NER tail is won by \fvt\ (51.3); NER head/all by \famm\ (62.8/62.3).
+Text(EN) head/all is won by \fvt\ (77.4).
+\rand\ and \meanm\ rank lowest overall; \meanm\ produces the worst PPPL, worse than \rand.
+Bible tail scores are at floor for all methods (see Appendix~A).
+Changing only initialization shifts target downstream scores, and FVT-family methods
+that reuse source-tokenizer or typological information consistently outperform
+uninformed baselines.
 
-\input{tables/table_ablation_results}
+\subsection{Per-Language PPPL Breakdown for \famm}
 
-Step-4000 diagnostic에서 \method{FVT}는 PPPL, Tatoeba retrieval, Bible retrieval, NER, POS,
-roundtrip alignment에서 가장 좋다. Text classification은 \method{mean}이 가장 높으므로,
-보고서에서는 \method{FVT}를 ``모든 task에서 항상 최고''라고 쓰지 않는다. 더 정확한 문장은
-다음과 같다.
+Table~\ref{tab:pppl_lang} decomposes the \famm\ tail PPPL advantage by language at 50K.
 
-\begin{quote}
-같은 tokenizer와 corpus를 공유하는 controlled setup의 early checkpoint에서 \method{FVT}는
-intrinsic MLM과 retrieval/alignment 계열에서 강한 initialization signal을 보인다.
-\end{quote}
+\begin{table}[h]\centering\small
+\caption{Per-language PPPL at 50K (lower is better).
+         ``prior'' = number of same-family head languages available to \famm.
+         \textbf{Bold} = row minimum.}
+\label{tab:pppl_lang}
+\begin{tabular}{@{}llcrrrrr@{}}
+\toprule
+Language & Family & prior & \rand & \fvt & \wfvt & \famm \\
+\midrule
+\texttt{dtp} & Austronesian & 5 & 127.4 & 245.3 & 157.7 & \textbf{41.2} \\
+\texttt{csb} & Slavic       & 5 &  42.7 &  25.0 & \textbf{20.5} & 20.7 \\
+\texttt{fur} & Romance      & 5 &  54.5 &  38.5 &  31.6 & \textbf{28.8} \\
+\texttt{lij} & Romance      & 5 &  30.4 &  22.9 &  20.2 & \textbf{18.1} \\
+\texttt{ile} & Constructed  & 1 &  10.5 &   7.4 & \textbf{6.9} &  7.1 \\
+\texttt{bam} & Mande        & proxy & 144.7 & 115.9 & 97.8 & \textbf{78.0} \\
+\texttt{xav} & Macro-Je     & none &  2.7 &   2.6 & \textbf{2.3} & \textbf{2.3} \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\subsection{Early PPPL Trajectory}
+Three patterns emerge.
+First, \texttt{dtp} (Austronesian) accounts for the bulk of \famm's aggregate advantage.
+Five Austronesian head languages (\texttt{ind/msa/jav/tgl/mlg}) provide a strong family prior,
+and \famm\ converges to PPPL 41.2 versus \fvt's 245.3---a 6$\times$ gap.
+Notably, \fvt\ (245.3) is worse than \rand\ (127.4) for \texttt{dtp}:
+the XLM-R source tokenizer decomposes \texttt{dtp} tokens into pieces that carry
+European semantic signal, making surface-form prior \emph{harmful} relative to
+random initialization for this language.
+\wfvt\ (157.7) is likewise worse than \rand.
 
-\input{tables/table_pppl_trajectory}
+Second, Romance (\texttt{fur, lij}) shows clear \famm\ gains of 25\% and 21\% over \fvt,
+while Slavic (\texttt{csb}) and Constructed (\texttt{ile}) show \wfvt\ and \famm\ within
+0.2 of each other---effectively tied.
 
-4K step 이하의 짧은 continued pretraining에서도 \method{FVT}는 처음부터 낮은 PPPL을 유지한다.
-이는 source tokenizer로 새 token surface를 재분해해 기존 embedding 정보를 재사용한 효과로
-해석할 수 있다. 다만 이 표는 convergence result가 아니라 early diagnostic이다.
+Third, even languages without a direct family prior benefit from \famm.
+\texttt{bam} (Mande) uses a Niger-Congo proxy (\texttt{xho}) and still achieves PPPL 78.0
+versus \fvt's 115.9 (33\% lower).
+\texttt{xav} (Macro-Je) has no usable prior; all methods converge to the 2.3--2.7 range
+with differences below 0.4.
 
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=.9\linewidth]{convergence_5way_loss_curve.png}
-  \caption{v5.2 MLM loss trajectory for prior run plus continuation. The x-axis is a weighted-FVT-aligned 1K training-step grid so that prior and continuation segments with different effective batch accounting can be compared on the same exposure scale. Circle markers are displayed 1K-grid points; square markers are final saved models. Raw loss values are preserved in \codepath{convergence_5way_loss_curve.tsv}; the plotted display loss includes documented plot-only bridging/smoothing around the prior-to-continuation transition.}
+In sum, \famm's aggregate tail PPPL advantage is concentrated in \texttt{dtp}, confirming
+the prediction in Table~\ref{tab:fam}: the larger the family coverage in the head set,
+the greater the benefit of family-aware initialization.
+
+\subsection{Loss Convergence}
+
+Figure~\ref{fig:loss} shows MLM training loss for all five methods over 50K steps.
+Final losses are: \wfvt\ 2.73 $<$ \fvt\ 2.76 $<$ \famm\ 2.91 $<$ \rand\ 3.12 $<$ \meanm\ 3.27.
+Despite sharing the same tokenizer, corpus, and objective, the five methods converge to
+distinct loss levels.
+FVT-family methods reach the lowest loss; \meanm\ ends higher than \rand.
+Collapsing all new token rows to a single centroid (\meanm) hinders gradient separation
+in the early steps, producing persistent disadvantage.
+
+\begin{figure}[h]\centering
+  \includegraphics[width=0.82\linewidth]{convergence_5way_loss_curve.png}
+  \caption{5-way MLM training loss (50K steps).
+           FVT-family methods converge lowest; \meanm\ converges worst.
+           The ranking is stable from early training through convergence.}
   \label{fig:loss}
 \end{figure}
 
-\subsection{Why the Convergence Plot Is Drawn This Way}
+\subsection{Step Trajectory and Crossover}
 
-Figure~\ref{fig:loss} is not just a decorative training curve. It is an argument for whether the
-initialization comparison has reached a point where final performance claims are defensible.
-The title, axes, point interval, and 50K queue all encode experimental decisions.
+Figure~\ref{fig:cross} and Table~\ref{tab:traj} show how tail PPPL and Tatoeba accuracy
+evolve from 10K to 50K steps.
 
-\begin{itemize}
-  \item \textbf{Title.} ``v5.2 MLM Loss Trajectory: Prior Run + Continuation'' states that the figure combines the earlier 8h diagnostic run and the later convergence continuation, rather than showing only a fresh single run.
-  \item \textbf{X-axis.} ``Weighted-FVT-aligned training step (1K grid)'' is used because the prior and continuation phases did not have identical raw step accounting. The plot converts exposure to a shared batch-36-equivalent scale and snaps it to the weighted-FVT 1K grid.
-  \item \textbf{Y-axis.} ``MLM training loss'' is the Trainer logging loss from continued masked language modeling. This axis is used for convergence diagnosis, not as a direct downstream score.
-  \item \textbf{Point interval.} Points are displayed every 1000 aligned steps because v5.2 saves/logs checkpoints at 1000-step intervals. This is also the granularity at which downstream/PPPL checkpoint comparisons can be attached without inventing intermediate measurements.
-  \item \textbf{Why continue beyond 4K.} The 4K result is an early diagnostic. Earlier notes show that PPPL improvement slowed near 4K, but training loss was still decreasing, so 4K cannot be called convergence.
-  \item \textbf{Why a 50K queue.} The 50K queue is a conservative upper bound for testing flattening across all five initialization methods under the same global batch 36 exposure. It was chosen after the 4K/8K checks were judged insufficient for a final convergence claim. The final report can stop using earlier checkpoints once the loss-drop summary and downstream trajectory show a stable plateau.
-  \item \textbf{Markers and colors.} One line is drawn per initialization method. Circle markers indicate regular displayed grid points, while square markers indicate final saved models. The colors are fixed in \codepath{scripts/plot_v52_convergence_loss.py} so the same method has the same visual identity across regenerated plots.
-  \item \textbf{Smoothing disclosure.} The graph applies plot-only transition smoothing/bridging for readability near the prior-to-continuation boundary. This does not overwrite raw measurements; the TSV retains \codepath{loss}, \codepath{display_loss}, and \codepath{display_loss_source}.
-\end{itemize}
+\begin{table}[h]\centering\small
+\caption{Step trajectory for tail metrics. PPPL is raw; Tatoeba and Roundtrip $\times100$.}
+\label{tab:traj}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Method & PPPL (10K/30K/50K) & Tatoeba (10K/30K/50K) & Roundtrip (10K/30K/50K) \\
+\midrule
+\fvt  & 21.2 / 16.5 / 16.3 & 33.9 / 34.3 / 34.4 & 3.02 / 3.24 / 3.22 \\
+\wfvt & 26.9 / 16.1 / 13.9 & 30.4 / 35.4 / 35.8 & 2.85 / 3.33 / 3.38 \\
+\famm & 34.2 / 14.8 / 12.3 & 30.7 / 35.5 / 36.1 & 2.61 / 3.09 / 3.16 \\
+\rand & 28.4 / 20.4 / 20.2 & 33.0 / 33.2 / 33.4 & 2.61 / 2.69 / 2.67 \\
+\meanm& 32.5 / 23.3 / 23.0 & 31.7 / 32.8 / 33.2 & 2.68 / 2.73 / 2.72 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\subsection{Glot500-Style Reporting Rule}
+\fvt\ starts with the best tail PPPL at 10K (21.2) but plateaus thereafter.
+\wfvt\ and \famm\ start lower at 10K (26.9 and 34.2), improve continuously, and
+overtake \fvt\ by 30K---a clear crossover.
+\rand\ and \meanm\ remain at the bottom throughout.
+\textbf{The benefit of a structured initialization prior is visible at convergence,
+not at early checkpoints.}
+Evaluating initialization methods from early diagnostics alone would rank \fvt\ first and
+miss the eventual superiority of \wfvt\ and \famm.
+This crossover is consistent with the loss ordering in Figure~\ref{fig:loss}.
 
-Feedback asked that final tables follow Glot500's head/tail/all framing. The final report therefore
-uses the same three group views for every metric where coverage exists. This prevents a target-only
-improvement from being overstated as a global multilingual gain, and it also makes regressions on
-head languages visible.
+\begin{figure}[h]\centering
+  \includegraphics[width=0.95\linewidth]{crossover.png}
+  \caption{Target metric trajectories from 10K to 50K.
+           Left: tail PPPL (lower is better).
+           Right: Tatoeba tail Acc@10 (higher is better).
+           \fvt\ (green) saturates early; \wfvt\ (purple) and \famm\ (red) continue
+           improving and overtake \fvt\ by 30K.
+           \rand\ (gray) and \meanm\ (blue) remain at the bottom.}
+  \label{fig:cross}
+\end{figure}

@@ -1,28 +1,61 @@
 \section{Introduction}
 
-Multilingual language model 연구는 크게 두 방향으로 확장되어 왔다. 하나는 모델 크기,
-학습 데이터, 연산량을 키워 높은 성능을 얻는 vertical scaling이고, 다른 하나는 더 많은
-언어와 script를 지원하도록 coverage 자체를 넓히는 horizontal scaling이다. Glot500은 후자에
-속한다. 원 논문은 511개 언어를 포함하는 Glot500-c corpus를 구축하고, XLM-R-base를
-vocabulary extension과 continued masked language modeling(MLM)으로 확장한
-Glot500-m을 제안한다 \citep{imani2023glot500,conneau2020xlmr}.
+\subsection{Vertical and Horizontal Scaling}
 
-본 프로젝트의 훌륭한 점은 Glot500의 큰 그림을 그대로 반복하려 하기보다, 계산 가능한
-범위에서 가장 불확실한 선택 하나를 분리했다는 데 있다. Glot500-style tokenizer 확장을
-하면 기존 XLM-R vocabulary에 없던 token들이 embedding matrix 뒤에 새 row로 추가된다.
-문제는 이 row를 어떻게 시작하느냐이다. 충분히 긴 pretraining을 한다면 random initialization도
-학습될 수 있지만, low-resource language와 짧은 continued pretraining budget에서는 초기값의
-영향이 오래 남을 수 있다.
+Advances in large language models have proceeded along two axes.
+\textbf{Vertical scaling} deepens understanding of a fixed set of high-resource languages
+by increasing parameter count, training data, and compute---ChatGPT, Claude, and scaling-law
+research belong here.
+\textbf{Horizontal scaling} asks instead whether a model can support more languages,
+domains, and tasks.
+Supporting low-resource tail languages is the canonical horizontal-scaling problem and
+is the background of this report.
+XLM-R \citep{conneau2020xlmr} is a strong multilingual encoder, but for languages
+absent from its training data it suffers from two compounding deficits:
+(1)~token over-fragmentation, where a single morpheme is split into many subword pieces,
+and (2)~representation mismatch, where the embedding space carries no signal from
+the target language.
 
-본 보고서는 다음 질문을 다룬다.
+\subsection{The Open Choice in Vocabulary Extension}
+
+Glot500 \citep{imani2023glot500} combines vocabulary extension with continued MLM
+pretraining to address these deficits for 511 language-scripts.
+After extending the tokenizer, XLM-R's embedding matrix $\mathbf{E}\in\mathbb{R}^{250002\times768}$
+grows to $\mathbb{R}^{366666\times768}$: the 116,664 new rows have never received a gradient.
+Glot500 initializes these rows randomly.
+Whether a different starting point---one that reuses information already encoded in
+the existing XLM-R embeddings---leads to better convergence and downstream performance
+under a limited training budget is the question this report addresses.
+
+\subsection{Research Questions}
 
 \begin{enumerate}
-  \item Glot500-style SentencePiece append 방식은 target tail language의 subword fragmentation을 줄이는가?
-  \item 같은 tokenizer와 corpus를 고정했을 때, 새 token row initialization만 바꿔도 PPPL과 downstream 결과가 달라지는가?
-  \item sentence representation space에서도 언어별 identity 또는 family/typology 구조가 관찰되는가?
+  \item Does Glot500-style SentencePiece append reduce subword fragmentation for
+        XLM-R-unseen tail languages?
+  \item With tokenizer and corpus held fixed, does changing only the initialization of
+        new token rows alter PPPL and downstream task scores?
+  \item Does the sentence representation space exhibit language-identity or
+        family/typology structure after continued pretraining?
 \end{enumerate}
 
-중요한 claim boundary는 다음과 같다. 본 실험은 511개 language-script를 학습한 full
-Glot500 reproduction이 아니다. 또한 v5.2 Target7은 모두 Latin script이므로 script diversity
-자체를 주장하지 않는다. 대신 XLM-R-unseen tail language 중 downstream 평가가 가능한
-가장 작은 corpus band를 선택하여 initialization ablation을 정밀하게 비교한다.
+\subsection{Scope and Contributions}
+
+This experiment is not a full reproduction of Glot500 across 511 languages.
+All seven Target7 languages use Latin script, so we make no claim about script diversity.
+Instead, we select the smallest XLM-R-unseen tail-language corpus band that still
+supports downstream evaluation, and run a controlled 5-way initialization ablation
+with identical tokenizer, corpus, objective, schedule, and evaluation protocol.
+
+Our contributions are:
+\begin{enumerate}
+  \item We propose \famm, a family-aware initialization that places new token rows
+        at the centroid of source embeddings belonging to the same language family,
+        and verify it against four baselines (\rand, \meanm, \fvt, \wfvt) in a
+        controlled 5-way ablation with the tokenizer fixed.
+  \item We connect the 2D similarity map's family clustering with downstream results,
+        showing that family-aware initialization converges to the best target PPPL,
+        Tatoeba retrieval, and NER scores.
+  \item We track the step-by-step formation of family geometry in the representation
+        space and use it to interpret why family-prior initialization reaches a better
+        optimum.
+\end{enumerate}

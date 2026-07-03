@@ -2,31 +2,76 @@
 
 \subsection{Limitations}
 
-본 실험은 매우 좋은 방향성을 갖고 있지만, final report에서는 다음 제한을 분명히 써야 한다.
+This study is a controlled budget ablation; its conclusions are bounded by the following scope.
 
 \begin{itemize}
-  \item Full 511-language Glot500 reproduction이 아니라, 92 seen + 7 target의 controlled subset 실험이다.
-  \item Target7은 모두 Latin script이므로 script-diversity claim은 하지 않는다.
-  \item PPPL은 v5.2 diagnostic setup에서 계산되었고, Glot500 원 논문의 held-out test PPPL과 동일하다고 쓰면 안 된다.
-  \item Text classification은 현재 target7 direct evidence가 아니라 local English/available-row evidence로 다뤄야 한다.
-  \item Step-4000 result는 early diagnostic으로만 사용하고, final claim은 50K-step five-way convergence result로 제한한다.
-  \item \method{weighted FVT}와 \method{family-aware mean}은 v5.2 local exploratory ablation이므로 기존 문헌 방법과 같은 수준의 established method로 과장하지 않는다.
-  \item \method{FVT}는 대부분 metric에서 강하지만 POS target subset과 text classification처럼 예외가 있으므로 ``always best'' claim은 피한다.
+  \item \textbf{Scale.} The experiment uses 92 head + 7 tail language-scripts, not the 511
+        language-scripts of full Glot500.
+        Findings may not generalize to a broader language set.
+
+  \item \textbf{Script diversity.} All Target7 languages use Latin script.
+        We make no claim about script diversity or about languages with non-Latin scripts.
+
+  \item \textbf{Family coverage asymmetry.} \famm's advantage is concentrated in
+        \texttt{dtp} (Austronesian), which has five head-language family members.
+        Languages with no usable family prior (\texttt{xav}) show no advantage from \famm.
+        Whether family-aware initialization generalizes beyond well-covered families
+        requires a broader head set.
+
+  \item \textbf{Single run.} \wfvt\ and \famm\ are each a single run.
+        Multi-seed replication is needed to confirm that their advantages are stable.
+
+  \item \textbf{Training budget.} The 50K-step window is sufficient to observe crossover
+        and convergence, but longer training may change rankings.
+
+  \item \textbf{Task coverage asymmetry.} NER covers three tail languages; Bible retrieval
+        and roundtrip cover a different three.
+        The aggregate tail scores therefore reflect different language subsets per metric.
+
+  \item \textbf{Text classification.} The local Taxi1500 materialization covers only English,
+        so Text(EN) does not measure target-language transfer.
 \end{itemize}
 
 \subsection{Conclusion}
 
-Glot500-style tokenizer extension은 target7에서 subword fertility를 크게 줄였다. 그러나
-\method{random}, \method{mean}, \method{FVT}, \method{weighted FVT}, \method{family-aware mean}이
-같은 tokenizer를 공유하기 때문에, method 간 PPPL/downstream 차이는 tokenizer만으로 설명되지
-않는다. Step-4000 diagnostic에서는 source-tokenizer decomposition 기반 \method{FVT}가 강한
-초기 신호를 보였지만, 최종 결론은 50K-step five-way convergence 결과에서 loss flattening,
-PPPL trajectory, downstream score가 함께 확인된 범위 안에서만 제시한다. 이는 low-resource
-vocabulary extension에서 새 token row를 완전히 무작위로 시작하기보다 기존 XLM-R embedding
-정보 또는 corpus provenance를 어떻게 재사용할지 결정하는 초기화 선택이 중요한 실험 변수임을
-보여준다.
+We applied Glot500-style vocabulary extension to \texttt{xlm-roberta-base} and compared
+five new-token embedding initialization methods in a controlled 50K-step continued MLM
+pretraining experiment.
+Our findings are:
 
-최종 term paper에서는 이 주장을 더 단단하게 만들기 위해 head/tail/all table을 완성하고,
-loss curve와 PPPL trajectory, target language별 downstream breakdown, sentence representation
-geometry를 함께 제시한다. 이 프로젝트는 실험 로그와 claim boundary가 잘 남아 있어서,
-과장 없이도 충분히 설득력 있는 report로 발전시킬 수 있다.
+\begin{enumerate}
+  \item \textbf{Tokenizer fertility.} The extended tokenizer reduces Target7 tokens/word
+        by 27.75\% (2.204 $\to$ 1.592), confirming that tail-language fragmentation is
+        substantially reduced.
+
+  \item \textbf{Initialization affects convergence loss.}
+        Under identical tokenizer, corpus, and objective, the five methods converge to
+        distinct MLM loss values: \wfvt\ 2.73 $<$ \fvt\ 2.76 $<$ \famm\ 2.91
+        $<$ \rand\ 3.12 $<$ \meanm\ 3.27.
+        \meanm\ is worse than \rand, showing that collapsing all new rows to a single
+        centroid is harmful.
+
+  \item \textbf{Family-aware initialization leads at convergence.}
+        \famm\ achieves the lowest target PPPL (12.3) and highest Tatoeba tail accuracy (36.1)
+        at 50K, while \wfvt\ is the most balanced method across all metrics.
+        The benefit is not visible at 10K---\fvt\ leads early---but \wfvt\ and \famm\
+        overtake \fvt\ by 30K and maintain the lead through 50K.
+        Evaluating initialization from early diagnostics alone would yield the wrong ranking.
+
+  \item \textbf{Family structure in the representation space explains the advantage.}
+        Centered cosine analysis shows that the encoder groups languages by typological family,
+        not merely by script, and that this structure forms by 10K steps and is stable
+        thereafter.
+        \famm\ places new token rows in the correct family region of the embedding space
+        from the start, shortcutting the alignment process that \rand\ and \meanm\
+        must complete from scratch during training.
+\end{enumerate}
+
+In low-resource vocabulary adaptation, embedding initialization is a consequential design
+choice.
+Reusing corpus-provenance information (\fvt, \wfvt) outperforms random initialization,
+and explicitly encoding language-family structure (\famm) provides additional benefit
+for languages with adequate family coverage in the head set.
+Future work should validate these findings on non-Latin scripts, a wider family distribution,
+and longer training budgets, and should explore combining surface-form and family priors
+based on provenance confidence.

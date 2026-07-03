@@ -2,61 +2,121 @@
 
 \subsection{Tokenizer Extension}
 
-Tokenizer는 Glot500-style로 고정한다. \codepath{tokenization/train_v52_glot5007.sh}는 먼저
-XLM-R-base tokenizer의 \codepath{sentencepiece.bpe.model}을 output directory에 복사한다.
-그 다음 \codepath{tokenization/run.py}가 mixed corpus에서 SentencePiece unigram model을
-학습한다. 사용된 핵심 설정은 다음과 같다.
+We fix the tokenizer to Glot500-style \emph{append-only injection}:
+\begin{enumerate}
+  \item Copy XLM-R's \texttt{sentencepiece.bpe.model} (250,002 tokens) as the source.
+  \item Train a SentencePiece \emph{unigram} auxiliary model on the 99-language mixed
+        corpus ($\alpha=0.3$ sampling) with \texttt{byte\_fallback=true} and
+        \texttt{character\_coverage=1.0}.
+  \item Select pieces \emph{absent} from the source SPM and append them directly to the
+        SPM protobuf, preserving unigram scores.
+        We do not use HuggingFace \texttt{add\_tokens()} to stay closer to the Glot500
+        reference implementation.
+\end{enumerate}
 
-\begin{itemize}
-  \item \codepath{--model_type=unigram}: Glot500 및 XLM-R 계열과 맞춘다.
-  \item \codepath{--byte_fallback=true}: 기존 subword로 처리되지 않는 문자를 UTF-8 byte piece로 분해한다.
-  \item \codepath{--character_coverage=1.0}: target7의 Latin-script 문자를 모두 보존한다.
-  \item \codepath{--input_sentence_size=20000000}: 전체 corpus를 scan하되 20M sentence sample로 SPM memory 사용을 통제한다.
-\end{itemize}
+The resulting vocabulary expands from 250,002 to 366,666 tokens (116,664 new pieces).
+Existing token IDs are preserved, but the \verb|<mask>| special token shifts from ID 250001
+to ID 366665; we remap it by string identity during initialization (\S\ref{subsec:init}).
 
-학습된 auxiliary SentencePiece model에서 기존 XLM-R SPM에 없는 piece만 protobuf에 append한다.
-이 방식은 HuggingFace tokenizer의 \codepath{add_tokens()}를 쓰는 v3류 실험보다 Glot500 원
-논문 구현에 가깝다. 단, SPM protobuf를 직접 수정하면 \codepath{<mask>} id가 이동할 수
-있으므로 initialization 단계에서 token id prefix가 아니라 token string identity로 source row를
-복사해야 한다.
+\paragraph{Difference from Yamaguchi et al.}
+Yamaguchi et al.\ \citep{yamaguchi2025vocab} train the auxiliary tokenizer on a small
+target-only corpus ($\approx$0.01~GB) and append only target-specific pieces, keeping
+the vocabulary increment small.
+Our Glot500-style approach trains on 99 mixed language-scripts and appends all 116,664
+new pieces.
+These two designs differ in both training data scope and vocabulary increment size;
+we fix this axis to Glot500-style and vary only initialization.
 
 \subsection{Embedding Initialization}
+\label{subsec:init}
 
-모든 method는 같은 tokenizer, 같은 corpus, 같은 MLM schedule을 사용한다. 따라서 차이는
-새 vocabulary row의 초기값에서 온다.
+Three rules apply to all five methods:
+(i) source-tokenizer tokens copy their source row exactly;
+(ii) only the 116,664 new rows are method-specific;
+(iii) the \verb|<mask>| row is remapped by string identity, and input embedding and
+LM head weight tying is maintained.
+Audit numbers: source length 250,002; target length 366,666; new rows 116,664;
+\verb|<mask>| copy diff 0.0; LM head tied.
 
-\input{tables/table_initialization_methods}
+\begin{table}[h]\centering\small
+\caption{Five initialization methods for new embedding rows.}
+\label{tab:methods}
+\begin{tabular}{@{}lp{9cm}@{}}
+\toprule
+Method & Initialization of new row $\mathbf{e}_j$ \\
+\midrule
+\rand & $\mathbf{e}_j \sim \mathcal{N}(0,\,0.02^2\mathbf{I})$ \\
+\meanm & $\mathbf{e}_j = \mathrm{mean}(\mathbf{E}_\mathrm{src})$ \\
+\fvt & $S = \mathrm{SrcTok}(\mathrm{surf}(t_j))$; $\mathbf{e}_j = \mathrm{mean}(\mathbf{E}_\mathrm{src}[S])$ \\
+\wfvt & $w_s = |\mathrm{piece}(s)|$; $\mathbf{e}_j = \big(\sum_s w_s \mathbf{E}_\mathrm{src}[s]\big)/\sum_s w_s$ \\
+\famm & $f = \mathrm{family}(\mathrm{prov}(t_j))$; $\mathbf{e}_j = \mathrm{mean}(\mathbf{E}_\mathrm{src}[\mathrm{SrcTok}(f)])$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-구현은 \codepath{scripts/build_v5_initialized_checkpoint.py}에 있다. 이 script는 source
-tokenizer와 target tokenizer를 모두 읽은 뒤, source token과 동일한 string을 가진 target row는
-source embedding row를 그대로 복사한다. 새 token에 대해서만 method별 초기화를 적용한다.
-또한 \codepath{<mask>} token이 source id \codepath{250001}에서 target tokenizer의 마지막
-id로 이동할 수 있으므로, 해당 row를 token identity 기준으로 명시적으로 remap하고
-\codepath{mask_max_abs_diff_after_copy}를 검증한다.
+\textbf{\rand} draws from $\mathcal{N}(0,0.02)$, providing no information.
+\textbf{\meanm} starts at the global centroid of pretrained embeddings---a stable but
+uninformative starting point.
+\textbf{\fvt} decomposes each new token's surface form with the source tokenizer and
+averages the constituent source embeddings, reusing surface/subword information
+(e.g., a new token \texttt{\_bambara} decomposed by XLM-R into
+\texttt{[\_bam][bara]} starts at the mean of those two rows).
+\textbf{\wfvt} weights this average by surface-piece length, giving more weight to
+longer (more specific) source subword pieces.
+\textbf{\famm} replaces surface-form decomposition with a typological prior: it aggregates
+provenance information from the tokenizer training corpus to determine which language-script
+each new token most often appears in, maps that language-script to its family, and
+initializes the new row at the centroid of source embeddings belonging to head languages
+in the same family.
+
+\paragraph{Family assignment for \famm.}
+Table~\ref{tab:fam} shows which families Target7 languages belong to and which head
+source languages \famm\ can use.
+For \texttt{dtp} (Austronesian), the prior draws from \texttt{ind/msa/jav/tgl/mlg}.
+For \texttt{bam} (Mande) and \texttt{xav} (Macro-Je), no head language belongs to the
+same family; \texttt{bam} falls back to the nearest Niger-Congo head (\texttt{xho}),
+and \texttt{xav} has no usable family prior.
+
+\begin{table}[h]\centering\small
+\caption{Target7 family assignments and head source languages used by \famm.}
+\label{tab:fam}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Target & Family & Head source languages \\
+\midrule
+\texttt{dtp} & Austronesian & \texttt{ind, msa, jav, tgl, mlg} \\
+\texttt{csb} & Slavic & \texttt{ces, hrv, pol, slk, slv} \\
+\texttt{fur} & Romance & \texttt{cat, fra, ita, por, ron} \\
+\texttt{lij} & Romance & \texttt{cat, fra, ita, por, ron} \\
+\texttt{ile} & Constructed & \texttt{epo} \\
+\texttt{bam} & Mande & Niger-Congo proxy: \texttt{xho} \\
+\texttt{xav} & Macro-Je & none \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Continued MLM Pretraining}
 
-MLM training은 \codepath{modeling/train_v52_glot5007_mlm.sh}가
-\codepath{modeling/run.py}를 호출한다. \codepath{modeling/run.py}는 HuggingFace
-\codepath{run_mlm.py}를 바탕으로 한 local variant이며, \codepath{AutoModelForMaskedLM},
-\codepath{DataCollatorForLanguageModeling}, \codepath{Trainer}를 사용한다. Text는 tokenizer로
-encoding된 뒤 max length 512 chunk로 concatenate/grouping되고, collator가 MLM probability
-0.15로 masked token batch를 만든다.
+We continue pretraining the initialized model with the MLM objective on the corpus
+described in \S3.
+All five methods use identical hyperparameters; only the starting checkpoint differs.
 
-\begin{center}
-\begin{tabular}{ll}
+\begin{table}[h]\centering\small
+\caption{Continued MLM pretraining settings.}
+\label{tab:mlm}
+\begin{tabular}{@{}ll@{}}
 \toprule
-Item & Setting \\
+Item & Value \\
 \midrule
-base model & \codepath{xlm-roberta-base} \\
-objective & MLM \\
-learning rate & $5 \times 10^{-5}$ \\
-Adam betas & $(0.9, 0.999)$ \\
-effective batch & 384 \\
-max length & 512 \\
-MLM probability & 0.15 \\
-checkpoint interval & 1000 steps \\
-main convergence budget & 50K steps for five-way comparison \\
+Base model & \texttt{xlm-roberta-base} \\
+Objective & MLM (dynamic masking, mask prob. 0.15) \\
+Learning rate & $5\times10^{-5}$ \\
+Adam & $\beta=(0.9,0.999)$, $\varepsilon=10^{-8}$ \\
+LR schedule / warmup / weight decay & linear / 0 / 0.0 \\
+Max sequence length & 512 \\
+Language sampling & $\alpha=0.3$ \\
+Checkpoint interval & 1,000 steps \\
+Convergence budget & 50,000 steps (all five methods) \\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}

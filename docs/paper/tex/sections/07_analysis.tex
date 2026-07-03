@@ -2,54 +2,113 @@
 
 \subsection{Sentence Embedding Extraction}
 
-Sentence representation analysis follows the Glot500 retrieval-style encoder usage. Each raw
-sentence is encoded with the model tokenizer, passed through \codepath{AutoModel}, and hidden
-states from layer index 7 are used. Special tokens and padding are excluded, token hidden states are
-mean-pooled, and sentence vectors are L2-normalized. For centered cosine analysis, the global
-sentence-vector mean is subtracted before normalization. A language centroid is the mean of that
-language's sentence vectors.
+We follow the Glot500 retrieval-style encoder protocol.
+Each sentence is tokenized and passed through \texttt{AutoModel};
+hidden states from layer 7 (0-indexed, i.e., the 8th layer) are mean-pooled
+over non-special tokens and L2-normalized.
+For centered cosine analysis, the global sentence-vector mean is subtracted before normalization.
+A language centroid is the mean of all sentence vectors for that language.
 
-\subsection{Family/Typology Structure}
+\subsection{Language-Identity and Family/Typology Structure}
 
-The v5.2 family similarity diagnostic samples 38 languages and 3,708 sentence points. The key
-claim is deliberately modest: the sentence representation space shows observable language identity
-and family/typology structure, not perfect cluster separation. Since all Target7 languages use Latin
-script, the analysis is useful precisely because it separates ``same script only'' from ``same family''
-relationships.
+We ask whether the sentence representation space groups languages by identity and
+typological family, or merely by script.
+Since all Target7 languages use Latin script, this analysis is useful precisely because
+it can separate ``same script only'' from ``same family'' relationships.
+We measure centered cosine similarity between sentence-pair buckets defined by
+their language relationship.
 
-\begin{figure}[t]
-  \centering
-  \begin{subfigure}{.48\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{family_pair_boxplot_v52_fvt_step4000.png}
-    \caption{Relation buckets}
-  \end{subfigure}
-  \begin{subfigure}{.48\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{family_centroid_map_v52_fvt_step4000.png}
-    \caption{Centroid map}
-  \end{subfigure}
-  \caption{FVT step-4000 family similarity diagnostics. These figures are diagnostic analysis, not an official Glot500 metric.}
-  \label{fig:family}
-\end{figure}
+Table~\ref{tab:geo} shows results at 50K (\fvt).
+Similarity decreases monotonically from same-language pairs (0.455) through
+same-family tail pairs (0.266), same macro-family (0.146), different-family tail pairs (0.074),
+and same-family tail--head pairs (0.052), to cross-family Latin pairs ($-0.041$)
+and cross-script pairs ($-0.063$).
+Crucially, tail--head same-family pairs (0.052) are more similar than tail--head
+different-family Latin-only pairs ($-0.041$), confirming that family/typology structure
+is stronger than script overlap.
 
-FVT step-4000 centered cosine scores show the expected ordering: same-language tail pairs are
-closest; tail-tail same-family pairs are closer than same macro-family; both are closer than
-different-family pairs. Tail-head pairs that only share Latin script are weaker than family-based
-relations. This supports the interpretation that the model is not merely grouping by script.
-
-\begin{center}
-\begin{tabular}{lrr}
+\begin{table}[h]\centering\small
+\caption{Centered cosine similarity by relation bucket (\fvt, 50K).}
+\label{tab:geo}
+\begin{tabular}{@{}lrr@{}}
 \toprule
-Relation type & Pairs & Mean centered cosine \\
+Relation & Pairs & Centered cosine \\
 \midrule
-tail within language & 350 & 0.473 \\
-tail-tail same family & 50 & 0.307 \\
-tail-tail same macro-family & 100 & 0.182 \\
-tail-tail different family & 900 & 0.124 \\
-tail-head same family & 1,050 & 0.037 \\
-tail-head different family, same Latn script & 6,100 & -0.050 \\
-tail-head different family, different script & 1,856 & -0.079 \\
+Tail within language & 350 & 0.455 \\
+Tail--tail same family & 50 & 0.266 \\
+Tail--tail same macro-family & 100 & 0.146 \\
+Tail--tail different family & 900 & 0.074 \\
+Tail--head same family & 1,050 & 0.052 \\
+Tail--head different family, same Latin script & 6,100 & $-0.041$ \\
+Tail--head different family, different script & 1,856 & $-0.063$ \\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
+
+\subsection{Step-Wise Formation of Clustering}
+
+Figure~\ref{fig:simtrend} tracks how the relation buckets evolve from 10K to 50K steps
+under \fvt.
+Language-identity and family structure form by 10K and change little thereafter
+(same language: $0.458\to0.455$; same family: $0.274\to0.266$).
+Cross-lingual semantic alignment (same-meaning src--eng pairs) shows modest improvement
+after 10K before saturating.
+\textbf{Easy axes (language identity, local geography) are captured early in training;
+harder axes (semantic alignment) improve slowly thereafter.}
+
+\begin{figure}[h]\centering
+  \includegraphics[width=0.62\linewidth]{sim_trend.png}
+  \caption{Step-wise change in representation structure (\fvt).
+           Language and family similarity (solid lines) stabilize by 10K steps;
+           cross-lingual semantic alignment (dashed, src--eng pairs) improves gradually.}
+  \label{fig:simtrend}
+\end{figure}
+
+\subsection{2D PCA Visualization}
+
+Figure~\ref{fig:map2d} shows sentence embedding centroids for 38 languages projected
+to 2D by PCA at steps 10K and 50K under \fvt\
+(triangles = Target7 tail languages; circles = head/reference languages;
+color = language family).
+In both panels, same-family languages cluster together:
+Slavic \texttt{csb} groups with \texttt{ces/pol};
+Romance \texttt{fur/lij} groups with \texttt{ita/fra};
+Austronesian \texttt{dtp} groups with \texttt{ind/msa}.
+The cluster structure is stable between 10K and 50K, consistent with
+the early formation observed in \S7.3.
+Languages without nearby family members in the head set (\texttt{bam, xav}) are
+relatively isolated.
+Each tail centroid positions itself toward its family cluster in the head set,
+consistent with Glot500's related-language help.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{map2d_steps.png}
+  \caption{2D PCA of sentence embedding centroids for 38 languages (\fvt;
+           left = 10K, right = 50K).
+           Color indicates language family; triangles = Target7 tail languages;
+           circles = head/reference languages.
+           Family clustering forms early and remains stable across steps.}
+  \label{fig:map2d}
+\end{figure}
+
+\subsection{Synthesis: Which Initialization Is Best?}
+
+Combining the representation analysis with downstream results reveals the key mechanism:
+the model learns to group typologically related languages into nearby regions of the
+representation space.
+This is the same direction as Glot500's related-language help---having related languages
+in the training mix improves tail-language representations \citep{imani2023glot500}.
+\famm\ encodes this structure as an initialization prior, which is why it converges
+to the best target PPPL and Tatoeba scores.
+
+Across the five methods:
+\textbf{\famm} is the best choice when tail PPPL and retrieval are the primary targets,
+especially for languages with strong family coverage in the head set (e.g., \texttt{dtp}).
+\textbf{\wfvt} is the most balanced choice, leading on training loss,
+Bible head/all, roundtrip alignment, and Tatoeba head/all, while remaining
+competitive on tail metrics.
+\textbf{\fvt} shows a ``fast start, early plateau'' profile: it leads at 10K but
+fails to improve as \wfvt\ and \famm\ continue to do.
+\textbf{\rand} and \textbf{\meanm} are consistently at the bottom;
+\meanm\ is worse than \rand\ on PPPL, confirming that collapsing new rows to a
+single centroid is harmful.

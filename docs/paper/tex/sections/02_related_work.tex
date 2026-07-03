@@ -1,44 +1,82 @@
 \section{Related Work}
 
-\subsection{Glot500 and Horizontal Scaling}
+\subsection{Glot500 and Horizontal Language Scaling}
 
-Glot500은 XLM-R이 지원하는 약 100개 언어를 head language로, 그 밖의 언어를 tail
-language로 정의하고, multilingual model의 horizontal scaling을 제안한다
-\citep{imani2023glot500}. 원 논문은 language-script 단위 corpus cleaning, 30,000
-sentence' 이상 기준, SentencePiece unigram tokenizer 재학습, XLM-R vocabulary 확장,
-continued MLM pretraining을 하나의 pipeline으로 구성한다. Glot500-m은 XLM-R vocabulary
-250K에 약 151K new token을 추가해 401K vocabulary를 만들고, 600GB corpus에서 MLM으로
-continued pretraining한다.
+Glot500 \citep{imani2023glot500} is the horizontal-scaling approach most directly related to
+this work.
+It treats languages seen during XLM-R training as \emph{head languages} and all others as
+\emph{tail languages}, and scales the model to cover 511 language-scripts.
 
-원 논문 Table 4는 Glot500-m이 tail group에서 특히 큰 개선을 보인다고 보고한다. 본
-보고서에서는 그 표를 단순 baseline으로 가져오는 데 그치지 않고, 왜 본 실험이 같은
-head/tail/all reporting structure를 따라야 하는지의 근거로 사용한다.
+\paragraph{Corpus collection.}
+Glot500-c aggregates text from religious texts (Bible translations), news articles, scientific
+papers, and web crawls.
+Data are organized by language-script unit and filtered with chunk-level filters
+(character repetition, word repetition, special characters, short texts, duplicates)
+and corpus-level filters (language--script mismatch, perplexity divergence against a 3-gram
+character LM).
+Only language-scripts with at least 30,000 training sentences are retained.
 
-\input{tables/table_glot500_reference}
+\paragraph{Tokenization.}
+Glot500 trains a SentencePiece unigram tokenizer \citep{kudo2018unigram,kudo2018sentencepiece}
+on Glot500-c with temperature sampling ($\alpha=0.3$) and merges the resulting vocabulary
+into XLM-R's existing SentencePiece model by appending pieces not already present.
+Byte fallback prevents unknown tokens.
 
-\subsection{SentencePiece Unigram and Vocabulary Extension}
+\paragraph{Continued pretraining.}
+Glot500-m is produced by continued MLM pretraining of XLM-R-base on Glot500-c.
+Language sampling uses $\alpha=0.3$ to prevent high-resource head languages from dominating.
 
-SentencePiece는 library 이름이고, 그 안에서 BPE 또는 unigram language model을 사용할 수
-있다 \citep{kudo2018sentencepiece}. XLM-R과 Glot500은 SentencePiece unigram 계열을 사용한다.
-Unigram LM은 가능한 subword 후보 집합을 크게 시작한 뒤, EM으로 token probability를
-추정하고 likelihood contribution이 낮은 token을 pruning하는 top-down 방식이다. 이 선택은
-BPE처럼 greedy merge만 누적하는 방식과 달리 여러 segmentation 후보를 확률적으로 다룬다.
+\paragraph{Key findings.}
+Glot500 reports that performance depends jointly on corpus size, script coverage, related-language
+support, and model capacity.
+Notably, having related languages in the training set improves tail-language representations
+(\emph{related-language help}).
+Our \famm\ initialization directly encodes this prior into the new embedding rows.
 
-본 프로젝트의 tokenizer는 이 Glot500 흐름을 따른다. \codepath{tokenization/run.py}는
-\codepath{--model_type=unigram}, \codepath{--byte_fallback=true},
-\codepath{--character_coverage=1.0}으로 새 SentencePiece model을 학습하고, 기존 XLM-R
-SentencePiece protobuf에 없는 piece만 append한다.
+\subsection{Two Vocabulary Extension Approaches}
+
+Two vocabulary extension designs appear in the literature.
+The \emph{mixed-corpus} approach (Glot500-style) trains a new tokenizer on a corpus of
+both seen and unseen languages and appends all new pieces to the source vocabulary,
+resulting in a large number of new tokens (116,664 in our experiment).
+The \emph{target-only} approach \citep{yamaguchi2025vocab} trains an auxiliary tokenizer
+on a small amount of target-language text ($\approx$0.01~GB) and appends only the target-specific
+pieces, keeping the vocabulary increment small.
+This report fixes the main axis to Glot500-style mixed-corpus injection and compares only
+initialization; the Yamaguchi-style approach is a separate axis not varied here.
 
 \subsection{Embedding Initialization for New Tokens}
 
-Vocabulary expansion 연구에서는 새 token을 추가한 뒤 embedding을 어떻게 초기화할지가
-중요하다. Yamaguchi et al.은 30K sentences, 약 0.01GB target language text만 있는
-low-resource setting에서 vocabulary expansion과 target parameter initialization을 비교하고,
-high-resource에서 자주 쓰이는 random initialization이 항상 최선이 아니라고 보고한다
-\citep{yamaguchi2025vocab}. Mean initialization은 기존 embedding centroid를 사용하고,
-FVT 계열은 새 token surface를 source tokenizer로 다시 분해한 뒤 source subtoken embedding을
-평균한다 \citep{hewitt2021newembeddings,vocabextensiontutorial2026}.
+Placing new vocabulary rows in the correct region of an existing embedding space has been
+studied under the name \emph{vocabulary transfer}.
 
-본 연구는 decoder LLM이 아니라 XLM-R encoder 기반 MLM setting이지만, 질문은 같다. 새
-token row를 완전히 무작위로 시작할지, 기존 XLM-R tokenizer와 embedding space가 이미 가진
-표면형 정보를 재사용할지 비교한다.
+\textbf{FVT} \citep{gee2022fvt} decomposes each new token's surface form with the source
+tokenizer and initializes the row as the mean of the constituent source embeddings.
+Our \fvt\ implements this directly.
+
+\textbf{WECHSEL} \citep{minixhofer2022wechsel} computes similarity between new tokens and
+source tokens using static multilingual word embeddings and initializes new rows as
+a weighted combination of similar source rows.
+
+\textbf{FOCUS} \citep{dobler2023focus} uses anchor tokens that overlap between source and
+target vocabularies to express new tokens as combinations of anchors.
+
+Both WECHSEL and FOCUS demonstrate that reusing semantic or surface similarity beats
+random initialization---the same motivation behind \famm, which reuses typological similarity.
+We do not implement WECHSEL or FOCUS because they require external static embeddings or
+separate anchor computation; we cite them as background.
+
+\textbf{Mean initialization} \citep{hewitt2021newembeddings} places new rows near the
+centroid of existing embeddings to reduce early instability, which is our \meanm\ baseline.
+
+\subsection{Evaluation Protocol}
+
+We follow the Glot500 downstream suite: PPPL \citep{salazar2020pppl}, Tatoeba and Bible
+sentence retrieval \citep{artetxe2019tatoeba}, NER on WikiANN \citep{pan2017wikiann},
+roundtrip word alignment \citep{dufter2018roundtrip}, and text classification on
+Taxi1500 \citep{ma2023taxi1500}.
+Since labeled training data does not exist for tail languages, all supervised tasks
+fine-tune on English and evaluate zero-shot on target languages, following the
+XTREME protocol \citep{hu2020xtreme}.
+This setup ensures that cross-lingual alignment---the quantity that initialization
+directly affects---is the only pathway to tail-language performance.

@@ -11,6 +11,8 @@
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{float}
 \usepackage{natbib}
 \usepackage{url}
 
@@ -23,17 +25,27 @@
 
 \graphicspath{
   {../../exp/v5.2/0_tokenizer/03_tokenization_effect/}
+  {../../exp/v5.2/Plot/loss/}
   {../../exp/v5.2/2_training/}
   {../../exp/v5.2/3_evaluation/09_family_similarity/}
   {../../exp/v5.2/4_reporting/}
+  {../tex_ko/figs/}
 }
 
 \newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
 \DeclareRobustCommand{\codepath}[1]{\path{#1}}
 \newcommand{\method}[1]{\textsc{#1}}
+\newcommand{\rand}{\texttt{random}}
+\newcommand{\meanm}{\texttt{mean}}
+\newcommand{\fvt}{\texttt{fvt}}
+\newcommand{\wfvt}{\texttt{weighted\_fvt}}
+\newcommand{\famm}{\texttt{family\_mean}}
+\newcommand{\dn}{$\downarrow$}
+\newcommand{\up}{$\uparrow$}
 
 \title{XLM-R-Based Glot500-Style Vocabulary Extension for Low-Resource Tail Languages}
-\author{Jongha Kim}
+\author{Jongha Kim \\
+Sogang University}
 \date{Term Project Report Draft \\ July 2026}
 
 \begin{document}

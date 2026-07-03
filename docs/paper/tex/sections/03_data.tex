@@ -1,59 +1,98 @@
 \section{Data}
 
-\subsection{Target Definition}
+\subsection{Language Scope and Data Sources}
 
-v5.2의 corpus universe는 `99` language-script이다. 이 중 `92`개는 XLM-R training language로
-표시된 seen/head language이고, `7`개는 XLM-R-unseen target tail language이다. 초기 feedback은
-``low-resource language를 task별 3개씩 포함하도록 고른 이유''를 더 명확히 요구했다. 이에
-따라 target은 단순히 가장 작은 corpus가 아니라 다음 조건으로 정의한다.
+Our corpus universe consists of 99 language-scripts drawn from Glot500-c:
+92 \emph{head} language-scripts that XLM-R was trained on, and 7 \emph{tail}
+language-scripts that XLM-R did not see (Target7).
+Both groups use Glot500-c as their text source, accessed as HuggingFace Arrow datasets
+(\texttt{\{lang\}\_\{script\}}, \texttt{train} split, \texttt{text} column).
 
-\begin{quote}
-XLM-R-unseen tail languages in the smallest Glot500 corpus band that still supports downstream evaluation.
-\end{quote}
+Head languages serve as replay data: including them in continued pretraining prevents
+catastrophic forgetting of XLM-R's existing representations.
+Target7 languages are the evaluation targets.
+They satisfy four selection criteria:
+(i) absent from XLM-R training,
+(ii) present in Glot500-c,
+(iii) at least 30,000 training sentences (\texttt{new\_length} $\geq$ 30,000),
+and (iv) at least one downstream evaluation dataset available.
 
-strict `new\_length <= 10k` non-XLM-R tail language는 local task-list membership이 없어
-Tatoeba, Bible, NER, POS 등을 3개씩 채울 수 없다. 따라서 downstream evidence를 확보하기
-위해 약 30K--50K Glot500 sentence' band에서 task overlap이 가장 큰 7개 언어를 선택했다.
-이 결정은 \codepath{docs/exp/v5.2/1_data_scope/low_resource_task_fill_candidates_ko.md}와
-\codepath{preprocessing/prepare_v5_glot50010_merge_inputs.py}의
-\codepath{V52_OVERLAP_TASKFILL_GLOT5007}에 기록되어 있다.
-
-\input{tables/table_target7}
-
-\subsection{Task Coverage}
-
-Target7은 총 21개 task slot을 7개 언어로 압축한다. 이 표는 왜 downstream task를 사용할 수
-있는지, 그리고 어떤 결과를 target evidence로 말할 수 있는지의 근거이다.
-
-\input{tables/table_task_coverage}
-
-\subsection{Training Corpus}
-
-MLM training corpus는 \codepath{preprocessing/run_v52_glot5007_merge.sh}가
-\codepath{preprocessing/merge_files.py}를 호출하여 만든다. Sampling은 Glot500-style language
-sampling factor $\alpha=0.3$을 사용한다.
-
-\[
-P_i \propto n_i^\alpha
-\]
-
-여기서 $n_i$는 language-script $i$의 corpus size이다. $\alpha=1$이면 head language가 corpus
-크기만큼 압도적으로 자주 뽑히지만, $\alpha=0.3$은 head/tail ratio를 완화한다. 예를 들어
-1,000,000 sentence head와 1,000 sentence tail은 $\alpha=1$에서 1000:1이지만, $\alpha=0.3$에서는
-약 8:1 수준으로 줄어든다. v5.2 merge report의 핵심 수치는 다음과 같다.
-
-\begin{center}
-\begin{tabular}{lr}
+\begin{table}[h]\centering\small
+\caption{Target7 languages with family, region, corpus size, and covered downstream tasks.}
+\label{tab:target7}
+\begin{tabular}{@{}llllrl@{}}
 \toprule
-Item & Samples \\
+language\_script & Name & Family & Region & new\_length & Tasks \\
 \midrule
-seen/head training samples & 4,147,176 \\
-target7 training samples & 335,083 \\
-total MLM training samples & 4,482,259 \\
+\texttt{dtp\_Latn} & Kadazan Dusun & Austronesian & SE Asia & 48,468 & Tatoeba, Bible, Roundtrip, Taxi, Embed. \\
+\texttt{xav\_Latn} & Xavante & Macro-Je & S America & 31,765 & Bible, Roundtrip, Taxi \\
+\texttt{bam\_Latn} & Bambara & Mande & W Africa & 32,150 & Bible, Roundtrip, Taxi \\
+\texttt{csb\_Latn} & Kashubian & Slavic & Europe & 33,743 & Tatoeba, NER, Embed. \\
+\texttt{ile\_Latn} & Interlingue & Constructed & Europe & 40,984 & Tatoeba, Embed. \\
+\texttt{lij\_Latn} & Ligurian & Romance & Europe & 42,447 & NER \\
+\texttt{fur\_Latn} & Friulian & Romance & Europe & 30,052 & NER \\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
 
-이 값은 \codepath{docs/exp/v5.2/LIVE_STATUS.md} 및
-\codepath{docs/exp/v5.2/0_tokenizer/merge/Glot500_v52_glot5007_xlmr100.report.json}의
-ready/PASS 상태와 일치한다.
+\subsection{Task-Centered Language Selection}
+
+The seven languages were selected in reverse from the evaluation tasks, not arbitrarily.
+Most genuinely low-resource languages lack labeled downstream data, making it impossible to
+complete the tokenizer $\to$ training $\to$ evaluation pipeline end to end.
+We therefore required at least three evaluable target languages per downstream task,
+as shown in Table~\ref{tab:taskcov}.
+Geographic and typological spread (SE Asia, South America, West Africa, Europe) was
+also considered, but traceability---being able to connect a specific score to a specific
+language---was the primary criterion.
+
+\begin{table}[h]\centering\small
+\caption{Task coverage: three Target7 languages per downstream task.}
+\label{tab:taskcov}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Task & Target languages & Scale \\
+\midrule
+Tatoeba retrieval & \texttt{dtp}, \texttt{ile}, \texttt{csb} & 2,253 sentence pairs \\
+Bible retrieval & \texttt{dtp}, \texttt{xav}, \texttt{bam} & 23,238 sentence pairs \\
+Roundtrip alignment & \texttt{dtp}, \texttt{xav}, \texttt{bam} & 22,669 sentence groups \\
+NER & \texttt{csb}, \texttt{lij}, \texttt{fur} & 300 sentences (100/lang.) \\
+Embedding similarity & \texttt{csb}, \texttt{dtp}, \texttt{ile} & 2,100 sentence pairs \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Training Corpus and Temperature Sampling}
+
+The MLM training corpus mixes head replay and Target7 text.
+To prevent high-resource head languages from dominating the vocabulary and gradient signal,
+we apply temperature sampling with $\alpha=0.3$:
+\[
+P_i \propto n_i^{\alpha}, \quad \alpha = 0.3,
+\]
+where $n_i$ is the corpus size of language-script $i$.
+At $\alpha=1$, a head language with one million sentences would be sampled 1,000$\times$
+more often than a tail language with 1,000 sentences;
+at $\alpha=0.3$ the ratio shrinks to approximately 8:1.
+This downweighting applies both to tokenizer training and to the actual MLM corpus.
+
+\begin{table}[h]\centering\small
+\caption{Training and evaluation corpus sizes.}
+\label{tab:corpus}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Item & Count \\
+\midrule
+Source raw sentences & 1,025,895,043 \\
+MLM train --- seen/head & 4,147,176 \\
+MLM train --- Target7 & 335,083 \\
+MLM train --- total & 4,482,259 \\
+\midrule
+Eval --- PPPL & 700 \\
+Eval --- Tatoeba & 2,253 \\
+Eval --- Bible & 23,238 \\
+Eval --- Roundtrip & 22,669 \\
+Eval --- NER & 300 \\
+\bottomrule
+\end{tabular}
+\end{table}
