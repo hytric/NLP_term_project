@@ -411,6 +411,19 @@ text_classification	mean	40000	v52_mean_conv5way_step40000	eng_Latn	head	macro_f
 text_classification	mean	50000	v52_mean_conv5way_step43000	eng_Latn	head	macro_f1	0.682036	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_mean_conv5way_step43000/summary.json
 text_classification	fvt	10000	v52_fvt_conv5way_step10000	eng_Latn	head	macro_f1	0.723635	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step10000/summary.json
 text_classification	fvt	20000	v52_fvt_conv5way_step20000	eng_Latn	head	macro_f1	0.796671	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step20000/summary.json
+text_classification	fvt	30000	v52_fvt_conv5way_step30000	eng_Latn	head	macro_f1	0.796598	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step30000/summary.json
+text_classification	fvt	40000	v52_fvt_conv5way_step40000	eng_Latn	head	macro_f1	0.797343	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step40000/summary.json
+text_classification	fvt	50000	v52_fvt_conv5way_step43000	eng_Latn	head	macro_f1	0.773809	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step43000/summary.json
+text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	eng_Latn	head	macro_f1	0.711387	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step10000/summary.json
+text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	eng_Latn	head	macro_f1	0.785554	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step20000/summary.json
+text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	eng_Latn	head	macro_f1	0.711748	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step30000/summary.json
+text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	eng_Latn	head	macro_f1	0.707101	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step40000/summary.json
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	eng_Latn	head	macro_f1	0.749227	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step50000/summary.json
+text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	eng_Latn	head	macro_f1	0.672124	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step10000/summary.json
+text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	eng_Latn	head	macro_f1	0.785616	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step20000/summary.json
+text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	eng_Latn	head	macro_f1	0.732175	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step30000/summary.json
+text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	eng_Latn	head	macro_f1	0.659542	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step40000/summary.json
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	eng_Latn	head	macro_f1	0.742077	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step50000/summary.json
 ner	random	10000	v52_random_conv5way_step10000	csb_Latn	tail	f1	0.513514	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	random	10000	v52_random_conv5way_step10000	lij_Latn	tail	f1	0.330033	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	random	10000	v52_random_conv5way_step10000	fur_Latn	tail	f1	0.498246	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step10000/checkpoint-10000/test_results.txt
@@ -423,9 +436,9 @@ ner	random	30000	v52_random_conv5way_step30000	fur_Latn	tail	f1	0.503597	complet
 ner	random	40000	v52_random_conv5way_step40000	csb_Latn	tail	f1	0.582781	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	random	40000	v52_random_conv5way_step40000	lij_Latn	tail	f1	0.337838	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	random	40000	v52_random_conv5way_step40000	fur_Latn	tail	f1	0.489362	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step40000/checkpoint-40000/test_results.txt
-ner	random	50000	v52_random_conv5way_step43000	csb_Latn	tail	f1		pending	
-ner	random	50000	v52_random_conv5way_step43000	lij_Latn	tail	f1		pending	
-ner	random	50000	v52_random_conv5way_step43000	fur_Latn	tail	f1		pending	
+ner	random	50000	v52_random_conv5way_step43000	csb_Latn	tail	f1	0.622378	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	random	50000	v52_random_conv5way_step43000	lij_Latn	tail	f1	0.332203	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	random	50000	v52_random_conv5way_step43000	fur_Latn	tail	f1	0.492857	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
 ner	mean	10000	v52_mean_conv5way_step10000	csb_Latn	tail	f1	0.532895	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	mean	10000	v52_mean_conv5way_step10000	lij_Latn	tail	f1	0.327645	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	mean	10000	v52_mean_conv5way_step10000	fur_Latn	tail	f1	0.557621	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step10000/checkpoint-10000/test_results.txt

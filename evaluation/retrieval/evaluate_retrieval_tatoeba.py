@@ -44,6 +44,25 @@ MODEL_CLASSES = {
 }
 
 
+def path_key(value):
+    """Make checkpoint paths safe for cache/output subdirectories."""
+    return value.strip("/").replace("/", "__") or value.replace("/", "__")
+
+
+def env_or_file_languages(env_names, list_file):
+    for env_name in env_names:
+        raw = os.environ.get(env_name)
+        if raw:
+            return [item.strip() for item in raw.replace(",", " ").split() if item.strip()]
+
+    languages = []
+    with open(list_file, 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            languages.append(line.strip().split('\t')[0])
+    return languages
+
+
 def load_embeddings(embed_file, num_sentences=None):
     logger.info(' loading from {}'.format(embed_file))
     embeds = np.load(embed_file)
@@ -530,21 +549,21 @@ def main():
                         default=7, help="use specific layer")
     args = parser.parse_args()
 
-    args.predict_langs = []
-    with open('tatoeba_lang_list.txt', 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            args.predict_langs.append(line.strip().split('\t')[0])
+    args.predict_langs = env_or_file_languages(
+        ("TATOEBA_PREDICT_LANGS", "PREDICT_LANGS"),
+        'tatoeba_lang_list.txt',
+    )
 
-    args.data_dir = args.data_dir + args.model_name_or_path
+    model_cache_key = path_key(args.model_name_or_path)
+    args.data_dir = os.path.join(args.data_dir, model_cache_key)
     if not os.path.exists(args.data_dir):
         os.makedirs(args.data_dir)
-    args.output_dir = args.output_dir + args.model_name_or_path
+    args.output_dir = os.path.join(args.output_dir, model_cache_key)
     if not os.path.exists(args.output_dir):
         os.makedirs(args.output_dir)
     else:
         args.do_train = False
-    args.log_file = args.output_dir + '/train.log'
+    args.log_file = 'train.log'
 
     run(args)
 

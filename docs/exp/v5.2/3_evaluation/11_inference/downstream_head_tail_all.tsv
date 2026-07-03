@@ -335,45 +335,45 @@ text_classification	fvt	10000	v52_fvt_conv5way_step10000	all	macro_f1	0.723635	1
 text_classification	fvt	20000	v52_fvt_conv5way_step20000	head	macro_f1	0.796671	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step20000/summary.json
 text_classification	fvt	20000	v52_fvt_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step20000/summary.json
 text_classification	fvt	20000	v52_fvt_conv5way_step20000	all	macro_f1	0.796671	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step20000/summary.json
-text_classification	fvt	30000	v52_fvt_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	30000	v52_fvt_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	30000	v52_fvt_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	40000	v52_fvt_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	40000	v52_fvt_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	40000	v52_fvt_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	50000	v52_fvt_conv5way_step43000	head	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	50000	v52_fvt_conv5way_step43000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	fvt	50000	v52_fvt_conv5way_step43000	all	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	head	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	all	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	head	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	all	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	head	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	all	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	head	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	all	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	head	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	
-text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	all	macro_f1		0			higher_is_better	pending	
+text_classification	fvt	30000	v52_fvt_conv5way_step30000	head	macro_f1	0.796598	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step30000/summary.json
+text_classification	fvt	30000	v52_fvt_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step30000/summary.json
+text_classification	fvt	30000	v52_fvt_conv5way_step30000	all	macro_f1	0.796598	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step30000/summary.json
+text_classification	fvt	40000	v52_fvt_conv5way_step40000	head	macro_f1	0.797343	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step40000/summary.json
+text_classification	fvt	40000	v52_fvt_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step40000/summary.json
+text_classification	fvt	40000	v52_fvt_conv5way_step40000	all	macro_f1	0.797343	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step40000/summary.json
+text_classification	fvt	50000	v52_fvt_conv5way_step43000	head	macro_f1	0.773809	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step43000/summary.json
+text_classification	fvt	50000	v52_fvt_conv5way_step43000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step43000/summary.json
+text_classification	fvt	50000	v52_fvt_conv5way_step43000	all	macro_f1	0.773809	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_fvt_conv5way_step43000/summary.json
+text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	head	macro_f1	0.711387	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step10000/summary.json
+text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step10000/summary.json
+text_classification	weighted_fvt	10000	v52_weighted_fvt_conv5way_step10000	all	macro_f1	0.711387	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step10000/summary.json
+text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	head	macro_f1	0.785554	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step20000/summary.json
+text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step20000/summary.json
+text_classification	weighted_fvt	20000	v52_weighted_fvt_conv5way_step20000	all	macro_f1	0.785554	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step20000/summary.json
+text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	head	macro_f1	0.711748	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step30000/summary.json
+text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step30000/summary.json
+text_classification	weighted_fvt	30000	v52_weighted_fvt_conv5way_step30000	all	macro_f1	0.711748	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step30000/summary.json
+text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	head	macro_f1	0.707101	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step40000/summary.json
+text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step40000/summary.json
+text_classification	weighted_fvt	40000	v52_weighted_fvt_conv5way_step40000	all	macro_f1	0.707101	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step40000/summary.json
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	head	macro_f1	0.749227	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step50000/summary.json
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step50000/summary.json
+text_classification	weighted_fvt	50000	v52_weighted_fvt_conv5way_step50000	all	macro_f1	0.749227	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_weighted_fvt_conv5way_step50000/summary.json
+text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	head	macro_f1	0.672124	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step10000/summary.json
+text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step10000/summary.json
+text_classification	family_mean	10000	v52_family_mean_conv5way_step10000	all	macro_f1	0.672124	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step10000/summary.json
+text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	head	macro_f1	0.785616	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step20000/summary.json
+text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step20000/summary.json
+text_classification	family_mean	20000	v52_family_mean_conv5way_step20000	all	macro_f1	0.785616	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step20000/summary.json
+text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	head	macro_f1	0.732175	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step30000/summary.json
+text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step30000/summary.json
+text_classification	family_mean	30000	v52_family_mean_conv5way_step30000	all	macro_f1	0.732175	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step30000/summary.json
+text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	head	macro_f1	0.659542	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step40000/summary.json
+text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step40000/summary.json
+text_classification	family_mean	40000	v52_family_mean_conv5way_step40000	all	macro_f1	0.659542	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step40000/summary.json
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	head	macro_f1	0.742077	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step50000/summary.json
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	tail	macro_f1		0			higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step50000/summary.json
+text_classification	family_mean	50000	v52_family_mean_conv5way_step50000	all	macro_f1	0.742077	1			higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/text_classification/taxi1500/v52_family_mean_conv5way_step50000/summary.json
 ner	random	10000	v52_random_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	random	10000	v52_random_conv5way_step10000	tail	f1	0.447264	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	random	10000	v52_random_conv5way_step10000	all	f1	0.447264	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step10000/checkpoint-10000/test_results.txt
@@ -386,9 +386,9 @@ ner	random	30000	v52_random_conv5way_step30000	all	f1	0.464167	3	csb_Latn,lij_La
 ner	random	40000	v52_random_conv5way_step40000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	random	40000	v52_random_conv5way_step40000	tail	f1	0.469994	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step40000/checkpoint-40000/test_results.txt
 ner	random	40000	v52_random_conv5way_step40000	all	f1	0.469994	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step40000/checkpoint-40000/test_results.txt
-ner	random	50000	v52_random_conv5way_step43000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	random	50000	v52_random_conv5way_step43000	tail	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
-ner	random	50000	v52_random_conv5way_step43000	all	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	
+ner	random	50000	v52_random_conv5way_step43000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	random	50000	v52_random_conv5way_step43000	tail	f1	0.482479	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
+ner	random	50000	v52_random_conv5way_step43000	all	f1	0.482479	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_random_conv5way_step43000/checkpoint-43000/test_results.txt
 ner	mean	10000	v52_mean_conv5way_step10000	head	f1		0	csb_Latn,lij_Latn,fur_Latn		higher_is_better	pending	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	mean	10000	v52_mean_conv5way_step10000	tail	f1	0.472720	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step10000/checkpoint-10000/test_results.txt
 ner	mean	10000	v52_mean_conv5way_step10000	all	f1	0.472720	3	csb_Latn,lij_Latn,fur_Latn	csb_Latn,fur_Latn,lij_Latn	higher_is_better	complete	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation/ner/v52_mean_conv5way_step10000/checkpoint-10000/test_results.txt

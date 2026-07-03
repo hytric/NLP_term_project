@@ -17,19 +17,24 @@ MODEL=${1:-cis-lmu/glot500-base}
 GPU=${2:-0}
 
 export CUDA_VISIBLE_DEVICES=$GPU
-MODEL_TYPE="xlmr"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
+MODEL_TYPE="${MODEL_TYPE:-xlmr}"
 
-MAX_LENGTH=512
-LC=""
-BATCH_SIZE=128
-DIM=768
-NLAYER=12
-LAYER=7
+MAX_LENGTH="${MAX_LENGTH:-512}"
+LC="${LC:-}"
+BATCH_SIZE="${BATCH_SIZE:-128}"
+DIM="${DIM:-768}"
+NLAYER="${NLAYER:-12}"
+LAYER="${LAYER:-7}"
 
-DATA_DIR="/PATH/TO/DATA/"
-OUTPUT_DIR="/PATH/TO/OUTPUT/"
+DATA_ROOT="${EVAL_DATA_ROOT:-${SCRIPT_DIR}/../download_data/download}"
+DATA_DIR="${DATA_DIR:-${DATA_ROOT%/}/retrieval_bible/}"
+OUTPUT_DIR="${OUTPUT_DIR:-${EVAL_OUTPUT_DIR:-/PATH/TO/OUTPUT/}}"
 
-python evaluate_retrieval_bible.py \
+cd "${SCRIPT_DIR}"
+
+"${PYTHON_BIN}" evaluate_retrieval_bible.py \
     --model_type $MODEL_TYPE \
     --model_name_or_path $MODEL \
     --data_dir $DATA_DIR \
@@ -40,4 +45,3 @@ python evaluate_retrieval_bible.py \
     --num_layers $NLAYER \
     --dist cosine $LC \
     --specific_layer $LAYER
-

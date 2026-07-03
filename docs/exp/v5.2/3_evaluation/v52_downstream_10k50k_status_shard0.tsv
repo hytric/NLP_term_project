@@ -1,47 +1,16 @@
 index	task	model_key	gpu	status	started_at	finished_at
-0	retrieval_tatoeba	v52_random_conv5way_step10000	2	skipped		
-2	retrieval_tatoeba	v52_random_conv5way_step30000	2	skipped		
-4	retrieval_tatoeba	v52_random_conv5way_step50000	2	running	2026-07-03T10:41:06	
-4	retrieval_tatoeba	v52_random_conv5way_step50000	2	complete	2026-07-03T10:41:06	2026-07-03T10:41:06
-6	retrieval_tatoeba	v52_mean_conv5way_step20000	2	skipped		
-8	retrieval_tatoeba	v52_mean_conv5way_step40000	2	skipped		
-10	retrieval_tatoeba	v52_fvt_conv5way_step10000	2	skipped		
-12	retrieval_tatoeba	v52_fvt_conv5way_step30000	2	skipped		
-14	retrieval_tatoeba	v52_fvt_conv5way_step50000	2	skipped		
-16	retrieval_tatoeba	v52_weighted_fvt_conv5way_step20000	2	skipped		
-18	retrieval_tatoeba	v52_weighted_fvt_conv5way_step40000	2	skipped		
-20	retrieval_tatoeba	v52_family_mean_conv5way_step10000	2	skipped		
-22	retrieval_tatoeba	v52_family_mean_conv5way_step30000	2	skipped		
-24	retrieval_tatoeba	v52_family_mean_conv5way_step50000	2	skipped		
-26	retrieval_bible	v52_random_conv5way_step20000	2	skipped		
-28	retrieval_bible	v52_random_conv5way_step40000	2	skipped		
-30	retrieval_bible	v52_mean_conv5way_step10000	2	skipped		
-32	retrieval_bible	v52_mean_conv5way_step30000	2	skipped		
-34	retrieval_bible	v52_mean_conv5way_step50000	2	running	2026-07-03T10:41:06	
-34	retrieval_bible	v52_mean_conv5way_step50000	2	complete	2026-07-03T10:41:06	2026-07-03T10:41:06
-36	retrieval_bible	v52_fvt_conv5way_step20000	2	skipped		
-38	retrieval_bible	v52_fvt_conv5way_step40000	2	skipped		
-40	retrieval_bible	v52_weighted_fvt_conv5way_step10000	2	skipped		
-42	retrieval_bible	v52_weighted_fvt_conv5way_step30000	2	skipped		
-44	retrieval_bible	v52_weighted_fvt_conv5way_step50000	2	skipped		
-46	retrieval_bible	v52_family_mean_conv5way_step20000	2	skipped		
-48	retrieval_bible	v52_family_mean_conv5way_step40000	2	skipped		
-50	roundtrip_alignment	v52_random_conv5way_step10000	2	skipped		
-52	roundtrip_alignment	v52_random_conv5way_step30000	2	skipped		
-54	roundtrip_alignment	v52_random_conv5way_step50000	2	running	2026-07-03T10:41:06	
-54	roundtrip_alignment	v52_random_conv5way_step50000	2	complete	2026-07-03T10:41:06	2026-07-03T10:41:06
-56	roundtrip_alignment	v52_mean_conv5way_step20000	2	skipped		
-58	roundtrip_alignment	v52_mean_conv5way_step40000	2	skipped		
-60	roundtrip_alignment	v52_fvt_conv5way_step10000	2	skipped		
-62	roundtrip_alignment	v52_fvt_conv5way_step30000	2	skipped		
-64	roundtrip_alignment	v52_fvt_conv5way_step50000	2	skipped		
-66	roundtrip_alignment	v52_weighted_fvt_conv5way_step20000	2	skipped		
-68	roundtrip_alignment	v52_weighted_fvt_conv5way_step40000	2	skipped		
-70	roundtrip_alignment	v52_family_mean_conv5way_step10000	2	skipped		
-72	roundtrip_alignment	v52_family_mean_conv5way_step30000	2	skipped		
-74	roundtrip_alignment	v52_family_mean_conv5way_step50000	2	skipped		
-76	ner	v52_random_conv5way_step20000	2	running	2026-07-03T10:41:06	
-76	ner	v52_random_conv5way_step20000	2	complete	2026-07-03T10:41:06	2026-07-03T10:41:12
-78	ner	v52_random_conv5way_step40000	2	running	2026-07-03T10:41:12	
-76	ner	v52_random_conv5way_step20000	2	complete	2026-07-03T10:30:50	2026-07-03T11:31:29
-78	ner	v52_random_conv5way_step40000	2	running	2026-07-03T11:31:29	
+0	text_classification	v52_weighted_fvt_conv5way_step10000	0	skipped		
+1	text_classification	v52_weighted_fvt_conv5way_step20000	0	skipped		
+2	text_classification	v52_weighted_fvt_conv5way_step30000	0	skipped		
+3	text_classification	v52_weighted_fvt_conv5way_step40000	0	running	2026-07-03T16:11:34	
+3	text_classification	v52_weighted_fvt_conv5way_step40000	0	complete	2026-07-03T16:11:34	2026-07-03T16:15:40
+4	text_classification	v52_weighted_fvt_conv5way_step50000	0	skipped		
+5	text_classification	v52_family_mean_conv5way_step10000	0	running	2026-07-03T16:15:40	
+5	text_classification	v52_family_mean_conv5way_step10000	0	complete	2026-07-03T16:15:40	2026-07-03T16:19:53
+6	text_classification	v52_family_mean_conv5way_step20000	0	running	2026-07-03T16:19:53	
+6	text_classification	v52_family_mean_conv5way_step20000	0	complete	2026-07-03T16:19:53	2026-07-03T16:24:00
+7	text_classification	v52_family_mean_conv5way_step30000	0	running	2026-07-03T16:24:00	
+7	text_classification	v52_family_mean_conv5way_step30000	0	complete	2026-07-03T16:24:00	2026-07-03T16:28:16
+8	text_classification	v52_family_mean_conv5way_step40000	0	running	2026-07-03T16:28:16	
+8	text_classification	v52_family_mean_conv5way_step40000	0	complete	2026-07-03T16:28:16	2026-07-03T16:32:30
+9	text_classification	v52_family_mean_conv5way_step50000	0	skipped		

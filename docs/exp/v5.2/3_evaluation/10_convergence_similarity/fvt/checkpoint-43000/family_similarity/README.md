@@ -43,12 +43,14 @@ Every comparison pair contains at least one v5.2 unseen tail language.
 - `family_pair_scores.tsv`: cosine scores for tail-anchored pair comparisons.
 - `family_pair_summary.tsv`: mean similarity by model and relation type.
 - `family_centroid_similarity_<model>.tsv`: language centroid cosine matrix in long TSV form.
+- `family_point_coordinates_<model>.tsv`: PCA coordinates for every sampled sentence point.
 - `family_pair_boxplot_<model>.png`: relation-type similarity distributions.
 - `family_centroid_heatmap_<model>.png`: language centroid cosine heatmap.
 - `family_point_map_all_<model>.png`: PCA point map for tail and selected head languages.
 - `family_point_map_tail_only_<model>.png`: PCA point map among tail languages only.
 - `family_point_map_tail_by_language_<model>.png`: tail-only PCA point map colored by language.
 - `family_point_map_all_tail_highlight_<model>.png`: all-language PCA map with head languages greyed out and tail languages highlighted.
+- `family_point_map_target_<language>_<model>.png`: all-language PCA map with one tail target highlighted.
 - `family_centroid_map_<model>.png`: PCA map of language centroids.
 
 Interpretation boundary: these raw-sentence comparisons diagnose representational

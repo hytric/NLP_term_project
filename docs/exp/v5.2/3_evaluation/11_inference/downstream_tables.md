@@ -32,10 +32,10 @@ Blank cells are not available yet.
 | roundtrip_alignment | family_mean | accuracy | higher_is_better | 0.026100 | 0.027400 | 0.030900 | 0.032667 | 0.031567 |
 | text_classification | random | macro_f1 | higher_is_better | 0.669056 | 0.683697 | 0.681637 | 0.770660 | 0.725865 |
 | text_classification | mean | macro_f1 | higher_is_better | 0.786852 | 0.682232 | 0.718823 | 0.787870 | 0.682036 |
-| text_classification | fvt | macro_f1 | higher_is_better | 0.723635 | 0.796671 |  |  |  |
-| text_classification | weighted_fvt | macro_f1 | higher_is_better |  |  |  |  |  |
-| text_classification | family_mean | macro_f1 | higher_is_better |  |  |  |  |  |
-| ner | random | f1 | higher_is_better | 0.447264 | 0.465865 | 0.464167 | 0.469994 |  |
+| text_classification | fvt | macro_f1 | higher_is_better | 0.723635 | 0.796671 | 0.796598 | 0.797343 | 0.773809 |
+| text_classification | weighted_fvt | macro_f1 | higher_is_better | 0.711387 | 0.785554 | 0.711748 | 0.707101 | 0.749227 |
+| text_classification | family_mean | macro_f1 | higher_is_better | 0.672124 | 0.785616 | 0.732175 | 0.659542 | 0.742077 |
+| ner | random | f1 | higher_is_better | 0.447264 | 0.465865 | 0.464167 | 0.469994 | 0.482479 |
 | ner | mean | f1 | higher_is_better | 0.472720 | 0.488270 | 0.511267 | 0.503437 |  |
 | ner | fvt | f1 | higher_is_better | 0.494477 | 0.515031 |  |  |  |
 | ner | weighted_fvt | f1 | higher_is_better |  |  |  |  |  |
@@ -386,45 +386,45 @@ Blank cells are not available yet.
 | text_classification | fvt | 20000 | head | macro_f1 | 0.796671 | 1 | complete |
 | text_classification | fvt | 20000 | tail | macro_f1 |  | 0 | pending |
 | text_classification | fvt | 20000 | all | macro_f1 | 0.796671 | 1 | complete |
-| text_classification | fvt | 30000 | head | macro_f1 |  | 0 | pending |
+| text_classification | fvt | 30000 | head | macro_f1 | 0.796598 | 1 | complete |
 | text_classification | fvt | 30000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | fvt | 30000 | all | macro_f1 |  | 0 | pending |
-| text_classification | fvt | 40000 | head | macro_f1 |  | 0 | pending |
+| text_classification | fvt | 30000 | all | macro_f1 | 0.796598 | 1 | complete |
+| text_classification | fvt | 40000 | head | macro_f1 | 0.797343 | 1 | complete |
 | text_classification | fvt | 40000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | fvt | 40000 | all | macro_f1 |  | 0 | pending |
-| text_classification | fvt | 50000 | head | macro_f1 |  | 0 | pending |
+| text_classification | fvt | 40000 | all | macro_f1 | 0.797343 | 1 | complete |
+| text_classification | fvt | 50000 | head | macro_f1 | 0.773809 | 1 | complete |
 | text_classification | fvt | 50000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | fvt | 50000 | all | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 10000 | head | macro_f1 |  | 0 | pending |
+| text_classification | fvt | 50000 | all | macro_f1 | 0.773809 | 1 | complete |
+| text_classification | weighted_fvt | 10000 | head | macro_f1 | 0.711387 | 1 | complete |
 | text_classification | weighted_fvt | 10000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 10000 | all | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 20000 | head | macro_f1 |  | 0 | pending |
+| text_classification | weighted_fvt | 10000 | all | macro_f1 | 0.711387 | 1 | complete |
+| text_classification | weighted_fvt | 20000 | head | macro_f1 | 0.785554 | 1 | complete |
 | text_classification | weighted_fvt | 20000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 20000 | all | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 30000 | head | macro_f1 |  | 0 | pending |
+| text_classification | weighted_fvt | 20000 | all | macro_f1 | 0.785554 | 1 | complete |
+| text_classification | weighted_fvt | 30000 | head | macro_f1 | 0.711748 | 1 | complete |
 | text_classification | weighted_fvt | 30000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 30000 | all | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 40000 | head | macro_f1 |  | 0 | pending |
+| text_classification | weighted_fvt | 30000 | all | macro_f1 | 0.711748 | 1 | complete |
+| text_classification | weighted_fvt | 40000 | head | macro_f1 | 0.707101 | 1 | complete |
 | text_classification | weighted_fvt | 40000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 40000 | all | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 50000 | head | macro_f1 |  | 0 | pending |
+| text_classification | weighted_fvt | 40000 | all | macro_f1 | 0.707101 | 1 | complete |
+| text_classification | weighted_fvt | 50000 | head | macro_f1 | 0.749227 | 1 | complete |
 | text_classification | weighted_fvt | 50000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | weighted_fvt | 50000 | all | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 10000 | head | macro_f1 |  | 0 | pending |
+| text_classification | weighted_fvt | 50000 | all | macro_f1 | 0.749227 | 1 | complete |
+| text_classification | family_mean | 10000 | head | macro_f1 | 0.672124 | 1 | complete |
 | text_classification | family_mean | 10000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 10000 | all | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 20000 | head | macro_f1 |  | 0 | pending |
+| text_classification | family_mean | 10000 | all | macro_f1 | 0.672124 | 1 | complete |
+| text_classification | family_mean | 20000 | head | macro_f1 | 0.785616 | 1 | complete |
 | text_classification | family_mean | 20000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 20000 | all | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 30000 | head | macro_f1 |  | 0 | pending |
+| text_classification | family_mean | 20000 | all | macro_f1 | 0.785616 | 1 | complete |
+| text_classification | family_mean | 30000 | head | macro_f1 | 0.732175 | 1 | complete |
 | text_classification | family_mean | 30000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 30000 | all | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 40000 | head | macro_f1 |  | 0 | pending |
+| text_classification | family_mean | 30000 | all | macro_f1 | 0.732175 | 1 | complete |
+| text_classification | family_mean | 40000 | head | macro_f1 | 0.659542 | 1 | complete |
 | text_classification | family_mean | 40000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 40000 | all | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 50000 | head | macro_f1 |  | 0 | pending |
+| text_classification | family_mean | 40000 | all | macro_f1 | 0.659542 | 1 | complete |
+| text_classification | family_mean | 50000 | head | macro_f1 | 0.742077 | 1 | complete |
 | text_classification | family_mean | 50000 | tail | macro_f1 |  | 0 | pending |
-| text_classification | family_mean | 50000 | all | macro_f1 |  | 0 | pending |
+| text_classification | family_mean | 50000 | all | macro_f1 | 0.742077 | 1 | complete |
 | ner | random | 10000 | head | f1 |  | 0 | pending |
 | ner | random | 10000 | tail | f1 | 0.447264 | 3 | complete |
 | ner | random | 10000 | all | f1 | 0.447264 | 3 | complete |
@@ -438,8 +438,8 @@ Blank cells are not available yet.
 | ner | random | 40000 | tail | f1 | 0.469994 | 3 | complete |
 | ner | random | 40000 | all | f1 | 0.469994 | 3 | complete |
 | ner | random | 50000 | head | f1 |  | 0 | pending |
-| ner | random | 50000 | tail | f1 |  | 0 | pending |
-| ner | random | 50000 | all | f1 |  | 0 | pending |
+| ner | random | 50000 | tail | f1 | 0.482479 | 3 | complete |
+| ner | random | 50000 | all | f1 | 0.482479 | 3 | complete |
 | ner | mean | 10000 | head | f1 |  | 0 | pending |
 | ner | mean | 10000 | tail | f1 | 0.472720 | 3 | complete |
 | ner | mean | 10000 | all | f1 | 0.472720 | 3 | complete |
@@ -992,9 +992,9 @@ Blank cells are not available yet.
 | ner | random | 40000 | csb_Latn | f1 | 0.582781 | complete |
 | ner | random | 40000 | lij_Latn | f1 | 0.337838 | complete |
 | ner | random | 40000 | fur_Latn | f1 | 0.489362 | complete |
-| ner | random | 50000 | csb_Latn | f1 |  | pending |
-| ner | random | 50000 | lij_Latn | f1 |  | pending |
-| ner | random | 50000 | fur_Latn | f1 |  | pending |
+| ner | random | 50000 | csb_Latn | f1 | 0.622378 | complete |
+| ner | random | 50000 | lij_Latn | f1 | 0.332203 | complete |
+| ner | random | 50000 | fur_Latn | f1 | 0.492857 | complete |
 | ner | mean | 10000 | csb_Latn | f1 | 0.532895 | complete |
 | ner | mean | 10000 | lij_Latn | f1 | 0.327645 | complete |
 | ner | mean | 10000 | fur_Latn | f1 | 0.557621 | complete |
