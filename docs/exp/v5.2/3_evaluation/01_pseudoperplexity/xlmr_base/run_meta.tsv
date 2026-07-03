@@ -3,11 +3,11 @@ metric	pppl
 model_key	xlmr_base
 model_path	xlm-roberta-base
 tokenizer_path	xlm-roberta-base
-eval_data_root	/home/axt/mnt2/jongha/v5.2_glot5007/eval_data_target
+eval_data_root	/home/axt/jongha/Glot500-py39-eval/evaluation/download_data/download
 eval_output_root	/home/axt/mnt2/jongha/v5.2_glot5007/evaluation
-gpu	1
+gpu	0
 docs_exp_root	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2
 model_matrix	/home/axt/jongha/Glot500-py39-eval/docs/exp/v5.2/3_evaluation/model_matrix.tsv
 pppl_split	train
-pppl_eval_role	target7_train_source_diagnostic
+pppl_eval_role	train_source_diagnostic
 pppl_train_source_allowed	1

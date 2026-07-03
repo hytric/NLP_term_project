@@ -1,3 +1,4 @@
 model_key	summary_group	languages	total_examples	total_masked_tokens	macro_mean_nll	macro_pseudo_perplexity	weighted_mean_nll	weighted_pseudo_perplexity
-xlmr_large	all	7	140	6558	4.480922	88.316100	4.154432	63.715737
-xlmr_large	v5_target	7	140	6558	4.480922	88.316100	4.154432	63.715737
+xlmr_large	all	99	1980	69569	1.816169	6.148258	1.832242	6.247878
+xlmr_large	head	92	1840	63011	1.613416	5.019930	1.590555	4.906473
+xlmr_large	v5_target	7	140	6558	4.480922	88.316050	4.154431	63.715695
