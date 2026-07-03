@@ -8,8 +8,7 @@
 - 한 문장에는 가능하면 하나의 주장만 담는다.
 - 모든 주장에는 근거를 붙인다. 근거가 없는 문장은 삭제하거나 `[EVIDENCE NEEDED]`로 표시한다.
 - 모든 실험 행동에는 근거를 붙인다. "이렇게 했다"에서 끝내지 말고, "왜 그렇게 했는지"와 "어느 코드/artifact에서 확인되는지"를 같이 쓴다.
-- Report의 main evidence는 50K-step convergence result다.
-- Step-4000 result는 early diagnostic으로만 쓴다.
+- Report의 모든 수치는 50K-step convergence 기준이다. Step-4000 등 초기 진단은 본문 결과에 쓰지 않고, 필요하면 10K→50K 궤적으로만 학습 진행을 보인다(feadback.md 반영).
 - `random`, `mean`, `FVT`, `weighted FVT`, `family-aware mean` 다섯 방법을 main comparison으로 둔다.
 - Final score는 `tail`, `head`, `all` group을 분리해서 쓴다.
 - Coverage가 없는 cell은 `0`이 아니라 `NA`로 쓴다.
@@ -107,6 +106,6 @@
 - [ ] 근거가 없는 형용사나 부사가 없는가?
 - [ ] 한 문장에 여러 주장이 섞여 있지 않은가?
 - [ ] figure/table caption이 독립적으로 읽히는가?
-- [ ] Step-4000과 50K가 섞이지 않았는가?
+- [ ] 모든 수치가 50K 기준인가(Step-4000 미사용)?
 - [ ] coverage limitation을 같이 썼는가?
 - [ ] final claim이 data보다 세지 않은가?

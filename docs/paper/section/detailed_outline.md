@@ -229,7 +229,7 @@
 **Table**
 
 - `table_task_coverage.tex`
-- PPPL, Tatoeba, Bible, Text classification, NER, POS, Roundtrip.
+- PPPL, Tatoeba, Bible, Text classification, NER, Roundtrip.
 
 ## 04 Method
 
@@ -327,7 +327,7 @@
 - PPPL: lower is better.
 - Tatoeba/Bible retrieval: Acc10, higher is better.
 - Text classification: macro-F1, higher is better.
-- NER/POS: F1, higher is better.
+- NER: F1, higher is better.
 - Roundtrip alignment: accuracy, higher is better.
 
 **주의**

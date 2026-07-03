@@ -38,8 +38,7 @@
 - 글은 간결하게 쓰되, 내용은 빈틈 없이 완결한다.
 - 모든 주장에는 source artifact, code path, table, figure, 또는 reference를 붙인다.
 - 모든 실험 행동에는 이유를 붙인다: 왜 이 언어, 왜 이 tokenizer, 왜 이 초기화, 왜 이 step, 왜 이 metric인지 쓴다.
-- 50K-step convergence run이 본문 claim의 중심이다.
-- Step-4000 결과는 early diagnostic으로만 쓴다.
+- 모든 본문 claim은 50K-step convergence checkpoint 기준이다(Step-4000 진단은 본문에 쓰지 않음; feadback.md 반영).
 - `random`, `mean`, `FVT`, `weighted FVT`, `family-aware mean` 다섯 방법을 main comparison으로 둔다.
 - score table은 `tail`, `head`, `all` group을 분리한다.
 - coverage가 없는 task/group은 0으로 쓰지 않고 `NA`로 둔다.

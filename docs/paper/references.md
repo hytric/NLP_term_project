@@ -12,7 +12,8 @@
      - Glot500-c inclusion threshold: more than 30,000 sentence' units.
      - XLM-R vocab 250K, Glot500-m vocab 401K after adding about 151K new tokens.
      - MLM continued pretraining on 600GB corpus.
-     - Evaluation metrics: PPPL, Tatoeba retrieval, Bible retrieval, text classification, NER, POS, roundtrip alignment.
+     - Evaluation metrics: PPPL, Tatoeba retrieval, Bible retrieval, text classification, NER, POS, roundtrip alignment (Table 3).
+     - **Evaluation protocol (§5)**: supervised task(NER, Text)는 English fine-tune + dev early stopping + target zero-shot, LR 2e-5 Adam; retrieval/roundtrip/PPPL은 fine-tune 없는 frozen encoder. 원문: "Since training data does not exist for some languages, we finetune on English ... and evaluate zero-shot transfer." (POS는 compute 제약으로 본 보고서 미보고.)
 
 2. Conneau et al. 2020, **Unsupervised Cross-lingual Representation Learning at Scale**
    - Use for: XLM-R-base/XLM-R-large baseline and 100-language head model framing.
@@ -61,33 +62,54 @@
    - Use for: MLM objective and masked token prediction background.
 
 13. Artetxe and Schwenk 2019, **Massively Multilingual Sentence Embeddings**
-    - Use for: sentence retrieval and multilingual sentence representation context.
+    - Use for: Tatoeba sentence retrieval dataset and multilingual sentence representation context.
+
+14. Hu et al. 2020, **XTREME: A Massively Multilingual Multi-task Benchmark**
+    - Use for: English fine-tune → target zero-shot cross-lingual transfer protocol; retrieval nearest-neighbor setup. 우리 tagging eval 코드(`run_tag.py`)의 계보.
+
+15. Pan et al. 2017, **Cross-lingual Name Tagging and Linking (WikiANN/PAN-X)**
+    - Use for: NER dataset and BIO/PER-LOC-ORG label scheme.
+
+16. Ma et al. 2023, **Taxi1500: A Multilingual Dataset for Text Classification in 1500 Languages**
+    - Use for: text classification task; English fine-tune, batch 16; Glot500 Table 3 정식 task. Note: 본 실험은 target test(PBC 저작권)가 없어 English-only로만 평가.
+
+17. Salazar et al. 2020, **Masked Language Model Scoring**
+    - Use for: pseudoperplexity (PPPL) definition; one-by-one masking; linguistic acceptability 근거.
+
+18. Dufter et al. 2018, **Roundtrip alignment evaluation**
+    - Use for: gold 없이 multilingual 표현 품질을 보는 roundtrip alignment metric.
 
 ## Local Experiment Artifacts
 
-14. `docs/exp/v5.2/EXPERIMENT_DESIGN_KO.md`
+20. `docs/exp/v5.2/EXPERIMENT_DESIGN_KO.md`
     - Use for: final v5.2 design statement, Target7, initialization modes, hyperparameter alignment.
 
-15. `docs/exp/v5.2/LIVE_STATUS.md`
+21. `docs/exp/v5.2/LIVE_STATUS.md`
     - Use for: current completion state of tokenizer, initializers, MLM runs, convergence jobs.
 
-16. `docs/exp/v5.2/3_evaluation/v52_final_downstream_table.tsv`
-    - Use for: step-4000 random/mean/FVT early diagnostic table only; do not use as the final convergence claim.
+22. `docs/exp/v5.2/3_evaluation/11_inference/downstream_head_tail_all.tsv`
+    - Use for: **50K five-way downstream table** (random/mean/FVT/weighted_FVT/family_mean × PPPL/Tatoeba/Bible/NER/Roundtrip/Text). 본문 §6.2의 main source. NER 포함 완료(POS 미보고).
 
-17. `docs/exp/v5.2/3_evaluation/v52_checkpoint_score_table.tsv`
-    - Use for: PPPL and Tatoeba checkpoint trajectory.
+23. `docs/exp/v5.2/3_evaluation/v52_ppt_current_table.md`
+    - Use for: init vs XLM-R-B/L·Glot500-m baseline 비교 참조값.
 
-18. `docs/exp/v5.2/3_evaluation/09_aggregation/main_head_tail_all.tsv`
-    - Use for: final 50K head/tail/all score schema after all five initialization methods finish evaluation.
+24. `docs/exp/v5.2/Plot/loss/convergence_5way_loss_curve.{png,tsv}`
+    - Use for: 50K 5-way MLM training loss 최종값·궤적 (§6.2 main figure).
 
-19. `docs/exp/v5.2/0_tokenizer/03_tokenization_effect/results_ko.md`
+25. `docs/exp/v5.2/3_evaluation/11_inference/similarity_maps/similarity_10k50k_summary.tsv`
+    - Use for: 10K→50K representation/family similarity 궤적 및 2D embedding map(§7).
+
+26. `docs/exp/v5.2/0_tokenizer/03_tokenization_effect/results_ko.md`
     - Use for: target7 tokenization reduction and language-level fertility values.
 
-20. `scripts/build_v5_initialized_checkpoint.py`
+27. `scripts/build_v5_initialized_checkpoint.py`
     - Use for: exact implementation of random, mean, FVT, weighted FVT, family-aware mean (`family_mean` in code); token identity copy; `<mask>` remap verification.
 
-21. `tokenization/run.py`
+28. `tokenization/run.py`
     - Use for: exact tokenizer training and SentencePiece protobuf append procedure.
 
-22. `preprocessing/merge_files.py`
+29. `preprocessing/merge_files.py`
     - Use for: language sampling equation, alpha=0.3, seen/target sampling plan.
+
+30. `evaluation/tagging/run_tag.py`, `evaluation/text_classification/zero_shot_train.py`, `evaluation/retrieval/*`, `evaluation/round-trip/evaluate_roundtrip.py`
+    - Use for: downstream task 구현 및 하이퍼파라미터(§5.6); XTREME→Glot500 zero-shot 프로토콜.

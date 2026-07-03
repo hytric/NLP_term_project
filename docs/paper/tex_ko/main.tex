@@ -1,0 +1,616 @@
+% =====================================================================
+%  한글 Term Report (self-contained, 상세본)
+%  컴파일: xelatex main.tex  (권장) 2회
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+% 한글: kotex 있으면 사용(Overleaf/full TeX 권장), 없으면 macOS 폰트로 fallback
+\IfFileExists{kotex.sty}
+  {\usepackage{kotex}}
+  {\usepackage{fontspec}\setmainfont{Apple SD Gothic Neo}}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\usepackage{xcolor}
+\usepackage{microtype}
+% --- 의존성 없는 pseudocode 프레임 (BasicTeX/Overleaf 모두 컴파일) ---
+\usepackage{float}
+\newfloat{algorithm}{htbp}{loa}
+\floatname{algorithm}{Algorithm}
+\newcounter{pcln}
+\newenvironment{pcode}{%
+  \begin{list}{\scriptsize\arabic{pcln}:}{%
+    \usecounter{pcln}\small
+    \setlength{\leftmargin}{2.2em}\setlength{\labelwidth}{1.6em}%
+    \setlength{\itemsep}{1.5pt}\setlength{\parsep}{0pt}\setlength{\topsep}{3pt}}%
+}{\end{list}}
+\newcommand{\kw}[1]{\textbf{#1}}                       % 키워드
+\newcommand{\ind}{\hspace*{1.3em}}                     % 들여쓰기
+\newcommand{\cmt}[1]{\hfill{\footnotesize$\triangleright$\,\textit{#1}}}  % 주석
+\emergencystretch=3em
+\tolerance=2000
+\hbadness=3000
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!50!black, citecolor=blue!50!black, urlcolor=blue!50!black}
+
+\graphicspath{
+  {./figs/}
+  {../../exp/v5.2/Plot/loss/}
+  {../../exp/v5.2/3_evaluation/10_convergence_similarity/fvt/checkpoint-50000/family_similarity/}
+  {../../exp/v5.2/0_tokenizer/03_tokenization_effect/}
+}
+
+\newcommand{\rand}{\texttt{random}}
+\newcommand{\meanm}{\texttt{mean}}
+\newcommand{\fvt}{\texttt{fvt}}
+\newcommand{\wfvt}{\texttt{weighted\_fvt}}
+\newcommand{\famm}{\texttt{family\_mean}}
+\newcommand{\dn}{$\downarrow$}
+\newcommand{\up}{$\uparrow$}
+
+\title{XLM-R 기반 저자원 언어 Vocabulary Extension:\\ Embedding Initialization 방법론 비교와 수렴 분석}
+\author{Jongha Kim}
+\date{Term Project Report (한글본) \\ 2026년 7월}
+
+\begin{document}
+\maketitle
+
+% =====================================================================
+\begin{abstract}
+\noindent
+XLM-R은 100개 언어를 학습한 강력한 multilingual masked language model(MLM)이지만, 학습에 포함되지 않은 tail language에서는 한 단어가 여러 subword로 과도하게 쪼개지고(over-fragmentation) 어휘·형태 정보가 표현 공간에 정렬되지 않는 문제가 남는다. Glot500은 mixed corpus로 SentencePiece unigram tokenizer를 재학습해 vocabulary를 확장하고 확장 모델을 MLM으로 continued pretraining하여 이 문제를 완화했다. 그러나 vocabulary를 확장하면 embedding matrix 뒤에 기존에 없던 새 token row가 추가되는데, 이 row를 어떤 벡터로 시작하느냐(embedding initialization)는 tokenizer 설계와 독립적인 modeling 선택임에도 대개 임의의 random으로 처리되고 체계적으로 비교된 적이 드물다.
+
+본 보고서는 이 초기화 선택만을 통제 변인으로 두고 다섯 방법을 비교한다: \rand, \meanm, \fvt, 그리고 우리가 추가한 두 변형 \wfvt, \famm. \texttt{xlm-roberta-base} 위에서 92개 XLM-R-seen replay 언어와 7개 XLM-R-unseen target(Target7)을 사용하고, tokenizer는 Glot500 방식으로 고정한 채 초기화만 바꿔 동일한 corpus·objective·schedule·evaluation protocol로 50K-step까지 continued MLM pretraining을 수행한다. 평가는 Glot500 downstream suite(pseudoperplexity, Tatoeba/Bible retrieval, NER, roundtrip alignment, text classification)로 하며, 시작점인 XLM-R-B와 XLM-R-L을 baseline으로 둔다.
+
+세 가지를 관찰한다. (1) 확장 tokenizer는 Target7의 tokens/word를 2.204에서 1.592로 27.75\% 낮춘다. (2) 같은 tokenizer를 공유함에도 초기화에 따라 50K 수렴 loss가 갈리며, FVT 계열이 가장 낮고 \meanm\ 은 \rand\ 보다도 높다. (3) 50K downstream에서 우리가 추가한 두 변형이 target PPPL·Tatoeba·NER·roundtrip에서 최고이고, 특히 \famm\ 은 NER에서 ablation 최고이며, 학습 초반 앞서던 plain \fvt\ 를 수렴 구간에서 추월한다. 요컨대 저자원 vocabulary adaptation에서 embedding initialization은 수렴과 downstream 성능을 실제로 바꾸는 중요한 선택이며, source subtoken/계통 정보를 재사용하는 FVT 계열이 지속적으로 유리하다.
+\end{abstract}
+
+% =====================================================================
+\section{서론}
+
+\subsection{Vertical scaling과 horizontal scaling}
+대규모 언어모델의 발전은 두 축으로 나뉜다. \textbf{Vertical scaling}은 같은 문제를 더 잘 풀기 위해 파라미터 수·학습 데이터 양·모델 깊이·연산량을 키우는 방향으로, ChatGPT·Claude 및 scaling-law 연구가 여기에 속한다. \textbf{Horizontal scaling}은 ``더 많은 대상을 지원할 수 있는가''를 묻는 방향으로, 더 많은 언어·도메인·태스크를 포괄한다. 데이터가 적은 저자원 언어 지원은 전형적인 horizontal scaling 문제이며 본 보고서의 배경이다. XLM-R은 강력한 multilingual encoder지만 학습에 없던 언어에서는 (1) token fragmentation, (2) representation mismatch가 남는다.
+
+\subsection{선행 해법과 남은 빈틈}
+Glot500은 horizontal scaling을 위해 vocabulary extension과 continued MLM pretraining을 결합한다(자세한 파이프라인은 \S2). 그러나 vocabulary extension 이후 새 token embedding row의 \emph{초기값}은 여전히 열린 선택이다. XLM-R의 embedding matrix는 250{,}002개 token에 대한 행렬 $E\in\mathbb{R}^{250002\times768}$이다. tokenizer를 확장해 116{,}664개 새 piece를 붙이면 $E$는 $\mathbb{R}^{366666\times768}$로 커지는데, 새로 늘어난 116{,}664개 행은 사전학습에서 한 번도 gradient를 받은 적이 없는 ``빈 행''이다. continued pretraining은 이 빈 행들을 학습으로 채우지만, \emph{어디서 출발하느냐}가 최적화 궤적과 최종 표현을 바꿀 수 있다.
+
+기존 연구가 주로 쓰는 방법은 세 가지다. \rand\ 는 아무 정보 없이 무작위 벡터에서 시작하고, \meanm\ 은 기존 embedding들의 전역 평균(중심)에서 안정적으로 시작하며, \fvt\ 는 새 token의 표면형을 기존 tokenizer로 다시 쪼개 그 구성 subtoken embedding의 평균을 재사용한다. 즉 정보량은 무정보 \rand, 전역 centroid \meanm, 표면형 재사용 \fvt\ 순으로 늘어난다. 본 보고서는 여기에 두 방법을 추가한다. \wfvt\ 는 FVT의 subtoken 평균을 균등 평균 대신 \emph{표면 길이로 가중}한다 --- 긴 source subtoken일수록 더 구체적인 lexical 신호를 담는다는 가정이다. \famm\ 은 표면형 분해가 아니라, 새 token이 corpus에서 주로 유래한 언어의 \emph{language family}에 속한 source token들의 평균을 쓴다 --- 철자보다 계통(typology) prior가 저자원 token에 더 좋은 출발점을 주는지 확인하기 위함이다. 이로써 비교 축이 다섯 방법으로 확장된다.
+
+\subsection{기여}
+\begin{enumerate}\setlength\itemsep{0.15em}
+\item tokenizer를 고정하고 초기화만 바꾸는 통제된 5-way ablation을 설계하고, 표면 길이 가중 \wfvt\ 와 계통 prior \famm\ 두 방법을 제안한다.
+\item 초기화가 50K-step 수렴 loss와 downstream 성능을 유의하게 바꿈을 보인다. 특히 두 변형이 수렴 구간에서 plain FVT를 추월하며, \famm\ 이 target 지표에서 가장 좋다.
+\item 문장 표현 공간의 계통 구조가 학습 과정에서 어떻게 형성되는지 step별로 분석한다.
+\end{enumerate}
+
+% =====================================================================
+\section{관련 연구 (Previous Research)}
+
+\subsection{Glot500과 horizontal language scaling}
+Glot500은 high-resource 언어의 기존 표현 지식을 기반으로 언어 간 전이를 확장하는 horizontal scaling 접근이다. 종교 텍스트(성경·종교 번역문), 뉴스 기사, 과학 논문, 위키/웹 크롤링 등 다양한 도메인의 데이터를 모아 저자원 언어를 포함한 대규모 corpus(Glot500-c)를 구축한다.
+
+\paragraph{Corpus collection.} 저자원 언어는 고품질 데이터셋 확보가 어려워 web crawling으로 원천을 모은 뒤 data cleaning을 거친다. (1) \textbf{Language-Scripts}: 언어만이 아니라 language-script 단위(예: 같은 언어라도 다른 문자)로 분리해 tokenization 병목을 구분한다. (2) \textbf{N-gram LM과 language divergence}: 각 language-script corpus에 대해 3-gram 언어모델을 만들고 perplexity를 비교하여 잘못 라벨링된 corpus를 걸러낸다. (3) \textbf{Chunk-level filter}: 반복 문자·반복 단어·특수문자·너무 짧은 텍스트·중복 데이터를 제거한다. (4) \textbf{Corpus-level filter}로 최종 정제한다. 마지막으로 학습 단위(chunk)가 30{,}000개 이상인 language-script만 선별한다. 여기서 학습 단위(논문 표기 ``sentence''')는 완전한 한 문장일 수도, 짧은 구절일 수도, 여러 문장이 묶인 paragraph일 수도 있다 --- 언어마다 텍스트 특성이 달라 수집된 단위를 그대로 처리하기 위한 묶음이다.
+
+\paragraph{Tokenization.} subword tokenizer로는 자주 함께 등장하는 문자 쌍을 반복적으로 병합하는 \textbf{BPE}와, 처음에 많은 subword 후보를 두고 문장을 가장 잘 설명하는 조합만 남기는 \textbf{Unigram Language Model}이 있다. Glot500은 SentencePiece의 Unigram LM을 쓴다. 미등록 조각 처리로는 미등록 subword를 Unicode 문자 단위로 분해하는 \emph{character fallback}(unknown token 발생 가능)과, 미등록 문자를 UTF-8 byte 단위로 분해하는 \emph{byte fallback}이 있으며, 후자는 unknown을 만들지 않는다.
+
+\paragraph{MLM continued pretraining.} Glot500-m은 약 600GB corpus 위에서 두 단계로 만들어진다. (1) \emph{Vocabulary Extension}: 기존 XLM-R tokenizer vocabulary를 확장한다(원 논문은 새 행을 random으로 초기화). (2) \emph{Continued Pretraining}: XLM-R-base를 Glot500-c로 이어서 MLM 학습한다. 이때 언어별 데이터 양 편차가 크므로 temperature $\alpha=0.3$의 언어 sampling을 적용해 head 언어가 학습을 독점하지 않도록 한다(본 실험도 동일 $\alpha$를 쓴다, \S3.3).
+
+\paragraph{Glot500의 분석.} Glot500은 성능이 corpus 크기, script coverage, 관련 언어 지원, 모델 용량이 함께 작용해 결정된다고 본다. 특히 주변의 유사(계통) 언어가 함께 학습될 때 표현이 좋아지며(related-language help), 반대로 가까운 관련 언어가 없으면 특정 언어 하나만 이어 학습한 Glot+1이 511개를 함께 학습한 Glot500-m보다 나은 경우도 있다. 본 보고서의 \famm\ 초기화와 계통 구조 분석(\S6)은 이 관찰과 직접 연결된다.
+
+\subsection{Vocabulary extension의 두 계열}
+Glot500 계열은 seen 언어와 unseen 언어를 함께 담은 mixed corpus로 새 SentencePiece unigram tokenizer를 학습해 vocabulary를 확장한다. 반면 Yamaguchi et al.\ 의 저자원 vocabulary expansion은 아주 적은 target language text(약 0.01GB)만으로 auxiliary tokenizer를 새로 학습한 뒤, 기존 source vocab에 없는 target token만 골라 뒤에 append하고 짧게 이어 학습한다. 두 방식은 새 vocab을 정하는 데이터(대규모 mixed corpus인지 소량 target-only인지)와 붙이는 token 수에서 다르다. 본 보고서는 \textbf{main axis를 Glot500식 mixed-corpus vocab injection으로 고정}하고 초기화만 비교하며, Yamaguchi식은 별도 추가 실험 대상으로 남긴다. 요점은, ``vocabulary를 확장한다''는 것이 하나의 고정된 절차가 아니라 tokenizer 학습 데이터·append 정책·초기화의 여러 선택으로 이루어진다는 것이며, 본 보고서는 그중 \emph{초기화}에 집중한다.
+
+\subsection{Embedding initialization / vocabulary transfer}
+새 vocabulary 행을 기존 embedding 공간에 잘 배치하는 문제는 cross-lingual vocabulary transfer에서 다뤄져 왔다. \textbf{FVT}(Fast Vocabulary Transfer)는 새 token 표면형을 source tokenizer로 재분해해 구성 subtoken embedding 평균을 쓰며, 본 실험의 \fvt\ 가 이 방법을 그대로 구현한 것이다(main hypothesis).
+
+본 보고서가 \textbf{WECHSEL}과 \textbf{FOCUS}를 함께 소개하는 이유는, 이들이 ``새 token의 초기값을 무작위로 두지 말고 기존 embedding 공간의 유사한 방향에서 시작하라''는 본 실험의 문제의식을 뒷받침하는 대표적 선행연구이기 때문이다. WECHSEL은 정적 다국어 word embedding에서 new token과 source token 사이의 유사도를 계산해, 유사한 source token들의 가중 평균으로 새 행을 초기화한다. FOCUS는 source vocab과 겹치는 anchor token의 임베딩을 기준으로 new token을 그 조합으로 표현한다. 두 방법 모두 ``의미·표면 유사성을 재사용하면 무작위보다 좋은 출발점을 얻는다''는 것을 보였고, 이는 우리가 계통 유사성을 재사용하는 \famm\ 을 제안한 직접적 동기가 된다. 다만 두 방법은 외부 정적 임베딩이나 별도 anchor 계산을 요구해 파이프라인이 무거우므로, 본 실험에서는 구현하지 않고 배경으로만 인용한다. \textbf{Hewitt}류는 새 embedding을 기존 분포의 평균 근처에 두면 초기 불안정을 줄일 수 있다는 근거로, \meanm\ baseline의 배경이다.
+
+\subsection{평가 프로토콜}
+Glot500 downstream suite와 pseudoperplexity를 따른다(본 보고서는 retrieval·NER·roundtrip·text classification과 PPPL을 보고). Glot500은 저자원 언어에 labeled train set이 없음을 명시하고 supervised task를 \emph{English로 fine-tune한 뒤 target zero-shot 전이}(XTREME 방식)로 평가한다. 원문: ``Since training data does not exist for some languages, we finetune on English (with early stopping based on dev) and evaluate zero-shot transfer.'' 이 설정을 쓰는 이유는 명확하다 --- target 언어에 labeled 데이터가 없어 target fine-tune이 불가능하고, English로만 supervision을 주면 target 성능이 나오는 유일한 경로가 \emph{공유 multilingual 표현의 cross-lingual 정렬}뿐이라, 이 정렬이 곧 vocabulary extension·initialization이 바꾸는 대상이기 때문이다. 각 task의 구체적 동작·코드는 \S5에 정리한다.
+
+% =====================================================================
+\section{데이터}
+
+\subsection{언어 범위와 데이터 출처}
+Corpus universe는 99개 language-script로, 92개 head/replay 언어와 7개 target(Target7)로 나뉜다. 두 그룹의 포함 관계는 다음과 같다.
+\begin{itemize}\setlength\itemsep{0.1em}
+\item \textbf{head 92개}: XLM-R 학습에 \emph{포함된} 언어에서 골랐다(XLM-R이 이미 표현을 가진 high-resource replay 집합). continued pretraining 동안 이들을 함께 학습해 기존 표현을 잊지 않도록(catastrophic forgetting 방지) 유지한다.
+\item \textbf{target 7개(Target7)}: XLM-R 학습에 \emph{포함되지 않은}(unseen) 언어다. 다만 Glot500-c에는 존재하므로, 우리는 이들의 원천 텍스트를 Glot500 raw corpus에서 가져온다.
+\end{itemize}
+즉 두 그룹 모두 학습 텍스트의 출처는 \textbf{Glot500-c}이며, 언어당 HuggingFace Arrow 데이터셋(\texttt{\{lang\}\_\{script\}}, \texttt{train} split의 \texttt{text} 컬럼)으로 관리한다(전처리: \path{preprocessing/merge_files.py}). Target7은 (i) XLM-R-unseen, (ii) Glot500 corpus 존재, (iii) \texttt{new\_length}$\ge$30{,}000, (iv) downstream 평가 데이터 확보 가능이라는 네 조건으로 선별했다. 평가 데이터의 출처는 각각 공개 벤치마크다: retrieval은 Tatoeba와 Parallel Bible Corpus(PBC), NER은 WikiANN, text classification은 Taxi1500이다(\S5).
+
+\begin{table}[h]\centering\small
+\caption{Target7 언어와 각 언어가 커버하는 평가 task.}
+\begin{tabular}{@{}llllr>{\raggedright\arraybackslash}p{3.6cm}@{}}
+\toprule
+language\_script & full name & family & region & new\_length & Covered tasks \\
+\midrule
+\texttt{dtp\_Latn} & Kadazan Dusun & Austronesian & SE Asia & 48{,}468 & Tatoeba, Bible, Roundtrip, Taxi, Embedding \\
+\texttt{xav\_Latn} & Xavante & Macro-Je & S America & 31{,}765 & Bible, Roundtrip, Taxi \\
+\texttt{bam\_Latn} & Bambara & Mande & W Africa & 32{,}150 & Bible, Roundtrip, Taxi \\
+\texttt{csb\_Latn} & Kashubian & Slavic & Europe & 33{,}743 & Tatoeba, NER, Embedding \\
+\texttt{ile\_Latn} & Interlingue & Constructed & Europe & 40{,}984 & Tatoeba, Embedding \\
+\texttt{lij\_Latn} & Ligurian & Romance & Europe & 42{,}447 & NER \\
+\texttt{fur\_Latn} & Friulian & Romance & Europe & 30{,}052 & NER \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{언어 선택 이유: task 중심 설계}
+언어 선택은 임의가 아니라 ``평가까지 연결 가능한 tail language''라는 기준을 따른다. 대부분의 진짜 저자원 언어는 human-labeled downstream 데이터가 전혀 없어 tokenizer$\to$training$\to$evaluation을 끝까지 연결할 수 없다. 그래서 각 downstream task마다 \emph{평가 가능한 target 언어를 최소 3개씩} 확보하도록 7개를 역으로 골랐다. 표~\ref{tab:taskcov}는 이 task 중심 매핑을 보여준다(피드백 반영). 지역·계통도 SE Asia/S America/W Africa/Europe로 분산했다. 이 선택은 일반성보다 traceability를 우선한 결과다.
+
+\begin{table}[h]\centering\small
+\caption{Task별 평가 대상 target 언어(각 3개)와 평가 규모.}
+\label{tab:taskcov}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Task & target 언어 (3개) & 평가 규모 \\
+\midrule
+Tatoeba retrieval & \texttt{dtp}, \texttt{ile}, \texttt{csb} & 2{,}253 문장쌍 \\
+Bible retrieval & \texttt{dtp}, \texttt{xav}, \texttt{bam} & 23{,}238 문장쌍 \\
+Roundtrip alignment & \texttt{dtp}, \texttt{xav}, \texttt{bam} & 22{,}669 문장군 \\
+NER & \texttt{csb}, \texttt{lij}, \texttt{fur} & 300 문장 (100/lang) \\
+Embedding similarity & \texttt{csb}, \texttt{dtp}, \texttt{ile} & 2{,}100 문장쌍 \\
+\bottomrule
+\end{tabular}
+
+\vspace{2pt}
+{\footnotesize 단위 설명: retrieval의 ``문장쌍''은 English와 target 언어의 병렬 문장(Bible은 같은 verse) 쌍이다. roundtrip의 ``문장군''은 여러 언어를 순환하며 정렬하는 한 세트의 다국어 문장이다. NER은 target 언어 문장 단위(언어당 100)다.}
+\end{table}
+
+\subsection{학습 corpus와 sampling}
+MLM 학습 corpus는 seen replay와 target을 섞어 구성한다. 표~\ref{tab:corpus}는 실제 개수다.
+
+\begin{table}[h]\centering\small
+\caption{학습/평가 데이터 규모(samples).}
+\label{tab:corpus}
+\begin{tabular}{@{}lr@{}}
+\toprule
+항목 & 개수 \\
+\midrule
+source raw sentences & 1{,}025{,}895{,}043 \\
+MLM train --- seen/head & 4{,}147{,}176 \\
+MLM train --- target7 & 335{,}083 \\
+MLM train --- total & 4{,}482{,}259 \\
+\midrule
+평가 --- PPPL & 700 \\
+평가 --- Tatoeba & 2{,}253 \\
+평가 --- Bible & 23{,}238 \\
+평가 --- Roundtrip & 22{,}669 \\
+평가 --- NER & 300 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Temperature sampling ($\alpha=0.3$).} vocab size는 고정인데 head 언어를 그대로 많이 넣으면 subtoken이 high-resource 언어에 편향된다. 이를 막기 위해 각 language-script의 샘플링 확률을 데이터 양 $n_i$에 대해
+\[
+P_i \propto n_i^{\alpha},\qquad \alpha=0.3
+\]
+로 둔다. 예를 들어 head 1{,}000{,}000 문장과 tail 1{,}000 문장이 있으면, $\alpha=1$에서는 비율이 $1000{:}1$이지만 $\alpha=0.3$에서는 $10^{6\cdot0.3}{:}10^{3\cdot0.3}\approx 8{:}1$로 완화된다. 이 down-weighting은 tokenizer 학습뿐 아니라 \emph{실제 MLM 학습 corpus 생성에도 적용}되어, head 독점과 target overfitting을 동시에 피한다.
+
+% =====================================================================
+\section{방법 (Method)}
+
+\subsection{Tokenizer extension}
+tokenizer는 Glot500식 \emph{append-only injection}으로 고정한다. 절차는 다음과 같다.
+\begin{enumerate}\setlength\itemsep{0.1em}
+\item XLM-R의 \texttt{sentencepiece.bpe.model}(250{,}002 vocab)을 source로 복사한다.
+\item 99개 language-script mixed corpus($\alpha=0.3$ sampling)에서 SentencePiece \emph{unigram} auxiliary model을 학습한다(\texttt{byte\_fallback=true}, \texttt{character\_coverage=1.0}).
+\item source SPM에 \emph{없는} piece만 골라 기존 vocab \emph{뒤에} append한다. HuggingFace \texttt{add\_tokens()}가 아니라 SPM protobuf에 직접 붙여 unigram score를 보존한다.
+\end{enumerate}
+결과 vocab은 $250{,}002 \to 366{,}666$(신규 116{,}664)이다. 기존 token id는 보존되지만 \verb|<mask>| 같은 special token id는 이동할 수 있어(250001$\to$366665) 초기화 단계에서 string identity로 remap한다(\S4.3).
+
+\paragraph{Yamaguchi 방식과의 차이.} Yamaguchi식은 소량 target-only text로 auxiliary tokenizer를 학습해 필요한 target token만 붙이는 반면, 본 보고서(Glot500식)는 92개 seen과 7개 target을 합친 mixed corpus로 tokenizer를 학습해 훨씬 많은 piece(116{,}664)를 붙인다. 즉 확장 방법 자체가 (tokenizer 학습 데이터·append 규모에서) 여러 갈래인데, 본 실험은 이 축을 고정하고 초기화만 비교한다.
+
+\subsection{Embedding initialization: 다섯 방법}
+공통 규칙은 세 가지다. (i) source tokenizer에 이미 있는 token은 source row를 그대로 복사한다. (ii) 새로 추가된 116{,}664개 행만 method별로 초기화한다. (iii) \verb|<mask>| 는 id가 이동하므로 string identity로 remap하고, input embedding과 LM head의 weight tying을 유지한다. 감사 수치: source len 250{,}002 · target len 366{,}666 · new rows 116{,}664 · \verb|<mask>| copy diff 0.0 · LM head tied. 다섯 방법의 핵심 로직은 아래와 같다(근거: \path{scripts/build_v5_initialized_checkpoint.py}).
+
+\begin{algorithm}[h]
+\caption{새 vocabulary 행 초기화 (5-way)}
+\begin{pcode}
+\item \kw{입력:} source embedding $E_{\text{src}}\in\mathbb{R}^{250002\times768}$, 새 token 집합 $T_{\text{new}}$ ($116{,}664$개), method $m$
+\item $E \gets [\,E_{\text{src}}\,;\ \mathbf{0}_{116664\times768}\,]$ \cmt{기존 행 복사, 새 행 추가}
+\item \kw{for each} 새 token $t$ (id $j$) \kw{do}
+\item \ind \kw{if} $m{=}\texttt{random}$: $\ E_j \sim \mathcal{N}(0,\,0.02)$ \cmt{(1) 무정보}
+\item \ind \kw{elif} $m{=}\texttt{mean}$: $\ E_j \gets \mathrm{mean}(E_{\text{src}})$ \cmt{(2) 전역 centroid}
+\item \ind \kw{elif} $m{=}\texttt{fvt}$: $\ S \gets \mathrm{SrcTok}(\mathrm{surf}(t));\ E_j \gets \mathrm{mean}(E_{\text{src}}[S])$ \cmt{(3) 표면형}
+\item \ind \kw{elif} $m{=}\texttt{weighted\_fvt}$: $\ w_s \gets |\mathrm{piece}(s)|;\ E_j \gets \big(\textstyle\sum_{s} w_s E_{\text{src}}[s]\big)/\textstyle\sum_{s} w_s$ \cmt{(4) 길이 가중}
+\item \ind \kw{elif} $m{=}\texttt{family\_mean}$: $\ f \gets \mathrm{family}(\mathrm{prov}(t));\ E_j \gets \mathrm{mean}(E_{\text{src}}[\mathrm{SrcTok}(f)])$ \cmt{(5) 계통}
+\item $\texttt{<mask>}$ string identity remap ($250001{\to}366665$); \ LM head $\gets$ tie($E$)
+\item \kw{return} $E$
+\end{pcode}
+\end{algorithm}
+
+\paragraph{각 방법의 직관.}
+\rand\ 는 $\mathcal{N}(0,0.02)$에서 뽑아 의미 정보 없이 무작위 시작점에서 학습한다. \meanm\ 은 기존 lexical embedding의 평균, 즉 pretrained embedding 공간의 ``중앙값'' 근처에서 안정적으로 시작하되 표면형 정보는 쓰지 않는다. \fvt\ 는 새 token을 기존 tokenizer로 분해한 뒤 그 source subtoken embedding 평균을 써서 표면형/부분형 정보를 살린다(예: 새 token \texttt{\_bambara}가 source에서 \texttt{[\_bam][bara]}로 쪼개지면 두 embedding의 평균에서 출발). \wfvt\ 는 이 평균에 표면 길이 가중을 주어 더 긴(구체적) subtoken을 더 반영한다.
+
+\paragraph{Provenance와 family 분류(\famm).} \famm\ 은 표면형 대신 계통 prior를 쓴다. tokenizer 학습 corpus에서 각 새 token이 \emph{어느 language-script 문장에서 주로 등장했는지}(provenance)를 집계하고, 그 language-script를 언어 메타데이터(\path{miscellaneous/languages_stats.csv}의 \texttt{family} 컬럼)로 language family에 매핑한 뒤, 그 family에 속한 head source 언어들의 token embedding 평균을 새 행의 초기값으로 쓴다. 표~\ref{tab:fam}은 Target7이 실제로 어떤 family로 묶이고 어떤 head 언어를 재사용하는지를 보여준다.
+
+\begin{table}[h]\centering\small
+\caption{Target7의 family 분류와 \famm\ 이 참조하는 head source 언어.}
+\label{tab:fam}
+\begin{tabular}{@{}lll@{}}
+\toprule
+target & family & 같은 family의 head source 언어 \\
+\midrule
+\texttt{dtp} & Austronesian & \texttt{ind, msa, jav, tgl, mlg} \\
+\texttt{csb} & Slavic & \texttt{ces, hrv, pol, slk, slv} \\
+\texttt{fur} & Romance & \texttt{cat, fra, ita, por, ron} (그리고 \texttt{lij}) \\
+\texttt{lij} & Romance & \texttt{cat, fra, ita, por, ron} (그리고 \texttt{fur}) \\
+\texttt{ile} & Constructed & \texttt{epo} \\
+\texttt{bam} & Mande & head에 동일 family 없음(대체: macro-family Niger-Congo의 \texttt{xho}) \\
+\texttt{xav} & Macro-Je & head에 동일·근접 family 없음 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+예컨대 \texttt{dtp}(Austronesian) 유래 token은 \texttt{ind/msa/jav/tgl} 등 Austronesian source token의 평균에서 출발한다. 반대로 \texttt{bam}(Mande)와 \texttt{xav}(Macro-Je)는 head에 같은 계통 언어가 없어 계통 prior의 이점이 제한되는데, 이 대조는 결과 해석(\S6--7)과 직접 연결된다. 같은 family 판정 기준은 표현 공간 분석(\S7)에서도 동일하게 쓴다.
+
+\subsection{Continued MLM pretraining}
+확장·초기화된 모델을 \S3.3 corpus 위에서 MLM으로 이어 학습한다. 설정은 표~\ref{tab:mlm}이며, 다섯 방법 모두 동일 exposure로 50K-step까지 학습하고 50K checkpoint 기준으로 보고한다.
+
+\begin{table}[h]\centering\small
+\caption{Continued MLM pretraining 설정.}
+\label{tab:mlm}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Item & Value \\
+\midrule
+base model & \texttt{xlm-roberta-base} \\
+objective & MLM (dynamic masking, mask prob 0.15) \\
+learning rate & $5\mathrm{e}{-}5$ \\
+Adam & betas $(0.9,0.999)$, $\varepsilon=1\mathrm{e}{-}8$ \\
+LR schedule / warmup / weight decay & linear / 0 / 0.0 \\
+max sequence length & 512 \\
+language sampling & $\alpha=0.3$ \\
+checkpoint interval & 1{,}000 steps \\
+convergence budget & 50{,}000 steps (5-way) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{실험: 평가 task와 동작}
+
+다섯 방법은 \emph{초기화만} 다르고 tokenizer·corpus·objective·budget·evaluation runner는 모두 같다. 따라서 점수 차이는 초기화와 그로 인한 training dynamics의 상호작용으로 해석한다. 여기서는 각 downstream task를 왜(선행연구), 어떻게(입력$\to$처리$\to$출력), 그리고 코드 수준으로 정리한다.
+
+\paragraph{공통: 문장 임베딩 추출.} retrieval·similarity는 Glot500 retrieval 방식을 그대로 차용한다.
+\begin{algorithm}[h]
+\caption{문장 임베딩 추출 (Glot500 retrieval 방식)}
+\begin{pcode}
+\item \kw{입력:} 문장 $x$, 모델 $M$
+\item $H \gets M(x)$ \cmt{hidden states 전체}
+\item $h \gets H[\text{layer } 7]$ \cmt{0-index 8번째 layer}
+\item $\text{sent} \gets \text{mean-pool}(h,\ \text{mask}=\text{token}\notin\{\text{CLS},\text{SEP},\text{PAD}\})$
+\item $\text{sent} \gets \text{L2-normalize}(\text{sent})$ \cmt{similarity 분석 시 전역 평균 차감}
+\item \kw{return} $\text{sent}$
+\end{pcode}
+\end{algorithm}
+
+\subsection{Pseudoperplexity (PPPL) --- \dn}
+\textbf{왜.} fine-tuning 없이 모델이 해당 언어 문장을 얼마나 자연스럽게 예측하는지 재는 intrinsic 지표(Salazar et al.\ 2020: PPPL이 좌$\to$우 perplexity보다 언어 acceptability를 잘 반영).
+\textbf{입력.} target7 문장 pool. \textbf{처리/출력.} 각 위치를 하나씩 mask하고 정답 token NLL을 합산·지수화. \textbf{해석.} 낮을수록 좋다.
+\begin{algorithm}[h]
+\caption{Pseudoperplexity (PPPL)}
+\begin{pcode}
+\item \kw{입력:} 문장 token $\text{ids}$, 모델 $M$; \ $\text{nll} \gets 0$
+\item \kw{for} $t = 1$ \kw{to} $|\text{ids}|-2$ \kw{do} \cmt{각 위치를 하나씩 mask}
+\item \ind $\text{masked} \gets \text{ids}$, \ $\text{masked}[t] \gets \texttt{<mask>}$
+\item \ind $\text{nll} \mathrel{+}= -\log\mathrm{softmax}(M(\text{masked})[t])[\,\text{ids}[t]\,]$ \cmt{정답 token NLL}
+\item \kw{return} $\exp(\text{nll} / n_{\text{tokens}})$ \cmt{낮을수록 좋음}
+\end{pcode}
+\end{algorithm}
+
+\subsection{Sentence Retrieval --- Tatoeba / Bible --- \up}
+\textbf{왜.} 두 언어의 같은 의미 문장이 임베딩 공간에서 가까운지, 즉 cross-lingual semantic alignment의 대리 지표(Hu et al.\ 2020, Artetxe \& Schwenk 2019).
+\textbf{입력.} English$\leftrightarrow$target 병렬 문장(Tatoeba, 또는 PBC verse-aligned Bible). \textbf{처리.} 양쪽을 임베딩해 각 English 문장의 cosine 최근접 10개를 검색. \textbf{출력.} 정답 짝이 Top-10 안에 들면 hit, 비율이 Acc10.
+\begin{algorithm}[h]
+\caption{Sentence Retrieval (Top-10 accuracy)}
+\begin{pcode}
+\item \kw{입력:} target 문장 $\{x_i\}$, English 병렬 문장 $\{y_i\}$ ($i$-th 끼리 정답 쌍)
+\item $X \gets \text{L2}(\text{embed}(x))$; \ $Y \gets \text{L2}(\text{embed}(y))$ \cmt{layer-7 mean-pool}
+\item \kw{for each} English $y_i$ \kw{do:} \ $\mathrm{top10}(i) \gets$ cosine 최근접 10개 among $\{X\}$
+\item \kw{return} $\mathrm{Acc10} = \frac{1}{N}\sum_i \mathbb{1}[\,i \in \mathrm{top10}(i)\,]$
+\end{pcode}
+\end{algorithm}
+Bible은 후보 pool이 언어당 $\sim$7--8천 절로 커 매우 어렵다(\S6.4, Appendix~A).
+
+\subsection{NER --- \up}
+\textbf{왜.} English에서 배운 개체명 경계·유형이 다른 언어로 전이되는지(XTREME 표준, WikiANN 데이터). \textbf{처리.} 인코더 위에 token classification head를 얹어 English로 fine-tune 후 target zero-shot. \textbf{출력.} seqeval entity-level F1.
+\begin{algorithm}[h]
+\caption{NER (English fine-tune, target zero-shot)}
+\begin{pcode}
+\item \kw{입력:} checkpoint $\theta$, English WikiANN, target 문장
+\item token classification head를 $\theta$ 위에 부착
+\item \kw{fine-tune} on English: $10$ epoch, LR $2\mathrm{e}{-}5$, batch $8{\times}4$, max\_len $256$
+\item $\text{preds} \gets \arg\max$ head(target 문장) \cmt{zero-shot, 학습 없음}
+\item \kw{return} $\mathrm{F1} = \mathrm{seqeval}(\text{gold},\ \text{preds})$ \cmt{entity-level, B-/I- 경계}
+\end{pcode}
+\end{algorithm}
+라벨은 BIO 체계의 \texttt{O, B-PER, I-PER, B-ORG, I-ORG, B-LOC, I-LOC}(7개)다. 예: ``Barack$_{\text{B-PER}}$ Obama$_{\text{I-PER}}$ visited$_{\text{O}}$ Paris$_{\text{B-LOC}}$''.
+
+\subsection{Roundtrip Alignment --- \up}
+\textbf{왜.} gold 없이 표현 품질을 보는 지표(Dufter et al.\ 2018): 여러 언어를 거쳐 단어 alignment를 돌렸을 때 원래 단어로 돌아오는 비율. \textbf{처리.} 인코더 임베딩으로 인접 언어쌍 word alignment(simalign)를 구하고 cycle을 따라간다. \textbf{출력.} round-trip 복귀율.
+\begin{algorithm}[h]
+\caption{Roundtrip Alignment (simalign)}
+\begin{pcode}
+\item \kw{입력:} checkpoint $\theta$, 언어 cycle (예: src$\to$eng$\to$pivot$\to$src)
+\item 인접 언어쌍마다 임베딩 기반 word alignment(argmax) 계산
+\item \kw{for each} source word $w$ \kw{do:} \ $w' \gets w$ 를 cycle 따라 추적; \ $\text{correct}\mathrel{+}=\mathbb{1}[w'{=}w]$ \cmt{복귀?}
+\item \kw{return} $\text{correct} / n_{\text{words}}$
+\end{pcode}
+\end{algorithm}
+
+\subsection{Text Classification --- Taxi1500 --- \up}
+\textbf{왜.} 영어로 fine-tuning한 분류기가 다른 언어에 zero-shot으로 전이되는지(Ma et al.\ 2023). \textbf{처리.} sequence classification head를 English로 fine-tune 후 평가. \textbf{출력.} macro-F1. \textbf{주의.} target test set이 PBC 저작권으로 로컬에 없어 \emph{English(head)만} 평가된다(방법론이 아니라 데이터 한계).
+\begin{algorithm}[h]
+\caption{Text Classification --- Taxi1500 (zero-shot)}
+\begin{pcode}
+\item \kw{입력:} checkpoint $\theta$, Taxi1500 English (6-class)
+\item sequence classification head($\text{num\_labels}{=}6$)를 $\theta$ 위에 부착
+\item \kw{fine-tune} on English: $30$ epoch, LR $2\mathrm{e}{-}5$, eff.\ batch $16$
+\item $\text{pred} \gets \arg\max$ head(test 문장); \ \kw{return} $\mathrm{macro\text{-}F1}(\text{gold},\ \text{pred})$
+\end{pcode}
+\end{algorithm}
+
+\paragraph{Glot500 recipe와의 일치.} NER LR 2e-5 Adam·English zero-shot, Text effective batch 16은 Glot500 논문과 동일하다. retrieval·roundtrip·PPPL은 학습이 없어 초기화·MLM 차이만이 점수 차이의 원인이다(fine-tune seed 분산 없음).
+
+% =====================================================================
+\section{결과}
+
+\subsection{Tokenizer fertility}
+동일 Target7 문장 3{,}500개(7언어$\times$500)에 대해 확장 tokenizer는 tokens/word를 2.204$\to$1.592로 \textbf{27.75\%} 낮춘다(언어별 \texttt{xav} 34.9\%, \texttt{csb} 33.7\%, \dots, \texttt{ile} 12.4\%). 즉 tail 문장을 더 짧고 안정적인 subword sequence로 표현한다. 단 모든 초기화가 같은 tokenizer를 쓰므로 이후 method 간 차이는 fertility로 설명되지 않는다.
+
+\subsection{50K downstream 비교}
+표~\ref{tab:main}은 가장 좋은 checkpoint(50K)에서 다섯 초기화를 시작점 baseline인 XLM-R-B, XLM-R-L과 비교한 것이다. \textbf{평가 group에 대하여}: Glot500은 500여 언어 전체를 head/tail/all로 나눠 보고하지만, 본 실험은 통제된 ablation을 위해 downstream을 Target7 중심으로 평가했다. 그 결과 PPPL·Tatoeba·Bible·NER·Roundtrip은 모두 \textbf{target(tail)} group에서만 측정되며(따라서 tail과 all이 동일), head 언어에서 측정된 것은 Taxi1500 text classification(English)뿐이다. 즉 대부분 지표가 tail 전용이므로 이 표는 target 성능 비교로 읽어야 한다.
+
+\begin{table}[h]\centering\small
+\caption{50K downstream 비교(target/tail; Text만 head/EN). retrieval/roundtrip/text $\times100$, PPPL raw. 굵게=ablation 최고.}
+\label{tab:main}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Model / Method & PPPL \dn & Tatoeba \up & Bible \up & NER \up & Roundtrip \up & Text(EN) \up \\
+\midrule
+XLM-R-B (시작점) & 98.2 & 20.5 & 0.5 & 45.7 & 2.4 & 59.3 \\
+XLM-R-L (참조) & 63.7 & 12.8 & 0.4 & 53.9 & 2.7 & 72.9 \\
+\midrule
+\rand & 20.2 & 33.4 & 0.8 & 48.2 & 2.7 & 72.6 \\
+\meanm & 23.0 & 33.2 & 0.8 & 49.2 & 2.7 & 68.2 \\
+\fvt & 16.3 & 34.4 & 0.8 & 51.3 & 3.2 & \textbf{77.4} \\
+\wfvt & 13.9 & 35.8 & \textbf{0.9} & 50.6 & \textbf{3.4} & 74.9 \\
+\famm & \textbf{12.3} & \textbf{36.1} & 0.8 & \textbf{55.8} & 3.2 & 74.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+다섯 초기화 모두 시작점 XLM-R-B를 PPPL·Tatoeba·NER에서 크게 능가한다(NER은 48--56으로 XLM-R-B 45.7보다 높음). ablation 안에서는 \famm\ 이 PPPL·Tatoeba·NER 세 target 지표에서 최고이고(NER 55.8), \wfvt\ 는 Roundtrip 최고, \fvt\ 는 Text(head) 최고다. \rand·\meanm\ 은 전 지표 하위이며 \meanm\ 은 loss·PPPL에서 최악이다. Bible은 다섯 방법 모두 floor로 정보가 없다(원인은 부록~A). 요컨대 초기화만 바꿔도 target downstream이 유의하게 달라지며, source subtoken/계통 정보를 재사용하는 FVT 계열이 일관되게 앞선다.
+
+\subsection{초기화에 따른 loss 경향과 수렴}
+그림~\ref{fig:loss}는 다섯 방법의 MLM training loss를 exposure-aligned step으로 그린 것이다. 50K 최종 loss는 \wfvt\ 2.73 $<$ \fvt\ 2.76 $<$ \famm\ 2.91 $<$ \rand\ 3.12 $<$ \meanm\ 3.27이다. 같은 tokenizer·corpus·objective인데도 초기화에 따라 수렴 loss가 뚜렷이 갈린다: FVT 계열이 가장 낮고, \meanm\ 은 \rand\ 보다도 높다. 이는 source subtoken을 재조합하는 prior가 지속적 최적화 이득을 주는 반면, 모든 새 token을 embedding 중심 한 점에 몰아넣는 단순 centroid(\meanm)는 오히려 초기 분리를 방해함을 시사한다.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.82\linewidth]{convergence_5way_loss_curve.png}
+\caption{5-way MLM training loss. x축=exposure-aligned step(1K grid), y축=MLM loss(낮을수록 좋음). FVT 계열 최저·\meanm\ 최악이며 순위가 수렴까지 유지된다. raw loss는 TSV에 보존되며 경계 구간에 plot-only smoothing이 포함될 수 있다.}
+\label{fig:loss}
+\end{figure}
+
+\subsection{Step별 downstream 변화 (crossover)}
+그림~\ref{fig:cross}는 10K$\to$50K 동안 target PPPL과 Tatoeba가 어떻게 변하는지를 다섯 방법에 대해 그린 것이다. plain \fvt\ 는 10K에 이미 최고로 출발하지만 \emph{조기 포화}해 이후 거의 개선되지 않는다. 반면 \wfvt·\famm\ 은 10K에 더 나쁘게 출발하지만 계속 개선되어 30--50K에서 \fvt\ 를 추월한다(교차 지점이 뚜렷하다). \rand·\meanm\ 은 전 구간 하위다. 즉 \textbf{정교한 초기화 prior의 이득은 학습 초반이 아니라 수렴 구간에서 드러난다} --- 짧은 진단만으로 초기화를 평가하면 잘못된 결론에 이를 수 있다. 이 crossover는 loss(그림~\ref{fig:loss})와 방향이 일치한다. 정확한 수치는 표~\ref{tab:traj}에 있다.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.95\linewidth]{crossover.png}
+\caption{10K$\to$50K target 지표 궤적. 왼쪽 PPPL(낮을수록 좋음), 오른쪽 Tatoeba Acc@10(높을수록 좋음). \fvt(초록)는 조기 포화, \wfvt(보라)·\famm(빨강)은 계속 개선되어 \fvt\ 를 추월한다. \rand(회색)·\meanm(파랑)은 하위에 머문다.}
+\label{fig:cross}
+\end{figure}
+
+\begin{table}[h]\centering\small
+\caption{10K$\to$50K 궤적 (tail). PPPL raw, Tatoeba/Roundtrip $\times100$.}
+\label{tab:traj}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Method & PPPL (10/30/50K) & Tatoeba (10/30/50K) & Roundtrip (10/30/50K) \\
+\midrule
+\fvt & 21.2 / 16.5 / 16.3 & 33.9 / 34.3 / 34.4 & 3.02 / 3.24 / 3.22 \\
+\wfvt & 26.9 / 16.1 / 13.9 & 30.4 / 35.4 / 35.8 & 2.85 / 3.33 / 3.38 \\
+\famm & 34.2 / 14.8 / 12.3 & 30.7 / 35.5 / 36.1 & 2.61 / 3.09 / 3.16 \\
+\rand & 28.4 / 20.4 / 20.2 & 33.0 / 33.2 / 33.4 & 2.61 / 2.69 / 2.67 \\
+\meanm & 32.5 / 23.3 / 23.0 & 31.7 / 32.8 / 33.2 & 2.68 / 2.73 / 2.72 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{표현 공간 분석}
+
+\subsection{언어별·계통별 구조 형성}
+문장 표현 공간에서 target 언어들이 언어별·계통별 구조를 형성하는지 본다. Target7이 모두 Latin script이므로 ``같은 문자라서 가까운가''와 ``계통이 가까워서 가까운가''를 분리해야 하며, anisotropy 때문에 raw cosine 대신 centered cosine을 쓴다. 표~\ref{tab:geo}(가장 좋은 checkpoint 50K, \fvt)에서 유사도가 \emph{같은 언어 $>$ 같은 family $>$ 같은 macro-family $>$ 다른 family} 순으로 단조 감소한다. 같은 Latin script만 공유하는 경우($-0.041$)보다 같은 family를 공유하는 경우(tail-head 0.052)가 더 가깝다 --- 즉 script 효과보다 \textbf{family/typology 효과가 더 강한 설명력}을 가지며, 같은 family가 국소 군집을 이룬다.
+
+\begin{table}[h]\centering\small
+\caption{relation bucket별 centered cosine (\fvt, 50K).}
+\label{tab:geo}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Relation & Pairs & centered cosine \\
+\midrule
+tail 같은 언어 & 350 & 0.455 \\
+tail--tail 같은 family & 50 & 0.266 \\
+tail--tail 같은 macro-family & 100 & 0.146 \\
+tail--tail 다른 family & 900 & 0.074 \\
+tail--head 같은 family & 1{,}050 & 0.052 \\
+tail--head 다른 family·같은 Latn & 6{,}100 & $-0.041$ \\
+tail--head 다른 family·다른 script & 1{,}856 & $-0.063$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Step 변화에 따른 clustering}
+그림~\ref{fig:simtrend}는 가장 잘 수렴한 \fvt\ 에서 relation bucket별 centered cosine이 10K$\to$50K로 어떻게 변하는지를 보여준다. family/language geometry는 이미 10K 시점에 대부분 형성되어 이후 거의 변하지 않는다(같은 언어 $0.458\to0.455$, 같은 family $0.274\to0.266$로 평탄). 반면 cross-lingual semantic alignment(같은 의미 src$\leftrightarrow$eng pair)는 소폭 개선 후 포화한다. 즉 \emph{쉬운 축(언어 identity, 지역)은 학습 초반에 먼저 잡히고}, 의미 정렬 같은 어려운 축은 이후 완만히 개선된다.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.62\linewidth]{sim_trend.png}
+\caption{표현 구조의 step별 변화(\fvt). 언어/계통 유사도(실선)는 10K에 이미 형성되어 평탄하고, 의미 정렬(점선, src--eng)은 완만히 개선된다.}
+\label{fig:simtrend}
+\end{figure}
+
+\subsection{38개 언어 2D PCA와 step별 변화}
+그림~\ref{fig:map2d}는 38개 언어 subset의 문장 임베딩 평균을 2D PCA로 시각화한 것을 step 10K와 50K로 나란히 보인 것이다(색=language family, 삼각형=tail, 원=head/reference). 두 시점 모두 같은 family가 국소 군집을 이루고(Slavic \texttt{csb}와 \texttt{ces/pol} 계열, Romance \texttt{fur/lij}와 \texttt{ita/fra} 계열, Austronesian \texttt{dtp}와 \texttt{ind/msa} 계열), \texttt{dtp}·\texttt{bam}·\texttt{xav}는 주변 head가 적어 비교적 뚜렷이 분리된다. step이 진행돼도 이 군집 구조는 크게 바뀌지 않는데, 이는 \S7.2에서 관찰한 ``계통 구조는 조기에 형성되어 이후 평탄''과 일치한다. 30K 및 초기화 방법별 전체 step map은 부록~B의 그림~\ref{fig:strips}에 둔다. 각 tail centroid가 자기 계통 head 방향에 자리하는 것은 Glot500의 related-language help와 부합한다. sentence-level은 완전한 분리가 아니며 2D projection 왜곡이 있어 보조 근거로 본다.
+
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth]{map2d_steps.png}
+\caption{문장 임베딩 2D map의 step별 변화(\fvt; 왼쪽=10K, 오른쪽=50K). 색=language family, 삼각형=tail(Target7), 원=head/reference. 계통 군집 구조가 조기에 형성되어 step에 걸쳐 안정적으로 유지된다.}
+\label{fig:map2d}
+\end{figure}
+
+\subsection{종합: 가장 이상적인 초기화}
+\rand·\meanm\ 은 모든 축에서 하위이고 개선은 전부 FVT 계열에서 나온다. \famm\ 이 target downstream 최강(PPPL·Tatoeba·NER 최고)이나 전체 corpus loss는 3위로 target에 특화된다. \wfvt\ 가 가장 균형(loss·Roundtrip 최고, 나머지 상위권)이다. plain \fvt\ 는 ``빠른 출발, 조기 포화'' 프로파일이다. 결론적으로 target 성능이 목표면 \famm, 전반적 균형이 목표면 \wfvt\ 가 최선이다.
+
+% =====================================================================
+\section{결론 및 한계}
+
+\paragraph{결론.} \texttt{xlm-roberta-base}에 Glot500식 vocabulary extension을 적용하고 새 embedding row 초기화를 다섯 방법으로 50K-step까지 통제 비교했다. (1) 확장 tokenizer는 Target7 fragmentation을 27.75\% 줄였다. (2) 같은 tokenizer·corpus에서도 초기화에 따라 50K 수렴 loss가 갈렸고 FVT 계열이 최저, \meanm\ 이 \rand\ 보다도 높았다. (3) 50K downstream에서 우리가 추가한 \wfvt·\famm\ 이 target PPPL·Tatoeba·NER·Roundtrip에서 최고였고, 학습 초반 앞서던 plain FVT를 수렴 구간에서 추월했다. (4) 문장 표현 공간에서는 script보다 family 구조가 강하게 나타났고 그 구조는 학습 초반에 먼저 형성되었다. 요컨대 embedding initialization은 저자원 vocabulary adaptation에서 수렴과 downstream을 실제로 바꾸며, source subtoken/계통 정보를 재사용하는 FVT 계열(특히 target이면 \famm, 균형이면 \wfvt)이 지속적으로 유리하다.
+
+\paragraph{한계.} 계산 비용이 큰 일부 sequence-labeling(POS) 평가는 5-way 완주하지 못해 제외했다(compute 제약, future work). task별 target coverage가 다르고(NER 100문장 subset, Bible floor, Text head/EN-only), 50K는 완전 수렴이 아니라 절대 성능은 full Glot500에 미달한다. \wfvt·\famm\ 은 local variant이며 단일 run이라 seed 분산은 충분히 평가되지 않았다. family similarity 분석은 전체 99개가 아니라 38개 language subset에 대한 것이다.
+
+% =====================================================================
+\begin{thebibliography}{99}
+\small
+\bibitem{glot500} Imani, A. et al. (2023). Glot500: Scaling Multilingual Corpora and Language Models to 500 Languages. \textit{ACL}.
+\bibitem{xlmr} Conneau, A. et al. (2020). Unsupervised Cross-lingual Representation Learning at Scale (XLM-R). \textit{ACL}.
+\bibitem{spm} Kudo, T., Richardson, J. (2018). SentencePiece: A simple and language independent subword tokenizer. \textit{EMNLP (demo)}.
+\bibitem{unigram} Kudo, T. (2018). Subword Regularization: Unigram Language Model. \textit{ACL}.
+\bibitem{bpe} Sennrich, R. et al. (2016). Neural Machine Translation of Rare Words with Subword Units (BPE). \textit{ACL}.
+\bibitem{fvt} Gee, L. et al. (2022). Fast Vocabulary Transfer for Language Model Compression. \textit{EMNLP (industry)}.
+\bibitem{wechsel} Minixhofer, B. et al. (2022). WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer. \textit{NAACL}.
+\bibitem{focus} Dobler, K., de Melo, G. (2023). FOCUS: Effective Embedding Initialization for Specializing Pretrained Multilingual Models. \textit{EMNLP}.
+\bibitem{hewitt} Hewitt, J. (2021). Initializing New Word Embeddings for Pretrained Language Models. \textit{Technical note}.
+\bibitem{yamaguchi} Yamaguchi, A. et al. (2025). How Can We Effectively Expand the Vocabulary of LLMs with 0.01GB of Target Language Text?
+\bibitem{xtreme} Hu, J. et al. (2020). XTREME: A Massively Multilingual Multi-task Benchmark. \textit{ICML}.
+\bibitem{wikiann} Pan, X. et al. (2017). Cross-lingual Name Tagging and Linking for 282 Languages (WikiANN). \textit{ACL}.
+\bibitem{taxi1500} Ma, C. et al. (2023). Taxi1500: A Multilingual Dataset for Text Classification in 1500 Languages.
+\bibitem{tatoeba} Artetxe, M., Schwenk, H. (2019). Massively Multilingual Sentence Embeddings (Tatoeba). \textit{TACL}.
+\bibitem{pppl} Salazar, J. et al. (2020). Masked Language Model Scoring. \textit{ACL}.
+\bibitem{roundtrip} Dufter, P. et al. (2018). Embedding Learning Through Multilingual Concept Induction (roundtrip). \textit{ACL}.
+\bibitem{bert} Devlin, J. et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers. \textit{NAACL}.
+\end{thebibliography}
+
+% =====================================================================
+\appendix
+
+% =====================================================================
+\section{부록 A: 보조 자료}
+
+\subsection{Bible retrieval floor}
+Bible이 다섯 방법 모두 $\sim$0.8(Acc10 $\times$100)로 붙는 것은 초기화 문제가 아니라 task 난이도 때문이다. (1) English verse 하나당 언어당 $\sim$7--8천 절 중 정답을 찾아야 해 우연 상한이 매우 낮고, (2) 절이 짧고 균질(같은 성경 구조)해 문장 벡터가 서로 매우 비슷하며, (3) 50K budget으로는 verse 수준 정밀 정렬에 도달하지 못한다. 표~\ref{tab:bible}에서 보듯 step이 지나도, 방법이 달라도 모두 floor에 머문다.
+
+\begin{table}[h]\centering\small
+\caption{Bible retrieval Acc10 ($\times100$)의 step별 값. 모든 방법이 floor.}
+\label{tab:bible}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Method & 10K & 20K & 30K & 40K & 50K \\
+\midrule
+\rand & 0.76 & 0.79 & 0.78 & 0.79 & 0.79 \\
+\meanm & 0.78 & 0.78 & 0.76 & 0.77 & 0.78 \\
+\fvt & 0.78 & 0.83 & 0.83 & 0.83 & 0.84 \\
+\wfvt & 0.73 & 0.86 & 0.90 & 0.83 & 0.89 \\
+\famm & 0.62 & 0.70 & 0.73 & 0.71 & 0.75 \\
+\midrule
+XLM-R-B (참조) & \multicolumn{5}{c}{0.5} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Related-language pivot 추가 실험 (제안)}
+Bible의 floor가 ``영어라는 먼 허브''를 pivot으로 쓰기 때문인지 확인하기 위해, pivot을 계통이 가까운 Latin 고자원 언어로 바꿔 재측정한다. Bible은 PBC verse-id 정렬이라 pivot 파일만 바꾸면 되는 저비용 실험이다. 표~\ref{tab:pivot}가 매핑이며, 관련 계통어가 있는 경우와 없는 경우의 대조가 핵심이다. 실행 spec은 \path{docs/exp/v5.2/.../03_retrieval_bible/RELATED_PIVOT_PROMPT.md}.
+
+\begin{table}[h]\centering\small
+\caption{related-language pivot 매핑.}
+\label{tab:pivot}
+\begin{tabular}{@{}llll@{}}
+\toprule
+target & family & 관련 Latin pivot & 기대 \\
+\midrule
+\texttt{dtp} & Austronesian & \texttt{ind} (사촌) & 큰 상승 \\
+\texttt{xav} & Macro-Je & \texttt{por} (접촉어) & 소폭 \\
+\texttt{bam} & Mande & \texttt{fra} (접촉어) & 소폭 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{초기화 감사 수치}
+\begin{table}[h]\centering\small
+\caption{초기화 구현 감사.}
+\label{tab:audit}
+\begin{tabular}{@{}lr@{}}
+\toprule
+항목 & 값 \\
+\midrule
+source tokenizer length & 250{,}002 \\
+target tokenizer length & 366{,}666 \\
+new rows & 116{,}664 \\
+\verb|<mask>| id (source $\to$ target) & 250001 $\to$ 366665 \\
+\verb|<mask>| copy diff & 0.0 \\
+LM head tied & true \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{부록 B: 전체 결과}
+
+\subsection{전체 50K score (head/tail/all)}
+표~\ref{tab:full}은 50K 전 지표를 group별로 정리한 것이다. 본 실험은 target 중심 평가이므로 PPPL·Tatoeba·Bible·NER·Roundtrip은 target(tail)에서만 측정되어 tail과 all이 동일하고 head는 미측정(NA)이며, head가 측정된 것은 text classification(English)뿐이다.
+
+\begin{table}[h]\centering\small
+\caption{전체 50K score (head/tail/all). retrieval/roundtrip/text $\times100$, PPPL raw.}
+\label{tab:full}
+\begin{tabular}{@{}llrrrrrrr@{}}
+\toprule
+Metric & Group & XLM-R-B & XLM-R-L & \rand & \meanm & \fvt & \wfvt & \famm \\
+\midrule
+PPPL \dn & tail\,=\,all & 98.2 & 63.7 & 20.2 & 23.0 & 16.3 & 13.9 & \textbf{12.3} \\
+        & head & NA & NA & NA & NA & NA & NA & NA \\
+\midrule
+Tatoeba \up & tail\,=\,all & 20.5 & 12.8 & 33.4 & 33.2 & 34.4 & 35.8 & \textbf{36.1} \\
+            & head & NA & NA & NA & NA & NA & NA & NA \\
+\midrule
+Bible \up & tail\,=\,all & 0.5 & 0.4 & 0.8 & 0.8 & 0.8 & 0.9 & 0.8 \\
+          & head & NA & NA & NA & NA & NA & NA & NA \\
+\midrule
+NER \up & tail\,=\,all & 45.7 & 53.9 & 48.2 & 49.2 & 51.3 & 50.6 & \textbf{55.8} \\
+        & head & NA & NA & NA & NA & NA & NA & NA \\
+\midrule
+Roundtrip \up & tail\,=\,all & 2.4 & 2.7 & 2.7 & 2.7 & 3.2 & \textbf{3.4} & 3.2 \\
+              & head & NA & NA & NA & NA & NA & NA & NA \\
+\midrule
+Text \up & head & 59.3 & 72.9 & 72.6 & 68.2 & \textbf{77.4} & 74.9 & 74.2 \\
+         & tail & NA & NA & NA & NA & NA & NA & NA \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{초기화 방법별 step별 결과 (전체)}
+아래 다섯 표는 각 초기화 방법의 step별(10K--50K) target 결과를 지표별로 모두 정리한 것이다(전체 원자료 \path{.../11_inference/downstream_head_tail_all.tsv}).
+
+\input{Btables.tex}
+
+\subsection{초기화 방법별 step별 2D embedding map (전체)}
+그림~\ref{fig:strips}는 다섯 초기화 각각에 대해 step 10K/20K/30K/40K/최종(\rand\ 43K, \meanm\ 45K, 나머지 50K)의 문장 임베딩 2D map을 모두 보인 것이다. 색=language family, 삼각형=tail(Target7), 원=head/reference. 모든 방법에서 계통 군집 구조가 조기에 형성되어 step에 걸쳐 안정적으로 유지된다.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{strip_random.png}\\[3pt]
+\includegraphics[width=\linewidth]{strip_mean.png}\\[3pt]
+\includegraphics[width=\linewidth]{strip_fvt.png}\\[3pt]
+\includegraphics[width=\linewidth]{strip_weighted_fvt.png}\\[3pt]
+\includegraphics[width=\linewidth]{strip_family_mean.png}
+\caption{초기화 방법별·step별 2D embedding map 전체. 위에서부터 \rand, \meanm, \fvt, \wfvt, \famm; 각 행은 왼쪽부터 step 10K, 20K, 30K, 40K, 최종.}
+\label{fig:strips}
+\end{figure}
+
+\end{document}

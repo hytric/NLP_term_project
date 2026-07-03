@@ -5,8 +5,7 @@
 ## 반드시 유지할 표현
 
 - "간결하게 쓰되, 모든 주장에는 근거를 붙인다."
-- "50K-step convergence run을 중심으로 보고한다."
-- "Step-4000 result는 early diagnostic이다."
+- "모든 수치는 50K-step convergence 기준이다(Step-4000 진단 미사용)."
 - "같은 tokenizer, corpus, MLM objective, evaluation protocol에서 initialization을 비교한다."
 - "coverage가 없는 group은 NA로 처리한다."
 - "target7은 downstream coverage가 가능한 XLM-R-unseen language-script로 제한했다."
@@ -26,8 +25,8 @@
 - Lower-better metric과 higher-better metric을 구분했는가?
 - Tail/head/all average가 같은 language set에서 계산됐는가?
 - Task별 language count를 같이 썼는가?
-- Method별 checkpoint step이 같은가?
-- 50K final result와 Step-4000 diagnostic이 섞이지 않았는가?
+- Method별 checkpoint step이 같은가(모두 50K 기준)?
+- 미완/미보고 지표는 pending 또는 제외로 명확히 표시했는가?
 
 ## 문장 다듬을 때 확인
 

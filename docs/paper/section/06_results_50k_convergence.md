@@ -1,107 +1,92 @@
-# 06 Results: 50K Convergence Draft
+# 06 Results
 
-## 목적
+결과는 **세 층위**로 제시한다. (§6.1) 전체 경향성 + best-result 요약, (§6.2) head/tail/all 중심 main table, (§6.3) step별 세부 지표 궤적. 모든 수치는 **50K-step 기준**(Step-4000 미사용). 원자료(step별·언어별 full table, 모든 plot)는 **§9 Appendix**에 전부 첨부한다.
 
-50K-step convergence 결과를 중심으로 보고한다. 이 section은 숫자가 들어오면 바로 채울 수 있게 표 구조와 해석 문장을 미리 고정한다.
+---
 
-## 6.1 Tokenizer Fertility
+## 6.1 Overview — 전체 경향성과 best result
 
-### 현재 숫자
+**한 문장 경향.** 같은 tokenizer·corpus에서 초기화만 바꿔도 결과가 갈린다. **FVT 계열(`fvt`/`weighted_fvt`/`family_mean`)이 `random`·`mean`을 사실상 모든 지표에서 앞서고, 우리가 추가한 refinement(`weighted_fvt`·`family_mean`)가 수렴(50K) 시점에 plain `fvt`를 추월**한다. `mean`은 loss·PPPL에서 `random`보다도 나쁘다.
 
-- XLM-R tokenizer target7 tokens/word: 2.204.
-- v5.2 extended tokenizer target7 tokens/word: 1.592.
-- Average reduction: 27.75%.
+**Table 4. Best-result 요약 (50K, 완료 지표).** 지표별 ablation 최고 method·값, `random` 대비, Glot500-m 참조.
 
-### 해석
+| Metric (group) | dir | best init | best | random | Glot500-m |
+| --- | :---: | --- | ---: | ---: | ---: |
+| MLM loss (all) | ↓ | **weighted_fvt** | 2.73 | 3.12 | – |
+| PPPL (tail) | ↓ | **family_mean** | 12.3 | 20.2 | 7.7 |
+| Tatoeba (tail) | ↑ | **family_mean** | 36.1 | 33.4 | 45.7 |
+| Roundtrip (tail) | ↑ | **weighted_fvt** | 3.4 | 2.7 | 5.4 |
+| NER (tail) | ↑ | **family_mean** | **55.8** | 48.2 | 52.6 |
+| Text (head/EN) | ↑ | fvt | 77.4 | 72.6 | 74.3 |
+| Bible (tail) | ↑ | (floor) | ~0.9 | 0.8 | 14.7 |
 
-Tokenizer extension은 target7의 subword fragmentation을 줄였다. 다만 모든 initialization method가 같은 extended tokenizer를 쓰므로, method 간 차이는 tokenizer fertility 때문이 아니라 embedding initialization과 이후 MLM training dynamics에서 온다.
+Bible은 floor(§6.4). 전체 상세는 §9.
 
-### Figure
+**세 줄 요약.**
+1. refinement(weighted_fvt/family_mean)가 **PPPL·Tatoeba·NER·Roundtrip·loss**에서 최고 — 수렴 시점 우위. 특히 **`family_mean`은 NER(55.8)에서 full Glot500-m(52.6)·XLM-R-L(53.9)까지 능가**한다.
+2. `random`/`mean`은 전 지표 하위, `mean`은 loss·PPPL 최악.
+3. Bible은 task 난이도로 floor(초기화 무관)라 비교에서 제외.
 
-- Source: `docs/exp/v5.2/0_tokenizer/03_tokenization_effect/tokenization_effect_change.png`.
-- Caption에서 쓸 말: target7에서 tokenization fertility가 감소했으며, tokenizer는 모든 initialization variant에서 고정되어 있다.
+---
 
-## 6.2 50K Five-Way Main Result
+## 6.2 Main result — head/tail/all
 
-### 채울 표
+### 6.2-a 완료 지표 5-way table (main)
 
-Source schema:
+값 = 50K checkpoint. retrieval/roundtrip/text ×100, PPPL raw. 근거: `11_inference/downstream_head_tail_all.tsv`.
 
-- `docs/exp/v5.2/3_evaluation/09_aggregation/main_head_tail_all.tsv`
+| Model / Method | PPPL ↓ | Tatoeba ↑ | Bible ↑ | NER ↑ | Roundtrip ↑ | Text(EN) ↑ |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| XLM-R-B (ref) | 98.2 | 20.5 | 0.5 | 45.7 | 2.4 | 59.3 |
+| XLM-R-L (ref) | 63.7 | 12.8 | 0.4 | 53.9 | 2.7 | 72.9 |
+| Glot500-m (ref) | 7.7 | 45.7 | 14.7 | 52.6 | 5.4 | 74.3 |
+| random | 20.2 | 33.4 | 0.8 | 48.2 | 2.7 | 72.6 |
+| mean | 23.0 | 33.2 | 0.8 | 49.2 | 2.7 | 68.2 |
+| fvt | 16.3 | 34.4 | 0.8 | 51.3 | 3.2 | **77.4** |
+| **weighted_fvt** | 13.9 | 35.8 | **0.9** | 50.6 | **3.4** | 74.9 |
+| **family_mean** | **12.3** | **36.1** | 0.8 | **55.8** | 3.2 | 74.2 |
 
-Final columns:
+**Group 주의(coverage).** 본 실험 지표는 대부분 **tail(target7)** 전용이다: PPPL·Tatoeba·Bible·Roundtrip·NER = tail. **Text = head(English)만**(PBC 부재). 나머지 지표의 head/all은 미측정(NA)이며 이는 설계상 target-focused 평가이기 때문이다.
 
-| Metric | Group | Score | Random | Mean | FVT | Weighted FVT | Family-aware mean | Best | Coverage |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| PPPL | tail | lower | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| PPPL | head | lower | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| PPPL | all | lower | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| Tatoeba | tail | higher | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| Tatoeba | head | higher | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| Tatoeba | all | higher | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| NER | tail | higher | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| NER | head | higher | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
-| NER | all | higher | TBD | TBD | TBD | TBD | TBD | TBD | n languages |
+**해석.** (1) 다섯 초기화 모두 PPPL·Tatoeba·NER에서 XLM-R-B를 크게 능가(NER 48~56 vs 45.7). (2) **`family_mean`이 PPPL·Tatoeba·NER 세 target 지표 모두 최고**이고, **NER(55.8)에서는 full Glot500-m(52.6)·XLM-R-L(53.9)까지 능가** — 50K 축소 모델이 계통 prior만으로 target 개체명 인식에서 baseline을 넘는다. (3) `weighted_fvt`는 Roundtrip 최고, `fvt`는 Text(head) 최고. (4) `random`/`mean`은 전 지표 하위. retrieval/PPPL 절대값이 Glot500-m에 못 미치는 것은 축소 budget(50K vs 480K) 때문이며 관심사는 **초기화 비교**다.
 
-### 결과 해석 템플릿
+---
 
-50K-step final checkpoint에서 `[METHOD]`는 `[METRIC/GROUP]`에서 가장 좋은 score를 보였다. 이 결과는 early Step-4000 diagnostic의 `[consistent/inconsistent]`한 연장선이다. 다만 `[TASK]`에서는 `[OTHER METHOD]`가 더 높으므로, initialization effect는 task family와 language group에 따라 다르게 나타난다.
+## 6.3 Step별 세부 지표 궤적 (경향성)
 
-## 6.3 Convergence Loss Plot
+### 6.3-a MLM loss 수렴 (main figure)
 
-### Figure
+Figure: `Plot/loss/convergence_5way_loss_curve.png`. x=exposure-aligned step(1K grid), y=MLM loss(↓), line=method(색 규약 §plot_table_plan). **50K 최종 loss:** weighted_fvt 2.73 < fvt 2.76 < family_mean 2.91 < random 3.12 < mean 3.27. FVT 계열 최저, mean 최악. 상세 도식 규칙·smoothing disclosure는 §9 A.4.
 
-- Source PNG: `docs/exp/v5.2/2_training/convergence_5way_loss_curve.png`.
-- Source TSV: `docs/exp/v5.2/2_training/convergence_5way_loss_curve.tsv`.
-- Script: `scripts/plot_v52_convergence_loss.py`.
+### 6.3-b 10K→50K downstream 궤적 (crossover)
 
-### 제목 설명
+**Table 5. PPPL·Tatoeba·Roundtrip 궤적(tail).** 전체 step표(Bible·Text·NER 포함)는 §9 A.2.
 
-Title: `v5.2 MLM Loss Trajectory: Prior Run + Continuation`
+| Method | PPPL 10K→50K | Tatoeba 10K→50K | Roundtrip 10K→50K |
+| --- | ---: | ---: | ---: |
+| fvt | 21.2 → 16.3 | 33.9 → 34.4 | 3.02 → 3.22 |
+| weighted_fvt | 26.9 → 13.9 | 30.4 → 35.8 | 2.85 → 3.38 |
+| family_mean | 34.2 → 12.3 | 30.7 → 36.1 | 2.61 → 3.16 |
+| random | 28.4 → 20.2 | 33.0 → 33.4 | 2.61 → 2.67 |
+| mean | 32.5 → 23.0 | 31.7 → 33.2 | 2.68 → 2.72 |
 
-이 제목은 figure가 단일 fresh run만 보여주는 것이 아니라 prior diagnostic run과 continuation segment를 연결한 그림임을 밝힌다. 제목에서 continuation 구조를 숨기면 독자가 x축 step을 단순 raw local step으로 오해할 수 있다.
+**경향성(핵심 novelty).** plain `fvt`는 10K에 이미 최고로 출발하나 **조기 포화**(이후 거의 정체). `weighted_fvt`·`family_mean`은 10K에 더 나쁘게 출발하지만 **계속 개선되어 30~50K에서 fvt를 추월**한다. `random`·`mean`은 전 구간 하위. → "정교한 초기화 prior의 이득은 학습 초반이 아니라 **수렴 구간**에 드러난다." 이 crossover는 §6.3-a loss와 방향 일치. Figure(권장, TO-GEN): PPPL·Tatoeba crossover line plot(§9 A.4).
 
-### X-axis 설명
+---
 
-X-axis: `Weighted-FVT-aligned training step (1K grid)`
+## 6.4 Task별 주의점 (요약)
 
-prior phase와 continuation phase의 effective batch accounting이 다르므로 raw step을 그대로 비교하지 않는다. Plot script는 exposure를 batch-36-equivalent step으로 맞춘 뒤 weighted-FVT 기준 1000-step grid에 snap한다. 따라서 x축은 raw local step이 아니라 exposure-aligned training step이다.
+- **Bible = floor.** 다섯 방법 모두 ~0.8(Glot500-m 14.7)로 붙는다. 원인은 초기화가 아니라 task 난이도(후보 pool ~7–8천 절, 짧고 균질). 초기화 비교엔 무정보. 상세 §9 A.5. → **pivot을 관련 Latin 언어로 바꾸는 추가 실험**(dtp→ind 등)은 별도 spec: `03_retrieval_bible/RELATED_PIVOT_PROMPT.md`.
+- **Text = head/EN-only.** target test(PBC) 부재로 English만. 참고용. epoch 분산 큼.
+- **PPPL 절대 비교는 지시적.** baseline PPPL(98.2/63.7/7.7)은 pool이 다를 수 있음. retrieval/roundtrip은 고정 eval set이라 직접 비교.
 
-### Y-axis 설명
+## 6.5 Tokenizer fertility (요약)
 
-Y-axis: `MLM training loss`
+확장 tokenizer가 Target7 tokens/word를 2.204 → 1.592로 **−27.75%**. 언어별 12.4~34.9%. Figure `0_tokenizer/03_tokenization_effect/tokenization_effect_change.png`(§9 A.4). **경계:** 모든 초기화가 같은 tokenizer를 쓰므로 method 차이는 fertility로 설명되지 않는다.
 
-이 값은 HuggingFace Trainer logging loss이며, convergence diagnosis를 위한 intrinsic signal이다. Downstream score를 직접 의미하지 않으므로 final table과 함께 해석해야 한다.
+## 6.6 Result summary
 
-### Point interval 설명
-
-Point는 1000 aligned steps마다 표시한다. v5.2 convergence queue의 save/log interval이 1000 step이고, PPPL/downstream checkpoint evaluation도 checkpoint 단위로 붙기 때문이다. 더 촘촘한 점을 그리면 실제 saved checkpoint 근거가 없는 중간값처럼 보일 수 있다.
-
-### 왜 50K인가
-
-Step-4000에서는 PPPL 개선이 둔화된 신호가 있었지만 training loss는 계속 감소했으므로 convergence라고 말하기 어렵다. 50K queue는 모든 initialization method를 같은 global exposure 조건에서 충분히 길게 돌려 loss flattening과 downstream trajectory를 확인하기 위한 conservative budget이다. 50K가 반드시 최적 step이라는 뜻은 아니며, final claim을 세우기 위한 충분한 관찰 구간이다.
-
-### Visual elements
-
-- Line: initialization method별 loss trajectory.
-- Circle marker: displayed 1K-grid point.
-- Square marker: final saved model.
-- Color mapping:
-  - `random`: gray.
-  - `mean`: blue.
-  - `FVT`: green.
-  - `weighted_fvt`: purple.
-  - `family_mean`: red.
-
-### Smoothing disclosure
-
-Graph는 prior/continuation boundary 근처를 읽기 쉽게 하기 위한 plot-only smoothing/bridging을 포함할 수 있다. Raw values는 TSV에 보존되며, 보고서에는 `loss`, `display_loss`, `display_loss_source`가 분리되어 있다고 명시한다.
-
-## 6.4 Step-4000 Early Diagnostic
-
-기존 Step-4000 random/mean/FVT table은 early diagnostic으로 유지한다.
-
-### 해석 문장
-
-Step-4000 diagnostic에서 FVT는 PPPL, retrieval/alignment, sequence labeling 계열에서 강한 초기 신호를 보였다. 그러나 이 표는 convergence result가 아니며, weighted FVT와 family-aware mean이 포함되지 않았으므로 final claim에는 50K five-way result를 사용한다.
-
+1. 확장 tokenizer가 fragmentation을 27.75% 줄였다.
+2. 50K 수렴 loss는 FVT 계열 최저·mean 최악 → 초기화가 수렴에 지속 영향.
+3. downstream(PPPL·Tatoeba·NER·Roundtrip)에서 refinement가 최고이며 **plain FVT를 추월**(crossover). **`family_mean`은 NER에서 Glot500-m까지 능가**.
+4. Bible은 floor(task 난이도), Text는 head/EN-only.

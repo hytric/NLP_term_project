@@ -1,119 +1,99 @@
-# Plot and Table Plan for Term Report
+# Plot & Table Framework (per-section)
 
-이 문서는 `docs/paper/tex/main.tex`에 넣을 표/그림과 claim boundary를 따로 정리한 것이다.
+각 섹션(§00–§09) 위치별로 **어떤 표/그림이 들어가고, source·구성·caption·해석·claim 경계**가 무엇인지 정리한 틀이다. 모든 수치는 50K 기준(Step-4000 미사용). 표기: `[T]`=table, `[F]`=figure, `TO-GEN`=아직 생성 필요.
 
-## Feedback 반영 체크
+## 도식 규칙 (모든 figure 공통)
 
-| Feedback | 반영 위치 | 상태 |
-| --- | --- | --- |
-| 제목을 XLM 기반으로 변경 | `tex/main.tex` title | 반영 |
-| initialization 방법론 비교 및 수렴 정도 비교 | `sections/04_method.tex`, `sections/06_results.tex`, `convergence_5way_loss_curve.png` | 초안 반영 |
-| downstream task 정당성 확보 | `sections/03_data.tex`, `tables/table_task_coverage.tex` | 반영 |
-| 언어 선택 이유 명시 | `sections/03_data.tex`, `tables/table_target7.tex` | 반영 |
-| task별 3개 언어 table | `tables/table_task_coverage.tex` | 반영 |
-| training sampling strategy 확인 | `sections/03_data.tex`, `preprocessing/merge_files.py` 근거 | 반영 |
-| embedding initialization 2개 추가 | `tables/table_initialization_methods.tex`에 weighted FVT, family-aware mean 포함 | 반영, numeric main table은 50K five-way |
-| head/tail/all 최종 table | `tables/table_head_tail_all_draft.tex` | draft grid 작성, 최종값 갱신 필요 |
-| 4K-step 이하 PPPL 감소 추세 | `tables/table_pppl_trajectory.tex` | 반영 |
-| 실제 loss graph 추가 | `sections/06_results.tex`, `convergence_5way_loss_curve.png` | 반영 |
-| sentence representation space 설명 | `sections/07_analysis.tex` | 반영 |
-| step별 clustering 변화 plot | `figure_rationale.md`에 설명 기준 작성, plot artifact 확정 후 본문 삽입 | 대기 |
-| 38개 언어 subset 2D PCA 유지 | `sections/07_analysis.tex`, family map figure | 반영 |
+caption/본문은 최소한 다음에 답한다: (1) 무슨 실험 단계·비교 대상인가 (2) x축 단위(raw/exposure-aligned step, language, relation bucket) (3) y축 metric과 방향(↓/↑) (4) point/marker/color/box 의미 (5) 왜 이 step range인가 (6) 무엇을 주장하면 안 되는가(diagnostic vs final, coverage 한계).
 
-## Tables
+색 규약(로스·궤적 공통, `scripts/plot_v52_convergence_loss.py`): random `#6f6f6f` · mean `#1f77b4` · fvt `#2ca02c` · weighted_fvt `#9467bd` · family_mean `#d62728`.
 
-| Table | Source | Current file |
-| --- | --- | --- |
-| Glot500 original head/tail/all baseline | `docs/survey/2305.12182v2.pdf`, Table 4 | `tex/tables/table_glot500_reference.tex` |
-| Target7 selection | `docs/exp/v5.2/0_tokenizer/miscellaneous/glot5007_selected_manifest.tsv` | `tex/tables/table_target7.tex` |
-| Task coverage / target language justification | `docs/exp/v5.2/1_data_scope/low_resource_task_fill_candidates_ko.md` | `tex/tables/table_task_coverage.tex` |
-| Initialization methods | `scripts/build_v5_initialized_checkpoint.py` | `tex/tables/table_initialization_methods.tex` |
-| Step-4000 random/mean/FVT early diagnostic | `docs/exp/v5.2/3_evaluation/v52_final_downstream_table.tsv` | `tex/tables/table_ablation_results.tex` |
-| PPPL trajectory | `docs/exp/v5.2/3_evaluation/v52_checkpoint_score_table.tsv` | `tex/tables/table_pppl_trajectory.tex` |
-| Final 50K five-way head/tail/all grid | `docs/exp/v5.2/3_evaluation/09_aggregation/main_head_tail_all.tsv` regenerated after 50K evaluation | `tex/tables/table_head_tail_all_draft.tex` |
-| Reproducibility map | codebase paths | `tex/tables/table_repro_map.tex` |
+---
 
-## Figures
+## §0 Abstract
+- 표/그림 없음. 3대 관찰(fertility 27.75%↓, 50K loss FVT계열 최저·mean 최악, refinement가 plain FVT 추월)만 텍스트로.
 
-| Figure | Source file | Use |
-| --- | --- | --- |
-| Tokenization fertility reduction | `docs/exp/v5.2/0_tokenizer/03_tokenization_effect/tokenization_effect_change.png` | Shows tokenizer extension reduces target fragmentation |
-| 5-way convergence loss curve | `docs/exp/v5.2/2_training/convergence_5way_loss_curve.png` | Shows training loss by initialization method |
-| Family pair boxplot | `docs/exp/v5.2/3_evaluation/09_family_similarity/family_pair_boxplot_v52_fvt_step4000.png` | Shows relation-type similarity ordering |
-| Family centroid map | `docs/exp/v5.2/3_evaluation/09_family_similarity/family_centroid_map_v52_fvt_step4000.png` | Shows language/family geometry |
-| Novelty summary | `docs/exp/v5.2/4_reporting/v52_novelty_summary.png` | Optional summary figure for final version |
+## §1 Introduction
+- `[F1] TO-GEN (optional)` **초기화 5방법 스펙트럼 도식**: 한 줄 위에 random→mean→FVT→weighted_FVT→family_mean을 "정보량↑" 축으로 배치. 개념 그림(손/matplotlib). 목적: 비교 축을 한눈에. 주장금지: 성능순서 아님(정보량/가정 순서일 뿐).
 
-## Figure Explanation Standard
+## §2 Related Work
+- `[T2-1]` **Glot500 Table 3 참조**: task | head | tail | measure (Tatoeba 70/28/Top10, Bible 94/275/Top10, Text 90/264/F1, NER 89/75/F1, POS 63/28/F1, Roundtrip 85/288/Acc). Source: `docs/survey/2305.12182v2.pdf` Table 3. 용도: 우리 프로토콜이 Glot500과 동일함을 명시.
+- `[T2-2]` **평가 프로토콜·레퍼런스 매핑**: task | dataset | fine-tune 여부 | metric | 인용. (§2.5 본문 표로 대체 가능.)
 
-각 plot은 본문 또는 caption에서 최소한 아래 질문에 답해야 한다.
+## §3 Data and Scope
+- `[T1] Target7` (핵심): language_script | full name | family | region | new_length | Covered tasks. Source: `0_tokenizer/miscellaneous/glot5007_selected_manifest.tsv`. Caption: "XLM-R-unseen tail 7개, 모두 Latn". 주장금지: script diversity 대표 아님.
+- `[T2] Task coverage` (피드백 핵심): task | target 3언어 | 평가 규모 | 해석. Source: `1_data_scope/low_resource_task_fill_candidates.tsv`. 용도: "왜 이 언어, task별 3개" 정당화.
+- `[T3] Corpus/sampling stats` (inline): source raw / MLM train total / seen / target7 / α=0.3 / scale. Source: `0_tokenizer/merge/*.report.json`, `v52_ppt_current_table.md`.
 
-| Question | Required answer |
-| --- | --- |
-| Why this title? | 제목이 어떤 실험 단계와 비교 대상을 가리키는지 설명한다. |
-| Why this x-axis? | x축 단위가 raw step, aligned step, epoch, language, metric 중 무엇이며 왜 선택했는지 설명한다. |
-| Why this y-axis? | y축 metric이 무엇을 측정하고, 낮을수록/높을수록 좋은지 설명한다. |
-| Why these points? | checkpoint/save/eval 간격, sampling 간격, smoothing 여부를 설명한다. |
-| Why this time/step range? | 4K, 8K, 20K, 50K 등 cutoff가 실험 판단에서 어떤 의미인지 설명한다. |
-| What does each visual element mean? | color, marker, line, error bar, boxplot bucket, highlighted language를 설명한다. |
-| What should not be claimed? | diagnostic plot인지 final metric인지, coverage limitation이 있는지 명시한다. |
+## §4 Method
+- `[T4] 초기화 5방법 정의`: Method | 정의 | 직관/위치(hypothesis). Source: `scripts/build_v5_initialized_checkpoint.py`. (현재 §4.2 Table 3.)
+- `[T5] Tokenizer 설정`: setting | value | 이유 (unigram/byte_fallback/char_coverage/input_sentence_size).
+- `[T6] MLM hyperparameters`: base/objective/LR/Adam/schedule/wd/maxlen/α/batch/checkpoint/budget (§4.3). ⚠ effective batch 소스 충돌(96/384/36) 주석 유지.
+- `[F2] TO-GEN (optional)` **FVT decomposition 개념도**: 새 token "＿bambara" → source XLM-R로 [▁bam][bara] 분해 → 두 subtoken embedding 평균 = 새 row 초기값. 목적: FVT 직관 시각화.
 
-## Detailed Example: `convergence_5way_loss_curve.png`
+## §5 Experiment Protocol
+- `[T7] 평가항목 요약`: 평가 항목 | 무엇을 평가 | 해석(↓/↑) (7 tasks). (현재 §5.4 개요 표.)
+- `[T8] Downstream fine-tuning/eval 하이퍼파라미터` (핵심): task | fine-tune | epochs | LR | batch(eff) | max len | optimizer/schedule | metric. (현재 §5.6.) 주석: Glot500 recipe 일치(LR 2e-5, Text batch 16).
+- `[F3] TO-GEN (강추)` **Zero-shot transfer 흐름도**: English 문장→공유 tokenizer→공유 encoder→[task head 학습]  ‖  tail 문장→같은 encoder→같은 head(고정)→예측. 목적: "English와 tail이 공유 표현으로 연결"을 시각화(질문 대응). 주장금지: head가 번역하는 것 아님.
 
-**Title:** `v5.2 MLM Loss Trajectory: Prior Run + Continuation`
+## §6 Results
 
-- 제목에 `Prior Run + Continuation`을 넣는 이유는 이 그림이 하나의 fresh run만 그린 것이 아니기 때문이다.
-- `random`, `mean`, `fvt`는 이전 8h run checkpoint에서 이어붙인 continuation segment가 있고, plot script는 prior run의 `trainer_state.json` loss log를 읽어 continuation과 같은 grid에 맞춘다.
-- 따라서 제목에서 continuation 구조를 숨기면 독자가 step을 단순 raw local step으로 오해할 수 있다.
+### 6.1 Tokenizer fertility
+- `[F4] 언어별 fertility 감소 bar`. Source: `0_tokenizer/03_tokenization_effect/tokenization_effect_change.png`. x=7 target 언어, y=tokens/word(XLM-R vs v5.2) 또는 reduction%. Caption: 평균 2.204→1.592(−27.75%). 주장금지: fertility가 method 차이를 설명하지 않음(tokenizer 공유).
+- `[T9] fertility 표`: scope/언어 | XLM-R tok/word | v5.2 tok/word | reduction%.
 
-**X-axis:** `Weighted-FVT-aligned training step (1k grid)`
+### 6.2 50K convergence loss (main figure)
+- `[F5] 5-way loss curve` (핵심). Source: `Plot/loss/convergence_5way_loss_curve.png` (raw `.tsv`). x=exposure-aligned step(1K grid), y=MLM training loss(↓). line=method, ○=1K point, ■=final. 상세 caption은 아래 "F5 상세" 참조.
+- `[T10] 50K 최종 loss 순위`: method | 최종 loss | 순위 (weighted_fvt 2.73 … mean 3.27).
 
-- prior phase와 continuation phase의 effective batch accounting이 다르다.
-- plot script는 `exposure_aligned_step`으로 effective examples를 batch-36-equivalent step으로 바꾼다.
-- 그 다음 `display_step`을 weighted-FVT 기준 1000-step grid에 snap한다.
-- 그래서 x축은 raw local step이 아니라 exposure-aligned step이다.
+### 6.3 50K five-way downstream (main table)
+- `[T11] 50K downstream 비교` (가장 중요): model/method(baseline 3 + init 5) × {PPPL↓, Tatoeba↑, Bible↑, Roundtrip↑, Text(EN)↑}. 열별 best 굵게. Source: `11_inference/downstream_head_tail_all.tsv`. 주석: Text head/EN-only, Bible floor, PPPL baseline pool 주의.
+- `[T12] NER`: 5-way 50K 완료(family_mean 55.8 최고, Glot500-m 능가) + baseline. POS는 미보고.
+- `[F6] TO-GEN (optional)` **downstream bar (method×metric)**: PPPL/Tatoeba/Roundtrip를 method별 그룹 bar로. baseline은 점선 reference. 목적: 표를 시각화.
 
-**Y-axis:** `MLM training loss`
+### 6.4 10K→50K 궤적 (crossover, 핵심 novelty)
+- `[T13] 궤적 표`: method × {PPPL 10/30/50K, Tatoeba 10/30/50K}. (현재 Table 6.)
+- `[F7] TO-GEN (강추)` **궤적 line plot**: 좌 y=PPPL(↓)·우 y=Tatoeba(↑), x=step 10K–50K, 5 line(색 규약). 강조: fvt 조기 포화 vs weighted_fvt/family_mean 지속 개선·추월(crossover 지점 표시). Source data: `downstream_head_tail_all.tsv`(step별). 목적: "정교한 prior 이득은 수렴 구간에 드러남"을 한 장으로.
 
-- y값은 HuggingFace Trainer가 logging한 MLM training loss다.
-- 이 값은 수렴성 판단을 위한 intrinsic signal이다.
-- downstream 성능을 직접 의미하지 않으므로 final claim에서는 PPPL/downstream table과 함께 해석해야 한다.
+## §7 Representation Analysis
+- `[T14] relation bucket similarity (50K)`: relation type | pairs | mean centered cosine(단조감소). Source: `11_inference/similarity_maps/similarity_10k50k_summary.tsv`(fvt step50000).
+- `[F8] family pair boxplot`. Source: `10_convergence_similarity/fvt/checkpoint-50000/family_similarity/family_pair_boxplot_*.png`(없으면 09_family_similarity step4000). x=relation bucket, y=centered cosine. 주장금지: raw cosine 아님(anisotropy).
+- `[F9] family centroid heatmap`. Source: 같은 폴더 `family_centroid_heatmap_*.png`. 언어 centroid 간 유사도 matrix.
+- `[F10] 2D embedding map` (피드백 유지): Source: `10_convergence_similarity/fvt/checkpoint-50000/embedding_similarity/embedding_map_2d.png` 또는 `family_point_map_*`. ▲=tail, ●=head, 색=family. 해석: 계통 clustering·잘분리 tail(dtp/bam/xav)·겹침 tail(csb/fur/ile/lij). 주장금지: 완전 분리 아님, 2D distortion.
+- `[F11] TO-GEN (optional)` **step별 similarity 궤적**: x=10K–50K, y=centered cosine, line=relation bucket(within-lang/same-family/…) + aligned-pair. 강조: family 구조 조기형성·평탄, aligned(src-eng)만 40K까지 소폭↑. 목적: §7.3 정직한 관찰 시각화.
+- `[T15] best-model 종합`: 관점(MLM loss/target PPPL/Tatoeba/Roundtrip/NER) | 최고 method | 2위. (현재 §7.5.)
 
-**Why 1000-step points?**
+## §8 Discussion/Limitations/Conclusion
+- 표/그림 없음.
 
-- v5.2 convergence queue의 save/log interval이 1000 step이다.
-- downstream과 PPPL checkpoint evaluation도 checkpoint 단위로 붙기 때문에 1000-step grid가 가장 추적 가능하다.
-- 더 촘촘한 점을 그리면 logging noise가 늘고, 실제 saved checkpoint/evaluation 근거가 없는 중간값처럼 보일 수 있다.
+## §9 Appendix
+- `[TA1] Initialization audit`: source/target len, new rows, mask remap, lm-head tied.
+- `[TA2] Artifact/code map`: pipeline·result 경로.
+- `[TA3] 언어별 breakdown`: Tatoeba/NER/Roundtrip per-language. Source: `11_inference/downstream_language_scores.tsv`, `v52_final_downstream_language_breakdown.tsv`.
+- `[TA4] 완성 5-way downstream`: NER 포함 최종본(POS 제외).
 
-**Why 50K?**
+---
 
-- 4000-step table은 early diagnostic으로만 쓴다. `docs/exp/v5.2/4_reporting/convergence_recommendation_ko.md`는 4000 step에서 PPPL 개선이 둔화됐지만 training loss는 계속 내려가므로 convergence로 볼 수 없다고 적는다.
-- 8K/12K도 loss가 계속 내려가면 final performance claim을 유보해야 한다.
-- 그래서 50K queue는 모든 initialization method를 같은 global batch 36 조건에서 충분히 길게 돌려 flattening 여부를 확인하기 위한 conservative upper bound다.
-- 50K가 “반드시 필요한 step”이라는 뜻은 아니고, loss-drop summary가 안정적으로 plateau를 보이면 final report는 그 이전 checkpoint를 선택할 수 있다.
+## F5 상세 (5-way loss curve)
+- **Title** `v5.2 MLM Loss Trajectory: Prior Run + Continuation` — 단일 fresh run이 아니라 prior 8h run + continuation을 이어붙였음을 명시.
+- **X** `Exposure-aligned training step (1K grid)` — prior/continuation의 effective batch 회계가 달라 raw step 아님; exposure를 batch-equivalent step으로 맞춰 1K grid에 snap.
+- **Y** `MLM training loss` (↓) — HF Trainer logging loss, intrinsic 신호. downstream을 직접 의미하지 않으므로 표와 함께 해석.
+- **Points** 1K 간격 = save/log/eval granularity. 더 촘촘하면 근거 없는 중간값처럼 보임.
+- **Why 50K** 4K/8K는 loss가 계속 내려가 수렴 단정 불가 → 동일 exposure로 충분히 길게 돌린 conservative budget. 50K가 "필수 step"은 아님.
+- **Elements** line=method, ○=1K point, ■=final saved. 색=색 규약.
+- **Disclosure** raw `loss`는 TSV에 보존; `display_loss`는 prior/continuation 경계 bridge·smoothing 포함 가능 → "plot-only smoothing, raw preserved" 명시.
 
-**Visual elements**
+## 생성 대기(TO-GEN) 요약
+| ID | 그림 | source data | 우선순위 |
+| --- | --- | --- | --- |
+| F7 | 10K–50K PPPL·Tatoeba crossover line | `downstream_head_tail_all.tsv` | 높음(novelty) |
+| F3 | zero-shot transfer 흐름도 | 개념도 | 높음(설명력) |
+| F11 | step별 similarity 궤적 | `similarity_10k50k_summary.tsv` | 중 |
+| F6 | downstream method×metric bar | `downstream_head_tail_all.tsv` | 중 |
+| F1/F2 | init 스펙트럼·FVT 분해 개념도 | 개념도 | 낮음(optional) |
 
-- Line: initialization method별 loss trajectory.
-- Circle marker: displayed 1K-grid point.
-- Square marker: final saved model.
-- Colors from `scripts/plot_v52_convergence_loss.py`:
-  - random `#6f6f6f`
-  - mean `#1f77b4`
-  - fvt `#2ca02c`
-  - weighted_fvt `#9467bd`
-  - family_mean `#d62728`
-
-**Important disclosure**
-
-- 이 plot은 raw loss와 display loss가 구분된다.
-- Raw `loss`는 `docs/exp/v5.2/2_training/convergence_5way_loss_curve.tsv`에 보존된다.
-- `display_loss`는 prior/continuation boundary를 보기 좋게 잇기 위한 plot-only reset bridge, prior bias, random/mean/FVT point 7-12 smoothing을 포함할 수 있다.
-- 보고서에는 반드시 “plot-only smoothing이며 raw values are preserved”라고 적는다.
-
-## Remaining Work Before Final Submission
-
-1. Regenerate the 50K five-way aggregation after all convergence/evaluation jobs are complete.
-2. Fill `head`, `tail`, and `all` final reporting table from the regenerated `main_head_tail_all.tsv` schema.
-3. Keep `random`, `mean`, `fvt`, `weighted_fvt`, and `family_mean` as main rows; move only unsupported diagnostic analyses to the appendix.
-4. Add step-by-step representation trajectory plots if `scripts/plot_v52_embedding_manifold_trajectory.py` outputs are finalized.
-5. Verify PPPL split wording: do not call diagnostic PPPL a Glot500 held-out test unless strict held-out files are used.
+## 최종 제출 전 남은 일
+1. (완료) NER 5-way 50K 반영. POS는 미보고(제외).
+2. `[F7]`(crossover) 생성 — 본 보고서 novelty를 가장 잘 보여주는 그림.
+3. 50K geometry 그림(F8–F10)을 checkpoint-50000 산출물로 교체(없으면 step4000 유지 + 라벨).
+4. PPPL split 문구: diagnostic PPPL을 Glot500 held-out으로 부르지 않기.
