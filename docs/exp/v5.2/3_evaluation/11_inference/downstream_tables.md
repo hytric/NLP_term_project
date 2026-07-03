@@ -37,7 +37,7 @@ Blank cells are not available yet.
 | text_classification | family_mean | macro_f1 | higher_is_better | 0.672124 | 0.785616 | 0.732175 | 0.659542 | 0.742077 |
 | ner | random | f1 | higher_is_better | 0.602750 | 0.603085 | 0.601556 | 0.606080 | 0.609215 |
 | ner | mean | f1 | higher_is_better | 0.606040 | 0.621109 | 0.620389 | 0.614223 | 0.620076 |
-| ner | fvt | f1 | higher_is_better |  | 0.622119 |  |  |  |
+| ner | fvt | f1 | higher_is_better | 0.612335 | 0.622119 |  |  |  |
 | ner | weighted_fvt | f1 | higher_is_better |  |  |  |  |  |
 | ner | family_mean | f1 | higher_is_better |  |  |  |  |  |
 | pos | random | f1 | higher_is_better |  |  |  |  | 0.535491 |
@@ -236,12 +236,12 @@ Blank cells are not available yet.
 | retrieval_bible | fvt | 20000 | head | top10_accuracy | 0.395708 | 74 | complete |
 | retrieval_bible | fvt | 20000 | tail | top10_accuracy | 0.008334 | 3 | complete |
 | retrieval_bible | fvt | 20000 | all | top10_accuracy | 0.380615 | 77 | complete |
-| retrieval_bible | fvt | 30000 | head | top10_accuracy | 0.395043 | 20 | partial |
+| retrieval_bible | fvt | 30000 | head | top10_accuracy | 0.367063 | 26 | partial |
 | retrieval_bible | fvt | 30000 | tail | top10_accuracy | 0.008334 | 3 | complete |
-| retrieval_bible | fvt | 30000 | all | top10_accuracy | 0.344603 | 23 | partial |
-| retrieval_bible | fvt | 40000 | head | top10_accuracy | 0.184141 | 2 | partial |
+| retrieval_bible | fvt | 30000 | all | top10_accuracy | 0.329953 | 29 | partial |
+| retrieval_bible | fvt | 40000 | head | top10_accuracy | 0.352786 | 8 | partial |
 | retrieval_bible | fvt | 40000 | tail | top10_accuracy | 0.008336 | 3 | complete |
-| retrieval_bible | fvt | 40000 | all | top10_accuracy | 0.078658 | 5 | partial |
+| retrieval_bible | fvt | 40000 | all | top10_accuracy | 0.258845 | 11 | partial |
 | retrieval_bible | fvt | 50000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 50000 | tail | top10_accuracy | 0.008378 | 3 | complete |
 | retrieval_bible | fvt | 50000 | all | top10_accuracy | 0.008378 | 3 | partial |
@@ -455,9 +455,9 @@ Blank cells are not available yet.
 | ner | mean | 50000 | head | f1 | 0.624994 | 78 | complete |
 | ner | mean | 50000 | tail | f1 | 0.492219 | 3 | complete |
 | ner | mean | 50000 | all | f1 | 0.620076 | 81 | complete |
-| ner | fvt | 10000 | head | f1 | 0.636441 | 55 | partial |
+| ner | fvt | 10000 | head | f1 | 0.616868 | 78 | complete |
 | ner | fvt | 10000 | tail | f1 | 0.494477 | 3 | complete |
-| ner | fvt | 10000 | all | f1 | 0.629098 | 58 | partial |
+| ner | fvt | 10000 | all | f1 | 0.612335 | 81 | complete |
 | ner | fvt | 20000 | head | f1 | 0.626238 | 78 | complete |
 | ner | fvt | 20000 | tail | f1 | 0.515031 | 3 | complete |
 | ner | fvt | 20000 | all | f1 | 0.622119 | 81 | complete |

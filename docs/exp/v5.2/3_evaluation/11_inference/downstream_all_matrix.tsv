@@ -26,7 +26,7 @@ text_classification	weighted_fvt	macro_f1	higher_is_better	0.711387	0.785554	0.7
 text_classification	family_mean	macro_f1	higher_is_better	0.672124	0.785616	0.732175	0.659542	0.742077
 ner	random	f1	higher_is_better	0.602750	0.603085	0.601556	0.606080	0.609215
 ner	mean	f1	higher_is_better	0.606040	0.621109	0.620389	0.614223	0.620076
-ner	fvt	f1	higher_is_better		0.622119			
+ner	fvt	f1	higher_is_better	0.612335	0.622119			
 ner	weighted_fvt	f1	higher_is_better					
 ner	family_mean	f1	higher_is_better					
 pos	random	f1	higher_is_better					0.535491
