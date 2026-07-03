@@ -236,12 +236,12 @@ Blank cells are not available yet.
 | retrieval_bible | fvt | 20000 | head | top10_accuracy | 0.395708 | 74 | complete |
 | retrieval_bible | fvt | 20000 | tail | top10_accuracy | 0.008334 | 3 | complete |
 | retrieval_bible | fvt | 20000 | all | top10_accuracy | 0.380615 | 77 | complete |
-| retrieval_bible | fvt | 30000 | head | top10_accuracy | 0.367063 | 26 | partial |
+| retrieval_bible | fvt | 30000 | head | top10_accuracy | 0.431694 | 37 | partial |
 | retrieval_bible | fvt | 30000 | tail | top10_accuracy | 0.008334 | 3 | complete |
-| retrieval_bible | fvt | 30000 | all | top10_accuracy | 0.329953 | 29 | partial |
-| retrieval_bible | fvt | 40000 | head | top10_accuracy | 0.352786 | 8 | partial |
+| retrieval_bible | fvt | 30000 | all | top10_accuracy | 0.399942 | 40 | partial |
+| retrieval_bible | fvt | 40000 | head | top10_accuracy | 0.408808 | 18 | partial |
 | retrieval_bible | fvt | 40000 | tail | top10_accuracy | 0.008336 | 3 | complete |
-| retrieval_bible | fvt | 40000 | all | top10_accuracy | 0.258845 | 11 | partial |
+| retrieval_bible | fvt | 40000 | all | top10_accuracy | 0.351598 | 21 | partial |
 | retrieval_bible | fvt | 50000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 50000 | tail | top10_accuracy | 0.008378 | 3 | complete |
 | retrieval_bible | fvt | 50000 | all | top10_accuracy | 0.008378 | 3 | partial |
