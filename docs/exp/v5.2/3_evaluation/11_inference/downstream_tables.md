@@ -15,35 +15,35 @@ Blank cells are not available yet.
 | pppl | fvt | weighted_pseudo_perplexity | lower_is_better | 21.194507 | 16.963286 | 16.534654 | 16.405448 | 16.343673 |
 | pppl | weighted_fvt | weighted_pseudo_perplexity | lower_is_better | 26.857016 | 18.556777 | 16.089238 | 14.657766 | 13.890949 |
 | pppl | family_mean | weighted_pseudo_perplexity | lower_is_better | 34.249757 | 20.404886 | 14.841284 | 12.859935 | 12.262259 |
-| retrieval_tatoeba | random | top10_accuracy | higher_is_better | 0.329781 | 0.327813 | 0.331750 | 0.332083 | 0.333734 |
-| retrieval_tatoeba | mean | top10_accuracy | higher_is_better | 0.317036 | 0.329972 | 0.327655 | 0.329972 | 0.331639 |
-| retrieval_tatoeba | fvt | top10_accuracy | higher_is_better | 0.339148 | 0.344433 | 0.342783 | 0.343449 | 0.344449 |
-| retrieval_tatoeba | weighted_fvt | top10_accuracy | higher_is_better | 0.303972 | 0.348148 | 0.354148 | 0.351100 | 0.357751 |
-| retrieval_tatoeba | family_mean | top10_accuracy | higher_is_better | 0.306988 | 0.328321 | 0.355179 | 0.358116 | 0.360846 |
-| retrieval_bible | random | top10_accuracy | higher_is_better | 0.007583 | 0.007888 | 0.007806 | 0.007888 | 0.007888 |
-| retrieval_bible | mean | top10_accuracy | higher_is_better | 0.007782 | 0.007773 | 0.007641 | 0.007725 | 0.007767 |
-| retrieval_bible | fvt | top10_accuracy | higher_is_better | 0.007821 | 0.008334 | 0.008334 | 0.008336 | 0.008378 |
-| retrieval_bible | weighted_fvt | top10_accuracy | higher_is_better | 0.007310 | 0.008639 | 0.008974 | 0.008297 | 0.008856 |
-| retrieval_bible | family_mean | top10_accuracy | higher_is_better | 0.006221 | 0.006965 | 0.007275 | 0.007138 | 0.007517 |
-| roundtrip_alignment | random | accuracy | higher_is_better | 0.026067 | 0.026600 | 0.026933 | 0.026933 | 0.026667 |
-| roundtrip_alignment | mean | accuracy | higher_is_better | 0.026767 | 0.026800 | 0.027333 | 0.027400 | 0.027200 |
-| roundtrip_alignment | fvt | accuracy | higher_is_better | 0.030200 | 0.032800 | 0.032433 | 0.032000 | 0.032167 |
-| roundtrip_alignment | weighted_fvt | accuracy | higher_is_better | 0.028467 | 0.032433 | 0.033333 | 0.033267 | 0.033833 |
-| roundtrip_alignment | family_mean | accuracy | higher_is_better | 0.026100 | 0.027400 | 0.030900 | 0.032667 | 0.031567 |
+| retrieval_tatoeba | random | top10_accuracy | higher_is_better | 0.700800 | 0.699629 | 0.703266 | 0.702602 | 0.703093 |
+| retrieval_tatoeba | mean | top10_accuracy | higher_is_better | 0.665954 | 0.680983 | 0.682303 | 0.682362 | 0.683620 |
+| retrieval_tatoeba | fvt | top10_accuracy | higher_is_better | 0.692096 | 0.703904 | 0.703688 | 0.704676 | 0.704719 |
+| retrieval_tatoeba | weighted_fvt | top10_accuracy | higher_is_better | 0.664172 | 0.703515 | 0.713360 | 0.718928 | 0.718011 |
+| retrieval_tatoeba | family_mean | top10_accuracy | higher_is_better | 0.664888 | 0.684763 | 0.714476 | 0.715130 | 0.715817 |
+| retrieval_bible | random | top10_accuracy | higher_is_better | 0.339054 | 0.341764 | 0.343583 | 0.342460 | 0.342438 |
+| retrieval_bible | mean | top10_accuracy | higher_is_better | 0.373329 |  |  |  |  |
+| retrieval_bible | fvt | top10_accuracy | higher_is_better |  |  |  |  |  |
+| retrieval_bible | weighted_fvt | top10_accuracy | higher_is_better |  |  |  |  |  |
+| retrieval_bible | family_mean | top10_accuracy | higher_is_better |  |  |  |  |  |
+| roundtrip_alignment | random | accuracy | higher_is_better |  |  |  |  |  |
+| roundtrip_alignment | mean | accuracy | higher_is_better |  |  |  |  |  |
+| roundtrip_alignment | fvt | accuracy | higher_is_better |  |  |  |  |  |
+| roundtrip_alignment | weighted_fvt | accuracy | higher_is_better |  |  |  |  |  |
+| roundtrip_alignment | family_mean | accuracy | higher_is_better |  |  |  |  |  |
 | text_classification | random | macro_f1 | higher_is_better | 0.669056 | 0.683697 | 0.681637 | 0.770660 | 0.725865 |
 | text_classification | mean | macro_f1 | higher_is_better | 0.786852 | 0.682232 | 0.718823 | 0.787870 | 0.682036 |
 | text_classification | fvt | macro_f1 | higher_is_better | 0.723635 | 0.796671 | 0.796598 | 0.797343 | 0.773809 |
 | text_classification | weighted_fvt | macro_f1 | higher_is_better | 0.711387 | 0.785554 | 0.711748 | 0.707101 | 0.749227 |
 | text_classification | family_mean | macro_f1 | higher_is_better | 0.672124 | 0.785616 | 0.732175 | 0.659542 | 0.742077 |
-| ner | random | f1 | higher_is_better | 0.447264 | 0.465865 | 0.464167 | 0.469994 | 0.482479 |
-| ner | mean | f1 | higher_is_better | 0.472720 | 0.488270 | 0.511267 | 0.503437 | 0.492219 |
-| ner | fvt | f1 | higher_is_better | 0.494477 | 0.515031 |  |  | 0.512707 |
-| ner | weighted_fvt | f1 | higher_is_better |  |  |  |  | 0.505807 |
+| ner | random | f1 | higher_is_better | 0.602750 | 0.603085 | 0.601556 | 0.606080 | 0.609215 |
+| ner | mean | f1 | higher_is_better | 0.606040 |  |  |  |  |
+| ner | fvt | f1 | higher_is_better |  |  |  |  |  |
+| ner | weighted_fvt | f1 | higher_is_better |  |  |  |  |  |
 | ner | family_mean | f1 | higher_is_better |  |  |  |  |  |
 | pos | random | f1 | higher_is_better |  |  |  |  | 0.535491 |
-| pos | mean | f1 | higher_is_better |  |  |  |  |  |
+| pos | mean | f1 | higher_is_better |  |  |  |  | 0.542518 |
 | pos | fvt | f1 | higher_is_better |  |  |  |  |  |
-| pos | weighted_fvt | f1 | higher_is_better |  |  |  |  |  |
+| pos | weighted_fvt | f1 | higher_is_better |  |  |  |  | 0.543887 |
 | pos | family_mean | f1 | higher_is_better |  |  |  |  |  |
 
 ## Head/Tail/All
@@ -125,231 +125,231 @@ Blank cells are not available yet.
 | pppl | family_mean | 50000 | head | weighted_pseudo_perplexity |  | 0 | not_applicable |
 | pppl | family_mean | 50000 | tail | weighted_pseudo_perplexity | 12.262259 | 7 | complete |
 | pppl | family_mean | 50000 | all | weighted_pseudo_perplexity | 12.262259 | 7 | complete |
-| retrieval_tatoeba | random | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | random | 10000 | head | top10_accuracy | 0.718467 | 63 | complete |
 | retrieval_tatoeba | random | 10000 | tail | top10_accuracy | 0.329781 | 3 | complete |
-| retrieval_tatoeba | random | 10000 | all | top10_accuracy | 0.329781 | 3 | complete |
-| retrieval_tatoeba | random | 20000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | random | 10000 | all | top10_accuracy | 0.700800 | 66 | complete |
+| retrieval_tatoeba | random | 20000 | head | top10_accuracy | 0.717335 | 63 | complete |
 | retrieval_tatoeba | random | 20000 | tail | top10_accuracy | 0.327813 | 3 | complete |
-| retrieval_tatoeba | random | 20000 | all | top10_accuracy | 0.327813 | 3 | complete |
-| retrieval_tatoeba | random | 30000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | random | 20000 | all | top10_accuracy | 0.699629 | 66 | complete |
+| retrieval_tatoeba | random | 30000 | head | top10_accuracy | 0.720957 | 63 | complete |
 | retrieval_tatoeba | random | 30000 | tail | top10_accuracy | 0.331750 | 3 | complete |
-| retrieval_tatoeba | random | 30000 | all | top10_accuracy | 0.331750 | 3 | complete |
-| retrieval_tatoeba | random | 40000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | random | 30000 | all | top10_accuracy | 0.703266 | 66 | complete |
+| retrieval_tatoeba | random | 40000 | head | top10_accuracy | 0.720246 | 63 | complete |
 | retrieval_tatoeba | random | 40000 | tail | top10_accuracy | 0.332083 | 3 | complete |
-| retrieval_tatoeba | random | 40000 | all | top10_accuracy | 0.332083 | 3 | complete |
-| retrieval_tatoeba | random | 50000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | random | 40000 | all | top10_accuracy | 0.702602 | 66 | complete |
+| retrieval_tatoeba | random | 50000 | head | top10_accuracy | 0.720682 | 63 | complete |
 | retrieval_tatoeba | random | 50000 | tail | top10_accuracy | 0.333734 | 3 | complete |
-| retrieval_tatoeba | random | 50000 | all | top10_accuracy | 0.333734 | 3 | complete |
-| retrieval_tatoeba | mean | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | random | 50000 | all | top10_accuracy | 0.703093 | 66 | complete |
+| retrieval_tatoeba | mean | 10000 | head | top10_accuracy | 0.682569 | 63 | complete |
 | retrieval_tatoeba | mean | 10000 | tail | top10_accuracy | 0.317036 | 3 | complete |
-| retrieval_tatoeba | mean | 10000 | all | top10_accuracy | 0.317036 | 3 | complete |
-| retrieval_tatoeba | mean | 20000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | mean | 10000 | all | top10_accuracy | 0.665954 | 66 | complete |
+| retrieval_tatoeba | mean | 20000 | head | top10_accuracy | 0.697697 | 63 | complete |
 | retrieval_tatoeba | mean | 20000 | tail | top10_accuracy | 0.329972 | 3 | complete |
-| retrieval_tatoeba | mean | 20000 | all | top10_accuracy | 0.329972 | 3 | complete |
-| retrieval_tatoeba | mean | 30000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | mean | 20000 | all | top10_accuracy | 0.680983 | 66 | complete |
+| retrieval_tatoeba | mean | 30000 | head | top10_accuracy | 0.699191 | 63 | complete |
 | retrieval_tatoeba | mean | 30000 | tail | top10_accuracy | 0.327655 | 3 | complete |
-| retrieval_tatoeba | mean | 30000 | all | top10_accuracy | 0.327655 | 3 | complete |
-| retrieval_tatoeba | mean | 40000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | mean | 30000 | all | top10_accuracy | 0.682303 | 66 | complete |
+| retrieval_tatoeba | mean | 40000 | head | top10_accuracy | 0.699142 | 63 | complete |
 | retrieval_tatoeba | mean | 40000 | tail | top10_accuracy | 0.329972 | 3 | complete |
-| retrieval_tatoeba | mean | 40000 | all | top10_accuracy | 0.329972 | 3 | complete |
-| retrieval_tatoeba | mean | 50000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | mean | 40000 | all | top10_accuracy | 0.682362 | 66 | complete |
+| retrieval_tatoeba | mean | 50000 | head | top10_accuracy | 0.700381 | 63 | complete |
 | retrieval_tatoeba | mean | 50000 | tail | top10_accuracy | 0.331639 | 3 | complete |
-| retrieval_tatoeba | mean | 50000 | all | top10_accuracy | 0.331639 | 3 | complete |
-| retrieval_tatoeba | fvt | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | mean | 50000 | all | top10_accuracy | 0.683620 | 66 | complete |
+| retrieval_tatoeba | fvt | 10000 | head | top10_accuracy | 0.708904 | 63 | complete |
 | retrieval_tatoeba | fvt | 10000 | tail | top10_accuracy | 0.339148 | 3 | complete |
-| retrieval_tatoeba | fvt | 10000 | all | top10_accuracy | 0.339148 | 3 | complete |
-| retrieval_tatoeba | fvt | 20000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | fvt | 10000 | all | top10_accuracy | 0.692096 | 66 | complete |
+| retrieval_tatoeba | fvt | 20000 | head | top10_accuracy | 0.721021 | 63 | complete |
 | retrieval_tatoeba | fvt | 20000 | tail | top10_accuracy | 0.344433 | 3 | complete |
-| retrieval_tatoeba | fvt | 20000 | all | top10_accuracy | 0.344433 | 3 | complete |
-| retrieval_tatoeba | fvt | 30000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | fvt | 20000 | all | top10_accuracy | 0.703904 | 66 | complete |
+| retrieval_tatoeba | fvt | 30000 | head | top10_accuracy | 0.720874 | 63 | complete |
 | retrieval_tatoeba | fvt | 30000 | tail | top10_accuracy | 0.342783 | 3 | complete |
-| retrieval_tatoeba | fvt | 30000 | all | top10_accuracy | 0.342783 | 3 | complete |
-| retrieval_tatoeba | fvt | 40000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | fvt | 30000 | all | top10_accuracy | 0.703688 | 66 | complete |
+| retrieval_tatoeba | fvt | 40000 | head | top10_accuracy | 0.721878 | 63 | complete |
 | retrieval_tatoeba | fvt | 40000 | tail | top10_accuracy | 0.343449 | 3 | complete |
-| retrieval_tatoeba | fvt | 40000 | all | top10_accuracy | 0.343449 | 3 | complete |
-| retrieval_tatoeba | fvt | 50000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | fvt | 40000 | all | top10_accuracy | 0.704676 | 66 | complete |
+| retrieval_tatoeba | fvt | 50000 | head | top10_accuracy | 0.721875 | 63 | complete |
 | retrieval_tatoeba | fvt | 50000 | tail | top10_accuracy | 0.344449 | 3 | complete |
-| retrieval_tatoeba | fvt | 50000 | all | top10_accuracy | 0.344449 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | fvt | 50000 | all | top10_accuracy | 0.704719 | 66 | complete |
+| retrieval_tatoeba | weighted_fvt | 10000 | head | top10_accuracy | 0.681324 | 63 | complete |
 | retrieval_tatoeba | weighted_fvt | 10000 | tail | top10_accuracy | 0.303972 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 10000 | all | top10_accuracy | 0.303972 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 20000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | weighted_fvt | 10000 | all | top10_accuracy | 0.664172 | 66 | complete |
+| retrieval_tatoeba | weighted_fvt | 20000 | head | top10_accuracy | 0.720437 | 63 | complete |
 | retrieval_tatoeba | weighted_fvt | 20000 | tail | top10_accuracy | 0.348148 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 20000 | all | top10_accuracy | 0.348148 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 30000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | weighted_fvt | 20000 | all | top10_accuracy | 0.703515 | 66 | complete |
+| retrieval_tatoeba | weighted_fvt | 30000 | head | top10_accuracy | 0.730465 | 63 | complete |
 | retrieval_tatoeba | weighted_fvt | 30000 | tail | top10_accuracy | 0.354148 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 30000 | all | top10_accuracy | 0.354148 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 40000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | weighted_fvt | 30000 | all | top10_accuracy | 0.713360 | 66 | complete |
+| retrieval_tatoeba | weighted_fvt | 40000 | head | top10_accuracy | 0.736444 | 63 | complete |
 | retrieval_tatoeba | weighted_fvt | 40000 | tail | top10_accuracy | 0.351100 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 40000 | all | top10_accuracy | 0.351100 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 50000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | weighted_fvt | 40000 | all | top10_accuracy | 0.718928 | 66 | complete |
+| retrieval_tatoeba | weighted_fvt | 50000 | head | top10_accuracy | 0.735167 | 63 | complete |
 | retrieval_tatoeba | weighted_fvt | 50000 | tail | top10_accuracy | 0.357751 | 3 | complete |
-| retrieval_tatoeba | weighted_fvt | 50000 | all | top10_accuracy | 0.357751 | 3 | complete |
-| retrieval_tatoeba | family_mean | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | weighted_fvt | 50000 | all | top10_accuracy | 0.718011 | 66 | complete |
+| retrieval_tatoeba | family_mean | 10000 | head | top10_accuracy | 0.681930 | 63 | complete |
 | retrieval_tatoeba | family_mean | 10000 | tail | top10_accuracy | 0.306988 | 3 | complete |
-| retrieval_tatoeba | family_mean | 10000 | all | top10_accuracy | 0.306988 | 3 | complete |
-| retrieval_tatoeba | family_mean | 20000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | family_mean | 10000 | all | top10_accuracy | 0.664888 | 66 | complete |
+| retrieval_tatoeba | family_mean | 20000 | head | top10_accuracy | 0.701737 | 63 | complete |
 | retrieval_tatoeba | family_mean | 20000 | tail | top10_accuracy | 0.328321 | 3 | complete |
-| retrieval_tatoeba | family_mean | 20000 | all | top10_accuracy | 0.328321 | 3 | complete |
-| retrieval_tatoeba | family_mean | 30000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | family_mean | 20000 | all | top10_accuracy | 0.684763 | 66 | complete |
+| retrieval_tatoeba | family_mean | 30000 | head | top10_accuracy | 0.731585 | 63 | complete |
 | retrieval_tatoeba | family_mean | 30000 | tail | top10_accuracy | 0.355179 | 3 | complete |
-| retrieval_tatoeba | family_mean | 30000 | all | top10_accuracy | 0.355179 | 3 | complete |
-| retrieval_tatoeba | family_mean | 40000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | family_mean | 30000 | all | top10_accuracy | 0.714476 | 66 | complete |
+| retrieval_tatoeba | family_mean | 40000 | head | top10_accuracy | 0.732130 | 63 | complete |
 | retrieval_tatoeba | family_mean | 40000 | tail | top10_accuracy | 0.358116 | 3 | complete |
-| retrieval_tatoeba | family_mean | 40000 | all | top10_accuracy | 0.358116 | 3 | complete |
-| retrieval_tatoeba | family_mean | 50000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | family_mean | 40000 | all | top10_accuracy | 0.715130 | 66 | complete |
+| retrieval_tatoeba | family_mean | 50000 | head | top10_accuracy | 0.732720 | 63 | complete |
 | retrieval_tatoeba | family_mean | 50000 | tail | top10_accuracy | 0.360846 | 3 | complete |
-| retrieval_tatoeba | family_mean | 50000 | all | top10_accuracy | 0.360846 | 3 | complete |
-| retrieval_bible | random | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_tatoeba | family_mean | 50000 | all | top10_accuracy | 0.715817 | 66 | complete |
+| retrieval_bible | random | 10000 | head | top10_accuracy | 0.352491 | 74 | complete |
 | retrieval_bible | random | 10000 | tail | top10_accuracy | 0.007583 | 3 | complete |
-| retrieval_bible | random | 10000 | all | top10_accuracy | 0.007583 | 3 | complete |
-| retrieval_bible | random | 20000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | random | 10000 | all | top10_accuracy | 0.339054 | 77 | complete |
+| retrieval_bible | random | 20000 | head | top10_accuracy | 0.355300 | 74 | complete |
 | retrieval_bible | random | 20000 | tail | top10_accuracy | 0.007888 | 3 | complete |
-| retrieval_bible | random | 20000 | all | top10_accuracy | 0.007888 | 3 | complete |
-| retrieval_bible | random | 30000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | random | 20000 | all | top10_accuracy | 0.341764 | 77 | complete |
+| retrieval_bible | random | 30000 | head | top10_accuracy | 0.357195 | 74 | complete |
 | retrieval_bible | random | 30000 | tail | top10_accuracy | 0.007806 | 3 | complete |
-| retrieval_bible | random | 30000 | all | top10_accuracy | 0.007806 | 3 | complete |
-| retrieval_bible | random | 40000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | random | 30000 | all | top10_accuracy | 0.343583 | 77 | complete |
+| retrieval_bible | random | 40000 | head | top10_accuracy | 0.356024 | 74 | complete |
 | retrieval_bible | random | 40000 | tail | top10_accuracy | 0.007888 | 3 | complete |
-| retrieval_bible | random | 40000 | all | top10_accuracy | 0.007888 | 3 | complete |
-| retrieval_bible | random | 50000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | random | 40000 | all | top10_accuracy | 0.342460 | 77 | complete |
+| retrieval_bible | random | 50000 | head | top10_accuracy | 0.356001 | 74 | complete |
 | retrieval_bible | random | 50000 | tail | top10_accuracy | 0.007888 | 3 | complete |
-| retrieval_bible | random | 50000 | all | top10_accuracy | 0.007888 | 3 | complete |
-| retrieval_bible | mean | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | random | 50000 | all | top10_accuracy | 0.342438 | 77 | complete |
+| retrieval_bible | mean | 10000 | head | top10_accuracy | 0.388149 | 74 | complete |
 | retrieval_bible | mean | 10000 | tail | top10_accuracy | 0.007782 | 3 | complete |
-| retrieval_bible | mean | 10000 | all | top10_accuracy | 0.007782 | 3 | complete |
-| retrieval_bible | mean | 20000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | mean | 10000 | all | top10_accuracy | 0.373329 | 77 | complete |
+| retrieval_bible | mean | 20000 | head | top10_accuracy | 0.340144 | 8 | partial |
 | retrieval_bible | mean | 20000 | tail | top10_accuracy | 0.007773 | 3 | complete |
-| retrieval_bible | mean | 20000 | all | top10_accuracy | 0.007773 | 3 | complete |
-| retrieval_bible | mean | 30000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | mean | 20000 | all | top10_accuracy | 0.249497 | 11 | partial |
+| retrieval_bible | mean | 30000 | head | top10_accuracy | 0.079373 | 1 | partial |
 | retrieval_bible | mean | 30000 | tail | top10_accuracy | 0.007641 | 3 | complete |
-| retrieval_bible | mean | 30000 | all | top10_accuracy | 0.007641 | 3 | complete |
+| retrieval_bible | mean | 30000 | all | top10_accuracy | 0.025574 | 4 | partial |
 | retrieval_bible | mean | 40000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | mean | 40000 | tail | top10_accuracy | 0.007725 | 3 | complete |
-| retrieval_bible | mean | 40000 | all | top10_accuracy | 0.007725 | 3 | complete |
+| retrieval_bible | mean | 40000 | all | top10_accuracy | 0.007725 | 3 | partial |
 | retrieval_bible | mean | 50000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | mean | 50000 | tail | top10_accuracy | 0.007767 | 3 | complete |
-| retrieval_bible | mean | 50000 | all | top10_accuracy | 0.007767 | 3 | complete |
+| retrieval_bible | mean | 50000 | all | top10_accuracy | 0.007767 | 3 | partial |
 | retrieval_bible | fvt | 10000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 10000 | tail | top10_accuracy | 0.007821 | 3 | complete |
-| retrieval_bible | fvt | 10000 | all | top10_accuracy | 0.007821 | 3 | complete |
+| retrieval_bible | fvt | 10000 | all | top10_accuracy | 0.007821 | 3 | partial |
 | retrieval_bible | fvt | 20000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 20000 | tail | top10_accuracy | 0.008334 | 3 | complete |
-| retrieval_bible | fvt | 20000 | all | top10_accuracy | 0.008334 | 3 | complete |
+| retrieval_bible | fvt | 20000 | all | top10_accuracy | 0.008334 | 3 | partial |
 | retrieval_bible | fvt | 30000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 30000 | tail | top10_accuracy | 0.008334 | 3 | complete |
-| retrieval_bible | fvt | 30000 | all | top10_accuracy | 0.008334 | 3 | complete |
+| retrieval_bible | fvt | 30000 | all | top10_accuracy | 0.008334 | 3 | partial |
 | retrieval_bible | fvt | 40000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 40000 | tail | top10_accuracy | 0.008336 | 3 | complete |
-| retrieval_bible | fvt | 40000 | all | top10_accuracy | 0.008336 | 3 | complete |
+| retrieval_bible | fvt | 40000 | all | top10_accuracy | 0.008336 | 3 | partial |
 | retrieval_bible | fvt | 50000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 50000 | tail | top10_accuracy | 0.008378 | 3 | complete |
-| retrieval_bible | fvt | 50000 | all | top10_accuracy | 0.008378 | 3 | complete |
+| retrieval_bible | fvt | 50000 | all | top10_accuracy | 0.008378 | 3 | partial |
 | retrieval_bible | weighted_fvt | 10000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | weighted_fvt | 10000 | tail | top10_accuracy | 0.007310 | 3 | complete |
-| retrieval_bible | weighted_fvt | 10000 | all | top10_accuracy | 0.007310 | 3 | complete |
+| retrieval_bible | weighted_fvt | 10000 | all | top10_accuracy | 0.007310 | 3 | partial |
 | retrieval_bible | weighted_fvt | 20000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | weighted_fvt | 20000 | tail | top10_accuracy | 0.008639 | 3 | complete |
-| retrieval_bible | weighted_fvt | 20000 | all | top10_accuracy | 0.008639 | 3 | complete |
+| retrieval_bible | weighted_fvt | 20000 | all | top10_accuracy | 0.008639 | 3 | partial |
 | retrieval_bible | weighted_fvt | 30000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | weighted_fvt | 30000 | tail | top10_accuracy | 0.008974 | 3 | complete |
-| retrieval_bible | weighted_fvt | 30000 | all | top10_accuracy | 0.008974 | 3 | complete |
+| retrieval_bible | weighted_fvt | 30000 | all | top10_accuracy | 0.008974 | 3 | partial |
 | retrieval_bible | weighted_fvt | 40000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | weighted_fvt | 40000 | tail | top10_accuracy | 0.008297 | 3 | complete |
-| retrieval_bible | weighted_fvt | 40000 | all | top10_accuracy | 0.008297 | 3 | complete |
+| retrieval_bible | weighted_fvt | 40000 | all | top10_accuracy | 0.008297 | 3 | partial |
 | retrieval_bible | weighted_fvt | 50000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | weighted_fvt | 50000 | tail | top10_accuracy | 0.008856 | 3 | complete |
-| retrieval_bible | weighted_fvt | 50000 | all | top10_accuracy | 0.008856 | 3 | complete |
+| retrieval_bible | weighted_fvt | 50000 | all | top10_accuracy | 0.008856 | 3 | partial |
 | retrieval_bible | family_mean | 10000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | family_mean | 10000 | tail | top10_accuracy | 0.006221 | 3 | complete |
-| retrieval_bible | family_mean | 10000 | all | top10_accuracy | 0.006221 | 3 | complete |
+| retrieval_bible | family_mean | 10000 | all | top10_accuracy | 0.006221 | 3 | partial |
 | retrieval_bible | family_mean | 20000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | family_mean | 20000 | tail | top10_accuracy | 0.006965 | 3 | complete |
-| retrieval_bible | family_mean | 20000 | all | top10_accuracy | 0.006965 | 3 | complete |
+| retrieval_bible | family_mean | 20000 | all | top10_accuracy | 0.006965 | 3 | partial |
 | retrieval_bible | family_mean | 30000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | family_mean | 30000 | tail | top10_accuracy | 0.007275 | 3 | complete |
-| retrieval_bible | family_mean | 30000 | all | top10_accuracy | 0.007275 | 3 | complete |
+| retrieval_bible | family_mean | 30000 | all | top10_accuracy | 0.007275 | 3 | partial |
 | retrieval_bible | family_mean | 40000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | family_mean | 40000 | tail | top10_accuracy | 0.007138 | 3 | complete |
-| retrieval_bible | family_mean | 40000 | all | top10_accuracy | 0.007138 | 3 | complete |
+| retrieval_bible | family_mean | 40000 | all | top10_accuracy | 0.007138 | 3 | partial |
 | retrieval_bible | family_mean | 50000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | family_mean | 50000 | tail | top10_accuracy | 0.007517 | 3 | complete |
-| retrieval_bible | family_mean | 50000 | all | top10_accuracy | 0.007517 | 3 | complete |
+| retrieval_bible | family_mean | 50000 | all | top10_accuracy | 0.007517 | 3 | partial |
 | roundtrip_alignment | random | 10000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | random | 10000 | tail | accuracy | 0.026067 | 3 | complete |
-| roundtrip_alignment | random | 10000 | all | accuracy | 0.026067 | 3 | complete |
+| roundtrip_alignment | random | 10000 | all | accuracy | 0.026067 | 3 | partial |
 | roundtrip_alignment | random | 20000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | random | 20000 | tail | accuracy | 0.026600 | 3 | complete |
-| roundtrip_alignment | random | 20000 | all | accuracy | 0.026600 | 3 | complete |
+| roundtrip_alignment | random | 20000 | all | accuracy | 0.026600 | 3 | partial |
 | roundtrip_alignment | random | 30000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | random | 30000 | tail | accuracy | 0.026933 | 3 | complete |
-| roundtrip_alignment | random | 30000 | all | accuracy | 0.026933 | 3 | complete |
+| roundtrip_alignment | random | 30000 | all | accuracy | 0.026933 | 3 | partial |
 | roundtrip_alignment | random | 40000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | random | 40000 | tail | accuracy | 0.026933 | 3 | complete |
-| roundtrip_alignment | random | 40000 | all | accuracy | 0.026933 | 3 | complete |
+| roundtrip_alignment | random | 40000 | all | accuracy | 0.026933 | 3 | partial |
 | roundtrip_alignment | random | 50000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | random | 50000 | tail | accuracy | 0.026667 | 3 | complete |
-| roundtrip_alignment | random | 50000 | all | accuracy | 0.026667 | 3 | complete |
+| roundtrip_alignment | random | 50000 | all | accuracy | 0.026667 | 3 | partial |
 | roundtrip_alignment | mean | 10000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | mean | 10000 | tail | accuracy | 0.026767 | 3 | complete |
-| roundtrip_alignment | mean | 10000 | all | accuracy | 0.026767 | 3 | complete |
+| roundtrip_alignment | mean | 10000 | all | accuracy | 0.026767 | 3 | partial |
 | roundtrip_alignment | mean | 20000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | mean | 20000 | tail | accuracy | 0.026800 | 3 | complete |
-| roundtrip_alignment | mean | 20000 | all | accuracy | 0.026800 | 3 | complete |
+| roundtrip_alignment | mean | 20000 | all | accuracy | 0.026800 | 3 | partial |
 | roundtrip_alignment | mean | 30000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | mean | 30000 | tail | accuracy | 0.027333 | 3 | complete |
-| roundtrip_alignment | mean | 30000 | all | accuracy | 0.027333 | 3 | complete |
+| roundtrip_alignment | mean | 30000 | all | accuracy | 0.027333 | 3 | partial |
 | roundtrip_alignment | mean | 40000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | mean | 40000 | tail | accuracy | 0.027400 | 3 | complete |
-| roundtrip_alignment | mean | 40000 | all | accuracy | 0.027400 | 3 | complete |
+| roundtrip_alignment | mean | 40000 | all | accuracy | 0.027400 | 3 | partial |
 | roundtrip_alignment | mean | 50000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | mean | 50000 | tail | accuracy | 0.027200 | 3 | complete |
-| roundtrip_alignment | mean | 50000 | all | accuracy | 0.027200 | 3 | complete |
+| roundtrip_alignment | mean | 50000 | all | accuracy | 0.027200 | 3 | partial |
 | roundtrip_alignment | fvt | 10000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | fvt | 10000 | tail | accuracy | 0.030200 | 3 | complete |
-| roundtrip_alignment | fvt | 10000 | all | accuracy | 0.030200 | 3 | complete |
+| roundtrip_alignment | fvt | 10000 | all | accuracy | 0.030200 | 3 | partial |
 | roundtrip_alignment | fvt | 20000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | fvt | 20000 | tail | accuracy | 0.032800 | 3 | complete |
-| roundtrip_alignment | fvt | 20000 | all | accuracy | 0.032800 | 3 | complete |
+| roundtrip_alignment | fvt | 20000 | all | accuracy | 0.032800 | 3 | partial |
 | roundtrip_alignment | fvt | 30000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | fvt | 30000 | tail | accuracy | 0.032433 | 3 | complete |
-| roundtrip_alignment | fvt | 30000 | all | accuracy | 0.032433 | 3 | complete |
+| roundtrip_alignment | fvt | 30000 | all | accuracy | 0.032433 | 3 | partial |
 | roundtrip_alignment | fvt | 40000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | fvt | 40000 | tail | accuracy | 0.032000 | 3 | complete |
-| roundtrip_alignment | fvt | 40000 | all | accuracy | 0.032000 | 3 | complete |
+| roundtrip_alignment | fvt | 40000 | all | accuracy | 0.032000 | 3 | partial |
 | roundtrip_alignment | fvt | 50000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | fvt | 50000 | tail | accuracy | 0.032167 | 3 | complete |
-| roundtrip_alignment | fvt | 50000 | all | accuracy | 0.032167 | 3 | complete |
+| roundtrip_alignment | fvt | 50000 | all | accuracy | 0.032167 | 3 | partial |
 | roundtrip_alignment | weighted_fvt | 10000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | weighted_fvt | 10000 | tail | accuracy | 0.028467 | 3 | complete |
-| roundtrip_alignment | weighted_fvt | 10000 | all | accuracy | 0.028467 | 3 | complete |
+| roundtrip_alignment | weighted_fvt | 10000 | all | accuracy | 0.028467 | 3 | partial |
 | roundtrip_alignment | weighted_fvt | 20000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | weighted_fvt | 20000 | tail | accuracy | 0.032433 | 3 | complete |
-| roundtrip_alignment | weighted_fvt | 20000 | all | accuracy | 0.032433 | 3 | complete |
+| roundtrip_alignment | weighted_fvt | 20000 | all | accuracy | 0.032433 | 3 | partial |
 | roundtrip_alignment | weighted_fvt | 30000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | weighted_fvt | 30000 | tail | accuracy | 0.033333 | 3 | complete |
-| roundtrip_alignment | weighted_fvt | 30000 | all | accuracy | 0.033333 | 3 | complete |
+| roundtrip_alignment | weighted_fvt | 30000 | all | accuracy | 0.033333 | 3 | partial |
 | roundtrip_alignment | weighted_fvt | 40000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | weighted_fvt | 40000 | tail | accuracy | 0.033267 | 3 | complete |
-| roundtrip_alignment | weighted_fvt | 40000 | all | accuracy | 0.033267 | 3 | complete |
+| roundtrip_alignment | weighted_fvt | 40000 | all | accuracy | 0.033267 | 3 | partial |
 | roundtrip_alignment | weighted_fvt | 50000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | weighted_fvt | 50000 | tail | accuracy | 0.033833 | 3 | complete |
-| roundtrip_alignment | weighted_fvt | 50000 | all | accuracy | 0.033833 | 3 | complete |
+| roundtrip_alignment | weighted_fvt | 50000 | all | accuracy | 0.033833 | 3 | partial |
 | roundtrip_alignment | family_mean | 10000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | family_mean | 10000 | tail | accuracy | 0.026100 | 3 | complete |
-| roundtrip_alignment | family_mean | 10000 | all | accuracy | 0.026100 | 3 | complete |
+| roundtrip_alignment | family_mean | 10000 | all | accuracy | 0.026100 | 3 | partial |
 | roundtrip_alignment | family_mean | 20000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | family_mean | 20000 | tail | accuracy | 0.027400 | 3 | complete |
-| roundtrip_alignment | family_mean | 20000 | all | accuracy | 0.027400 | 3 | complete |
+| roundtrip_alignment | family_mean | 20000 | all | accuracy | 0.027400 | 3 | partial |
 | roundtrip_alignment | family_mean | 30000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | family_mean | 30000 | tail | accuracy | 0.030900 | 3 | complete |
-| roundtrip_alignment | family_mean | 30000 | all | accuracy | 0.030900 | 3 | complete |
+| roundtrip_alignment | family_mean | 30000 | all | accuracy | 0.030900 | 3 | partial |
 | roundtrip_alignment | family_mean | 40000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | family_mean | 40000 | tail | accuracy | 0.032667 | 3 | complete |
-| roundtrip_alignment | family_mean | 40000 | all | accuracy | 0.032667 | 3 | complete |
+| roundtrip_alignment | family_mean | 40000 | all | accuracy | 0.032667 | 3 | partial |
 | roundtrip_alignment | family_mean | 50000 | head | accuracy |  | 0 | pending |
 | roundtrip_alignment | family_mean | 50000 | tail | accuracy | 0.031567 | 3 | complete |
-| roundtrip_alignment | family_mean | 50000 | all | accuracy | 0.031567 | 3 | complete |
+| roundtrip_alignment | family_mean | 50000 | all | accuracy | 0.031567 | 3 | partial |
 | text_classification | random | 10000 | head | macro_f1 | 0.669056 | 1 | complete |
 | text_classification | random | 10000 | tail | macro_f1 |  | 0 | pending |
 | text_classification | random | 10000 | all | macro_f1 | 0.669056 | 1 | complete |
@@ -425,42 +425,42 @@ Blank cells are not available yet.
 | text_classification | family_mean | 50000 | head | macro_f1 | 0.742077 | 1 | complete |
 | text_classification | family_mean | 50000 | tail | macro_f1 |  | 0 | pending |
 | text_classification | family_mean | 50000 | all | macro_f1 | 0.742077 | 1 | complete |
-| ner | random | 10000 | head | f1 |  | 0 | pending |
+| ner | random | 10000 | head | f1 | 0.608730 | 78 | complete |
 | ner | random | 10000 | tail | f1 | 0.447264 | 3 | complete |
-| ner | random | 10000 | all | f1 | 0.447264 | 3 | complete |
-| ner | random | 20000 | head | f1 |  | 0 | pending |
+| ner | random | 10000 | all | f1 | 0.602750 | 81 | complete |
+| ner | random | 20000 | head | f1 | 0.608362 | 78 | complete |
 | ner | random | 20000 | tail | f1 | 0.465865 | 3 | complete |
-| ner | random | 20000 | all | f1 | 0.465865 | 3 | complete |
-| ner | random | 30000 | head | f1 |  | 0 | pending |
+| ner | random | 20000 | all | f1 | 0.603085 | 81 | complete |
+| ner | random | 30000 | head | f1 | 0.606840 | 78 | complete |
 | ner | random | 30000 | tail | f1 | 0.464167 | 3 | complete |
-| ner | random | 30000 | all | f1 | 0.464167 | 3 | complete |
-| ner | random | 40000 | head | f1 |  | 0 | pending |
+| ner | random | 30000 | all | f1 | 0.601556 | 81 | complete |
+| ner | random | 40000 | head | f1 | 0.611314 | 78 | complete |
 | ner | random | 40000 | tail | f1 | 0.469994 | 3 | complete |
-| ner | random | 40000 | all | f1 | 0.469994 | 3 | complete |
-| ner | random | 50000 | head | f1 |  | 0 | pending |
+| ner | random | 40000 | all | f1 | 0.606080 | 81 | complete |
+| ner | random | 50000 | head | f1 | 0.614090 | 78 | complete |
 | ner | random | 50000 | tail | f1 | 0.482479 | 3 | complete |
-| ner | random | 50000 | all | f1 | 0.482479 | 3 | complete |
-| ner | mean | 10000 | head | f1 |  | 0 | pending |
+| ner | random | 50000 | all | f1 | 0.609215 | 81 | complete |
+| ner | mean | 10000 | head | f1 | 0.611168 | 78 | complete |
 | ner | mean | 10000 | tail | f1 | 0.472720 | 3 | complete |
-| ner | mean | 10000 | all | f1 | 0.472720 | 3 | complete |
+| ner | mean | 10000 | all | f1 | 0.606040 | 81 | complete |
 | ner | mean | 20000 | head | f1 |  | 0 | pending |
 | ner | mean | 20000 | tail | f1 | 0.488270 | 3 | complete |
-| ner | mean | 20000 | all | f1 | 0.488270 | 3 | complete |
+| ner | mean | 20000 | all | f1 | 0.488270 | 3 | partial |
 | ner | mean | 30000 | head | f1 |  | 0 | pending |
 | ner | mean | 30000 | tail | f1 | 0.511267 | 3 | complete |
-| ner | mean | 30000 | all | f1 | 0.511267 | 3 | complete |
+| ner | mean | 30000 | all | f1 | 0.511267 | 3 | partial |
 | ner | mean | 40000 | head | f1 |  | 0 | pending |
 | ner | mean | 40000 | tail | f1 | 0.503437 | 3 | complete |
-| ner | mean | 40000 | all | f1 | 0.503437 | 3 | complete |
+| ner | mean | 40000 | all | f1 | 0.503437 | 3 | partial |
 | ner | mean | 50000 | head | f1 |  | 0 | pending |
 | ner | mean | 50000 | tail | f1 | 0.492219 | 3 | complete |
-| ner | mean | 50000 | all | f1 | 0.492219 | 3 | complete |
+| ner | mean | 50000 | all | f1 | 0.492219 | 3 | partial |
 | ner | fvt | 10000 | head | f1 |  | 0 | pending |
 | ner | fvt | 10000 | tail | f1 | 0.494477 | 3 | complete |
-| ner | fvt | 10000 | all | f1 | 0.494477 | 3 | complete |
+| ner | fvt | 10000 | all | f1 | 0.494477 | 3 | partial |
 | ner | fvt | 20000 | head | f1 |  | 0 | pending |
 | ner | fvt | 20000 | tail | f1 | 0.515031 | 3 | complete |
-| ner | fvt | 20000 | all | f1 | 0.515031 | 3 | complete |
+| ner | fvt | 20000 | all | f1 | 0.515031 | 3 | partial |
 | ner | fvt | 30000 | head | f1 |  | 0 | pending |
 | ner | fvt | 30000 | tail | f1 |  | 0 | pending |
 | ner | fvt | 30000 | all | f1 |  | 0 | pending |
@@ -469,7 +469,7 @@ Blank cells are not available yet.
 | ner | fvt | 40000 | all | f1 |  | 0 | pending |
 | ner | fvt | 50000 | head | f1 |  | 0 | pending |
 | ner | fvt | 50000 | tail | f1 | 0.512707 | 3 | complete |
-| ner | fvt | 50000 | all | f1 | 0.512707 | 3 | complete |
+| ner | fvt | 50000 | all | f1 | 0.512707 | 3 | partial |
 | ner | weighted_fvt | 10000 | head | f1 |  | 0 | pending |
 | ner | weighted_fvt | 10000 | tail | f1 |  | 0 | pending |
 | ner | weighted_fvt | 10000 | all | f1 |  | 0 | pending |
@@ -484,7 +484,7 @@ Blank cells are not available yet.
 | ner | weighted_fvt | 40000 | all | f1 |  | 0 | pending |
 | ner | weighted_fvt | 50000 | head | f1 |  | 0 | pending |
 | ner | weighted_fvt | 50000 | tail | f1 | 0.505807 | 3 | complete |
-| ner | weighted_fvt | 50000 | all | f1 | 0.505807 | 3 | complete |
+| ner | weighted_fvt | 50000 | all | f1 | 0.505807 | 3 | partial |
 | ner | family_mean | 10000 | head | f1 |  | 0 | pending |
 | ner | family_mean | 10000 | tail | f1 |  | 0 | pending |
 | ner | family_mean | 10000 | all | f1 |  | 0 | pending |
@@ -527,9 +527,9 @@ Blank cells are not available yet.
 | pos | mean | 40000 | head | f1 |  | 0 | pending |
 | pos | mean | 40000 | tail | f1 |  | 0 | pending |
 | pos | mean | 40000 | all | f1 |  | 0 | pending |
-| pos | mean | 50000 | head | f1 |  | 0 | pending |
-| pos | mean | 50000 | tail | f1 |  | 0 | pending |
-| pos | mean | 50000 | all | f1 |  | 0 | pending |
+| pos | mean | 50000 | head | f1 | 0.550786 | 88 | complete |
+| pos | mean | 50000 | tail | f1 | 0.299987 | 3 | complete |
+| pos | mean | 50000 | all | f1 | 0.542518 | 91 | complete |
 | pos | fvt | 10000 | head | f1 |  | 0 | pending |
 | pos | fvt | 10000 | tail | f1 |  | 0 | pending |
 | pos | fvt | 10000 | all | f1 |  | 0 | pending |
@@ -557,9 +557,9 @@ Blank cells are not available yet.
 | pos | weighted_fvt | 40000 | head | f1 |  | 0 | pending |
 | pos | weighted_fvt | 40000 | tail | f1 |  | 0 | pending |
 | pos | weighted_fvt | 40000 | all | f1 |  | 0 | pending |
-| pos | weighted_fvt | 50000 | head | f1 |  | 0 | pending |
-| pos | weighted_fvt | 50000 | tail | f1 |  | 0 | pending |
-| pos | weighted_fvt | 50000 | all | f1 |  | 0 | pending |
+| pos | weighted_fvt | 50000 | head | f1 | 0.551888 | 88 | complete |
+| pos | weighted_fvt | 50000 | tail | f1 | 0.309186 | 3 | complete |
+| pos | weighted_fvt | 50000 | all | f1 | 0.543887 | 91 | complete |
 | pos | family_mean | 10000 | head | f1 |  | 0 | pending |
 | pos | family_mean | 10000 | tail | f1 |  | 0 | pending |
 | pos | family_mean | 10000 | all | f1 |  | 0 | pending |
@@ -1080,9 +1080,9 @@ Blank cells are not available yet.
 | pos | mean | 40000 | xav_Latn | f1 |  | pending |
 | pos | mean | 40000 | bam_Latn | f1 |  | pending |
 | pos | mean | 40000 | lij_Latn | f1 |  | pending |
-| pos | mean | 50000 | xav_Latn | f1 |  | pending |
-| pos | mean | 50000 | bam_Latn | f1 |  | pending |
-| pos | mean | 50000 | lij_Latn | f1 |  | pending |
+| pos | mean | 50000 | lij_Latn | f1 | 0.494812 | complete |
+| pos | mean | 50000 | bam_Latn | f1 | 0.306988 | complete |
+| pos | mean | 50000 | xav_Latn | f1 | 0.098160 | complete |
 | pos | fvt | 10000 | xav_Latn | f1 |  | pending |
 | pos | fvt | 10000 | bam_Latn | f1 |  | pending |
 | pos | fvt | 10000 | lij_Latn | f1 |  | pending |
@@ -1110,9 +1110,9 @@ Blank cells are not available yet.
 | pos | weighted_fvt | 40000 | xav_Latn | f1 |  | pending |
 | pos | weighted_fvt | 40000 | bam_Latn | f1 |  | pending |
 | pos | weighted_fvt | 40000 | lij_Latn | f1 |  | pending |
-| pos | weighted_fvt | 50000 | xav_Latn | f1 |  | pending |
-| pos | weighted_fvt | 50000 | bam_Latn | f1 |  | pending |
-| pos | weighted_fvt | 50000 | lij_Latn | f1 |  | pending |
+| pos | weighted_fvt | 50000 | lij_Latn | f1 | 0.524720 | complete |
+| pos | weighted_fvt | 50000 | bam_Latn | f1 | 0.288552 | complete |
+| pos | weighted_fvt | 50000 | xav_Latn | f1 | 0.114286 | complete |
 | pos | family_mean | 10000 | xav_Latn | f1 |  | pending |
 | pos | family_mean | 10000 | bam_Latn | f1 |  | pending |
 | pos | family_mean | 10000 | lij_Latn | f1 |  | pending |

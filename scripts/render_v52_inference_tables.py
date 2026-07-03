@@ -27,6 +27,7 @@ TASKS: dict[str, dict[str, Any]] = {
     },
     "retrieval_tatoeba": {
         "folder": "retrieval_tatoeba",
+        "extra_folders": ("retrieval_tatoeba_head",),
         "score_name": "top10_accuracy",
         "block_key": "Acc10",
         "direction": "higher_is_better",
@@ -34,6 +35,7 @@ TASKS: dict[str, dict[str, Any]] = {
     },
     "retrieval_bible": {
         "folder": "retrieval_bible",
+        "extra_folders": ("retrieval_bible_head",),
         "score_name": "top10_accuracy",
         "block_key": "Acc10",
         "direction": "higher_is_better",
@@ -41,6 +43,7 @@ TASKS: dict[str, dict[str, Any]] = {
     },
     "roundtrip_alignment": {
         "folder": "roundtrip_alignment",
+        "extra_folders": ("roundtrip_alignment_head",),
         "score_name": "accuracy",
         "block_key": "accuracy",
         "direction": "higher_is_better",
@@ -48,6 +51,7 @@ TASKS: dict[str, dict[str, Any]] = {
     },
     "ner": {
         "folder": "ner",
+        "extra_folders": ("ner_head",),
         "score_name": "f1",
         "block_key": "f1",
         "direction": "higher_is_better",
@@ -136,6 +140,23 @@ def coverage_lookup(eval_dir: Path, task: str) -> dict[str, str]:
     return out
 
 
+def available_coverage_languages(eval_dir: Path, task: str, group: str) -> set[str]:
+    out: set[str] = set()
+    for row in read_tsv(eval_dir / "00_coverage" / f"coverage_{task}.tsv"):
+        lang = row.get("language_script") or row.get("language")
+        row_group = row.get("group", "")
+        if row_group == "v5_target":
+            row_group = "tail"
+        if (
+            lang
+            and row_group == group
+            and row.get("in_task_list") == "yes"
+            and row.get("has_data") == "yes"
+        ):
+            out.add(lang)
+    return out
+
+
 def group_for_language(language: str, lookup: dict[str, str]) -> str:
     if language in TARGET7:
         return "tail"
@@ -154,6 +175,14 @@ def find_test_results(base: Path, model: str) -> Path | None:
     if not model_dir.exists():
         return None
     return first_nonempty([model_dir / "test_results.txt"] + sorted(model_dir.glob("*/test_results.txt")))
+
+
+def find_all_test_results(base: Path, model: str) -> list[Path]:
+    model_dir = base / model
+    if not model_dir.exists():
+        return []
+    candidates = [model_dir / "test_results.txt"] + sorted(model_dir.glob("*/test_results.txt"))
+    return [path for path in candidates if path.exists() and path.stat().st_size > 0]
 
 
 def parse_block_results(path: Path, score_key: str, aux_keys: tuple[str, ...] = ()) -> list[dict[str, Any]]:
@@ -188,48 +217,54 @@ def collect_block_metric(
     model: str,
 ) -> tuple[list[dict[str, Any]], str]:
     spec = TASKS[task]
-    path = find_test_results(eval_root / spec["folder"], model)
-    if path is None:
+    paths = find_all_test_results(eval_root / spec["folder"], model)
+    for folder in spec.get("extra_folders", ()):
+        paths.extend(find_all_test_results(eval_root / folder, model))
+    if not paths:
         return [], ""
     lookup = coverage_lookup(eval_dir, task)
-    raw_rows = parse_block_results(path, spec["block_key"], ("Acc1", "Acc5", "precision", "recall", "loss"))
-    rows: list[dict[str, Any]] = []
-    for row in raw_rows:
-        language = str(row.get("language", ""))
-        value = row.get(spec["block_key"])
-        if not isinstance(value, float):
-            continue
-        rows.append(
-            {
+    rows_by_language: dict[str, dict[str, Any]] = {}
+    for path in paths:
+        raw_rows = parse_block_results(path, spec["block_key"], ("Acc1", "Acc5", "precision", "recall", "loss"))
+        for row in raw_rows:
+            language = str(row.get("language", ""))
+            value = row.get(spec["block_key"])
+            if not language or not isinstance(value, float):
+                continue
+            rows_by_language[language] = {
                 "language": language,
                 "group": group_for_language(language, lookup),
                 "score_value": value,
                 "source_file": str(path),
             }
-        )
-    return rows, str(path)
+    return list(rows_by_language.values()), ";".join(str(path) for path in paths)
 
 
 def collect_roundtrip(eval_root: Path, eval_dir: Path, model: str) -> tuple[list[dict[str, Any]], str]:
-    summary = eval_root / "roundtrip_alignment" / model / "summary.tsv"
     lookup = coverage_lookup(eval_dir, "roundtrip_alignment")
-    rows: list[dict[str, Any]] = []
-    if summary.exists() and summary.stat().st_size > 0:
+    summaries = []
+    for folder in ("roundtrip_alignment", *TASKS["roundtrip_alignment"].get("extra_folders", ())):
+        summary = eval_root / folder / model / "summary.tsv"
+        if summary.exists() and summary.stat().st_size > 0:
+            summaries.append(summary)
+    rows_by_language: dict[str, dict[str, Any]] = {}
+    for summary in summaries:
         for row in read_tsv(summary):
             try:
                 value = float(row["accuracy"])
             except (KeyError, ValueError):
                 continue
             language = row.get("language", "")
-            rows.append(
-                {
-                    "language": language,
-                    "group": group_for_language(language, lookup),
-                    "score_value": value,
-                    "source_file": str(summary),
-                }
-            )
-        return rows, str(summary)
+            if not language:
+                continue
+            rows_by_language[language] = {
+                "language": language,
+                "group": group_for_language(language, lookup),
+                "score_value": value,
+                "source_file": str(summary),
+            }
+    if rows_by_language:
+        return list(rows_by_language.values()), ";".join(str(path) for path in summaries)
     return collect_block_metric(eval_root, eval_dir, "roundtrip_alignment", model)
 
 
@@ -289,6 +324,7 @@ def collect_language_rows(eval_root: Path, eval_dir: Path, task: str, model: str
 
 
 def summarize_groups(
+    eval_dir: Path,
     task: str,
     method: str,
     step: int,
@@ -352,6 +388,7 @@ def summarize_groups(
 
     out: list[dict[str, Any]] = []
     expected_tail = set(spec["tail_languages"])
+    expected_head = available_coverage_languages(eval_dir, task, "head")
     groups = {
         "head": [row for row in language_rows if row["group"] == "head"],
         "tail": [row for row in language_rows if row["group"] == "tail"],
@@ -359,11 +396,18 @@ def summarize_groups(
     }
     for group in ("head", "tail", "all"):
         values = [float(row["score_value"]) for row in groups[group]]
+        present_languages = {row["language"] for row in groups[group]}
         present_tail = sorted({row["language"] for row in groups[group] if row["language"] in expected_tail})
         if values:
             status = "complete"
+            if group == "head" and expected_head and not expected_head.issubset(present_languages):
+                status = "partial"
             if group in {"tail", "all"} and expected_tail and set(present_tail) != expected_tail:
                 status = "partial"
+            if group == "all":
+                expected_all = set(expected_tail) | set(expected_head)
+                if expected_all and not expected_all.issubset(present_languages):
+                    status = "partial"
         else:
             status = empty_status
         out.append(
@@ -575,7 +619,7 @@ def main() -> None:
                         )
                 else:
                     add_pending_language_rows(language_rows_out, task, method, step, key, empty_status)
-                summary_rows.extend(summarize_groups(task, method, step, key, rows, source, empty_status))
+                summary_rows.extend(summarize_groups(eval_dir, task, method, step, key, rows, source, empty_status))
 
     summary_fields = [
         "metric",

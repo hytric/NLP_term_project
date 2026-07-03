@@ -4,33 +4,33 @@ pppl	mean	weighted_pseudo_perplexity	lower_is_better	32.518060	23.967377	23.2917
 pppl	fvt	weighted_pseudo_perplexity	lower_is_better	21.194507	16.963286	16.534654	16.405448	16.343673
 pppl	weighted_fvt	weighted_pseudo_perplexity	lower_is_better	26.857016	18.556777	16.089238	14.657766	13.890949
 pppl	family_mean	weighted_pseudo_perplexity	lower_is_better	34.249757	20.404886	14.841284	12.859935	12.262259
-retrieval_tatoeba	random	top10_accuracy	higher_is_better	0.329781	0.327813	0.331750	0.332083	0.333734
-retrieval_tatoeba	mean	top10_accuracy	higher_is_better	0.317036	0.329972	0.327655	0.329972	0.331639
-retrieval_tatoeba	fvt	top10_accuracy	higher_is_better	0.339148	0.344433	0.342783	0.343449	0.344449
-retrieval_tatoeba	weighted_fvt	top10_accuracy	higher_is_better	0.303972	0.348148	0.354148	0.351100	0.357751
-retrieval_tatoeba	family_mean	top10_accuracy	higher_is_better	0.306988	0.328321	0.355179	0.358116	0.360846
-retrieval_bible	random	top10_accuracy	higher_is_better	0.007583	0.007888	0.007806	0.007888	0.007888
-retrieval_bible	mean	top10_accuracy	higher_is_better	0.007782	0.007773	0.007641	0.007725	0.007767
-retrieval_bible	fvt	top10_accuracy	higher_is_better	0.007821	0.008334	0.008334	0.008336	0.008378
-retrieval_bible	weighted_fvt	top10_accuracy	higher_is_better	0.007310	0.008639	0.008974	0.008297	0.008856
-retrieval_bible	family_mean	top10_accuracy	higher_is_better	0.006221	0.006965	0.007275	0.007138	0.007517
-roundtrip_alignment	random	accuracy	higher_is_better	0.026067	0.026600	0.026933	0.026933	0.026667
-roundtrip_alignment	mean	accuracy	higher_is_better	0.026767	0.026800	0.027333	0.027400	0.027200
-roundtrip_alignment	fvt	accuracy	higher_is_better	0.030200	0.032800	0.032433	0.032000	0.032167
-roundtrip_alignment	weighted_fvt	accuracy	higher_is_better	0.028467	0.032433	0.033333	0.033267	0.033833
-roundtrip_alignment	family_mean	accuracy	higher_is_better	0.026100	0.027400	0.030900	0.032667	0.031567
+retrieval_tatoeba	random	top10_accuracy	higher_is_better	0.700800	0.699629	0.703266	0.702602	0.703093
+retrieval_tatoeba	mean	top10_accuracy	higher_is_better	0.665954	0.680983	0.682303	0.682362	0.683620
+retrieval_tatoeba	fvt	top10_accuracy	higher_is_better	0.692096	0.703904	0.703688	0.704676	0.704719
+retrieval_tatoeba	weighted_fvt	top10_accuracy	higher_is_better	0.664172	0.703515	0.713360	0.718928	0.718011
+retrieval_tatoeba	family_mean	top10_accuracy	higher_is_better	0.664888	0.684763	0.714476	0.715130	0.715817
+retrieval_bible	random	top10_accuracy	higher_is_better	0.339054	0.341764	0.343583	0.342460	0.342438
+retrieval_bible	mean	top10_accuracy	higher_is_better	0.373329				
+retrieval_bible	fvt	top10_accuracy	higher_is_better					
+retrieval_bible	weighted_fvt	top10_accuracy	higher_is_better					
+retrieval_bible	family_mean	top10_accuracy	higher_is_better					
+roundtrip_alignment	random	accuracy	higher_is_better					
+roundtrip_alignment	mean	accuracy	higher_is_better					
+roundtrip_alignment	fvt	accuracy	higher_is_better					
+roundtrip_alignment	weighted_fvt	accuracy	higher_is_better					
+roundtrip_alignment	family_mean	accuracy	higher_is_better					
 text_classification	random	macro_f1	higher_is_better	0.669056	0.683697	0.681637	0.770660	0.725865
 text_classification	mean	macro_f1	higher_is_better	0.786852	0.682232	0.718823	0.787870	0.682036
 text_classification	fvt	macro_f1	higher_is_better	0.723635	0.796671	0.796598	0.797343	0.773809
 text_classification	weighted_fvt	macro_f1	higher_is_better	0.711387	0.785554	0.711748	0.707101	0.749227
 text_classification	family_mean	macro_f1	higher_is_better	0.672124	0.785616	0.732175	0.659542	0.742077
-ner	random	f1	higher_is_better	0.447264	0.465865	0.464167	0.469994	0.482479
-ner	mean	f1	higher_is_better	0.472720	0.488270	0.511267	0.503437	0.492219
-ner	fvt	f1	higher_is_better	0.494477	0.515031			0.512707
-ner	weighted_fvt	f1	higher_is_better					0.505807
+ner	random	f1	higher_is_better	0.602750	0.603085	0.601556	0.606080	0.609215
+ner	mean	f1	higher_is_better	0.606040				
+ner	fvt	f1	higher_is_better					
+ner	weighted_fvt	f1	higher_is_better					
 ner	family_mean	f1	higher_is_better					
 pos	random	f1	higher_is_better					0.535491
-pos	mean	f1	higher_is_better					
+pos	mean	f1	higher_is_better					0.542518
 pos	fvt	f1	higher_is_better					
-pos	weighted_fvt	f1	higher_is_better					
+pos	weighted_fvt	f1	higher_is_better					0.543887
 pos	family_mean	f1	higher_is_better					
