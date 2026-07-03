@@ -10,7 +10,7 @@ retrieval_tatoeba	fvt	top10_accuracy	higher_is_better	0.692096	0.703904	0.703688
 retrieval_tatoeba	weighted_fvt	top10_accuracy	higher_is_better	0.664172	0.703515	0.713360	0.718928	0.718011
 retrieval_tatoeba	family_mean	top10_accuracy	higher_is_better	0.664888	0.684763	0.714476	0.715130	0.715817
 retrieval_bible	random	top10_accuracy	higher_is_better	0.339054	0.341764	0.343583	0.342460	0.342438
-retrieval_bible	mean	top10_accuracy	higher_is_better	0.373329				
+retrieval_bible	mean	top10_accuracy	higher_is_better	0.373329	0.375498	0.376140	0.374389	0.374837
 retrieval_bible	fvt	top10_accuracy	higher_is_better					
 retrieval_bible	weighted_fvt	top10_accuracy	higher_is_better					
 retrieval_bible	family_mean	top10_accuracy	higher_is_better					
@@ -25,7 +25,7 @@ text_classification	fvt	macro_f1	higher_is_better	0.723635	0.796671	0.796598	0.7
 text_classification	weighted_fvt	macro_f1	higher_is_better	0.711387	0.785554	0.711748	0.707101	0.749227
 text_classification	family_mean	macro_f1	higher_is_better	0.672124	0.785616	0.732175	0.659542	0.742077
 ner	random	f1	higher_is_better	0.602750	0.603085	0.601556	0.606080	0.609215
-ner	mean	f1	higher_is_better	0.606040				
+ner	mean	f1	higher_is_better	0.606040	0.621109	0.620389	0.614223	0.620076
 ner	fvt	f1	higher_is_better					
 ner	weighted_fvt	f1	higher_is_better					
 ner	family_mean	f1	higher_is_better					

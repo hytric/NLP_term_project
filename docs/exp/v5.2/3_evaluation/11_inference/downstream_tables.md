@@ -21,7 +21,7 @@ Blank cells are not available yet.
 | retrieval_tatoeba | weighted_fvt | top10_accuracy | higher_is_better | 0.664172 | 0.703515 | 0.713360 | 0.718928 | 0.718011 |
 | retrieval_tatoeba | family_mean | top10_accuracy | higher_is_better | 0.664888 | 0.684763 | 0.714476 | 0.715130 | 0.715817 |
 | retrieval_bible | random | top10_accuracy | higher_is_better | 0.339054 | 0.341764 | 0.343583 | 0.342460 | 0.342438 |
-| retrieval_bible | mean | top10_accuracy | higher_is_better | 0.373329 |  |  |  |  |
+| retrieval_bible | mean | top10_accuracy | higher_is_better | 0.373329 | 0.375498 | 0.376140 | 0.374389 | 0.374837 |
 | retrieval_bible | fvt | top10_accuracy | higher_is_better |  |  |  |  |  |
 | retrieval_bible | weighted_fvt | top10_accuracy | higher_is_better |  |  |  |  |  |
 | retrieval_bible | family_mean | top10_accuracy | higher_is_better |  |  |  |  |  |
@@ -36,7 +36,7 @@ Blank cells are not available yet.
 | text_classification | weighted_fvt | macro_f1 | higher_is_better | 0.711387 | 0.785554 | 0.711748 | 0.707101 | 0.749227 |
 | text_classification | family_mean | macro_f1 | higher_is_better | 0.672124 | 0.785616 | 0.732175 | 0.659542 | 0.742077 |
 | ner | random | f1 | higher_is_better | 0.602750 | 0.603085 | 0.601556 | 0.606080 | 0.609215 |
-| ner | mean | f1 | higher_is_better | 0.606040 |  |  |  |  |
+| ner | mean | f1 | higher_is_better | 0.606040 | 0.621109 | 0.620389 | 0.614223 | 0.620076 |
 | ner | fvt | f1 | higher_is_better |  |  |  |  |  |
 | ner | weighted_fvt | f1 | higher_is_better |  |  |  |  |  |
 | ner | family_mean | f1 | higher_is_better |  |  |  |  |  |
@@ -218,21 +218,21 @@ Blank cells are not available yet.
 | retrieval_bible | mean | 10000 | head | top10_accuracy | 0.388149 | 74 | complete |
 | retrieval_bible | mean | 10000 | tail | top10_accuracy | 0.007782 | 3 | complete |
 | retrieval_bible | mean | 10000 | all | top10_accuracy | 0.373329 | 77 | complete |
-| retrieval_bible | mean | 20000 | head | top10_accuracy | 0.340144 | 8 | partial |
+| retrieval_bible | mean | 20000 | head | top10_accuracy | 0.390406 | 74 | complete |
 | retrieval_bible | mean | 20000 | tail | top10_accuracy | 0.007773 | 3 | complete |
-| retrieval_bible | mean | 20000 | all | top10_accuracy | 0.249497 | 11 | partial |
-| retrieval_bible | mean | 30000 | head | top10_accuracy | 0.079373 | 1 | partial |
+| retrieval_bible | mean | 20000 | all | top10_accuracy | 0.375498 | 77 | complete |
+| retrieval_bible | mean | 30000 | head | top10_accuracy | 0.391079 | 74 | complete |
 | retrieval_bible | mean | 30000 | tail | top10_accuracy | 0.007641 | 3 | complete |
-| retrieval_bible | mean | 30000 | all | top10_accuracy | 0.025574 | 4 | partial |
-| retrieval_bible | mean | 40000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | mean | 30000 | all | top10_accuracy | 0.376140 | 77 | complete |
+| retrieval_bible | mean | 40000 | head | top10_accuracy | 0.389253 | 74 | complete |
 | retrieval_bible | mean | 40000 | tail | top10_accuracy | 0.007725 | 3 | complete |
-| retrieval_bible | mean | 40000 | all | top10_accuracy | 0.007725 | 3 | partial |
-| retrieval_bible | mean | 50000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | mean | 40000 | all | top10_accuracy | 0.374389 | 77 | complete |
+| retrieval_bible | mean | 50000 | head | top10_accuracy | 0.389718 | 74 | complete |
 | retrieval_bible | mean | 50000 | tail | top10_accuracy | 0.007767 | 3 | complete |
-| retrieval_bible | mean | 50000 | all | top10_accuracy | 0.007767 | 3 | partial |
-| retrieval_bible | fvt | 10000 | head | top10_accuracy |  | 0 | pending |
+| retrieval_bible | mean | 50000 | all | top10_accuracy | 0.374837 | 77 | complete |
+| retrieval_bible | fvt | 10000 | head | top10_accuracy | 0.386370 | 15 | partial |
 | retrieval_bible | fvt | 10000 | tail | top10_accuracy | 0.007821 | 3 | complete |
-| retrieval_bible | fvt | 10000 | all | top10_accuracy | 0.007821 | 3 | partial |
+| retrieval_bible | fvt | 10000 | all | top10_accuracy | 0.323279 | 18 | partial |
 | retrieval_bible | fvt | 20000 | head | top10_accuracy |  | 0 | pending |
 | retrieval_bible | fvt | 20000 | tail | top10_accuracy | 0.008334 | 3 | complete |
 | retrieval_bible | fvt | 20000 | all | top10_accuracy | 0.008334 | 3 | partial |
@@ -443,18 +443,18 @@ Blank cells are not available yet.
 | ner | mean | 10000 | head | f1 | 0.611168 | 78 | complete |
 | ner | mean | 10000 | tail | f1 | 0.472720 | 3 | complete |
 | ner | mean | 10000 | all | f1 | 0.606040 | 81 | complete |
-| ner | mean | 20000 | head | f1 |  | 0 | pending |
+| ner | mean | 20000 | head | f1 | 0.626219 | 78 | complete |
 | ner | mean | 20000 | tail | f1 | 0.488270 | 3 | complete |
-| ner | mean | 20000 | all | f1 | 0.488270 | 3 | partial |
-| ner | mean | 30000 | head | f1 |  | 0 | pending |
+| ner | mean | 20000 | all | f1 | 0.621109 | 81 | complete |
+| ner | mean | 30000 | head | f1 | 0.624586 | 78 | complete |
 | ner | mean | 30000 | tail | f1 | 0.511267 | 3 | complete |
-| ner | mean | 30000 | all | f1 | 0.511267 | 3 | partial |
-| ner | mean | 40000 | head | f1 |  | 0 | pending |
+| ner | mean | 30000 | all | f1 | 0.620389 | 81 | complete |
+| ner | mean | 40000 | head | f1 | 0.618485 | 78 | complete |
 | ner | mean | 40000 | tail | f1 | 0.503437 | 3 | complete |
-| ner | mean | 40000 | all | f1 | 0.503437 | 3 | partial |
-| ner | mean | 50000 | head | f1 |  | 0 | pending |
+| ner | mean | 40000 | all | f1 | 0.614223 | 81 | complete |
+| ner | mean | 50000 | head | f1 | 0.624994 | 78 | complete |
 | ner | mean | 50000 | tail | f1 | 0.492219 | 3 | complete |
-| ner | mean | 50000 | all | f1 | 0.492219 | 3 | partial |
+| ner | mean | 50000 | all | f1 | 0.620076 | 81 | complete |
 | ner | fvt | 10000 | head | f1 |  | 0 | pending |
 | ner | fvt | 10000 | tail | f1 | 0.494477 | 3 | complete |
 | ner | fvt | 10000 | all | f1 | 0.494477 | 3 | partial |
