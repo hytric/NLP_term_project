@@ -171,9 +171,21 @@ copy_tokenizer_files() {
   done
 }
 
+tokenizer_dir_for() {
+  local source_dir="$1" model_path="$2" best_checkpoint="$3"
+  local candidate
+  for candidate in "${source_dir}" "${best_checkpoint}" "${model_path}"; do
+    if [[ -n "${candidate}" && -f "${candidate}/sentencepiece.bpe.model" ]]; then
+      printf '%s\n' "${candidate}"
+      return 0
+    fi
+  done
+  printf '%s\n' "${source_dir}"
+}
+
 run_one() {
   local index="$1" method="$2" step="$3" key="$4" model_path="$5" source_dir="$6" best_checkpoint="$7" gpu="$8"
-  local expected out_prefix out_dir link_path log_file status_file count
+  local expected out_prefix out_dir link_path log_file status_file count tokenizer_dir
   expected="$(head_count)"
   count="$(result_count "${key}" "${expected}")"
   if [[ "${count}" -ge "${expected}" && "${expected}" -gt 0 ]]; then
@@ -181,11 +193,12 @@ run_one() {
     return 0
   fi
 
+  tokenizer_dir="$(tokenizer_dir_for "${source_dir}" "${model_path}" "${best_checkpoint}")"
   link_path="${LINK_DIR}/shared_tokenizer_gpu${gpu}"
-  ln -sfn "${source_dir}" "${link_path}"
+  ln -sfn "${tokenizer_dir}" "${link_path}"
   out_prefix="${V52_ROOT}/evaluation/ner_head/${key}"
   out_dir="${out_prefix}/$(basename "${link_path}")"
-  copy_tokenizer_files "${source_dir}" "${out_dir}"
+  copy_tokenizer_files "${tokenizer_dir}" "${out_dir}"
 
   log_file="${LOG_DIR}/${index}_ner_head_${key}_gpu${gpu}.log"
   status_file="${LOG_DIR}/status_gpu${gpu}.tsv"
