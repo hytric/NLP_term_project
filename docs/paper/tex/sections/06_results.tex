@@ -42,7 +42,7 @@ Tatoeba \up & head & 65.6 & 54.3 & 72.1 & 70.0 & 72.2 & \textbf{73.5} & 73.3 \\
             & all & 63.6 & 52.8 & 70.3 & 68.4 & 70.5 & \textbf{71.8} & 71.6 \\
 \midrule
 Bible \up & head & 38.1 & 17.3 & 35.6 & 39.0 & 39.6 & \textbf{39.8} & 39.7 \\
-          & tail & 0.5 & 0.3 & 0.8 & 0.8 & \textbf{0.8} & 0.9 & 0.8 \\
+          & tail & 0.5 & 0.3 & 0.8 & 0.8 & 0.8 & \textbf{0.9} & 0.8 \\
           & all & 36.7 & 16.6 & 34.2 & 37.5 & 38.1 & \textbf{38.3} & 38.2 \\
 \midrule
 NER \up & head & 62.2 & 67.5 & 61.4 & 62.5 & 62.7 & 62.1 & \textbf{62.8} \\
@@ -60,14 +60,14 @@ Text(EN) \up & head & 59.3 & 72.9 & 72.6 & 68.2 & \textbf{77.4} & 74.9 & 74.2 \\
 \end{tabular}
 \end{table}
 
-All five initialization variants substantially outperform the XLM-R-B baseline on tail PPPL
-and Tatoeba retrieval.
+All five initialization variants outperform the XLM-R-B baseline on tail PPPL
+(range 12.3--23.0 vs.\ XLM-R-B 98.2) and Tatoeba tail accuracy (range 33.2--36.1 vs.\ 20.5).
 Within the ablation, \famm\ achieves the best tail PPPL (12.3) and Tatoeba tail accuracy
 (36.1), while \wfvt\ leads on head/all PPPL, Tatoeba head/all, Bible, and roundtrip alignment.
 NER tail is won by \fvt\ (51.3); NER head/all by \famm\ (62.8/62.3).
 Text(EN) head/all is won by \fvt\ (77.4).
 \rand\ and \meanm\ rank lowest overall; \meanm\ produces the worst PPPL, worse than \rand.
-Bible tail scores are at floor for all methods (see Appendix~A).
+Bible tail scores are at floor for all methods (tail Acc@10 $\leq 0.9$).
 Changing only initialization shifts target downstream scores, and FVT-family methods
 that reuse source-tokenizer or typological information consistently outperform
 uninformed baselines.
@@ -160,8 +160,8 @@ Method & PPPL (10K/30K/50K) & Tatoeba (10K/30K/50K) & Roundtrip (10K/30K/50K) \\
 \end{table}
 
 \fvt\ starts with the best tail PPPL at 10K (21.2) but plateaus thereafter.
-\wfvt\ and \famm\ start lower at 10K (26.9 and 34.2), improve continuously, and
-overtake \fvt\ by 30K---a clear crossover.
+\wfvt\ and \famm\ start with higher PPPL at 10K (26.9 and 34.2 respectively, worse than \fvt),
+but improve continuously and overtake \fvt\ by 30K---a clear crossover.
 \rand\ and \meanm\ remain at the bottom throughout.
 \textbf{The benefit of a structured initialization prior is visible at convergence,
 not at early checkpoints.}

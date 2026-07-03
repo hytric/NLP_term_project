@@ -1,35 +1,19 @@
 \begin{abstract}
 \noindent
-XLM-R is a strong multilingual masked language model covering 100 languages, but it
-over-fragments tokens of unseen tail languages (tokens/word = 2.204) and fails to align
-their lexical and morphological features in the representation space.
-Glot500 addresses this by extending XLM-R's vocabulary with a mixed-corpus SentencePiece
-tokenizer and continuing pretraining via masked language modeling (MLM), and reports
-improved tail-language representations through related-language help.
-A key step Glot500 leaves open is how to initialize the new token embedding rows.
+XLM-R over-fragments tokens of unseen tail languages (tokens/word = 2.204).
+Glot500 extends XLM-R's vocabulary with a mixed-corpus SentencePiece tokenizer and
+continued MLM pretraining, but leaves the initialization of new token embedding rows open.
+We fill this gap with a controlled 5-way ablation on \texttt{xlm-roberta-base}:
+tokenizer fixed to Glot500-style append (116,664 new pieces), only the initialization varies---
+\rand, \meanm, \fvt, \wfvt, and \famm\ (family-aware mean)---across 50K steps on
+92 head and 7 tail languages (Target7).
 
-We investigate this choice with a controlled 5-way ablation on \texttt{xlm-roberta-base}.
-The tokenizer is fixed to Glot500-style SentencePiece append, adding 116,664 new pieces,
-and only the initialization of those new rows varies across five methods:
-\rand, \meanm, \fvt\ (Fast Vocabulary Transfer),
-\wfvt\ (length-weighted FVT), and \famm\ (family-aware mean).
-We train on 92 XLM-R-seen replay languages and 7 XLM-R-unseen target languages (Target7)
-for 50K steps under identical corpus, objective, and evaluation protocol.
-Evaluation follows the Glot500 downstream suite:
-pseudoperplexity (PPPL), Tatoeba and Bible sentence retrieval, NER, roundtrip alignment,
-and text classification.
-
-We observe three findings.
-(1) The extended tokenizer reduces Target7 tokens/word from 2.204 to 1.592 (27.75\% reduction),
-confirming that tail-language fragmentation is alleviated.
-(2) Initialization alone changes 50K convergence loss and downstream scores:
-\famm\ achieves the lowest target PPPL (12.3) and highest Tatoeba tail accuracy (36.1),
-while \wfvt\ is strongest on training loss and roundtrip alignment.
-FVT-family methods lead at 10K steps but are overtaken by \wfvt\ and \famm\ by 30--50K,
-showing that the benefit of structured initialization emerges at convergence, not at early checkpoints.
-(3) The sentence representation space exhibits language-identity and family/typology clustering,
-and languages with strong family coverage in the head set benefit most from \famm.
-In short, embedding initialization is a consequential design choice for
-low-resource vocabulary adaptation, and corpus-provenance or family-prior initialization
-outperforms random initialization in the target regime.
+Three findings emerge.
+(1) The extended tokenizer reduces Target7 tokens/word by 27.75\% (2.204 $\to$ 1.592).
+(2) Initialization alone shifts convergence: \famm\ achieves the lowest tail PPPL (12.3) and
+Tatoeba tail accuracy (36.1); \wfvt\ leads on training loss (2.73), head/all PPPL, Bible, and
+roundtrip alignment; FVT-family methods lead at 10K but are overtaken by \wfvt\ and \famm\ by 30K.
+(3) The representation space exhibits family/typology clustering; languages with strong head-set
+family coverage benefit most from \famm.
+Embedding initialization is a consequential design choice for low-resource vocabulary adaptation.
 \end{abstract}

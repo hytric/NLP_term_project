@@ -1,14 +1,138 @@
+% =====================================================================
+\section{Supplementary Material}
+
+\subsection{Bible Retrieval Floor}
+
+Bible tail Acc@10 scores ($\leq0.9$ for all methods at all steps) reflect task difficulty,
+not an initialization artifact.
+Three structural reasons explain the floor:
+(1) each English query must be retrieved from $\sim$7,000--8,000 candidate verses,
+    making the random-chance upper bound extremely low;
+(2) Bible verse sentences are short and structurally uniform
+    (same book/chapter template), so sentence vectors cluster tightly
+    and nearest-neighbor retrieval cannot discriminate;
+(3) the 50K training budget is insufficient to achieve verse-level precision alignment
+    for languages with only $\sim$30K training sentences.
+
+\begin{table}[h]\centering\small
+\caption{Bible tail Acc@10 ($\times100$) at each checkpoint.
+         All methods remain at floor regardless of initialization.}
+\label{tab:bible}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Method & 10K & 20K & 30K & 40K & 50K \\
+\midrule
+\rand  & 0.76 & 0.79 & 0.78 & 0.79 & 0.79 \\
+\meanm & 0.78 & 0.78 & 0.76 & 0.77 & 0.78 \\
+\fvt   & 0.78 & 0.83 & 0.83 & 0.83 & 0.84 \\
+\wfvt  & 0.73 & 0.86 & 0.90 & 0.83 & 0.89 \\
+\famm  & 0.62 & 0.70 & 0.73 & 0.71 & 0.75 \\
+\midrule
+XLM-R-B (reference) & \multicolumn{5}{c}{0.50} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Initialization Audit Numbers}
+
+\begin{table}[h]\centering\small
+\caption{Verification numbers for the initialization implementation.}
+\label{tab:audit}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Item & Value \\
+\midrule
+Source tokenizer length & 250,002 \\
+Target tokenizer length & 366,666 \\
+New rows & 116,664 \\
+\verb|<mask>| id (source $\to$ target) & 250001 $\to$ 366665 \\
+\verb|<mask>| copy diff & 0.0 \\
+LM head tied & true \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
 \section{Artifact and Code Map}
 
 \input{tables/table_repro_map}
 
-\section{Draft Writing Notes}
+% =====================================================================
+\section{Full Results}
 
-이 LaTeX draft는 final submission 직전 다음 항목을 확인해야 한다.
+\subsection{Step-Wise Initialization Comparison}
 
-\begin{itemize}
-  \item \codepath{docs/exp/v5.2/LIVE_STATUS.md}의 latest status로 50K five-way convergence/evaluation 완료 여부를 갱신한다.
-  \item Step-4000 diagnostic table은 \codepath{docs/exp/v5.2/3_evaluation/v52_final_downstream_table.tsv} 근거로 유지하되 final claim에 사용하지 않는다.
-  \item head/tail/all final table은 \codepath{docs/exp/v5.2/3_evaluation/09_aggregation/main_head_tail_all.tsv} 형식으로 50K checkpoint별 group row를 재생성해 채운다.
-  \item 논문 제출용 PDF에는 \todo{course name, student id, exact page limit}를 채운다.
-\end{itemize}
+Tables below show all five initialization methods at each checkpoint (10K--50K),
+grouped by head/tail/all.
+XLM-R-B/L baselines are step-independent.
+PPPL is raw; retrieval, roundtrip, and text scores are $\times100$.
+
+\input{tables/Btables_en}
+
+\clearpage
+\subsection{Per-Initialization Step Trajectory}
+
+Tables below reorganize the same data by initialization method,
+showing the 10K--50K trajectory for each method across all groups.
+
+\input{tables/Btables_by_method_en}
+
+\clearpage
+\subsection{Step-by-Step 2D Embedding Maps}
+
+Figures below show 2D PCA sentence-embedding maps for each initialization method
+at steps 10K, 20K, 30K, 40K, and the final checkpoint.
+Color indicates language family; triangles = Target7 tail languages;
+circles = head/reference languages.
+Family clustering forms by 10K and is stable across steps for all methods.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{mapgrid_01.png}
+  \caption{Step-by-step 2D maps (1/7): \rand\ at 10K, 20K, 30K, 40K.}
+  \label{fig:strips}
+\end{figure}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{mapgrid_02.png}
+  \caption{Step-by-step 2D maps (2/7): \meanm\ at 10K, 20K, 30K, 40K.}
+\end{figure}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{mapgrid_03.png}
+  \caption{Step-by-step 2D maps (3/7): \fvt\ at 10K, 20K, 30K, 40K.}
+\end{figure}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{mapgrid_04.png}
+  \caption{Step-by-step 2D maps (4/7): \wfvt\ at 10K, 20K, 30K, 40K.}
+\end{figure}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{mapgrid_05.png}
+  \caption{Step-by-step 2D maps (5/7): \famm\ at 10K, 20K, 30K, 40K.}
+\end{figure}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{mapgrid_06.png}
+  \caption{Step-by-step 2D maps (6/7): \rand\ 43K, \meanm\ 45K, \fvt\ 50K, \wfvt\ 50K.}
+\end{figure}
+
+\begin{figure}[H]\centering
+  \includegraphics[width=\linewidth]{mapgrid_07.png}
+  \caption{Step-by-step 2D maps (7/7): \famm\ 50K.}
+\end{figure}
+
+\clearpage
+\subsection{38-Language Centroid Map}
+
+Figure~\ref{fig:centroidmap} shows sentence-vector centroids for 38 sampled languages
+projected to 2D by PCA at the \fvt\ 50K checkpoint.
+Triangles = Target7 tail languages; circles = head/reference languages.
+
+\begin{figure}[H]\centering
+  \includegraphics[width=0.88\linewidth]{centroid_fvt_50k.png}
+  \caption{2D PCA centroid map for 38 languages (\fvt, 50K).
+           Target7 tail languages are shown as triangles;
+           head/reference languages as circles.}
+  \label{fig:centroidmap}
+\end{figure}

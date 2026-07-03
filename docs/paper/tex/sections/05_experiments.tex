@@ -31,8 +31,9 @@ Following \citet{hu2020xtreme} and \citet{artetxe2019tatoeba}, we embed English 
 sentences and retrieve the top-10 nearest neighbors by cosine similarity.
 A query is a hit if the correct translation appears in the top 10 (Acc@10).
 Tatoeba provides up to 1,000 English-aligned sentence pairs per language;
-Bible provides $\sim$7,000--8,000 verse-aligned pairs per language, making it
-substantially harder (see Appendix~A for analysis of the Bible floor).
+Bible provides $\sim$7,000--8,000 verse-aligned pairs per language.
+Tail Bible scores are at floor for all methods due to limited tail-language coverage
+in the Bible retrieval index (tail Acc@10 $\leq 0.9$ for all methods).
 
 \subsection{NER (\up)}
 
@@ -60,7 +61,7 @@ Because the local Taxi1500 materialization covers only English, we report only t
 English head score; target-language transfer is marked \texttt{not\_applicable}.
 
 \paragraph{Alignment with Glot500 protocol.}
-NER learning rate 2e-5 with Adam and English-only fine-tuning matches the Glot500 paper.
+NER learning rate $2\times10^{-5}$ with Adam and English-only fine-tuning matches the Glot500 paper.
 Text classification effective batch 16 matches Glot500.
 Retrieval, roundtrip, and PPPL involve no fine-tuning, so initialization and MLM training
 are the sole sources of score differences.

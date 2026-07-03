@@ -51,10 +51,10 @@ Figure~\ref{fig:simtrend} tracks how the relation buckets evolve from 10K to 50K
 under \fvt.
 Language-identity and family structure form by 10K and change little thereafter
 (same language: $0.458\to0.455$; same family: $0.274\to0.266$).
-Cross-lingual semantic alignment (same-meaning src--eng pairs) shows modest improvement
-after 10K before saturating.
-\textbf{Easy axes (language identity, local geography) are captured early in training;
-harder axes (semantic alignment) improve slowly thereafter.}
+Cross-lingual semantic alignment (same-meaning src--eng pairs) increases by 0.01--0.02
+after 10K before flattening.
+\textbf{Language-identity and family axes form by 10K steps and change by less than 0.01 thereafter;
+the semantic alignment axis continues to shift gradually.}
 
 \begin{figure}[h]\centering
   \includegraphics[width=0.62\linewidth]{sim_trend.png}

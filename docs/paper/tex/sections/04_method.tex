@@ -54,7 +54,7 @@ Method & Initialization of new row $\mathbf{e}_j$ \\
 \end{tabular}
 \end{table}
 
-\textbf{\rand} draws from $\mathcal{N}(0,0.02)$, providing no information.
+\textbf{\rand} draws from $\mathcal{N}(0,0.02^2\mathbf{I})$, providing no information.
 \textbf{\meanm} starts at the global centroid of pretrained embeddings---a stable but
 uninformative starting point.
 \textbf{\fvt} decomposes each new token's surface form with the source tokenizer and

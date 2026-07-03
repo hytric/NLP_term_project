@@ -1,7 +1,5 @@
 \section{Introduction}
 
-\subsection{Vertical and Horizontal Scaling}
-
 Advances in large language models have proceeded along two axes.
 \textbf{Vertical scaling} deepens understanding of a fixed set of high-resource languages
 by increasing parameter count, training data, and compute---ChatGPT, Claude, and scaling-law
@@ -16,8 +14,6 @@ absent from its training data it suffers from two compounding deficits:
 and (2)~representation mismatch, where the embedding space carries no signal from
 the target language.
 
-\subsection{The Open Choice in Vocabulary Extension}
-
 Glot500 \citep{imani2023glot500} combines vocabulary extension with continued MLM
 pretraining to address these deficits for 511 language-scripts.
 After extending the tokenizer, XLM-R's embedding matrix $\mathbf{E}\in\mathbb{R}^{250002\times768}$
@@ -27,8 +23,7 @@ Whether a different starting point---one that reuses information already encoded
 the existing XLM-R embeddings---leads to better convergence and downstream performance
 under a limited training budget is the question this report addresses.
 
-\subsection{Research Questions}
-
+We investigate three research questions:
 \begin{enumerate}
   \item Does Glot500-style SentencePiece append reduce subword fragmentation for
         XLM-R-unseen tail languages?
@@ -37,8 +32,6 @@ under a limited training budget is the question this report addresses.
   \item Does the sentence representation space exhibit language-identity or
         family/typology structure after continued pretraining?
 \end{enumerate}
-
-\subsection{Scope and Contributions}
 
 This experiment is not a full reproduction of Glot500 across 511 languages.
 All seven Target7 languages use Latin script, so we make no claim about script diversity.
